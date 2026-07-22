@@ -1,0 +1,133 @@
+APK: CredPal (NigeriaApproved)
+Leak 1:
+  Source: $r4 = virtualinvoke $r3.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r2, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r5.<java.io.FileOutputStream: void write(byte[])>($r7) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <s6.p0: java.lang.String w()>
+    <s6.p0: java.lang.String w()>
+    <s6.p0: java.lang.String w()>
+    <u6.c: void <init>(java.lang.Throwable,u6.c$c)>
+    <u6.c: void <init>(java.lang.Throwable,u6.c$c)>
+    <u6.c: void <init>(java.lang.Throwable,u6.c$c,kotlin.jvm.internal.DefaultConstructorMarker)>
+    <u6.c$a: u6.c b(java.lang.Throwable,u6.c$c)>
+    <x6.a: void b(java.lang.Throwable,java.lang.Object)>
+    <u6.c: void g()>
+    <u6.c: java.lang.String toString()>
+    <u6.c: org.json.JSONObject e()>
+    <u6.c: org.json.JSONObject d()>
+    <u6.c: org.json.JSONObject d()>
+    <u6.c: org.json.JSONObject d()>
+    <u6.c: org.json.JSONObject e()>
+    <u6.c: java.lang.String toString()>
+    <u6.c: java.lang.String toString()>
+    <u6.c: void g()>
+    <u6.k: void t(java.lang.String,java.lang.String)>
+    <u6.k: void t(java.lang.String,java.lang.String)>
+
+Leak 2:
+  Source: $r4 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r3, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r5.<java.io.FileOutputStream: void write(byte[])>($r7) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <b6.a0: void I(android.content.Context)>
+    <b6.a0: void I(android.content.Context)>
+    <b6.a0: void I(android.content.Context)>
+    <b6.a0: void I(android.content.Context)>
+    <b6.a0: void I(android.content.Context)>
+    <b6.a0: void I(android.content.Context)>
+    <b6.a0: void N(android.content.Context,b6.a0$b)>
+    <b6.a0: void M(android.content.Context)>
+    <com.facebook.internal.FacebookInitProvider: boolean onCreate()>
+    <dummyMainClass: void dummyMainMethod(java.lang.String[])>
+    <dummyMainClass: com.facebook.internal.FacebookInitProvider dummyMainMethod_com_facebook_internal_FacebookInitProvider(android.content.Intent)>
+    <i6.a$b: void onActivityResumed(android.app.Activity)>
+    <i6.b: void run()>
+    <i6.a$b: void a()>
+    <i6.a$b: void c()>
+    <i6.a: void c(i6.a,android.content.Context,java.util.ArrayList,boolean)>
+    <i6.a: void f(android.content.Context,java.util.ArrayList,boolean)>
+    <k6.j: void f(java.lang.String,java.lang.String,boolean)>
+    <c6.i0: void j(java.math.BigDecimal,java.util.Currency,android.os.Bundle)>
+    <c6.s: void v(java.math.BigDecimal,java.util.Currency,android.os.Bundle)>
+    <c6.s: void u(java.math.BigDecimal,java.util.Currency,android.os.Bundle,boolean)>
+    <c6.s: void p(java.lang.String,java.lang.Double,android.os.Bundle,boolean,java.util.UUID)>
+    <j6.c: void h(android.os.Bundle,java.lang.String)>
+    <j6.c: void b(android.os.Bundle,java.lang.String)>
+    <b6.a0: java.lang.String m()>
+    <b6.a0: java.lang.String m()>
+    <j6.c: void b(android.os.Bundle,java.lang.String)>
+    <j6.c: void b(android.os.Bundle,java.lang.String)>
+    <j6.c: void h(android.os.Bundle,java.lang.String)>
+    <j6.c: void h(android.os.Bundle,java.lang.String)>
+    <j6.c: void i(android.os.Bundle)>
+    <kotlin.jvm.internal.Intrinsics: void checkNotNullParameter(java.lang.Object,java.lang.String)>
+    <j6.c: void i(android.os.Bundle)>
+    <j6.c: void h(android.os.Bundle,java.lang.String)>
+    <j6.c: void b(android.os.Bundle,java.lang.String)>
+    <j6.c: void b(android.os.Bundle,java.lang.String)>
+    <j6.c: void b(android.os.Bundle,java.lang.String)>
+    <x6.a: void b(java.lang.Throwable,java.lang.Object)>
+    <u6.b: void c(java.lang.Throwable)>
+    <b6.a0: boolean p()>
+    <b6.v0: boolean f()>
+    <b6.v0: void j()>
+    <b6.v0: void o()>
+    <b6.v0: void j()>
+    <b6.v0: boolean f()>
+    <b6.a0: boolean p()>
+    <u6.b: void c(java.lang.Throwable)>
+    <x6.a: void b(java.lang.Throwable,java.lang.Object)>
+    <u6.c: void g()>
+    <u6.c: java.lang.String toString()>
+    <u6.c: org.json.JSONObject e()>
+    <u6.c: org.json.JSONObject d()>
+    <u6.c: org.json.JSONObject d()>
+    <u6.c: org.json.JSONObject d()>
+    <u6.c: org.json.JSONObject e()>
+    <u6.c: java.lang.String toString()>
+    <u6.c: java.lang.String toString()>
+    <u6.c: void g()>
+    <u6.k: void t(java.lang.String,java.lang.String)>
+    <u6.k: void t(java.lang.String,java.lang.String)>
+
+Leak 3:
+  Source: $r10 = virtualinvoke $r8.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r9, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r5.<java.io.FileOutputStream: void write(byte[])>($r7) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <b6.v0: void o()>
+    <b6.v0: void o()>
+    <b6.v0: void o()>
+    <b6.v0: void o()>
+    <b6.v0: void o()>
+    <b6.v0: void o()>
+    <b6.v0: void o()>
+    <b6.v0: void o()>
+    <b6.v0: void o()>
+    <b6.v0: void o()>
+    <c6.i0: void b(android.os.Bundle)>
+    <c6.s: void r(java.lang.String,java.lang.Double,android.os.Bundle)>
+    <c6.s: void p(java.lang.String,java.lang.Double,android.os.Bundle,boolean,java.util.UUID)>
+    <j6.c: void h(android.os.Bundle,java.lang.String)>
+    <j6.c: void h(android.os.Bundle,java.lang.String)>
+    <j6.c: void i(android.os.Bundle)>
+    <kotlin.jvm.internal.Intrinsics: void checkNotNullParameter(java.lang.Object,java.lang.String)>
+    <j6.c: void i(android.os.Bundle)>
+    <j6.c: void h(android.os.Bundle,java.lang.String)>
+    <j6.c: void b(android.os.Bundle,java.lang.String)>
+    <j6.c: void b(android.os.Bundle,java.lang.String)>
+    <j6.c: void b(android.os.Bundle,java.lang.String)>
+    <j6.c: void h(android.os.Bundle,java.lang.String)>
+    <c6.s: void p(java.lang.String,java.lang.Double,android.os.Bundle,boolean,java.util.UUID)>
+    <x6.a: void b(java.lang.Throwable,java.lang.Object)>
+    <u6.c: void g()>
+    <u6.c: java.lang.String toString()>
+    <u6.c: org.json.JSONObject e()>
+    <u6.c: org.json.JSONObject d()>
+    <u6.c: org.json.JSONObject d()>
+    <u6.c: org.json.JSONObject d()>
+    <u6.c: org.json.JSONObject e()>
+    <u6.c: java.lang.String toString()>
+    <u6.c: java.lang.String toString()>
+    <u6.c: void g()>
+    <u6.k: void t(java.lang.String,java.lang.String)>
+    <u6.k: void t(java.lang.String,java.lang.String)>
+

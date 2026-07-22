@@ -1,0 +1,696 @@
+APK: Cashdey (NigeriaDelisted)
+Leak 1:
+  Source: $r5 = virtualinvoke $r4.<android.content.pm.PackageManager: java.util.List getInstalledPackages(int)>(8192) (<android.content.pm.PackageManager: java.util.List getInstalledPackages(int)>)
+  Sink: virtualinvoke $r3.<java.util.zip.GZIPOutputStream: void write(byte[])>($r1) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <c.t.m.g.dr: java.lang.String g()>
+    <c.t.m.g.dr: java.lang.String g()>
+    <c.t.m.g.dr: java.lang.String g()>
+    <c.t.m.g.dr: java.lang.String g()>
+    <c.t.m.g.dr: java.lang.String g()>
+    <c.t.m.g.dr: java.lang.String g()>
+    <c.t.m.g.dr: java.lang.String g()>
+    <c.t.m.g.dr: java.lang.String g()>
+    <c.t.m.g.ec: void e()>
+    <c.t.m.g.ef: void a(java.lang.String)>
+    <c.t.m.g.ef: void a(java.lang.String)>
+    <c.t.m.g.fc: byte[] a(byte[])>
+
+Leak 2:
+  Source: $r7 = virtualinvoke $r5.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r6, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: $r9 = virtualinvoke $r8.<java.net.URL: java.net.URLConnection openConnection()>() (<java.net.URL: java.net.URLConnection openConnection()>)
+  Methods:
+    <com.appsflyer.internal.AFb1fSDK: java.lang.String AFKeystoreWrapper(java.lang.String)>
+    <com.appsflyer.internal.AFb1fSDK: java.lang.String AFKeystoreWrapper(java.lang.String)>
+    <com.appsflyer.internal.AFb1fSDK: java.lang.String AFKeystoreWrapper(java.lang.String)>
+    <com.appsflyer.internal.AFb1fSDK: java.lang.String AFKeystoreWrapper(java.lang.String)>
+    <com.appsflyer.internal.AFb1fSDK: java.lang.String AFKeystoreWrapper(java.lang.String)>
+    <com.appsflyer.internal.AFb1fSDK: java.lang.String AFKeystoreWrapper(java.lang.String)>
+    <com.appsflyer.internal.AFb1fSDK: java.lang.String AFKeystoreWrapper(java.lang.String)>
+    <com.appsflyer.internal.AFb1fSDK: java.lang.String values()>
+    <com.appsflyer.internal.AFc1cSDK$2: java.lang.String AFInAppEventParameterName()>
+    <com.appsflyer.internal.AFb1zSDK: java.lang.String AFKeystoreWrapper(com.appsflyer.internal.AFb1gSDK,java.lang.String)>
+    <com.appsflyer.internal.AFc1cSDK$2: java.lang.String AFInAppEventParameterName()>
+    <com.appsflyer.internal.AFc1cSDK$2: java.lang.String AFInAppEventParameterName()>
+    <com.appsflyer.internal.AFc1cSDK$2: java.lang.String AFInAppEventParameterName()>
+    <cashdey.Ar0: java.lang.CharSequence Y(java.lang.CharSequence)>
+    <cashdey.Ar0: java.lang.CharSequence Y(java.lang.CharSequence)>
+    <com.appsflyer.internal.AFc1cSDK$2: java.lang.String AFInAppEventParameterName()>
+    <com.appsflyer.internal.AFc1cSDK$2: java.lang.String AFInAppEventParameterName()>
+    <com.appsflyer.internal.AFc1cSDK$2: java.lang.Object invoke()>
+    <cashdey.hq0: java.lang.Object getValue()>
+    <cashdey.hq0: java.lang.Object getValue()>
+    <com.appsflyer.internal.AFc1wSDK: com.appsflyer.internal.AFc1zSDK AFKeystoreWrapper()>
+    <com.appsflyer.internal.AFc1wSDK: com.appsflyer.internal.AFc1zSDK AFKeystoreWrapper()>
+    <com.appsflyer.internal.AFc1wSDK$7: com.appsflyer.internal.AFa1dSDK AFInAppEventParameterName()>
+    <com.appsflyer.internal.AFc1wSDK$7: com.appsflyer.internal.AFa1dSDK AFInAppEventParameterName()>
+    <com.appsflyer.internal.AFc1wSDK$7: java.lang.Object invoke()>
+    <cashdey.hq0: java.lang.Object getValue()>
+    <cashdey.hq0: java.lang.Object getValue()>
+    <cashdey.hq0: java.lang.Object getValue()>
+    <com.appsflyer.internal.AFc1cSDK: java.lang.String AFInAppEventParameterName()>
+    <com.appsflyer.internal.AFc1cSDK: java.lang.String AFInAppEventParameterName()>
+    <com.appsflyer.internal.AFb1zSDK: java.lang.String getHostPrefix()>
+    <com.appsflyer.internal.AFc1nSDK: boolean values()>
+    <com.appsflyer.internal.AFc1nSDK: boolean values()>
+    <com.appsflyer.internal.AFc1nSDK: boolean values()>
+    <com.appsflyer.internal.AFc1nSDK: boolean values()>
+
+Leak 3:
+  Source: $r8 = virtualinvoke $r6.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r7, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("ManifestParser", $r7) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <cashdey.O0O000OOO0O00O0O0OO: void e(android.content.Context,com.bumptech.glide.GeneratedAppGlideModule)>
+    <cashdey.O0O000OOO0O00O0O0OO: void e(android.content.Context,com.bumptech.glide.GeneratedAppGlideModule)>
+    <cashdey.O0O000OOO0O00O0O0OO: void e(android.content.Context,com.bumptech.glide.GeneratedAppGlideModule)>
+    <cashdey.O0O000OOO0O00O0O0OO: void e(android.content.Context,com.bumptech.glide.GeneratedAppGlideModule)>
+    <cashdey.O0O000OOO0O00O0O0OO: void e(android.content.Context,com.bumptech.glide.GeneratedAppGlideModule)>
+    <cashdey.O0O000OOO0O00O0O0OO: void e(android.content.Context,com.bumptech.glide.GeneratedAppGlideModule)>
+    <cashdey.O0O000OOO0O00O0O0OO: void e(android.content.Context,com.bumptech.glide.GeneratedAppGlideModule)>
+    <cashdey.O0O000OOO0O00O0O0OO: void e(android.content.Context,com.bumptech.glide.GeneratedAppGlideModule)>
+    <cashdey.O0O000OOO0O00O0O0OO: void e(android.content.Context,com.bumptech.glide.GeneratedAppGlideModule)>
+
+Leak 4:
+  Source: $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r2, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r3, $r0) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.tencent.bugly.proguard.z: java.util.Map d(android.content.Context)>
+    <com.tencent.bugly.proguard.z: java.util.Map d(android.content.Context)>
+    <com.tencent.bugly.proguard.z: java.util.Map d(android.content.Context)>
+    <com.tencent.bugly.proguard.z: java.util.Map d(android.content.Context)>
+    <com.tencent.bugly.proguard.z: java.util.Map d(android.content.Context)>
+    <com.tencent.bugly.proguard.z: java.util.Map d(android.content.Context)>
+    <com.tencent.bugly.proguard.aa: void <init>(android.content.Context)>
+    <com.tencent.bugly.proguard.aa: void <init>(android.content.Context)>
+    <com.tencent.bugly.proguard.aa: void <init>(android.content.Context)>
+    <com.tencent.bugly.proguard.aa: void b(java.lang.String,java.lang.String)>
+    <com.tencent.bugly.proguard.aa: void b(java.lang.String,java.lang.String)>
+    <com.tencent.bugly.proguard.aa: void b(java.lang.String,java.lang.String)>
+    <com.tencent.bugly.proguard.al: boolean d(java.lang.String,java.lang.Object[])>
+    <com.tencent.bugly.proguard.al: boolean a(int,java.lang.String,java.lang.Object[])>
+    <com.tencent.bugly.proguard.al: boolean a(int,java.lang.String,java.lang.Object[])>
+
+Leak 5:
+  Source: $r7 = virtualinvoke $r5.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r6, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: $r20 = virtualinvoke $r10.<java.net.URLConnection: java.io.OutputStream getOutputStream()>() (<java.net.HttpURLConnection: java.io.OutputStream getOutputStream()>)
+  Methods:
+    <com.appsflyer.internal.AFb1fSDK: java.lang.String AFKeystoreWrapper(java.lang.String)>
+    <com.appsflyer.internal.AFb1fSDK: java.lang.String AFKeystoreWrapper(java.lang.String)>
+    <com.appsflyer.internal.AFb1fSDK: java.lang.String AFKeystoreWrapper(java.lang.String)>
+    <com.appsflyer.internal.AFb1fSDK: java.lang.String AFKeystoreWrapper(java.lang.String)>
+    <com.appsflyer.internal.AFb1fSDK: java.lang.String AFKeystoreWrapper(java.lang.String)>
+    <com.appsflyer.internal.AFb1fSDK: java.lang.String values()>
+    <com.appsflyer.internal.AFc1cSDK$2: java.lang.String AFInAppEventParameterName()>
+    <com.appsflyer.internal.AFb1zSDK: java.lang.String AFKeystoreWrapper(com.appsflyer.internal.AFb1gSDK,java.lang.String)>
+    <com.appsflyer.internal.AFc1cSDK$2: java.lang.String AFInAppEventParameterName()>
+    <com.appsflyer.internal.AFc1cSDK$2: java.lang.String AFInAppEventParameterName()>
+    <com.appsflyer.internal.AFc1cSDK$2: java.lang.String AFInAppEventParameterName()>
+    <cashdey.Ar0: java.lang.CharSequence Y(java.lang.CharSequence)>
+    <cashdey.Ar0: java.lang.CharSequence Y(java.lang.CharSequence)>
+    <com.appsflyer.internal.AFc1cSDK$2: java.lang.String AFInAppEventParameterName()>
+    <com.appsflyer.internal.AFc1cSDK$2: java.lang.String AFInAppEventParameterName()>
+    <com.appsflyer.internal.AFc1cSDK$2: java.lang.Object invoke()>
+    <cashdey.hq0: java.lang.Object getValue()>
+    <cashdey.hq0: java.lang.Object getValue()>
+    <com.appsflyer.internal.AFc1cSDK: java.lang.String AFInAppEventParameterName()>
+    <com.appsflyer.internal.AFc1cSDK: java.lang.String AFInAppEventParameterName()>
+    <com.appsflyer.internal.AFb1zSDK: java.lang.String getHostPrefix()>
+    <com.appsflyer.internal.AFc1nSDK: boolean values()>
+    <com.appsflyer.internal.AFc1nSDK: boolean values()>
+    <com.appsflyer.internal.AFc1nSDK: boolean values()>
+    <com.appsflyer.internal.AFc1nSDK: boolean values()>
+    <com.appsflyer.internal.AFc1nSDK: boolean values()>
+    <com.appsflyer.internal.AFc1nSDK: boolean values()>
+
+Leak 6:
+  Source: $r5 = staticinvoke <android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>($r6) (<android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>)
+  Sink: virtualinvoke $r9.<java.io.FileOutputStream: void write(byte[])>($r4) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <cashdey.mm0$e: void run()>
+    <cashdey.mm0$e: void run()>
+    <cashdey.mm0: void e(java.lang.String,java.lang.String,java.io.File)>
+    <cashdey.mm0: void e(java.lang.String,java.lang.String,java.io.File)>
+    <cashdey.mm0: void e(java.lang.String,java.lang.String,java.io.File)>
+
+Leak 7:
+  Source: $r5 = staticinvoke <android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>($r6) (<android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>)
+  Sink: virtualinvoke $r9.<java.io.FileOutputStream: void write(byte[])>($r4) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <cashdey.mm0$e: void run()>
+    <cashdey.mm0$e: void run()>
+    <cashdey.mm0: void e(java.lang.String,java.lang.String,java.io.File)>
+    <cashdey.mm0: void e(java.lang.String,java.lang.String,java.io.File)>
+    <cashdey.mm0: void e(java.lang.String,java.lang.String,java.io.File)>
+
+Leak 8:
+  Source: $r5 = staticinvoke <android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>($r6) (<android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>)
+  Sink: virtualinvoke $r9.<java.io.FileOutputStream: void write(byte[])>($r4) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <cashdey.mm0$e: void run()>
+    <cashdey.mm0$e: void run()>
+    <cashdey.mm0: void e(java.lang.String,java.lang.String,java.io.File)>
+    <cashdey.mm0: void e(java.lang.String,java.lang.String,java.io.File)>
+    <cashdey.mm0: void e(java.lang.String,java.lang.String,java.io.File)>
+
+Leak 9:
+  Source: $r5 = staticinvoke <android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>($r6) (<android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>)
+  Sink: virtualinvoke $r9.<java.io.FileOutputStream: void write(byte[])>($r4) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <cashdey.mm0$e: void run()>
+    <cashdey.mm0$e: void run()>
+    <cashdey.mm0: void e(java.lang.String,java.lang.String,java.io.File)>
+    <cashdey.mm0: void e(java.lang.String,java.lang.String,java.io.File)>
+    <cashdey.mm0: void e(java.lang.String,java.lang.String,java.io.File)>
+
+Leak 10:
+  Source: $r5 = staticinvoke <android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>($r6) (<android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>)
+  Sink: virtualinvoke $r9.<java.io.FileOutputStream: void write(byte[])>($r4) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <cashdey.mm0$e: void run()>
+    <cashdey.mm0$e: void run()>
+    <cashdey.mm0: void e(java.lang.String,java.lang.String,java.io.File)>
+    <cashdey.mm0: void e(java.lang.String,java.lang.String,java.io.File)>
+    <cashdey.mm0: void e(java.lang.String,java.lang.String,java.io.File)>
+
+Leak 11:
+  Source: $r5 = staticinvoke <android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>($r6) (<android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>)
+  Sink: virtualinvoke $r9.<java.io.FileOutputStream: void write(byte[])>($r4) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <cashdey.mm0$e: void run()>
+    <cashdey.mm0$e: void run()>
+    <cashdey.mm0: void e(java.lang.String,java.lang.String,java.io.File)>
+    <cashdey.mm0: void e(java.lang.String,java.lang.String,java.io.File)>
+    <cashdey.mm0: void e(java.lang.String,java.lang.String,java.io.File)>
+
+Leak 12:
+  Source: $r5 = staticinvoke <android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>($r6) (<android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>)
+  Sink: virtualinvoke $r9.<java.io.FileOutputStream: void write(byte[])>($r4) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <cashdey.mm0$e: void run()>
+    <cashdey.mm0$e: void run()>
+    <cashdey.mm0: void e(java.lang.String,java.lang.String,java.io.File)>
+    <cashdey.mm0: void e(java.lang.String,java.lang.String,java.io.File)>
+    <cashdey.mm0: void e(java.lang.String,java.lang.String,java.io.File)>
+
+Leak 13:
+  Source: $r5 = staticinvoke <android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>($r6) (<android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>)
+  Sink: virtualinvoke $r9.<java.io.FileOutputStream: void write(byte[])>($r4) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <cashdey.mm0$e: void run()>
+    <cashdey.mm0$e: void run()>
+    <cashdey.mm0: void e(java.lang.String,java.lang.String,java.io.File)>
+    <cashdey.mm0: void e(java.lang.String,java.lang.String,java.io.File)>
+    <cashdey.mm0: void e(java.lang.String,java.lang.String,java.io.File)>
+
+Leak 14:
+  Source: $r10 = virtualinvoke $r6.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r2, $r3, $r8, null, "date desc") (<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>)
+  Sink: staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r1, $r2) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <cashdey.O0O00O0O0OOOO000OO0: void run()>
+    <cashdey.O0O00O0O0OOOO000OO0: void run()>
+    <cashdey.O0O00O0O0OOOO000OO0: void run()>
+    <cashdey.O0O00O0O0OOOO000OO0: void run()>
+    <cashdey.O0O00O0O0OOOO000OO0: void run()>
+    <com.tencent.mars.xlog.Log: void i(java.lang.String,java.lang.String)>
+    <com.tencent.mars.xlog.Log: void i(java.lang.String,java.lang.String,java.lang.Object[])>
+    <com.tencent.mars.xlog.Log$1: void logI(java.lang.String,java.lang.String,java.lang.String,int,int,long,long,java.lang.String)>
+
+Leak 15:
+  Source: $r4 = virtualinvoke $r3.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r1, null, null, null, null) (<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>)
+  Sink: staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r1, $r2) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.sensorsdata.analytics.android.sdk.data.adapter.PersistentDataOperation: java.lang.String[] handleQueryUri(android.net.Uri)>
+    <com.sensorsdata.analytics.android.sdk.data.adapter.PersistentDataOperation: java.lang.String[] handleQueryUri(android.net.Uri)>
+    <com.sensorsdata.analytics.android.sdk.data.adapter.PersistentDataOperation: java.lang.String[] handleQueryUri(android.net.Uri)>
+    <com.sensorsdata.analytics.android.sdk.data.adapter.PersistentDataOperation: java.lang.String[] handleQueryUri(android.net.Uri)>
+    <com.sensorsdata.analytics.android.sdk.data.adapter.PersistentDataOperation: java.lang.String[] queryData(android.net.Uri,int)>
+    <com.sensorsdata.analytics.android.sdk.data.adapter.DbAdapter: java.lang.String getRemoteConfig()>
+    <com.sensorsdata.analytics.android.sdk.data.adapter.DbAdapter: java.lang.String getRemoteConfig()>
+    <com.sensorsdata.analytics.android.sdk.remote.SensorsDataRemoteManager: void applySDKConfigFromCache()>
+    <com.sensorsdata.analytics.android.sdk.remote.BaseSensorsDataSDKRemoteManager: com.sensorsdata.analytics.android.sdk.remote.SensorsDataSDKRemoteConfig toSDKRemoteConfig(java.lang.String)>
+    <com.sensorsdata.analytics.android.sdk.remote.BaseSensorsDataSDKRemoteManager: com.sensorsdata.analytics.android.sdk.remote.SensorsDataSDKRemoteConfig toSDKRemoteConfig(java.lang.String)>
+    <com.sensorsdata.analytics.android.sdk.remote.BaseSensorsDataSDKRemoteManager: com.sensorsdata.analytics.android.sdk.remote.SensorsDataSDKRemoteConfig toSDKRemoteConfig(java.lang.String)>
+    <com.sensorsdata.analytics.android.sdk.remote.BaseSensorsDataSDKRemoteManager: com.sensorsdata.analytics.android.sdk.remote.SensorsDataSDKRemoteConfig toSDKRemoteConfig(java.lang.String)>
+    <com.sensorsdata.analytics.android.sdk.remote.BaseSensorsDataSDKRemoteManager: com.sensorsdata.analytics.android.sdk.remote.SensorsDataSDKRemoteConfig toSDKRemoteConfig(java.lang.String)>
+    <com.sensorsdata.analytics.android.sdk.remote.SensorsDataSDKRemoteConfig: void setAutoTrackMode(int)>
+    <com.sensorsdata.analytics.android.sdk.remote.SensorsDataSDKRemoteConfig: void setAutoTrackMode(int)>
+    <com.sensorsdata.analytics.android.sdk.remote.BaseSensorsDataSDKRemoteManager: com.sensorsdata.analytics.android.sdk.remote.SensorsDataSDKRemoteConfig toSDKRemoteConfig(java.lang.String)>
+    <com.sensorsdata.analytics.android.sdk.remote.SensorsDataRemoteManager: void applySDKConfigFromCache()>
+    <com.sensorsdata.analytics.android.sdk.remote.SensorsDataSDKRemoteConfig: java.lang.String toString()>
+    <com.sensorsdata.analytics.android.sdk.remote.SensorsDataSDKRemoteConfig: java.lang.String toString()>
+    <com.sensorsdata.analytics.android.sdk.remote.SensorsDataSDKRemoteConfig: java.lang.String toString()>
+    <cashdey.O0O000OOO000OOO0OO0: java.lang.String e(java.lang.StringBuilder,int,java.lang.String)>
+    <cashdey.O0O000OOO000OOO0OO0: java.lang.String e(java.lang.StringBuilder,int,java.lang.String)>
+    <com.sensorsdata.analytics.android.sdk.remote.SensorsDataSDKRemoteConfig: java.lang.String toString()>
+    <com.sensorsdata.analytics.android.sdk.remote.SensorsDataRemoteManager: void applySDKConfigFromCache()>
+    <com.sensorsdata.analytics.android.sdk.remote.SensorsDataRemoteManager: void applySDKConfigFromCache()>
+    <com.sensorsdata.analytics.android.sdk.remote.SensorsDataRemoteManager: void applySDKConfigFromCache()>
+    <com.sensorsdata.analytics.android.sdk.SALog: void i(java.lang.String,java.lang.String)>
+    <com.sensorsdata.analytics.android.sdk.SALog: void info(java.lang.String,java.lang.String,java.lang.Throwable)>
+    <com.tencent.mars.xlog.Log: void i(java.lang.String,java.lang.String)>
+    <com.tencent.mars.xlog.Log: void i(java.lang.String,java.lang.String,java.lang.Object[])>
+    <com.tencent.mars.xlog.Log$1: void logI(java.lang.String,java.lang.String,java.lang.String,int,int,long,long,java.lang.String)>
+
+Leak 16:
+  Source: $r2 = virtualinvoke $r1.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>("com.google.android.gms", 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r1, $r2) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <cashdey.kg0: boolean e(android.content.Context)>
+    <cashdey.kg0: boolean e(android.content.Context)>
+    <cashdey.kg0: boolean e(android.content.Context)>
+    <cashdey.kg0: boolean e(android.content.Context)>
+    <cashdey.kg0: boolean e(android.content.Context)>
+    <com.tencent.mars.xlog.Log: void i(java.lang.String,java.lang.String)>
+    <com.tencent.mars.xlog.Log: void i(java.lang.String,java.lang.String,java.lang.Object[])>
+    <com.tencent.mars.xlog.Log$1: void logI(java.lang.String,java.lang.String,java.lang.String,int,int,long,long,java.lang.String)>
+
+Leak 17:
+  Source: $r4 = virtualinvoke $r2.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() (<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>)
+  Sink: staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r1, $r2) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <cashdey.O00OOO0OOO0O000O0O0: java.lang.String f()>
+    <cashdey.O00OOO0OOO0O000O0O0: java.lang.String f()>
+    <cashdey.O00OOO0OOO0O000O0O0: java.lang.String f()>
+    <cashdey.O00OOO0OOO0O000O0O0: java.lang.String f()>
+    <cashdey.O0O000OOO000OOO0OO0: java.lang.StringBuilder o(java.lang.String,java.lang.String)>
+    <cashdey.O0O000OOO000OOO0OO0: java.lang.StringBuilder o(java.lang.String,java.lang.String)>
+    <cashdey.O00OOO0OOO0O000O0O0: java.lang.String f()>
+    <cashdey.O00OOO0OOO0O000O0O0: java.lang.String f()>
+    <cashdey.Zi0: void e(cashdey.Zi0,java.lang.String,java.lang.Double,java.lang.Double,int)>
+    <cashdey.Zi0: void e(cashdey.Zi0,java.lang.String,java.lang.Double,java.lang.Double,int)>
+    <cashdey.Zi0: void e(cashdey.Zi0,java.lang.String,java.lang.Double,java.lang.Double,int)>
+    <com.tencent.mars.xlog.Log: void i(java.lang.String,java.lang.String)>
+    <com.tencent.mars.xlog.Log: void i(java.lang.String,java.lang.String,java.lang.Object[])>
+    <com.tencent.mars.xlog.Log$1: void logI(java.lang.String,java.lang.String,java.lang.String,int,int,long,long,java.lang.String)>
+
+Leak 18:
+  Source: $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r2, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("ComponentCaller_VERBOSE", $r0) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <cashdey.ij0: java.lang.String P(android.content.Context)>
+    <cashdey.ij0: java.lang.String P(android.content.Context)>
+    <cashdey.ij0: java.lang.String P(android.content.Context)>
+    <cashdey.fe0: void initBindingView()>
+    <cashdey.fe0: void initBindingView()>
+    <cashdey.fe0: void initBindingView()>
+    <cashdey.fe0: void initBindingView()>
+    <cashdey.KX: void initView()>
+    <cashdey.JX: void onCreate(android.os.Bundle)>
+    <cashdey.ok0: void <init>(android.app.Activity)>
+    <cashdey.mk0: void <init>(android.app.Activity)>
+    <cashdey.mk0: void <init>(android.app.Activity)>
+    <cashdey.ok0: void <init>(android.app.Activity)>
+    <cashdey.JX: void onCreate(android.os.Bundle)>
+    <cashdey.JX: void onCreate(android.os.Bundle)>
+    <cashdey.KX: void initView()>
+    <cashdey.Rd0: void initBindingView()>
+    <cashdey.KX: void initView()>
+    <cashdey.JX: void onCreate(android.os.Bundle)>
+    <cashdey.KX: void initData()>
+    <cashdey.Rd0: void initBindingData()>
+    <cashdey.Rd0$o: void <init>(cashdey.Rd0)>
+    <cashdey.Rd0$o: void <init>(cashdey.Rd0)>
+    <cashdey.Rd0: void initBindingData()>
+    <com.billy.cc.core.component.CC: java.lang.String callAsyncCallbackOnMainThread(com.billy.cc.core.component.IComponentCallback)>
+    <com.billy.cc.core.component.CC: java.lang.String processCallAsync(com.billy.cc.core.component.IComponentCallback)>
+    <com.billy.cc.core.component.CC: java.lang.String processCallAsync(com.billy.cc.core.component.IComponentCallback)>
+    <com.billy.cc.core.component.CC: java.lang.String processCallAsync(com.billy.cc.core.component.IComponentCallback)>
+    <com.billy.cc.core.component.CC: java.lang.String processCallAsync(com.billy.cc.core.component.IComponentCallback)>
+    <com.billy.cc.core.component.CC: void verboseLog(java.lang.String,java.lang.String,java.lang.Object[])>
+    <com.billy.cc.core.component.CC: void verboseLog(java.lang.String,java.lang.String,java.lang.Object[])>
+    <com.billy.cc.core.component.CC: void verboseLog(java.lang.String,java.lang.String,java.lang.Object[])>
+
+Leak 19:
+  Source: $f0 = virtualinvoke $r1.<android.location.Location: float getBearing()>() (<android.location.Location: float getBearing()>)
+  Sink: virtualinvoke $r2.<java.util.zip.GZIPOutputStream: void write(byte[])>($r0) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <c.t.m.g.cu: java.lang.String a(c.t.m.g.cx,android.location.Location,java.util.List,java.util.List)>
+    <c.t.m.g.cu: java.lang.String a(c.t.m.g.cx,android.location.Location,java.util.List,java.util.List)>
+    <c.t.m.g.cu: java.lang.String a(c.t.m.g.cx,android.location.Location,java.util.List,java.util.List)>
+    <c.t.m.g.cu: java.lang.String a(c.t.m.g.cx,android.location.Location,java.util.List,java.util.List)>
+    <c.t.m.g.cu: java.lang.String a(c.t.m.g.cx,android.location.Location,java.util.List,java.util.List)>
+    <c.t.m.g.cu: java.lang.String a(c.t.m.g.cx,android.location.Location,java.util.List,java.util.List)>
+    <c.t.m.g.cq$a: void handleMessage(android.os.Message)>
+    <c.t.m.g.cq$a: void handleMessage(android.os.Message)>
+    <c.t.m.g.cq$a: void handleMessage(android.os.Message)>
+    <c.t.m.g.co: boolean a(android.os.Handler,android.os.Message,long)>
+    <c.t.m.g.co: boolean a(android.os.Handler,int,long)>
+    <c.t.m.g.cq$a: void handleMessage(android.os.Message)>
+    <c.t.m.g.cq: android.os.Handler a(c.t.m.g.cq)>
+    <c.t.m.g.cq: android.os.Handler a(c.t.m.g.cq)>
+    <c.t.m.g.cq$a: void handleMessage(android.os.Message)>
+    <c.t.m.g.cq: int n(c.t.m.g.cq)>
+    <c.t.m.g.cq$a: void handleMessage(android.os.Message)>
+    <c.t.m.g.cq$a: void handleMessage(android.os.Message)>
+    <c.t.m.g.cq$a: void b()>
+    <c.t.m.g.cq$a: void b()>
+    <c.t.m.g.cq$a: void b()>
+    <c.t.m.g.cv: byte[] a(java.lang.String)>
+    <c.t.m.g.cv: byte[] a(java.lang.String)>
+    <c.t.m.g.co: byte[] b(byte[])>
+
+Leak 20:
+  Source: $r0 = virtualinvoke $r5.<android.telephony.TelephonyManager: java.lang.String getLine1Number()>() (<android.telephony.TelephonyManager: java.lang.String getLine1Number()>)
+  Sink: virtualinvoke $r2.<java.util.zip.GZIPOutputStream: void write(byte[])>($r0) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <c.t.m.g.dq: java.lang.String c(android.content.Context)>
+    <c.t.m.g.dq: java.lang.String c(android.content.Context)>
+    <c.t.m.g.do: java.lang.String a(java.lang.String,java.util.regex.Pattern)>
+    <c.t.m.g.dq: java.lang.String c(android.content.Context)>
+    <c.t.m.g.dq: java.lang.String c(android.content.Context)>
+    <c.t.m.g.dq: java.lang.String c(android.content.Context)>
+    <c.t.m.g.dq: java.lang.String c()>
+    <c.t.m.g.cw: java.lang.String d()>
+    <c.t.m.g.cu: java.lang.String a(c.t.m.g.cx,android.location.Location,java.util.List,java.util.List)>
+    <c.t.m.g.cu: java.lang.String a(c.t.m.g.cx,android.location.Location,java.util.List,java.util.List)>
+    <c.t.m.g.cu: java.lang.String a(c.t.m.g.cx,android.location.Location,java.util.List,java.util.List)>
+    <c.t.m.g.cq$a: void handleMessage(android.os.Message)>
+    <c.t.m.g.cq$a: void handleMessage(android.os.Message)>
+    <c.t.m.g.cq$a: void handleMessage(android.os.Message)>
+    <c.t.m.g.co: boolean a(android.os.Handler,android.os.Message,long)>
+    <c.t.m.g.co: boolean a(android.os.Handler,int,long)>
+    <c.t.m.g.cq$a: void handleMessage(android.os.Message)>
+    <c.t.m.g.cq: android.os.Handler a(c.t.m.g.cq)>
+    <c.t.m.g.cq: android.os.Handler a(c.t.m.g.cq)>
+    <c.t.m.g.cq$a: void handleMessage(android.os.Message)>
+    <c.t.m.g.cq: int n(c.t.m.g.cq)>
+    <c.t.m.g.cq$a: void handleMessage(android.os.Message)>
+    <c.t.m.g.cq$a: void handleMessage(android.os.Message)>
+    <c.t.m.g.cq$a: void b()>
+    <c.t.m.g.cq$a: void b()>
+    <c.t.m.g.cq$a: void b()>
+    <c.t.m.g.cv: byte[] a(java.lang.String)>
+    <c.t.m.g.cv: byte[] a(java.lang.String)>
+    <c.t.m.g.co: byte[] b(byte[])>
+
+Leak 21:
+  Source: $r0 = virtualinvoke $r5.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() (<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>)
+  Sink: virtualinvoke $r2.<java.util.zip.GZIPOutputStream: void write(byte[])>($r0) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <c.t.m.g.dq: java.lang.String b(android.content.Context)>
+    <c.t.m.g.dq: java.lang.String b(android.content.Context)>
+    <c.t.m.g.do: java.lang.String a(java.lang.String,java.util.regex.Pattern)>
+    <c.t.m.g.dq: java.lang.String b(android.content.Context)>
+    <c.t.m.g.dq: java.lang.String b(android.content.Context)>
+    <c.t.m.g.dq: java.lang.String b(android.content.Context)>
+    <c.t.m.g.dq: java.lang.String b()>
+    <c.t.m.g.cw: java.lang.String c()>
+    <c.t.m.g.cu: java.lang.String a(c.t.m.g.cx,android.location.Location,java.util.List,java.util.List)>
+    <c.t.m.g.cu: java.lang.String a(c.t.m.g.cx,android.location.Location,java.util.List,java.util.List)>
+    <c.t.m.g.cu: java.lang.String a(c.t.m.g.cx,android.location.Location,java.util.List,java.util.List)>
+    <c.t.m.g.cq$a: void handleMessage(android.os.Message)>
+    <c.t.m.g.cq$a: void handleMessage(android.os.Message)>
+    <c.t.m.g.cq$a: void handleMessage(android.os.Message)>
+    <c.t.m.g.co: boolean a(android.os.Handler,android.os.Message,long)>
+    <c.t.m.g.co: boolean a(android.os.Handler,int,long)>
+    <c.t.m.g.cq$a: void handleMessage(android.os.Message)>
+    <c.t.m.g.cq: android.os.Handler a(c.t.m.g.cq)>
+    <c.t.m.g.cq: android.os.Handler a(c.t.m.g.cq)>
+    <c.t.m.g.cq$a: void handleMessage(android.os.Message)>
+    <c.t.m.g.cq: int n(c.t.m.g.cq)>
+    <c.t.m.g.cq$a: void handleMessage(android.os.Message)>
+    <c.t.m.g.cq$a: void handleMessage(android.os.Message)>
+    <c.t.m.g.cq$a: void b()>
+    <c.t.m.g.cq$a: void b()>
+    <c.t.m.g.cq$a: void b()>
+    <c.t.m.g.cv: byte[] a(java.lang.String)>
+    <c.t.m.g.cv: byte[] a(java.lang.String)>
+    <c.t.m.g.co: byte[] b(byte[])>
+
+Leak 22:
+  Source: $f0 = virtualinvoke $r1.<android.location.Location: float getAccuracy()>() (<android.location.Location: float getAccuracy()>)
+  Sink: virtualinvoke $r2.<java.util.zip.GZIPOutputStream: void write(byte[])>($r0) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <c.t.m.g.cu: java.lang.String a(c.t.m.g.cx,android.location.Location,java.util.List,java.util.List)>
+    <c.t.m.g.cu: java.lang.String a(c.t.m.g.cx,android.location.Location,java.util.List,java.util.List)>
+    <c.t.m.g.cu: java.lang.String a(c.t.m.g.cx,android.location.Location,java.util.List,java.util.List)>
+    <c.t.m.g.cu: java.lang.String a(c.t.m.g.cx,android.location.Location,java.util.List,java.util.List)>
+    <c.t.m.g.cu: java.lang.String a(c.t.m.g.cx,android.location.Location,java.util.List,java.util.List)>
+    <c.t.m.g.cu: java.lang.String a(c.t.m.g.cx,android.location.Location,java.util.List,java.util.List)>
+    <c.t.m.g.cq$a: void handleMessage(android.os.Message)>
+    <c.t.m.g.cq$a: void handleMessage(android.os.Message)>
+    <c.t.m.g.cq$a: void handleMessage(android.os.Message)>
+    <c.t.m.g.co: boolean a(android.os.Handler,android.os.Message,long)>
+    <c.t.m.g.co: boolean a(android.os.Handler,int,long)>
+    <c.t.m.g.cq$a: void handleMessage(android.os.Message)>
+    <c.t.m.g.cq: android.os.Handler a(c.t.m.g.cq)>
+    <c.t.m.g.cq: android.os.Handler a(c.t.m.g.cq)>
+    <c.t.m.g.cq$a: void handleMessage(android.os.Message)>
+    <c.t.m.g.cq: int n(c.t.m.g.cq)>
+    <c.t.m.g.cq$a: void handleMessage(android.os.Message)>
+    <c.t.m.g.cq$a: void handleMessage(android.os.Message)>
+    <c.t.m.g.cq$a: void b()>
+    <c.t.m.g.cq$a: void b()>
+    <c.t.m.g.cq$a: void b()>
+    <c.t.m.g.cv: byte[] a(java.lang.String)>
+    <c.t.m.g.cv: byte[] a(java.lang.String)>
+    <c.t.m.g.co: byte[] b(byte[])>
+
+Leak 23:
+  Source: $r7 = virtualinvoke $r5.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r6, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r21.<java.io.OutputStream: void write(byte[])>($r13) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.appsflyer.internal.AFb1fSDK: java.lang.String AFKeystoreWrapper(java.lang.String)>
+    <com.appsflyer.internal.AFb1fSDK: java.lang.String AFKeystoreWrapper(java.lang.String)>
+    <com.appsflyer.internal.AFb1fSDK: java.lang.String AFKeystoreWrapper(java.lang.String)>
+    <com.appsflyer.internal.AFb1fSDK: java.lang.String AFKeystoreWrapper(java.lang.String)>
+    <com.appsflyer.internal.AFb1fSDK: java.lang.String AFKeystoreWrapper(java.lang.String)>
+    <com.appsflyer.internal.AFb1fSDK: java.lang.String values()>
+    <com.appsflyer.internal.AFc1cSDK$2: java.lang.String AFInAppEventParameterName()>
+    <com.appsflyer.internal.AFb1zSDK: java.lang.String AFKeystoreWrapper(com.appsflyer.internal.AFb1gSDK,java.lang.String)>
+    <com.appsflyer.internal.AFc1cSDK$2: java.lang.String AFInAppEventParameterName()>
+    <com.appsflyer.internal.AFc1cSDK$2: java.lang.String AFInAppEventParameterName()>
+    <com.appsflyer.internal.AFc1cSDK$2: java.lang.String AFInAppEventParameterName()>
+    <cashdey.Ar0: java.lang.CharSequence Y(java.lang.CharSequence)>
+    <cashdey.Ar0: java.lang.CharSequence Y(java.lang.CharSequence)>
+    <com.appsflyer.internal.AFc1cSDK$2: java.lang.String AFInAppEventParameterName()>
+    <com.appsflyer.internal.AFc1cSDK$2: java.lang.String AFInAppEventParameterName()>
+    <com.appsflyer.internal.AFc1cSDK$2: java.lang.Object invoke()>
+    <cashdey.hq0: java.lang.Object getValue()>
+    <cashdey.hq0: java.lang.Object getValue()>
+    <com.appsflyer.internal.AFc1cSDK: java.lang.String AFInAppEventParameterName()>
+    <com.appsflyer.internal.AFc1cSDK: java.lang.String AFInAppEventParameterName()>
+    <com.appsflyer.internal.AFb1zSDK: java.lang.String getHostPrefix()>
+    <com.appsflyer.internal.AFc1nSDK: boolean values()>
+    <com.appsflyer.internal.AFc1nSDK: boolean values()>
+    <com.appsflyer.internal.AFc1nSDK: boolean values()>
+    <com.appsflyer.internal.AFc1nSDK: boolean values()>
+    <com.appsflyer.internal.AFc1nSDK: boolean values()>
+    <com.appsflyer.internal.AFc1nSDK: boolean values()>
+    <com.appsflyer.internal.AFc1nSDK: boolean values()>
+    <com.appsflyer.internal.AFc1nSDK: boolean values()>
+
+Leak 24:
+  Source: $f0 = virtualinvoke $r1.<android.location.Location: float getBearing()>() (<android.location.Location: float getBearing()>)
+  Sink: virtualinvoke $r2.<java.io.BufferedOutputStream: void write(byte[])>($r4) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <c.t.m.g.cu: java.lang.String a(c.t.m.g.cx,android.location.Location,java.util.List,java.util.List)>
+    <c.t.m.g.cu: java.lang.String a(c.t.m.g.cx,android.location.Location,java.util.List,java.util.List)>
+    <c.t.m.g.cu: java.lang.String a(c.t.m.g.cx,android.location.Location,java.util.List,java.util.List)>
+    <c.t.m.g.cu: java.lang.String a(c.t.m.g.cx,android.location.Location,java.util.List,java.util.List)>
+    <c.t.m.g.cu: java.lang.String a(c.t.m.g.cx,android.location.Location,java.util.List,java.util.List)>
+    <c.t.m.g.cu: java.lang.String a(c.t.m.g.cx,android.location.Location,java.util.List,java.util.List)>
+    <c.t.m.g.cq$a: void handleMessage(android.os.Message)>
+    <c.t.m.g.cq$a: void handleMessage(android.os.Message)>
+    <c.t.m.g.cq$a: void handleMessage(android.os.Message)>
+    <c.t.m.g.cq$a: void b()>
+    <c.t.m.g.cq$a: void b()>
+    <c.t.m.g.cq$a: void b()>
+    <c.t.m.g.cv: byte[] a(java.lang.String)>
+    <c.t.m.g.cv: byte[] a(java.lang.String)>
+    <c.t.m.g.cv: byte[] a(java.lang.String)>
+    <c.t.m.g.cq$a: void b()>
+
+Leak 25:
+  Source: $r0 = virtualinvoke $r5.<android.telephony.TelephonyManager: java.lang.String getLine1Number()>() (<android.telephony.TelephonyManager: java.lang.String getLine1Number()>)
+  Sink: virtualinvoke $r2.<java.io.BufferedOutputStream: void write(byte[])>($r4) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <c.t.m.g.dq: java.lang.String c(android.content.Context)>
+    <c.t.m.g.dq: java.lang.String c(android.content.Context)>
+    <c.t.m.g.do: java.lang.String a(java.lang.String,java.util.regex.Pattern)>
+    <c.t.m.g.dq: java.lang.String c(android.content.Context)>
+    <c.t.m.g.dq: java.lang.String c(android.content.Context)>
+    <c.t.m.g.dq: java.lang.String c(android.content.Context)>
+    <c.t.m.g.dq: java.lang.String c()>
+    <c.t.m.g.cw: java.lang.String d()>
+    <c.t.m.g.cu: java.lang.String a(c.t.m.g.cx,android.location.Location,java.util.List,java.util.List)>
+    <c.t.m.g.cu: java.lang.String a(c.t.m.g.cx,android.location.Location,java.util.List,java.util.List)>
+    <c.t.m.g.cu: java.lang.String a(c.t.m.g.cx,android.location.Location,java.util.List,java.util.List)>
+    <c.t.m.g.cq$a: void handleMessage(android.os.Message)>
+    <c.t.m.g.cq$a: void handleMessage(android.os.Message)>
+    <c.t.m.g.cq$a: void handleMessage(android.os.Message)>
+    <c.t.m.g.cq$a: void b()>
+    <c.t.m.g.cq$a: void b()>
+    <c.t.m.g.cq$a: void b()>
+    <c.t.m.g.cv: byte[] a(java.lang.String)>
+    <c.t.m.g.cv: byte[] a(java.lang.String)>
+    <c.t.m.g.cv: byte[] a(java.lang.String)>
+    <c.t.m.g.cq$a: void b()>
+
+Leak 26:
+  Source: $r0 = virtualinvoke $r5.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() (<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>)
+  Sink: virtualinvoke $r2.<java.io.BufferedOutputStream: void write(byte[])>($r4) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <c.t.m.g.dq: java.lang.String b(android.content.Context)>
+    <c.t.m.g.dq: java.lang.String b(android.content.Context)>
+    <c.t.m.g.do: java.lang.String a(java.lang.String,java.util.regex.Pattern)>
+    <c.t.m.g.dq: java.lang.String b(android.content.Context)>
+    <c.t.m.g.dq: java.lang.String b(android.content.Context)>
+    <c.t.m.g.dq: java.lang.String b(android.content.Context)>
+    <c.t.m.g.dq: java.lang.String b()>
+    <c.t.m.g.cw: java.lang.String c()>
+    <c.t.m.g.cu: java.lang.String a(c.t.m.g.cx,android.location.Location,java.util.List,java.util.List)>
+    <c.t.m.g.cu: java.lang.String a(c.t.m.g.cx,android.location.Location,java.util.List,java.util.List)>
+    <c.t.m.g.cu: java.lang.String a(c.t.m.g.cx,android.location.Location,java.util.List,java.util.List)>
+    <c.t.m.g.cq$a: void handleMessage(android.os.Message)>
+    <c.t.m.g.cq$a: void handleMessage(android.os.Message)>
+    <c.t.m.g.cq$a: void handleMessage(android.os.Message)>
+    <c.t.m.g.cq$a: void b()>
+    <c.t.m.g.cq$a: void b()>
+    <c.t.m.g.cq$a: void b()>
+    <c.t.m.g.cv: byte[] a(java.lang.String)>
+    <c.t.m.g.cv: byte[] a(java.lang.String)>
+    <c.t.m.g.cv: byte[] a(java.lang.String)>
+    <c.t.m.g.cq$a: void b()>
+
+Leak 27:
+  Source: $f0 = virtualinvoke $r1.<android.location.Location: float getAccuracy()>() (<android.location.Location: float getAccuracy()>)
+  Sink: virtualinvoke $r2.<java.io.BufferedOutputStream: void write(byte[])>($r4) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <c.t.m.g.cu: java.lang.String a(c.t.m.g.cx,android.location.Location,java.util.List,java.util.List)>
+    <c.t.m.g.cu: java.lang.String a(c.t.m.g.cx,android.location.Location,java.util.List,java.util.List)>
+    <c.t.m.g.cu: java.lang.String a(c.t.m.g.cx,android.location.Location,java.util.List,java.util.List)>
+    <c.t.m.g.cu: java.lang.String a(c.t.m.g.cx,android.location.Location,java.util.List,java.util.List)>
+    <c.t.m.g.cu: java.lang.String a(c.t.m.g.cx,android.location.Location,java.util.List,java.util.List)>
+    <c.t.m.g.cu: java.lang.String a(c.t.m.g.cx,android.location.Location,java.util.List,java.util.List)>
+    <c.t.m.g.cq$a: void handleMessage(android.os.Message)>
+    <c.t.m.g.cq$a: void handleMessage(android.os.Message)>
+    <c.t.m.g.cq$a: void handleMessage(android.os.Message)>
+    <c.t.m.g.cq$a: void b()>
+    <c.t.m.g.cq$a: void b()>
+    <c.t.m.g.cq$a: void b()>
+    <c.t.m.g.cv: byte[] a(java.lang.String)>
+    <c.t.m.g.cv: byte[] a(java.lang.String)>
+    <c.t.m.g.cv: byte[] a(java.lang.String)>
+    <c.t.m.g.cq$a: void b()>
+
+Leak 28:
+  Source: $r5 = staticinvoke <android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>($r6) (<android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>)
+  Sink: virtualinvoke $r9.<java.io.FileOutputStream: void write(byte[])>($r4) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <cashdey.mm0$e: void run()>
+    <cashdey.mm0$e: void run()>
+    <cashdey.mm0: void e(java.lang.String,java.lang.String,java.io.File)>
+    <cashdey.mm0: void e(java.lang.String,java.lang.String,java.io.File)>
+    <cashdey.mm0: void e(java.lang.String,java.lang.String,java.io.File)>
+
+Leak 29:
+  Source: $r5 = staticinvoke <android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>($r6) (<android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>)
+  Sink: virtualinvoke $r9.<java.io.FileOutputStream: void write(byte[])>($r4) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <cashdey.mm0$e: void run()>
+    <cashdey.mm0$e: void run()>
+    <cashdey.mm0: void e(java.lang.String,java.lang.String,java.io.File)>
+    <cashdey.mm0: void e(java.lang.String,java.lang.String,java.io.File)>
+    <cashdey.mm0: void e(java.lang.String,java.lang.String,java.io.File)>
+
+Leak 30:
+  Source: $r5 = staticinvoke <android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>($r6) (<android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>)
+  Sink: virtualinvoke $r9.<java.io.FileOutputStream: void write(byte[])>($r4) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <cashdey.mm0$e: void run()>
+    <cashdey.mm0$e: void run()>
+    <cashdey.mm0: void e(java.lang.String,java.lang.String,java.io.File)>
+    <cashdey.mm0: void e(java.lang.String,java.lang.String,java.io.File)>
+    <cashdey.mm0: void e(java.lang.String,java.lang.String,java.io.File)>
+
+Leak 31:
+  Source: $r5 = staticinvoke <android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>($r6) (<android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>)
+  Sink: virtualinvoke $r9.<java.io.FileOutputStream: void write(byte[])>($r4) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <cashdey.mm0$e: void run()>
+    <cashdey.mm0$e: void run()>
+    <cashdey.mm0: void e(java.lang.String,java.lang.String,java.io.File)>
+    <cashdey.mm0: void e(java.lang.String,java.lang.String,java.io.File)>
+    <cashdey.mm0: void e(java.lang.String,java.lang.String,java.io.File)>
+
+Leak 32:
+  Source: $r5 = staticinvoke <android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>($r6) (<android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>)
+  Sink: virtualinvoke $r9.<java.io.FileOutputStream: void write(byte[])>($r4) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <cashdey.mm0$e: void run()>
+    <cashdey.mm0$e: void run()>
+    <cashdey.mm0: void e(java.lang.String,java.lang.String,java.io.File)>
+    <cashdey.mm0: void e(java.lang.String,java.lang.String,java.io.File)>
+    <cashdey.mm0: void e(java.lang.String,java.lang.String,java.io.File)>
+
+Leak 33:
+  Source: $r5 = staticinvoke <android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>($r6) (<android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>)
+  Sink: virtualinvoke $r9.<java.io.FileOutputStream: void write(byte[])>($r4) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <cashdey.mm0$e: void run()>
+    <cashdey.mm0$e: void run()>
+    <cashdey.mm0: void e(java.lang.String,java.lang.String,java.io.File)>
+    <cashdey.mm0: void e(java.lang.String,java.lang.String,java.io.File)>
+    <cashdey.mm0: void e(java.lang.String,java.lang.String,java.io.File)>
+
+Leak 34:
+  Source: $r5 = staticinvoke <android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>($r6) (<android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>)
+  Sink: virtualinvoke $r9.<java.io.FileOutputStream: void write(byte[])>($r4) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <cashdey.mm0$e: void run()>
+    <cashdey.mm0$e: void run()>
+    <cashdey.mm0: void e(java.lang.String,java.lang.String,java.io.File)>
+    <cashdey.mm0: void e(java.lang.String,java.lang.String,java.io.File)>
+    <cashdey.mm0: void e(java.lang.String,java.lang.String,java.io.File)>
+
+Leak 35:
+  Source: $r5 = staticinvoke <android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>($r6) (<android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>)
+  Sink: virtualinvoke $r9.<java.io.FileOutputStream: void write(byte[])>($r4) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <cashdey.mm0$e: void run()>
+    <cashdey.mm0$e: void run()>
+    <cashdey.mm0: void e(java.lang.String,java.lang.String,java.io.File)>
+    <cashdey.mm0: void e(java.lang.String,java.lang.String,java.io.File)>
+    <cashdey.mm0: void e(java.lang.String,java.lang.String,java.io.File)>
+
+Leak 36:
+  Source: $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r2, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r3, $r0) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.tencent.bugly.proguard.z: java.util.Map d(android.content.Context)>
+    <com.tencent.bugly.proguard.z: java.util.Map d(android.content.Context)>
+    <com.tencent.bugly.proguard.z: java.util.Map d(android.content.Context)>
+    <com.tencent.bugly.proguard.z: java.util.Map d(android.content.Context)>
+    <com.tencent.bugly.proguard.z: java.util.Map d(android.content.Context)>
+    <com.tencent.bugly.proguard.z: java.util.Map d(android.content.Context)>
+    <com.tencent.bugly.proguard.aa: void <init>(android.content.Context)>
+    <com.tencent.bugly.proguard.aa: void <init>(android.content.Context)>
+    <com.tencent.bugly.proguard.aa: void <init>(android.content.Context)>
+    <com.tencent.bugly.proguard.aa: void b(java.lang.String,java.lang.String)>
+    <com.tencent.bugly.proguard.aa: void b(java.lang.String,java.lang.String)>
+    <com.tencent.bugly.proguard.aa: void b(java.lang.String,java.lang.String)>
+    <com.tencent.bugly.proguard.al: boolean d(java.lang.String,java.lang.Object[])>
+    <com.tencent.bugly.proguard.al: boolean a(int,java.lang.String,java.lang.Object[])>
+    <com.tencent.bugly.proguard.al: boolean a(int,java.lang.String,java.lang.Object[])>
+
+Leak 37:
+  Source: $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r2, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r3, $r0) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.tencent.bugly.proguard.z: java.util.Map d(android.content.Context)>
+    <com.tencent.bugly.proguard.z: java.util.Map d(android.content.Context)>
+    <com.tencent.bugly.proguard.z: java.util.Map d(android.content.Context)>
+    <com.tencent.bugly.proguard.z: java.util.Map d(android.content.Context)>
+    <com.tencent.bugly.proguard.z: java.util.Map d(android.content.Context)>
+    <com.tencent.bugly.proguard.z: java.util.Map d(android.content.Context)>
+    <com.tencent.bugly.proguard.aa: void <init>(android.content.Context)>
+    <com.tencent.bugly.proguard.aa: void <init>(android.content.Context)>
+    <com.tencent.bugly.proguard.aa: void <init>(android.content.Context)>
+    <com.tencent.bugly.proguard.aa: void b(java.lang.String,java.lang.String)>
+    <com.tencent.bugly.proguard.aa: void b(java.lang.String,java.lang.String)>
+    <com.tencent.bugly.proguard.aa: void b(java.lang.String,java.lang.String)>
+    <com.tencent.bugly.proguard.al: boolean d(java.lang.String,java.lang.Object[])>
+    <com.tencent.bugly.proguard.al: boolean a(int,java.lang.String,java.lang.Object[])>
+    <com.tencent.bugly.proguard.al: boolean a(int,java.lang.String,java.lang.Object[])>
+

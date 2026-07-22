@@ -1,0 +1,45 @@
+APK: LuckyLoan (NigeriaDelisted)
+Leak 1:
+  Source: $r10 = virtualinvoke $r8.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r9, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("BaseWebActivity", $r10) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.sx.luckyloan.ui.activity.AboutUsActivity: void O()>
+    <com.sx.luckyloan.ui.activity.AboutUsActivity: void O()>
+    <com.sx.luckyloan.ui.activity.AboutUsActivity: void O()>
+    <com.sx.luckyloan.ui.activity.AboutUsActivity: void O()>
+    <com.sx.luckyloan.base.activity.BaseTitleActivity: void H()>
+    <com.sx.luckyloan.base.activity.BaseVmActivity: void onCreate(android.os.Bundle)>
+    <dummyMainClass: com.sx.luckyloan.ui.activity.LoginVerifyActivity dummyMainMethod_com_sx_luckyloan_ui_activity_LoginVerifyActivity(android.content.Intent)>
+    <com.sx.luckyloan.base.activity.BaseVmActivity: void onCreate(android.os.Bundle)>
+    <com.sx.luckyloan.base.activity.BaseTitleActivity: void H()>
+    <com.sx.luckyloan.base.activity.BaseWebActivity: void O()>
+    <com.sx.luckyloan.base.activity.BaseWebActivity: void O()>
+    <com.sx.luckyloan.base.activity.BaseWebActivity: void O()>
+    <com.sx.luckyloan.base.activity.BaseWebActivity: void O()>
+
+Leak 2:
+  Source: $r16 = virtualinvoke $r15.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r10, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("BaseWebActivity", $r10) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.sx.luckyloan.base.activity.BaseWebActivity: void O()>
+    <com.sx.luckyloan.base.activity.BaseWebActivity: void O()>
+    <com.sx.luckyloan.base.activity.BaseWebActivity: void O()>
+    <com.sx.luckyloan.base.activity.BaseWebActivity: void O()>
+    <com.sx.luckyloan.base.activity.BaseWebActivity: void O()>
+    <com.sx.luckyloan.base.activity.BaseWebActivity: void O()>
+    <com.sx.luckyloan.base.activity.BaseWebActivity: void O()>
+
+Leak 3:
+  Source: $r9 = virtualinvoke $r7.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r8, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("ManifestParser", $r8) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.bumptech.glide.b: void a(android.content.Context,com.bumptech.glide.GeneratedAppGlideModule)>
+    <com.bumptech.glide.b: void a(android.content.Context,com.bumptech.glide.GeneratedAppGlideModule)>
+    <com.bumptech.glide.b: void a(android.content.Context,com.bumptech.glide.GeneratedAppGlideModule)>
+    <com.bumptech.glide.b: void a(android.content.Context,com.bumptech.glide.GeneratedAppGlideModule)>
+    <com.bumptech.glide.b: void a(android.content.Context,com.bumptech.glide.GeneratedAppGlideModule)>
+    <com.bumptech.glide.b: void a(android.content.Context,com.bumptech.glide.GeneratedAppGlideModule)>
+    <com.bumptech.glide.b: void a(android.content.Context,com.bumptech.glide.GeneratedAppGlideModule)>
+    <com.bumptech.glide.b: void a(android.content.Context,com.bumptech.glide.GeneratedAppGlideModule)>
+    <com.bumptech.glide.b: void a(android.content.Context,com.bumptech.glide.GeneratedAppGlideModule)>
+

@@ -1,0 +1,9 @@
+app_name,package,country,permissions
+CreditBook,com.creditbookpk.creditbook,Pakistan,"android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE"
+Qist Bazaar,com.app.qistbazaar4,Pakistan,"android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.ACCESS_FINE_LOCATION"
+Taleem,com.m7.taleem,Pakistan,"android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.ACCESS_FINE_LOCATION"
+MoneyTap,com.mycash.moneytap.app,Pakistan,"android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_SMS"
+Zood,com.zoodel.kz,Pakistan,"android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_MEDIA_IMAGES, android.permission.READ_MEDIA_VIDEO, android.permission.ACCESS_FINE_LOCATION"
+JazzCash,com.techlogix.mobilinkcustomer,Pakistan,"android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_MEDIA_IMAGES, android.permission.QUERY_ALL_PACKAGES, android.permission.ACCESS_FINE_LOCATION"
+Abhi finance,com.abhifinance,Pakistan,"android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE"
+Muawin,com.raqqam.monamitech,Pakistan,"android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_SMS, android.permission.ACCESS_FINE_LOCATION"

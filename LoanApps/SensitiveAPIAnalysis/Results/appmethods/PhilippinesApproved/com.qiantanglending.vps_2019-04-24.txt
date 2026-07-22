@@ -1,0 +1,816 @@
+APK: com.qiantanglending.vps_2019-04-24 (PhilippinesApproved)
+Leak 1:
+  Source: $r3 = virtualinvoke $r1.<android.content.Context: java.io.File getExternalFilesDir(java.lang.String)>($r0) (<android.content.Context: java.io.File getExternalFilesDir(java.lang.String)>)
+  Sink: virtualinvoke $r10.<java.io.OutputStream: void write(byte[])>($r8) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.tencent.smtt.utils.k: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.k: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.k: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.k: java.lang.String a(android.content.Context,java.lang.String,int,boolean)>
+    <com.tencent.smtt.utils.k: java.lang.String a(android.content.Context,int)>
+    <com.tencent.smtt.utils.TbsLogClient: void a()>
+    <com.tencent.smtt.utils.TbsLogClient: void a()>
+    <com.tencent.smtt.utils.TbsLogClient: void a()>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLogToDisk()>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLogToDisk()>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+
+Leak 2:
+  Source: $r4 = staticinvoke <android.os.Environment: java.io.File getExternalStorageDirectory()>() (<android.os.Environment: java.io.File getExternalStorageDirectory()>)
+  Sink: virtualinvoke $r10.<java.io.OutputStream: void write(byte[])>($r8) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.tencent.smtt.utils.k: java.lang.String a(android.content.Context,java.lang.String,int,boolean)>
+    <com.tencent.smtt.utils.k: java.lang.String a(android.content.Context,java.lang.String,int,boolean)>
+    <com.tencent.smtt.utils.k: java.lang.String a(android.content.Context,java.lang.String,int,boolean)>
+    <com.tencent.smtt.utils.k: java.lang.String a(android.content.Context,java.lang.String,int,boolean)>
+    <com.tencent.smtt.utils.k: java.lang.String a(android.content.Context,java.lang.String,int,boolean)>
+    <com.tencent.smtt.utils.k: java.lang.String a(android.content.Context,int)>
+    <com.tencent.smtt.utils.TbsLogClient: void a()>
+    <com.tencent.smtt.utils.TbsLogClient: void a()>
+    <com.tencent.smtt.utils.TbsLogClient: void a()>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLogToDisk()>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLogToDisk()>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+
+Leak 3:
+  Source: $r3 = staticinvoke <android.os.Environment: java.io.File getExternalStorageDirectory()>() (<android.os.Environment: java.io.File getExternalStorageDirectory()>)
+  Sink: virtualinvoke $r10.<java.io.OutputStream: void write(byte[])>($r8) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.tencent.smtt.utils.k: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.k: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.k: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.k: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.k: java.lang.String a(android.content.Context,java.lang.String,int,boolean)>
+    <com.tencent.smtt.utils.k: java.lang.String a(android.content.Context,int)>
+    <com.tencent.smtt.utils.TbsLogClient: void a()>
+    <com.tencent.smtt.utils.TbsLogClient: void a()>
+    <com.tencent.smtt.utils.TbsLogClient: void a()>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLogToDisk()>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLogToDisk()>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+
+Leak 4:
+  Source: $r4 = virtualinvoke $r3.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r2, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r10.<java.io.OutputStream: void write(byte[])>($r8) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.tencent.smtt.utils.b: int b(android.content.Context)>
+    <com.tencent.smtt.utils.b: int b(android.content.Context)>
+    <com.tencent.smtt.utils.b: int b(android.content.Context)>
+    <com.tencent.smtt.sdk.TbsDownloader: boolean a(android.content.Context,boolean,boolean)>
+    <com.tencent.smtt.sdk.TbsDownloader: boolean a(android.content.Context,boolean,boolean)>
+    <com.tencent.smtt.sdk.TbsDownloader: boolean a(android.content.Context,boolean,boolean)>
+    <com.tencent.smtt.utils.TbsLog: void i(java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.TbsLog: void i(java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.TbsLog: void i(java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLog(java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLog(java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLog(java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLogToDisk()>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLogToDisk()>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLogToDisk()>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+    <com.tencent.smtt.utils.LogFileUtils: byte[] encrypt(java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.LogFileUtils: byte[] encrypt(java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.LogFileUtils: byte[] encrypt(java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+
+Leak 5:
+  Source: $r19 = virtualinvoke $r17.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r18, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r10.<java.io.OutputStream: void write(byte[])>($r8) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.tencent.smtt.utils.s: java.lang.String a(android.content.Context,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean)>
+    <com.tencent.smtt.utils.s: java.lang.String a(android.content.Context,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean)>
+    <com.tencent.smtt.utils.s: java.lang.String a(android.content.Context,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean)>
+    <com.tencent.smtt.utils.s: void a(java.lang.StringBuilder,java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.s: void a(java.lang.StringBuilder,java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.s: java.lang.String a(android.content.Context,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean)>
+    <com.tencent.smtt.utils.s: java.lang.String a(android.content.Context,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean)>
+    <com.tencent.smtt.utils.s: java.lang.String a(android.content.Context)>
+    <com.tencent.smtt.utils.s: java.lang.String a(android.content.Context)>
+    <com.tencent.smtt.sdk.a.b: void a(android.content.Context,java.lang.String,java.lang.String,java.lang.String,int,boolean,long)>
+    <com.tencent.smtt.sdk.WebView: void tbsWebviewDestroy(boolean)>
+    <com.tencent.smtt.sdk.WebView: void destroy()>
+    <cn.fraudmetrix.octopus.aspirit.activity.OctopusMainActivity: void passResult(int)>
+    <cn.fraudmetrix.octopus.aspirit.activity.T000000t: void T00000Tt(java.lang.String)>
+    <cn.fraudmetrix.octopus.aspirit.activity.OctopusMainActivity: void passResult(int)>
+    <com.tencent.smtt.sdk.WebView: void destroy()>
+    <com.tencent.smtt.sdk.WebView: void tbsWebviewDestroy(boolean)>
+    <com.tencent.smtt.sdk.a.b: void a(android.content.Context,java.lang.String,java.lang.String,java.lang.String,int,boolean,long)>
+    <com.tencent.smtt.utils.s: java.lang.String a(android.content.Context)>
+    <com.tencent.smtt.utils.s: java.lang.String a(android.content.Context)>
+    <com.tencent.smtt.sdk.a.b: void a(android.content.Context,java.lang.String,java.lang.String,java.lang.String,int,boolean,long)>
+    <com.tencent.smtt.sdk.a.b: void a(android.content.Context,java.lang.String,java.lang.String,java.lang.String,int,boolean,long)>
+    <com.tencent.smtt.sdk.a.b: void a(MTT.ThirdAppInfoNew,android.content.Context)>
+    <com.tencent.smtt.sdk.a.b: void a(android.content.Context,java.lang.String,java.lang.String,java.lang.String,int,boolean,long)>
+    <com.tencent.smtt.sdk.a.b: void a(android.content.Context,java.lang.String,java.lang.String,java.lang.String,int,boolean,long)>
+    <com.tencent.smtt.sdk.a.b: void a(android.content.Context,java.lang.String,java.lang.String,java.lang.String,int,boolean,long)>
+    <com.tencent.smtt.sdk.a.b: void a(MTT.ThirdAppInfoNew,android.content.Context)>
+    <com.tencent.smtt.sdk.a.c: void <init>(java.lang.String,android.content.Context,MTT.ThirdAppInfoNew)>
+    <com.tencent.smtt.sdk.a.c: void <init>(java.lang.String,android.content.Context,MTT.ThirdAppInfoNew)>
+    <com.tencent.smtt.sdk.a.b: void a(MTT.ThirdAppInfoNew,android.content.Context)>
+    <com.tencent.smtt.sdk.a.c: void run()>
+    <com.tencent.smtt.sdk.a.c: void run()>
+    <com.tencent.smtt.sdk.a.b: org.json.JSONObject b(MTT.ThirdAppInfoNew,android.content.Context)>
+    <com.tencent.smtt.sdk.a.b: org.json.JSONObject c(MTT.ThirdAppInfoNew,android.content.Context)>
+    <com.tencent.smtt.sdk.a.b: org.json.JSONObject c(MTT.ThirdAppInfoNew,android.content.Context)>
+    <com.tencent.smtt.sdk.a.b: org.json.JSONObject c(MTT.ThirdAppInfoNew,android.content.Context)>
+    <com.tencent.smtt.sdk.a.b: org.json.JSONObject b(MTT.ThirdAppInfoNew,android.content.Context)>
+    <com.tencent.smtt.sdk.a.c: void run()>
+    <com.tencent.smtt.sdk.a.c: void run()>
+    <com.tencent.smtt.sdk.a.c: void run()>
+    <com.tencent.smtt.sdk.a.c: void run()>
+    <com.tencent.smtt.sdk.a.c: void run()>
+    <com.tencent.smtt.utils.TbsLog: void i(java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.TbsLog: void i(java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.TbsLog: void i(java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLog(java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLog(java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLog(java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLogToDisk()>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLogToDisk()>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLogToDisk()>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+    <com.tencent.smtt.utils.LogFileUtils: byte[] encrypt(java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.LogFileUtils: byte[] encrypt(java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.LogFileUtils: byte[] encrypt(java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+
+Leak 6:
+  Source: $r4 = virtualinvoke $r3.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r2, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r10.<java.io.OutputStream: void write(byte[])>($r8) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.tencent.smtt.utils.b: java.lang.String a(android.content.Context)>
+    <com.tencent.smtt.utils.b: java.lang.String a(android.content.Context)>
+    <com.tencent.smtt.utils.b: java.lang.String a(android.content.Context)>
+    <com.tencent.smtt.sdk.TbsDownloader: boolean a(android.content.Context,boolean,boolean)>
+    <com.tencent.smtt.sdk.TbsDownloader: boolean a(android.content.Context,boolean,boolean)>
+    <com.tencent.smtt.sdk.TbsDownloader: boolean a(android.content.Context,boolean,boolean)>
+    <com.tencent.smtt.utils.TbsLog: void i(java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.TbsLog: void i(java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.TbsLog: void i(java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLog(java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLog(java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLog(java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLogToDisk()>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLogToDisk()>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLogToDisk()>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+    <com.tencent.smtt.utils.LogFileUtils: byte[] encrypt(java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.LogFileUtils: byte[] encrypt(java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.LogFileUtils: byte[] encrypt(java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+
+Leak 7:
+  Source: $r1 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() (<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>)
+  Sink: virtualinvoke $r10.<java.io.OutputStream: void write(byte[])>($r8) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.tencent.smtt.utils.b: java.lang.String d(android.content.Context)>
+    <com.tencent.smtt.utils.b: java.lang.String d(android.content.Context)>
+    <com.tencent.smtt.sdk.a.b: void a(android.content.Context,java.lang.String,java.lang.String,java.lang.String,int,boolean,long)>
+    <com.tencent.smtt.sdk.a.b: void a(android.content.Context,java.lang.String,java.lang.String,java.lang.String,int,boolean,long)>
+    <com.tencent.smtt.sdk.a.b: void a(MTT.ThirdAppInfoNew,android.content.Context)>
+    <com.tencent.smtt.sdk.a.c: void <init>(java.lang.String,android.content.Context,MTT.ThirdAppInfoNew)>
+    <com.tencent.smtt.sdk.a.c: void <init>(java.lang.String,android.content.Context,MTT.ThirdAppInfoNew)>
+    <com.tencent.smtt.sdk.a.b: void a(MTT.ThirdAppInfoNew,android.content.Context)>
+    <com.tencent.smtt.sdk.a.c: void run()>
+    <com.tencent.smtt.sdk.a.c: void run()>
+    <com.tencent.smtt.sdk.a.b: org.json.JSONObject b(MTT.ThirdAppInfoNew,android.content.Context)>
+    <com.tencent.smtt.sdk.a.b: org.json.JSONObject c(MTT.ThirdAppInfoNew,android.content.Context)>
+    <com.tencent.smtt.sdk.a.b: org.json.JSONObject c(MTT.ThirdAppInfoNew,android.content.Context)>
+    <com.tencent.smtt.sdk.a.b: org.json.JSONObject c(MTT.ThirdAppInfoNew,android.content.Context)>
+    <com.tencent.smtt.sdk.a.b: org.json.JSONObject b(MTT.ThirdAppInfoNew,android.content.Context)>
+    <com.tencent.smtt.sdk.a.c: void run()>
+    <com.tencent.smtt.sdk.a.c: void run()>
+    <com.tencent.smtt.sdk.a.c: void run()>
+    <com.tencent.smtt.sdk.a.c: void run()>
+    <com.tencent.smtt.sdk.a.c: void run()>
+    <com.tencent.smtt.utils.TbsLog: void i(java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.TbsLog: void i(java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.TbsLog: void i(java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLog(java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLog(java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLog(java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLogToDisk()>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLogToDisk()>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLogToDisk()>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+    <com.tencent.smtt.utils.LogFileUtils: byte[] encrypt(java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.LogFileUtils: byte[] encrypt(java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.LogFileUtils: byte[] encrypt(java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+
+Leak 8:
+  Source: $r6 = virtualinvoke $r5.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>("com.tencent.portfolio", 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r10.<java.io.OutputStream: void write(byte[])>($r8) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.tencent.smtt.sdk.QbSdk: boolean b(android.content.Context)>
+    <com.tencent.smtt.sdk.QbSdk: boolean b(android.content.Context)>
+    <com.tencent.smtt.sdk.QbSdk: boolean b(android.content.Context)>
+    <com.tencent.smtt.sdk.QbSdk: boolean b(android.content.Context)>
+    <com.tencent.smtt.sdk.QbSdk: boolean b(android.content.Context)>
+    <com.tencent.smtt.utils.TbsLog: void i(java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.TbsLog: void i(java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.TbsLog: void i(java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLog(java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLog(java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLog(java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLogToDisk()>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLogToDisk()>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLogToDisk()>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+    <com.tencent.smtt.utils.LogFileUtils: byte[] encrypt(java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.LogFileUtils: byte[] encrypt(java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.LogFileUtils: byte[] encrypt(java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+
+Leak 9:
+  Source: $r6 = virtualinvoke $r5.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r4, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r10.<java.io.OutputStream: void write(byte[])>($r8) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.tencent.smtt.utils.b: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.b: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.b: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.b: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.b: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.sdk.TbsDownloader: boolean a(android.content.Context,boolean,boolean)>
+    <com.tencent.smtt.sdk.TbsDownloader: boolean a(android.content.Context,boolean,boolean)>
+    <com.tencent.smtt.sdk.TbsDownloader: boolean a(android.content.Context,boolean,boolean)>
+    <com.tencent.smtt.utils.TbsLog: void i(java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.TbsLog: void i(java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.TbsLog: void i(java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLog(java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLog(java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLog(java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLogToDisk()>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLogToDisk()>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLogToDisk()>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+    <com.tencent.smtt.utils.LogFileUtils: byte[] encrypt(java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.LogFileUtils: byte[] encrypt(java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.LogFileUtils: byte[] encrypt(java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+
+Leak 10:
+  Source: $r11 = virtualinvoke $r10.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r5, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r10.<java.io.OutputStream: void write(byte[])>($r8) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.tencent.smtt.sdk.a.b: void a(android.content.Context,java.lang.String,java.lang.String,java.lang.String,int,boolean,long)>
+    <com.tencent.smtt.sdk.a.b: void a(android.content.Context,java.lang.String,java.lang.String,java.lang.String,int,boolean,long)>
+    <com.tencent.smtt.sdk.a.b: void a(android.content.Context,java.lang.String,java.lang.String,java.lang.String,int,boolean,long)>
+    <com.tencent.smtt.sdk.a.b: void a(android.content.Context,java.lang.String,java.lang.String,java.lang.String,int,boolean,long)>
+    <com.tencent.smtt.sdk.a.b: void a(android.content.Context,java.lang.String,java.lang.String,java.lang.String,int,boolean,long)>
+    <com.tencent.smtt.sdk.a.b: void a(MTT.ThirdAppInfoNew,android.content.Context)>
+    <com.tencent.smtt.sdk.a.c: void <init>(java.lang.String,android.content.Context,MTT.ThirdAppInfoNew)>
+    <com.tencent.smtt.sdk.a.c: void <init>(java.lang.String,android.content.Context,MTT.ThirdAppInfoNew)>
+    <com.tencent.smtt.sdk.a.b: void a(MTT.ThirdAppInfoNew,android.content.Context)>
+    <com.tencent.smtt.sdk.a.c: void run()>
+    <com.tencent.smtt.sdk.a.c: void run()>
+    <com.tencent.smtt.sdk.a.b: org.json.JSONObject b(MTT.ThirdAppInfoNew,android.content.Context)>
+    <com.tencent.smtt.sdk.a.b: org.json.JSONObject c(MTT.ThirdAppInfoNew,android.content.Context)>
+    <com.tencent.smtt.sdk.a.b: org.json.JSONObject c(MTT.ThirdAppInfoNew,android.content.Context)>
+    <com.tencent.smtt.sdk.a.b: org.json.JSONObject c(MTT.ThirdAppInfoNew,android.content.Context)>
+    <com.tencent.smtt.sdk.a.b: org.json.JSONObject b(MTT.ThirdAppInfoNew,android.content.Context)>
+    <com.tencent.smtt.sdk.a.c: void run()>
+    <com.tencent.smtt.sdk.a.c: void run()>
+    <com.tencent.smtt.sdk.a.c: void run()>
+    <com.tencent.smtt.sdk.a.c: void run()>
+    <com.tencent.smtt.sdk.a.c: void run()>
+    <com.tencent.smtt.utils.TbsLog: void i(java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.TbsLog: void i(java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.TbsLog: void i(java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLog(java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLog(java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLog(java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLogToDisk()>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLogToDisk()>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLogToDisk()>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+    <com.tencent.smtt.utils.LogFileUtils: byte[] encrypt(java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.LogFileUtils: byte[] encrypt(java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.LogFileUtils: byte[] encrypt(java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+
+Leak 11:
+  Source: $r3 = virtualinvoke $r1.<android.content.Context: java.io.File getExternalFilesDir(java.lang.String)>($r0) (<android.content.Context: java.io.File getExternalFilesDir(java.lang.String)>)
+  Sink: virtualinvoke $r10.<java.io.OutputStream: void write(byte[])>($r0) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.tencent.smtt.utils.k: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.k: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.k: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.k: java.lang.String a(android.content.Context,java.lang.String,int,boolean)>
+    <com.tencent.smtt.utils.k: java.lang.String a(android.content.Context,int)>
+    <com.tencent.smtt.utils.v: java.io.File h()>
+    <com.tencent.smtt.utils.v: java.io.File h()>
+    <com.tencent.smtt.utils.v: java.io.File h()>
+    <com.tencent.smtt.utils.v: java.io.File h()>
+    <com.tencent.smtt.utils.v: java.io.File h()>
+    <com.tencent.smtt.utils.v: java.io.File h()>
+    <com.tencent.smtt.utils.v: java.io.File h()>
+    <com.tencent.smtt.utils.v: java.io.File h()>
+    <com.tencent.smtt.utils.TbsLog: void w(java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.TbsLog: void w(java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.TbsLog: void w(java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLog(java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLog(java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLog(java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLogToDisk()>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLogToDisk()>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLogToDisk()>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+
+Leak 12:
+  Source: $r4 = staticinvoke <android.os.Environment: java.io.File getExternalStorageDirectory()>() (<android.os.Environment: java.io.File getExternalStorageDirectory()>)
+  Sink: virtualinvoke $r10.<java.io.OutputStream: void write(byte[])>($r0) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.tencent.smtt.utils.k: java.lang.String a(android.content.Context,java.lang.String,int,boolean)>
+    <com.tencent.smtt.utils.k: java.lang.String a(android.content.Context,java.lang.String,int,boolean)>
+    <com.tencent.smtt.utils.k: java.lang.String a(android.content.Context,java.lang.String,int,boolean)>
+    <com.tencent.smtt.utils.k: java.lang.String a(android.content.Context,java.lang.String,int,boolean)>
+    <com.tencent.smtt.utils.k: java.lang.String a(android.content.Context,java.lang.String,int,boolean)>
+    <com.tencent.smtt.utils.k: java.lang.String a(android.content.Context,java.lang.String,int,boolean)>
+    <com.tencent.smtt.utils.k: java.lang.String a(android.content.Context,java.lang.String,int,boolean)>
+    <com.tencent.smtt.utils.k: java.lang.String a(android.content.Context,int)>
+    <com.tencent.smtt.utils.v: java.io.File h()>
+    <com.tencent.smtt.utils.v: java.io.File h()>
+    <com.tencent.smtt.utils.v: java.io.File h()>
+    <com.tencent.smtt.utils.v: java.io.File h()>
+    <com.tencent.smtt.utils.v: java.io.File h()>
+    <com.tencent.smtt.utils.v: java.io.File h()>
+    <com.tencent.smtt.utils.v: java.io.File h()>
+    <com.tencent.smtt.utils.v: java.io.File h()>
+    <com.tencent.smtt.utils.TbsLog: void w(java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.TbsLog: void w(java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.TbsLog: void w(java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLog(java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLog(java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLog(java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLogToDisk()>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLogToDisk()>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLogToDisk()>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+
+Leak 13:
+  Source: $r3 = staticinvoke <android.os.Environment: java.io.File getExternalStorageDirectory()>() (<android.os.Environment: java.io.File getExternalStorageDirectory()>)
+  Sink: virtualinvoke $r10.<java.io.OutputStream: void write(byte[])>($r0) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.tencent.smtt.utils.k: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.k: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.k: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.k: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.k: java.lang.String a(android.content.Context,java.lang.String,int,boolean)>
+    <com.tencent.smtt.utils.k: java.lang.String a(android.content.Context,int)>
+    <com.tencent.smtt.utils.v: java.io.File h()>
+    <com.tencent.smtt.utils.v: java.io.File h()>
+    <com.tencent.smtt.utils.v: java.io.File h()>
+    <com.tencent.smtt.utils.v: java.io.File h()>
+    <com.tencent.smtt.utils.v: java.io.File h()>
+    <com.tencent.smtt.utils.v: java.io.File h()>
+    <com.tencent.smtt.utils.v: java.io.File h()>
+    <com.tencent.smtt.utils.v: java.io.File h()>
+    <com.tencent.smtt.utils.TbsLog: void w(java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.TbsLog: void w(java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.TbsLog: void w(java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLog(java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLog(java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLog(java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLogToDisk()>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLogToDisk()>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLogToDisk()>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+
+Leak 14:
+  Source: $r4 = virtualinvoke $r3.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r2, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r10.<java.io.OutputStream: void write(byte[])>($r0) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.tencent.smtt.utils.b: int b(android.content.Context)>
+    <com.tencent.smtt.utils.b: int b(android.content.Context)>
+    <com.tencent.smtt.utils.b: int b(android.content.Context)>
+    <com.tencent.smtt.sdk.TbsDownloader: boolean a(android.content.Context,boolean,boolean)>
+    <com.tencent.smtt.sdk.TbsDownloader: boolean a(android.content.Context,boolean,boolean)>
+    <com.tencent.smtt.sdk.TbsDownloader: boolean a(android.content.Context,boolean,boolean)>
+    <com.tencent.smtt.utils.TbsLog: void i(java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.TbsLog: void i(java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.TbsLog: void i(java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLog(java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLog(java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLog(java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLogToDisk()>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLogToDisk()>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLogToDisk()>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+
+Leak 15:
+  Source: $r19 = virtualinvoke $r17.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r18, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r10.<java.io.OutputStream: void write(byte[])>($r0) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.tencent.smtt.utils.s: java.lang.String a(android.content.Context,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean)>
+    <com.tencent.smtt.utils.s: java.lang.String a(android.content.Context,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean)>
+    <com.tencent.smtt.utils.s: java.lang.String a(android.content.Context,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean)>
+    <com.tencent.smtt.utils.s: void a(java.lang.StringBuilder,java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.s: void a(java.lang.StringBuilder,java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.s: java.lang.String a(android.content.Context,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean)>
+    <com.tencent.smtt.utils.s: java.lang.String a(android.content.Context,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean)>
+    <com.tencent.smtt.utils.s: java.lang.String a(android.content.Context)>
+    <com.tencent.smtt.utils.s: java.lang.String a(android.content.Context)>
+    <com.tencent.smtt.sdk.a.b: void a(android.content.Context,java.lang.String,java.lang.String,java.lang.String,int,boolean,long)>
+    <com.tencent.smtt.sdk.WebView: void tbsWebviewDestroy(boolean)>
+    <com.tencent.smtt.sdk.WebView: void destroy()>
+    <com.tencent.smtt.sdk.WebView: void tbsWebviewDestroy(boolean)>
+    <com.tencent.smtt.sdk.a.b: void a(android.content.Context,java.lang.String,java.lang.String,java.lang.String,int,boolean,long)>
+    <com.tencent.smtt.utils.s: java.lang.String a(android.content.Context)>
+    <com.tencent.smtt.utils.s: java.lang.String a(android.content.Context)>
+    <com.tencent.smtt.sdk.a.b: void a(android.content.Context,java.lang.String,java.lang.String,java.lang.String,int,boolean,long)>
+    <com.tencent.smtt.sdk.a.b: void a(android.content.Context,java.lang.String,java.lang.String,java.lang.String,int,boolean,long)>
+    <com.tencent.smtt.sdk.a.b: void a(MTT.ThirdAppInfoNew,android.content.Context)>
+    <com.tencent.smtt.sdk.a.b: void a(android.content.Context,java.lang.String,java.lang.String,java.lang.String,int,boolean,long)>
+    <com.tencent.smtt.sdk.a.b: void a(android.content.Context,java.lang.String,java.lang.String,java.lang.String,int,boolean,long)>
+    <com.tencent.smtt.sdk.a.b: void a(android.content.Context,java.lang.String,java.lang.String,java.lang.String,int,boolean,long)>
+    <com.tencent.smtt.sdk.a.b: void a(MTT.ThirdAppInfoNew,android.content.Context)>
+    <com.tencent.smtt.sdk.a.c: void <init>(java.lang.String,android.content.Context,MTT.ThirdAppInfoNew)>
+    <com.tencent.smtt.sdk.a.c: void <init>(java.lang.String,android.content.Context,MTT.ThirdAppInfoNew)>
+    <com.tencent.smtt.sdk.a.b: void a(MTT.ThirdAppInfoNew,android.content.Context)>
+    <com.tencent.smtt.sdk.a.c: void run()>
+    <com.tencent.smtt.sdk.a.c: void run()>
+    <com.tencent.smtt.sdk.a.b: org.json.JSONObject b(MTT.ThirdAppInfoNew,android.content.Context)>
+    <com.tencent.smtt.sdk.a.b: org.json.JSONObject c(MTT.ThirdAppInfoNew,android.content.Context)>
+    <com.tencent.smtt.sdk.a.b: org.json.JSONObject c(MTT.ThirdAppInfoNew,android.content.Context)>
+    <com.tencent.smtt.sdk.a.b: org.json.JSONObject c(MTT.ThirdAppInfoNew,android.content.Context)>
+    <com.tencent.smtt.sdk.a.b: org.json.JSONObject b(MTT.ThirdAppInfoNew,android.content.Context)>
+    <com.tencent.smtt.sdk.a.c: void run()>
+    <com.tencent.smtt.sdk.a.c: void run()>
+    <com.tencent.smtt.sdk.a.c: void run()>
+    <com.tencent.smtt.sdk.a.c: void run()>
+    <com.tencent.smtt.sdk.a.c: void run()>
+    <com.tencent.smtt.utils.TbsLog: void i(java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.TbsLog: void i(java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.TbsLog: void i(java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLog(java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLog(java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLog(java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLogToDisk()>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLogToDisk()>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLogToDisk()>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+
+Leak 16:
+  Source: $r4 = virtualinvoke $r3.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r2, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r10.<java.io.OutputStream: void write(byte[])>($r0) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.tencent.smtt.utils.b: java.lang.String a(android.content.Context)>
+    <com.tencent.smtt.utils.b: java.lang.String a(android.content.Context)>
+    <com.tencent.smtt.utils.b: java.lang.String a(android.content.Context)>
+    <com.tencent.smtt.sdk.TbsDownloader: boolean a(android.content.Context,boolean,boolean)>
+    <com.tencent.smtt.sdk.TbsDownloader: boolean a(android.content.Context,boolean,boolean)>
+    <com.tencent.smtt.sdk.TbsDownloader: boolean a(android.content.Context,boolean,boolean)>
+    <com.tencent.smtt.utils.TbsLog: void i(java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.TbsLog: void i(java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.TbsLog: void i(java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLog(java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLog(java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLog(java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLogToDisk()>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLogToDisk()>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLogToDisk()>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+
+Leak 17:
+  Source: $r1 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() (<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>)
+  Sink: virtualinvoke $r10.<java.io.OutputStream: void write(byte[])>($r0) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.tencent.smtt.utils.b: java.lang.String d(android.content.Context)>
+    <com.tencent.smtt.utils.b: java.lang.String d(android.content.Context)>
+    <com.tencent.smtt.sdk.a.b: void a(android.content.Context,java.lang.String,java.lang.String,java.lang.String,int,boolean,long)>
+    <com.tencent.smtt.sdk.a.b: void a(android.content.Context,java.lang.String,java.lang.String,java.lang.String,int,boolean,long)>
+    <com.tencent.smtt.sdk.a.b: void a(MTT.ThirdAppInfoNew,android.content.Context)>
+    <com.tencent.smtt.sdk.a.c: void <init>(java.lang.String,android.content.Context,MTT.ThirdAppInfoNew)>
+    <com.tencent.smtt.sdk.a.c: void <init>(java.lang.String,android.content.Context,MTT.ThirdAppInfoNew)>
+    <com.tencent.smtt.sdk.a.b: void a(MTT.ThirdAppInfoNew,android.content.Context)>
+    <com.tencent.smtt.sdk.a.c: void run()>
+    <com.tencent.smtt.sdk.a.c: void run()>
+    <com.tencent.smtt.sdk.a.b: org.json.JSONObject b(MTT.ThirdAppInfoNew,android.content.Context)>
+    <com.tencent.smtt.sdk.a.b: org.json.JSONObject c(MTT.ThirdAppInfoNew,android.content.Context)>
+    <com.tencent.smtt.sdk.a.b: org.json.JSONObject c(MTT.ThirdAppInfoNew,android.content.Context)>
+    <com.tencent.smtt.sdk.a.b: org.json.JSONObject c(MTT.ThirdAppInfoNew,android.content.Context)>
+    <com.tencent.smtt.sdk.a.b: org.json.JSONObject b(MTT.ThirdAppInfoNew,android.content.Context)>
+    <com.tencent.smtt.sdk.a.c: void run()>
+    <com.tencent.smtt.sdk.a.c: void run()>
+    <com.tencent.smtt.sdk.a.c: void run()>
+    <com.tencent.smtt.sdk.a.c: void run()>
+    <com.tencent.smtt.sdk.a.c: void run()>
+    <com.tencent.smtt.utils.TbsLog: void i(java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.TbsLog: void i(java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.TbsLog: void i(java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLog(java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLog(java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLog(java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLogToDisk()>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLogToDisk()>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLogToDisk()>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+
+Leak 18:
+  Source: $r6 = virtualinvoke $r5.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>("com.tencent.portfolio", 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r10.<java.io.OutputStream: void write(byte[])>($r0) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.tencent.smtt.sdk.QbSdk: boolean b(android.content.Context)>
+    <com.tencent.smtt.sdk.QbSdk: boolean b(android.content.Context)>
+    <com.tencent.smtt.sdk.QbSdk: boolean b(android.content.Context)>
+    <com.tencent.smtt.sdk.QbSdk: boolean b(android.content.Context)>
+    <com.tencent.smtt.sdk.QbSdk: boolean b(android.content.Context)>
+    <com.tencent.smtt.utils.TbsLog: void i(java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.TbsLog: void i(java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.TbsLog: void i(java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLog(java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLog(java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLog(java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLogToDisk()>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLogToDisk()>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLogToDisk()>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+
+Leak 19:
+  Source: $r6 = virtualinvoke $r5.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r4, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r10.<java.io.OutputStream: void write(byte[])>($r0) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.tencent.smtt.utils.b: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.b: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.b: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.b: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.b: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.sdk.TbsDownloader: boolean a(android.content.Context,boolean,boolean)>
+    <com.tencent.smtt.sdk.TbsDownloader: boolean a(android.content.Context,boolean,boolean)>
+    <com.tencent.smtt.sdk.TbsDownloader: boolean a(android.content.Context,boolean,boolean)>
+    <com.tencent.smtt.utils.TbsLog: void i(java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.TbsLog: void i(java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.TbsLog: void i(java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLog(java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLog(java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLog(java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLogToDisk()>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLogToDisk()>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLogToDisk()>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+
+Leak 20:
+  Source: $r11 = virtualinvoke $r10.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r5, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r10.<java.io.OutputStream: void write(byte[])>($r0) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.tencent.smtt.sdk.a.b: void a(android.content.Context,java.lang.String,java.lang.String,java.lang.String,int,boolean,long)>
+    <com.tencent.smtt.sdk.a.b: void a(android.content.Context,java.lang.String,java.lang.String,java.lang.String,int,boolean,long)>
+    <com.tencent.smtt.sdk.a.b: void a(android.content.Context,java.lang.String,java.lang.String,java.lang.String,int,boolean,long)>
+    <com.tencent.smtt.sdk.a.b: void a(android.content.Context,java.lang.String,java.lang.String,java.lang.String,int,boolean,long)>
+    <com.tencent.smtt.sdk.a.b: void a(android.content.Context,java.lang.String,java.lang.String,java.lang.String,int,boolean,long)>
+    <com.tencent.smtt.sdk.a.b: void a(MTT.ThirdAppInfoNew,android.content.Context)>
+    <com.tencent.smtt.sdk.a.c: void <init>(java.lang.String,android.content.Context,MTT.ThirdAppInfoNew)>
+    <com.tencent.smtt.sdk.a.c: void <init>(java.lang.String,android.content.Context,MTT.ThirdAppInfoNew)>
+    <com.tencent.smtt.sdk.a.b: void a(MTT.ThirdAppInfoNew,android.content.Context)>
+    <com.tencent.smtt.sdk.a.c: void run()>
+    <com.tencent.smtt.sdk.a.c: void run()>
+    <com.tencent.smtt.sdk.a.b: org.json.JSONObject b(MTT.ThirdAppInfoNew,android.content.Context)>
+    <com.tencent.smtt.sdk.a.b: org.json.JSONObject c(MTT.ThirdAppInfoNew,android.content.Context)>
+    <com.tencent.smtt.sdk.a.b: org.json.JSONObject c(MTT.ThirdAppInfoNew,android.content.Context)>
+    <com.tencent.smtt.sdk.a.b: org.json.JSONObject c(MTT.ThirdAppInfoNew,android.content.Context)>
+    <com.tencent.smtt.sdk.a.b: org.json.JSONObject b(MTT.ThirdAppInfoNew,android.content.Context)>
+    <com.tencent.smtt.sdk.a.c: void run()>
+    <com.tencent.smtt.sdk.a.c: void run()>
+    <com.tencent.smtt.sdk.a.c: void run()>
+    <com.tencent.smtt.sdk.a.c: void run()>
+    <com.tencent.smtt.sdk.a.c: void run()>
+    <com.tencent.smtt.utils.TbsLog: void i(java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.TbsLog: void i(java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.TbsLog: void i(java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLog(java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLog(java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLog(java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLogToDisk()>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLogToDisk()>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLogToDisk()>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+
+Leak 21:
+  Source: $r6 = virtualinvoke $r4.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r5, $r1, null, null, "datetaken DESC LIMIT 10") (<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>)
+  Sink: $i0 = staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r2, $r1) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.oliveapp.camerasdk.ui.T000TTt0: void run()>
+    <com.oliveapp.camerasdk.ui.T000TTt0: void run()>
+    <com.oliveapp.camerasdk.ui.T000TTt0: void run()>
+    <com.oliveapp.camerasdk.ui.T000TTt0: void run()>
+    <com.oliveapp.camerasdk.ui.T000TTt0: void run()>
+    <db: int T00000t0(java.lang.Object,java.lang.String)>
+    <db: int T00000t0(java.lang.Object,java.lang.String)>
+    <db: int T00000t0(java.lang.Object,java.lang.String)>
+
+Leak 22:
+  Source: $r6 = virtualinvoke $r4.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r5, $r1, null, null, "datetaken DESC LIMIT 10") (<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>)
+  Sink: $i0 = staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r3, $r2) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.oliveapp.camerasdk.ui.T000TTt0: void run()>
+    <com.oliveapp.camerasdk.ui.T000TTt0: void run()>
+    <com.oliveapp.camerasdk.ui.T000TTt0: void run()>
+    <bh: android.graphics.Bitmap T000000t(java.lang.String,int,int)>
+    <bh: android.graphics.Bitmap T000000t(java.lang.String,int,int)>
+    <bh: android.graphics.Bitmap T000000t(java.lang.String,int,int)>
+    <db: int T000000t(java.lang.Object,java.lang.String)>
+    <db: int T000000t(java.lang.Object,java.lang.String)>
+    <db: int T000000t(java.lang.Object,java.lang.String)>
+
+Leak 23:
+  Source: $r0 = staticinvoke <android.os.Environment: java.io.File getExternalStorageDirectory()>() (<android.os.Environment: java.io.File getExternalStorageDirectory()>)
+  Sink: $i0 = staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r3, $r2) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <cy: void <clinit>()>
+    <cy: void <clinit>()>
+    <cy: void <clinit>()>
+    <cy: void <clinit>()>
+    <cr: void <init>()>
+    <cj: void T000000t(android.app.Activity,android.os.Handler,ck,cp,cr)>
+    <cj: void T0000T0t()>
+    <cj: void T0000T0t()>
+    <cj: void T0000T0t()>
+    <cj: void T0000T0t()>
+    <df: void T000000t(java.lang.String,java.lang.String)>
+    <df: void T000000t(java.lang.String,java.lang.String)>
+    <df: void T000000t(java.lang.String,java.lang.String)>
+    <db: int T000000t(java.lang.Object,java.lang.String)>
+    <db: int T000000t(java.lang.Object,java.lang.String)>
+    <db: int T000000t(java.lang.Object,java.lang.String)>
+
+Leak 24:
+  Source: $r4 = virtualinvoke $r3.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r2, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r20.<java.io.OutputStream: void write(byte[])>($r3) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.tencent.smtt.utils.b: int b(android.content.Context)>
+    <com.tencent.smtt.utils.b: int b(android.content.Context)>
+    <com.tencent.smtt.utils.b: int b(android.content.Context)>
+    <com.tencent.smtt.sdk.a.b: void a(android.content.Context,java.lang.String,java.lang.String,java.lang.String,int,boolean,long)>
+    <com.tencent.smtt.sdk.a.b: void a(android.content.Context,java.lang.String,java.lang.String,java.lang.String,int,boolean,long)>
+    <com.tencent.smtt.sdk.a.b: void a(MTT.ThirdAppInfoNew,android.content.Context)>
+    <com.tencent.smtt.sdk.a.c: void <init>(java.lang.String,android.content.Context,MTT.ThirdAppInfoNew)>
+    <com.tencent.smtt.sdk.a.c: void <init>(java.lang.String,android.content.Context,MTT.ThirdAppInfoNew)>
+    <com.tencent.smtt.sdk.a.b: void a(MTT.ThirdAppInfoNew,android.content.Context)>
+    <com.tencent.smtt.sdk.a.c: void run()>
+    <com.tencent.smtt.sdk.a.c: void run()>
+    <com.tencent.smtt.sdk.a.b: org.json.JSONObject b(MTT.ThirdAppInfoNew,android.content.Context)>
+    <com.tencent.smtt.sdk.a.b: org.json.JSONObject c(MTT.ThirdAppInfoNew,android.content.Context)>
+    <com.tencent.smtt.sdk.a.b: org.json.JSONObject c(MTT.ThirdAppInfoNew,android.content.Context)>
+    <com.tencent.smtt.sdk.a.b: org.json.JSONObject c(MTT.ThirdAppInfoNew,android.content.Context)>
+    <com.tencent.smtt.sdk.a.b: org.json.JSONObject b(MTT.ThirdAppInfoNew,android.content.Context)>
+    <com.tencent.smtt.sdk.a.c: void run()>
+    <com.tencent.smtt.sdk.a.c: void run()>
+    <com.tencent.smtt.sdk.a.c: void run()>
+    <com.tencent.smtt.sdk.a.c: void run()>
+
+Leak 25:
+  Source: $r19 = virtualinvoke $r17.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r18, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r20.<java.io.OutputStream: void write(byte[])>($r3) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.tencent.smtt.utils.s: java.lang.String a(android.content.Context,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean)>
+    <com.tencent.smtt.utils.s: java.lang.String a(android.content.Context,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean)>
+    <com.tencent.smtt.utils.s: java.lang.String a(android.content.Context,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean)>
+    <com.tencent.smtt.utils.s: void a(java.lang.StringBuilder,java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.s: void a(java.lang.StringBuilder,java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.s: java.lang.String a(android.content.Context,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean)>
+    <com.tencent.smtt.utils.s: java.lang.String a(android.content.Context,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean)>
+    <com.tencent.smtt.utils.s: java.lang.String a(android.content.Context)>
+    <com.tencent.smtt.utils.s: java.lang.String a(android.content.Context)>
+    <com.tencent.smtt.utils.s: java.lang.String a(android.content.Context)>
+    <com.tencent.smtt.sdk.a.b: void a(android.content.Context,java.lang.String,java.lang.String,java.lang.String,int,boolean,long)>
+    <com.tencent.smtt.sdk.a.b: void a(android.content.Context,java.lang.String,java.lang.String,java.lang.String,int,boolean,long)>
+    <com.tencent.smtt.sdk.a.b: void a(MTT.ThirdAppInfoNew,android.content.Context)>
+    <com.tencent.smtt.sdk.a.b: void a(android.content.Context,java.lang.String,java.lang.String,java.lang.String,int,boolean,long)>
+    <com.tencent.smtt.sdk.a.b: void a(android.content.Context,java.lang.String,java.lang.String,java.lang.String,int,boolean,long)>
+    <com.tencent.smtt.sdk.a.b: void a(android.content.Context,java.lang.String,java.lang.String,java.lang.String,int,boolean,long)>
+    <com.tencent.smtt.sdk.a.b: void a(MTT.ThirdAppInfoNew,android.content.Context)>
+    <com.tencent.smtt.sdk.a.c: void <init>(java.lang.String,android.content.Context,MTT.ThirdAppInfoNew)>
+    <com.tencent.smtt.sdk.a.c: void <init>(java.lang.String,android.content.Context,MTT.ThirdAppInfoNew)>
+    <com.tencent.smtt.sdk.a.b: void a(MTT.ThirdAppInfoNew,android.content.Context)>
+    <com.tencent.smtt.sdk.a.c: void run()>
+    <com.tencent.smtt.sdk.a.c: void run()>
+    <com.tencent.smtt.sdk.a.b: org.json.JSONObject b(MTT.ThirdAppInfoNew,android.content.Context)>
+    <com.tencent.smtt.sdk.a.b: org.json.JSONObject c(MTT.ThirdAppInfoNew,android.content.Context)>
+    <com.tencent.smtt.sdk.a.b: org.json.JSONObject c(MTT.ThirdAppInfoNew,android.content.Context)>
+    <com.tencent.smtt.sdk.a.b: org.json.JSONObject c(MTT.ThirdAppInfoNew,android.content.Context)>
+    <com.tencent.smtt.sdk.a.b: org.json.JSONObject b(MTT.ThirdAppInfoNew,android.content.Context)>
+    <com.tencent.smtt.sdk.a.c: void run()>
+    <com.tencent.smtt.sdk.a.c: void run()>
+    <com.tencent.smtt.sdk.a.c: void run()>
+    <com.tencent.smtt.sdk.a.c: void run()>
+
+Leak 26:
+  Source: $r1 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() (<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>)
+  Sink: virtualinvoke $r20.<java.io.OutputStream: void write(byte[])>($r3) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.tencent.smtt.utils.b: java.lang.String d(android.content.Context)>
+    <com.tencent.smtt.utils.b: java.lang.String d(android.content.Context)>
+    <com.tencent.smtt.sdk.a.b: void a(android.content.Context,java.lang.String,java.lang.String,java.lang.String,int,boolean,long)>
+    <com.tencent.smtt.sdk.a.b: void a(android.content.Context,java.lang.String,java.lang.String,java.lang.String,int,boolean,long)>
+    <com.tencent.smtt.sdk.a.b: void a(MTT.ThirdAppInfoNew,android.content.Context)>
+    <com.tencent.smtt.sdk.a.c: void <init>(java.lang.String,android.content.Context,MTT.ThirdAppInfoNew)>
+    <com.tencent.smtt.sdk.a.c: void <init>(java.lang.String,android.content.Context,MTT.ThirdAppInfoNew)>
+    <com.tencent.smtt.sdk.a.b: void a(MTT.ThirdAppInfoNew,android.content.Context)>
+    <com.tencent.smtt.sdk.a.c: void run()>
+    <com.tencent.smtt.sdk.a.c: void run()>
+    <com.tencent.smtt.sdk.a.b: org.json.JSONObject b(MTT.ThirdAppInfoNew,android.content.Context)>
+    <com.tencent.smtt.sdk.a.b: org.json.JSONObject c(MTT.ThirdAppInfoNew,android.content.Context)>
+    <com.tencent.smtt.sdk.a.b: org.json.JSONObject c(MTT.ThirdAppInfoNew,android.content.Context)>
+    <com.tencent.smtt.sdk.a.b: org.json.JSONObject c(MTT.ThirdAppInfoNew,android.content.Context)>
+    <com.tencent.smtt.sdk.a.b: org.json.JSONObject b(MTT.ThirdAppInfoNew,android.content.Context)>
+    <com.tencent.smtt.sdk.a.c: void run()>
+    <com.tencent.smtt.sdk.a.c: void run()>
+    <com.tencent.smtt.sdk.a.c: void run()>
+    <com.tencent.smtt.sdk.a.c: void run()>
+
+Leak 27:
+  Source: $r6 = virtualinvoke $r5.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r4, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r20.<java.io.OutputStream: void write(byte[])>($r3) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.tencent.smtt.utils.b: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.b: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.b: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.b: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.b: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.sdk.a.b: void a(android.content.Context,java.lang.String,java.lang.String,java.lang.String,int,boolean,long)>
+    <com.tencent.smtt.sdk.a.b: void a(android.content.Context,java.lang.String,java.lang.String,java.lang.String,int,boolean,long)>
+    <com.tencent.smtt.sdk.a.b: void a(MTT.ThirdAppInfoNew,android.content.Context)>
+    <com.tencent.smtt.sdk.a.c: void <init>(java.lang.String,android.content.Context,MTT.ThirdAppInfoNew)>
+    <com.tencent.smtt.sdk.a.c: void <init>(java.lang.String,android.content.Context,MTT.ThirdAppInfoNew)>
+    <com.tencent.smtt.sdk.a.b: void a(MTT.ThirdAppInfoNew,android.content.Context)>
+    <com.tencent.smtt.sdk.a.c: void run()>
+    <com.tencent.smtt.sdk.a.c: void run()>
+    <com.tencent.smtt.sdk.a.b: org.json.JSONObject b(MTT.ThirdAppInfoNew,android.content.Context)>
+    <com.tencent.smtt.sdk.a.b: org.json.JSONObject c(MTT.ThirdAppInfoNew,android.content.Context)>
+    <com.tencent.smtt.sdk.a.b: org.json.JSONObject c(MTT.ThirdAppInfoNew,android.content.Context)>
+    <com.tencent.smtt.sdk.a.b: org.json.JSONObject c(MTT.ThirdAppInfoNew,android.content.Context)>
+    <com.tencent.smtt.sdk.a.b: org.json.JSONObject b(MTT.ThirdAppInfoNew,android.content.Context)>
+    <com.tencent.smtt.sdk.a.c: void run()>
+    <com.tencent.smtt.sdk.a.c: void run()>
+    <com.tencent.smtt.sdk.a.c: void run()>
+    <com.tencent.smtt.sdk.a.c: void run()>
+
+Leak 28:
+  Source: $r11 = virtualinvoke $r10.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r5, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r20.<java.io.OutputStream: void write(byte[])>($r3) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.tencent.smtt.sdk.a.b: void a(android.content.Context,java.lang.String,java.lang.String,java.lang.String,int,boolean,long)>
+    <com.tencent.smtt.sdk.a.b: void a(android.content.Context,java.lang.String,java.lang.String,java.lang.String,int,boolean,long)>
+    <com.tencent.smtt.sdk.a.b: void a(android.content.Context,java.lang.String,java.lang.String,java.lang.String,int,boolean,long)>
+    <com.tencent.smtt.sdk.a.b: void a(android.content.Context,java.lang.String,java.lang.String,java.lang.String,int,boolean,long)>
+    <com.tencent.smtt.sdk.a.b: void a(android.content.Context,java.lang.String,java.lang.String,java.lang.String,int,boolean,long)>
+    <com.tencent.smtt.sdk.a.b: void a(MTT.ThirdAppInfoNew,android.content.Context)>
+    <com.tencent.smtt.sdk.a.c: void <init>(java.lang.String,android.content.Context,MTT.ThirdAppInfoNew)>
+    <com.tencent.smtt.sdk.a.c: void <init>(java.lang.String,android.content.Context,MTT.ThirdAppInfoNew)>
+    <com.tencent.smtt.sdk.a.b: void a(MTT.ThirdAppInfoNew,android.content.Context)>
+    <com.tencent.smtt.sdk.a.c: void run()>
+    <com.tencent.smtt.sdk.a.c: void run()>
+    <com.tencent.smtt.sdk.a.b: org.json.JSONObject b(MTT.ThirdAppInfoNew,android.content.Context)>
+    <com.tencent.smtt.sdk.a.b: org.json.JSONObject c(MTT.ThirdAppInfoNew,android.content.Context)>
+    <com.tencent.smtt.sdk.a.b: org.json.JSONObject c(MTT.ThirdAppInfoNew,android.content.Context)>
+    <com.tencent.smtt.sdk.a.b: org.json.JSONObject c(MTT.ThirdAppInfoNew,android.content.Context)>
+    <com.tencent.smtt.sdk.a.b: org.json.JSONObject b(MTT.ThirdAppInfoNew,android.content.Context)>
+    <com.tencent.smtt.sdk.a.c: void run()>
+    <com.tencent.smtt.sdk.a.c: void run()>
+    <com.tencent.smtt.sdk.a.c: void run()>
+    <com.tencent.smtt.sdk.a.c: void run()>
+
+Leak 29:
+  Source: $r11 = virtualinvoke $r10.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r4, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r5.<java.util.zip.GZIPOutputStream: void write(byte[])>($r2) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <tech.vps.utils.collection.T000000t: org.json.JSONObject T000000t(android.content.Context,java.lang.String,java.lang.String)>
+    <tech.vps.utils.collection.T000000t: org.json.JSONObject T000000t(android.content.Context,java.lang.String,java.lang.String)>
+    <tech.vps.utils.collection.T000000t: org.json.JSONObject T000000t(android.content.Context,java.lang.String,java.lang.String)>
+    <tech.vps.utils.collection.T000000t: org.json.JSONObject T000000t(android.content.Context,java.lang.String,java.lang.String)>
+    <tech.vps.utils.collection.T00000t0$5: java.lang.Boolean T000000t(java.lang.Boolean)>
+    <tech.vps.utils.collection.T00000t0$5: java.lang.Boolean T000000t(java.lang.Boolean)>
+    <tech.vps.utils.collection.T00000Tt: byte[] T000000t(java.lang.String,java.lang.String)>
+    <tech.vps.utils.collection.T00000Tt: byte[] T000000t(java.lang.String,java.lang.String)>
+

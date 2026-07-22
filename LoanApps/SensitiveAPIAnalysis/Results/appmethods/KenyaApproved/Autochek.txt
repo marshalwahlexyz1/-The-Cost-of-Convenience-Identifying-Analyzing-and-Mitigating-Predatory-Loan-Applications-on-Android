@@ -1,0 +1,124 @@
+APK: Autochek (KenyaApproved)
+Leak 1:
+  Source: $r10 = virtualinvoke $r8.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r9, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r5.<java.io.FileOutputStream: void write(byte[])>($r7) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <e0.c0: void o()>
+    <e0.c0: void o()>
+    <e0.c0: void o()>
+    <e0.c0: void o()>
+    <e0.c0: void o()>
+    <e0.c0: void o()>
+    <e0.c0: void o()>
+    <e0.c0: void o()>
+    <e0.c0: void o()>
+    <e0.c0: void o()>
+    <f0.H: void b(android.os.Bundle)>
+    <f0.r: void o(java.lang.String,java.lang.Double,android.os.Bundle)>
+    <f0.r: void m(java.lang.String,java.lang.Double,android.os.Bundle,boolean,java.util.UUID)>
+    <m0.c: void h(android.os.Bundle,java.lang.String)>
+    <m0.c: void h(android.os.Bundle,java.lang.String)>
+    <m0.c: void i(android.os.Bundle)>
+    <kotlin.jvm.internal.r: void e(java.lang.Object,java.lang.String)>
+    <m0.c: void i(android.os.Bundle)>
+    <m0.c: void h(android.os.Bundle,java.lang.String)>
+    <m0.c: void b(android.os.Bundle,java.lang.String)>
+    <m0.c: void b(android.os.Bundle,java.lang.String)>
+    <m0.c: void b(android.os.Bundle,java.lang.String)>
+    <m0.c: void h(android.os.Bundle,java.lang.String)>
+    <f0.r: void m(java.lang.String,java.lang.Double,android.os.Bundle,boolean,java.util.UUID)>
+    <z0.a: void b(java.lang.Throwable,java.lang.Object)>
+    <w0.c: void g()>
+    <w0.c: java.lang.String toString()>
+    <w0.c: org.json.JSONObject e()>
+    <w0.c: org.json.JSONObject d()>
+    <w0.c: org.json.JSONObject d()>
+    <w0.c: org.json.JSONObject d()>
+    <w0.c: org.json.JSONObject e()>
+    <w0.c: java.lang.String toString()>
+    <w0.c: java.lang.String toString()>
+    <w0.c: void g()>
+    <w0.k: void t(java.lang.String,java.lang.String)>
+    <w0.k: void t(java.lang.String,java.lang.String)>
+
+Leak 2:
+  Source: $r4 = virtualinvoke $r3.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r2, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r5.<java.io.FileOutputStream: void write(byte[])>($r7) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <u0.Q: java.lang.String w()>
+    <u0.Q: java.lang.String w()>
+    <u0.Q: java.lang.String w()>
+    <w0.c: void <init>(java.lang.Throwable,w0.c$c)>
+    <w0.c: void <init>(java.lang.Throwable,w0.c$c)>
+    <w0.c: void <init>(java.lang.Throwable,w0.c$c,kotlin.jvm.internal.j)>
+    <w0.c$a: w0.c b(java.lang.Throwable,w0.c$c)>
+    <z0.a: void b(java.lang.Throwable,java.lang.Object)>
+    <w0.c: void g()>
+    <w0.c: java.lang.String toString()>
+    <w0.c: org.json.JSONObject e()>
+    <w0.c: org.json.JSONObject d()>
+    <w0.c: org.json.JSONObject d()>
+    <w0.c: org.json.JSONObject d()>
+    <w0.c: org.json.JSONObject e()>
+    <w0.c: java.lang.String toString()>
+    <w0.c: java.lang.String toString()>
+    <w0.c: void g()>
+    <w0.k: void t(java.lang.String,java.lang.String)>
+    <w0.k: void t(java.lang.String,java.lang.String)>
+
+Leak 3:
+  Source: $r4 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r3, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r5.<java.io.FileOutputStream: void write(byte[])>($r7) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <e0.F: void I(android.content.Context)>
+    <e0.F: void I(android.content.Context)>
+    <e0.F: void I(android.content.Context)>
+    <e0.F: void I(android.content.Context)>
+    <e0.F: void I(android.content.Context)>
+    <e0.F: void I(android.content.Context)>
+    <e0.F: void N(android.content.Context,e0.F$b)>
+    <e0.F: void M(android.content.Context)>
+    <com.facebook.FacebookActivity: void onCreate(android.os.Bundle)>
+    <dummyMainClass: com.facebook.FacebookActivity dummyMainMethod_com_facebook_FacebookActivity(android.content.Intent)>
+    <l0.a$b: void onActivityStopped(android.app.Activity)>
+    <l0.b: void run()>
+    <l0.a$b: void b()>
+    <l0.a$b: void d()>
+    <l0.a: void c(l0.a,android.content.Context,java.util.ArrayList,boolean)>
+    <l0.a: void f(android.content.Context,java.util.ArrayList,boolean)>
+    <n0.i: void f(java.lang.String,java.lang.String,boolean)>
+    <f0.H: void j(java.math.BigDecimal,java.util.Currency,android.os.Bundle)>
+    <f0.r: void r(java.math.BigDecimal,java.util.Currency,android.os.Bundle)>
+    <f0.r: void q(java.math.BigDecimal,java.util.Currency,android.os.Bundle,boolean)>
+    <f0.r: void m(java.lang.String,java.lang.Double,android.os.Bundle,boolean,java.util.UUID)>
+    <m0.c: void h(android.os.Bundle,java.lang.String)>
+    <m0.c: void b(android.os.Bundle,java.lang.String)>
+    <e0.F: java.lang.String m()>
+    <e0.F: java.lang.String m()>
+    <m0.c: void b(android.os.Bundle,java.lang.String)>
+    <m0.c: void b(android.os.Bundle,java.lang.String)>
+    <m0.c: void h(android.os.Bundle,java.lang.String)>
+    <m0.c: void h(android.os.Bundle,java.lang.String)>
+    <m0.c: void i(android.os.Bundle)>
+    <kotlin.jvm.internal.r: void e(java.lang.Object,java.lang.String)>
+    <m0.c: void i(android.os.Bundle)>
+    <m0.c: void h(android.os.Bundle,java.lang.String)>
+    <m0.c: void b(android.os.Bundle,java.lang.String)>
+    <m0.c: void b(android.os.Bundle,java.lang.String)>
+    <m0.c: void b(android.os.Bundle,java.lang.String)>
+    <m0.c: void h(android.os.Bundle,java.lang.String)>
+    <f0.r: void m(java.lang.String,java.lang.Double,android.os.Bundle,boolean,java.util.UUID)>
+    <z0.a: void b(java.lang.Throwable,java.lang.Object)>
+    <w0.c: void g()>
+    <w0.c: java.lang.String toString()>
+    <w0.c: org.json.JSONObject e()>
+    <w0.c: org.json.JSONObject d()>
+    <w0.c: org.json.JSONObject d()>
+    <w0.c: org.json.JSONObject d()>
+    <w0.c: org.json.JSONObject e()>
+    <w0.c: java.lang.String toString()>
+    <w0.c: java.lang.String toString()>
+    <w0.c: void g()>
+    <w0.k: void t(java.lang.String,java.lang.String)>
+    <w0.k: void t(java.lang.String,java.lang.String)>
+

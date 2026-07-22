@@ -1,0 +1,1249 @@
+APK: SureCredit (NigeriaDelisted)
+Leak 1:
+  Source: $r4 = staticinvoke <android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>($r5) (<android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>)
+  Sink: virtualinvoke $r9.<java.io.FileOutputStream: void write(byte[])>($r4) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <surecredit.BE0: java.lang.String 〇(java.lang.String,android.content.Context)>
+    <surecredit.BE0: java.lang.String 〇(java.lang.String,android.content.Context)>
+    <surecredit.BE0: void 〇(java.lang.String,java.lang.String,java.io.File)>
+    <surecredit.BE0: void 〇(java.lang.String,java.lang.String,java.io.File)>
+    <surecredit.BE0: void 〇(java.lang.String,java.lang.String,java.io.File)>
+
+Leak 2:
+  Source: $r4 = staticinvoke <android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>($r5) (<android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>)
+  Sink: virtualinvoke $r9.<java.io.FileOutputStream: void write(byte[])>($r4) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <surecredit.BE0: java.lang.String 〇(java.lang.String,android.content.Context)>
+    <surecredit.BE0: java.lang.String 〇(java.lang.String,android.content.Context)>
+    <surecredit.BE0: void 〇(java.lang.String,java.lang.String,java.io.File)>
+    <surecredit.BE0: void 〇(java.lang.String,java.lang.String,java.io.File)>
+    <surecredit.BE0: void 〇(java.lang.String,java.lang.String,java.io.File)>
+
+Leak 3:
+  Source: $r4 = staticinvoke <android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>($r5) (<android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>)
+  Sink: virtualinvoke $r9.<java.io.FileOutputStream: void write(byte[])>($r4) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <surecredit.BE0: java.lang.String 〇(java.lang.String,android.content.Context)>
+    <surecredit.BE0: java.lang.String 〇(java.lang.String,android.content.Context)>
+    <surecredit.BE0: void 〇(java.lang.String,java.lang.String,java.io.File)>
+    <surecredit.BE0: void 〇(java.lang.String,java.lang.String,java.io.File)>
+    <surecredit.BE0: void 〇(java.lang.String,java.lang.String,java.io.File)>
+
+Leak 4:
+  Source: $r4 = staticinvoke <android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>($r5) (<android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>)
+  Sink: virtualinvoke $r9.<java.io.FileOutputStream: void write(byte[])>($r4) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <surecredit.BE0: java.lang.String 〇(java.lang.String,android.content.Context)>
+    <surecredit.BE0: java.lang.String 〇(java.lang.String,android.content.Context)>
+    <surecredit.BE0: void 〇(java.lang.String,java.lang.String,java.io.File)>
+    <surecredit.BE0: void 〇(java.lang.String,java.lang.String,java.io.File)>
+    <surecredit.BE0: void 〇(java.lang.String,java.lang.String,java.io.File)>
+
+Leak 5:
+  Source: $r4 = staticinvoke <android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>($r5) (<android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>)
+  Sink: virtualinvoke $r9.<java.io.FileOutputStream: void write(byte[])>($r4) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <surecredit.BE0: java.lang.String 〇(java.lang.String,android.content.Context)>
+    <surecredit.BE0: java.lang.String 〇(java.lang.String,android.content.Context)>
+    <surecredit.BE0: void 〇(java.lang.String,java.lang.String,java.io.File)>
+    <surecredit.BE0: void 〇(java.lang.String,java.lang.String,java.io.File)>
+    <surecredit.BE0: void 〇(java.lang.String,java.lang.String,java.io.File)>
+
+Leak 6:
+  Source: $r4 = staticinvoke <android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>($r5) (<android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>)
+  Sink: virtualinvoke $r9.<java.io.FileOutputStream: void write(byte[])>($r4) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <surecredit.BE0: java.lang.String 〇(java.lang.String,android.content.Context)>
+    <surecredit.BE0: java.lang.String 〇(java.lang.String,android.content.Context)>
+    <surecredit.BE0: void 〇(java.lang.String,java.lang.String,java.io.File)>
+    <surecredit.BE0: void 〇(java.lang.String,java.lang.String,java.io.File)>
+    <surecredit.BE0: void 〇(java.lang.String,java.lang.String,java.io.File)>
+
+Leak 7:
+  Source: $r4 = staticinvoke <android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>($r5) (<android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>)
+  Sink: virtualinvoke $r9.<java.io.FileOutputStream: void write(byte[])>($r4) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <surecredit.BE0: java.lang.String 〇(java.lang.String,android.content.Context)>
+    <surecredit.BE0: java.lang.String 〇(java.lang.String,android.content.Context)>
+    <surecredit.BE0: void 〇(java.lang.String,java.lang.String,java.io.File)>
+    <surecredit.BE0: void 〇(java.lang.String,java.lang.String,java.io.File)>
+    <surecredit.BE0: void 〇(java.lang.String,java.lang.String,java.io.File)>
+
+Leak 8:
+  Source: $r4 = staticinvoke <android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>($r5) (<android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>)
+  Sink: virtualinvoke $r9.<java.io.FileOutputStream: void write(byte[])>($r4) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <surecredit.BE0: java.lang.String 〇(java.lang.String,android.content.Context)>
+    <surecredit.BE0: java.lang.String 〇(java.lang.String,android.content.Context)>
+    <surecredit.BE0: void 〇(java.lang.String,java.lang.String,java.io.File)>
+    <surecredit.BE0: void 〇(java.lang.String,java.lang.String,java.io.File)>
+    <surecredit.BE0: void 〇(java.lang.String,java.lang.String,java.io.File)>
+
+Leak 9:
+  Source: $f0 = virtualinvoke $r1.<android.location.Location: float getAccuracy()>() (<android.location.Location: float getAccuracy()>)
+  Sink: virtualinvoke $r2.<java.io.BufferedOutputStream: void write(byte[])>($r4) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <c.t.m.g.cu: java.lang.String a(c.t.m.g.cx,android.location.Location,java.util.List,java.util.List)>
+    <c.t.m.g.cu: java.lang.String a(c.t.m.g.cx,android.location.Location,java.util.List,java.util.List)>
+    <c.t.m.g.cu: java.lang.String a(c.t.m.g.cx,android.location.Location,java.util.List,java.util.List)>
+    <c.t.m.g.cu: java.lang.String a(c.t.m.g.cx,android.location.Location,java.util.List,java.util.List)>
+    <c.t.m.g.cu: java.lang.String a(c.t.m.g.cx,android.location.Location,java.util.List,java.util.List)>
+    <c.t.m.g.cu: java.lang.String a(c.t.m.g.cx,android.location.Location,java.util.List,java.util.List)>
+    <c.t.m.g.cq$a: void handleMessage(android.os.Message)>
+    <c.t.m.g.cq$a: void handleMessage(android.os.Message)>
+    <c.t.m.g.cq$a: void handleMessage(android.os.Message)>
+    <c.t.m.g.co: boolean a(android.os.Handler,android.os.Message,long)>
+    <c.t.m.g.co: boolean a(android.os.Handler,int,long)>
+    <c.t.m.g.cq: void a(c.t.m.g.cq,android.os.Handler)>
+    <c.t.m.g.co: boolean a(android.os.Handler,int,long)>
+    <c.t.m.g.co: boolean a(android.os.Handler,android.os.Message,long)>
+    <c.t.m.g.cq$a: void handleMessage(android.os.Message)>
+    <c.t.m.g.cq$a: void b()>
+    <c.t.m.g.cq$a: void b()>
+    <c.t.m.g.cq$a: void b()>
+    <c.t.m.g.cv: byte[] a(java.lang.String)>
+    <c.t.m.g.cv: byte[] a(java.lang.String)>
+    <c.t.m.g.cv: byte[] a(java.lang.String)>
+    <c.t.m.g.cq$a: void b()>
+
+Leak 10:
+  Source: $r0 = virtualinvoke $r5.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() (<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>)
+  Sink: virtualinvoke $r2.<java.io.BufferedOutputStream: void write(byte[])>($r4) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <c.t.m.g.dq: java.lang.String b(android.content.Context)>
+    <c.t.m.g.dq: java.lang.String b(android.content.Context)>
+    <c.t.m.g.do: java.lang.String a(java.lang.String,java.util.regex.Pattern)>
+    <c.t.m.g.dq: java.lang.String b(android.content.Context)>
+    <c.t.m.g.dq: java.lang.String b(android.content.Context)>
+    <c.t.m.g.dq: java.lang.String b(android.content.Context)>
+    <c.t.m.g.dq: java.lang.String b()>
+    <c.t.m.g.cw: java.lang.String c()>
+    <c.t.m.g.cu: java.lang.String a(c.t.m.g.cx,android.location.Location,java.util.List,java.util.List)>
+    <c.t.m.g.cu: java.lang.String a(c.t.m.g.cx,android.location.Location,java.util.List,java.util.List)>
+    <c.t.m.g.cu: java.lang.String a(c.t.m.g.cx,android.location.Location,java.util.List,java.util.List)>
+    <c.t.m.g.cq$a: void handleMessage(android.os.Message)>
+    <c.t.m.g.cq$a: void handleMessage(android.os.Message)>
+    <c.t.m.g.cq$a: void handleMessage(android.os.Message)>
+    <c.t.m.g.cq$a: void b()>
+    <c.t.m.g.cq$a: void b()>
+    <c.t.m.g.cq$a: void b()>
+    <c.t.m.g.cv: byte[] a(java.lang.String)>
+    <c.t.m.g.cv: byte[] a(java.lang.String)>
+    <c.t.m.g.cv: byte[] a(java.lang.String)>
+    <c.t.m.g.cq$a: void b()>
+
+Leak 11:
+  Source: $r0 = virtualinvoke $r5.<android.telephony.TelephonyManager: java.lang.String getLine1Number()>() (<android.telephony.TelephonyManager: java.lang.String getLine1Number()>)
+  Sink: virtualinvoke $r2.<java.io.BufferedOutputStream: void write(byte[])>($r4) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <c.t.m.g.dq: java.lang.String c(android.content.Context)>
+    <c.t.m.g.dq: java.lang.String c(android.content.Context)>
+    <c.t.m.g.do: java.lang.String a(java.lang.String,java.util.regex.Pattern)>
+    <c.t.m.g.dq: java.lang.String c(android.content.Context)>
+    <c.t.m.g.dq: java.lang.String c(android.content.Context)>
+    <c.t.m.g.dq: java.lang.String c(android.content.Context)>
+    <c.t.m.g.dq: java.lang.String c()>
+    <c.t.m.g.cw: java.lang.String d()>
+    <c.t.m.g.cu: java.lang.String a(c.t.m.g.cx,android.location.Location,java.util.List,java.util.List)>
+    <c.t.m.g.cu: java.lang.String a(c.t.m.g.cx,android.location.Location,java.util.List,java.util.List)>
+    <c.t.m.g.cu: java.lang.String a(c.t.m.g.cx,android.location.Location,java.util.List,java.util.List)>
+    <c.t.m.g.cq$a: void handleMessage(android.os.Message)>
+    <c.t.m.g.cq$a: void handleMessage(android.os.Message)>
+    <c.t.m.g.cq$a: void handleMessage(android.os.Message)>
+    <c.t.m.g.cq$a: void b()>
+    <c.t.m.g.cq$a: void b()>
+    <c.t.m.g.cq$a: void b()>
+    <c.t.m.g.cv: byte[] a(java.lang.String)>
+    <c.t.m.g.cv: byte[] a(java.lang.String)>
+    <c.t.m.g.cv: byte[] a(java.lang.String)>
+    <c.t.m.g.cq$a: void b()>
+
+Leak 12:
+  Source: $f0 = virtualinvoke $r1.<android.location.Location: float getBearing()>() (<android.location.Location: float getBearing()>)
+  Sink: virtualinvoke $r2.<java.io.BufferedOutputStream: void write(byte[])>($r4) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <c.t.m.g.cu: java.lang.String a(c.t.m.g.cx,android.location.Location,java.util.List,java.util.List)>
+    <c.t.m.g.cu: java.lang.String a(c.t.m.g.cx,android.location.Location,java.util.List,java.util.List)>
+    <c.t.m.g.cu: java.lang.String a(c.t.m.g.cx,android.location.Location,java.util.List,java.util.List)>
+    <c.t.m.g.cu: java.lang.String a(c.t.m.g.cx,android.location.Location,java.util.List,java.util.List)>
+    <c.t.m.g.cu: java.lang.String a(c.t.m.g.cx,android.location.Location,java.util.List,java.util.List)>
+    <c.t.m.g.cu: java.lang.String a(c.t.m.g.cx,android.location.Location,java.util.List,java.util.List)>
+    <c.t.m.g.cq$a: void handleMessage(android.os.Message)>
+    <c.t.m.g.cq$a: void handleMessage(android.os.Message)>
+    <c.t.m.g.cq$a: void handleMessage(android.os.Message)>
+    <c.t.m.g.co: boolean a(android.os.Handler,android.os.Message,long)>
+    <c.t.m.g.co: boolean a(android.os.Handler,int,long)>
+    <c.t.m.g.cq: void a(c.t.m.g.cq,android.os.Handler)>
+    <c.t.m.g.co: boolean a(android.os.Handler,int,long)>
+    <c.t.m.g.co: boolean a(android.os.Handler,android.os.Message,long)>
+    <c.t.m.g.cq$a: void handleMessage(android.os.Message)>
+    <c.t.m.g.cq$a: void b()>
+    <c.t.m.g.cq$a: void b()>
+    <c.t.m.g.cq$a: void b()>
+    <c.t.m.g.cv: byte[] a(java.lang.String)>
+    <c.t.m.g.cv: byte[] a(java.lang.String)>
+    <c.t.m.g.cv: byte[] a(java.lang.String)>
+    <c.t.m.g.cq$a: void b()>
+
+Leak 13:
+  Source: $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r2, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r3, $r0) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.tencent.bugly.crashreport.common.info.AppInfo: java.util.Map d(android.content.Context)>
+    <com.tencent.bugly.crashreport.common.info.AppInfo: java.util.Map d(android.content.Context)>
+    <com.tencent.bugly.crashreport.common.info.AppInfo: java.util.Map d(android.content.Context)>
+    <com.tencent.bugly.crashreport.common.info.AppInfo: java.util.Map d(android.content.Context)>
+    <com.tencent.bugly.crashreport.common.info.AppInfo: java.util.Map d(android.content.Context)>
+    <com.tencent.bugly.crashreport.common.info.AppInfo: java.util.Map d(android.content.Context)>
+    <com.tencent.bugly.crashreport.common.info.a: void <init>(android.content.Context)>
+    <com.tencent.bugly.crashreport.common.info.a: void <init>(android.content.Context)>
+    <com.tencent.bugly.crashreport.common.info.a: void <init>(android.content.Context)>
+    <com.tencent.bugly.crashreport.common.info.a: void c(java.lang.String,java.lang.String)>
+    <com.tencent.bugly.crashreport.common.info.a: void c(java.lang.String,java.lang.String)>
+    <com.tencent.bugly.crashreport.common.info.a: void c(java.lang.String,java.lang.String)>
+    <com.tencent.bugly.crashreport.common.info.a: void c(java.lang.String,java.lang.String)>
+    <com.tencent.bugly.proguard.x: boolean d(java.lang.String,java.lang.Object[])>
+    <com.tencent.bugly.proguard.x: boolean a(int,java.lang.String,java.lang.Object[])>
+    <com.tencent.bugly.proguard.x: boolean a(int,java.lang.String,java.lang.Object[])>
+
+Leak 14:
+  Source: $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getSimSerialNumber()>() (<android.telephony.TelephonyManager: java.lang.String getSimSerialNumber()>)
+  Sink: staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r3, $r0) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.tencent.bugly.crashreport.common.info.b: java.lang.String b(android.content.Context)>
+    <com.tencent.bugly.crashreport.common.info.b: java.lang.String b(android.content.Context)>
+    <com.tencent.bugly.crashreport.common.info.a: java.lang.String z()>
+    <com.tencent.bugly.crashreport.common.info.a: java.lang.String z()>
+    <com.tencent.bugly.crashreport.common.info.a: java.lang.String z()>
+    <com.tencent.bugly.crashreport.common.info.a: java.lang.String z()>
+    <com.tencent.bugly.proguard.x: boolean a(java.lang.String,java.lang.Object[])>
+    <com.tencent.bugly.proguard.x: boolean a(int,java.lang.String,java.lang.Object[])>
+    <com.tencent.bugly.proguard.x: boolean a(int,java.lang.String,java.lang.Object[])>
+
+Leak 15:
+  Source: $r4 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r3, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r3, $r0) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.tencent.bugly.crashreport.common.info.AppInfo: java.lang.String i(android.content.Context)>
+    <com.tencent.bugly.crashreport.common.info.AppInfo: java.lang.String i(android.content.Context)>
+    <com.tencent.bugly.crashreport.common.info.AppInfo: java.lang.String i(android.content.Context)>
+    <com.tencent.bugly.crashreport.common.info.AppInfo: java.lang.String i(android.content.Context)>
+    <com.tencent.bugly.crashreport.common.info.AppInfo: java.lang.String i(android.content.Context)>
+    <com.tencent.bugly.crashreport.common.info.AppInfo: java.lang.String g(android.content.Context)>
+    <com.tencent.bugly.crashreport.common.info.a: java.lang.String T()>
+    <com.tencent.bugly.crashreport.common.info.a: java.lang.String T()>
+    <com.tencent.bugly.crashreport.common.info.a: java.lang.String T()>
+    <com.tencent.bugly.crashreport.common.info.a: java.lang.String T()>
+    <com.tencent.bugly.crashreport.common.info.a: java.lang.String T()>
+    <com.tencent.bugly.proguard.x: boolean a(java.lang.String,java.lang.Object[])>
+    <com.tencent.bugly.proguard.x: boolean a(int,java.lang.String,java.lang.Object[])>
+
+Leak 16:
+  Source: $r8 = virtualinvoke $r6.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r7, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("ManifestParser", $r7) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <surecredit.Bl: void 〇(android.content.Context,com.bumptech.glide.GeneratedAppGlideModule)>
+    <surecredit.Bl: void 〇(android.content.Context,com.bumptech.glide.GeneratedAppGlideModule)>
+    <surecredit.Bl: void 〇(android.content.Context,com.bumptech.glide.GeneratedAppGlideModule)>
+    <surecredit.Bl: void 〇(android.content.Context,com.bumptech.glide.GeneratedAppGlideModule)>
+    <surecredit.Bl: void 〇(android.content.Context,com.bumptech.glide.GeneratedAppGlideModule)>
+    <surecredit.Bl: void 〇(android.content.Context,com.bumptech.glide.GeneratedAppGlideModule)>
+    <surecredit.Bl: void 〇(android.content.Context,com.bumptech.glide.GeneratedAppGlideModule)>
+    <surecredit.Bl: void 〇(android.content.Context,com.bumptech.glide.GeneratedAppGlideModule)>
+    <surecredit.Bl: void 〇(android.content.Context,com.bumptech.glide.GeneratedAppGlideModule)>
+
+Leak 17:
+  Source: $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r2, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r3, $r0) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.tencent.bugly.crashreport.common.info.AppInfo: java.util.Map d(android.content.Context)>
+    <com.tencent.bugly.crashreport.common.info.AppInfo: java.util.Map d(android.content.Context)>
+    <com.tencent.bugly.crashreport.common.info.AppInfo: java.util.Map d(android.content.Context)>
+    <com.tencent.bugly.crashreport.common.info.AppInfo: java.util.Map d(android.content.Context)>
+    <com.tencent.bugly.crashreport.common.info.AppInfo: java.util.Map d(android.content.Context)>
+    <com.tencent.bugly.crashreport.common.info.AppInfo: java.util.Map d(android.content.Context)>
+    <com.tencent.bugly.crashreport.common.info.a: void <init>(android.content.Context)>
+    <com.tencent.bugly.crashreport.common.info.a: void <init>(android.content.Context)>
+    <com.tencent.bugly.crashreport.common.info.a: void <init>(android.content.Context)>
+    <com.tencent.bugly.crashreport.common.info.a: void c(java.lang.String,java.lang.String)>
+    <com.tencent.bugly.crashreport.common.info.a: void c(java.lang.String,java.lang.String)>
+    <com.tencent.bugly.crashreport.common.info.a: void c(java.lang.String,java.lang.String)>
+    <com.tencent.bugly.crashreport.common.info.a: void c(java.lang.String,java.lang.String)>
+    <com.tencent.bugly.proguard.x: boolean d(java.lang.String,java.lang.Object[])>
+    <com.tencent.bugly.proguard.x: boolean a(int,java.lang.String,java.lang.Object[])>
+    <com.tencent.bugly.proguard.x: boolean a(int,java.lang.String,java.lang.Object[])>
+
+Leak 18:
+  Source: $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getSimSerialNumber()>() (<android.telephony.TelephonyManager: java.lang.String getSimSerialNumber()>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r3, $r0) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.tencent.bugly.crashreport.common.info.b: java.lang.String b(android.content.Context)>
+    <com.tencent.bugly.crashreport.common.info.b: java.lang.String b(android.content.Context)>
+    <com.tencent.bugly.crashreport.common.info.a: java.lang.String z()>
+    <com.tencent.bugly.crashreport.common.info.a: java.lang.String z()>
+    <com.tencent.bugly.crashreport.common.info.a: java.lang.String z()>
+    <com.tencent.bugly.crashreport.common.info.a: java.lang.String z()>
+    <com.tencent.bugly.proguard.x: boolean a(java.lang.String,java.lang.Object[])>
+    <com.tencent.bugly.proguard.x: boolean a(int,java.lang.String,java.lang.Object[])>
+    <com.tencent.bugly.proguard.x: boolean a(int,java.lang.String,java.lang.Object[])>
+
+Leak 19:
+  Source: $r4 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r3, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r3, $r0) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.tencent.bugly.crashreport.common.info.AppInfo: java.lang.String i(android.content.Context)>
+    <com.tencent.bugly.crashreport.common.info.AppInfo: java.lang.String i(android.content.Context)>
+    <com.tencent.bugly.crashreport.common.info.AppInfo: java.lang.String i(android.content.Context)>
+    <com.tencent.bugly.crashreport.common.info.AppInfo: java.lang.String i(android.content.Context)>
+    <com.tencent.bugly.crashreport.common.info.AppInfo: java.lang.String i(android.content.Context)>
+    <com.tencent.bugly.crashreport.common.info.AppInfo: java.lang.String g(android.content.Context)>
+    <com.tencent.bugly.crashreport.common.info.a: java.lang.String T()>
+    <com.tencent.bugly.crashreport.common.info.a: java.lang.String T()>
+    <com.tencent.bugly.crashreport.common.info.a: java.lang.String T()>
+    <com.tencent.bugly.crashreport.common.info.a: java.lang.String T()>
+    <com.tencent.bugly.crashreport.common.info.a: java.lang.String T()>
+    <com.tencent.bugly.proguard.x: boolean a(java.lang.String,java.lang.Object[])>
+    <com.tencent.bugly.proguard.x: boolean a(int,java.lang.String,java.lang.Object[])>
+
+Leak 20:
+  Source: $r24 = virtualinvoke $r23.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r10, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r16.<java.io.OutputStream: void write(byte[])>($r7) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ı(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ı(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ı(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ı(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ı(com.appsflyer.AFEvent)>
+    <com.appsflyer.internal.ae: java.lang.String ι(java.lang.ref.WeakReference)>
+    <com.appsflyer.internal.ae: java.lang.String ι(java.lang.ref.WeakReference)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ı(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: void Ι(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: void ɩ(com.appsflyer.AppsFlyerLibCore,java.util.Map)>
+    <com.appsflyer.AppsFlyerLibCore$4: void Ι(java.util.Map)>
+    <com.appsflyer.internal.g: void onInstallReferrerSetupFinished(int)>
+    <surecredit.al: void 〇(surecredit.bl)>
+    <surecredit.cg0: void Rc()>
+    <surecredit.cg0: void onCreate()>
+    <dummyMainClass: void dummyMainMethod(java.lang.String[])>
+    <dummyMainClass: surecredit.rB0 dummyMainMethod_surecredit_rB0(android.content.Intent)>
+    <surecredit.rB0: void onDestroy()>
+    <surecredit.bE0: void o()>
+    <com.tencent.map.geolocation.TencentLocationManager: void removeUpdates(com.tencent.map.geolocation.TencentLocationListener)>
+    <c.t.m.g.ec: void b()>
+    <c.t.m.g.ec: void h()>
+    <c.t.m.g.ec$2: void run()>
+    <c.t.m.g.ec: void a(c.t.m.g.ec,android.os.Looper)>
+    <c.t.m.g.ec: void a(android.os.Looper)>
+    <c.t.m.g.ec: void e()>
+    <c.t.m.g.ef: void a(android.os.Handler,boolean)>
+    <c.t.m.g.ef$1: void run()>
+    <c.t.m.g.ep$1: android.os.Bundle a(java.lang.String,byte[])>
+    <c.t.m.g.ep$1: c.t.m.g.f a(c.t.m.g.e)>
+    <c.t.m.g.g: c.t.m.g.f a(c.t.m.g.e)>
+    <c.t.m.g.l: c.t.m.g.ao a()>
+    <c.t.m.g.cg: void a(int)>
+    <c.t.m.g.ch: void run()>
+    <c.t.m.g.cf: void a(int)>
+    <c.t.m.g.bv: void a(int)>
+    <c.t.m.g.af: void a(java.lang.Runnable,boolean,long)>
+    <java.util.Timer: void schedule(java.util.TimerTask,long)>
+    <com.appsflyer.Foreground$2$3: void run()>
+    <com.appsflyer.AppsFlyerLibCore$1: void ɩ(android.content.Context)>
+    <com.appsflyer.AppsFlyerLibCore: void ǃ(java.lang.ref.WeakReference)>
+    <com.appsflyer.internal.ae: java.lang.String ι(java.lang.ref.WeakReference)>
+    <com.appsflyer.internal.ae: java.lang.String ι(java.lang.ref.WeakReference)>
+    <com.appsflyer.AppsFlyerLibCore: void ǃ(java.lang.ref.WeakReference)>
+    <com.appsflyer.AppsFlyerLibCore: void ǃ(java.lang.ref.WeakReference)>
+    <com.appsflyer.AFEvent: com.appsflyer.AFEvent params(java.util.Map)>
+    <com.appsflyer.AFEvent: com.appsflyer.AFEvent params(java.util.Map)>
+    <com.appsflyer.AppsFlyerLibCore: void ǃ(java.lang.ref.WeakReference)>
+    <com.appsflyer.AppsFlyerLibCore: void ǃ(java.lang.ref.WeakReference)>
+    <com.appsflyer.internal.aa: void <init>(com.appsflyer.internal.model.event.BackgroundEvent)>
+    <com.appsflyer.AFEvent: com.appsflyer.AFEvent weakContext()>
+    <com.appsflyer.internal.aa: void <init>(com.appsflyer.internal.model.event.BackgroundEvent)>
+    <com.appsflyer.internal.aa: void <init>(com.appsflyer.internal.model.event.BackgroundEvent)>
+    <com.appsflyer.internal.aa: void <init>(com.appsflyer.internal.model.event.BackgroundEvent)>
+    <com.appsflyer.AppsFlyerLibCore: void ǃ(java.lang.ref.WeakReference)>
+    <com.appsflyer.AppsFlyerLibCore: void ǃ(java.lang.ref.WeakReference)>
+    <com.appsflyer.internal.aa: void run()>
+    <com.appsflyer.internal.aa: java.net.HttpURLConnection Ι()>
+    <com.appsflyer.internal.aa: java.net.HttpURLConnection Ι()>
+    <com.appsflyer.internal.model.event.BackgroundEvent: java.lang.String body()>
+    <com.appsflyer.AFEvent: java.util.Map params()>
+    <com.appsflyer.AFEvent: java.util.Map params()>
+    <com.appsflyer.internal.model.event.BackgroundEvent: java.lang.String body()>
+    <com.appsflyer.AFHelper: org.json.JSONObject convertToJsonObject(java.util.Map)>
+    <com.appsflyer.AFHelper: org.json.JSONObject convertToJsonObject(java.util.Map)>
+    <com.appsflyer.internal.model.event.BackgroundEvent: java.lang.String body()>
+    <com.appsflyer.internal.model.event.BackgroundEvent: java.lang.String body()>
+    <com.appsflyer.internal.aa: java.net.HttpURLConnection Ι()>
+    <com.appsflyer.internal.aa: java.net.HttpURLConnection Ι()>
+    <com.appsflyer.internal.aa: java.net.HttpURLConnection Ι()>
+
+Leak 21:
+  Source: $d0 = virtualinvoke $r70.<android.location.Location: double getLongitude()>() (<android.location.Location: double getLongitude()>)
+  Sink: virtualinvoke $r16.<java.io.OutputStream: void write(byte[])>($r7) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ı(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ı(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ı(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ı(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ı(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ı(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: void Ι(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: void Ι(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ı(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ı(com.appsflyer.AFEvent)>
+    <com.appsflyer.internal.ae: java.lang.String ι(java.lang.ref.WeakReference)>
+    <com.appsflyer.internal.ae: java.lang.String ι(java.lang.ref.WeakReference)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ı(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: void Ι(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: void ɩ(com.appsflyer.AppsFlyerLibCore,java.util.Map)>
+    <com.appsflyer.AppsFlyerLibCore$4: void Ι(java.util.Map)>
+    <com.appsflyer.internal.g: void onInstallReferrerSetupFinished(int)>
+    <surecredit.al: void 〇(surecredit.bl)>
+    <surecredit.cg0: void Rc()>
+    <surecredit.cg0: void onCreate()>
+    <dummyMainClass: void dummyMainMethod(java.lang.String[])>
+    <dummyMainClass: surecredit.rB0 dummyMainMethod_surecredit_rB0(android.content.Intent)>
+    <surecredit.rB0: void onDestroy()>
+    <surecredit.bE0: void o()>
+    <com.tencent.map.geolocation.TencentLocationManager: void removeUpdates(com.tencent.map.geolocation.TencentLocationListener)>
+    <c.t.m.g.ec: void b()>
+    <c.t.m.g.ec: void h()>
+    <c.t.m.g.ec$2: void run()>
+    <c.t.m.g.ec: void a(c.t.m.g.ec,android.os.Looper)>
+    <c.t.m.g.ec: void a(android.os.Looper)>
+    <c.t.m.g.ec: void e()>
+    <c.t.m.g.ef: void a(android.os.Handler,boolean)>
+    <c.t.m.g.ef$1: void run()>
+    <c.t.m.g.ep$1: android.os.Bundle a(java.lang.String,byte[])>
+    <c.t.m.g.ep$1: c.t.m.g.f a(c.t.m.g.e)>
+    <c.t.m.g.g: c.t.m.g.f a(c.t.m.g.e)>
+    <c.t.m.g.l: c.t.m.g.ao a()>
+    <c.t.m.g.cg: void a(int)>
+    <c.t.m.g.ch: void run()>
+    <c.t.m.g.cf: void a(int)>
+    <c.t.m.g.bv: void a(int)>
+    <c.t.m.g.af: void a(java.lang.Runnable,boolean,long)>
+    <java.util.Timer: void schedule(java.util.TimerTask,long)>
+    <com.appsflyer.Foreground$2$3: void run()>
+    <com.appsflyer.AppsFlyerLibCore$1: void ɩ(android.content.Context)>
+    <com.appsflyer.AppsFlyerLibCore: void ǃ(java.lang.ref.WeakReference)>
+    <com.appsflyer.internal.ae: java.lang.String ι(java.lang.ref.WeakReference)>
+    <com.appsflyer.internal.ae: java.lang.String ι(java.lang.ref.WeakReference)>
+    <com.appsflyer.AppsFlyerLibCore: void ǃ(java.lang.ref.WeakReference)>
+    <com.appsflyer.AppsFlyerLibCore: void ǃ(java.lang.ref.WeakReference)>
+    <com.appsflyer.AFEvent: com.appsflyer.AFEvent params(java.util.Map)>
+    <com.appsflyer.AFEvent: com.appsflyer.AFEvent params(java.util.Map)>
+    <com.appsflyer.AppsFlyerLibCore: void ǃ(java.lang.ref.WeakReference)>
+    <com.appsflyer.AppsFlyerLibCore: void ǃ(java.lang.ref.WeakReference)>
+    <com.appsflyer.internal.aa: void <init>(com.appsflyer.internal.model.event.BackgroundEvent)>
+    <com.appsflyer.AFEvent: com.appsflyer.AFEvent weakContext()>
+    <com.appsflyer.internal.aa: void <init>(com.appsflyer.internal.model.event.BackgroundEvent)>
+    <com.appsflyer.internal.aa: void <init>(com.appsflyer.internal.model.event.BackgroundEvent)>
+    <com.appsflyer.internal.aa: void <init>(com.appsflyer.internal.model.event.BackgroundEvent)>
+    <com.appsflyer.AppsFlyerLibCore: void ǃ(java.lang.ref.WeakReference)>
+    <com.appsflyer.AppsFlyerLibCore: void ǃ(java.lang.ref.WeakReference)>
+    <com.appsflyer.internal.aa: void run()>
+    <com.appsflyer.internal.aa: java.net.HttpURLConnection Ι()>
+    <com.appsflyer.internal.aa: java.net.HttpURLConnection Ι()>
+    <com.appsflyer.internal.model.event.BackgroundEvent: java.lang.String body()>
+    <com.appsflyer.AFEvent: java.util.Map params()>
+    <com.appsflyer.AFEvent: java.util.Map params()>
+    <com.appsflyer.internal.model.event.BackgroundEvent: java.lang.String body()>
+    <com.appsflyer.AFHelper: org.json.JSONObject convertToJsonObject(java.util.Map)>
+    <com.appsflyer.AFHelper: org.json.JSONObject convertToJsonObject(java.util.Map)>
+    <com.appsflyer.internal.model.event.BackgroundEvent: java.lang.String body()>
+    <com.appsflyer.internal.model.event.BackgroundEvent: java.lang.String body()>
+    <com.appsflyer.internal.aa: java.net.HttpURLConnection Ι()>
+    <com.appsflyer.internal.aa: java.net.HttpURLConnection Ι()>
+    <com.appsflyer.internal.aa: java.net.HttpURLConnection Ι()>
+
+Leak 22:
+  Source: $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r2, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r16.<java.io.OutputStream: void write(byte[])>($r7) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.appsflyer.AppsFlyerLibCore: java.lang.String ı(java.lang.String,android.content.pm.PackageManager,java.lang.String)>
+    <com.appsflyer.AppsFlyerLibCore: java.lang.String ı(java.lang.String,android.content.pm.PackageManager,java.lang.String)>
+    <com.appsflyer.AppsFlyerLibCore: java.lang.String ı(java.lang.String,android.content.pm.PackageManager,java.lang.String)>
+    <com.appsflyer.AppsFlyerLibCore: java.lang.String ı(java.lang.String,android.content.pm.PackageManager,java.lang.String)>
+    <com.appsflyer.AppsFlyerLibCore: java.lang.String ı(java.lang.String,android.content.pm.PackageManager,java.lang.String)>
+    <com.appsflyer.AppsFlyerLibCore: java.lang.String getConfiguredChannel(android.content.Context)>
+    <com.appsflyer.AppsFlyerLibCore: void ǃ(java.lang.ref.WeakReference)>
+    <com.appsflyer.AppsFlyerLibCore: void ǃ(java.lang.ref.WeakReference)>
+    <com.appsflyer.AFEvent: com.appsflyer.AFEvent params(java.util.Map)>
+    <com.appsflyer.AFEvent: com.appsflyer.AFEvent params(java.util.Map)>
+    <com.appsflyer.AppsFlyerLibCore: void ǃ(java.lang.ref.WeakReference)>
+    <com.appsflyer.AppsFlyerLibCore: void ǃ(java.lang.ref.WeakReference)>
+    <com.appsflyer.internal.aa: void <init>(com.appsflyer.internal.model.event.BackgroundEvent)>
+    <com.appsflyer.AFEvent: com.appsflyer.AFEvent weakContext()>
+    <com.appsflyer.internal.aa: void <init>(com.appsflyer.internal.model.event.BackgroundEvent)>
+    <com.appsflyer.internal.aa: void <init>(com.appsflyer.internal.model.event.BackgroundEvent)>
+    <com.appsflyer.internal.aa: void <init>(com.appsflyer.internal.model.event.BackgroundEvent)>
+    <com.appsflyer.AppsFlyerLibCore: void ǃ(java.lang.ref.WeakReference)>
+    <com.appsflyer.AppsFlyerLibCore: void ǃ(java.lang.ref.WeakReference)>
+    <com.appsflyer.internal.aa: void run()>
+    <com.appsflyer.internal.aa: java.net.HttpURLConnection Ι()>
+    <com.appsflyer.internal.aa: java.net.HttpURLConnection Ι()>
+    <com.appsflyer.internal.model.event.BackgroundEvent: java.lang.String body()>
+    <com.appsflyer.AFEvent: java.util.Map params()>
+    <com.appsflyer.AFEvent: java.util.Map params()>
+    <com.appsflyer.internal.model.event.BackgroundEvent: java.lang.String body()>
+    <com.appsflyer.AFHelper: org.json.JSONObject convertToJsonObject(java.util.Map)>
+    <com.appsflyer.AFHelper: org.json.JSONObject convertToJsonObject(java.util.Map)>
+    <com.appsflyer.internal.model.event.BackgroundEvent: java.lang.String body()>
+    <com.appsflyer.internal.model.event.BackgroundEvent: java.lang.String body()>
+    <com.appsflyer.internal.aa: java.net.HttpURLConnection Ι()>
+    <com.appsflyer.internal.aa: java.net.HttpURLConnection Ι()>
+    <com.appsflyer.internal.aa: java.net.HttpURLConnection Ι()>
+
+Leak 23:
+  Source: $d0 = virtualinvoke $r70.<android.location.Location: double getLatitude()>() (<android.location.Location: double getLatitude()>)
+  Sink: virtualinvoke $r16.<java.io.OutputStream: void write(byte[])>($r7) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ı(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ı(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ı(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ı(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ı(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ı(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: void Ι(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: void Ι(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ı(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ı(com.appsflyer.AFEvent)>
+    <com.appsflyer.internal.ae: java.lang.String ι(java.lang.ref.WeakReference)>
+    <com.appsflyer.internal.ae: java.lang.String ι(java.lang.ref.WeakReference)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ı(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: void Ι(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: void ɩ(com.appsflyer.AppsFlyerLibCore,java.util.Map)>
+    <com.appsflyer.AppsFlyerLibCore$4: void Ι(java.util.Map)>
+    <com.appsflyer.internal.g: void onInstallReferrerSetupFinished(int)>
+    <surecredit.al: void 〇(surecredit.bl)>
+    <surecredit.cg0: void Rc()>
+    <surecredit.cg0: void onCreate()>
+    <dummyMainClass: void dummyMainMethod(java.lang.String[])>
+    <dummyMainClass: surecredit.rB0 dummyMainMethod_surecredit_rB0(android.content.Intent)>
+    <surecredit.rB0: void onDestroy()>
+    <surecredit.bE0: void o()>
+    <com.tencent.map.geolocation.TencentLocationManager: void removeUpdates(com.tencent.map.geolocation.TencentLocationListener)>
+    <c.t.m.g.ec: void b()>
+    <c.t.m.g.ec: void h()>
+    <c.t.m.g.ec$2: void run()>
+    <c.t.m.g.ec: void a(c.t.m.g.ec,android.os.Looper)>
+    <c.t.m.g.ec: void a(android.os.Looper)>
+    <c.t.m.g.ec: void e()>
+    <c.t.m.g.ef: void a(android.os.Handler,boolean)>
+    <c.t.m.g.ef$1: void run()>
+    <c.t.m.g.ep$1: android.os.Bundle a(java.lang.String,byte[])>
+    <c.t.m.g.ep$1: c.t.m.g.f a(c.t.m.g.e)>
+    <c.t.m.g.g: c.t.m.g.f a(c.t.m.g.e)>
+    <c.t.m.g.l: c.t.m.g.ao a()>
+    <c.t.m.g.cg: void a(int)>
+    <c.t.m.g.ch: void run()>
+    <c.t.m.g.cf: void a(int)>
+    <c.t.m.g.bv: void a(int)>
+    <c.t.m.g.af: void a(java.lang.Runnable,boolean,long)>
+    <java.util.Timer: void schedule(java.util.TimerTask,long)>
+    <com.appsflyer.Foreground$2$3: void run()>
+    <com.appsflyer.AppsFlyerLibCore$1: void ɩ(android.content.Context)>
+    <com.appsflyer.AppsFlyerLibCore: void ǃ(java.lang.ref.WeakReference)>
+    <com.appsflyer.internal.ae: java.lang.String ι(java.lang.ref.WeakReference)>
+    <com.appsflyer.internal.ae: java.lang.String ι(java.lang.ref.WeakReference)>
+    <com.appsflyer.AppsFlyerLibCore: void ǃ(java.lang.ref.WeakReference)>
+    <com.appsflyer.AppsFlyerLibCore: void ǃ(java.lang.ref.WeakReference)>
+    <com.appsflyer.AFEvent: com.appsflyer.AFEvent params(java.util.Map)>
+    <com.appsflyer.AFEvent: com.appsflyer.AFEvent params(java.util.Map)>
+    <com.appsflyer.AppsFlyerLibCore: void ǃ(java.lang.ref.WeakReference)>
+    <com.appsflyer.AppsFlyerLibCore: void ǃ(java.lang.ref.WeakReference)>
+    <com.appsflyer.internal.aa: void <init>(com.appsflyer.internal.model.event.BackgroundEvent)>
+    <com.appsflyer.AFEvent: com.appsflyer.AFEvent weakContext()>
+    <com.appsflyer.internal.aa: void <init>(com.appsflyer.internal.model.event.BackgroundEvent)>
+    <com.appsflyer.internal.aa: void <init>(com.appsflyer.internal.model.event.BackgroundEvent)>
+    <com.appsflyer.internal.aa: void <init>(com.appsflyer.internal.model.event.BackgroundEvent)>
+    <com.appsflyer.AppsFlyerLibCore: void ǃ(java.lang.ref.WeakReference)>
+    <com.appsflyer.AppsFlyerLibCore: void ǃ(java.lang.ref.WeakReference)>
+    <com.appsflyer.internal.aa: void run()>
+    <com.appsflyer.internal.aa: java.net.HttpURLConnection Ι()>
+    <com.appsflyer.internal.aa: java.net.HttpURLConnection Ι()>
+    <com.appsflyer.internal.model.event.BackgroundEvent: java.lang.String body()>
+    <com.appsflyer.AFEvent: java.util.Map params()>
+    <com.appsflyer.AFEvent: java.util.Map params()>
+    <com.appsflyer.internal.model.event.BackgroundEvent: java.lang.String body()>
+    <com.appsflyer.AFHelper: org.json.JSONObject convertToJsonObject(java.util.Map)>
+    <com.appsflyer.AFHelper: org.json.JSONObject convertToJsonObject(java.util.Map)>
+    <com.appsflyer.internal.model.event.BackgroundEvent: java.lang.String body()>
+    <com.appsflyer.internal.model.event.BackgroundEvent: java.lang.String body()>
+    <com.appsflyer.internal.aa: java.net.HttpURLConnection Ι()>
+    <com.appsflyer.internal.aa: java.net.HttpURLConnection Ι()>
+    <com.appsflyer.internal.aa: java.net.HttpURLConnection Ι()>
+
+Leak 24:
+  Source: $r15 = virtualinvoke $r8.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r7, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r16.<java.io.OutputStream: void write(byte[])>($r7) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.appsflyer.internal.am: void ι(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.internal.am: void ι(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.internal.am: void ι(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.internal.am: void ι(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.internal.am: void ι(java.lang.String,java.lang.String,java.lang.String,java.lang.String)>
+    <com.appsflyer.internal.am: void ι(java.lang.String,java.lang.String,java.lang.String,java.lang.String)>
+    <com.appsflyer.internal.am: void ι(java.lang.String,java.lang.String,java.lang.String,java.lang.String)>
+    <com.appsflyer.internal.am: void ι(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.AppsFlyerLibCore$1: void ɩ(android.content.Context)>
+    <com.appsflyer.AppsFlyerLibCore$1: void ɩ(android.content.Context)>
+    <com.appsflyer.AppsFlyerLibCore$1: void ɩ(android.content.Context)>
+    <com.appsflyer.internal.am: java.lang.String ɩ()>
+    <com.appsflyer.internal.am: java.lang.String ɩ()>
+    <com.appsflyer.internal.am: java.lang.String ɩ()>
+    <com.appsflyer.AppsFlyerLibCore$1: void ɩ(android.content.Context)>
+    <com.appsflyer.internal.model.event.ProxyEvent: com.appsflyer.internal.model.event.BackgroundEvent body(java.lang.String)>
+    <com.appsflyer.internal.model.event.ProxyEvent: com.appsflyer.internal.model.event.BackgroundEvent body(java.lang.String)>
+    <com.appsflyer.AppsFlyerLibCore$1: void ɩ(android.content.Context)>
+    <com.appsflyer.AFEvent: com.appsflyer.AFEvent urlString(java.lang.String)>
+    <com.appsflyer.AppsFlyerLibCore$1: void ɩ(android.content.Context)>
+    <com.appsflyer.AppsFlyerLibCore$1: void ɩ(android.content.Context)>
+    <com.appsflyer.internal.aa: void <init>(com.appsflyer.internal.model.event.BackgroundEvent)>
+    <com.appsflyer.AFEvent: com.appsflyer.AFEvent weakContext()>
+    <com.appsflyer.internal.aa: void <init>(com.appsflyer.internal.model.event.BackgroundEvent)>
+    <com.appsflyer.internal.aa: void <init>(com.appsflyer.internal.model.event.BackgroundEvent)>
+    <com.appsflyer.internal.aa: void <init>(com.appsflyer.internal.model.event.BackgroundEvent)>
+    <com.appsflyer.AppsFlyerLibCore$1: void ɩ(android.content.Context)>
+    <com.appsflyer.AppsFlyerLibCore$1: void ɩ(android.content.Context)>
+    <com.appsflyer.internal.aa: void run()>
+    <com.appsflyer.internal.aa: java.net.HttpURLConnection Ι()>
+    <com.appsflyer.internal.aa: java.net.HttpURLConnection Ι()>
+    <com.appsflyer.internal.model.event.ProxyEvent: java.lang.String body()>
+    <com.appsflyer.internal.model.event.ProxyEvent: java.lang.String body()>
+    <com.appsflyer.internal.aa: java.net.HttpURLConnection Ι()>
+    <com.appsflyer.internal.aa: java.net.HttpURLConnection Ι()>
+    <com.appsflyer.internal.am: void Ι(java.lang.String,java.lang.String,java.lang.String[])>
+    <com.appsflyer.internal.aa: java.net.HttpURLConnection Ι()>
+    <com.appsflyer.internal.aa: java.net.HttpURLConnection Ι()>
+    <com.appsflyer.internal.aa: java.net.HttpURLConnection Ι()>
+    <com.appsflyer.internal.aa: java.net.HttpURLConnection Ι()>
+
+Leak 25:
+  Source: $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r2, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("AppsFlyer_5.3.0", $r2) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.appsflyer.AppsFlyerLibCore: java.lang.String ı(java.lang.String,android.content.pm.PackageManager,java.lang.String)>
+    <com.appsflyer.AppsFlyerLibCore: java.lang.String ı(java.lang.String,android.content.pm.PackageManager,java.lang.String)>
+    <com.appsflyer.AppsFlyerLibCore: java.lang.String ı(java.lang.String,android.content.pm.PackageManager,java.lang.String)>
+    <com.appsflyer.AppsFlyerLibCore: java.lang.String ı(java.lang.String,android.content.pm.PackageManager,java.lang.String)>
+    <com.appsflyer.AppsFlyerLibCore: java.lang.String ı(java.lang.String,android.content.pm.PackageManager,java.lang.String)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ı(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.io.File і(java.lang.String)>
+    <com.appsflyer.AppsFlyerLibCore: java.io.File і(java.lang.String)>
+    <com.appsflyer.AppsFlyerLibCore: java.io.File і(java.lang.String)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ı(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ı(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.lang.String ι(java.io.File,java.lang.String)>
+    <com.appsflyer.AppsFlyerLibCore: java.lang.String ι(java.io.File,java.lang.String)>
+    <com.appsflyer.AppsFlyerLibCore: java.lang.String ι(java.io.File,java.lang.String)>
+    <com.appsflyer.AppsFlyerLibCore: java.lang.String ι(java.io.File,java.lang.String)>
+    <com.appsflyer.AFLogger: void afDebugLog(java.lang.String)>
+    <com.appsflyer.AFLogger: java.lang.String ɩ(java.lang.String,boolean)>
+    <com.appsflyer.AFLogger: void afDebugLog(java.lang.String)>
+
+Leak 26:
+  Source: $r4 = virtualinvoke $r2.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() (<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>)
+  Sink: staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r1, $r2) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <surecredit.kf: java.lang.String o()>
+    <surecredit.kf: java.lang.String o()>
+    <surecredit.kf: java.lang.String o()>
+    <surecredit.kf: java.lang.String o()>
+    <surecredit.dl: java.lang.StringBuilder O(java.lang.String,java.lang.String)>
+    <surecredit.dl: java.lang.StringBuilder O(java.lang.String,java.lang.String)>
+    <surecredit.kf: java.lang.String o()>
+    <surecredit.kf: java.lang.String o()>
+    <surecredit.rB0: void 〇(surecredit.rB0,java.lang.String,java.lang.Double,java.lang.Double,int)>
+    <surecredit.rB0: void 〇(surecredit.rB0,java.lang.String,java.lang.Double,java.lang.Double,int)>
+    <surecredit.rB0: void 〇(surecredit.rB0,java.lang.String,java.lang.Double,java.lang.Double,int)>
+    <com.tencent.mars.xlog.Log: void i(java.lang.String,java.lang.String)>
+    <com.tencent.mars.xlog.Log: void i(java.lang.String,java.lang.String,java.lang.Object[])>
+    <com.tencent.mars.xlog.Log$1: void logI(java.lang.String,java.lang.String,java.lang.String,int,int,long,long,java.lang.String)>
+
+Leak 27:
+  Source: $r2 = virtualinvoke $r1.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>("com.google.android.gms", 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r1, $r2) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <surecredit.Wx0: boolean 〇(android.content.Context)>
+    <surecredit.Wx0: boolean 〇(android.content.Context)>
+    <surecredit.Wx0: boolean 〇(android.content.Context)>
+    <surecredit.Wx0: boolean 〇(android.content.Context)>
+    <surecredit.Wx0: boolean 〇(android.content.Context)>
+    <com.tencent.mars.xlog.Log: void i(java.lang.String,java.lang.String)>
+    <com.tencent.mars.xlog.Log: void i(java.lang.String,java.lang.String,java.lang.Object[])>
+    <com.tencent.mars.xlog.Log$1: void logI(java.lang.String,java.lang.String,java.lang.String,int,int,long,long,java.lang.String)>
+
+Leak 28:
+  Source: $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r2, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r3, $r0) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.tencent.bugly.crashreport.common.info.AppInfo: java.util.Map d(android.content.Context)>
+    <com.tencent.bugly.crashreport.common.info.AppInfo: java.util.Map d(android.content.Context)>
+    <com.tencent.bugly.crashreport.common.info.AppInfo: java.util.Map d(android.content.Context)>
+    <com.tencent.bugly.crashreport.common.info.AppInfo: java.util.Map d(android.content.Context)>
+    <com.tencent.bugly.crashreport.common.info.AppInfo: java.util.Map d(android.content.Context)>
+    <com.tencent.bugly.crashreport.common.info.AppInfo: java.util.Map d(android.content.Context)>
+    <com.tencent.bugly.crashreport.common.info.a: void <init>(android.content.Context)>
+    <com.tencent.bugly.crashreport.common.info.a: void <init>(android.content.Context)>
+    <com.tencent.bugly.crashreport.common.info.a: void <init>(android.content.Context)>
+    <com.tencent.bugly.crashreport.common.info.a: void c(java.lang.String,java.lang.String)>
+    <com.tencent.bugly.crashreport.common.info.a: void c(java.lang.String,java.lang.String)>
+    <com.tencent.bugly.crashreport.common.info.a: void c(java.lang.String,java.lang.String)>
+    <com.tencent.bugly.crashreport.common.info.a: void c(java.lang.String,java.lang.String)>
+    <com.tencent.bugly.proguard.x: boolean d(java.lang.String,java.lang.Object[])>
+    <com.tencent.bugly.proguard.x: boolean a(int,java.lang.String,java.lang.Object[])>
+    <com.tencent.bugly.proguard.x: boolean a(int,java.lang.String,java.lang.Object[])>
+
+Leak 29:
+  Source: $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getSimSerialNumber()>() (<android.telephony.TelephonyManager: java.lang.String getSimSerialNumber()>)
+  Sink: staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r3, $r0) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.tencent.bugly.crashreport.common.info.b: java.lang.String b(android.content.Context)>
+    <com.tencent.bugly.crashreport.common.info.b: java.lang.String b(android.content.Context)>
+    <com.tencent.bugly.crashreport.common.info.a: java.lang.String z()>
+    <com.tencent.bugly.crashreport.common.info.a: java.lang.String z()>
+    <com.tencent.bugly.crashreport.common.info.a: java.lang.String z()>
+    <com.tencent.bugly.crashreport.common.info.a: java.lang.String z()>
+    <com.tencent.bugly.proguard.x: boolean a(java.lang.String,java.lang.Object[])>
+    <com.tencent.bugly.proguard.x: boolean a(int,java.lang.String,java.lang.Object[])>
+    <com.tencent.bugly.proguard.x: boolean a(int,java.lang.String,java.lang.Object[])>
+
+Leak 30:
+  Source: $r4 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r3, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r3, $r0) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.tencent.bugly.crashreport.common.info.AppInfo: java.lang.String i(android.content.Context)>
+    <com.tencent.bugly.crashreport.common.info.AppInfo: java.lang.String i(android.content.Context)>
+    <com.tencent.bugly.crashreport.common.info.AppInfo: java.lang.String i(android.content.Context)>
+    <com.tencent.bugly.crashreport.common.info.AppInfo: java.lang.String i(android.content.Context)>
+    <com.tencent.bugly.crashreport.common.info.AppInfo: java.lang.String i(android.content.Context)>
+    <com.tencent.bugly.crashreport.common.info.AppInfo: java.lang.String g(android.content.Context)>
+    <com.tencent.bugly.crashreport.common.info.a: java.lang.String T()>
+    <com.tencent.bugly.crashreport.common.info.a: java.lang.String T()>
+    <com.tencent.bugly.crashreport.common.info.a: java.lang.String T()>
+    <com.tencent.bugly.crashreport.common.info.a: java.lang.String T()>
+    <com.tencent.bugly.crashreport.common.info.a: java.lang.String T()>
+    <com.tencent.bugly.proguard.x: boolean a(java.lang.String,java.lang.Object[])>
+    <com.tencent.bugly.proguard.x: boolean a(int,java.lang.String,java.lang.Object[])>
+
+Leak 31:
+  Source: $r5 = virtualinvoke $r4.<android.content.pm.PackageManager: java.util.List getInstalledPackages(int)>(8192) (<android.content.pm.PackageManager: java.util.List getInstalledPackages(int)>)
+  Sink: virtualinvoke $r3.<java.util.zip.GZIPOutputStream: void write(byte[])>($r1) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <c.t.m.g.dr: java.lang.String g()>
+    <c.t.m.g.dr: java.lang.String g()>
+    <c.t.m.g.dr: java.lang.String g()>
+    <c.t.m.g.dr: java.lang.String g()>
+    <c.t.m.g.dr: java.lang.String g()>
+    <c.t.m.g.dr: java.lang.String g()>
+    <c.t.m.g.dr: java.lang.String g()>
+    <c.t.m.g.dr: java.lang.String g()>
+    <c.t.m.g.ec: void e()>
+    <c.t.m.g.ef: void a(java.lang.String)>
+    <c.t.m.g.ef: void a(java.lang.String)>
+    <c.t.m.g.fc: byte[] a(byte[])>
+
+Leak 32:
+  Source: $f0 = virtualinvoke $r1.<android.location.Location: float getAccuracy()>() (<android.location.Location: float getAccuracy()>)
+  Sink: virtualinvoke $r2.<java.util.zip.GZIPOutputStream: void write(byte[])>($r0) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <c.t.m.g.cu: java.lang.String a(c.t.m.g.cx,android.location.Location,java.util.List,java.util.List)>
+    <c.t.m.g.cu: java.lang.String a(c.t.m.g.cx,android.location.Location,java.util.List,java.util.List)>
+    <c.t.m.g.cu: java.lang.String a(c.t.m.g.cx,android.location.Location,java.util.List,java.util.List)>
+    <c.t.m.g.cu: java.lang.String a(c.t.m.g.cx,android.location.Location,java.util.List,java.util.List)>
+    <c.t.m.g.cu: java.lang.String a(c.t.m.g.cx,android.location.Location,java.util.List,java.util.List)>
+    <c.t.m.g.cu: java.lang.String a(c.t.m.g.cx,android.location.Location,java.util.List,java.util.List)>
+    <c.t.m.g.cq$a: void handleMessage(android.os.Message)>
+    <c.t.m.g.cq$a: void handleMessage(android.os.Message)>
+    <c.t.m.g.cq$a: void handleMessage(android.os.Message)>
+    <c.t.m.g.cq$a: void b()>
+    <c.t.m.g.cq$a: void b()>
+    <c.t.m.g.cq$a: void b()>
+    <c.t.m.g.cv: byte[] a(java.lang.String)>
+    <c.t.m.g.cv: byte[] a(java.lang.String)>
+    <c.t.m.g.co: byte[] b(byte[])>
+
+Leak 33:
+  Source: $r0 = virtualinvoke $r5.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() (<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>)
+  Sink: virtualinvoke $r2.<java.util.zip.GZIPOutputStream: void write(byte[])>($r0) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <c.t.m.g.dq: java.lang.String b(android.content.Context)>
+    <c.t.m.g.dq: java.lang.String b(android.content.Context)>
+    <c.t.m.g.do: java.lang.String a(java.lang.String,java.util.regex.Pattern)>
+    <c.t.m.g.dq: java.lang.String b(android.content.Context)>
+    <c.t.m.g.dq: java.lang.String b(android.content.Context)>
+    <c.t.m.g.dq: java.lang.String b(android.content.Context)>
+    <c.t.m.g.dq: java.lang.String b()>
+    <c.t.m.g.cw: java.lang.String c()>
+    <c.t.m.g.cu: java.lang.String a(c.t.m.g.cx,android.location.Location,java.util.List,java.util.List)>
+    <c.t.m.g.cu: java.lang.String a(c.t.m.g.cx,android.location.Location,java.util.List,java.util.List)>
+    <c.t.m.g.cu: java.lang.String a(c.t.m.g.cx,android.location.Location,java.util.List,java.util.List)>
+    <c.t.m.g.cq$a: void handleMessage(android.os.Message)>
+    <c.t.m.g.cq$a: void handleMessage(android.os.Message)>
+    <c.t.m.g.cq$a: void handleMessage(android.os.Message)>
+    <c.t.m.g.cq$a: void b()>
+    <c.t.m.g.cq$a: void b()>
+    <c.t.m.g.cq$a: void b()>
+    <c.t.m.g.cv: byte[] a(java.lang.String)>
+    <c.t.m.g.cv: byte[] a(java.lang.String)>
+    <c.t.m.g.co: byte[] b(byte[])>
+
+Leak 34:
+  Source: $f0 = virtualinvoke $r1.<android.location.Location: float getBearing()>() (<android.location.Location: float getBearing()>)
+  Sink: virtualinvoke $r2.<java.util.zip.GZIPOutputStream: void write(byte[])>($r0) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <c.t.m.g.cu: java.lang.String a(c.t.m.g.cx,android.location.Location,java.util.List,java.util.List)>
+    <c.t.m.g.cu: java.lang.String a(c.t.m.g.cx,android.location.Location,java.util.List,java.util.List)>
+    <c.t.m.g.cu: java.lang.String a(c.t.m.g.cx,android.location.Location,java.util.List,java.util.List)>
+    <c.t.m.g.cu: java.lang.String a(c.t.m.g.cx,android.location.Location,java.util.List,java.util.List)>
+    <c.t.m.g.cu: java.lang.String a(c.t.m.g.cx,android.location.Location,java.util.List,java.util.List)>
+    <c.t.m.g.cu: java.lang.String a(c.t.m.g.cx,android.location.Location,java.util.List,java.util.List)>
+    <c.t.m.g.cq$a: void handleMessage(android.os.Message)>
+    <c.t.m.g.cq$a: void handleMessage(android.os.Message)>
+    <c.t.m.g.cq$a: void handleMessage(android.os.Message)>
+    <c.t.m.g.cq$a: void b()>
+    <c.t.m.g.cq$a: void b()>
+    <c.t.m.g.cq$a: void b()>
+    <c.t.m.g.cv: byte[] a(java.lang.String)>
+    <c.t.m.g.cv: byte[] a(java.lang.String)>
+    <c.t.m.g.co: byte[] b(byte[])>
+
+Leak 35:
+  Source: $r0 = virtualinvoke $r5.<android.telephony.TelephonyManager: java.lang.String getLine1Number()>() (<android.telephony.TelephonyManager: java.lang.String getLine1Number()>)
+  Sink: virtualinvoke $r2.<java.util.zip.GZIPOutputStream: void write(byte[])>($r0) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <c.t.m.g.dq: java.lang.String c(android.content.Context)>
+    <c.t.m.g.dq: java.lang.String c(android.content.Context)>
+    <c.t.m.g.do: java.lang.String a(java.lang.String,java.util.regex.Pattern)>
+    <c.t.m.g.dq: java.lang.String c(android.content.Context)>
+    <c.t.m.g.dq: java.lang.String c(android.content.Context)>
+    <c.t.m.g.dq: java.lang.String c(android.content.Context)>
+    <c.t.m.g.dq: java.lang.String c()>
+    <c.t.m.g.cw: java.lang.String d()>
+    <c.t.m.g.cu: java.lang.String a(c.t.m.g.cx,android.location.Location,java.util.List,java.util.List)>
+    <c.t.m.g.cu: java.lang.String a(c.t.m.g.cx,android.location.Location,java.util.List,java.util.List)>
+    <c.t.m.g.cu: java.lang.String a(c.t.m.g.cx,android.location.Location,java.util.List,java.util.List)>
+    <c.t.m.g.cq$a: void handleMessage(android.os.Message)>
+    <c.t.m.g.cq$a: void handleMessage(android.os.Message)>
+    <c.t.m.g.cq$a: void handleMessage(android.os.Message)>
+    <c.t.m.g.cq$a: void b()>
+    <c.t.m.g.cq$a: void b()>
+    <c.t.m.g.cq$a: void b()>
+    <c.t.m.g.cv: byte[] a(java.lang.String)>
+    <c.t.m.g.cv: byte[] a(java.lang.String)>
+    <c.t.m.g.co: byte[] b(byte[])>
+
+Leak 36:
+  Source: $r4 = staticinvoke <android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>($r5) (<android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>)
+  Sink: virtualinvoke $r9.<java.io.FileOutputStream: void write(byte[])>($r4) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <surecredit.BE0: java.lang.String 〇(java.lang.String,android.content.Context)>
+    <surecredit.BE0: java.lang.String 〇(java.lang.String,android.content.Context)>
+    <surecredit.BE0: void 〇(java.lang.String,java.lang.String,java.io.File)>
+    <surecredit.BE0: void 〇(java.lang.String,java.lang.String,java.io.File)>
+    <surecredit.BE0: void 〇(java.lang.String,java.lang.String,java.io.File)>
+
+Leak 37:
+  Source: $r4 = staticinvoke <android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>($r5) (<android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>)
+  Sink: virtualinvoke $r9.<java.io.FileOutputStream: void write(byte[])>($r4) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <surecredit.BE0: java.lang.String 〇(java.lang.String,android.content.Context)>
+    <surecredit.BE0: java.lang.String 〇(java.lang.String,android.content.Context)>
+    <surecredit.BE0: void 〇(java.lang.String,java.lang.String,java.io.File)>
+    <surecredit.BE0: void 〇(java.lang.String,java.lang.String,java.io.File)>
+    <surecredit.BE0: void 〇(java.lang.String,java.lang.String,java.io.File)>
+
+Leak 38:
+  Source: $r4 = staticinvoke <android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>($r5) (<android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>)
+  Sink: virtualinvoke $r9.<java.io.FileOutputStream: void write(byte[])>($r4) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <surecredit.BE0: java.lang.String 〇(java.lang.String,android.content.Context)>
+    <surecredit.BE0: java.lang.String 〇(java.lang.String,android.content.Context)>
+    <surecredit.BE0: void 〇(java.lang.String,java.lang.String,java.io.File)>
+    <surecredit.BE0: void 〇(java.lang.String,java.lang.String,java.io.File)>
+    <surecredit.BE0: void 〇(java.lang.String,java.lang.String,java.io.File)>
+
+Leak 39:
+  Source: $r4 = staticinvoke <android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>($r5) (<android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>)
+  Sink: virtualinvoke $r9.<java.io.FileOutputStream: void write(byte[])>($r4) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <surecredit.BE0: java.lang.String 〇(java.lang.String,android.content.Context)>
+    <surecredit.BE0: java.lang.String 〇(java.lang.String,android.content.Context)>
+    <surecredit.BE0: void 〇(java.lang.String,java.lang.String,java.io.File)>
+    <surecredit.BE0: void 〇(java.lang.String,java.lang.String,java.io.File)>
+    <surecredit.BE0: void 〇(java.lang.String,java.lang.String,java.io.File)>
+
+Leak 40:
+  Source: $r4 = staticinvoke <android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>($r5) (<android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>)
+  Sink: virtualinvoke $r9.<java.io.FileOutputStream: void write(byte[])>($r4) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <surecredit.BE0: java.lang.String 〇(java.lang.String,android.content.Context)>
+    <surecredit.BE0: java.lang.String 〇(java.lang.String,android.content.Context)>
+    <surecredit.BE0: void 〇(java.lang.String,java.lang.String,java.io.File)>
+    <surecredit.BE0: void 〇(java.lang.String,java.lang.String,java.io.File)>
+    <surecredit.BE0: void 〇(java.lang.String,java.lang.String,java.io.File)>
+
+Leak 41:
+  Source: $r4 = staticinvoke <android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>($r5) (<android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>)
+  Sink: virtualinvoke $r9.<java.io.FileOutputStream: void write(byte[])>($r4) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <surecredit.BE0: java.lang.String 〇(java.lang.String,android.content.Context)>
+    <surecredit.BE0: java.lang.String 〇(java.lang.String,android.content.Context)>
+    <surecredit.BE0: void 〇(java.lang.String,java.lang.String,java.io.File)>
+    <surecredit.BE0: void 〇(java.lang.String,java.lang.String,java.io.File)>
+    <surecredit.BE0: void 〇(java.lang.String,java.lang.String,java.io.File)>
+
+Leak 42:
+  Source: $r4 = staticinvoke <android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>($r5) (<android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>)
+  Sink: virtualinvoke $r9.<java.io.FileOutputStream: void write(byte[])>($r4) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <surecredit.BE0: java.lang.String 〇(java.lang.String,android.content.Context)>
+    <surecredit.BE0: java.lang.String 〇(java.lang.String,android.content.Context)>
+    <surecredit.BE0: void 〇(java.lang.String,java.lang.String,java.io.File)>
+    <surecredit.BE0: void 〇(java.lang.String,java.lang.String,java.io.File)>
+    <surecredit.BE0: void 〇(java.lang.String,java.lang.String,java.io.File)>
+
+Leak 43:
+  Source: $r4 = staticinvoke <android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>($r5) (<android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>)
+  Sink: virtualinvoke $r9.<java.io.FileOutputStream: void write(byte[])>($r4) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <surecredit.BE0: java.lang.String 〇(java.lang.String,android.content.Context)>
+    <surecredit.BE0: java.lang.String 〇(java.lang.String,android.content.Context)>
+    <surecredit.BE0: void 〇(java.lang.String,java.lang.String,java.io.File)>
+    <surecredit.BE0: void 〇(java.lang.String,java.lang.String,java.io.File)>
+    <surecredit.BE0: void 〇(java.lang.String,java.lang.String,java.io.File)>
+
+Leak 44:
+  Source: $r24 = virtualinvoke $r23.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r10, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("AppsFlyer_5.3.0", $r2) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ı(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ı(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ı(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ı(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ı(com.appsflyer.AFEvent)>
+    <com.appsflyer.internal.ae: java.lang.String ι(java.lang.ref.WeakReference)>
+    <com.appsflyer.internal.ae: java.lang.String ι(java.lang.ref.WeakReference)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ı(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: void Ι(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: void ɩ(com.appsflyer.AppsFlyerLibCore,java.util.Map)>
+    <com.appsflyer.AppsFlyerLibCore$4: void Ι(java.util.Map)>
+    <com.appsflyer.internal.g: void onInstallReferrerSetupFinished(int)>
+    <surecredit.al: void 〇(surecredit.bl)>
+    <com.appsflyer.internal.g: void ǃ(android.content.Context,com.appsflyer.internal.n)>
+    <com.appsflyer.AppsFlyerLibCore: com.appsflyer.AppsFlyerLib init(java.lang.String,com.appsflyer.AppsFlyerConversionListener,android.content.Context)>
+    <surecredit.cg0: void O()>
+    <surecredit.cg0: void tF()>
+    <surecredit.cg0: void access$000(surecredit.cg0)>
+    <surecredit.cg0$〇: void run()>
+    <java.lang.Thread: void run()>
+    <com.appsflyer.AppsFlyerLibCore: void ǃ(java.lang.ref.WeakReference)>
+    <com.appsflyer.AppsFlyerLibCore$1: void ɩ(android.content.Context)>
+    <com.appsflyer.Foreground$2$3: void run()>
+    <java.util.Timer: void schedule(java.util.TimerTask,long)>
+    <c.t.m.g.cy: void a(long)>
+    <c.t.m.g.cy: void c()>
+    <java.util.Timer: void schedule(java.util.TimerTask,long)>
+    <com.appsflyer.Foreground$2$3: void run()>
+    <com.appsflyer.AppsFlyerLibCore$1: void ɩ(android.content.Context)>
+    <com.appsflyer.AppsFlyerLibCore: void ǃ(java.lang.ref.WeakReference)>
+    <com.appsflyer.internal.ae: java.lang.String ι(java.lang.ref.WeakReference)>
+    <com.appsflyer.internal.ae: java.lang.String ι(java.lang.ref.WeakReference)>
+    <com.appsflyer.AppsFlyerLibCore: void ǃ(java.lang.ref.WeakReference)>
+    <com.appsflyer.AppsFlyerLibCore: void ǃ(java.lang.ref.WeakReference)>
+    <com.appsflyer.AFEvent: com.appsflyer.AFEvent params(java.util.Map)>
+    <com.appsflyer.AFEvent: com.appsflyer.AFEvent params(java.util.Map)>
+    <com.appsflyer.AppsFlyerLibCore: void ǃ(java.lang.ref.WeakReference)>
+    <com.appsflyer.AppsFlyerLibCore: void ǃ(java.lang.ref.WeakReference)>
+    <com.appsflyer.internal.aa: void <init>(com.appsflyer.internal.model.event.BackgroundEvent)>
+    <com.appsflyer.AFEvent: com.appsflyer.AFEvent weakContext()>
+    <com.appsflyer.internal.aa: void <init>(com.appsflyer.internal.model.event.BackgroundEvent)>
+    <com.appsflyer.internal.aa: void <init>(com.appsflyer.internal.model.event.BackgroundEvent)>
+    <com.appsflyer.internal.aa: void <init>(com.appsflyer.internal.model.event.BackgroundEvent)>
+    <com.appsflyer.AppsFlyerLibCore: void ǃ(java.lang.ref.WeakReference)>
+    <com.appsflyer.AppsFlyerLibCore: void ǃ(java.lang.ref.WeakReference)>
+    <com.appsflyer.internal.aa: void run()>
+    <com.appsflyer.internal.aa: java.net.HttpURLConnection Ι()>
+    <com.appsflyer.internal.aa: java.net.HttpURLConnection Ι()>
+    <com.appsflyer.internal.model.event.BackgroundEvent: java.lang.String body()>
+    <com.appsflyer.AFEvent: java.util.Map params()>
+    <com.appsflyer.AFEvent: java.util.Map params()>
+    <com.appsflyer.internal.model.event.BackgroundEvent: java.lang.String body()>
+    <com.appsflyer.AFHelper: org.json.JSONObject convertToJsonObject(java.util.Map)>
+    <com.appsflyer.AFHelper: org.json.JSONObject convertToJsonObject(java.util.Map)>
+    <com.appsflyer.internal.model.event.BackgroundEvent: java.lang.String body()>
+    <com.appsflyer.internal.model.event.BackgroundEvent: java.lang.String body()>
+    <com.appsflyer.internal.aa: java.net.HttpURLConnection Ι()>
+    <com.appsflyer.internal.aa: java.net.HttpURLConnection Ι()>
+    <com.appsflyer.internal.aa: java.net.HttpURLConnection Ι()>
+    <com.appsflyer.internal.af: void ɩ(java.lang.String)>
+    <com.appsflyer.internal.af: void ɩ(java.lang.String)>
+    <com.appsflyer.AFLogger: void afInfoLog(java.lang.String)>
+    <com.appsflyer.AFLogger: void afInfoLog(java.lang.String,boolean)>
+    <com.appsflyer.AFLogger: java.lang.String ɩ(java.lang.String,boolean)>
+    <com.appsflyer.AFLogger: java.lang.String ɩ(java.lang.String,boolean)>
+    <com.appsflyer.AFLogger: java.lang.String ɩ(java.lang.String,boolean)>
+    <com.appsflyer.AFLogger: void afInfoLog(java.lang.String,boolean)>
+
+Leak 45:
+  Source: $d0 = virtualinvoke $r70.<android.location.Location: double getLongitude()>() (<android.location.Location: double getLongitude()>)
+  Sink: staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("AppsFlyer_5.3.0", $r2) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ı(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ı(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ı(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ı(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ı(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ı(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ı(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: void Ι(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: void Ι(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ı(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ı(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ı(com.appsflyer.AFEvent)>
+    <com.appsflyer.internal.ae: java.lang.String ι(java.lang.ref.WeakReference)>
+    <com.appsflyer.internal.ae: java.lang.String ι(java.lang.ref.WeakReference)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ı(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: void Ι(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: void ɩ(com.appsflyer.AppsFlyerLibCore,java.util.Map)>
+    <com.appsflyer.AppsFlyerLibCore$4: void Ι(java.util.Map)>
+    <com.appsflyer.internal.g: void onInstallReferrerSetupFinished(int)>
+    <surecredit.al: void 〇(surecredit.bl)>
+    <com.appsflyer.internal.g: void ǃ(android.content.Context,com.appsflyer.internal.n)>
+    <com.appsflyer.AppsFlyerLibCore: com.appsflyer.AppsFlyerLib init(java.lang.String,com.appsflyer.AppsFlyerConversionListener,android.content.Context)>
+    <surecredit.cg0: void O()>
+    <surecredit.cg0: void tF()>
+    <surecredit.cg0: void access$000(surecredit.cg0)>
+    <surecredit.cg0$〇: void run()>
+    <java.lang.Thread: void run()>
+    <com.appsflyer.AppsFlyerLibCore: void ǃ(java.lang.ref.WeakReference)>
+    <com.appsflyer.AppsFlyerLibCore$1: void ɩ(android.content.Context)>
+    <com.appsflyer.Foreground$2$3: void run()>
+    <java.util.Timer: void schedule(java.util.TimerTask,long)>
+    <c.t.m.g.cy: void a(long)>
+    <c.t.m.g.cy: void c()>
+    <java.util.Timer: void schedule(java.util.TimerTask,long)>
+    <com.appsflyer.Foreground$2$3: void run()>
+    <com.appsflyer.AppsFlyerLibCore$1: void ɩ(android.content.Context)>
+    <com.appsflyer.AppsFlyerLibCore: void ǃ(java.lang.ref.WeakReference)>
+    <com.appsflyer.internal.ae: java.lang.String ι(java.lang.ref.WeakReference)>
+    <com.appsflyer.internal.ae: java.lang.String ι(java.lang.ref.WeakReference)>
+    <com.appsflyer.AppsFlyerLibCore: void ǃ(java.lang.ref.WeakReference)>
+    <com.appsflyer.AppsFlyerLibCore: void ǃ(java.lang.ref.WeakReference)>
+    <com.appsflyer.AFEvent: com.appsflyer.AFEvent params(java.util.Map)>
+    <com.appsflyer.AFEvent: com.appsflyer.AFEvent params(java.util.Map)>
+    <com.appsflyer.AppsFlyerLibCore: void ǃ(java.lang.ref.WeakReference)>
+    <com.appsflyer.AppsFlyerLibCore: void ǃ(java.lang.ref.WeakReference)>
+    <com.appsflyer.internal.aa: void <init>(com.appsflyer.internal.model.event.BackgroundEvent)>
+    <com.appsflyer.AFEvent: com.appsflyer.AFEvent weakContext()>
+    <com.appsflyer.internal.aa: void <init>(com.appsflyer.internal.model.event.BackgroundEvent)>
+    <com.appsflyer.internal.aa: void <init>(com.appsflyer.internal.model.event.BackgroundEvent)>
+    <com.appsflyer.internal.aa: void <init>(com.appsflyer.internal.model.event.BackgroundEvent)>
+    <com.appsflyer.AppsFlyerLibCore: void ǃ(java.lang.ref.WeakReference)>
+    <com.appsflyer.AppsFlyerLibCore: void ǃ(java.lang.ref.WeakReference)>
+    <com.appsflyer.internal.aa: void run()>
+    <com.appsflyer.internal.aa: java.net.HttpURLConnection Ι()>
+    <com.appsflyer.internal.aa: java.net.HttpURLConnection Ι()>
+    <com.appsflyer.internal.model.event.BackgroundEvent: java.lang.String body()>
+    <com.appsflyer.AFEvent: java.util.Map params()>
+    <com.appsflyer.AFEvent: java.util.Map params()>
+    <com.appsflyer.internal.model.event.BackgroundEvent: java.lang.String body()>
+    <com.appsflyer.AFHelper: org.json.JSONObject convertToJsonObject(java.util.Map)>
+    <com.appsflyer.AFHelper: org.json.JSONObject convertToJsonObject(java.util.Map)>
+    <com.appsflyer.internal.model.event.BackgroundEvent: java.lang.String body()>
+    <com.appsflyer.internal.model.event.BackgroundEvent: java.lang.String body()>
+    <com.appsflyer.internal.aa: java.net.HttpURLConnection Ι()>
+    <com.appsflyer.internal.aa: java.net.HttpURLConnection Ι()>
+    <com.appsflyer.internal.aa: java.net.HttpURLConnection Ι()>
+    <com.appsflyer.internal.af: void ɩ(java.lang.String)>
+    <com.appsflyer.internal.af: void ɩ(java.lang.String)>
+    <com.appsflyer.AFLogger: void afInfoLog(java.lang.String)>
+    <com.appsflyer.AFLogger: void afInfoLog(java.lang.String,boolean)>
+    <com.appsflyer.AFLogger: java.lang.String ɩ(java.lang.String,boolean)>
+    <com.appsflyer.AFLogger: java.lang.String ɩ(java.lang.String,boolean)>
+    <com.appsflyer.AFLogger: java.lang.String ɩ(java.lang.String,boolean)>
+    <com.appsflyer.AFLogger: void afInfoLog(java.lang.String,boolean)>
+
+Leak 46:
+  Source: $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r2, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("AppsFlyer_5.3.0", $r2) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.appsflyer.AppsFlyerLibCore: java.lang.String ı(java.lang.String,android.content.pm.PackageManager,java.lang.String)>
+    <com.appsflyer.AppsFlyerLibCore: java.lang.String ı(java.lang.String,android.content.pm.PackageManager,java.lang.String)>
+    <com.appsflyer.AppsFlyerLibCore: java.lang.String ı(java.lang.String,android.content.pm.PackageManager,java.lang.String)>
+    <com.appsflyer.AppsFlyerLibCore: java.lang.String ı(java.lang.String,android.content.pm.PackageManager,java.lang.String)>
+    <com.appsflyer.AppsFlyerLibCore: java.lang.String ı(java.lang.String,android.content.pm.PackageManager,java.lang.String)>
+    <com.appsflyer.AppsFlyerLibCore: java.lang.String getConfiguredChannel(android.content.Context)>
+    <com.appsflyer.AppsFlyerLibCore: void ǃ(java.lang.ref.WeakReference)>
+    <com.appsflyer.AppsFlyerLibCore: void ǃ(java.lang.ref.WeakReference)>
+    <com.appsflyer.AFEvent: com.appsflyer.AFEvent params(java.util.Map)>
+    <com.appsflyer.AFEvent: com.appsflyer.AFEvent params(java.util.Map)>
+    <com.appsflyer.AppsFlyerLibCore: void ǃ(java.lang.ref.WeakReference)>
+    <com.appsflyer.AppsFlyerLibCore: void ǃ(java.lang.ref.WeakReference)>
+    <com.appsflyer.internal.aa: void <init>(com.appsflyer.internal.model.event.BackgroundEvent)>
+    <com.appsflyer.AFEvent: com.appsflyer.AFEvent weakContext()>
+    <com.appsflyer.internal.aa: void <init>(com.appsflyer.internal.model.event.BackgroundEvent)>
+    <com.appsflyer.internal.aa: void <init>(com.appsflyer.internal.model.event.BackgroundEvent)>
+    <com.appsflyer.internal.aa: void <init>(com.appsflyer.internal.model.event.BackgroundEvent)>
+    <com.appsflyer.AppsFlyerLibCore: void ǃ(java.lang.ref.WeakReference)>
+    <com.appsflyer.AppsFlyerLibCore: void ǃ(java.lang.ref.WeakReference)>
+    <com.appsflyer.internal.aa: void run()>
+    <com.appsflyer.internal.aa: java.net.HttpURLConnection Ι()>
+    <com.appsflyer.internal.aa: java.net.HttpURLConnection Ι()>
+    <com.appsflyer.internal.model.event.BackgroundEvent: java.lang.String body()>
+    <com.appsflyer.AFEvent: java.util.Map params()>
+    <com.appsflyer.AFEvent: java.util.Map params()>
+    <com.appsflyer.internal.model.event.BackgroundEvent: java.lang.String body()>
+    <com.appsflyer.AFHelper: org.json.JSONObject convertToJsonObject(java.util.Map)>
+    <com.appsflyer.AFHelper: org.json.JSONObject convertToJsonObject(java.util.Map)>
+    <com.appsflyer.internal.model.event.BackgroundEvent: java.lang.String body()>
+    <com.appsflyer.internal.model.event.BackgroundEvent: java.lang.String body()>
+    <com.appsflyer.internal.aa: java.net.HttpURLConnection Ι()>
+    <com.appsflyer.internal.aa: java.net.HttpURLConnection Ι()>
+    <com.appsflyer.internal.aa: java.net.HttpURLConnection Ι()>
+    <com.appsflyer.internal.af: void ɩ(java.lang.String)>
+    <com.appsflyer.internal.af: void ɩ(java.lang.String)>
+    <com.appsflyer.AFLogger: void afInfoLog(java.lang.String)>
+    <com.appsflyer.AFLogger: void afInfoLog(java.lang.String,boolean)>
+    <com.appsflyer.AFLogger: java.lang.String ɩ(java.lang.String,boolean)>
+    <com.appsflyer.AFLogger: java.lang.String ɩ(java.lang.String,boolean)>
+    <com.appsflyer.AFLogger: java.lang.String ɩ(java.lang.String,boolean)>
+    <com.appsflyer.AFLogger: void afInfoLog(java.lang.String,boolean)>
+
+Leak 47:
+  Source: $d0 = virtualinvoke $r70.<android.location.Location: double getLatitude()>() (<android.location.Location: double getLatitude()>)
+  Sink: staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("AppsFlyer_5.3.0", $r2) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ı(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ı(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ı(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ı(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ı(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ı(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ı(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: void Ι(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: void Ι(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ı(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ı(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ı(com.appsflyer.AFEvent)>
+    <com.appsflyer.internal.ae: java.lang.String ι(java.lang.ref.WeakReference)>
+    <com.appsflyer.internal.ae: java.lang.String ι(java.lang.ref.WeakReference)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ı(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: void Ι(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: void ɩ(com.appsflyer.AppsFlyerLibCore,java.util.Map)>
+    <com.appsflyer.AppsFlyerLibCore$4: void Ι(java.util.Map)>
+    <com.appsflyer.internal.g: void onInstallReferrerSetupFinished(int)>
+    <surecredit.al: void 〇(surecredit.bl)>
+    <com.appsflyer.internal.g: void ǃ(android.content.Context,com.appsflyer.internal.n)>
+    <com.appsflyer.AppsFlyerLibCore: com.appsflyer.AppsFlyerLib init(java.lang.String,com.appsflyer.AppsFlyerConversionListener,android.content.Context)>
+    <surecredit.cg0: void O()>
+    <surecredit.cg0: void tF()>
+    <surecredit.cg0: void access$000(surecredit.cg0)>
+    <surecredit.cg0$〇: void run()>
+    <java.lang.Thread: void run()>
+    <com.appsflyer.AppsFlyerLibCore: void ǃ(java.lang.ref.WeakReference)>
+    <com.appsflyer.AppsFlyerLibCore$1: void ɩ(android.content.Context)>
+    <com.appsflyer.Foreground$2$3: void run()>
+    <java.util.Timer: void schedule(java.util.TimerTask,long)>
+    <c.t.m.g.cy: void a(long)>
+    <c.t.m.g.cy: void c()>
+    <java.util.Timer: void schedule(java.util.TimerTask,long)>
+    <com.appsflyer.Foreground$2$3: void run()>
+    <com.appsflyer.AppsFlyerLibCore$1: void ɩ(android.content.Context)>
+    <com.appsflyer.AppsFlyerLibCore: void ǃ(java.lang.ref.WeakReference)>
+    <com.appsflyer.internal.ae: java.lang.String ι(java.lang.ref.WeakReference)>
+    <com.appsflyer.internal.ae: java.lang.String ι(java.lang.ref.WeakReference)>
+    <com.appsflyer.AppsFlyerLibCore: void ǃ(java.lang.ref.WeakReference)>
+    <com.appsflyer.AppsFlyerLibCore: void ǃ(java.lang.ref.WeakReference)>
+    <com.appsflyer.AFEvent: com.appsflyer.AFEvent params(java.util.Map)>
+    <com.appsflyer.AFEvent: com.appsflyer.AFEvent params(java.util.Map)>
+    <com.appsflyer.AppsFlyerLibCore: void ǃ(java.lang.ref.WeakReference)>
+    <com.appsflyer.AppsFlyerLibCore: void ǃ(java.lang.ref.WeakReference)>
+    <com.appsflyer.internal.aa: void <init>(com.appsflyer.internal.model.event.BackgroundEvent)>
+    <com.appsflyer.AFEvent: com.appsflyer.AFEvent weakContext()>
+    <com.appsflyer.internal.aa: void <init>(com.appsflyer.internal.model.event.BackgroundEvent)>
+    <com.appsflyer.internal.aa: void <init>(com.appsflyer.internal.model.event.BackgroundEvent)>
+    <com.appsflyer.internal.aa: void <init>(com.appsflyer.internal.model.event.BackgroundEvent)>
+    <com.appsflyer.AppsFlyerLibCore: void ǃ(java.lang.ref.WeakReference)>
+    <com.appsflyer.AppsFlyerLibCore: void ǃ(java.lang.ref.WeakReference)>
+    <com.appsflyer.internal.aa: void run()>
+    <com.appsflyer.internal.aa: java.net.HttpURLConnection Ι()>
+    <com.appsflyer.internal.aa: java.net.HttpURLConnection Ι()>
+    <com.appsflyer.internal.model.event.BackgroundEvent: java.lang.String body()>
+    <com.appsflyer.AFEvent: java.util.Map params()>
+    <com.appsflyer.AFEvent: java.util.Map params()>
+    <com.appsflyer.internal.model.event.BackgroundEvent: java.lang.String body()>
+    <com.appsflyer.AFHelper: org.json.JSONObject convertToJsonObject(java.util.Map)>
+    <com.appsflyer.AFHelper: org.json.JSONObject convertToJsonObject(java.util.Map)>
+    <com.appsflyer.internal.model.event.BackgroundEvent: java.lang.String body()>
+    <com.appsflyer.internal.model.event.BackgroundEvent: java.lang.String body()>
+    <com.appsflyer.internal.aa: java.net.HttpURLConnection Ι()>
+    <com.appsflyer.internal.aa: java.net.HttpURLConnection Ι()>
+    <com.appsflyer.internal.aa: java.net.HttpURLConnection Ι()>
+    <com.appsflyer.internal.af: void ɩ(java.lang.String)>
+    <com.appsflyer.internal.af: void ɩ(java.lang.String)>
+    <com.appsflyer.AFLogger: void afInfoLog(java.lang.String)>
+    <com.appsflyer.AFLogger: void afInfoLog(java.lang.String,boolean)>
+    <com.appsflyer.AFLogger: java.lang.String ɩ(java.lang.String,boolean)>
+    <com.appsflyer.AFLogger: java.lang.String ɩ(java.lang.String,boolean)>
+    <com.appsflyer.AFLogger: java.lang.String ɩ(java.lang.String,boolean)>
+    <com.appsflyer.AFLogger: void afInfoLog(java.lang.String,boolean)>
+
+Leak 48:
+  Source: $r15 = virtualinvoke $r8.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r7, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("AppsFlyer_5.3.0", $r2) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.appsflyer.internal.am: void ι(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.internal.am: void ι(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.internal.am: void ι(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.internal.am: void ι(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.internal.am: void ι(java.lang.String,java.lang.String,java.lang.String,java.lang.String)>
+    <com.appsflyer.internal.am: void ι(java.lang.String,java.lang.String,java.lang.String,java.lang.String)>
+    <com.appsflyer.internal.am: void ι(java.lang.String,java.lang.String,java.lang.String,java.lang.String)>
+    <com.appsflyer.internal.am: void ι(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.AppsFlyerLibCore$1: void ɩ(android.content.Context)>
+    <com.appsflyer.AppsFlyerLibCore$1: void ɩ(android.content.Context)>
+    <com.appsflyer.AppsFlyerLibCore$1: void ɩ(android.content.Context)>
+    <com.appsflyer.internal.am: java.lang.String ɩ()>
+    <com.appsflyer.internal.am: java.lang.String ɩ()>
+    <com.appsflyer.internal.am: java.lang.String ɩ()>
+    <com.appsflyer.AppsFlyerLibCore$1: void ɩ(android.content.Context)>
+    <com.appsflyer.internal.model.event.ProxyEvent: com.appsflyer.internal.model.event.BackgroundEvent body(java.lang.String)>
+    <com.appsflyer.internal.model.event.ProxyEvent: com.appsflyer.internal.model.event.BackgroundEvent body(java.lang.String)>
+    <com.appsflyer.AppsFlyerLibCore$1: void ɩ(android.content.Context)>
+    <com.appsflyer.AFEvent: com.appsflyer.AFEvent urlString(java.lang.String)>
+    <com.appsflyer.AppsFlyerLibCore$1: void ɩ(android.content.Context)>
+    <com.appsflyer.AppsFlyerLibCore$1: void ɩ(android.content.Context)>
+    <com.appsflyer.internal.aa: void <init>(com.appsflyer.internal.model.event.BackgroundEvent)>
+    <com.appsflyer.AFEvent: com.appsflyer.AFEvent weakContext()>
+    <com.appsflyer.internal.aa: void <init>(com.appsflyer.internal.model.event.BackgroundEvent)>
+    <com.appsflyer.internal.aa: void <init>(com.appsflyer.internal.model.event.BackgroundEvent)>
+    <com.appsflyer.internal.aa: void <init>(com.appsflyer.internal.model.event.BackgroundEvent)>
+    <com.appsflyer.AppsFlyerLibCore$1: void ɩ(android.content.Context)>
+    <com.appsflyer.AppsFlyerLibCore$1: void ɩ(android.content.Context)>
+    <com.appsflyer.internal.aa: void run()>
+    <com.appsflyer.internal.aa: java.net.HttpURLConnection Ι()>
+    <com.appsflyer.internal.aa: java.net.HttpURLConnection Ι()>
+    <com.appsflyer.internal.model.event.ProxyEvent: java.lang.String body()>
+    <com.appsflyer.internal.model.event.ProxyEvent: java.lang.String body()>
+    <com.appsflyer.internal.aa: java.net.HttpURLConnection Ι()>
+    <com.appsflyer.internal.aa: java.net.HttpURLConnection Ι()>
+    <com.appsflyer.internal.am: void Ι(java.lang.String,java.lang.String,java.lang.String[])>
+    <com.appsflyer.internal.aa: java.net.HttpURLConnection Ι()>
+    <com.appsflyer.internal.aa: java.net.HttpURLConnection Ι()>
+    <com.appsflyer.internal.aa: java.net.HttpURLConnection Ι()>
+    <com.appsflyer.internal.aa: java.net.HttpURLConnection Ι()>
+    <com.appsflyer.internal.af: void ɩ(java.lang.String)>
+    <com.appsflyer.internal.af: void ɩ(java.lang.String)>
+    <com.appsflyer.AFLogger: void afInfoLog(java.lang.String)>
+    <com.appsflyer.AFLogger: void afInfoLog(java.lang.String,boolean)>
+    <com.appsflyer.AFLogger: java.lang.String ɩ(java.lang.String,boolean)>
+    <com.appsflyer.AFLogger: java.lang.String ɩ(java.lang.String,boolean)>
+    <com.appsflyer.AFLogger: java.lang.String ɩ(java.lang.String,boolean)>
+    <com.appsflyer.AFLogger: void afInfoLog(java.lang.String,boolean)>
+

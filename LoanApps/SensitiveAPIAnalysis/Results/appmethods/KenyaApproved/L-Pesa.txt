@@ -1,0 +1,79 @@
+APK: L-Pesa (KenyaApproved)
+Leak 1:
+  Source: $r5 = virtualinvoke $r4.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r3, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r5.<java.io.FileOutputStream: void write(byte[])>($r7) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <com.facebook.internal.Utility: java.lang.String getAppVersion()>
+    <com.facebook.internal.Utility: java.lang.String getAppVersion()>
+    <com.facebook.internal.Utility: java.lang.String getAppVersion()>
+    <com.facebook.internal.instrument.InstrumentData: void <init>(java.lang.Throwable,com.facebook.internal.instrument.InstrumentData$Type)>
+    <com.facebook.internal.instrument.InstrumentData: void <init>(java.lang.Throwable,com.facebook.internal.instrument.InstrumentData$Type)>
+    <com.facebook.internal.instrument.InstrumentData: void <init>(java.lang.Throwable,com.facebook.internal.instrument.InstrumentData$Type,kotlin.jvm.internal.DefaultConstructorMarker)>
+    <com.facebook.internal.instrument.InstrumentData$Builder: com.facebook.internal.instrument.InstrumentData build(java.lang.Throwable,com.facebook.internal.instrument.InstrumentData$Type)>
+    <com.facebook.internal.instrument.crashshield.CrashShieldHandler: void handleThrowable(java.lang.Throwable,java.lang.Object)>
+    <com.facebook.internal.instrument.InstrumentData: void save()>
+    <com.facebook.internal.instrument.InstrumentData: java.lang.String toString()>
+    <com.facebook.internal.instrument.InstrumentData: org.json.JSONObject getParameters()>
+    <com.facebook.internal.instrument.InstrumentData: org.json.JSONObject getExceptionReportParameters()>
+    <com.facebook.internal.instrument.InstrumentData: org.json.JSONObject getExceptionReportParameters()>
+    <com.facebook.internal.instrument.InstrumentData: org.json.JSONObject getExceptionReportParameters()>
+    <com.facebook.internal.instrument.InstrumentData: org.json.JSONObject getParameters()>
+    <com.facebook.internal.instrument.InstrumentData: java.lang.String toString()>
+    <com.facebook.internal.instrument.InstrumentData: java.lang.String toString()>
+    <com.facebook.internal.instrument.InstrumentData: void save()>
+    <com.facebook.internal.instrument.InstrumentUtility: void writeFile(java.lang.String,java.lang.String)>
+    <com.facebook.internal.instrument.InstrumentUtility: void writeFile(java.lang.String,java.lang.String)>
+
+Leak 2:
+  Source: $r4 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r3, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r0, $r1) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.facebook.FacebookSdk: void loadDefaultsFromMetadata$facebook_core_release(android.content.Context)>
+    <com.facebook.FacebookSdk: void loadDefaultsFromMetadata$facebook_core_release(android.content.Context)>
+    <com.facebook.FacebookSdk: void loadDefaultsFromMetadata$facebook_core_release(android.content.Context)>
+    <com.facebook.FacebookSdk: void loadDefaultsFromMetadata$facebook_core_release(android.content.Context)>
+    <com.facebook.FacebookSdk: void loadDefaultsFromMetadata$facebook_core_release(android.content.Context)>
+    <com.facebook.FacebookSdk: void loadDefaultsFromMetadata$facebook_core_release(android.content.Context)>
+    <com.facebook.FacebookSdk: void sdkInitialize(android.content.Context,com.facebook.FacebookSdk$InitializeCallback)>
+    <com.facebook.FacebookSdk: void sdkInitialize(android.content.Context)>
+    <com.app.l_pesa.application.MyApplication: void onCreate()>
+    <com.facebook.appevents.AppEventsLogger: void activateApp(android.app.Application)>
+    <com.facebook.appevents.AppEventsLogger$Companion: void activateApp(android.app.Application)>
+    <com.facebook.appevents.AppEventsLoggerImpl$Companion: void activateApp(android.app.Application,java.lang.String)>
+    <com.facebook.FacebookSdk: java.lang.String getApplicationId()>
+    <com.facebook.FacebookSdk: java.lang.String getApplicationId()>
+    <com.facebook.appevents.AppEventsLoggerImpl$Companion: void activateApp(android.app.Application,java.lang.String)>
+    <com.facebook.FacebookSdk: void publishInstallAsync(android.content.Context,java.lang.String)>
+    <com.facebook.appevents.ondeviceprocessing.OnDeviceProcessingManager: void sendInstallEventAsync(java.lang.String,java.lang.String)>
+    <com.facebook.appevents.ondeviceprocessing.OnDeviceProcessingManager$$ExternalSyntheticLambda0: void <init>(android.content.Context,java.lang.String,java.lang.String)>
+    <com.facebook.appevents.ondeviceprocessing.OnDeviceProcessingManager$$ExternalSyntheticLambda0: void <init>(android.content.Context,java.lang.String,java.lang.String)>
+    <com.facebook.appevents.ondeviceprocessing.OnDeviceProcessingManager: void sendInstallEventAsync(java.lang.String,java.lang.String)>
+    <com.facebook.appevents.ondeviceprocessing.OnDeviceProcessingManager$$ExternalSyntheticLambda0: void run()>
+    <com.facebook.appevents.ondeviceprocessing.OnDeviceProcessingManager$$ExternalSyntheticLambda0: void run()>
+    <com.facebook.appevents.ondeviceprocessing.OnDeviceProcessingManager: void $r8$lambda$d8sdo1bZioMOY_6pCJvaqUX3yug(android.content.Context,java.lang.String,java.lang.String)>
+    <com.facebook.appevents.ondeviceprocessing.OnDeviceProcessingManager: void sendInstallEventAsync$lambda-0(android.content.Context,java.lang.String,java.lang.String)>
+    <com.facebook.appevents.ondeviceprocessing.RemoteServiceWrapper: com.facebook.appevents.ondeviceprocessing.RemoteServiceWrapper$ServiceResult sendInstallEvent(java.lang.String)>
+    <com.facebook.appevents.ondeviceprocessing.RemoteServiceWrapper: com.facebook.appevents.ondeviceprocessing.RemoteServiceWrapper$ServiceResult sendEvents(com.facebook.appevents.ondeviceprocessing.RemoteServiceWrapper$EventType,java.lang.String,java.util.List)>
+    <com.facebook.appevents.ondeviceprocessing.RemoteServiceParametersHelper: android.os.Bundle buildEventsBundle(com.facebook.appevents.ondeviceprocessing.RemoteServiceWrapper$EventType,java.lang.String,java.util.List)>
+    <com.facebook.appevents.ondeviceprocessing.RemoteServiceParametersHelper: android.os.Bundle buildEventsBundle(com.facebook.appevents.ondeviceprocessing.RemoteServiceWrapper$EventType,java.lang.String,java.util.List)>
+    <com.facebook.appevents.ondeviceprocessing.RemoteServiceWrapper: com.facebook.appevents.ondeviceprocessing.RemoteServiceWrapper$ServiceResult sendEvents(com.facebook.appevents.ondeviceprocessing.RemoteServiceWrapper$EventType,java.lang.String,java.util.List)>
+    <kotlin.jvm.internal.Intrinsics: java.lang.String stringPlus(java.lang.String,java.lang.Object)>
+    <kotlin.jvm.internal.Intrinsics: java.lang.String stringPlus(java.lang.String,java.lang.Object)>
+    <kotlin.jvm.internal.Intrinsics: java.lang.String stringPlus(java.lang.String,java.lang.Object)>
+    <com.facebook.appevents.ondeviceprocessing.RemoteServiceWrapper: com.facebook.appevents.ondeviceprocessing.RemoteServiceWrapper$ServiceResult sendEvents(com.facebook.appevents.ondeviceprocessing.RemoteServiceWrapper$EventType,java.lang.String,java.util.List)>
+    <com.facebook.internal.Utility: void logd(java.lang.String,java.lang.String)>
+
+Leak 3:
+  Source: $r5 = virtualinvoke $r3.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r4, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("ManifestParser", $r4) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.bumptech.glide.module.ManifestParser: java.util.List parse()>
+    <com.bumptech.glide.module.ManifestParser: java.util.List parse()>
+    <com.bumptech.glide.module.ManifestParser: java.util.List parse()>
+    <com.bumptech.glide.module.ManifestParser: java.util.List parse()>
+    <com.bumptech.glide.module.ManifestParser: java.util.List parse()>
+    <com.bumptech.glide.module.ManifestParser: java.util.List parse()>
+    <com.bumptech.glide.module.ManifestParser: java.util.List parse()>
+    <com.bumptech.glide.module.ManifestParser: java.util.List parse()>
+    <com.bumptech.glide.module.ManifestParser: java.util.List parse()>
+

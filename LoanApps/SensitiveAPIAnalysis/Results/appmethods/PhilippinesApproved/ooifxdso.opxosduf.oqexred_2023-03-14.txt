@@ -1,0 +1,28 @@
+APK: ooifxdso.opxosduf.oqexred_2023-03-14 (PhilippinesApproved)
+Leak 1:
+  Source: $r7 = virtualinvoke $r5.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r6, $r2, null, null, "datetaken DESC LIMIT 10") (<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>)
+  Sink: $i0 = staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r2, $r1) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.oliveapp.camerasdk.ui.t: void run()>
+    <com.oliveapp.camerasdk.ui.t: void run()>
+    <com.oliveapp.camerasdk.ui.t: void run()>
+    <com.oliveapp.camerasdk.utils.CameraUtil: android.graphics.Bitmap a(java.lang.String,int,int)>
+    <com.oliveapp.camerasdk.utils.CameraUtil: android.graphics.Bitmap a(java.lang.String,int,int)>
+    <com.oliveapp.camerasdk.utils.CameraUtil: android.graphics.Bitmap a(java.lang.String,int,int)>
+    <com.oliveapp.libcommon.utility.LogUtil: int i(java.lang.Object,java.lang.String)>
+    <com.oliveapp.libcommon.utility.LogUtil: int i(java.lang.Object,java.lang.String)>
+    <com.oliveapp.libcommon.utility.LogUtil: int i(java.lang.Object,java.lang.String)>
+
+Leak 2:
+  Source: $r7 = virtualinvoke $r5.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r6, $r2, null, null, "datetaken DESC LIMIT 10") (<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>)
+  Sink: $i0 = staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r2, $r1) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.oliveapp.camerasdk.ui.t: void run()>
+    <com.oliveapp.camerasdk.ui.t: void run()>
+    <com.oliveapp.camerasdk.ui.t: void run()>
+    <com.oliveapp.camerasdk.ui.t: void run()>
+    <com.oliveapp.camerasdk.ui.t: void run()>
+    <com.oliveapp.libcommon.utility.LogUtil: int d(java.lang.Object,java.lang.String)>
+    <com.oliveapp.libcommon.utility.LogUtil: int d(java.lang.Object,java.lang.String)>
+    <com.oliveapp.libcommon.utility.LogUtil: int d(java.lang.Object,java.lang.String)>
+

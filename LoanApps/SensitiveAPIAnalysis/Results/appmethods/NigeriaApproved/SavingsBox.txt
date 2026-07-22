@@ -1,0 +1,134 @@
+APK: SavingsBox (NigeriaApproved)
+Leak 1:
+  Source: $r4 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r3, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r3.<java.io.OutputStream: void write(byte[])>($r2) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.zoho.livechat.android.config.DeviceConfig: java.lang.String getVersionCode()>
+    <com.zoho.livechat.android.config.DeviceConfig: java.lang.String getVersionCode()>
+    <com.zoho.livechat.android.config.DeviceConfig: java.lang.String getVersionCode()>
+    <com.zoho.livechat.android.config.DeviceConfig: java.lang.String getUserAgentDetails(boolean)>
+    <com.zoho.livechat.android.config.DeviceConfig: java.lang.String getUserAgentDetails(boolean)>
+    <com.zoho.livechat.android.messaging.wms.common.HttpDataWraper: java.lang.String getString(java.lang.Object)>
+    <com.zoho.livechat.android.messaging.wms.common.HttpDataWraper: java.lang.String getString(java.lang.Object)>
+    <com.zoho.livechat.android.config.DeviceConfig: java.lang.String getUserAgentDetails(boolean)>
+    <com.zoho.livechat.android.config.DeviceConfig: java.lang.String getUserAgentDetails()>
+    <com.zoho.livechat.android.comm.LiveChatAdapter: void connect()>
+    <com.zoho.livechat.android.comm.LiveChatAdapter: void connect()>
+    <com.zoho.livechat.android.messaging.wms.common.pex.PEX: void init(java.lang.String,com.zoho.livechat.android.messaging.wms.common.pex.credentials.PEXCredentials,java.util.HashMap,java.lang.String,java.lang.String)>
+    <com.zoho.livechat.android.messaging.wms.common.websocket.WebSocket: void addHeaders(java.util.HashMap)>
+    <com.zoho.livechat.android.messaging.wms.common.websocket.WebSocket: void addHeaders(java.util.HashMap)>
+    <com.zoho.livechat.android.messaging.wms.common.websocket.WebSocket: void addHeaders(java.util.HashMap)>
+    <com.zoho.livechat.android.messaging.wms.common.websocket.WebSocket: void addHeader(java.lang.String,java.lang.String)>
+    <com.zoho.livechat.android.messaging.wms.common.websocket.WebSocket: void addHeader(java.lang.String,java.lang.String)>
+    <com.zoho.livechat.android.messaging.wms.common.websocket.WebSocket: void addHeader(java.lang.String,java.lang.String)>
+    <com.zoho.livechat.android.messaging.wms.common.websocket.WebSocket: void addHeaders(java.util.HashMap)>
+    <com.zoho.livechat.android.messaging.wms.common.pex.PEX: void init(java.lang.String,com.zoho.livechat.android.messaging.wms.common.pex.credentials.PEXCredentials,java.util.HashMap,java.lang.String,java.lang.String)>
+    <com.zoho.livechat.android.messaging.wms.common.pex.PEX: void init(java.lang.String,com.zoho.livechat.android.messaging.wms.common.pex.credentials.PEXCredentials,java.util.HashMap,java.lang.String,java.lang.String)>
+    <com.zoho.livechat.android.messaging.wms.common.pex.PEX: void init(java.lang.String,com.zoho.livechat.android.messaging.wms.common.pex.credentials.PEXCredentials,java.util.HashMap,java.lang.String,java.lang.String)>
+    <com.zoho.livechat.android.messaging.wms.common.websocket.WebSocketQueryV13: void connect()>
+    <com.zoho.livechat.android.messaging.wms.common.websocket.WebSocketQueryV13: void doHandshake()>
+    <com.zoho.livechat.android.messaging.wms.common.websocket.WebSocketQueryV13: void doHandshake()>
+    <com.zoho.livechat.android.messaging.wms.common.websocket.WebSocketQueryV13: void doHandshake()>
+    <com.zoho.livechat.android.messaging.wms.common.websocket.WebSocketQueryV13: void doHandshake()>
+    <com.zoho.livechat.android.messaging.wms.common.websocket.WebSocketQueryV13: void appendHeaderValue(java.lang.String,java.lang.String)>
+    <com.zoho.livechat.android.messaging.wms.common.websocket.WebSocketQueryV13: void appendHeaderValue(java.lang.String,java.lang.String)>
+    <com.zoho.livechat.android.messaging.wms.common.websocket.WebSocketQueryV13: void appendHeaderValue(java.lang.String,java.lang.String)>
+    <com.zoho.livechat.android.messaging.wms.common.websocket.WebSocketQueryV13: void doHandshake()>
+    <com.zoho.livechat.android.messaging.wms.common.websocket.WebSocketQueryV13: void doHandshake()>
+    <com.zoho.livechat.android.messaging.wms.common.websocket.WebSocketQueryV13: void doHandshake()>
+    <com.zoho.livechat.android.messaging.wms.common.websocket.WebSocketQueryV13: void doHandshake()>
+    <com.zoho.livechat.android.messaging.wms.common.websocket.WebSocketQueryV13: void writeBytes(byte[])>
+
+Leak 2:
+  Source: $r4 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r3, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: $r12 = virtualinvoke $r5.<java.net.HttpURLConnection: java.io.OutputStream getOutputStream()>() (<java.net.HttpURLConnection: java.io.OutputStream getOutputStream()>)
+  Methods:
+    <com.zoho.livechat.android.config.DeviceConfig: java.lang.String getVersionCode()>
+    <com.zoho.livechat.android.config.DeviceConfig: java.lang.String getVersionCode()>
+    <com.zoho.livechat.android.config.DeviceConfig: java.lang.String getVersionCode()>
+    <com.zoho.livechat.android.config.DeviceConfig: java.lang.String getUserAgentDetails(boolean)>
+    <com.zoho.livechat.android.config.DeviceConfig: java.lang.String getUserAgentDetails(boolean)>
+    <com.zoho.livechat.android.messaging.wms.common.HttpDataWraper: java.lang.String getString(java.lang.Object)>
+    <com.zoho.livechat.android.messaging.wms.common.HttpDataWraper: java.lang.String getString(java.lang.Object)>
+    <com.zoho.livechat.android.config.DeviceConfig: java.lang.String getUserAgentDetails(boolean)>
+    <com.zoho.livechat.android.config.DeviceConfig: java.lang.String getUserAgentDetails()>
+    <com.zoho.livechat.android.api.ReOpen: void run()>
+    <com.zoho.livechat.android.api.ReOpen: void run()>
+
+Leak 3:
+  Source: $r4 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r3, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("ManifestParser", $r5) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.bumptech.glide.module.ManifestParser: android.content.pm.ApplicationInfo getOurApplicationInfo()>
+    <com.bumptech.glide.module.ManifestParser: android.content.pm.ApplicationInfo getOurApplicationInfo()>
+    <com.bumptech.glide.module.ManifestParser: java.util.List parse()>
+    <com.bumptech.glide.module.ManifestParser: java.util.List parse()>
+    <com.bumptech.glide.module.ManifestParser: java.util.List parse()>
+    <com.bumptech.glide.module.ManifestParser: java.util.List parse()>
+    <com.bumptech.glide.module.ManifestParser: java.util.List parse()>
+    <com.bumptech.glide.module.ManifestParser: java.util.List parse()>
+    <com.bumptech.glide.module.ManifestParser: java.util.List parse()>
+    <com.bumptech.glide.module.ManifestParser: java.util.List parse()>
+
+Leak 4:
+  Source: $r4 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r3, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: $r9 = virtualinvoke $r6.<java.net.HttpURLConnection: java.io.OutputStream getOutputStream()>() (<java.net.HttpURLConnection: java.io.OutputStream getOutputStream()>)
+  Methods:
+    <com.zoho.livechat.android.config.DeviceConfig: java.lang.String getVersionCode()>
+    <com.zoho.livechat.android.config.DeviceConfig: java.lang.String getVersionCode()>
+    <com.zoho.livechat.android.config.DeviceConfig: java.lang.String getVersionCode()>
+    <com.zoho.livechat.android.config.DeviceConfig: java.lang.String getUserAgentDetails(boolean)>
+    <com.zoho.livechat.android.config.DeviceConfig: java.lang.String getUserAgentDetails(boolean)>
+    <com.zoho.livechat.android.messaging.wms.common.HttpDataWraper: java.lang.String getString(java.lang.Object)>
+    <com.zoho.livechat.android.messaging.wms.common.HttpDataWraper: java.lang.String getString(java.lang.Object)>
+    <com.zoho.livechat.android.config.DeviceConfig: java.lang.String getUserAgentDetails(boolean)>
+    <com.zoho.livechat.android.config.DeviceConfig: java.lang.String getUserAgentDetails()>
+    <com.zoho.livechat.android.api.JoinProActiveChat: void run()>
+    <com.zoho.livechat.android.api.JoinProActiveChat: void run()>
+
+Leak 5:
+  Source: $r4 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r3, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r3.<java.io.OutputStream: void write(byte[])>($r2) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.zoho.livechat.android.config.DeviceConfig: java.lang.String getVersionCode()>
+    <com.zoho.livechat.android.config.DeviceConfig: java.lang.String getVersionCode()>
+    <com.zoho.livechat.android.config.DeviceConfig: java.lang.String getVersionCode()>
+    <com.zoho.livechat.android.config.DeviceConfig: java.lang.String getUserAgentDetails(boolean)>
+    <com.zoho.livechat.android.config.DeviceConfig: java.lang.String getUserAgentDetails(boolean)>
+    <com.zoho.livechat.android.messaging.wms.common.HttpDataWraper: java.lang.String getString(java.lang.Object)>
+    <com.zoho.livechat.android.messaging.wms.common.HttpDataWraper: java.lang.String getString(java.lang.Object)>
+    <com.zoho.livechat.android.config.DeviceConfig: java.lang.String getUserAgentDetails(boolean)>
+    <com.zoho.livechat.android.config.DeviceConfig: java.lang.String getUserAgentDetails()>
+    <com.zoho.livechat.android.comm.LiveChatAdapter: void connect()>
+    <com.zoho.livechat.android.comm.LiveChatAdapter: void connect()>
+    <com.zoho.livechat.android.messaging.wms.common.pex.PEX: void init(java.lang.String,com.zoho.livechat.android.messaging.wms.common.pex.credentials.PEXCredentials,java.util.HashMap,java.lang.String,java.lang.String)>
+    <com.zoho.livechat.android.messaging.wms.common.websocket.WebSocket: void addHeaders(java.util.HashMap)>
+    <com.zoho.livechat.android.messaging.wms.common.websocket.WebSocket: void addHeaders(java.util.HashMap)>
+    <com.zoho.livechat.android.messaging.wms.common.websocket.WebSocket: void addHeaders(java.util.HashMap)>
+    <com.zoho.livechat.android.messaging.wms.common.websocket.WebSocket: void addHeader(java.lang.String,java.lang.String)>
+    <com.zoho.livechat.android.messaging.wms.common.websocket.WebSocket: void addHeader(java.lang.String,java.lang.String)>
+    <com.zoho.livechat.android.messaging.wms.common.websocket.WebSocket: void addHeader(java.lang.String,java.lang.String)>
+    <com.zoho.livechat.android.messaging.wms.common.websocket.WebSocket: void addHeaders(java.util.HashMap)>
+    <com.zoho.livechat.android.messaging.wms.common.pex.PEX: void init(java.lang.String,com.zoho.livechat.android.messaging.wms.common.pex.credentials.PEXCredentials,java.util.HashMap,java.lang.String,java.lang.String)>
+    <com.zoho.livechat.android.messaging.wms.common.pex.PEX: void init(java.lang.String,com.zoho.livechat.android.messaging.wms.common.pex.credentials.PEXCredentials,java.util.HashMap,java.lang.String,java.lang.String)>
+    <com.zoho.livechat.android.messaging.wms.common.pex.PEX: void init(java.lang.String,com.zoho.livechat.android.messaging.wms.common.pex.credentials.PEXCredentials,java.util.HashMap,java.lang.String,java.lang.String)>
+    <com.zoho.livechat.android.messaging.wms.common.websocket.WebSocketV13: void connect()>
+    <com.zoho.livechat.android.messaging.wms.common.websocket.WebSocketV13$ReadThread: void <init>(com.zoho.livechat.android.messaging.wms.common.websocket.WebSocketV13)>
+    <com.zoho.livechat.android.messaging.wms.common.websocket.WebSocketV13$ReadThread: void <init>(com.zoho.livechat.android.messaging.wms.common.websocket.WebSocketV13)>
+    <com.zoho.livechat.android.messaging.wms.common.websocket.WebSocketV13: void connect()>
+    <com.zoho.livechat.android.messaging.wms.common.websocket.WebSocketV13$ReadThread: void run()>
+    <com.zoho.livechat.android.messaging.wms.common.websocket.WebSocketV13$ReadThread: void run()>
+    <com.zoho.livechat.android.messaging.wms.common.websocket.WebSocketV13: void access$100(com.zoho.livechat.android.messaging.wms.common.websocket.WebSocketV13)>
+    <com.zoho.livechat.android.messaging.wms.common.websocket.WebSocketV13: void doHandshake()>
+    <com.zoho.livechat.android.messaging.wms.common.websocket.WebSocketV13: void doHandshake()>
+    <com.zoho.livechat.android.messaging.wms.common.websocket.WebSocketV13: void doHandshake()>
+    <com.zoho.livechat.android.messaging.wms.common.websocket.WebSocketV13: void doHandshake()>
+    <com.zoho.livechat.android.messaging.wms.common.websocket.WebSocketV13: void appendHeaderValue(java.lang.String,java.lang.String)>
+    <com.zoho.livechat.android.messaging.wms.common.websocket.WebSocketV13: void appendHeaderValue(java.lang.String,java.lang.String)>
+    <com.zoho.livechat.android.messaging.wms.common.websocket.WebSocketV13: void appendHeaderValue(java.lang.String,java.lang.String)>
+    <com.zoho.livechat.android.messaging.wms.common.websocket.WebSocketV13: void doHandshake()>
+    <com.zoho.livechat.android.messaging.wms.common.websocket.WebSocketV13: void doHandshake()>
+    <com.zoho.livechat.android.messaging.wms.common.websocket.WebSocketV13: void doHandshake()>
+    <com.zoho.livechat.android.messaging.wms.common.websocket.WebSocketV13: void doHandshake()>
+    <com.zoho.livechat.android.messaging.wms.common.websocket.WebSocketV13: void writeBytes(byte[])>
+

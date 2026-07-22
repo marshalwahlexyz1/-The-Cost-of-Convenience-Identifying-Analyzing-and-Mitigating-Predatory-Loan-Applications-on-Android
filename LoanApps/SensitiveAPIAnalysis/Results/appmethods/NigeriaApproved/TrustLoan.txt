@@ -1,0 +1,102 @@
+APK: TrustLoan (NigeriaApproved)
+Leak 1:
+  Source: $r19 = virtualinvoke $r18.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r14, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r5.<java.io.FileOutputStream: void write(byte[])>($r7) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <brisque.MachicuiJudges: void electrocystoscopePanatelas(org.json.JSONObject,android.content.Context)>
+    <brisque.MachicuiJudges: void electrocystoscopePanatelas(org.json.JSONObject,android.content.Context)>
+    <brisque.MachicuiJudges: void electrocystoscopePanatelas(org.json.JSONObject,android.content.Context)>
+    <brisque.MachicuiJudges: void electrocystoscopePanatelas(org.json.JSONObject,android.content.Context)>
+    <photoreconnaissance.OctosepalousQuerying: org.json.JSONObject thalamencephalicSpermatic(photoreconnaissance.SlovaksDesmodont,brisque.EmbiopteraChalkography,java.lang.String,boolean,android.content.Context)>
+    <galuth.SpokeNonvenomousness: void run()>
+    <noncosmopolite.HahDedicatedly: void run()>
+    <brisque.ThrailComates: void slobPardi(brisque.PretorUpflash)>
+    <brisque.LummyStrawless: void thalamencephalicSpermatic(brisque.CreakedPerdy,brisque.ChristenheadWoodhouses)>
+    <nembutal.ThruvDognaped: void <init>(java.lang.String)>
+    <nembutal.KunkurCognosce: java.lang.String agnelBandlessness()>
+    <rivalship.CoroneneExpirator: void purebloodSpacer(android.os.Bundle,java.lang.String)>
+    <rivalship.CoroneneExpirator: void purebloodSpacer(android.os.Bundle,java.lang.String)>
+    <rivalship.CoroneneExpirator: void purebloodSpacer(android.os.Bundle,java.lang.String)>
+    <rivalship.CoroneneExpirator: void purebloodSpacer(android.os.Bundle,java.lang.String)>
+    <rivalship.CoroneneExpirator: void purebloodSpacer(android.os.Bundle,java.lang.String)>
+    <rivalship.CoroneneExpirator: void purebloodSpacer(android.os.Bundle,java.lang.String)>
+    <casque.HahDedicatedly: void thalamencephalicSpermatic(java.lang.Object,java.lang.Throwable)>
+    <approvableness.SlovaksDesmodont: void slobPardi()>
+    <approvableness.SlovaksDesmodont: java.lang.String toString()>
+    <approvableness.SlovaksDesmodont: java.lang.String toString()>
+    <approvableness.SlovaksDesmodont: java.lang.String toString()>
+    <approvableness.SlovaksDesmodont: java.lang.String toString()>
+    <approvableness.SlovaksDesmodont: java.lang.String toString()>
+    <approvableness.SlovaksDesmodont: void slobPardi()>
+    <buyback.UpgatherDrouking: void imitSuperperfect(java.lang.String,java.lang.String)>
+    <buyback.UpgatherDrouking: void imitSuperperfect(java.lang.String,java.lang.String)>
+
+Leak 2:
+  Source: $r4 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r3, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r5.<java.io.FileOutputStream: void write(byte[])>($r7) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <com.trustloan.app.app.utils.SemisatiricSumpter: java.lang.String slobPardi()>
+    <com.trustloan.app.app.utils.SemisatiricSumpter: java.lang.String slobPardi()>
+    <com.trustloan.app.app.utils.SemisatiricSumpter: java.lang.String slobPardi()>
+    <com.trustloan.app.app.utils.SemisatiricSumpter: void outgrinningTripery(java.lang.Throwable)>
+    <com.trustloan.app.app.utils.SemisatiricSumpter: void outgrinningTripery(java.lang.Throwable)>
+    <com.trustloan.app.app.utils.SemisatiricSumpter: void outgrinningTripery(java.lang.Throwable)>
+    <com.trustloan.app.app.utils.SemisatiricSumpter: void outgrinningTripery(java.lang.Throwable)>
+    <com.trustloan.app.app.utils.SemisatiricSumpter: void outgrinningTripery(java.lang.Throwable)>
+    <com.google.android.material.checkbox.HahDedicatedly: void run()>
+    <android.os.Handler: boolean postDelayed(java.lang.Runnable,long)>
+    <galuth.SpokeNonvenomousness: void run()>
+    <parazoa.OctosepalousQuerying: void satirizingCavillingness(buyback.CounterstatantJadedly,buyback.SlovaksDesmodont)>
+    <buyback.TendentiousnessUpturning: void purebloodSpacer(java.lang.String,java.lang.Double,android.os.Bundle,boolean,java.util.UUID)>
+    <nembutal.TaivertOilfishes: void vandalismHooka()>
+    <nembutal.TaivertOilfishes: void purebloodSpacer()>
+    <nembutal.TaivertOilfishes: boolean slobPardi()>
+    <buyback.LummyStrawless: void taillesOleraceae(java.lang.Throwable)>
+    <approvableness.SlovaksDesmodont: void slobPardi()>
+    <approvableness.SlovaksDesmodont: java.lang.String toString()>
+    <approvableness.SlovaksDesmodont: java.lang.String toString()>
+    <approvableness.SlovaksDesmodont: java.lang.String toString()>
+    <approvableness.SlovaksDesmodont: java.lang.String toString()>
+    <approvableness.SlovaksDesmodont: java.lang.String toString()>
+    <approvableness.SlovaksDesmodont: void slobPardi()>
+    <buyback.UpgatherDrouking: void imitSuperperfect(java.lang.String,java.lang.String)>
+    <buyback.UpgatherDrouking: void imitSuperperfect(java.lang.String,java.lang.String)>
+
+Leak 3:
+  Source: $r9 = virtualinvoke $r8.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r6, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r5.<java.io.FileOutputStream: void write(byte[])>($r7) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <approvableness.SlovaksDesmodont: void <init>(java.lang.String,java.lang.String)>
+    <approvableness.SlovaksDesmodont: void <init>(java.lang.String,java.lang.String)>
+    <approvableness.SlovaksDesmodont: void <init>(java.lang.String,java.lang.String)>
+    <approvableness.SlovaksDesmodont: void <init>(java.lang.String,java.lang.String)>
+    <megagametophyte.HahDedicatedly: void thalamencephalicSpermatic(android.app.ActivityManager)>
+    <approvableness.SlovaksDesmodont: void slobPardi()>
+    <approvableness.SlovaksDesmodont: java.lang.String toString()>
+    <approvableness.SlovaksDesmodont: java.lang.String toString()>
+    <approvableness.SlovaksDesmodont: java.lang.String toString()>
+    <approvableness.SlovaksDesmodont: java.lang.String toString()>
+    <approvableness.SlovaksDesmodont: java.lang.String toString()>
+    <approvableness.SlovaksDesmodont: void slobPardi()>
+    <buyback.UpgatherDrouking: void imitSuperperfect(java.lang.String,java.lang.String)>
+    <buyback.UpgatherDrouking: void imitSuperperfect(java.lang.String,java.lang.String)>
+
+Leak 4:
+  Source: $r8 = virtualinvoke $r7.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r5, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r5.<java.io.FileOutputStream: void write(byte[])>($r7) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <approvableness.SlovaksDesmodont: void <init>(java.lang.Throwable,approvableness.CoroneneExpirator)>
+    <approvableness.SlovaksDesmodont: void <init>(java.lang.Throwable,approvableness.CoroneneExpirator)>
+    <approvableness.SlovaksDesmodont: void <init>(java.lang.Throwable,approvableness.CoroneneExpirator)>
+    <approvableness.SlovaksDesmodont: void <init>(java.lang.Throwable,approvableness.CoroneneExpirator)>
+    <casque.HahDedicatedly: void thalamencephalicSpermatic(java.lang.Object,java.lang.Throwable)>
+    <approvableness.SlovaksDesmodont: void slobPardi()>
+    <approvableness.SlovaksDesmodont: java.lang.String toString()>
+    <approvableness.SlovaksDesmodont: java.lang.String toString()>
+    <approvableness.SlovaksDesmodont: java.lang.String toString()>
+    <approvableness.SlovaksDesmodont: java.lang.String toString()>
+    <approvableness.SlovaksDesmodont: java.lang.String toString()>
+    <approvableness.SlovaksDesmodont: void slobPardi()>
+    <buyback.UpgatherDrouking: void imitSuperperfect(java.lang.String,java.lang.String)>
+    <buyback.UpgatherDrouking: void imitSuperperfect(java.lang.String,java.lang.String)>
+

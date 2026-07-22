@@ -1,0 +1,266 @@
+APK: com.perabag.app_2023-05-22 (PhilippinesApproved)
+Leak 1:
+  Source: $r5 = virtualinvoke $r3.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r4, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r5.<java.io.FileOutputStream: void write(byte[])>($r4) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <PagPaeaa.PagPaeaa.aPaP.BaeBPgrB: java.lang.String eagP()>
+    <PagPaeaa.PagPaeaa.aPaP.BaeBPgrB: java.lang.String eagP()>
+    <PagPaeaa.PagPaeaa.aPaP.BaeBPgrB: java.lang.String eagP()>
+    <PagPaeaa.PagPaeaa.agaga.eagP: void BBr()>
+    <PagPaeaa.PagPaeaa.agaga.eagP: void eeaeaPa(java.lang.String,java.lang.Object)>
+    <PagPaeaa.PagPaeaa.agaga.aPaP: void eeaeaPa(java.lang.String,java.lang.Object)>
+    <PagPaeaa.PagPaeaa.agaga.aPaP: void eeaeaPa(java.lang.String,java.lang.Object)>
+    <PagPaeaa.PagPaeaa.agaga.aPaP: void eeaeaPa(java.lang.String,java.lang.Object)>
+    <PagPaeaa.PagPaeaa.agaga.eagP: void eeaeaPa(java.lang.String,java.lang.Object)>
+    <PagPaeaa.PagPaeaa.agaga.eagP: void BBr()>
+    <PagPaeaa.PagPaeaa.agaga.eagP: org.json.JSONObject aa()>
+    <PagPaeaa.PagPaeaa.agaga.aPaP: org.json.JSONObject aa()>
+    <PagPaeaa.PagPaeaa.agaga.aPaP: org.json.JSONObject aa()>
+    <PagPaeaa.PagPaeaa.agaga.eagP: org.json.JSONObject aa()>
+    <PagPaeaa.PagPaeaa.aPaP.arBgaPPa: void ra(java.lang.String)>
+    <PagPaeaa.PagPaeaa.aPaP.arBgaPPa: void ra(java.lang.String)>
+    <PagPaeaa.PagPaeaa.aPaP.aPaP: void ra(java.lang.String)>
+    <PagPaeaa.PagPaeaa.aPaP.aPaP: void arPaPggB(java.lang.String)>
+    <PagPaeaa.PagPaeaa.aPaP.aPaP: void arPaPggB(java.lang.String)>
+    <PagPaeaa.PagPaeaa.PagPaeaa.BaeBPgrB.BaeBPgrB: void arBgaPPa(org.json.JSONObject,java.lang.String,java.lang.Object)>
+    <PagPaeaa.PagPaeaa.PagPaeaa.BaeBPgrB.BaeBPgrB: void arBgaPPa(org.json.JSONObject,java.lang.String,java.lang.Object)>
+    <PagPaeaa.PagPaeaa.aPaP.aPaP: void arPaPggB(java.lang.String)>
+    <PagPaeaa.PagPaeaa.aPaP.aPaP: void arPaPggB(java.lang.String)>
+    <PagPaeaa.PagPaeaa.PagPaeaa.BaeBPgrB.agaga: void agaga(android.content.Context,java.lang.String,java.lang.String)>
+    <PagPaeaa.PagPaeaa.PagPaeaa.BaeBPgrB.agaga: void agaga(android.content.Context,java.lang.String,java.lang.String)>
+    <PagPaeaa.PagPaeaa.PagPaeaa.BaeBPgrB.agaga: void agaga(android.content.Context,java.lang.String,java.lang.String)>
+
+Leak 2:
+  Source: $r5 = virtualinvoke $r3.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r4, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r5.<java.io.FileOutputStream: void write(byte[])>($r4) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <PagPaeaa.PagPaeaa.aPaP.BaeBPgrB: java.lang.String grar()>
+    <PagPaeaa.PagPaeaa.aPaP.BaeBPgrB: java.lang.String grar()>
+    <PagPaeaa.PagPaeaa.aPaP.BaeBPgrB: java.lang.String grar()>
+    <PagPaeaa.PagPaeaa.agaga.eagP: void BBr()>
+    <PagPaeaa.PagPaeaa.agaga.eagP: void eeaeaPa(java.lang.String,java.lang.Object)>
+    <PagPaeaa.PagPaeaa.agaga.aPaP: void eeaeaPa(java.lang.String,java.lang.Object)>
+    <PagPaeaa.PagPaeaa.agaga.aPaP: void eeaeaPa(java.lang.String,java.lang.Object)>
+    <PagPaeaa.PagPaeaa.agaga.aPaP: void eeaeaPa(java.lang.String,java.lang.Object)>
+    <PagPaeaa.PagPaeaa.agaga.eagP: void eeaeaPa(java.lang.String,java.lang.Object)>
+    <PagPaeaa.PagPaeaa.agaga.eagP: void BBr()>
+    <PagPaeaa.PagPaeaa.agaga.eagP: org.json.JSONObject aa()>
+    <PagPaeaa.PagPaeaa.agaga.aPaP: org.json.JSONObject aa()>
+    <PagPaeaa.PagPaeaa.agaga.aPaP: org.json.JSONObject aa()>
+    <PagPaeaa.PagPaeaa.agaga.eagP: org.json.JSONObject aa()>
+    <PagPaeaa.PagPaeaa.aPaP.arBgaPPa: void ra(java.lang.String)>
+    <PagPaeaa.PagPaeaa.aPaP.arBgaPPa: void ra(java.lang.String)>
+    <PagPaeaa.PagPaeaa.aPaP.aPaP: void ra(java.lang.String)>
+    <PagPaeaa.PagPaeaa.aPaP.aPaP: void arPaPggB(java.lang.String)>
+    <PagPaeaa.PagPaeaa.aPaP.aPaP: void arPaPggB(java.lang.String)>
+    <PagPaeaa.PagPaeaa.PagPaeaa.BaeBPgrB.BaeBPgrB: void arBgaPPa(org.json.JSONObject,java.lang.String,java.lang.Object)>
+    <PagPaeaa.PagPaeaa.PagPaeaa.BaeBPgrB.BaeBPgrB: void arBgaPPa(org.json.JSONObject,java.lang.String,java.lang.Object)>
+    <PagPaeaa.PagPaeaa.aPaP.aPaP: void arPaPggB(java.lang.String)>
+    <PagPaeaa.PagPaeaa.aPaP.aPaP: void arPaPggB(java.lang.String)>
+    <PagPaeaa.PagPaeaa.PagPaeaa.BaeBPgrB.agaga: void agaga(android.content.Context,java.lang.String,java.lang.String)>
+    <PagPaeaa.PagPaeaa.PagPaeaa.BaeBPgrB.agaga: void agaga(android.content.Context,java.lang.String,java.lang.String)>
+    <PagPaeaa.PagPaeaa.PagPaeaa.BaeBPgrB.agaga: void agaga(android.content.Context,java.lang.String,java.lang.String)>
+
+Leak 3:
+  Source: $r3 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r1, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r5.<java.io.FileOutputStream: void write(byte[])>($r4) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <com.appsflyer.internal.ad: java.lang.String AFKeystoreWrapper(android.content.Context,java.lang.String)>
+    <com.appsflyer.internal.ad: java.lang.String AFKeystoreWrapper(android.content.Context,java.lang.String)>
+    <com.appsflyer.internal.ad: java.lang.String AFKeystoreWrapper(android.content.Context,java.lang.String)>
+    <com.appsflyer.internal.ba: java.util.Map AFKeystoreWrapper()>
+    <com.appsflyer.internal.ba: java.util.Map AFKeystoreWrapper()>
+    <com.appsflyer.internal.ba: java.util.Map AFKeystoreWrapper()>
+    <com.appsflyer.internal.ba: java.util.Map AFKeystoreWrapper()>
+    <com.appsflyer.internal.ba: com.appsflyer.internal.bb valueOf(java.lang.String,java.lang.String,java.util.UUID,java.lang.String)>
+    <com.appsflyer.internal.bt: com.appsflyer.internal.bb valueOf(java.lang.String)>
+    <com.appsflyer.internal.bv: com.appsflyer.internal.bj AFInAppEventParameterName()>
+    <com.appsflyer.internal.bq: com.appsflyer.internal.bj valueOf()>
+    <com.appsflyer.internal.by$4: void run()>
+    <com.appsflyer.internal.by: void valueOf(com.appsflyer.internal.bz)>
+    <com.appsflyer.internal.ab: void start(android.content.Context,java.lang.String,com.appsflyer.attribution.AppsFlyerRequestListener)>
+    <com.appsflyer.internal.ab: void start(android.content.Context,java.lang.String)>
+    <com.perabag.app.pa.abg.bg.PbgApplication: void onCreate()>
+    <dummyMainClass: void dummyMainMethod(java.lang.String[])>
+    <dummyMainClass: ai.advance.liveness.lib.RService dummyMainMethod_ai_advance_liveness_lib_RService(android.content.Intent)>
+    <ai.advance.core.NLServiceParent: void onHandleIntent(android.content.Intent)>
+    <PagPaeaa.PagPaeaa.aPaP.arBgaPPa: void ra(java.lang.String)>
+    <PagPaeaa.PagPaeaa.agaga.eagP: org.json.JSONObject aa()>
+    <PagPaeaa.PagPaeaa.agaga.aPaP: org.json.JSONObject aa()>
+    <PagPaeaa.PagPaeaa.agaga.aPaP: org.json.JSONObject arBgaPPa(org.json.JSONObject)>
+    <ai.advance.event.GuardianEvents: org.json.JSONObject arBgaPPa(org.json.JSONObject)>
+    <ai.advance.event.GuardianEvents: org.json.JSONObject PagPaeaa(android.content.Context)>
+    <PagPaeaa.PagPaeaa.agaga.agaga: org.json.JSONObject arPaPggB()>
+    <PagPaeaa.PagPaeaa.agaga.agaga: org.json.JSONObject arPaPggB()>
+    <PagPaeaa.PagPaeaa.agaga.agaga: org.json.JSONObject arPaPggB()>
+    <ai.advance.event.GuardianEvents: org.json.JSONObject PagPaeaa(android.content.Context)>
+    <ai.advance.event.GuardianEvents: org.json.JSONObject arBgaPPa(org.json.JSONObject)>
+    <ai.advance.event.GuardianEvents: org.json.JSONObject arBgaPPa(org.json.JSONObject)>
+    <ai.advance.event.GuardianEvents: org.json.JSONObject arBgaPPa(org.json.JSONObject)>
+    <ai.advance.event.GuardianEvents: org.json.JSONObject arBgaPPa(org.json.JSONObject)>
+    <ai.advance.event.GuardianEvents: boolean agaga()>
+    <ai.advance.event.GuardianEvents: org.json.JSONObject arBgaPPa(org.json.JSONObject)>
+    <ai.advance.event.GuardianEvents: org.json.JSONObject arBgaPPa(org.json.JSONObject)>
+    <ai.advance.event.GuardianEvents: org.json.JSONObject arBgaPPa(org.json.JSONObject)>
+    <ai.advance.event.GuardianEvents: org.json.JSONObject arBgaPPa(org.json.JSONObject)>
+    <ai.advance.event.GuardianEvents: org.json.JSONObject arBgaPPa(org.json.JSONObject)>
+    <ai.advance.event.GuardianEvents: void eagP(java.lang.String,java.lang.Object)>
+    <ai.advance.event.GuardianEvents: org.json.JSONObject arBgaPPa(org.json.JSONObject)>
+    <ai.advance.event.GuardianEvents: void PaP()>
+    <ai.advance.event.GuardianEvents: org.json.JSONObject arBgaPPa(org.json.JSONObject)>
+    <ai.advance.event.GuardianEvents: org.json.JSONObject arBgaPPa(org.json.JSONObject)>
+    <PagPaeaa.PagPaeaa.agaga.aPaP: org.json.JSONObject arBgaPPa(org.json.JSONObject)>
+    <PagPaeaa.PagPaeaa.agaga.aPaP: org.json.JSONObject aa()>
+    <PagPaeaa.PagPaeaa.agaga.eagP: org.json.JSONObject aa()>
+    <PagPaeaa.PagPaeaa.aPaP.arBgaPPa: void ra(java.lang.String)>
+    <PagPaeaa.PagPaeaa.aPaP.arBgaPPa: void ra(java.lang.String)>
+    <PagPaeaa.PagPaeaa.aPaP.aPaP: void ra(java.lang.String)>
+    <PagPaeaa.PagPaeaa.aPaP.aPaP: void arPaPggB(java.lang.String)>
+    <PagPaeaa.PagPaeaa.aPaP.aPaP: void arPaPggB(java.lang.String)>
+    <PagPaeaa.PagPaeaa.PagPaeaa.BaeBPgrB.BaeBPgrB: void arBgaPPa(org.json.JSONObject,java.lang.String,java.lang.Object)>
+    <PagPaeaa.PagPaeaa.PagPaeaa.BaeBPgrB.BaeBPgrB: void arBgaPPa(org.json.JSONObject,java.lang.String,java.lang.Object)>
+    <PagPaeaa.PagPaeaa.aPaP.aPaP: void arPaPggB(java.lang.String)>
+    <PagPaeaa.PagPaeaa.aPaP.aPaP: void arPaPggB(java.lang.String)>
+    <PagPaeaa.PagPaeaa.PagPaeaa.BaeBPgrB.agaga: void agaga(android.content.Context,java.lang.String,java.lang.String)>
+    <PagPaeaa.PagPaeaa.PagPaeaa.BaeBPgrB.agaga: void agaga(android.content.Context,java.lang.String,java.lang.String)>
+    <PagPaeaa.PagPaeaa.PagPaeaa.BaeBPgrB.agaga: void agaga(android.content.Context,java.lang.String,java.lang.String)>
+
+Leak 4:
+  Source: $r3 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r1, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("AppsFlyer_6.6.1", $r2) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.appsflyer.internal.ad: java.lang.String AFKeystoreWrapper(android.content.Context,java.lang.String)>
+    <com.appsflyer.internal.ad: java.lang.String AFKeystoreWrapper(android.content.Context,java.lang.String)>
+    <com.appsflyer.internal.ad: java.lang.String AFKeystoreWrapper(android.content.Context,java.lang.String)>
+    <com.appsflyer.internal.ba: java.util.Map AFKeystoreWrapper()>
+    <com.appsflyer.internal.ba: java.util.Map AFKeystoreWrapper()>
+    <com.appsflyer.internal.ba: com.appsflyer.internal.bb valueOf(java.lang.String,java.lang.String,java.util.UUID,java.lang.String)>
+    <com.appsflyer.internal.ba: com.appsflyer.internal.bb valueOf(java.lang.String,java.lang.String,java.util.UUID,java.lang.String)>
+    <com.appsflyer.internal.ba: com.appsflyer.internal.bb valueOf(java.lang.String,java.lang.String,java.util.UUID,java.lang.String)>
+    <com.appsflyer.internal.ba: com.appsflyer.internal.bb valueOf(java.lang.String,java.lang.String,java.util.UUID,java.lang.String)>
+    <com.appsflyer.internal.aa: void <init>(java.lang.String,byte[],java.lang.String,java.util.Map,boolean)>
+    <com.appsflyer.internal.aa: void <init>(java.lang.String,byte[],java.lang.String,java.util.Map,boolean)>
+    <com.appsflyer.internal.ba: com.appsflyer.internal.bb valueOf(java.lang.String,java.lang.String,java.util.UUID,java.lang.String)>
+    <com.appsflyer.internal.ba: com.appsflyer.internal.bb AFInAppEventType(com.appsflyer.internal.aa,com.appsflyer.internal.bi)>
+    <com.appsflyer.internal.ba: com.appsflyer.internal.bb AFKeystoreWrapper(com.appsflyer.internal.aa,com.appsflyer.internal.bi,boolean)>
+    <com.appsflyer.internal.bb: void <init>(com.appsflyer.internal.aa,java.util.concurrent.ExecutorService,com.appsflyer.internal.bd,com.appsflyer.internal.bi)>
+    <com.appsflyer.internal.bb: void <init>(com.appsflyer.internal.aa,java.util.concurrent.ExecutorService,com.appsflyer.internal.bd,com.appsflyer.internal.bi)>
+    <com.appsflyer.internal.ba: com.appsflyer.internal.bb AFKeystoreWrapper(com.appsflyer.internal.aa,com.appsflyer.internal.bi,boolean)>
+    <com.appsflyer.internal.ba: com.appsflyer.internal.bb AFInAppEventType(com.appsflyer.internal.aa,com.appsflyer.internal.bi)>
+    <com.appsflyer.internal.ba: com.appsflyer.internal.bb valueOf(java.lang.String,java.lang.String,java.util.UUID,java.lang.String)>
+    <com.appsflyer.internal.bt: com.appsflyer.internal.bb valueOf(java.lang.String)>
+    <com.appsflyer.internal.bv: com.appsflyer.internal.bj AFInAppEventParameterName()>
+    <com.appsflyer.internal.bb: com.appsflyer.internal.bl AFInAppEventParameterName()>
+    <com.appsflyer.internal.bb: com.appsflyer.internal.bl AFInAppEventParameterName()>
+    <com.appsflyer.internal.bd: com.appsflyer.internal.bl AFInAppEventParameterName(com.appsflyer.internal.aa)>
+    <com.appsflyer.internal.bd: com.appsflyer.internal.bl AFInAppEventParameterName(com.appsflyer.internal.aa)>
+    <com.appsflyer.internal.bd: com.appsflyer.internal.bl AFInAppEventParameterName(com.appsflyer.internal.aa)>
+    <com.appsflyer.internal.bd: com.appsflyer.internal.bl AFInAppEventParameterName(com.appsflyer.internal.aa)>
+    <com.appsflyer.internal.bd: com.appsflyer.internal.bl AFInAppEventParameterName(com.appsflyer.internal.aa)>
+    <com.appsflyer.internal.bd: com.appsflyer.internal.bl AFInAppEventParameterName(com.appsflyer.internal.aa)>
+    <com.appsflyer.internal.bd: com.appsflyer.internal.bl AFInAppEventParameterName(com.appsflyer.internal.aa)>
+    <com.appsflyer.internal.bd: com.appsflyer.internal.bl AFInAppEventParameterName(com.appsflyer.internal.aa)>
+    <com.appsflyer.internal.bd: com.appsflyer.internal.bl AFInAppEventParameterName(com.appsflyer.internal.aa)>
+    <com.appsflyer.internal.bd: com.appsflyer.internal.bl AFInAppEventParameterName(com.appsflyer.internal.aa)>
+    <com.appsflyer.internal.bd: com.appsflyer.internal.bl AFInAppEventParameterName(com.appsflyer.internal.aa)>
+    <com.appsflyer.AFLogger: void afDebugLog(java.lang.String)>
+    <com.appsflyer.AFLogger: java.lang.String AFInAppEventParameterName(java.lang.String,boolean)>
+    <com.appsflyer.AFLogger: void afDebugLog(java.lang.String)>
+
+Leak 5:
+  Source: $r7 = virtualinvoke $r1.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r6, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: interfaceinvoke $r3.<retrofit2.Call: void enqueue(retrofit2.Callback)>($r1) (<retrofit2.Call: void enqueue(retrofit2.Callback)>)
+  Methods:
+    <com.perabag.app.pa.abg.bg.view.pbgactivity.main.PbgMainActivity: void raaPaer()>
+    <com.perabag.app.pa.abg.bg.view.pbgactivity.main.PbgMainActivity: void raaPaer()>
+    <com.perabag.app.pa.abg.bg.view.pbgactivity.main.PbgMainActivity: void raaPaer()>
+    <com.perabag.app.pa.abg.bg.view.pbgactivity.main.PbgMainActivity: void raaPaer()>
+    <com.perabag.app.pa.abg.bg.view.pbgactivity.main.PbgMainActivity: void raaPaer()>
+    <com.perabag.app.pa.abg.bg.view.pbgactivity.main.PbgMainActivity: void rar()>
+    <com.perabag.app.pa.abg.bg.view.pbgbase.BaseActivity: void onCreate(android.os.Bundle)>
+    <dummyMainClass: com.perabag.app.pa.abg.bg.view.pbgactivity.main.PbgMainActivity dummyMainMethod_com_perabag_app_pa_abg_bg_view_pbgactivity_main_PbgMainActivity(android.content.Intent)>
+    <com.perabag.app.pa.abg.bg.view.pbgactivity.main.PbgMainActivity: void onResume()>
+    <com.perabag.app.pa.abg.bg.view.pbgactivity.main.PbgMainActivity: void eaaaaaBPa()>
+    <com.perabag.app.pa.abg.bg.view.pbgactivity.main.PbgMainActivity$agaga: void <init>(com.perabag.app.pa.abg.bg.view.pbgactivity.main.PbgMainActivity)>
+    <com.perabag.app.pa.abg.bg.view.pbgactivity.main.PbgMainActivity$agaga: void <init>(com.perabag.app.pa.abg.bg.view.pbgactivity.main.PbgMainActivity)>
+    <com.perabag.app.pa.abg.bg.view.pbgactivity.main.PbgMainActivity: void eaaaaaBPa()>
+
+Leak 6:
+  Source: $r7 = virtualinvoke $r1.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r6, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: interfaceinvoke $r6.<retrofit2.Call: void enqueue(retrofit2.Callback)>($r2) (<retrofit2.Call: void enqueue(retrofit2.Callback)>)
+  Methods:
+    <com.perabag.app.pa.abg.bg.view.pbgactivity.main.PbgMainActivity: void raaPaer()>
+    <com.perabag.app.pa.abg.bg.view.pbgactivity.main.PbgMainActivity: void raaPaer()>
+    <com.perabag.app.pa.abg.bg.view.pbgactivity.main.PbgMainActivity: void raaPaer()>
+    <com.perabag.app.pa.abg.bg.view.pbgactivity.main.PbgMainActivity: void raaPaer()>
+    <com.perabag.app.pa.abg.bg.view.pbgactivity.main.PbgMainActivity: void raaPaer()>
+    <com.perabag.app.pa.abg.bg.view.pbgactivity.main.PbgMainActivity: void rar()>
+    <com.perabag.app.pa.abg.bg.view.pbgbase.BaseActivity: void onCreate(android.os.Bundle)>
+    <dummyMainClass: com.perabag.app.pa.abg.bg.view.pbgactivity.main.PbgMainActivity dummyMainMethod_com_perabag_app_pa_abg_bg_view_pbgactivity_main_PbgMainActivity(android.content.Intent)>
+    <com.perabag.app.pa.abg.bg.view.pbgactivity.main.PbgMainActivity: void onResume()>
+    <com.perabag.app.pa.abg.bg.view.pbgbase.BaseActivity: void onResume()>
+    <com.perabag.app.pa.abg.bg.view.pbgbase.BaseActivity: void geaar(BaeBPgrB.PaP.PagPaeaa.PagPaeaa.PagPaeaa.PagPaeaa.agaga.PagPaeaa,boolean)>
+    <com.perabag.app.pa.abg.bg.view.pbgbase.BaseActivity$PagPaeaa: void <init>(com.perabag.app.pa.abg.bg.view.pbgbase.BaseActivity,boolean,BaeBPgrB.PaP.PagPaeaa.PagPaeaa.PagPaeaa.PagPaeaa.agaga.PagPaeaa)>
+    <com.perabag.app.pa.abg.bg.view.pbgbase.BaseActivity$PagPaeaa: void <init>(com.perabag.app.pa.abg.bg.view.pbgbase.BaseActivity,boolean,BaeBPgrB.PaP.PagPaeaa.PagPaeaa.PagPaeaa.PagPaeaa.agaga.PagPaeaa)>
+    <com.perabag.app.pa.abg.bg.view.pbgbase.BaseActivity: void geaar(BaeBPgrB.PaP.PagPaeaa.PagPaeaa.PagPaeaa.PagPaeaa.agaga.PagPaeaa,boolean)>
+
+Leak 7:
+  Source: $r7 = virtualinvoke $r1.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r6, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: interfaceinvoke $r4.<retrofit2.Call: void enqueue(retrofit2.Callback)>($r5) (<retrofit2.Call: void enqueue(retrofit2.Callback)>)
+  Methods:
+    <com.perabag.app.pa.abg.bg.view.pbgactivity.main.PbgMainActivity: void raaPaer()>
+    <com.perabag.app.pa.abg.bg.view.pbgactivity.main.PbgMainActivity: void raaPaer()>
+    <com.perabag.app.pa.abg.bg.view.pbgactivity.main.PbgMainActivity: void raaPaer()>
+    <com.perabag.app.pa.abg.bg.view.pbgactivity.main.PbgMainActivity: void raaPaer()>
+    <com.perabag.app.pa.abg.bg.view.pbgactivity.main.PbgMainActivity: void raaPaer()>
+    <com.perabag.app.pa.abg.bg.view.pbgactivity.main.PbgMainActivity: void rar()>
+    <com.perabag.app.pa.abg.bg.view.pbgbase.BaseActivity: void onCreate(android.os.Bundle)>
+    <dummyMainClass: com.perabag.app.pa.abg.bg.view.pbgactivity.main.PbgMainActivity dummyMainMethod_com_perabag_app_pa_abg_bg_view_pbgactivity_main_PbgMainActivity(android.content.Intent)>
+    <com.perabag.app.pa.abg.bg.view.pbgactivity.main.PbgMainActivity: void onResume()>
+    <com.perabag.app.pa.abg.bg.view.pbgactivity.main.PbgMainActivity: void agPBaaaaa()>
+    <com.perabag.app.pa.abg.bg.view.pbgactivity.main.PbgMainActivity$BaeBPgrB: void <init>(com.perabag.app.pa.abg.bg.view.pbgactivity.main.PbgMainActivity)>
+    <com.perabag.app.pa.abg.bg.view.pbgactivity.main.PbgMainActivity$BaeBPgrB: void <init>(com.perabag.app.pa.abg.bg.view.pbgactivity.main.PbgMainActivity)>
+    <com.perabag.app.pa.abg.bg.view.pbgactivity.main.PbgMainActivity: void agPBaaaaa()>
+
+Leak 8:
+  Source: $r7 = virtualinvoke $r5.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r6, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r16.<java.io.OutputStream: void write(byte[])>($r8) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.appsflyer.internal.au: java.lang.String AFInAppEventType(java.lang.String)>
+    <com.appsflyer.internal.au: java.lang.String AFInAppEventType(java.lang.String)>
+    <com.appsflyer.internal.au: java.lang.String AFInAppEventType(java.lang.String)>
+    <com.appsflyer.internal.au: java.lang.String AFInAppEventType(java.lang.String)>
+    <com.appsflyer.internal.au: java.lang.String AFInAppEventType(java.lang.String)>
+    <com.appsflyer.internal.au: java.lang.String AFInAppEventType(java.lang.String)>
+    <com.appsflyer.internal.au: java.lang.String AFInAppEventType(java.lang.String)>
+    <com.appsflyer.internal.au: java.lang.String values()>
+    <com.appsflyer.internal.ab: java.lang.String valueOf(android.content.Context)>
+    <com.appsflyer.internal.ab: void AFInAppEventType(java.lang.ref.WeakReference)>
+    <com.appsflyer.internal.ab: void AFInAppEventType(java.lang.ref.WeakReference)>
+    <com.appsflyer.internal.h: com.appsflyer.internal.h AFInAppEventType(java.util.Map)>
+    <com.appsflyer.internal.h: com.appsflyer.internal.h AFInAppEventType(java.util.Map)>
+    <com.appsflyer.internal.h: com.appsflyer.internal.h AFInAppEventType(java.util.Map)>
+    <com.appsflyer.internal.ab: void AFInAppEventType(java.lang.ref.WeakReference)>
+    <com.appsflyer.internal.ab: void AFInAppEventType(java.lang.ref.WeakReference)>
+    <com.appsflyer.internal.ao: void <init>(com.appsflyer.internal.co)>
+    <com.appsflyer.internal.ao: void <init>(com.appsflyer.internal.co)>
+    <com.appsflyer.internal.ab: void AFInAppEventType(java.lang.ref.WeakReference)>
+    <com.appsflyer.internal.ab: void AFInAppEventType(java.lang.ref.WeakReference)>
+    <com.appsflyer.internal.ao: void run()>
+    <com.appsflyer.internal.ao: java.net.HttpURLConnection AFInAppEventParameterName()>
+    <com.appsflyer.internal.ao: java.net.HttpURLConnection AFInAppEventParameterName()>
+    <com.appsflyer.internal.h: java.util.Map AFInAppEventParameterName()>
+    <com.appsflyer.internal.h: java.util.Map AFInAppEventParameterName()>
+    <com.appsflyer.internal.ao: java.net.HttpURLConnection AFInAppEventParameterName()>
+    <com.appsflyer.internal.k: org.json.JSONObject valueOf(java.util.Map)>
+    <com.appsflyer.internal.k: org.json.JSONObject valueOf(java.util.Map)>
+    <com.appsflyer.internal.k: org.json.JSONObject valueOf(java.util.Map)>
+    <com.appsflyer.internal.k: org.json.JSONObject valueOf(java.util.Map)>
+    <com.appsflyer.internal.k: org.json.JSONObject valueOf(java.util.Map)>
+    <com.appsflyer.internal.k: org.json.JSONObject valueOf(java.util.Map)>
+    <com.appsflyer.internal.k: org.json.JSONObject valueOf(java.util.Map)>
+    <com.appsflyer.internal.ao: java.net.HttpURLConnection AFInAppEventParameterName()>
+    <com.appsflyer.internal.ao: java.net.HttpURLConnection AFInAppEventParameterName()>
+    <com.appsflyer.internal.ao: java.net.HttpURLConnection AFInAppEventParameterName()>
+    <com.appsflyer.internal.ao: java.net.HttpURLConnection AFInAppEventParameterName()>
+

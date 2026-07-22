@@ -1,0 +1,419 @@
+APK: Renmoney (NigeriaApproved)
+Leak 1:
+  Source: $r2 = staticinvoke <android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>($r3) (<android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>)
+  Sink: virtualinvoke $r1.<java.io.OutputStream: void write(byte[])>($r7) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.uxcam.screenaction.utils.c: java.io.File a(java.lang.String)>
+    <com.uxcam.screenaction.utils.c: java.io.File a(java.lang.String)>
+    <com.uxcam.screenaction.utils.c: java.io.File a(java.lang.String)>
+    <com.uxcam.screenaction.utils.c: java.lang.String d(boolean)>
+    <com.uxcam.screenaction.utils.c: java.lang.String d(boolean)>
+    <com.uxcam.screenaction.utils.c: java.lang.String g(java.lang.String,java.lang.Boolean)>
+    <com.uxcam.screenaction.utils.c: java.lang.String g(java.lang.String,java.lang.Boolean)>
+    <com.uxcam.screenaction.utils.c: java.lang.String g(java.lang.String,java.lang.Boolean)>
+    <com.uxcam.screenaction.utils.c: java.lang.String f(java.lang.String,java.lang.Boolean)>
+    <com.uxcam.internals.l5: java.io.File f()>
+    <com.uxcam.internals.l5: java.io.File f()>
+    <com.uxcam.internals.l5: void <init>()>
+    <com.uxcam.internals.l5: void <init>()>
+    <com.uxcam.internals.l5: void <init>()>
+    <com.uxcam.internals.l5: void e(java.util.concurrent.CountDownLatch)>
+    <com.uxcam.internals.l5: void e(java.util.concurrent.CountDownLatch)>
+    <com.uxcam.internals.j5: void run()>
+    <com.uxcam.internals.l5: com.uxcam.internals.l5 a()>
+    <com.uxcam.internals.l5: com.uxcam.internals.l5 a()>
+    <com.uxcam.internals.w2: void e(com.uxcam.internals.y4)>
+    <com.uxcam.internals.l5: void c(com.uxcam.internals.w5)>
+    <com.uxcam.internals.l5: void k()>
+    <com.uxcam.internals.l5: void k()>
+    <com.uxcam.internals.q9: void <init>(java.io.File)>
+    <com.uxcam.internals.q9: void <init>(java.io.File)>
+    <com.uxcam.internals.l5: void k()>
+    <com.uxcam.internals.l5: void k()>
+    <com.uxcam.internals.l5: void k()>
+    <com.uxcam.internals.l5: void k()>
+    <com.uxcam.internals.l5: void k()>
+    <com.uxcam.internals.l5: void k()>
+    <com.uxcam.internals.q9: void c(java.util.zip.ZipOutputStream)>
+
+Leak 2:
+  Source: $r5 = virtualinvoke $r3.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r4, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r4.<java.io.OutputStream: void write(byte[])>($r6) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.uxcam.screenaction.utils.f: android.util.Pair l(android.content.Context)>
+    <com.uxcam.screenaction.utils.f: android.util.Pair l(android.content.Context)>
+    <com.uxcam.screenaction.utils.f: android.util.Pair l(android.content.Context)>
+    <com.uxcam.screenaction.utils.f: android.util.Pair l(android.content.Context)>
+    <com.uxcam.screenaction.utils.f: android.util.Pair l(android.content.Context)>
+    <com.uxcam.internals.y0: java.io.File b(java.lang.String,com.uxcam.internals.c6,java.lang.String)>
+    <com.uxcam.internals.y0: java.io.File b(java.lang.String,com.uxcam.internals.c6,java.lang.String)>
+    <com.uxcam.internals.y0: java.io.File b(java.lang.String,com.uxcam.internals.c6,java.lang.String)>
+    <com.uxcam.internals.y0: java.io.File b(java.lang.String,com.uxcam.internals.c6,java.lang.String)>
+    <com.uxcam.internals.c6: void b(java.lang.String)>
+    <com.uxcam.internals.c6: void b(java.lang.String)>
+    <com.uxcam.internals.d6: void a()>
+    <com.uxcam.internals.d6: void a()>
+    <com.uxcam.internals.d6: void a()>
+
+Leak 3:
+  Source: $r2 = staticinvoke <android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>($r3) (<android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>)
+  Sink: virtualinvoke $r5.<java.io.FileOutputStream: void write(byte[])>($r12) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <com.uxcam.screenaction.utils.c: java.io.File a(java.lang.String)>
+    <com.uxcam.screenaction.utils.c: java.io.File a(java.lang.String)>
+    <com.uxcam.screenaction.utils.c: java.io.File a(java.lang.String)>
+    <com.uxcam.screenaction.utils.c: java.lang.String d(boolean)>
+    <com.uxcam.screenaction.utils.c: java.lang.String d(boolean)>
+    <com.uxcam.screenaction.utils.c: java.lang.String g(java.lang.String,java.lang.Boolean)>
+    <com.uxcam.screenaction.utils.c: java.lang.String g(java.lang.String,java.lang.Boolean)>
+    <com.uxcam.screenaction.utils.c: java.lang.String g(java.lang.String,java.lang.Boolean)>
+    <com.uxcam.internals.c4: java.lang.Object invokeSuspend(java.lang.Object)>
+    <com.uxcam.internals.y0: java.io.File b(java.lang.String,com.uxcam.internals.c6,java.lang.String)>
+    <com.uxcam.internals.y0: java.io.File b(java.lang.String,com.uxcam.internals.c6,java.lang.String)>
+    <com.uxcam.internals.y0: void g(java.lang.String,java.lang.String)>
+    <com.uxcam.internals.y0: void g(java.lang.String,java.lang.String)>
+    <com.uxcam.internals.y0: void g(java.lang.String,java.lang.String)>
+    <com.uxcam.internals.y0: void g(java.lang.String,java.lang.String)>
+
+Leak 4:
+  Source: $r5 = virtualinvoke $r3.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r4, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r5.<java.io.FileOutputStream: void write(byte[])>($r12) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <com.uxcam.screenaction.utils.f: android.util.Pair l(android.content.Context)>
+    <com.uxcam.screenaction.utils.f: android.util.Pair l(android.content.Context)>
+    <com.uxcam.screenaction.utils.f: android.util.Pair l(android.content.Context)>
+    <com.uxcam.screenaction.utils.f: android.util.Pair l(android.content.Context)>
+    <com.uxcam.screenaction.utils.f: android.util.Pair l(android.content.Context)>
+    <com.uxcam.internals.y0: java.io.File b(java.lang.String,com.uxcam.internals.c6,java.lang.String)>
+    <com.uxcam.internals.y0: java.io.File b(java.lang.String,com.uxcam.internals.c6,java.lang.String)>
+    <com.uxcam.internals.y0: java.io.File b(java.lang.String,com.uxcam.internals.c6,java.lang.String)>
+    <com.uxcam.internals.y0: java.io.File b(java.lang.String,com.uxcam.internals.c6,java.lang.String)>
+    <com.uxcam.internals.y0: void g(java.lang.String,java.lang.String)>
+    <com.uxcam.internals.y0: void g(java.lang.String,java.lang.String)>
+
+Leak 5:
+  Source: $r2 = staticinvoke <android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>($r3) (<android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>)
+  Sink: virtualinvoke $r5.<java.io.FileOutputStream: void write(byte[])>($r6) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <com.uxcam.screenaction.utils.c: java.io.File a(java.lang.String)>
+    <com.uxcam.screenaction.utils.c: java.io.File a(java.lang.String)>
+    <com.uxcam.screenaction.utils.c: java.io.File a(java.lang.String)>
+    <com.uxcam.screenaction.utils.c: java.lang.String d(boolean)>
+    <com.uxcam.screenaction.utils.c: java.lang.String d(boolean)>
+    <com.uxcam.screenaction.utils.c: java.lang.String g(java.lang.String,java.lang.Boolean)>
+    <com.uxcam.screenaction.utils.c: java.lang.String g(java.lang.String,java.lang.Boolean)>
+    <com.uxcam.screenaction.utils.c: java.lang.String g(java.lang.String,java.lang.Boolean)>
+    <com.uxcam.internals.y0: void f(java.lang.String)>
+    <com.uxcam.internals.y0: void f(java.lang.String)>
+    <com.uxcam.internals.y0: void f(java.lang.String)>
+    <com.uxcam.internals.y0: void f(java.lang.String)>
+
+Leak 6:
+  Source: $r2 = staticinvoke <android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>($r3) (<android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>)
+  Sink: virtualinvoke $r0.<java.io.OutputStream: void write(byte[])>($r4) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.uxcam.screenaction.utils.c: java.io.File a(java.lang.String)>
+    <com.uxcam.screenaction.utils.c: java.io.File a(java.lang.String)>
+    <com.uxcam.screenaction.utils.c: java.io.File a(java.lang.String)>
+    <com.uxcam.screenaction.utils.c: java.lang.String d(boolean)>
+    <com.uxcam.screenaction.utils.c: java.lang.String d(boolean)>
+    <com.uxcam.screenaction.utils.c: java.lang.String g(java.lang.String,java.lang.Boolean)>
+    <com.uxcam.screenaction.utils.c: java.lang.String g(java.lang.String,java.lang.Boolean)>
+    <com.uxcam.screenaction.utils.c: java.lang.String g(java.lang.String,java.lang.Boolean)>
+    <com.uxcam.internals.c4: java.lang.Object invokeSuspend(java.lang.Object)>
+    <com.uxcam.internals.y0: java.io.File b(java.lang.String,com.uxcam.internals.c6,java.lang.String)>
+    <com.uxcam.internals.y0: java.io.File b(java.lang.String,com.uxcam.internals.c6,java.lang.String)>
+    <com.uxcam.internals.y0: void g(java.lang.String,java.lang.String)>
+    <com.uxcam.internals.y0: void g(java.lang.String,java.lang.String)>
+    <com.uxcam.internals.y0: void g(java.lang.String,java.lang.String)>
+    <com.uxcam.internals.y0: void g(java.lang.String,java.lang.String)>
+    <com.uxcam.internals.y0: void g(java.lang.String,java.lang.String)>
+    <com.uxcam.internals.y0: void h(java.util.zip.ZipOutputStream,java.io.ByteArrayOutputStream,com.uxcam.internals.s7)>
+
+Leak 7:
+  Source: $r5 = virtualinvoke $r4.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r3, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r5.<java.io.FileOutputStream: void write(byte[])>($r7) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <com.facebook.internal.i1: java.lang.String w()>
+    <com.facebook.internal.i1: java.lang.String w()>
+    <com.facebook.internal.i1: java.lang.String w()>
+    <com.facebook.internal.instrument.c: void <init>(java.lang.Throwable,com.facebook.internal.instrument.c$c)>
+    <com.facebook.internal.instrument.c: void <init>(java.lang.Throwable,com.facebook.internal.instrument.c$c)>
+    <com.facebook.internal.instrument.c: void <init>(java.lang.Throwable,com.facebook.internal.instrument.c$c,kotlin.jvm.internal.DefaultConstructorMarker)>
+    <com.facebook.internal.instrument.c$a: com.facebook.internal.instrument.c b(java.lang.Throwable,com.facebook.internal.instrument.c$c)>
+    <com.facebook.internal.instrument.crashshield.b: void c(java.lang.Throwable,java.lang.Object)>
+    <com.facebook.internal.instrument.c: void g()>
+    <com.facebook.internal.instrument.c: java.lang.String toString()>
+    <com.facebook.internal.instrument.c: org.json.JSONObject e()>
+    <com.facebook.internal.instrument.c: org.json.JSONObject d()>
+    <com.facebook.internal.instrument.c: org.json.JSONObject d()>
+    <com.facebook.internal.instrument.c: org.json.JSONObject d()>
+    <com.facebook.internal.instrument.c: org.json.JSONObject e()>
+    <com.facebook.internal.instrument.c: java.lang.String toString()>
+    <com.facebook.internal.instrument.c: java.lang.String toString()>
+    <com.facebook.internal.instrument.c: void g()>
+    <com.facebook.internal.instrument.k: void t(java.lang.String,java.lang.String)>
+    <com.facebook.internal.instrument.k: void t(java.lang.String,java.lang.String)>
+
+Leak 8:
+  Source: $r4 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r3, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r5.<java.io.FileOutputStream: void write(byte[])>($r7) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <com.facebook.l0: void Q(android.content.Context)>
+    <com.facebook.l0: void Q(android.content.Context)>
+    <com.facebook.l0: void Q(android.content.Context)>
+    <com.facebook.l0: void Q(android.content.Context)>
+    <com.facebook.l0: void Q(android.content.Context)>
+    <com.facebook.l0: void Q(android.content.Context)>
+    <com.facebook.l0: void Y(android.content.Context,com.facebook.l0$b)>
+    <com.facebook.l0: boolean r()>
+    <com.facebook.n1: boolean e()>
+    <com.facebook.n1: void k()>
+    <com.facebook.n1: void p()>
+    <com.facebook.appevents.k0: void h(android.os.Bundle)>
+    <com.facebook.appevents.t: void F(java.lang.String,java.lang.Double,android.os.Bundle)>
+    <com.facebook.appevents.t: void C(java.lang.String,java.lang.Double,android.os.Bundle,boolean,java.util.UUID)>
+    <com.facebook.appevents.integrity.c: void h(android.os.Bundle,java.lang.String)>
+    <com.facebook.appevents.integrity.c: void b(android.os.Bundle,java.lang.String)>
+    <com.facebook.l0: java.lang.String o()>
+    <com.facebook.l0: java.lang.String o()>
+    <com.facebook.appevents.integrity.c: void b(android.os.Bundle,java.lang.String)>
+    <com.facebook.appevents.integrity.c: void b(android.os.Bundle,java.lang.String)>
+    <com.facebook.appevents.integrity.c: void h(android.os.Bundle,java.lang.String)>
+    <com.facebook.appevents.integrity.c: void h(android.os.Bundle,java.lang.String)>
+    <com.facebook.appevents.integrity.c: void i(android.os.Bundle)>
+    <kotlin.jvm.internal.Intrinsics: void checkNotNullParameter(java.lang.Object,java.lang.String)>
+    <com.facebook.appevents.integrity.c: void i(android.os.Bundle)>
+    <com.facebook.appevents.integrity.c: void h(android.os.Bundle,java.lang.String)>
+    <com.facebook.appevents.t: void C(java.lang.String,java.lang.Double,android.os.Bundle,boolean,java.util.UUID)>
+    <com.facebook.appevents.t: void F(java.lang.String,java.lang.Double,android.os.Bundle)>
+    <com.facebook.appevents.k0: void h(android.os.Bundle)>
+    <com.facebook.n1: void p()>
+    <com.facebook.n1: void p()>
+    <com.facebook.n1: void p()>
+    <com.facebook.n1: void p()>
+    <com.facebook.n1: void p()>
+    <com.facebook.appevents.k0: void h(android.os.Bundle)>
+    <com.facebook.appevents.t: void F(java.lang.String,java.lang.Double,android.os.Bundle)>
+    <com.facebook.appevents.t: void C(java.lang.String,java.lang.Double,android.os.Bundle,boolean,java.util.UUID)>
+    <com.facebook.appevents.integrity.c: void h(android.os.Bundle,java.lang.String)>
+    <com.facebook.appevents.integrity.c: java.lang.String d(android.os.Bundle)>
+    <com.facebook.appevents.integrity.c: void h(android.os.Bundle,java.lang.String)>
+    <com.facebook.appevents.integrity.c: void b(android.os.Bundle,java.lang.String)>
+    <com.facebook.appevents.integrity.c: void b(android.os.Bundle,java.lang.String)>
+    <com.facebook.appevents.integrity.c: void b(android.os.Bundle,java.lang.String)>
+    <com.facebook.appevents.integrity.c: void h(android.os.Bundle,java.lang.String)>
+    <com.facebook.appevents.t: void C(java.lang.String,java.lang.Double,android.os.Bundle,boolean,java.util.UUID)>
+    <com.facebook.internal.instrument.crashshield.b: void c(java.lang.Throwable,java.lang.Object)>
+    <com.facebook.internal.instrument.c: void g()>
+    <com.facebook.internal.instrument.c: java.lang.String toString()>
+    <com.facebook.internal.instrument.c: org.json.JSONObject e()>
+    <com.facebook.internal.instrument.c: org.json.JSONObject d()>
+    <com.facebook.internal.instrument.c: org.json.JSONObject d()>
+    <com.facebook.internal.instrument.c: org.json.JSONObject d()>
+    <com.facebook.internal.instrument.c: org.json.JSONObject e()>
+    <com.facebook.internal.instrument.c: java.lang.String toString()>
+    <com.facebook.internal.instrument.c: java.lang.String toString()>
+    <com.facebook.internal.instrument.c: void g()>
+    <com.facebook.internal.instrument.k: void t(java.lang.String,java.lang.String)>
+    <com.facebook.internal.instrument.k: void t(java.lang.String,java.lang.String)>
+
+Leak 9:
+  Source: $r11 = virtualinvoke $r9.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r10, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r5.<java.io.FileOutputStream: void write(byte[])>($r7) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <com.facebook.n1: void p()>
+    <com.facebook.n1: void p()>
+    <com.facebook.n1: void p()>
+    <com.facebook.n1: void p()>
+    <com.facebook.n1: void p()>
+    <com.facebook.n1: void p()>
+    <com.facebook.n1: void p()>
+    <com.facebook.n1: void p()>
+    <com.facebook.n1: void p()>
+    <com.facebook.n1: void p()>
+    <com.facebook.appevents.k0: void h(android.os.Bundle)>
+    <com.facebook.appevents.t: void F(java.lang.String,java.lang.Double,android.os.Bundle)>
+    <com.facebook.appevents.t: void C(java.lang.String,java.lang.Double,android.os.Bundle,boolean,java.util.UUID)>
+    <com.facebook.appevents.integrity.c: void h(android.os.Bundle,java.lang.String)>
+    <com.facebook.appevents.integrity.c: java.lang.String d(android.os.Bundle)>
+    <com.facebook.appevents.integrity.c: void h(android.os.Bundle,java.lang.String)>
+    <com.facebook.appevents.integrity.c: void b(android.os.Bundle,java.lang.String)>
+    <com.facebook.appevents.integrity.c: void b(android.os.Bundle,java.lang.String)>
+    <com.facebook.appevents.integrity.c: void b(android.os.Bundle,java.lang.String)>
+    <com.facebook.appevents.integrity.c: void h(android.os.Bundle,java.lang.String)>
+    <com.facebook.appevents.t: void C(java.lang.String,java.lang.Double,android.os.Bundle,boolean,java.util.UUID)>
+    <com.facebook.internal.instrument.crashshield.b: void c(java.lang.Throwable,java.lang.Object)>
+    <com.facebook.internal.instrument.c: void g()>
+    <com.facebook.internal.instrument.c: java.lang.String toString()>
+    <com.facebook.internal.instrument.c: org.json.JSONObject e()>
+    <com.facebook.internal.instrument.c: org.json.JSONObject d()>
+    <com.facebook.internal.instrument.c: org.json.JSONObject d()>
+    <com.facebook.internal.instrument.c: org.json.JSONObject d()>
+    <com.facebook.internal.instrument.c: org.json.JSONObject e()>
+    <com.facebook.internal.instrument.c: java.lang.String toString()>
+    <com.facebook.internal.instrument.c: java.lang.String toString()>
+    <com.facebook.internal.instrument.c: void g()>
+    <com.facebook.internal.instrument.k: void t(java.lang.String,java.lang.String)>
+    <com.facebook.internal.instrument.k: void t(java.lang.String,java.lang.String)>
+
+Leak 10:
+  Source: $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r2, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r1, $r4) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <io.flutter.embedding.engine.loader.a: android.content.pm.ApplicationInfo a(android.content.Context)>
+    <io.flutter.embedding.engine.loader.a: android.content.pm.ApplicationInfo a(android.content.Context)>
+    <io.flutter.embedding.engine.loader.a: io.flutter.embedding.engine.loader.b e(android.content.Context)>
+    <io.flutter.embedding.engine.loader.a: io.flutter.embedding.engine.loader.b e(android.content.Context)>
+    <io.flutter.embedding.engine.loader.a: boolean b(android.os.Bundle,java.lang.String,boolean)>
+    <io.flutter.embedding.engine.loader.a: boolean b(android.os.Bundle,java.lang.String,boolean)>
+    <io.flutter.embedding.engine.loader.a: io.flutter.embedding.engine.loader.b e(android.content.Context)>
+    <io.flutter.embedding.engine.loader.b: void <init>(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean)>
+    <io.flutter.embedding.engine.loader.b: void <init>(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean)>
+    <io.flutter.embedding.engine.loader.a: io.flutter.embedding.engine.loader.b e(android.content.Context)>
+    <io.flutter.embedding.engine.loader.f: void t(android.content.Context,io.flutter.embedding.engine.loader.f$c)>
+    <io.flutter.embedding.engine.loader.f: void t(android.content.Context,io.flutter.embedding.engine.loader.f$c)>
+    <io.flutter.embedding.engine.loader.f: void s(android.content.Context)>
+    <io.flutter.plugins.firebase.messaging.f: void k(io.flutter.embedding.engine.loader.f,android.os.Handler,io.flutter.embedding.engine.g,long)>
+    <io.flutter.plugins.firebase.messaging.f: void a(io.flutter.plugins.firebase.messaging.f,io.flutter.embedding.engine.loader.f,android.os.Handler,io.flutter.embedding.engine.g,long)>
+    <io.flutter.plugins.firebase.messaging.e: void run()>
+    <io.flutter.plugins.firebase.messaging.e: void run()>
+    <android.os.Handler: boolean post(java.lang.Runnable)>
+    <co.hyperverge.hvcamera.magicfilter.display.MagicCameraDisplay2$CameraHandlerThread: void triggerOpen()>
+    <co.hyperverge.hvcamera.magicfilter.display.MagicCameraDisplay2$CameraHandlerThread: void triggerOpen()>
+    <co.hyperverge.hvcamera.magicfilter.display.MagicCameraDisplay2: void onResume()>
+    <co.hyperverge.hvcamera.magicfilter.display.MagicCameraDisplay2: void onResume()>
+    <co.hyperverge.hvcamera.HVMagicView: void onResume()>
+    <co.hyperverge.hvcamera.HVMagicView: void onResume()>
+    <co.hyperverge.hypersnapsdk.activities.HVDocsActivity: void initializeViewsById()>
+    <co.hyperverge.hypersnapsdk.activities.HVDocsActivity: void initializeViewsById()>
+    <co.hyperverge.hypersnapsdk.activities.HVDocsActivity: void startDocumentCapture()>
+    <co.hyperverge.hypersnapsdk.activities.HVDocsActivity: void onRemoteConfigFetchDone()>
+    <co.hyperverge.hypersnapsdk.activities.HVBaseActivity: void lambda$checkAndWaitForRemoteConfig$1()>
+    <co.hyperverge.hypersnapsdk.activities.HVBaseActivity: void t(co.hyperverge.hypersnapsdk.activities.HVBaseActivity)>
+    <co.hyperverge.hypersnapsdk.activities.f: void run()>
+    <co.hyperverge.hypersnapsdk.activities.f: void run()>
+    <android.os.Handler: boolean post(java.lang.Runnable)>
+    <io.flutter.embedding.engine.loader.f: void q(android.content.Context,java.lang.String[],android.os.Handler,java.lang.Runnable)>
+    <io.flutter.embedding.engine.loader.f: void b(io.flutter.embedding.engine.loader.f,android.content.Context,java.lang.String[],android.os.Handler,java.lang.Runnable)>
+    <io.flutter.embedding.engine.loader.c: void run()>
+    <io.flutter.embedding.engine.loader.c: void run()>
+    <android.os.Handler: boolean post(java.lang.Runnable)>
+    <co.hyperverge.hvcamera.magicfilter.display.MagicCameraDisplay$CameraHandlerThread: void triggerClose()>
+    <co.hyperverge.hvcamera.magicfilter.display.MagicCameraDisplay$CameraHandlerThread: void triggerClose()>
+    <co.hyperverge.hvcamera.magicfilter.display.MagicCameraDisplay: void onPause()>
+    <co.hyperverge.hvcamera.magicfilter.display.MagicCameraDisplay: void onPause()>
+    <co.hyperverge.hvcamera.HVMagicView: void onPause()>
+    <co.hyperverge.hvcamera.HVMagicView: void onPause()>
+    <co.hyperverge.hvcamera.HVMagicView: void onPause()>
+    <co.hyperverge.hvcamera.HVMagicView$OnOrientationChange: void disable()>
+    <co.hyperverge.hvcamera.HVMagicView: void onPause()>
+    <co.hyperverge.hvcamera.HVMagicView: void onPause()>
+    <co.hyperverge.hypersnapsdk.activities.HVDocsActivity: void onPause()>
+    <co.hyperverge.hypersnapsdk.activities.HVDocsActivity: void onPause()>
+    <co.hyperverge.hypersnapsdk.activities.HVDocsActivity: void onPause()>
+    <co.hyperverge.hvcamera.HVMagicView: void onPause()>
+    <co.hyperverge.hvcamera.HVMagicView: void onPause()>
+    <co.hyperverge.hvcamera.magicfilter.display.MagicCameraDisplay: void onPause()>
+    <co.hyperverge.hvcamera.magicfilter.display.MagicDisplay: void onPause()>
+    <co.hyperverge.hvcamera.magicfilter.display.MagicCameraDisplay: void onPause()>
+    <co.hyperverge.hvcamera.HVMagicView: void onPause()>
+    <co.hyperverge.hvcamera.HVMagicView: void onPause()>
+    <co.hyperverge.hypersnapsdk.activities.HVDocsActivity: void onPause()>
+    <co.hyperverge.hypersnapsdk.activities.HVDocsActivity: void onPause()>
+    <dummyMainClass: co.hyperverge.hypersnapsdk.activities.HVDocsActivity dummyMainMethod_co_hyperverge_hypersnapsdk_activities_HVDocsActivity(android.content.Intent)>
+    <co.hyperverge.hypersnapsdk.activities.HVDocsActivity: void onStart()>
+    <co.hyperverge.hypersnapsdk.activities.HVDocsActivity: void onStart()>
+    <co.hyperverge.hypersnapsdk.activities.HVDocsActivity: void onStart()>
+    <co.hyperverge.hypersnapsdk.activities.HVDocsActivity: void onStart()>
+
+Leak 11:
+  Source: $r2 = staticinvoke <android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>($r3) (<android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>)
+  Sink: virtualinvoke $r4.<java.io.FileOutputStream: void write(byte[])>($r6) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <com.uxcam.screenaction.utils.c: java.io.File a(java.lang.String)>
+    <com.uxcam.screenaction.utils.c: java.io.File a(java.lang.String)>
+    <com.uxcam.screenaction.utils.c: java.io.File a(java.lang.String)>
+    <com.uxcam.screenaction.utils.c: java.lang.String d(boolean)>
+    <com.uxcam.screenaction.utils.c: java.lang.String d(boolean)>
+    <com.uxcam.screenaction.utils.c: java.lang.String g(java.lang.String,java.lang.Boolean)>
+    <com.uxcam.screenaction.utils.c: java.lang.String g(java.lang.String,java.lang.Boolean)>
+    <com.uxcam.screenaction.utils.c: java.lang.String g(java.lang.String,java.lang.Boolean)>
+    <com.uxcam.internals.a6: void j()>
+    <com.uxcam.internals.a6: void j()>
+    <com.uxcam.internals.c6: void <init>(java.io.File)>
+    <com.uxcam.internals.e6: void <init>(java.io.File,com.uxcam.internals.s7)>
+    <com.uxcam.internals.e6: void <init>(java.io.File,com.uxcam.internals.s7)>
+    <com.uxcam.internals.e6: void <init>(java.io.File,com.uxcam.internals.s7)>
+    <com.uxcam.internals.c6: void <init>(java.io.File)>
+    <com.uxcam.internals.c6: void <init>(java.io.File)>
+    <com.uxcam.internals.a6: void j()>
+    <com.uxcam.internals.a6: void j()>
+    <com.uxcam.internals.a6: void i()>
+    <com.uxcam.internals.z5: void <init>(com.uxcam.internals.a6)>
+    <com.uxcam.internals.z5: void <init>(com.uxcam.internals.a6)>
+    <com.uxcam.internals.a6: void i()>
+    <com.uxcam.internals.a6: void i()>
+    <com.uxcam.internals.a: void <init>(int,int)>
+    <com.uxcam.internals.a$b: void <init>(com.uxcam.internals.a)>
+    <com.uxcam.internals.a$b: void <init>(com.uxcam.internals.a)>
+    <com.uxcam.internals.a: void <init>(int,int)>
+    <com.uxcam.internals.a: void <init>(int,int)>
+    <com.uxcam.internals.a6: void i()>
+    <com.uxcam.internals.a6: void i()>
+    <com.uxcam.internals.a6: void j()>
+    <com.uxcam.internals.a6: void e(java.lang.String)>
+    <com.uxcam.internals.a6: void f(java.lang.String,boolean,java.io.File)>
+    <com.uxcam.internals.a6: void f(java.lang.String,boolean,java.io.File)>
+    <com.uxcam.internals.c6: java.io.File a()>
+    <com.uxcam.internals.c6: java.io.File a()>
+    <com.uxcam.internals.e6: void b()>
+    <com.uxcam.internals.e6: void b()>
+    <com.uxcam.internals.s7: java.lang.String d()>
+    <com.uxcam.internals.s7: java.lang.String d()>
+    <com.uxcam.internals.s7: java.lang.String d()>
+    <com.uxcam.internals.s7: java.lang.String d()>
+    <com.uxcam.internals.s7: java.lang.String d()>
+    <com.uxcam.internals.s7: java.lang.String d()>
+    <com.uxcam.internals.e6: void b()>
+    <com.uxcam.internals.e6: void b()>
+    <com.uxcam.internals.e6: void b()>
+    <com.uxcam.internals.e6: void b()>
+
+Leak 12:
+  Source: $r2 = staticinvoke <android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>($r3) (<android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>)
+  Sink: virtualinvoke $r0.<java.io.OutputStream: void write(byte[])>($r4) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.uxcam.screenaction.utils.c: java.io.File a(java.lang.String)>
+    <com.uxcam.screenaction.utils.c: java.io.File a(java.lang.String)>
+    <com.uxcam.screenaction.utils.c: java.io.File a(java.lang.String)>
+    <com.uxcam.screenaction.utils.c: java.lang.String d(boolean)>
+    <com.uxcam.screenaction.utils.c: java.lang.String d(boolean)>
+    <com.uxcam.internals.v5: void e(java.io.File,java.lang.String)>
+    <com.uxcam.internals.v5: void e(java.io.File,java.lang.String)>
+    <com.uxcam.internals.v5: void e(java.io.File,java.lang.String)>
+    <com.uxcam.internals.y0: java.io.File b(java.lang.String,com.uxcam.internals.c6,java.lang.String)>
+    <com.uxcam.internals.y0: java.io.File b(java.lang.String,com.uxcam.internals.c6,java.lang.String)>
+    <com.uxcam.internals.y0: void g(java.lang.String,java.lang.String)>
+    <com.uxcam.internals.y0: void g(java.lang.String,java.lang.String)>
+    <com.uxcam.internals.y0: void g(java.lang.String,java.lang.String)>
+    <com.uxcam.internals.y0: void g(java.lang.String,java.lang.String)>
+    <com.uxcam.internals.y0: void g(java.lang.String,java.lang.String)>
+    <com.uxcam.internals.y0: void h(java.util.zip.ZipOutputStream,java.io.ByteArrayOutputStream,com.uxcam.internals.s7)>
+
+Leak 13:
+  Source: $r5 = virtualinvoke $r3.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r4, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r0.<java.io.OutputStream: void write(byte[])>($r12) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.uxcam.screenaction.utils.f: android.util.Pair l(android.content.Context)>
+    <com.uxcam.screenaction.utils.f: android.util.Pair l(android.content.Context)>
+    <com.uxcam.screenaction.utils.f: android.util.Pair l(android.content.Context)>
+    <com.uxcam.screenaction.utils.f: android.util.Pair l(android.content.Context)>
+    <com.uxcam.screenaction.utils.f: android.util.Pair l(android.content.Context)>
+    <com.uxcam.internals.y0: java.io.File b(java.lang.String,com.uxcam.internals.c6,java.lang.String)>
+    <com.uxcam.internals.y0: java.io.File b(java.lang.String,com.uxcam.internals.c6,java.lang.String)>
+    <com.uxcam.internals.y0: java.io.File b(java.lang.String,com.uxcam.internals.c6,java.lang.String)>
+    <com.uxcam.internals.y0: java.io.File b(java.lang.String,com.uxcam.internals.c6,java.lang.String)>
+    <com.uxcam.internals.y0: void g(java.lang.String,java.lang.String)>
+    <com.uxcam.internals.y0: void g(java.lang.String,java.lang.String)>
+

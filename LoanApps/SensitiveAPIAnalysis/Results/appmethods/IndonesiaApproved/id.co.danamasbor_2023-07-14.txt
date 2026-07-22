@@ -1,0 +1,485 @@
+APK: id.co.danamasbor_2023-07-14 (IndonesiaApproved)
+Leak 1:
+  Source: $r13 = virtualinvoke $r11.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r12, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r1, $r2) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.netcore.android.utility.j: void e()>
+    <com.netcore.android.utility.j: void e()>
+    <com.netcore.android.utility.j: void e()>
+    <com.netcore.android.utility.j: boolean a(android.os.Bundle,java.lang.String)>
+    <com.netcore.android.utility.j: boolean a(android.os.Bundle,java.lang.String)>
+    <com.netcore.android.utility.j: boolean a(android.os.Bundle,java.lang.String)>
+    <com.netcore.android.utility.j: boolean a(android.os.Bundle,java.lang.String)>
+    <com.netcore.android.utility.j: void e()>
+    <com.netcore.android.utility.j: void e()>
+    <com.netcore.android.utility.j: void <init>(java.lang.ref.WeakReference)>
+    <com.netcore.android.utility.j: void <init>(java.lang.ref.WeakReference,kotlin.jvm.internal.DefaultConstructorMarker)>
+    <com.netcore.android.utility.j$a: com.netcore.android.utility.j a(java.lang.ref.WeakReference)>
+    <com.netcore.android.utility.j$a: com.netcore.android.utility.j b(java.lang.ref.WeakReference)>
+    <com.netcore.android.utility.j$a: com.netcore.android.utility.j b(java.lang.ref.WeakReference)>
+    <com.netcore.android.d: boolean b(java.lang.ref.WeakReference)>
+    <com.netcore.android.utility.j: boolean d()>
+    <com.netcore.android.utility.j: boolean d()>
+    <com.netcore.android.d: boolean b(java.lang.ref.WeakReference)>
+    <com.netcore.android.Smartech: void initializeSdk(android.app.Application,java.lang.String,java.lang.String,java.lang.String)>
+    <com.netcore.android.Smartech: void initializeSdk(android.app.Application,java.lang.String,java.lang.String,java.lang.String)>
+    <com.netcore.android.Smartech: void initializeSdk(android.app.Application,java.lang.String,java.lang.String,java.lang.String)>
+    <com.netcore.android.logger.SMTLogger: void d(java.lang.String,java.lang.String)>
+    <com.netcore.android.logger.SMTLoggerPrinter: void d(java.lang.String,java.lang.String)>
+
+Leak 2:
+  Source: $r4 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r3, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r1, $r2) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.netcore.android.utility.a: java.lang.String b(android.content.Context)>
+    <com.netcore.android.utility.a: java.lang.String b(android.content.Context)>
+    <com.netcore.android.utility.a: java.lang.String b(android.content.Context)>
+    <com.netcore.android.utility.a: void <init>(android.content.Context)>
+    <com.netcore.android.utility.a: void <init>(android.content.Context)>
+    <com.netcore.android.utility.i: void <init>(java.lang.ref.WeakReference)>
+    <com.netcore.android.utility.i: void <init>(java.lang.ref.WeakReference)>
+    <com.netcore.android.utility.i: void <init>(java.lang.ref.WeakReference,kotlin.jvm.internal.DefaultConstructorMarker)>
+    <com.netcore.android.utility.i$a: com.netcore.android.utility.i a(java.lang.ref.WeakReference)>
+    <com.netcore.android.utility.i$a: com.netcore.android.utility.i b(java.lang.ref.WeakReference)>
+    <com.netcore.android.utility.i$a: com.netcore.android.utility.i b(java.lang.ref.WeakReference)>
+    <com.netcore.android.event.b: void <init>(android.content.Context)>
+    <com.netcore.android.utility.i: com.netcore.android.utility.a b()>
+    <com.netcore.android.utility.i: com.netcore.android.utility.a b()>
+    <com.netcore.android.event.b: void <init>(android.content.Context)>
+    <com.netcore.android.utility.a: java.lang.String c()>
+    <com.netcore.android.utility.a: java.lang.String c()>
+    <com.netcore.android.event.b: void <init>(android.content.Context)>
+    <com.netcore.android.event.b: void <init>(android.content.Context)>
+    <com.netcore.android.event.b: void <init>(android.content.Context)>
+    <com.netcore.android.f.a.a: java.lang.String c()>
+    <com.netcore.android.event.b: java.lang.String c()>
+    <com.netcore.android.event.b: java.lang.String c()>
+    <com.netcore.android.event.b: java.lang.String c()>
+    <com.netcore.android.event.b: java.lang.String c()>
+    <com.netcore.android.f.a.a: java.lang.String c()>
+    <com.netcore.android.f.a.a: java.lang.String c()>
+    <com.netcore.android.f.a.a: java.lang.String c()>
+    <com.netcore.android.f.a.a: void a(com.netcore.android.listeners.SMTInboxCallback,int)>
+    <com.netcore.android.network.j.e$a: com.netcore.android.network.j.e$a b(java.lang.String)>
+    <com.netcore.android.network.j.e$a: com.netcore.android.network.j.e$a b(java.lang.String)>
+    <com.netcore.android.f.a.a: void a(com.netcore.android.listeners.SMTInboxCallback,int)>
+    <com.netcore.android.network.j.e$a: com.netcore.android.network.j.e a()>
+    <com.netcore.android.network.j.e: void <init>(com.netcore.android.network.j.e$a)>
+    <com.netcore.android.network.j.e$a: java.lang.String k()>
+    <com.netcore.android.network.j.e$a: java.lang.String k()>
+    <com.netcore.android.network.j.e: void <init>(com.netcore.android.network.j.e$a)>
+    <com.netcore.android.network.j.e: void <init>(com.netcore.android.network.j.e$a)>
+    <com.netcore.android.network.j.e$a: com.netcore.android.network.j.e a()>
+    <com.netcore.android.f.a.a: void a(com.netcore.android.listeners.SMTInboxCallback,int)>
+    <com.netcore.android.network.e: void a(com.netcore.android.network.j.e)>
+    <com.netcore.android.network.h: void a(com.netcore.android.network.j.e)>
+    <com.netcore.android.network.h: void b(com.netcore.android.network.j.e)>
+    <com.netcore.android.network.j.e: java.lang.String b()>
+    <com.netcore.android.network.j.e: java.lang.String b()>
+    <com.netcore.android.network.h: void b(com.netcore.android.network.j.e)>
+    <com.netcore.android.network.h: void b(com.netcore.android.network.j.e)>
+    <com.netcore.android.network.h: void b(com.netcore.android.network.j.e)>
+    <com.netcore.android.logger.SMTLogger: void internal(java.lang.String,java.lang.String)>
+    <com.netcore.android.logger.SMTLoggerPrinter: void internal(java.lang.String,java.lang.String)>
+
+Leak 3:
+  Source: $r13 = virtualinvoke $r11.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r12, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r1, $r2) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.netcore.android.utility.j: void e()>
+    <com.netcore.android.utility.j: void e()>
+    <com.netcore.android.utility.j: void e()>
+    <com.netcore.android.utility.j: java.lang.String c(android.os.Bundle,java.lang.String)>
+    <com.netcore.android.utility.j: java.lang.String c(android.os.Bundle,java.lang.String)>
+    <com.netcore.android.utility.j: java.lang.String c(android.os.Bundle,java.lang.String)>
+    <com.netcore.android.utility.j: void e()>
+    <com.netcore.android.utility.j: void e()>
+    <com.netcore.android.utility.j: void <init>(java.lang.ref.WeakReference)>
+    <com.netcore.android.utility.j: void <init>(java.lang.ref.WeakReference,kotlin.jvm.internal.DefaultConstructorMarker)>
+    <com.netcore.android.utility.j$a: com.netcore.android.utility.j a(java.lang.ref.WeakReference)>
+    <com.netcore.android.utility.j$a: com.netcore.android.utility.j b(java.lang.ref.WeakReference)>
+    <com.netcore.android.utility.j$a: com.netcore.android.utility.j b(java.lang.ref.WeakReference)>
+    <com.netcore.android.utility.a: void <init>(android.content.Context)>
+    <com.netcore.android.utility.a: void <init>(android.content.Context)>
+    <com.netcore.android.utility.i: void <init>(java.lang.ref.WeakReference)>
+    <com.netcore.android.utility.i: void <init>(java.lang.ref.WeakReference)>
+    <com.netcore.android.utility.i: void <init>(java.lang.ref.WeakReference,kotlin.jvm.internal.DefaultConstructorMarker)>
+    <com.netcore.android.utility.i$a: com.netcore.android.utility.i a(java.lang.ref.WeakReference)>
+    <com.netcore.android.utility.i$a: com.netcore.android.utility.i b(java.lang.ref.WeakReference)>
+    <com.netcore.android.utility.i$a: com.netcore.android.utility.i b(java.lang.ref.WeakReference)>
+    <com.netcore.android.event.b: void <init>(android.content.Context)>
+    <com.netcore.android.utility.i: com.netcore.android.utility.a b()>
+    <com.netcore.android.utility.i: com.netcore.android.utility.a b()>
+    <com.netcore.android.event.b: void <init>(android.content.Context)>
+    <com.netcore.android.utility.a: com.netcore.android.utility.j d()>
+    <com.netcore.android.utility.a: com.netcore.android.utility.j d()>
+    <com.netcore.android.event.b: void <init>(android.content.Context)>
+    <com.netcore.android.utility.j: java.lang.String b()>
+    <com.netcore.android.utility.j: java.lang.String b()>
+    <com.netcore.android.event.b: void <init>(android.content.Context)>
+    <com.netcore.android.event.b: void <init>(android.content.Context)>
+    <com.netcore.android.event.b: void <init>(android.content.Context)>
+    <com.netcore.android.f.a.a: java.lang.String c()>
+    <com.netcore.android.event.b: java.lang.String c()>
+    <com.netcore.android.event.b: java.lang.String c()>
+    <com.netcore.android.event.b: java.lang.String c()>
+    <com.netcore.android.event.b: java.lang.String c()>
+    <com.netcore.android.f.a.a: java.lang.String c()>
+    <com.netcore.android.f.a.a: java.lang.String c()>
+    <com.netcore.android.f.a.a: java.lang.String c()>
+    <com.netcore.android.f.a.a: void a(com.netcore.android.listeners.SMTInboxCallback,int)>
+    <com.netcore.android.network.j.e$a: com.netcore.android.network.j.e$a b(java.lang.String)>
+    <com.netcore.android.network.j.e$a: com.netcore.android.network.j.e$a b(java.lang.String)>
+    <com.netcore.android.f.a.a: void a(com.netcore.android.listeners.SMTInboxCallback,int)>
+    <com.netcore.android.network.j.e$a: com.netcore.android.network.j.e a()>
+    <com.netcore.android.network.j.e: void <init>(com.netcore.android.network.j.e$a)>
+    <com.netcore.android.network.j.e$a: java.lang.String k()>
+    <com.netcore.android.network.j.e$a: java.lang.String k()>
+    <com.netcore.android.network.j.e: void <init>(com.netcore.android.network.j.e$a)>
+    <com.netcore.android.network.j.e: void <init>(com.netcore.android.network.j.e$a)>
+    <com.netcore.android.network.j.e$a: com.netcore.android.network.j.e a()>
+    <com.netcore.android.f.a.a: void a(com.netcore.android.listeners.SMTInboxCallback,int)>
+    <com.netcore.android.network.e: void a(com.netcore.android.network.j.e)>
+    <com.netcore.android.network.h: void a(com.netcore.android.network.j.e)>
+    <com.netcore.android.network.h: void b(com.netcore.android.network.j.e)>
+    <com.netcore.android.network.j.e: java.lang.String b()>
+    <com.netcore.android.network.j.e: java.lang.String b()>
+    <com.netcore.android.network.h: void b(com.netcore.android.network.j.e)>
+    <com.netcore.android.network.h: void b(com.netcore.android.network.j.e)>
+    <com.netcore.android.network.h: void b(com.netcore.android.network.j.e)>
+    <com.netcore.android.logger.SMTLogger: void internal(java.lang.String,java.lang.String)>
+    <com.netcore.android.logger.SMTLoggerPrinter: void internal(java.lang.String,java.lang.String)>
+
+Leak 4:
+  Source: $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>() (<android.location.Location: double getLatitude()>)
+  Sink: staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r1, $r2) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.netcore.android.utility.e: void a(android.location.Location)>
+    <com.netcore.android.utility.e: void a(android.location.Location)>
+    <com.netcore.android.utility.e: void a(android.location.Location)>
+    <com.netcore.android.utility.e: void a(android.location.Location)>
+    <com.netcore.android.utility.e$b: void a(android.location.Location)>
+    <com.netcore.android.utility.e$b: void a(android.location.Location)>
+    <com.netcore.android.utility.f: void a()>
+    <com.netcore.android.utility.f: void a()>
+    <com.netcore.android.utility.e$a: void run()>
+    <com.netcore.android.utility.e: com.netcore.android.utility.f b(com.netcore.android.utility.e)>
+    <com.netcore.android.utility.e: com.netcore.android.utility.f b(com.netcore.android.utility.e)>
+    <com.netcore.android.utility.e$a: void run()>
+    <com.netcore.android.utility.e$a: void run()>
+    <com.netcore.android.utility.e: void j()>
+    <com.netcore.android.utility.e$a: void <init>(com.netcore.android.utility.e)>
+    <com.netcore.android.utility.e$a: void <init>(com.netcore.android.utility.e)>
+    <com.netcore.android.utility.e: void j()>
+    <com.netcore.android.utility.e: void <init>(android.content.Context)>
+    <com.netcore.android.utility.i: void <init>(java.lang.ref.WeakReference)>
+    <com.netcore.android.utility.i: void <init>(java.lang.ref.WeakReference)>
+    <com.netcore.android.utility.i: void <init>(java.lang.ref.WeakReference,kotlin.jvm.internal.DefaultConstructorMarker)>
+    <com.netcore.android.utility.i$a: com.netcore.android.utility.i a(java.lang.ref.WeakReference)>
+    <com.netcore.android.utility.i$a: com.netcore.android.utility.i b(java.lang.ref.WeakReference)>
+    <com.netcore.android.utility.i$a: com.netcore.android.utility.i b(java.lang.ref.WeakReference)>
+    <com.netcore.android.event.f$a: com.netcore.android.event.f a(android.content.Context)>
+    <com.netcore.android.event.f: void a(com.netcore.android.utility.i)>
+    <com.netcore.android.event.f: void a(com.netcore.android.utility.i)>
+    <com.netcore.android.event.f$a: com.netcore.android.event.f a(android.content.Context)>
+    <com.netcore.android.event.f$a: com.netcore.android.event.f b(android.content.Context)>
+    <com.netcore.android.d: void b(boolean)>
+    <com.netcore.android.event.f: void a(com.netcore.android.event.f,int,java.lang.String,java.util.HashMap,java.lang.String,boolean,int,java.lang.Object)>
+    <com.netcore.android.event.f: void a(int,java.lang.String,java.util.HashMap,java.lang.String,boolean)>
+    <com.netcore.android.event.f: void a(int,java.lang.String,java.util.HashMap,java.lang.String,boolean)>
+    <com.netcore.android.event.d: java.util.HashMap a(android.content.Context,int,java.lang.String,com.netcore.android.utility.i,java.util.HashMap)>
+    <com.netcore.android.utility.i: com.netcore.android.utility.e c()>
+    <com.netcore.android.utility.i: com.netcore.android.utility.e c()>
+    <com.netcore.android.event.d: java.util.HashMap a(android.content.Context,int,java.lang.String,com.netcore.android.utility.i,java.util.HashMap)>
+    <com.netcore.android.utility.e: java.lang.String i()>
+    <com.netcore.android.utility.e: java.lang.String i()>
+    <com.netcore.android.event.d: java.util.HashMap a(android.content.Context,int,java.lang.String,com.netcore.android.utility.i,java.util.HashMap)>
+    <com.netcore.android.event.d: java.util.HashMap a(android.content.Context,int,java.lang.String,com.netcore.android.utility.i,java.util.HashMap)>
+    <com.netcore.android.event.d: java.util.HashMap a(android.content.Context,int,java.lang.String,com.netcore.android.utility.i,java.util.HashMap)>
+    <com.netcore.android.event.d: void a(java.util.HashMap,java.util.HashMap)>
+    <com.netcore.android.event.d: java.util.HashMap a(android.content.Context,int,java.lang.String,com.netcore.android.utility.i,java.util.HashMap)>
+    <com.netcore.android.event.d: java.util.HashMap a(android.content.Context,int,java.lang.String,com.netcore.android.utility.i,java.util.HashMap)>
+    <com.netcore.android.event.d: java.util.HashMap a(android.content.Context,int,java.lang.String,com.netcore.android.utility.i,java.util.HashMap)>
+    <com.netcore.android.event.d: void b(java.util.HashMap,java.util.HashMap)>
+    <com.netcore.android.event.d: void b(java.util.HashMap,java.util.HashMap)>
+    <com.netcore.android.event.d: void b(java.util.HashMap,java.util.HashMap)>
+    <com.netcore.android.event.d: void b(java.util.HashMap,java.util.HashMap)>
+    <com.netcore.android.event.d: java.util.HashMap a(android.content.Context,int,java.lang.String,com.netcore.android.utility.i,java.util.HashMap)>
+    <com.netcore.android.event.f: void a(int,java.lang.String,java.util.HashMap,java.lang.String,boolean)>
+    <com.netcore.android.event.f: void a(int,java.lang.String,java.util.HashMap,java.lang.String,boolean)>
+    <com.netcore.android.event.f: void a(int,java.lang.String,java.util.HashMap,java.lang.String,boolean)>
+    <com.netcore.android.logger.SMTLogger: void i(java.lang.String,java.lang.String)>
+    <com.netcore.android.logger.SMTLoggerPrinter: void i(java.lang.String,java.lang.String)>
+
+Leak 5:
+  Source: $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>() (<android.location.Location: double getLatitude()>)
+  Sink: staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r1, $r2) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.netcore.android.utility.e: void a(android.location.Location)>
+    <com.netcore.android.utility.e: void a(android.location.Location)>
+    <com.netcore.android.utility.e: void a(android.location.Location)>
+    <com.netcore.android.utility.e: void a(android.location.Location)>
+    <com.netcore.android.logger.SMTLogger: void i(java.lang.String,java.lang.String)>
+    <com.netcore.android.logger.SMTLoggerPrinter: void i(java.lang.String,java.lang.String)>
+
+Leak 6:
+  Source: $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>() (<android.location.Location: double getLongitude()>)
+  Sink: staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r1, $r2) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.netcore.android.utility.e: void a(android.location.Location)>
+    <com.netcore.android.utility.e: void a(android.location.Location)>
+    <com.netcore.android.utility.e: void a(android.location.Location)>
+    <com.netcore.android.utility.e: void a(android.location.Location)>
+    <com.netcore.android.logger.SMTLogger: void i(java.lang.String,java.lang.String)>
+    <com.netcore.android.logger.SMTLoggerPrinter: void i(java.lang.String,java.lang.String)>
+
+Leak 7:
+  Source: $r13 = virtualinvoke $r11.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r12, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r1, $r2) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.netcore.android.utility.j: void e()>
+    <com.netcore.android.utility.j: void e()>
+    <com.netcore.android.utility.j: void e()>
+    <com.netcore.android.utility.j: int b(android.os.Bundle,java.lang.String)>
+    <com.netcore.android.utility.j: int b(android.os.Bundle,java.lang.String)>
+    <com.netcore.android.utility.j: int b(android.os.Bundle,java.lang.String)>
+    <com.netcore.android.utility.j: int b(android.os.Bundle,java.lang.String)>
+    <com.netcore.android.utility.j: void e()>
+    <com.netcore.android.utility.j: void e()>
+    <com.netcore.android.utility.j: void e()>
+    <com.netcore.android.utility.j: void e()>
+    <com.netcore.android.utility.j: void e()>
+    <com.netcore.android.logger.SMTLogger: void i(java.lang.String,java.lang.String)>
+    <com.netcore.android.logger.SMTLoggerPrinter: void i(java.lang.String,java.lang.String)>
+
+Leak 8:
+  Source: $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>() (<android.location.Location: double getLongitude()>)
+  Sink: staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r1, $r2) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.netcore.android.utility.e: void a(android.location.Location)>
+    <com.netcore.android.utility.e: void a(android.location.Location)>
+    <com.netcore.android.utility.e: void a(android.location.Location)>
+    <com.netcore.android.utility.e: void a(android.location.Location)>
+    <com.netcore.android.utility.e$b: void a(android.location.Location)>
+    <com.netcore.android.utility.e$b: void a(android.location.Location)>
+    <com.netcore.android.utility.f: void a()>
+    <com.netcore.android.utility.f: void a()>
+    <com.netcore.android.utility.e$a: void run()>
+    <com.netcore.android.utility.e: com.netcore.android.utility.f b(com.netcore.android.utility.e)>
+    <com.netcore.android.utility.e: com.netcore.android.utility.f b(com.netcore.android.utility.e)>
+    <com.netcore.android.utility.e$a: void run()>
+    <com.netcore.android.utility.e$a: void run()>
+    <com.netcore.android.utility.e: void j()>
+    <com.netcore.android.utility.e$a: void <init>(com.netcore.android.utility.e)>
+    <com.netcore.android.utility.e$a: void <init>(com.netcore.android.utility.e)>
+    <com.netcore.android.utility.e: void j()>
+    <com.netcore.android.utility.e: void <init>(android.content.Context)>
+    <com.netcore.android.utility.i: void <init>(java.lang.ref.WeakReference)>
+    <com.netcore.android.utility.i: void <init>(java.lang.ref.WeakReference)>
+    <com.netcore.android.utility.i: void <init>(java.lang.ref.WeakReference,kotlin.jvm.internal.DefaultConstructorMarker)>
+    <com.netcore.android.utility.i$a: com.netcore.android.utility.i a(java.lang.ref.WeakReference)>
+    <com.netcore.android.utility.i$a: com.netcore.android.utility.i b(java.lang.ref.WeakReference)>
+    <com.netcore.android.utility.i$a: com.netcore.android.utility.i b(java.lang.ref.WeakReference)>
+    <com.netcore.android.event.f$a: com.netcore.android.event.f a(android.content.Context)>
+    <com.netcore.android.event.f: void a(com.netcore.android.utility.i)>
+    <com.netcore.android.event.f: void a(com.netcore.android.utility.i)>
+    <com.netcore.android.event.f$a: com.netcore.android.event.f a(android.content.Context)>
+    <com.netcore.android.event.f$a: com.netcore.android.event.f b(android.content.Context)>
+    <com.netcore.android.notification.a: void a(android.content.Intent,com.netcore.android.notification.models.SMTNotificationData,android.os.Bundle)>
+    <com.netcore.android.event.f: void a(com.netcore.android.event.f,int,java.lang.String,java.util.HashMap,java.lang.String,boolean,int,java.lang.Object)>
+    <com.netcore.android.event.f: void a(int,java.lang.String,java.util.HashMap,java.lang.String,boolean)>
+    <com.netcore.android.event.f: void a(int,java.lang.String,java.util.HashMap,java.lang.String,boolean)>
+    <com.netcore.android.event.d: java.util.HashMap a(android.content.Context,int,java.lang.String,com.netcore.android.utility.i,java.util.HashMap)>
+    <com.netcore.android.utility.i: com.netcore.android.utility.e c()>
+    <com.netcore.android.utility.i: com.netcore.android.utility.e c()>
+    <com.netcore.android.event.d: java.util.HashMap a(android.content.Context,int,java.lang.String,com.netcore.android.utility.i,java.util.HashMap)>
+    <com.netcore.android.utility.e: java.lang.String l()>
+    <com.netcore.android.utility.e: java.lang.String l()>
+    <com.netcore.android.event.d: java.util.HashMap a(android.content.Context,int,java.lang.String,com.netcore.android.utility.i,java.util.HashMap)>
+    <com.netcore.android.event.d: java.util.HashMap a(android.content.Context,int,java.lang.String,com.netcore.android.utility.i,java.util.HashMap)>
+    <com.netcore.android.event.d: java.util.HashMap a(android.content.Context,int,java.lang.String,com.netcore.android.utility.i,java.util.HashMap)>
+    <com.netcore.android.event.d: void b(java.util.HashMap,java.util.HashMap)>
+    <com.netcore.android.event.d: void b(java.util.HashMap,java.util.HashMap)>
+    <com.netcore.android.event.d: void b(java.util.HashMap,java.util.HashMap)>
+    <com.netcore.android.event.d: void b(java.util.HashMap,java.util.HashMap)>
+    <com.netcore.android.event.d: java.util.HashMap a(android.content.Context,int,java.lang.String,com.netcore.android.utility.i,java.util.HashMap)>
+    <com.netcore.android.event.f: void a(int,java.lang.String,java.util.HashMap,java.lang.String,boolean)>
+    <com.netcore.android.event.f: void a(int,java.lang.String,java.util.HashMap,java.lang.String,boolean)>
+    <com.netcore.android.event.f: void a(int,java.lang.String,java.util.HashMap,java.lang.String,boolean)>
+    <com.netcore.android.logger.SMTLogger: void i(java.lang.String,java.lang.String)>
+    <com.netcore.android.logger.SMTLoggerPrinter: void i(java.lang.String,java.lang.String)>
+
+Leak 9:
+  Source: $r9 = virtualinvoke $r7.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r8, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r15.<java.io.OutputStream: void write(byte[])>($r8) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.appsflyer.internal.cf: void valueOf(java.lang.String)>
+    <com.appsflyer.internal.cf: void valueOf(java.lang.String)>
+    <com.appsflyer.internal.cf: void valueOf(java.lang.String)>
+    <com.appsflyer.internal.cf: void valueOf(java.lang.String)>
+    <com.appsflyer.internal.cf: void valueOf(java.lang.String)>
+    <com.appsflyer.internal.cf$4: void <init>(com.appsflyer.internal.cf,com.appsflyer.internal.ab)>
+    <com.appsflyer.internal.cf$4: void <init>(com.appsflyer.internal.cf,com.appsflyer.internal.ab)>
+    <com.appsflyer.internal.cf: void valueOf(java.lang.String)>
+    <com.appsflyer.internal.cf: void valueOf(java.lang.String)>
+    <com.appsflyer.internal.cf$4: void run()>
+    <com.appsflyer.internal.cf$4: void run()>
+    <com.appsflyer.internal.cf: void AFKeystoreWrapper(com.appsflyer.internal.cf)>
+    <com.appsflyer.internal.cf$4: void run()>
+    <com.appsflyer.internal.cf$4: void run()>
+    <com.appsflyer.internal.cf$4: void run()>
+    <com.appsflyer.internal.ao: void <init>(com.appsflyer.internal.co)>
+    <com.appsflyer.internal.ao: void <init>(com.appsflyer.internal.co)>
+    <com.appsflyer.internal.cf$4: void run()>
+    <com.appsflyer.internal.ao: java.net.HttpURLConnection AFInAppEventParameterName()>
+    <com.appsflyer.internal.ao: java.net.HttpURLConnection AFInAppEventParameterName()>
+    <com.appsflyer.internal.h: java.util.Map AFInAppEventParameterName()>
+    <com.appsflyer.internal.h: java.util.Map AFInAppEventParameterName()>
+    <com.appsflyer.internal.ao: java.net.HttpURLConnection AFInAppEventParameterName()>
+    <com.appsflyer.internal.k: org.json.JSONObject valueOf(java.util.Map)>
+    <com.appsflyer.internal.k: org.json.JSONObject valueOf(java.util.Map)>
+    <com.appsflyer.internal.k: org.json.JSONObject valueOf(java.util.Map)>
+    <com.appsflyer.internal.k: org.json.JSONObject valueOf(java.util.Map)>
+    <com.appsflyer.internal.k: org.json.JSONObject valueOf(java.util.Map)>
+    <com.appsflyer.internal.k: org.json.JSONObject valueOf(java.util.Map)>
+    <com.appsflyer.internal.k: org.json.JSONObject valueOf(java.util.Map)>
+    <com.appsflyer.internal.ao: java.net.HttpURLConnection AFInAppEventParameterName()>
+    <com.appsflyer.internal.ao: java.net.HttpURLConnection AFInAppEventParameterName()>
+    <com.appsflyer.internal.ao: java.net.HttpURLConnection AFInAppEventParameterName()>
+    <com.appsflyer.internal.ao: java.net.HttpURLConnection AFInAppEventParameterName()>
+
+Leak 10:
+  Source: $r7 = virtualinvoke $r5.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r6, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r15.<java.io.OutputStream: void write(byte[])>($r8) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.appsflyer.internal.au: java.lang.String AFInAppEventType(java.lang.String)>
+    <com.appsflyer.internal.au: java.lang.String AFInAppEventType(java.lang.String)>
+    <com.appsflyer.internal.au: java.lang.String AFInAppEventType(java.lang.String)>
+    <com.appsflyer.internal.au: java.lang.String AFInAppEventType(java.lang.String)>
+    <com.appsflyer.internal.au: java.lang.String AFInAppEventType(java.lang.String)>
+    <com.appsflyer.internal.au: java.lang.String AFInAppEventType(java.lang.String)>
+    <com.appsflyer.internal.au: java.lang.String AFInAppEventType(java.lang.String)>
+    <com.appsflyer.internal.au: java.lang.String values()>
+    <com.appsflyer.internal.ab: java.lang.String valueOf(android.content.Context)>
+    <com.appsflyer.internal.cf: void valueOf(java.lang.String)>
+    <com.appsflyer.internal.cf: void valueOf(java.lang.String)>
+    <com.appsflyer.internal.cf: void valueOf(java.lang.String)>
+    <com.appsflyer.internal.cf$4: void <init>(com.appsflyer.internal.cf,com.appsflyer.internal.ab)>
+    <com.appsflyer.internal.cf$4: void <init>(com.appsflyer.internal.cf,com.appsflyer.internal.ab)>
+    <com.appsflyer.internal.cf: void valueOf(java.lang.String)>
+    <com.appsflyer.internal.cf: void valueOf(java.lang.String)>
+    <com.appsflyer.internal.cf$4: void run()>
+    <com.appsflyer.internal.cf$4: void run()>
+    <com.appsflyer.internal.cf: void AFKeystoreWrapper(com.appsflyer.internal.cf)>
+    <com.appsflyer.internal.cf$4: void run()>
+    <com.appsflyer.internal.cf$4: void run()>
+    <com.appsflyer.internal.cf$4: void run()>
+    <com.appsflyer.internal.ao: void <init>(com.appsflyer.internal.co)>
+    <com.appsflyer.internal.ao: void <init>(com.appsflyer.internal.co)>
+    <com.appsflyer.internal.cf$4: void run()>
+    <com.appsflyer.internal.ao: java.net.HttpURLConnection AFInAppEventParameterName()>
+    <com.appsflyer.internal.ao: java.net.HttpURLConnection AFInAppEventParameterName()>
+    <com.appsflyer.internal.h: java.util.Map AFInAppEventParameterName()>
+    <com.appsflyer.internal.h: java.util.Map AFInAppEventParameterName()>
+    <com.appsflyer.internal.ao: java.net.HttpURLConnection AFInAppEventParameterName()>
+    <com.appsflyer.internal.k: org.json.JSONObject valueOf(java.util.Map)>
+    <com.appsflyer.internal.k: org.json.JSONObject valueOf(java.util.Map)>
+    <com.appsflyer.internal.k: org.json.JSONObject valueOf(java.util.Map)>
+    <com.appsflyer.internal.k: org.json.JSONObject valueOf(java.util.Map)>
+    <com.appsflyer.internal.k: org.json.JSONObject valueOf(java.util.Map)>
+    <com.appsflyer.internal.k: org.json.JSONObject valueOf(java.util.Map)>
+    <com.appsflyer.internal.k: org.json.JSONObject valueOf(java.util.Map)>
+    <com.appsflyer.internal.ao: java.net.HttpURLConnection AFInAppEventParameterName()>
+    <com.appsflyer.internal.ao: java.net.HttpURLConnection AFInAppEventParameterName()>
+    <com.appsflyer.internal.ao: java.net.HttpURLConnection AFInAppEventParameterName()>
+    <com.appsflyer.internal.ao: java.net.HttpURLConnection AFInAppEventParameterName()>
+
+Leak 11:
+  Source: $r9 = virtualinvoke $r7.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r8, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("AppsFlyer_6.6.1", $r2) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.appsflyer.internal.cf: void valueOf(java.lang.String)>
+    <com.appsflyer.internal.cf: void valueOf(java.lang.String)>
+    <com.appsflyer.internal.cf: void valueOf(java.lang.String)>
+    <com.appsflyer.internal.cf: void valueOf(java.lang.String)>
+    <com.appsflyer.internal.cf: void valueOf(java.lang.String)>
+    <com.appsflyer.internal.cf$4: void <init>(com.appsflyer.internal.cf,com.appsflyer.internal.ab)>
+    <com.appsflyer.internal.cf$4: void <init>(com.appsflyer.internal.cf,com.appsflyer.internal.ab)>
+    <com.appsflyer.internal.cf: void valueOf(java.lang.String)>
+    <com.appsflyer.internal.cf: void valueOf(java.lang.String)>
+    <com.appsflyer.internal.cf$4: void run()>
+    <com.appsflyer.internal.cf$4: void run()>
+    <com.appsflyer.internal.ao: void <init>(com.appsflyer.internal.co)>
+    <com.appsflyer.internal.ao: void <init>(com.appsflyer.internal.co)>
+    <com.appsflyer.internal.cf$4: void run()>
+    <com.appsflyer.internal.ao: java.net.HttpURLConnection AFInAppEventParameterName()>
+    <com.appsflyer.internal.ao: java.net.HttpURLConnection AFInAppEventParameterName()>
+    <com.appsflyer.internal.h: java.util.Map AFInAppEventParameterName()>
+    <com.appsflyer.internal.h: java.util.Map AFInAppEventParameterName()>
+    <com.appsflyer.internal.ao: java.net.HttpURLConnection AFInAppEventParameterName()>
+    <com.appsflyer.internal.k: org.json.JSONObject valueOf(java.util.Map)>
+    <com.appsflyer.internal.k: org.json.JSONObject valueOf(java.util.Map)>
+    <com.appsflyer.internal.k: org.json.JSONObject valueOf(java.util.Map)>
+    <com.appsflyer.internal.k: org.json.JSONObject valueOf(java.util.Map)>
+    <com.appsflyer.internal.k: org.json.JSONObject valueOf(java.util.Map)>
+    <com.appsflyer.internal.k: org.json.JSONObject valueOf(java.util.Map)>
+    <com.appsflyer.internal.k: org.json.JSONObject valueOf(java.util.Map)>
+    <com.appsflyer.internal.ao: java.net.HttpURLConnection AFInAppEventParameterName()>
+    <com.appsflyer.internal.ao: java.net.HttpURLConnection AFInAppEventParameterName()>
+    <com.appsflyer.internal.ao: java.net.HttpURLConnection AFInAppEventParameterName()>
+    <com.appsflyer.internal.ao: java.net.HttpURLConnection AFInAppEventParameterName()>
+    <com.appsflyer.internal.ae: void AFInAppEventParameterName(java.lang.String)>
+    <com.appsflyer.internal.ae: void AFInAppEventParameterName(java.lang.String)>
+    <com.appsflyer.AFLogger: void afInfoLog(java.lang.String)>
+    <com.appsflyer.AFLogger: void afInfoLog(java.lang.String,boolean)>
+    <com.appsflyer.AFLogger: java.lang.String AFInAppEventParameterName(java.lang.String,boolean)>
+    <com.appsflyer.AFLogger: void afInfoLog(java.lang.String,boolean)>
+
+Leak 12:
+  Source: $r7 = virtualinvoke $r5.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r6, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("AppsFlyer_6.6.1", $r2) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.appsflyer.internal.au: java.lang.String AFInAppEventType(java.lang.String)>
+    <com.appsflyer.internal.au: java.lang.String AFInAppEventType(java.lang.String)>
+    <com.appsflyer.internal.au: java.lang.String AFInAppEventType(java.lang.String)>
+    <com.appsflyer.internal.au: java.lang.String AFInAppEventType(java.lang.String)>
+    <com.appsflyer.internal.au: java.lang.String AFInAppEventType(java.lang.String)>
+    <com.appsflyer.internal.au: java.lang.String AFInAppEventType(java.lang.String)>
+    <com.appsflyer.internal.au: java.lang.String AFInAppEventType(java.lang.String)>
+    <com.appsflyer.internal.au: java.lang.String values()>
+    <com.appsflyer.internal.ab: java.lang.String valueOf(android.content.Context)>
+    <com.appsflyer.internal.cf: void valueOf(java.lang.String)>
+    <com.appsflyer.internal.cf: void valueOf(java.lang.String)>
+    <com.appsflyer.internal.cf: void valueOf(java.lang.String)>
+    <com.appsflyer.internal.cf$4: void <init>(com.appsflyer.internal.cf,com.appsflyer.internal.ab)>
+    <com.appsflyer.internal.cf$4: void <init>(com.appsflyer.internal.cf,com.appsflyer.internal.ab)>
+    <com.appsflyer.internal.cf: void valueOf(java.lang.String)>
+    <com.appsflyer.internal.cf: void valueOf(java.lang.String)>
+    <com.appsflyer.internal.cf$4: void run()>
+    <com.appsflyer.internal.cf$4: void run()>
+    <com.appsflyer.internal.ao: void <init>(com.appsflyer.internal.co)>
+    <com.appsflyer.internal.ao: void <init>(com.appsflyer.internal.co)>
+    <com.appsflyer.internal.cf$4: void run()>
+    <com.appsflyer.internal.ao: java.net.HttpURLConnection AFInAppEventParameterName()>
+    <com.appsflyer.internal.ao: java.net.HttpURLConnection AFInAppEventParameterName()>
+    <com.appsflyer.internal.h: java.util.Map AFInAppEventParameterName()>
+    <com.appsflyer.internal.h: java.util.Map AFInAppEventParameterName()>
+    <com.appsflyer.internal.ao: java.net.HttpURLConnection AFInAppEventParameterName()>
+    <com.appsflyer.internal.k: org.json.JSONObject valueOf(java.util.Map)>
+    <com.appsflyer.internal.k: org.json.JSONObject valueOf(java.util.Map)>
+    <com.appsflyer.internal.k: org.json.JSONObject valueOf(java.util.Map)>
+    <com.appsflyer.internal.k: org.json.JSONObject valueOf(java.util.Map)>
+    <com.appsflyer.internal.k: org.json.JSONObject valueOf(java.util.Map)>
+    <com.appsflyer.internal.k: org.json.JSONObject valueOf(java.util.Map)>
+    <com.appsflyer.internal.k: org.json.JSONObject valueOf(java.util.Map)>
+    <com.appsflyer.internal.ao: java.net.HttpURLConnection AFInAppEventParameterName()>
+    <com.appsflyer.internal.ao: java.net.HttpURLConnection AFInAppEventParameterName()>
+    <com.appsflyer.internal.ao: java.net.HttpURLConnection AFInAppEventParameterName()>
+    <com.appsflyer.internal.ao: java.net.HttpURLConnection AFInAppEventParameterName()>
+    <com.appsflyer.internal.ae: void AFInAppEventParameterName(java.lang.String)>
+    <com.appsflyer.internal.ae: void AFInAppEventParameterName(java.lang.String)>
+    <com.appsflyer.AFLogger: void afInfoLog(java.lang.String)>
+    <com.appsflyer.AFLogger: void afInfoLog(java.lang.String,boolean)>
+    <com.appsflyer.AFLogger: java.lang.String AFInAppEventParameterName(java.lang.String,boolean)>
+    <com.appsflyer.AFLogger: void afInfoLog(java.lang.String,boolean)>
+

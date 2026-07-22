@@ -1,0 +1,78 @@
+APK: FlypayPro (NigeriaDelisted)
+Leak 1:
+  Source: $r4 = staticinvoke <android.os.Environment: java.io.File getExternalStorageDirectory()>() (<android.os.Environment: java.io.File getExternalStorageDirectory()>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("OAID", $r0) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.github.gzuliyujiang.oaid.DeviceID: java.io.File getGuidFile(android.content.Context)>
+    <com.github.gzuliyujiang.oaid.DeviceID: java.io.File getGuidFile(android.content.Context)>
+    <com.github.gzuliyujiang.oaid.DeviceID: java.io.File getGuidFile(android.content.Context)>
+    <com.github.gzuliyujiang.oaid.DeviceID: java.lang.String getUuidFromExternalStorage(android.content.Context)>
+    <com.github.gzuliyujiang.oaid.DeviceID: java.lang.String getUuidFromExternalStorage(android.content.Context)>
+    <com.github.gzuliyujiang.oaid.DeviceID: java.lang.String getUuidFromExternalStorage(android.content.Context)>
+    <com.github.gzuliyujiang.oaid.DeviceID: java.lang.String getUuidFromExternalStorage(android.content.Context)>
+    <com.github.gzuliyujiang.oaid.DeviceID: java.lang.String getUuidFromExternalStorage(android.content.Context)>
+    <com.github.gzuliyujiang.oaid.DeviceID: java.lang.String getUuidFromExternalStorage(android.content.Context)>
+    <com.github.gzuliyujiang.oaid.DeviceID: java.lang.String getUuidFromExternalStorage(android.content.Context)>
+    <com.github.gzuliyujiang.oaid.OAIDLog: void print(java.lang.Object)>
+    <com.github.gzuliyujiang.oaid.OAIDLog: void print(java.lang.Object)>
+
+Leak 2:
+  Source: $r6 = virtualinvoke $r4.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r3, null, null, $r5, null) (<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("OAID", $r0) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.github.gzuliyujiang.oaid.impl.MeizuImpl: void doGet(com.github.gzuliyujiang.oaid.IGetter)>
+    <com.github.gzuliyujiang.oaid.impl.MeizuImpl: void doGet(com.github.gzuliyujiang.oaid.IGetter)>
+    <com.github.gzuliyujiang.oaid.impl.MeizuImpl: void doGet(com.github.gzuliyujiang.oaid.IGetter)>
+    <com.github.gzuliyujiang.oaid.impl.MeizuImpl: void doGet(com.github.gzuliyujiang.oaid.IGetter)>
+    <com.github.gzuliyujiang.oaid.impl.MeizuImpl: void doGet(com.github.gzuliyujiang.oaid.IGetter)>
+    <com.github.gzuliyujiang.oaid.OAIDLog: void print(java.lang.Object)>
+    <com.github.gzuliyujiang.oaid.OAIDLog: void print(java.lang.Object)>
+
+Leak 3:
+  Source: $r5 = virtualinvoke $r4.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r3, null, null, null, null) (<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("OAID", $r0) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.github.gzuliyujiang.oaid.impl.VivoImpl: void doGet(com.github.gzuliyujiang.oaid.IGetter)>
+    <com.github.gzuliyujiang.oaid.impl.VivoImpl: void doGet(com.github.gzuliyujiang.oaid.IGetter)>
+    <com.github.gzuliyujiang.oaid.impl.VivoImpl: void doGet(com.github.gzuliyujiang.oaid.IGetter)>
+    <com.github.gzuliyujiang.oaid.impl.VivoImpl: void doGet(com.github.gzuliyujiang.oaid.IGetter)>
+    <com.github.gzuliyujiang.oaid.impl.VivoImpl: void doGet(com.github.gzuliyujiang.oaid.IGetter)>
+    <com.github.gzuliyujiang.oaid.OAIDLog: void print(java.lang.Object)>
+    <com.github.gzuliyujiang.oaid.OAIDLog: void print(java.lang.Object)>
+
+Leak 4:
+  Source: $r4 = virtualinvoke $r3.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r2, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r5.<java.io.FileOutputStream: void write(byte[])>($r7) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <com.facebook.internal.Utility: java.lang.String getAppVersion()>
+    <com.facebook.internal.Utility: java.lang.String getAppVersion()>
+    <com.facebook.internal.Utility: java.lang.String getAppVersion()>
+    <com.facebook.internal.instrument.InstrumentData: void <init>(java.lang.Throwable,com.facebook.internal.instrument.InstrumentData$Type)>
+    <com.facebook.internal.instrument.InstrumentData: void <init>(java.lang.Throwable,com.facebook.internal.instrument.InstrumentData$Type)>
+    <com.facebook.internal.instrument.InstrumentData: void <init>(java.lang.Throwable,com.facebook.internal.instrument.InstrumentData$Type,kotlin.jvm.internal.DefaultConstructorMarker)>
+    <com.facebook.internal.instrument.InstrumentData$Builder: com.facebook.internal.instrument.InstrumentData build(java.lang.Throwable,com.facebook.internal.instrument.InstrumentData$Type)>
+    <com.facebook.internal.instrument.crashshield.CrashShieldHandler: void handleThrowable(java.lang.Throwable,java.lang.Object)>
+    <com.facebook.internal.instrument.InstrumentData: void save()>
+    <com.facebook.internal.instrument.InstrumentData: java.lang.String toString()>
+    <com.facebook.internal.instrument.InstrumentData: org.json.JSONObject getParameters()>
+    <com.facebook.internal.instrument.InstrumentData: org.json.JSONObject getExceptionReportParameters()>
+    <com.facebook.internal.instrument.InstrumentData: org.json.JSONObject getExceptionReportParameters()>
+    <com.facebook.internal.instrument.InstrumentData: org.json.JSONObject getExceptionReportParameters()>
+    <com.facebook.internal.instrument.InstrumentData: org.json.JSONObject getParameters()>
+    <com.facebook.internal.instrument.InstrumentData: java.lang.String toString()>
+    <com.facebook.internal.instrument.InstrumentData: java.lang.String toString()>
+    <com.facebook.internal.instrument.InstrumentData: void save()>
+    <com.facebook.internal.instrument.InstrumentUtility: void writeFile(java.lang.String,java.lang.String)>
+    <com.facebook.internal.instrument.InstrumentUtility: void writeFile(java.lang.String,java.lang.String)>
+
+Leak 5:
+  Source: $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r2, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r1, $r0) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.earth.fastLoan.custom.utils.DeviceOtherInfoUtil: long getAppInstallTime()>
+    <com.earth.fastLoan.custom.utils.DeviceOtherInfoUtil: long getAppInstallTime()>
+    <com.earth.fastLoan.custom.utils.DeviceOtherInfoUtil: long getAppInstallTime()>
+    <com.earth.fastLoan.custom.utils.DeviceOtherInfoUtil: long getAppInstallTime()>
+    <com.earth.fastLoan.custom.utils.DeviceOtherInfoUtil: long getAppInstallTime()>
+    <com.earth.fastLoan.custom.utils.LogUtil: void d(java.lang.String)>
+

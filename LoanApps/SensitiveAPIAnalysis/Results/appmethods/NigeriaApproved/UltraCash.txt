@@ -1,0 +1,10 @@
+APK: UltraCash (NigeriaApproved)
+Leak 1:
+  Source: $r8 = virtualinvoke $r1.<android.content.Context: java.io.File getExternalFilesDir(java.lang.String)>(null) (<android.content.Context: java.io.File getExternalFilesDir(java.lang.String)>)
+  Sink: virtualinvoke $r9.<java.io.FileOutputStream: void write(byte[])>($r7) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <ultracash.fast.loan.edge.came.b: void b(android.content.Context,android.media.ImageReader)>
+    <ultracash.fast.loan.edge.came.b: void b(android.content.Context,android.media.ImageReader)>
+    <ultracash.fast.loan.edge.came.b: void b(android.content.Context,android.media.ImageReader)>
+    <ultracash.fast.loan.edge.came.b: void b(android.content.Context,android.media.ImageReader)>
+

@@ -1,0 +1,85 @@
+APK: com.simpleloan.instant.suparkash (PakistanDelisted)
+Leak 1:
+  Source: $r5 = virtualinvoke $r4.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>("com.google.android.gms", 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: $r4 = virtualinvoke $r13.<java.net.URL: java.net.URLConnection openConnection()>() (<java.net.URL: java.net.URLConnection openConnection()>)
+  Methods:
+    <n5.f: int a(android.content.Context)>
+    <n5.f: int a(android.content.Context)>
+    <n5.f: int a(android.content.Context)>
+    <y5.w70: void m(android.content.Context,java.lang.String,android.os.Bundle,y5.v70)>
+    <y5.w70: void m(android.content.Context,java.lang.String,android.os.Bundle,y5.v70)>
+    <y5.w70: void m(android.content.Context,java.lang.String,android.os.Bundle,y5.v70)>
+    <y5.w70: void m(android.content.Context,java.lang.String,android.os.Bundle,y5.v70)>
+    <y5.w70: void m(android.content.Context,java.lang.String,android.os.Bundle,y5.v70)>
+    <y5.w70: void m(android.content.Context,java.lang.String,android.os.Bundle,y5.v70)>
+    <y5.w70: void m(android.content.Context,java.lang.String,android.os.Bundle,y5.v70)>
+    <y5.oh2: boolean d(java.lang.String)>
+    <y5.t70: void <init>(java.lang.String)>
+    <y5.t70: void <init>(java.lang.String)>
+    <y5.oh2: boolean d(java.lang.String)>
+    <y5.t70: void run()>
+    <y5.t70: void run()>
+    <y5.e80: boolean d(java.lang.String)>
+    <y5.e80: boolean d(java.lang.String)>
+
+Leak 2:
+  Source: $r4 = virtualinvoke $r3.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r2, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r5.<java.io.FileOutputStream: void write(byte[])>($r7) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <com.facebook.internal.b0: java.lang.String o()>
+    <com.facebook.internal.b0: java.lang.String o()>
+    <com.facebook.internal.b0: java.lang.String o()>
+    <g4.b: void <init>(java.lang.Throwable,g4.b$b)>
+    <g4.b: void <init>(java.lang.Throwable,g4.b$b)>
+    <j4.a: void a(java.lang.Throwable,java.lang.Object)>
+    <g4.b: void d()>
+    <g4.b: java.lang.String toString()>
+    <g4.b: java.lang.String toString()>
+    <g4.b: java.lang.String toString()>
+    <g4.b: java.lang.String toString()>
+    <g4.b: java.lang.String toString()>
+    <g4.b: void d()>
+    <a5.z: void s(java.lang.String,java.lang.String)>
+    <a5.z: void s(java.lang.String,java.lang.String)>
+
+Leak 3:
+  Source: $r8 = virtualinvoke $r6.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r7, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("ManifestParser", $r7) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.bumptech.glide.b: void a(android.content.Context,com.bumptech.glide.GeneratedAppGlideModule)>
+    <com.bumptech.glide.b: void a(android.content.Context,com.bumptech.glide.GeneratedAppGlideModule)>
+    <com.bumptech.glide.b: void a(android.content.Context,com.bumptech.glide.GeneratedAppGlideModule)>
+    <com.bumptech.glide.b: void a(android.content.Context,com.bumptech.glide.GeneratedAppGlideModule)>
+    <com.bumptech.glide.b: void a(android.content.Context,com.bumptech.glide.GeneratedAppGlideModule)>
+    <com.bumptech.glide.b: void a(android.content.Context,com.bumptech.glide.GeneratedAppGlideModule)>
+    <com.bumptech.glide.b: void a(android.content.Context,com.bumptech.glide.GeneratedAppGlideModule)>
+    <com.bumptech.glide.b: void a(android.content.Context,com.bumptech.glide.GeneratedAppGlideModule)>
+    <com.bumptech.glide.b: void a(android.content.Context,com.bumptech.glide.GeneratedAppGlideModule)>
+
+Leak 4:
+  Source: $r5 = virtualinvoke $r4.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>("com.google.android.gms", 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("Ads", $r0) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <n5.f: int a(android.content.Context)>
+    <n5.f: int a(android.content.Context)>
+    <n5.f: int a(android.content.Context)>
+    <y5.k30: void b(java.lang.Throwable,java.lang.String,float)>
+    <y5.k30: void b(java.lang.Throwable,java.lang.String,float)>
+    <y5.k30: void b(java.lang.Throwable,java.lang.String,float)>
+    <y5.k30: void b(java.lang.Throwable,java.lang.String,float)>
+    <y5.k30: void b(java.lang.Throwable,java.lang.String,float)>
+    <y5.k30: void b(java.lang.Throwable,java.lang.String,float)>
+    <y5.k30: void b(java.lang.Throwable,java.lang.String,float)>
+    <y5.k30: void b(java.lang.Throwable,java.lang.String,float)>
+    <y5.k30: void b(java.lang.Throwable,java.lang.String,float)>
+    <y5.h30: void <init>(java.lang.Object,java.lang.Object,int)>
+    <y5.h30: void <init>(java.lang.Object,java.lang.Object,int)>
+    <y5.k30: void b(java.lang.Throwable,java.lang.String,float)>
+    <y5.h30: void run()>
+    <y5.h30: void run()>
+    <y5.h30: void run()>
+    <y5.e80: boolean d(java.lang.String)>
+    <y5.e80: boolean d(java.lang.String)>
+    <y5.e80: boolean d(java.lang.String)>
+    <y5.b80: void b(java.lang.String)>
+

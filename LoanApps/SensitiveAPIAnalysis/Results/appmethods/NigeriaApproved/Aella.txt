@@ -1,0 +1,121 @@
+APK: Aella (NigeriaApproved)
+Leak 1:
+  Source: $r4 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r3, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r5.<java.io.FileOutputStream: void write(byte[])>($r7) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <a7.b0: void I(android.content.Context)>
+    <a7.b0: void I(android.content.Context)>
+    <a7.b0: void I(android.content.Context)>
+    <a7.b0: void I(android.content.Context)>
+    <a7.b0: void I(android.content.Context)>
+    <a7.b0: void I(android.content.Context)>
+    <a7.b0: void I(android.content.Context)>
+    <a7.b0: void N(android.content.Context,a7.b0$b)>
+    <a7.y0: boolean f()>
+    <a7.y0: void j()>
+    <a7.y0: void o()>
+    <b7.i0: void b(android.os.Bundle)>
+    <b7.s: void r(java.lang.String,java.lang.Double,android.os.Bundle)>
+    <b7.s: void p(java.lang.String,java.lang.Double,android.os.Bundle,boolean,java.util.UUID)>
+    <i7.c: void h(android.os.Bundle,java.lang.String)>
+    <i7.c: void b(android.os.Bundle,java.lang.String)>
+    <a7.b0: java.lang.String m()>
+    <a7.b0: java.lang.String m()>
+    <i7.c: void b(android.os.Bundle,java.lang.String)>
+    <i7.c: void b(android.os.Bundle,java.lang.String)>
+    <i7.c: void h(android.os.Bundle,java.lang.String)>
+    <i7.c: java.lang.String d(android.os.Bundle)>
+    <i7.c: void h(android.os.Bundle,java.lang.String)>
+    <i7.c: void b(android.os.Bundle,java.lang.String)>
+    <i7.c: void b(android.os.Bundle,java.lang.String)>
+    <b7.s: void p(java.lang.String,java.lang.Double,android.os.Bundle,boolean,java.util.UUID)>
+    <i7.c: void h(android.os.Bundle,java.lang.String)>
+    <b7.s: void p(java.lang.String,java.lang.Double,android.os.Bundle,boolean,java.util.UUID)>
+    <v7.a: void b(java.lang.Throwable,java.lang.Object)>
+    <s7.c: void g()>
+    <s7.c: java.lang.String toString()>
+    <s7.c: org.json.JSONObject e()>
+    <s7.c: org.json.JSONObject d()>
+    <s7.c: org.json.JSONObject d()>
+    <s7.c: org.json.JSONObject d()>
+    <s7.c: org.json.JSONObject e()>
+    <s7.c: java.lang.String toString()>
+    <s7.c: java.lang.String toString()>
+    <s7.c: void g()>
+    <s7.k: void t(java.lang.String,java.lang.String)>
+    <s7.k: void t(java.lang.String,java.lang.String)>
+
+Leak 2:
+  Source: $r10 = virtualinvoke $r8.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r9, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r5.<java.io.FileOutputStream: void write(byte[])>($r7) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <a7.y0: void o()>
+    <a7.y0: void o()>
+    <a7.y0: void o()>
+    <a7.y0: void o()>
+    <a7.y0: void o()>
+    <a7.y0: void o()>
+    <a7.y0: void o()>
+    <a7.y0: void o()>
+    <a7.y0: void o()>
+    <a7.y0: void o()>
+    <b7.i0: void b(android.os.Bundle)>
+    <b7.s: void r(java.lang.String,java.lang.Double,android.os.Bundle)>
+    <b7.s: void p(java.lang.String,java.lang.Double,android.os.Bundle,boolean,java.util.UUID)>
+    <i7.c: void h(android.os.Bundle,java.lang.String)>
+    <i7.c: void h(android.os.Bundle,java.lang.String)>
+    <i7.c: void i(android.os.Bundle)>
+    <kotlin.jvm.internal.s: void g(java.lang.Object,java.lang.String)>
+    <i7.c: void i(android.os.Bundle)>
+    <i7.c: void h(android.os.Bundle,java.lang.String)>
+    <i7.c: void b(android.os.Bundle,java.lang.String)>
+    <i7.c: void b(android.os.Bundle,java.lang.String)>
+    <i7.c: void b(android.os.Bundle,java.lang.String)>
+    <v7.a: void b(java.lang.Throwable,java.lang.Object)>
+    <s7.b: void c(java.lang.Throwable)>
+    <a7.b0: boolean p()>
+    <a7.y0: boolean f()>
+    <a7.y0: void j()>
+    <a7.y0: void k(a7.y0$a[])>
+    <a7.y0: void j()>
+    <a7.y0: boolean f()>
+    <a7.b0: boolean p()>
+    <s7.b: void c(java.lang.Throwable)>
+    <s7.c: void g()>
+    <s7.c: java.lang.String toString()>
+    <s7.c: org.json.JSONObject e()>
+    <s7.c: org.json.JSONObject d()>
+    <s7.c: org.json.JSONObject d()>
+    <s7.c: org.json.JSONObject d()>
+    <s7.c: org.json.JSONObject e()>
+    <s7.c: java.lang.String toString()>
+    <s7.c: java.lang.String toString()>
+    <s7.c: void g()>
+    <s7.k: void t(java.lang.String,java.lang.String)>
+    <s7.k: void t(java.lang.String,java.lang.String)>
+
+Leak 3:
+  Source: $r4 = virtualinvoke $r3.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r2, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r5.<java.io.FileOutputStream: void write(byte[])>($r7) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <q7.l0: java.lang.String w()>
+    <q7.l0: java.lang.String w()>
+    <q7.l0: java.lang.String w()>
+    <s7.c: void <init>(java.lang.Throwable,s7.c$c)>
+    <s7.c: void <init>(java.lang.Throwable,s7.c$c)>
+    <s7.c: void <init>(java.lang.Throwable,s7.c$c,kotlin.jvm.internal.k)>
+    <s7.c$a: s7.c b(java.lang.Throwable,s7.c$c)>
+    <v7.a: void b(java.lang.Throwable,java.lang.Object)>
+    <s7.c: void g()>
+    <s7.c: java.lang.String toString()>
+    <s7.c: org.json.JSONObject e()>
+    <s7.c: org.json.JSONObject d()>
+    <s7.c: org.json.JSONObject d()>
+    <s7.c: org.json.JSONObject d()>
+    <s7.c: org.json.JSONObject e()>
+    <s7.c: java.lang.String toString()>
+    <s7.c: java.lang.String toString()>
+    <s7.c: void g()>
+    <s7.k: void t(java.lang.String,java.lang.String)>
+    <s7.k: void t(java.lang.String,java.lang.String)>
+

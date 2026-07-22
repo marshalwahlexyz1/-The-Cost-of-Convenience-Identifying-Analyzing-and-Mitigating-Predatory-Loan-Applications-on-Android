@@ -1,0 +1,60 @@
+APK: com.philipin.pesokwento.loan_2023-12-07 (PhilippinesApproved)
+Leak 1:
+  Source: $r7 = virtualinvoke $r5.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r6, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: $r7 = virtualinvoke $r6.<java.net.URL: java.net.URLConnection openConnection()>() (<java.net.URL: java.net.URLConnection openConnection()>)
+  Methods:
+    <com.appsflyer.internal.AFc1tSDK: java.lang.String AFInAppEventType(java.lang.String)>
+    <com.appsflyer.internal.AFc1tSDK: java.lang.String AFInAppEventType(java.lang.String)>
+    <com.appsflyer.internal.AFc1tSDK: java.lang.String AFInAppEventType(java.lang.String)>
+    <com.appsflyer.internal.AFc1tSDK: java.lang.String AFInAppEventType(java.lang.String)>
+    <com.appsflyer.internal.AFc1tSDK: java.lang.String AFInAppEventType(java.lang.String)>
+    <com.appsflyer.internal.AFc1tSDK: java.lang.String AFInAppEventType(java.lang.String)>
+    <com.appsflyer.internal.AFc1tSDK: java.lang.String AFInAppEventType(java.lang.String)>
+    <com.appsflyer.internal.AFc1tSDK: java.lang.String valueOf()>
+    <com.appsflyer.internal.AFd1rSDK$4: java.lang.String AFInAppEventType()>
+    <com.appsflyer.internal.AFa1cSDK: java.lang.String valueOf(com.appsflyer.internal.AFc1uSDK,java.lang.String)>
+    <com.appsflyer.internal.AFd1rSDK$4: java.lang.String AFInAppEventType()>
+    <com.appsflyer.internal.AFd1rSDK$4: java.lang.String AFInAppEventType()>
+    <com.appsflyer.internal.AFd1rSDK$4: java.lang.String AFInAppEventType()>
+    <kotlin.text.StringsKt__StringsKt: java.lang.CharSequence LCaL(java.lang.CharSequence)>
+    <kotlin.text.StringsKt__StringsKt: java.lang.CharSequence LCaL(java.lang.CharSequence)>
+    <com.appsflyer.internal.AFd1rSDK$4: java.lang.String AFInAppEventType()>
+    <com.appsflyer.internal.AFd1rSDK$4: java.lang.String AFInAppEventType()>
+    <com.appsflyer.internal.AFd1rSDK$4: java.lang.Object invoke()>
+    <kotlin.SynchronizedLazyImpl: java.lang.Object getValue()>
+    <kotlin.SynchronizedLazyImpl: java.lang.Object getValue()>
+    <com.appsflyer.internal.AFd1rSDK: java.lang.String values()>
+    <com.appsflyer.internal.AFd1rSDK: java.lang.String values()>
+    <com.appsflyer.internal.AFa1cSDK: java.lang.String getHostPrefix()>
+    <com.appsflyer.internal.AFc1hSDK: boolean valueOf()>
+    <com.appsflyer.internal.AFc1hSDK: boolean valueOf()>
+    <com.appsflyer.internal.AFc1hSDK: boolean valueOf()>
+    <com.appsflyer.internal.AFc1hSDK: boolean valueOf()>
+
+Leak 2:
+  Source: $r7 = virtualinvoke $r5.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r6, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: interfaceinvoke $r5.<retrofit2.Call: void enqueue(retrofit2.Callback)>($r1) (<retrofit2.Call: void enqueue(retrofit2.Callback)>)
+  Methods:
+    <com.appsflyer.internal.AFc1tSDK: java.lang.String AFInAppEventType(java.lang.String)>
+    <com.appsflyer.internal.AFc1tSDK: java.lang.String AFInAppEventType(java.lang.String)>
+    <com.appsflyer.internal.AFc1tSDK: java.lang.String AFInAppEventType(java.lang.String)>
+    <com.appsflyer.internal.AFc1tSDK: java.lang.String AFInAppEventType(java.lang.String)>
+    <com.appsflyer.internal.AFc1tSDK: java.lang.String valueOf()>
+    <com.appsflyer.internal.AFd1rSDK$4: java.lang.String AFInAppEventType()>
+    <com.appsflyer.internal.AFd1rSDK: com.appsflyer.internal.AFc1tSDK AFKeystoreWrapper(com.appsflyer.internal.AFd1rSDK)>
+    <com.appsflyer.internal.AFd1rSDK: com.appsflyer.internal.AFc1tSDK AFKeystoreWrapper(com.appsflyer.internal.AFd1rSDK)>
+    <com.appsflyer.internal.AFd1rSDK$4: java.lang.String AFInAppEventType()>
+    <com.appsflyer.internal.AFd1rSDK$4: java.lang.String AFInAppEventType()>
+    <com.appsflyer.internal.AFd1rSDK$4: java.lang.Object invoke()>
+    <kotlin.SynchronizedLazyImpl: java.lang.Object getValue()>
+    <kotlin.SynchronizedLazyImpl: java.lang.Object getValue()>
+    <com.casssshclub.philli.sakjdnsan.view.BaseLoginActivity: uCuCuCCb.CCC aCChhbbLh()>
+    <com.casssshclub.philli.sakjdnsan.view.BaseLoginActivity: uCuCuCCb.CCC aCChhbbLh()>
+    <com.casssshclub.philli.sakjdnsan.view.BaseLoginActivity: void LsbhCCaCC()>
+    <com.casssshclub.philli.sakjdnsan.view.login.CLoginMainActivity: void onCreate(android.os.Bundle)>
+    <com.casssshclub.philli.sakjdnsan.view.login.CLoginMainActivity: void CC()>
+    <com.casssshclub.philli.sakjdnsan.view.login.CLoginMainActivity$ssuCaLCC: void <init>(com.casssshclub.philli.sakjdnsan.view.login.CLoginMainActivity)>
+    <com.casssshclub.philli.sakjdnsan.view.login.CLoginMainActivity$ssuCaLCC: void <init>(com.casssshclub.philli.sakjdnsan.view.login.CLoginMainActivity)>
+    <com.casssshclub.philli.sakjdnsan.view.login.CLoginMainActivity: void CC()>
+    <com.casssshclub.philli.fsbhjaba.request.CRequest: void CaCCL(com.casssshclub.philli.fsbhjaba.request.CRequest$ssuCaLCC)>
+

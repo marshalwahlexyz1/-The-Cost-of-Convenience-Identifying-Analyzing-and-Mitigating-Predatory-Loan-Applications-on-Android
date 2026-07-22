@@ -1,0 +1,1702 @@
+{
+  "processed": [
+    "com.cash.loan.credit9.kash.plamcredit.naira.payday.money.xcredit",
+    "com.flash.flashcredit",
+    "com.extrainch.ngaocredit",
+    "com.indiaquickloan.quickloan",
+    "com.sokohela.lending",
+    "com.loancloud.nigeria.moneyestate",
+    "ni.lcredit.money.cash",
+    "com.hm.thankucard",
+    "com.cashmallet.app",
+    "com.credit.truepesa.loan.kenya",
+    "ke.helacash.cash",
+    "com.mobincube.jijenge_credit_limited.sc_5S1N1N",
+    "com.autochek.buysalefixcars",
+    "com.loancloud.nigeria.smartcash",
+    "com.metaloan",
+    "ke.mojacredit",
+    "com.roamtech.dm.azima",
+    "com.okoleainternational.okoleamobile",
+    "com.cash.me.online.loan.app",
+    "com.kashbean",
+    "com.kenya.credit.app.loan.cash.money.pesa",
+    "com.kopakash",
+    "com.loancloud.nigeria.mocredit",
+    "com.eagle.cash",
+    "com.lipalater.androidapp",
+    "com.zenkafinance.microloans",
+    "com.cd.cashdoor",
+    "com.app.l_pesa",
+    "com.mycredit.mycredit",
+    "com.instant.cash.loan.payday.money.nigeria.new.credit",
+    "bank.com.bank",
+    "com.fair.kash.money.finance.loan",
+    "com.astronpank.TENK_LOAN",
+    "com.rewot.app",
+    "com.sxsydai.yoyi",
+    "com.xcredit.loan.nigeria",
+    "direct.loans.dirloan.kecredit",
+    "com.ubapesa.app",
+    "joycash.mobile.online.quick.loan.money.cash.app",
+    "com.max.lend.kencash"
+  ],
+  "remaining": [
+    {
+      "App Name": "Gomoni",
+      "Package Name": "ng.moni.gomoni",
+      "Country/Classification": "Nigeria/Delisted",
+      "ViolatingPermissions": "android.permission.READ_SMS"
+    },
+    {
+      "App Name": "UCredit",
+      "Package Name": "com.ucreditapp.app.cash.loan.carbon.jumia.pay",
+      "Country/Classification": "Nigeria/Delisted",
+      "ViolatingPermissions": "android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_SMS"
+    },
+    {
+      "App Name": "Hcash",
+      "Package Name": "com.nigeria.cashkj.hcash",
+      "Country/Classification": "Nigeria/Delisted",
+      "ViolatingPermissions": "android.permission.READ_SMS"
+    },
+    {
+      "App Name": "CashDey",
+      "Package Name": "ng.dey.cashdey",
+      "Country/Classification": "Nigeria/Delisted",
+      "ViolatingPermissions": "android.permission.READ_SMS"
+    },
+    {
+      "App Name": "Swiftkash",
+      "Package Name": "swiftkash.safe.go",
+      "Country/Classification": "Nigeria/Delisted",
+      "ViolatingPermissions": "android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_SMS"
+    },
+    {
+      "App Name": "Cashlawn",
+      "Package Name": "com.grew.sw.cashlawn",
+      "Country/Classification": "Nigeria/Delisted",
+      "ViolatingPermissions": "android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_SMS"
+    },
+    {
+      "App Name": "EasyCash",
+      "Package Name": "com.loancloud.nigeria.easycash",
+      "Country/Classification": "Nigeria/Delisted",
+      "ViolatingPermissions": "android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.QUERY_ALL_PACKAGES, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_SMS"
+    },
+    {
+      "App Name": "Cash Loan",
+      "Package Name": "com.cash.loan.lending.cash.credit",
+      "Country/Classification": "Nigeria/Delisted",
+      "ViolatingPermissions": "android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.QUERY_ALL_PACKAGES, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_SMS"
+    },
+    {
+      "App Name": "Cash9ja",
+      "Package Name": "com.cash9ja.credit.cash.loan.naira",
+      "Country/Classification": "Nigeria/Delisted",
+      "ViolatingPermissions": "android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_SMS"
+    },
+    {
+      "App Name": "SharpCredit",
+      "Package Name": "com.sharp.credit.app",
+      "Country/Classification": "Nigeria/Delisted",
+      "ViolatingPermissions": "android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.READ_SMS"
+    },
+    {
+      "App Name": "QuickCredit",
+      "Package Name": "com.cash.loan.credit.quick.kash.cash9ja.mobile9.mkopo.instant.online.gocash",
+      "Country/Classification": "Nigeria/Delisted",
+      "ViolatingPermissions": "android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_SMS"
+    },
+    {
+      "App Name": "Lucky Loan",
+      "Package Name": "com.sx.luckyloan",
+      "Country/Classification": "Nigeria/Delisted",
+      "ViolatingPermissions": "android.permission.READ_SMS"
+    },
+    {
+      "App Name": "Xcash",
+      "Package Name": "com.loanx.cashloan",
+      "Country/Classification": "Nigeria/Delisted",
+      "ViolatingPermissions": "android.permission.READ_SMS"
+    },
+    {
+      "App Name": "Kashpal",
+      "Package Name": "com.kashpal.credit.money.cash.moni",
+      "Country/Classification": "Nigeria/Delisted",
+      "ViolatingPermissions": "android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_SMS"
+    },
+    {
+      "App Name": "Naira9ja",
+      "Package Name": "com.naira9ja.loan.credit.cash.borrow",
+      "Country/Classification": "Nigeria/Delisted",
+      "ViolatingPermissions": "android.permission.READ_CALL_LOG, android.permission.READ_SMS"
+    },
+    {
+      "App Name": "Moneytree",
+      "Package Name": "jp.moneytree.moneytree",
+      "Country/Classification": "Nigeria/Delisted",
+      "ViolatingPermissions": "android.permission.READ_MEDIA_AUDIO, android.permission.READ_MEDIA_IMAGES"
+    },
+    {
+      "App Name": "SoftNaira",
+      "Package Name": "com.sotifai.nai",
+      "Country/Classification": "Nigeria/Delisted",
+      "ViolatingPermissions": "android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_SMS"
+    },
+    {
+      "App Name": "MoneyMart",
+      "Package Name": "com.lcloan.moneymart",
+      "Country/Classification": "Nigeria/Delisted",
+      "ViolatingPermissions": "android.permission.WRITE_EXTERNAL_STORAGE, android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.READ_SMS"
+    },
+    {
+      "App Name": "Crancash",
+      "Package Name": "com.loan.crancash.cash",
+      "Country/Classification": "Nigeria/Delisted",
+      "ViolatingPermissions": "android.permission.READ_SMS"
+    },
+    {
+      "App Name": "nutLoan",
+      "Package Name": "xyz.niki.loan.nut",
+      "Country/Classification": "Nigeria/Delisted",
+      "ViolatingPermissions": "android.permission.READ_SMS"
+    },
+    {
+      "App Name": "Camelloan",
+      "Package Name": "com.cashniriql.camelloan",
+      "Country/Classification": "Nigeria/Delisted",
+      "ViolatingPermissions": "android.permission.READ_CALL_LOG, android.permission.READ_SMS"
+    },
+    {
+      "App Name": "SureCredit",
+      "Package Name": "ng.sure.surecredit",
+      "Country/Classification": "Nigeria/Delisted",
+      "ViolatingPermissions": "android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_PHONE_NUMBERS, android.permission.READ_SMS"
+    },
+    {
+      "App Name": "GGmoney",
+      "Package Name": "com.ggmoney.money.online.loan.instant.credit.bank.app",
+      "Country/Classification": "Nigeria/Delisted",
+      "ViolatingPermissions": "android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_SMS"
+    },
+    {
+      "App Name": "C Money",
+      "Package Name": "com.creditville",
+      "Country/Classification": "Nigeria/Delisted",
+      "ViolatingPermissions": "android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE"
+    },
+    {
+      "App Name": "Ease Cash",
+      "Package Name": "com.ng.easecash",
+      "Country/Classification": "Nigeria/Delisted",
+      "ViolatingPermissions": "android.permission.READ_SMS"
+    },
+    {
+      "App Name": "Henloan",
+      "Package Name": "com.nairacash.henloan",
+      "Country/Classification": "Nigeria/Delisted",
+      "ViolatingPermissions": "android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_SMS"
+    },
+    {
+      "App Name": "Flypay Pro",
+      "Package Name": "loan.flypaypro.ydysx",
+      "Country/Classification": "Nigeria/Delisted",
+      "ViolatingPermissions": "android.permission.READ_SMS"
+    },
+    {
+      "App Name": "Nigeria Loan",
+      "Package Name": "com.nigeria.loan.credit.nigerialoan",
+      "Country/Classification": "Nigeria/Delisted",
+      "ViolatingPermissions": "android.permission.READ_SMS"
+    },
+    {
+      "App Name": "Get Loan",
+      "Package Name": "com.qc.getloan",
+      "Country/Classification": "Nigeria/Delisted",
+      "ViolatingPermissions": "android.permission.READ_SMS"
+    },
+    {
+      "App Name": "Apex Lending",
+      "Package Name": "al.cash.easy.creditapp",
+      "Country/Classification": "Nigeria/Delisted",
+      "ViolatingPermissions": "android.permission.READ_CALL_LOG, android.permission.READ_SMS"
+    },
+    {
+      "App Name": "Secucash",
+      "Package Name": "com.ng.secucash",
+      "Country/Classification": "Nigeria/Delisted",
+      "ViolatingPermissions": "android.permission.READ_CALL_LOG, android.permission.READ_SMS"
+    },
+    {
+      "App Name": "WeCredit",
+      "Package Name": "com.we.ng.credit",
+      "Country/Classification": "Nigeria/Delisted",
+      "ViolatingPermissions": "android.permission.READ_SMS"
+    },
+    {
+      "App Name": "CashMama",
+      "Package Name": "com.loancloud.nigeria.cashmama",
+      "Country/Classification": "Nigeria/Delisted",
+      "ViolatingPermissions": "android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.QUERY_ALL_PACKAGES, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_SMS"
+    },
+    {
+      "App Name": "FINE KUDI",
+      "Package Name": "cn.fk.fine.kudi",
+      "Country/Classification": "Nigeria/Delisted",
+      "ViolatingPermissions": "android.permission.READ_SMS"
+    },
+    {
+      "App Name": "Fibo",
+      "Package Name": "com.ftfarm.fibo",
+      "Country/Classification": "Pakistan/Delisted",
+      "ViolatingPermissions": "android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE"
+    },
+    {
+      "App Name": "Get Loan On PanCard",
+      "Package Name": "com.loan.aadhar.pan.insurance.calculator.getloanonpancard",
+      "Country/Classification": "Pakistan/Delisted",
+      "ViolatingPermissions": "android.permission.ACCESS_FINE_LOCATION, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE"
+    },
+    {
+      "App Name": "LoanMarket",
+      "Package Name": "com.loanmarket",
+      "Country/Classification": "Pakistan/Delisted",
+      "ViolatingPermissions": "android.permission.WRITE_EXTERNAL_STORAGE, android.permission.ACCESS_FINE_LOCATION, android.permission.READ_EXTERNAL_STORAGE"
+    },
+    {
+      "App Name": "5 Minute Loan Apply Online",
+      "Package Name": "com.loanapp.onlineloan.applyonline.calc.Bankbalancecheck",
+      "Country/Classification": "Pakistan/Delisted",
+      "ViolatingPermissions": "android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE"
+    },
+    {
+      "App Name": "Get Easy Paisa Loan App",
+      "Package Name": "com.paisaloanguide.loanguidepaisatips",
+      "Country/Classification": "Pakistan/Delisted",
+      "ViolatingPermissions": "android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE"
+    },
+    {
+      "App Name": "Fast Manee Loan Guide",
+      "Package Name": "com.simpleloan.instant.suparkash",
+      "Country/Classification": "Pakistan/Delisted",
+      "ViolatingPermissions": "android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_EXTERNAL_STORAGE"
+    },
+    {
+      "App Name": "SingleClick Pe Loan",
+      "Package Name": "com.singleclick.loanpe.trading.colourloan.b2l",
+      "Country/Classification": "Pakistan/Delisted",
+      "ViolatingPermissions": "android.permission.WRITE_EXTERNAL_STORAGE, android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE"
+    },
+    {
+      "App Name": "Instant Cash Loan",
+      "Package Name": "com.getinstantloan.creditloan.cashloan",
+      "Country/Classification": "Pakistan/Delisted",
+      "ViolatingPermissions": "android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_EXTERNAL_STORAGE"
+    },
+    {
+      "App Name": "Cash Dana",
+      "Package Name": "com.jalurlaba.app",
+      "Country/Classification": "Pakistan/Delisted",
+      "ViolatingPermissions": "android.permission.WRITE_EXTERNAL_STORAGE"
+    },
+    {
+      "App Name": "CreditBook",
+      "Package Name": "com.creditbookpk.creditbook",
+      "Country/Classification": "Pakistan/Approved",
+      "ViolatingPermissions": "android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE"
+    },
+    {
+      "App Name": "Qist Bazaar",
+      "Package Name": "com.app.qistbazaar4",
+      "Country/Classification": "Pakistan/Approved",
+      "ViolatingPermissions": "android.permission.ACCESS_FINE_LOCATION, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE"
+    },
+    {
+      "App Name": "Taleem",
+      "Package Name": "com.m7.taleem",
+      "Country/Classification": "Pakistan/Approved",
+      "ViolatingPermissions": "android.permission.WRITE_EXTERNAL_STORAGE, android.permission.ACCESS_FINE_LOCATION, android.permission.READ_EXTERNAL_STORAGE"
+    },
+    {
+      "App Name": "MoneyTap",
+      "Package Name": "com.mycash.moneytap.app",
+      "Country/Classification": "Pakistan/Approved",
+      "ViolatingPermissions": "android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_SMS"
+    },
+    {
+      "App Name": "Edufi",
+      "Package Name": "com.edufi.parent",
+      "Country/Classification": "Pakistan/Approved",
+      "ViolatingPermissions": "android.permission.WRITE_EXTERNAL_STORAGE, android.permission.ACCESS_FINE_LOCATION"
+    },
+    {
+      "App Name": "Zood",
+      "Package Name": "com.zoodel.kz",
+      "Country/Classification": "Pakistan/Approved",
+      "ViolatingPermissions": "android.permission.READ_MEDIA_VIDEO, android.permission.ACCESS_FINE_LOCATION, android.permission.READ_MEDIA_IMAGES, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE"
+    },
+    {
+      "App Name": "JazzCash",
+      "Package Name": "com.techlogix.mobilinkcustomer",
+      "Country/Classification": "Pakistan/Approved",
+      "ViolatingPermissions": "android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_MEDIA_IMAGES, android.permission.READ_EXTERNAL_STORAGE, android.permission.QUERY_ALL_PACKAGES, android.permission.WRITE_EXTERNAL_STORAGE"
+    },
+    {
+      "App Name": "Abhi finance",
+      "Package Name": "com.abhifinance",
+      "Country/Classification": "Pakistan/Approved",
+      "ViolatingPermissions": "android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE"
+    },
+    {
+      "App Name": "Muawin",
+      "Package Name": "com.raqqam.monamitech",
+      "Country/Classification": "Pakistan/Approved",
+      "ViolatingPermissions": "android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_SMS"
+    },
+    {
+      "App Name": "Pinja Modal",
+      "Package Name": "com.pinjammodal",
+      "Country/Classification": "Indonesia/Approved",
+      "ViolatingPermissions": "android.permission.ACCESS_FINE_LOCATION"
+    },
+    {
+      "App Name": "DanaBagus",
+      "Package Name": "mobile.danabagus.android",
+      "Country/Classification": "Indonesia/Approved",
+      "ViolatingPermissions": "android.permission.ACCESS_FINE_LOCATION"
+    },
+    {
+      "App Name": "Danakini",
+      "Package Name": "com.pyeuiioa.zaxfrccf",
+      "Country/Classification": "Indonesia/Approved",
+      "ViolatingPermissions": "android.permission.WRITE_EXTERNAL_STORAGE, android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE"
+    },
+    {
+      "App Name": "KTA Kilat",
+      "Package Name": "com.pinjam.ktakilat",
+      "Country/Classification": "Indonesia/Approved",
+      "ViolatingPermissions": "android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE"
+    },
+    {
+      "App Name": "Duha Syariah",
+      "Package Name": "com.duhasyariah.app",
+      "Country/Classification": "Indonesia/Approved",
+      "ViolatingPermissions": "android.permission.WRITE_EXTERNAL_STORAGE, android.permission.ACCESS_FINE_LOCATION"
+    },
+    {
+      "App Name": "Avantee",
+      "Package Name": "com.id.avantee",
+      "Country/Classification": "Indonesia/Approved",
+      "ViolatingPermissions": "android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_EXTERNAL_STORAGE"
+    },
+    {
+      "App Name": "Kredito",
+      "Package Name": "com.kredito.fintek",
+      "Country/Classification": "Indonesia/Approved",
+      "ViolatingPermissions": "android.permission.ACCESS_FINE_LOCATION"
+    },
+    {
+      "App Name": "DanaRupiah",
+      "Package Name": "id.danarupiah.weshare.jiekuan",
+      "Country/Classification": "Indonesia/Approved",
+      "ViolatingPermissions": "android.permission.ACCESS_FINE_LOCATION, android.permission.QUERY_ALL_PACKAGES"
+    },
+    {
+      "App Name": "@7F0F001E",
+      "Package Name": "com.klikcairapp",
+      "Country/Classification": "Indonesia/Approved",
+      "ViolatingPermissions": "android.permission.ACCESS_FINE_LOCATION"
+    },
+    {
+      "App Name": "Danabijak",
+      "Package Name": "com.danabijak.mobile",
+      "Country/Classification": "Indonesia/Approved",
+      "ViolatingPermissions": "android.permission.WRITE_EXTERNAL_STORAGE, android.permission.ACCESS_FINE_LOCATION, android.permission.READ_EXTERNAL_STORAGE"
+    },
+    {
+      "App Name": "Solusiku",
+      "Package Name": "com.mysolusiku.solusiku",
+      "Country/Classification": "Indonesia/Approved",
+      "ViolatingPermissions": "android.permission.WRITE_EXTERNAL_STORAGE, android.permission.ACCESS_FINE_LOCATION, android.permission.READ_EXTERNAL_STORAGE"
+    },
+    {
+      "App Name": "Invoila",
+      "Package Name": "com.solmitrafintec.solmitramobile",
+      "Country/Classification": "Indonesia/Approved",
+      "ViolatingPermissions": "android.permission.ACCESS_FINE_LOCATION"
+    },
+    {
+      "App Name": "KTA KILAT",
+      "Package Name": "com.ktakilat.loan",
+      "Country/Classification": "Indonesia/Approved",
+      "ViolatingPermissions": "android.permission.ACCESS_FINE_LOCATION, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_CALL_LOG, android.permission.READ_SMS"
+    },
+    {
+      "App Name": "@7F0F001E",
+      "Package Name": "com.danasyariah.mobiledanasyariah",
+      "Country/Classification": "Indonesia/Approved",
+      "ViolatingPermissions": "android.permission.ACCESS_FINE_LOCATION"
+    },
+    {
+      "App Name": "Danamas Borrower (Peminjam)",
+      "Package Name": "id.co.danamasbor",
+      "Country/Classification": "Indonesia/Approved",
+      "ViolatingPermissions": "android.permission.ACCESS_FINE_LOCATION"
+    },
+    {
+      "App Name": "@7F0E001D",
+      "Package Name": "id.co.tokomodal.mobile",
+      "Country/Classification": "Indonesia/Approved",
+      "ViolatingPermissions": "android.permission.WRITE_EXTERNAL_STORAGE"
+    },
+    {
+      "App Name": "Fintek Syariah",
+      "Package Name": "id.co.finteksyariah.app.pembiayaan",
+      "Country/Classification": "Indonesia/Approved",
+      "ViolatingPermissions": "android.permission.ACCESS_FINE_LOCATION"
+    },
+    {
+      "App Name": "PinjamanGo",
+      "Package Name": "com.pinjamango",
+      "Country/Classification": "Indonesia/Approved",
+      "ViolatingPermissions": "android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_CALL_LOG, android.permission.READ_PHONE_NUMBERS, android.permission.READ_SMS"
+    },
+    {
+      "App Name": "Crowde",
+      "Package Name": "com.crowde.investor",
+      "Country/Classification": "Indonesia/Approved",
+      "ViolatingPermissions": "android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_EXTERNAL_STORAGE"
+    },
+    {
+      "App Name": "Finmas",
+      "Package Name": "com.oriente.finmas",
+      "Country/Classification": "Indonesia/Approved",
+      "ViolatingPermissions": "android.permission.ACCESS_FINE_LOCATION"
+    },
+    {
+      "App Name": "MEKAR PINJAM",
+      "Package Name": "id.mekartigasampurna.mekarpinjam.app",
+      "Country/Classification": "Indonesia/Approved",
+      "ViolatingPermissions": "android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE"
+    },
+    {
+      "App Name": "Klik Kami",
+      "Package Name": "com.ayo.klikkami",
+      "Country/Classification": "Indonesia/Approved",
+      "ViolatingPermissions": "android.permission.ACCESS_FINE_LOCATION"
+    },
+    {
+      "App Name": "Dana Cepat",
+      "Package Name": "biro.pinjamuang.ngreditmurahki",
+      "Country/Classification": "Indonesia/Approved",
+      "ViolatingPermissions": "android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_EXTERNAL_STORAGE"
+    },
+    {
+      "App Name": "DompetKilat",
+      "Package Name": "com.dompetkilat.pinjaman",
+      "Country/Classification": "Indonesia/Approved",
+      "ViolatingPermissions": "android.permission.ACCESS_FINE_LOCATION"
+    },
+    {
+      "App Name": "DanaKita",
+      "Package Name": "com.wDanaKita_KBL",
+      "Country/Classification": "Indonesia/Approved",
+      "ViolatingPermissions": "android.permission.ACCESS_FINE_LOCATION, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE"
+    },
+    {
+      "App Name": "Danakini",
+      "Package Name": "com.pbejydgb.ygzxmzcg",
+      "Country/Classification": "Indonesia/Approved",
+      "ViolatingPermissions": "android.permission.WRITE_EXTERNAL_STORAGE, android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE"
+    },
+    {
+      "App Name": "True Loan",
+      "Package Name": "team.trueloan.loan",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.READ_SMS"
+    },
+    {
+      "App Name": "RexAfrica",
+      "Package Name": "com.rexmfb.mobile",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.ACCESS_FINE_LOCATION, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE"
+    },
+    {
+      "App Name": "Future Cash",
+      "Package Name": "com.futurecash.nl.re",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.READ_SMS"
+    },
+    {
+      "App Name": "Umba",
+      "Package Name": "com.beatha.mkopokaka",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.READ_MEDIA_VIDEO, android.permission.READ_MEDIA_AUDIO, android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_MEDIA_IMAGES, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_PHONE_NUMBERS, android.permission.READ_SMS"
+    },
+    {
+      "App Name": "9money",
+      "Package Name": "com.credit.ninemoney",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.READ_SMS"
+    },
+    {
+      "App Name": "Flex Finance",
+      "Package Name": "business.finance.flex",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE"
+    },
+    {
+      "App Name": "EasyKash",
+      "Package Name": "easykash.creditapp.loan",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.READ_CALL_LOG, android.permission.READ_SMS"
+    },
+    {
+      "App Name": "Veend",
+      "Package Name": "com.veendhq.mobileApp",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE"
+    },
+    {
+      "App Name": "Aella",
+      "Package Name": "com.aella.comportal",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.ACCESS_FINE_LOCATION"
+    },
+    {
+      "App Name": "IntsWallet",
+      "Package Name": "com.ng.flexfund",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.READ_CALL_LOG"
+    },
+    {
+      "App Name": "Tcredit",
+      "Package Name": "com.nigeria.tcredit",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.READ_SMS"
+    },
+    {
+      "App Name": "SavingsBox",
+      "Package Name": "com.reliance.savingsbox",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.READ_MEDIA_VIDEO, android.permission.READ_MEDIA_AUDIO, android.permission.READ_MEDIA_IMAGES, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE"
+    },
+    {
+      "App Name": "Traction",
+      "Package Name": "co.tractionapp.traction",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.READ_MEDIA_VIDEO, android.permission.READ_MEDIA_AUDIO, android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_MEDIA_IMAGES, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE"
+    },
+    {
+      "App Name": "Pivo",
+      "Package Name": "africa.pivo",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.READ_MEDIA_IMAGES, android.permission.READ_MEDIA_AUDIO, android.permission.READ_EXTERNAL_STORAGE, android.permission.QUERY_ALL_PACKAGES"
+    },
+    {
+      "App Name": "Quickcheck",
+      "Package Name": "io.quickcheck.loans",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.ACCESS_FINE_LOCATION, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_SMS"
+    },
+    {
+      "App Name": "Gogetcredit",
+      "Package Name": "go.get.credit",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.READ_SMS"
+    },
+    {
+      "App Name": "GoLoan",
+      "Package Name": "com.wegoloan.app.nigeria",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.READ_SMS"
+    },
+    {
+      "App Name": "Aibanc",
+      "Package Name": "co.aibanc.Aibanc_APP",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_EXTERNAL_STORAGE"
+    },
+    {
+      "App Name": "SilkLoan",
+      "Package Name": "silkloan.nigeria.credit.cash.loan",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.READ_SMS"
+    },
+    {
+      "App Name": "EaseMoni",
+      "Package Name": "com.loan.cash.credit.easemoni.nigeria",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.READ_SMS"
+    },
+    {
+      "App Name": "MintBag",
+      "Package Name": "com.finles.mintbag",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.READ_CALL_LOG, android.permission.READ_SMS"
+    },
+    {
+      "App Name": "Zelia",
+      "Package Name": "com.zeliaapp",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.ACCESS_FINE_LOCATION, android.permission.READ_MEDIA_IMAGES, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE"
+    },
+    {
+      "App Name": "VendorCredit",
+      "Package Name": "ng.vendorcredit.app",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_EXTERNAL_STORAGE"
+    },
+    {
+      "App Name": "Lilycash",
+      "Package Name": "ng.personal.loan.lily.cash",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.READ_CALL_LOG, android.permission.READ_SMS"
+    },
+    {
+      "App Name": "Gocash",
+      "Package Name": "com.go.cash.cash.gocash",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.READ_SMS"
+    },
+    {
+      "App Name": "monee",
+      "Package Name": "com.nidcomsolutions.monee",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.ACCESS_FINE_LOCATION"
+    },
+    {
+      "App Name": "liberty-pay",
+      "Package Name": "com.libertyassured.libertypay",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_SMS"
+    },
+    {
+      "App Name": "Palmcredit",
+      "Package Name": "com.transsnetfinancial.palmcredit",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.READ_CALL_LOG, android.permission.READ_SMS"
+    },
+    {
+      "App Name": "Payhippo",
+      "Package Name": "app.payhippo",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_EXTERNAL_STORAGE"
+    },
+    {
+      "App Name": "P2Vest",
+      "Package Name": "com.p2vest",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE"
+    },
+    {
+      "App Name": "AllCredit",
+      "Package Name": "com.allcredit.ls",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.READ_SMS"
+    },
+    {
+      "App Name": "Credit Wallet",
+      "Package Name": "com.credit.wallet",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.READ_SMS"
+    },
+    {
+      "App Name": "Allawee",
+      "Package Name": "com.allaweepersonal.mobile",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE"
+    },
+    {
+      "App Name": "NaijaEase",
+      "Package Name": "com.summit.naijaease",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.READ_SMS"
+    },
+    {
+      "App Name": "Newcredit",
+      "Package Name": "com.pbank.newcredit",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.READ_CALL_LOG, android.permission.READ_SMS"
+    },
+    {
+      "App Name": "FastCent",
+      "Package Name": "com.ng.FastCent",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.READ_CALL_LOG"
+    },
+    {
+      "App Name": "",
+      "Package Name": "com.loan.naira.cash.ng9",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.READ_SMS"
+    },
+    {
+      "App Name": "Xcrosscash",
+      "Package Name": "com.xcash.xcrosscash",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.READ_CALL_LOG, android.permission.READ_SMS"
+    },
+    {
+      "App Name": "Irorun",
+      "Package Name": "com.irorun",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_SMS"
+    },
+    {
+      "App Name": "VoiceMoney",
+      "Package Name": "com.voicemoney.vmey",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.READ_CALL_LOG, android.permission.READ_SMS"
+    },
+    {
+      "App Name": "Apex Loan",
+      "Package Name": "com.apex.loan.ng.app",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.READ_SMS"
+    },
+    {
+      "App Name": "HadiFinance",
+      "Package Name": "com.hadifinance.hadifinanceapp",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.ACCESS_FINE_LOCATION, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_SMS"
+    },
+    {
+      "App Name": "Hi Fund",
+      "Package Name": "com.hifund.money.kash.loan",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.READ_SMS"
+    },
+    {
+      "App Name": "OmniKash",
+      "Package Name": "com.omnikash.xxko",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.READ_CALL_LOG, android.permission.READ_SMS"
+    },
+    {
+      "App Name": "Easy Money Loan",
+      "Package Name": "com.cash.loan.personal.kash.cash9ja.xcredit.payday.credit9.money",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.READ_SMS"
+    },
+    {
+      "App Name": "Credpal",
+      "Package Name": "com.credpal.loan",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE"
+    },
+    {
+      "App Name": "KashLoan",
+      "Package Name": "com.principal.loan.cash.principalloan",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.READ_SMS"
+    },
+    {
+      "App Name": "Airmoni",
+      "Package Name": "com.commercemen.airmoni",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.READ_SMS"
+    },
+    {
+      "App Name": "Bold",
+      "Package Name": "com.dodo_mobile",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.READ_MEDIA_VIDEO, android.permission.READ_MEDIA_AUDIO, android.permission.READ_CONTACTS, android.permission.READ_MEDIA_IMAGES, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE"
+    },
+    {
+      "App Name": "LendMe",
+      "Package Name": "co.mylendme.mobile",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE"
+    },
+    {
+      "App Name": "TrustLaon",
+      "Package Name": "com.trustloan.finserve.nigeria.creditline.xpress",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.READ_CALL_LOG, android.permission.READ_SMS"
+    },
+    {
+      "App Name": "NairaGo",
+      "Package Name": "com.muska.tech.nairago",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.READ_SMS"
+    },
+    {
+      "App Name": "KashCash",
+      "Package Name": "ng.kashcash.kash",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.READ_SMS"
+    },
+    {
+      "App Name": "Rockshield MFB",
+      "Package Name": "com.fintellia.rockshieldmfb",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE"
+    },
+    {
+      "App Name": "Easyfund",
+      "Package Name": "com.loan.easyfund",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.READ_SMS"
+    },
+    {
+      "App Name": "Care Finance",
+      "Package Name": "care.finance",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.READ_SMS"
+    },
+    {
+      "App Name": "",
+      "Package Name": "com.lenddo.mobile.paylater",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE"
+    },
+    {
+      "App Name": "Rapaid",
+      "Package Name": "com.rapaidv1",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE"
+    },
+    {
+      "App Name": "TradeCredit",
+      "Package Name": "com.trade.ca.credit",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.READ_CALL_LOG, android.permission.READ_SMS"
+    },
+    {
+      "App Name": "Edike",
+      "Package Name": "com.edikemobile",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE"
+    },
+    {
+      "App Name": "Our Pass",
+      "Package Name": "co.our.pass.stg",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE"
+    },
+    {
+      "App Name": "CashRun",
+      "Package Name": "cash.run.credit.easy.loan",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.READ_SMS"
+    },
+    {
+      "App Name": "Lendigo",
+      "Package Name": "com.lendigo.app",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.WRITE_EXTERNAL_STORAGE"
+    },
+    {
+      "App Name": "Dot",
+      "Package Name": "com.digicore.dot",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE"
+    },
+    {
+      "App Name": "PayLater",
+      "Package Name": "com.paylaterapp.paylater",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.ACCESS_FINE_LOCATION, android.permission.READ_EXTERNAL_STORAGE"
+    },
+    {
+      "App Name": "@7F0F002C",
+      "Package Name": "com.nigeria.android.mooncard",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.READ_CALL_LOG, android.permission.READ_SMS"
+    },
+    {
+      "App Name": "9Credit Go",
+      "Package Name": "com.ted.ng.ninecreditgo.credit.loans",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.READ_CALL_LOG, android.permission.READ_SMS"
+    },
+    {
+      "App Name": "Sycamore",
+      "Package Name": "ng.sycamore.app2",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.READ_MEDIA_IMAGES, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE"
+    },
+    {
+      "App Name": "Finpadi",
+      "Package Name": "com.finpadimobile",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE"
+    },
+    {
+      "App Name": "OyesCredit",
+      "Package Name": "com.end.wall.week",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.READ_SMS"
+    },
+    {
+      "App Name": "MenaCred",
+      "Package Name": "com.menamobile",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_SMS"
+    },
+    {
+      "App Name": "Hometown",
+      "Package Name": "com.hometown.app",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.READ_CONTACTS"
+    },
+    {
+      "App Name": "Credlock Business",
+      "Package Name": "app.credlockng.merchant",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.ACCESS_FINE_LOCATION, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE"
+    },
+    {
+      "App Name": "OKCash",
+      "Package Name": "com.falcon.teer.baro.cash",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.READ_SMS"
+    },
+    {
+      "App Name": "Cash9ja",
+      "Package Name": "com.samued.cashnaija",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.READ_SMS"
+    },
+    {
+      "App Name": "Okloan",
+      "Package Name": "com.oxloanpro.cash.credit.nigeria",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.READ_SMS"
+    },
+    {
+      "App Name": "Cashpaddie",
+      "Package Name": "com.lucky.cashpaddie",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.READ_SMS"
+    },
+    {
+      "App Name": "SwiftNaira",
+      "Package Name": "swift.loan.naira.app",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.READ_SMS"
+    },
+    {
+      "App Name": "Hermoney",
+      "Package Name": "com.hermoney.app",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.WRITE_EXTERNAL_STORAGE, android.permission.ACCESS_FINE_LOCATION, android.permission.READ_EXTERNAL_STORAGE"
+    },
+    {
+      "App Name": "Morecash",
+      "Package Name": "com.loan.credit.new.morecash",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.READ_SMS"
+    },
+    {
+      "App Name": "Fewchore Mobile",
+      "Package Name": "com.exolve.fewchorepay",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.READ_MEDIA_VIDEO, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_MEDIA_IMAGES, android.permission.READ_MEDIA_AUDIO, android.permission.READ_EXTERNAL_STORAGE"
+    },
+    {
+      "App Name": "VybeCash",
+      "Package Name": "com.vybecash.app",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE"
+    },
+    {
+      "App Name": "Ellimoney",
+      "Package Name": "com.airopay.agents",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.READ_EXTERNAL_STORAGE"
+    },
+    {
+      "App Name": "Koins",
+      "Package Name": "com.primerabank.primera_mobile",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_EXTERNAL_STORAGE"
+    },
+    {
+      "App Name": "GetNaira",
+      "Package Name": "com.getnaira.online.loan.instant.credit",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.READ_SMS"
+    },
+    {
+      "App Name": "Adashe",
+      "Package Name": "com.adashe.app.adashe",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.ACCESS_FINE_LOCATION, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_PHONE_NUMBERS"
+    },
+    {
+      "App Name": "Primepay",
+      "Package Name": "com.client.primepay",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.READ_CALL_LOG"
+    },
+    {
+      "App Name": "TradeLenda",
+      "Package Name": "com.tradelenda.app",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE"
+    },
+    {
+      "App Name": "Vkash",
+      "Package Name": "safe.vkashpro.loan",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.READ_SMS"
+    },
+    {
+      "App Name": "Renmoney",
+      "Package Name": "com.renmoney.android",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.READ_MEDIA_VIDEO, android.permission.READ_MEDIA_AUDIO, android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_MEDIA_IMAGES, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_PHONE_NUMBERS, android.permission.READ_SMS"
+    },
+    {
+      "App Name": "Plenty Cash",
+      "Package Name": "ng.com.plentycash",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.READ_SMS"
+    },
+    {
+      "App Name": "com.kash.money.palm.minicredit.new.naira.loan",
+      "Package Name": "com.kash.money.palm.minicredit.new.naira.loan",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.READ_SMS"
+    },
+    {
+      "App Name": "Pasa",
+      "Package Name": "com.pride.pasa",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.READ_SMS"
+    },
+    {
+      "App Name": "Nicenaira Plus",
+      "Package Name": "com.credit.nicenaira",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.READ_SMS"
+    },
+    {
+      "App Name": "Xcash",
+      "Package Name": "com.loanx.cashloan",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.READ_CALL_LOG, android.permission.READ_SMS"
+    },
+    {
+      "App Name": "ZoomCash",
+      "Package Name": "com.zoomcash.app.financial.services.mobilepay",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.READ_CALL_LOG, android.permission.READ_SMS"
+    },
+    {
+      "App Name": "Hi Wallet",
+      "Package Name": "nigeria.cash.loan.hiwallet",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.READ_CALL_LOG"
+    },
+    {
+      "App Name": "Regxta",
+      "Package Name": "com.info.regxta",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_EXTERNAL_STORAGE"
+    },
+    {
+      "App Name": "UltraCash",
+      "Package Name": "ultracash.fast.loan",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.READ_CALL_LOG, android.permission.READ_SMS"
+    },
+    {
+      "App Name": "Vibecredit",
+      "Package Name": "com.vibecredit",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.READ_SMS"
+    },
+    {
+      "App Name": "@7F10001C",
+      "Package Name": "com.cash.lnonline",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.READ_SMS"
+    },
+    {
+      "App Name": "PhastMoney",
+      "Package Name": "com.phastmoney",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.WRITE_EXTERNAL_STORAGE"
+    },
+    {
+      "App Name": "Raiz",
+      "Package Name": "com.raiz.application",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.READ_MEDIA_AUDIO, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE"
+    },
+    {
+      "App Name": "O2 Finance",
+      "Package Name": "com.o2intlfin.loans",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.WRITE_EXTERNAL_STORAGE, android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE"
+    },
+    {
+      "App Name": "Loanmate",
+      "Package Name": "com.bwfoxlending.nigeria",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.READ_SMS"
+    },
+    {
+      "App Name": "Tradedepot",
+      "Package Name": "co.tradedepot.shop",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE"
+    },
+    {
+      "App Name": "HerVest",
+      "Package Name": "com.hervest",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_EXTERNAL_STORAGE"
+    },
+    {
+      "App Name": "Rocket Loan Plus",
+      "Package Name": "com.silver.gooseplus.wallet.goosewallet",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.READ_SMS"
+    },
+    {
+      "App Name": "LCredit Max",
+      "Package Name": "cashigo.loan.lcreditmax",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.READ_SMS"
+    },
+    {
+      "App Name": "@7F10001C",
+      "Package Name": "com.smart.loan.money.smartloan",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.READ_SMS"
+    },
+    {
+      "App Name": "Klump",
+      "Package Name": "com.klump.inc.mobile",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_EXTERNAL_STORAGE"
+    },
+    {
+      "App Name": "WayaCredit",
+      "Package Name": "com.mycrat.wayacreditng",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.READ_CALL_LOG, android.permission.READ_SMS"
+    },
+    {
+      "App Name": "PearlCash",
+      "Package Name": "com.nigeria.app.vsnaira",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.READ_SMS"
+    },
+    {
+      "App Name": "Pilla",
+      "Package Name": "com.investment.pilla",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.READ_EXTERNAL_STORAGE"
+    },
+    {
+      "App Name": "PayFiMobile",
+      "Package Name": "com.otoreport.apkpayfimobile",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE"
+    },
+    {
+      "App Name": "Payfi",
+      "Package Name": "com.payfi.ng",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE"
+    },
+    {
+      "App Name": "Branch",
+      "Package Name": "com.branch_international.branch.branch_demo_android",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.READ_CONTACTS, android.permission.READ_SMS"
+    },
+    {
+      "App Name": "Alladin Digital",
+      "Package Name": "com.aladdin.digital",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.READ_MEDIA_VIDEO, android.permission.READ_CONTACTS, android.permission.READ_MEDIA_IMAGES, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE"
+    },
+    {
+      "App Name": "Moni",
+      "Package Name": "com.rank.moni",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE"
+    },
+    {
+      "App Name": "LairaPlus",
+      "Package Name": "com.lairaplus.naira.loan.nigeria",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.READ_SMS"
+    },
+    {
+      "App Name": "NCASH",
+      "Package Name": "com.ng.product.ncash",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.READ_SMS"
+    },
+    {
+      "App Name": "AjeLoan",
+      "Package Name": "ng.com.ajeloan",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.READ_SMS"
+    },
+    {
+      "App Name": "Nicekash",
+      "Package Name": "com.loan.nicekash",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.READ_SMS"
+    },
+    {
+      "App Name": "Riverbank",
+      "Package Name": "io.ionic.riverbank",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.READ_MEDIA_IMAGES, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.ACCESS_FINE_LOCATION, android.permission.READ_EXTERNAL_STORAGE"
+    },
+    {
+      "App Name": "Shara",
+      "Package Name": "co.shara.lite",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE"
+    },
+    {
+      "App Name": "Hcwallet",
+      "Package Name": "com.ng.haloocredit",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.READ_CALL_LOG"
+    },
+    {
+      "App Name": "Pennee",
+      "Package Name": "com.pennee.tech",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.ACCESS_FINE_LOCATION, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE"
+    },
+    {
+      "App Name": "Incash",
+      "Package Name": "com.nig.incash.org",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_EXTERNAL_STORAGE"
+    },
+    {
+      "App Name": "KiaKia finance",
+      "Package Name": "com.kiakiafinance.app",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE"
+    },
+    {
+      "App Name": "FairMoney",
+      "Package Name": "ng.com.fairmoney.fairmoney",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.READ_MEDIA_VIDEO, android.permission.READ_MEDIA_AUDIO, android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_MEDIA_IMAGES, android.permission.READ_EXTERNAL_STORAGE, android.permission.QUERY_ALL_PACKAGES, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_SMS"
+    },
+    {
+      "App Name": "Max Moni",
+      "Package Name": "com.loan.new.maxmoni",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.READ_SMS"
+    },
+    {
+      "App Name": "LoanNaira",
+      "Package Name": "com.loan.naira.now",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.READ_SMS"
+    },
+    {
+      "App Name": "@7F10002D",
+      "Package Name": "com.ng.swifund",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.READ_CALL_LOG"
+    },
+    {
+      "App Name": "CayCredit",
+      "Package Name": "credit.caycredit.finance.loan.money",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.READ_SMS"
+    },
+    {
+      "App Name": "iCredit",
+      "Package Name": "com.loan.icredit.creditng",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.READ_SMS"
+    },
+    {
+      "App Name": "EaziPay",
+      "Package Name": "com.myeazipay.business",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_EXTERNAL_STORAGE"
+    },
+    {
+      "App Name": "UnlockCash",
+      "Package Name": "com.boyu.luans",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.READ_SMS"
+    },
+    {
+      "App Name": "Hi Credit",
+      "Package Name": "com.may.android.hicredit",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.READ_SMS"
+    },
+    {
+      "App Name": "Newlending",
+      "Package Name": "com.loan.newlending.through",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE"
+    },
+    {
+      "App Name": "Growly",
+      "Package Name": "com.tpdn.growly.mobile",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.WRITE_EXTERNAL_STORAGE"
+    },
+    {
+      "App Name": "PonyCash",
+      "Package Name": "com.ponycash.poca.nysh",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.READ_CALL_LOG, android.permission.READ_SMS"
+    },
+    {
+      "App Name": "CreditWise",
+      "Package Name": "ng.wise.creditwise",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.READ_SMS"
+    },
+    {
+      "App Name": "Supreme MFB",
+      "Package Name": "com.fintellia.suprememfbs",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE"
+    },
+    {
+      "App Name": "retailboosters",
+      "Package Name": "com.retailboosters",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.READ_EXTERNAL_STORAGE"
+    },
+    {
+      "App Name": "ClanPay",
+      "Package Name": "com.repay.com",
+      "Country/Classification": "Nigeria/Approved",
+      "ViolatingPermissions": "android.permission.ACCESS_FINE_LOCATION"
+    },
+    {
+      "App Name": "WowPera",
+      "Package Name": "com.wow.pera",
+      "Country/Classification": "Philippines/Approved",
+      "ViolatingPermissions": "android.permission.READ_SMS"
+    },
+    {
+      "App Name": "HappyPera 2",
+      "Package Name": "com.happyperatwo.app",
+      "Country/Classification": "Philippines/Approved",
+      "ViolatingPermissions": "android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE"
+    },
+    {
+      "App Name": "BillEase",
+      "Package Name": "ph.billease",
+      "Country/Classification": "Philippines/Approved",
+      "ViolatingPermissions": "android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.READ_SMS, android.permission.READ_CALL_LOG"
+    },
+    {
+      "App Name": "PeraJet",
+      "Package Name": "perajet.ph.credoapp",
+      "Country/Classification": "Philippines/Approved",
+      "ViolatingPermissions": "android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE"
+    },
+    {
+      "App Name": "Valley loan",
+      "Package Name": "com.valley.loan",
+      "Country/Classification": "Philippines/Approved",
+      "ViolatingPermissions": "android.permission.READ_SMS"
+    },
+    {
+      "App Name": "PesoCash",
+      "Package Name": "com.myloan.pesocash",
+      "Country/Classification": "Philippines/Approved",
+      "ViolatingPermissions": "android.permission.READ_SMS"
+    },
+    {
+      "App Name": "Cashcash Philippines",
+      "Package Name": "com.firestorm.sea.loanmarket",
+      "Country/Classification": "Philippines/Approved",
+      "ViolatingPermissions": "android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE"
+    },
+    {
+      "App Name": "Zippeso - Online Cash Loan",
+      "Package Name": "ph.zippeso.online.cash.loan",
+      "Country/Classification": "Philippines/Approved",
+      "ViolatingPermissions": "android.permission.READ_SMS"
+    },
+    {
+      "App Name": "Vplus",
+      "Package Name": "com.v.plus.vplus",
+      "Country/Classification": "Philippines/Approved",
+      "ViolatingPermissions": "android.permission.READ_SMS"
+    },
+    {
+      "App Name": "Pesokwento",
+      "Package Name": "com.philipin.pesokwento.loan",
+      "Country/Classification": "Philippines/Approved",
+      "ViolatingPermissions": "android.permission.READ_SMS"
+    },
+    {
+      "App Name": "@7F100022",
+      "Package Name": "com.liang.chan",
+      "Country/Classification": "Philippines/Approved",
+      "ViolatingPermissions": "android.permission.READ_SMS"
+    },
+    {
+      "App Name": "CredTap",
+      "Package Name": "in.atome",
+      "Country/Classification": "Philippines/Approved",
+      "ViolatingPermissions": "android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE"
+    },
+    {
+      "App Name": "PesoGo",
+      "Package Name": "com.yigomob.philippine.pesogo",
+      "Country/Classification": "Philippines/Approved",
+      "ViolatingPermissions": "android.permission.WRITE_EXTERNAL_STORAGE, android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE"
+    },
+    {
+      "App Name": "cashwow",
+      "Package Name": "ph.cashwow11.android",
+      "Country/Classification": "Philippines/Approved",
+      "ViolatingPermissions": "android.permission.WRITE_EXTERNAL_STORAGE, android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE"
+    },
+    {
+      "App Name": "Pesolaon",
+      "Package Name": "com.pesoloan",
+      "Country/Classification": "Philippines/Approved",
+      "ViolatingPermissions": "android.permission.READ_CALL_LOG, android.permission.READ_SMS"
+    },
+    {
+      "App Name": "iPeso",
+      "Package Name": "com.qiantanglending.vps",
+      "Country/Classification": "Philippines/Approved",
+      "ViolatingPermissions": "android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE"
+    },
+    {
+      "App Name": "pera247",
+      "Package Name": "versluisant.kredit24",
+      "Country/Classification": "Philippines/Approved",
+      "ViolatingPermissions": "android.permission.WRITE_EXTERNAL_STORAGE, android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE"
+    },
+    {
+      "App Name": "Pesohere",
+      "Package Name": "com.pesohere.android",
+      "Country/Classification": "Philippines/Approved",
+      "ViolatingPermissions": "android.permission.READ_SMS"
+    },
+    {
+      "App Name": "GoPeso",
+      "Package Name": "com.ph.loan.android",
+      "Country/Classification": "Philippines/Approved",
+      "ViolatingPermissions": "android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE"
+    },
+    {
+      "App Name": "Pinoy Peso",
+      "Package Name": "com.cga.cash",
+      "Country/Classification": "Philippines/Approved",
+      "ViolatingPermissions": "android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE"
+    },
+    {
+      "App Name": "JuanHand",
+      "Package Name": "com.juanhand.fast.cash.peso.loan.app",
+      "Country/Classification": "Philippines/Approved",
+      "ViolatingPermissions": "android.permission.READ_SMS"
+    },
+    {
+      "App Name": "MadaLoan",
+      "Package Name": "ooifxdso.opxosduf.oqexred",
+      "Country/Classification": "Philippines/Approved",
+      "ViolatingPermissions": "android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_PHONE_NUMBERS, android.permission.READ_SMS"
+    },
+    {
+      "App Name": "Fast Peso",
+      "Package Name": "ph.fast.peso",
+      "Country/Classification": "Philippines/Approved",
+      "ViolatingPermissions": "android.permission.WRITE_EXTERNAL_STORAGE, android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE"
+    },
+    {
+      "App Name": "Peso2Go",
+      "Package Name": "com.peso2go",
+      "Country/Classification": "Philippines/Approved",
+      "ViolatingPermissions": "android.permission.WRITE_EXTERNAL_STORAGE, android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.READ_PHONE_NUMBERS"
+    },
+    {
+      "App Name": "Pesos.ph",
+      "Package Name": "pesop.jkaht",
+      "Country/Classification": "Philippines/Approved",
+      "ViolatingPermissions": "android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS"
+    },
+    {
+      "App Name": "Pera",
+      "Package Name": "com.vip.pera",
+      "Country/Classification": "Philippines/Approved",
+      "ViolatingPermissions": "android.permission.READ_SMS"
+    },
+    {
+      "App Name": "PesoQ",
+      "Package Name": "com.tmart.pesoq",
+      "Country/Classification": "Philippines/Approved",
+      "ViolatingPermissions": "android.permission.READ_SMS"
+    },
+    {
+      "App Name": "Credit Peso",
+      "Package Name": "com.wdjk.mcvay",
+      "Country/Classification": "Philippines/Approved",
+      "ViolatingPermissions": "android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS"
+    },
+    {
+      "App Name": "Easy Peso",
+      "Package Name": "com.easy.cash.loan",
+      "Country/Classification": "Philippines/Approved",
+      "ViolatingPermissions": "android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE"
+    },
+    {
+      "App Name": "LendPeso Market",
+      "Package Name": "com.jrweid.pilipinas.loanmarket",
+      "Country/Classification": "Philippines/Approved",
+      "ViolatingPermissions": "android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_EXTERNAL_STORAGE"
+    },
+    {
+      "App Name": "Borrow Peso",
+      "Package Name": "com.jrweid.pautang.peso",
+      "Country/Classification": "Philippines/Approved",
+      "ViolatingPermissions": "android.permission.WRITE_EXTERNAL_STORAGE, android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE"
+    },
+    {
+      "App Name": "QuickLa",
+      "Package Name": "com.luck.duck.quickla",
+      "Country/Classification": "Philippines/Approved",
+      "ViolatingPermissions": "android.permission.READ_CALL_LOG, android.permission.READ_SMS"
+    },
+    {
+      "App Name": "OkPeso",
+      "Package Name": "tech.codeblock.okpeso",
+      "Country/Classification": "Philippines/Approved",
+      "ViolatingPermissions": "android.permission.READ_SMS"
+    },
+    {
+      "App Name": "PesoBuffet",
+      "Package Name": "com.abs.pesobuffet.android",
+      "Country/Classification": "Philippines/Approved",
+      "ViolatingPermissions": "android.permission.READ_CALL_LOG, android.permission.READ_SMS"
+    },
+    {
+      "App Name": "Akulaku Finance",
+      "Package Name": "io.silvrr.finance",
+      "Country/Classification": "Philippines/Approved",
+      "ViolatingPermissions": "android.permission.ACCESS_FINE_LOCATION"
+    },
+    {
+      "App Name": "Fcash",
+      "Package Name": "com.touchlend.fcash",
+      "Country/Classification": "Philippines/Approved",
+      "ViolatingPermissions": "android.permission.WRITE_EXTERNAL_STORAGE, android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE"
+    },
+    {
+      "App Name": "PagHiram",
+      "Package Name": "com.phoneapp.paghiram",
+      "Country/Classification": "Philippines/Approved",
+      "ViolatingPermissions": "android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE"
+    },
+    {
+      "App Name": "MayPera",
+      "Package Name": "com.maypera.peso",
+      "Country/Classification": "Philippines/Approved",
+      "ViolatingPermissions": "android.permission.READ_SMS"
+    },
+    {
+      "App Name": "Lemon Loan",
+      "Package Name": "com.lemon.loan",
+      "Country/Classification": "Philippines/Approved",
+      "ViolatingPermissions": "android.permission.WRITE_EXTERNAL_STORAGE, android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE"
+    },
+    {
+      "App Name": "Cashme",
+      "Package Name": "ph.cashme666.android",
+      "Country/Classification": "Philippines/Approved",
+      "ViolatingPermissions": "android.permission.READ_SMS"
+    },
+    {
+      "App Name": "Peso Advance",
+      "Package Name": "com.pesoadvance.app",
+      "Country/Classification": "Philippines/Approved",
+      "ViolatingPermissions": "android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE"
+    },
+    {
+      "App Name": "Peso Pocket",
+      "Package Name": "com.hffeilvbin.pesopocket",
+      "Country/Classification": "Philippines/Approved",
+      "ViolatingPermissions": "android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE"
+    },
+    {
+      "App Name": "Light Kredit",
+      "Package Name": "com.hffeilvbin.lightkredit",
+      "Country/Classification": "Philippines/Approved",
+      "ViolatingPermissions": "android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE"
+    },
+    {
+      "App Name": "HappyCash",
+      "Package Name": "com.yinshan.happycashPro",
+      "Country/Classification": "Philippines/Approved",
+      "ViolatingPermissions": "android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE"
+    },
+    {
+      "App Name": "Pautang Peso",
+      "Package Name": "ph.lhl.pautangpeso",
+      "Country/Classification": "Philippines/Delisted",
+      "ViolatingPermissions": "android.permission.READ_SMS"
+    },
+    {
+      "App Name": "CashStar",
+      "Package Name": "com.cashstar.mobile",
+      "Country/Classification": "Philippines/Delisted",
+      "ViolatingPermissions": "android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_SMS"
+    },
+    {
+      "App Name": "Start Loan",
+      "Package Name": "ph.fk.startloan",
+      "Country/Classification": "Philippines/Delisted",
+      "ViolatingPermissions": "android.permission.WRITE_EXTERNAL_STORAGE, android.permission.ACCESS_FINE_LOCATION, android.permission.READ_EXTERNAL_STORAGE"
+    },
+    {
+      "App Name": "Pesopop",
+      "Package Name": "com.pesopop",
+      "Country/Classification": "Philippines/Delisted",
+      "ViolatingPermissions": "android.permission.WRITE_EXTERNAL_STORAGE, android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE"
+    },
+    {
+      "App Name": "First Cash",
+      "Package Name": "com.vincocopeso.propitious",
+      "Country/Classification": "Philippines/Delisted",
+      "ViolatingPermissions": "android.permission.READ_SMS"
+    },
+    {
+      "App Name": "Lucky Loan",
+      "Package Name": "luckyloan.shelck",
+      "Country/Classification": "Philippines/Delisted",
+      "ViolatingPermissions": "android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS"
+    },
+    {
+      "App Name": "upeso",
+      "Package Name": "com.lanhai.upesocash",
+      "Country/Classification": "Philippines/Delisted",
+      "ViolatingPermissions": "android.permission.READ_CALL_LOG, android.permission.READ_SMS"
+    },
+    {
+      "App Name": "Pondo Loan",
+      "Package Name": "ph.fk.pondoloan",
+      "Country/Classification": "Philippines/Delisted",
+      "ViolatingPermissions": "android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_EXTERNAL_STORAGE"
+    },
+    {
+      "App Name": "NewCash",
+      "Package Name": "com.perabag.app",
+      "Country/Classification": "Philippines/Delisted",
+      "ViolatingPermissions": "android.permission.READ_SMS, android.permission.WRITE_EXTERNAL_STORAGE"
+    }
+  ]
+}

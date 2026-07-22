@@ -1,0 +1,10 @@
+Folder,Total Files,Processed,Failed,Country Violations,Google Violations,LoanWatch Violations,CountryOnly Violators,CountryOnly PermCounts,GoogleOnly Violators,GoogleOnly PermCounts
+/data/olawalea/LoanApps/KenyaApproved,33,33,0,13,15,24,4,android.permission.GET_ACCOUNTS=2 | android.permission.READ_CALL_LOG=2,6,android.permission.READ_EXTERNAL_STORAGE=6 | android.permission.WRITE_EXTERNAL_STORAGE=4 | android.permission.ACCESS_FINE_LOCATION=3 | android.permission.READ_PHONE_NUMBERS=1
+/data/olawalea/LoanApps/IndonesiaApproved,52,52,0,0,26,27,0,,26,android.permission.ACCESS_FINE_LOCATION=21 | android.permission.WRITE_EXTERNAL_STORAGE=14 | android.permission.READ_EXTERNAL_STORAGE=12 | android.permission.READ_CONTACTS=4 | android.permission.QUERY_ALL_PACKAGES=1 | android.permission.READ_PHONE_NUMBERS=1
+/data/olawalea/LoanApps/NigeriaApproved,192,191,1,92,69,145,26,android.permission.READ_CALL_LOG=23 | android.permission.GET_ACCOUNTS=5,3,android.permission.ACCESS_FINE_LOCATION=3
+/data/olawalea/LoanApps/NigeriaDelisted,54,54,0,35,30,49,5,android.permission.READ_CALL_LOG=5,0,
+/data/olawalea/LoanApps/PakistanApproved,11,11,0,9,9,9,0,,0,
+/data/olawalea/LoanApps/PakistanDelisted,28,28,0,9,9,9,0,,0,
+/data/olawalea/LoanApps/PhilippinesApproved,56,56,0,27,28,46,1,android.permission.GET_ACCOUNTS=1,2,android.permission.ACCESS_FINE_LOCATION=1 | android.permission.READ_EXTERNAL_STORAGE=1 | android.permission.WRITE_EXTERNAL_STORAGE=1
+/data/olawalea/LoanApps/PhilippinesDelisted,10,10,0,3,5,8,0,,2,android.permission.READ_EXTERNAL_STORAGE=2 | android.permission.WRITE_EXTERNAL_STORAGE=2 | android.permission.ACCESS_FINE_LOCATION=1
+ALL,436,435,1,188,191,317,36,,39,

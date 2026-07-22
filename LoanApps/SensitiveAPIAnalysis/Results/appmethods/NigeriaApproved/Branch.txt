@@ -1,0 +1,58 @@
+APK: Branch (NigeriaApproved)
+Leak 1:
+  Source: $r4 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r3, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("ManifestParser", $r5) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <Gl.d: android.content.pm.ApplicationInfo a()>
+    <Gl.d: android.content.pm.ApplicationInfo a()>
+    <Gl.d: java.util.List b()>
+    <Gl.d: java.util.List b()>
+    <Gl.d: java.util.List b()>
+    <Gl.d: java.util.List b()>
+    <Gl.d: java.util.List b()>
+    <Gl.d: java.util.List b()>
+    <Gl.d: java.util.List b()>
+    <Gl.d: java.util.List b()>
+
+Leak 2:
+  Source: $d0 = virtualinvoke $r14.<android.location.Location: double getLatitude()>() (<android.location.Location: double getLatitude()>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("response before sending", $r2) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <co.hyperverge.hypersnapsdk.liveness.ui.texturetracker.TexturePresenter: co.hyperverge.hypersnapsdk.objects.HVBaseResponse createHVResponse(co.hyperverge.hypersnapsdk.model.LivenessResponse,boolean)>
+    <co.hyperverge.hypersnapsdk.liveness.ui.texturetracker.TexturePresenter: co.hyperverge.hypersnapsdk.objects.HVBaseResponse createHVResponse(co.hyperverge.hypersnapsdk.model.LivenessResponse,boolean)>
+    <co.hyperverge.hypersnapsdk.liveness.ui.texturetracker.TexturePresenter: co.hyperverge.hypersnapsdk.objects.HVBaseResponse createHVResponse(co.hyperverge.hypersnapsdk.model.LivenessResponse,boolean)>
+    <co.hyperverge.hypersnapsdk.objects.HVBaseResponse: void setLatitude(java.lang.Double)>
+    <co.hyperverge.hypersnapsdk.objects.HVBaseResponse: void setLatitude(java.lang.Double)>
+    <co.hyperverge.hypersnapsdk.liveness.ui.texturetracker.TexturePresenter: co.hyperverge.hypersnapsdk.objects.HVBaseResponse createHVResponse(co.hyperverge.hypersnapsdk.model.LivenessResponse,boolean)>
+    <co.hyperverge.hypersnapsdk.objects.HVResponse: java.lang.String toString()>
+    <co.hyperverge.hypersnapsdk.objects.HVResponse: java.util.ArrayList getRetakeAttemptResponses()>
+    <co.hyperverge.hypersnapsdk.objects.HVResponse: java.lang.String toString()>
+    <co.hyperverge.hypersnapsdk.liveness.ui.texturetracker.TexturePresenter: co.hyperverge.hypersnapsdk.objects.HVBaseResponse createHVResponse(co.hyperverge.hypersnapsdk.model.LivenessResponse,boolean)>
+    <co.hyperverge.hypersnapsdk.objects.HVBaseResponse: java.lang.String toString()>
+    <co.hyperverge.hypersnapsdk.objects.HVBaseResponse: java.lang.Double getLatitude()>
+    <co.hyperverge.hypersnapsdk.objects.HVBaseResponse: java.lang.Double getLatitude()>
+    <co.hyperverge.hypersnapsdk.objects.HVBaseResponse: java.lang.String toString()>
+    <co.hyperverge.hypersnapsdk.objects.HVBaseResponse: java.lang.String toString()>
+    <co.hyperverge.hypersnapsdk.objects.HVBaseResponse: java.lang.String toString()>
+    <co.hyperverge.hypersnapsdk.liveness.ui.texturetracker.TexturePresenter: co.hyperverge.hypersnapsdk.objects.HVBaseResponse createHVResponse(co.hyperverge.hypersnapsdk.model.LivenessResponse,boolean)>
+
+Leak 3:
+  Source: $d0 = virtualinvoke $r14.<android.location.Location: double getLongitude()>() (<android.location.Location: double getLongitude()>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("response before sending", $r2) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <co.hyperverge.hypersnapsdk.liveness.ui.texturetracker.TexturePresenter: co.hyperverge.hypersnapsdk.objects.HVBaseResponse createHVResponse(co.hyperverge.hypersnapsdk.model.LivenessResponse,boolean)>
+    <co.hyperverge.hypersnapsdk.liveness.ui.texturetracker.TexturePresenter: co.hyperverge.hypersnapsdk.objects.HVBaseResponse createHVResponse(co.hyperverge.hypersnapsdk.model.LivenessResponse,boolean)>
+    <co.hyperverge.hypersnapsdk.liveness.ui.texturetracker.TexturePresenter: co.hyperverge.hypersnapsdk.objects.HVBaseResponse createHVResponse(co.hyperverge.hypersnapsdk.model.LivenessResponse,boolean)>
+    <co.hyperverge.hypersnapsdk.objects.HVBaseResponse: void setLongitude(java.lang.Double)>
+    <co.hyperverge.hypersnapsdk.objects.HVBaseResponse: void setLongitude(java.lang.Double)>
+    <co.hyperverge.hypersnapsdk.liveness.ui.texturetracker.TexturePresenter: co.hyperverge.hypersnapsdk.objects.HVBaseResponse createHVResponse(co.hyperverge.hypersnapsdk.model.LivenessResponse,boolean)>
+    <co.hyperverge.hypersnapsdk.objects.HVBaseResponse: java.lang.String toString()>
+    <co.hyperverge.hypersnapsdk.objects.HVResponse: java.lang.String getCompressedImageUri()>
+    <co.hyperverge.hypersnapsdk.objects.HVBaseResponse: java.lang.String toString()>
+    <co.hyperverge.hypersnapsdk.objects.HVBaseResponse: java.lang.Double getLongitude()>
+    <co.hyperverge.hypersnapsdk.objects.HVBaseResponse: java.lang.Double getLongitude()>
+    <co.hyperverge.hypersnapsdk.objects.HVBaseResponse: java.lang.String toString()>
+    <co.hyperverge.hypersnapsdk.objects.HVBaseResponse: java.lang.String toString()>
+    <co.hyperverge.hypersnapsdk.objects.HVBaseResponse: java.lang.String toString()>
+    <co.hyperverge.hypersnapsdk.liveness.ui.texturetracker.TexturePresenter: co.hyperverge.hypersnapsdk.objects.HVBaseResponse createHVResponse(co.hyperverge.hypersnapsdk.model.LivenessResponse,boolean)>
+

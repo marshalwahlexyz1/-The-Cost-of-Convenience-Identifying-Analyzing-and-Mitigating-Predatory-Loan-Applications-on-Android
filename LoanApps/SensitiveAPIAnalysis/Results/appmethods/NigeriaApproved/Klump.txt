@@ -1,0 +1,50 @@
+APK: Klump (NigeriaApproved)
+Leak 1:
+  Source: $r4 = virtualinvoke $r3.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>("com.google.android.gms", 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r1, $r0) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <b5.b: android.content.pm.PackageInfo b(java.lang.String,int)>
+    <b5.b: android.content.pm.PackageInfo b(java.lang.String,int)>
+    <r4.y: int a()>
+    <r4.y: int a()>
+    <r4.y: int a()>
+    <com.google.firebase.messaging.FirebaseMessagingService: void c(android.content.Intent)>
+    <com.google.firebase.messaging.FirebaseMessagingService: void c(android.content.Intent)>
+    <com.google.firebase.messaging.FirebaseMessagingService: void c(android.content.Intent)>
+    <dummyMainClass: io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingService dummyMainMethod_io_flutter_plugins_firebase_messaging_FlutterFirebaseMessagingService(android.content.Intent)>
+    <u8.i: int onStartCommand(android.content.Intent,int,int)>
+    <u8.h: void <init>(java.lang.Object,int,java.lang.Object)>
+    <u8.h: void <init>(java.lang.Object,int,java.lang.Object)>
+    <u8.i: int onStartCommand(android.content.Intent,int,int)>
+    <q5.t: void b(java.util.concurrent.Executor,q5.d)>
+    <q5.o: void <init>(java.util.concurrent.Executor,q5.d)>
+    <q5.o: void <init>(java.util.concurrent.Executor,q5.d)>
+    <q5.t: void b(java.util.concurrent.Executor,q5.d)>
+    <q5.q: void a(q5.p)>
+    <q5.q: void a(q5.p)>
+    <q5.q: void a(q5.p)>
+    <q5.t: void b(java.util.concurrent.Executor,q5.d)>
+    <q5.t: void b(java.util.concurrent.Executor,q5.d)>
+    <q5.t: void b(java.util.concurrent.Executor,q5.d)>
+    <q5.q: void a(q5.p)>
+    <q5.q: void a(q5.p)>
+    <q5.q: void a(q5.p)>
+    <q5.t: void b(java.util.concurrent.Executor,q5.d)>
+    <q5.o: void <init>(java.util.concurrent.Executor,q5.d)>
+    <q5.o: void <init>(java.util.concurrent.Executor,q5.d)>
+    <q5.t: void b(java.util.concurrent.Executor,q5.d)>
+    <u8.i: int onStartCommand(android.content.Intent,int,int)>
+    <u8.h: void <init>(java.lang.Object,int,java.lang.Object)>
+    <u8.h: void <init>(java.lang.Object,int,java.lang.Object)>
+    <u8.i: int onStartCommand(android.content.Intent,int,int)>
+    <dummyMainClass: io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingService dummyMainMethod_io_flutter_plugins_firebase_messaging_FlutterFirebaseMessagingService(android.content.Intent)>
+    <u8.i: int onStartCommand(android.content.Intent,int,int)>
+    <y0.r: void <init>(java.lang.Object,java.lang.Object,java.lang.Object,int)>
+    <y0.r: void <init>(java.lang.Object,java.lang.Object,java.lang.Object,int)>
+    <u8.i: int onStartCommand(android.content.Intent,int,int)>
+    <y0.r: void run()>
+    <y0.r: void run()>
+    <y0.r: void run()>
+    <y0.r: void run()>
+    <z.x0: void a(java.lang.String,java.lang.String)>
+

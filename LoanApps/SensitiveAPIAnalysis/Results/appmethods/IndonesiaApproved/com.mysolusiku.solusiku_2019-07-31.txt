@@ -1,0 +1,38 @@
+APK: com.mysolusiku.solusiku_2019-07-31 (IndonesiaApproved)
+Leak 1:
+  Source: $i0 = virtualinvoke $r1.<java.io.InputStream: int read(byte[])>($r2) (<java.io.FileInputStream: int read(byte[])>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("DfltImageHeaderParser", $r3) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <c.b.a.c.d.a.s: int a(java.io.InputStream,byte[])>
+    <c.b.a.c.d.a.s: int a(java.io.InputStream,byte[])>
+    <c.b.a.c.d.a.s: int a(java.io.InputStream,byte[])>
+    <c.b.a.c.d.a.s: int read()>
+    <c.b.a.c.d.a.i$d: int a()>
+    <c.b.a.c.d.a.i$d: int a()>
+    <c.b.a.c.d.a.i$d: int a()>
+    <c.b.a.c.d.a.i$d: int a()>
+    <c.b.a.c.d.a.i$d: int a()>
+    <c.b.a.c.d.a.i$d: int a()>
+    <c.b.a.c.d.a.i: int a(c.b.a.c.d.a.i$c,c.b.a.c.b.a.b)>
+    <c.b.a.c.d.a.i: int a(c.b.a.c.d.a.i$c,c.b.a.c.b.a.b)>
+    <c.b.a.c.d.a.i: int a(c.b.a.c.d.a.i$c,c.b.a.c.b.a.b)>
+
+Leak 2:
+  Source: $i0 = virtualinvoke $r1.<java.io.InputStream: int read(byte[])>($r2) (<java.io.FileInputStream: int read(byte[])>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("DfltImageHeaderParser", $r3) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <c.b.a.i.c: int read(byte[])>
+    <c.b.a.i.c: int read(byte[])>
+    <c.b.a.c.d.a.s: int a(java.io.InputStream,byte[])>
+    <c.b.a.c.d.a.s: int a(java.io.InputStream,byte[])>
+    <c.b.a.c.d.a.s: int read()>
+    <c.b.a.c.d.a.i$d: int a()>
+    <c.b.a.c.d.a.i$d: int a()>
+    <c.b.a.c.d.a.i$d: int a()>
+    <c.b.a.c.d.a.i$d: int a()>
+    <c.b.a.c.d.a.i$d: int a()>
+    <c.b.a.c.d.a.i$d: int a()>
+    <c.b.a.c.d.a.i: int a(c.b.a.c.d.a.i$c,c.b.a.c.b.a.b)>
+    <c.b.a.c.d.a.i: int a(c.b.a.c.d.a.i$c,c.b.a.c.b.a.b)>
+    <c.b.a.c.d.a.i: int a(c.b.a.c.d.a.i$c,c.b.a.c.b.a.b)>
+

@@ -1,0 +1,299 @@
+APK: io.silvrr.finance_2021-03-16 (PhilippinesApproved)
+Leak 1:
+  Source: $r5 = virtualinvoke $r3.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r4, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r10.<java.io.BufferedWriter: void write(java.lang.String)>($r1) (<java.io.BufferedWriter: void write(java.lang.String)>)
+  Methods:
+    <com.blankj.utilcode.util.j: void e(java.lang.String)>
+    <com.blankj.utilcode.util.j: void e(java.lang.String)>
+    <com.blankj.utilcode.util.j: void e(java.lang.String)>
+    <com.blankj.utilcode.util.j: void e(java.lang.String)>
+    <com.blankj.utilcode.util.j: void e(java.lang.String)>
+    <com.blankj.utilcode.util.j: void a(java.lang.String,java.lang.String)>
+    <com.blankj.utilcode.util.j$3: void <init>(java.lang.String,java.lang.String)>
+    <com.blankj.utilcode.util.j$3: void <init>(java.lang.String,java.lang.String)>
+    <com.blankj.utilcode.util.j: void a(java.lang.String,java.lang.String)>
+    <com.blankj.utilcode.util.j$3: void run()>
+    <com.blankj.utilcode.util.j$3: void run()>
+
+Leak 2:
+  Source: $r5 = virtualinvoke $r3.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r4, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r10.<java.io.BufferedWriter: void write(java.lang.String)>($r1) (<java.io.OutputStreamWriter: void write(java.lang.String)>)
+  Methods:
+    <com.blankj.utilcode.util.j: void e(java.lang.String)>
+    <com.blankj.utilcode.util.j: void e(java.lang.String)>
+    <com.blankj.utilcode.util.j: void e(java.lang.String)>
+    <com.blankj.utilcode.util.j: void e(java.lang.String)>
+    <com.blankj.utilcode.util.j: void e(java.lang.String)>
+    <com.blankj.utilcode.util.j: void a(java.lang.String,java.lang.String)>
+    <com.blankj.utilcode.util.j$3: void <init>(java.lang.String,java.lang.String)>
+    <com.blankj.utilcode.util.j$3: void <init>(java.lang.String,java.lang.String)>
+    <com.blankj.utilcode.util.j: void a(java.lang.String,java.lang.String)>
+    <com.blankj.utilcode.util.j$3: void run()>
+    <com.blankj.utilcode.util.j$3: void run()>
+
+Leak 3:
+  Source: $r2 = virtualinvoke r0.<io.silvrr.installment.module.password.ChangePasswordActivity: android.view.View findViewById(int)>(2131297040) (None)
+  Sink: staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("printStack dialog", $r2) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <io.silvrr.installment.module.password.ChangePasswordActivity: void onCreate(android.os.Bundle)>
+    <io.silvrr.installment.module.password.ChangePasswordActivity: void onCreate(android.os.Bundle)>
+    <io.silvrr.installment.module.password.ChangePasswordActivity: void onCreate(android.os.Bundle)>
+    <io.silvrr.installment.module.password.ChangePasswordActivity: void onCreate(android.os.Bundle)>
+    <dummyMainClass: io.silvrr.installment.module.password.ChangePasswordActivity dummyMainMethod_io_silvrr_installment_module_password_ChangePasswordActivity(android.content.Intent)>
+    <io.silvrr.installment.a: void onActivityCreated(android.app.Activity,android.os.Bundle)>
+    <com.hss01248.dialog.ActivityStackManager: void addActivity(android.app.Activity)>
+    <com.hss01248.dialog.ActivityStackManager: void addActivity(android.app.Activity)>
+    <com.hss01248.dialog.ActivityStackManager: void addActivity(android.app.Activity)>
+    <com.hss01248.dialog.ActivityStackManager: void printStack(java.lang.String)>
+    <com.hss01248.dialog.ActivityStackManager: void printStack(java.lang.String)>
+    <com.hss01248.dialog.ActivityStackManager: void printStack(java.lang.String)>
+    <com.hss01248.dialog.ActivityStackManager: void printStack(java.lang.String)>
+    <com.hss01248.dialog.ActivityStackManager: void printStack(java.lang.String)>
+    <com.hss01248.dialog.ActivityStackManager: void printStack(java.lang.String)>
+    <com.hss01248.dialog.ActivityStackManager: void printStack(java.lang.String)>
+    <com.hss01248.dialog.ActivityStackManager: void printStack(java.lang.String)>
+    <com.hss01248.dialog.ActivityStackManager: void printStack(java.lang.String)>
+
+Leak 4:
+  Source: $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>() (<android.location.Location: double getLongitude()>)
+  Sink: staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("printStack dialog", $r2) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <io.silvrr.installment.module.stores.ui.StoreListActivity$1: void a(android.location.Location)>
+    <io.silvrr.installment.module.stores.ui.StoreListActivity$1: void a(android.location.Location)>
+    <io.silvrr.installment.module.stores.ui.StoreListActivity: double a(io.silvrr.installment.module.stores.ui.StoreListActivity,double)>
+    <io.silvrr.installment.module.stores.ui.StoreListActivity: double a(io.silvrr.installment.module.stores.ui.StoreListActivity,double)>
+    <io.silvrr.installment.module.stores.ui.StoreListActivity$1: void a(android.location.Location)>
+    <io.silvrr.installment.module.stores.ui.StoreListActivity$1: void a(android.location.Location)>
+    <io.silvrr.installment.location.FastLocationFragment: void b(android.location.Location)>
+    <io.silvrr.installment.location.FastLocationFragment: void b(android.location.Location)>
+    <io.silvrr.installment.location.FastLocationFragment: void e()>
+    <io.silvrr.installment.location.g: void a(android.support.v4.app.FragmentActivity,com.yayandroid.locationmanager.d)>
+    <io.silvrr.installment.location.FastLocationFragment: void a(com.yayandroid.locationmanager.d)>
+    <io.silvrr.installment.location.FastLocationFragment: void a(com.yayandroid.locationmanager.d)>
+    <io.silvrr.installment.location.g: void a(android.support.v4.app.FragmentActivity,com.yayandroid.locationmanager.d)>
+    <io.silvrr.installment.module.stores.ui.StoreListActivity: void t()>
+    <io.silvrr.installment.module.stores.ui.StoreListActivity$1: void <init>(io.silvrr.installment.module.stores.ui.StoreListActivity)>
+    <io.silvrr.installment.module.stores.ui.StoreListActivity$1: void <init>(io.silvrr.installment.module.stores.ui.StoreListActivity)>
+    <io.silvrr.installment.module.stores.ui.StoreListActivity: void t()>
+    <io.silvrr.installment.location.g: void a(android.support.v4.app.FragmentActivity,com.yayandroid.locationmanager.d)>
+    <io.silvrr.installment.module.stores.ui.StoreListActivity: void t()>
+    <io.silvrr.installment.module.stores.ui.StoreListActivity: void e()>
+    <io.silvrr.installment.module.base.BaseActivity: void onCreate(android.os.Bundle)>
+    <dummyMainClass: io.silvrr.installment.module.stores.ui.StoreListActivity dummyMainMethod_io_silvrr_installment_module_stores_ui_StoreListActivity(android.content.Intent)>
+    <io.silvrr.installment.a: void onActivityCreated(android.app.Activity,android.os.Bundle)>
+    <com.hss01248.dialog.ActivityStackManager: void addActivity(android.app.Activity)>
+    <com.hss01248.dialog.ActivityStackManager: void addActivity(android.app.Activity)>
+    <com.hss01248.dialog.ActivityStackManager: void addActivity(android.app.Activity)>
+    <com.hss01248.dialog.ActivityStackManager: void printStack(java.lang.String)>
+    <com.hss01248.dialog.ActivityStackManager: void printStack(java.lang.String)>
+    <com.hss01248.dialog.ActivityStackManager: void printStack(java.lang.String)>
+    <com.hss01248.dialog.ActivityStackManager: void printStack(java.lang.String)>
+    <com.hss01248.dialog.ActivityStackManager: void printStack(java.lang.String)>
+    <com.hss01248.dialog.ActivityStackManager: void printStack(java.lang.String)>
+    <com.hss01248.dialog.ActivityStackManager: void printStack(java.lang.String)>
+    <com.hss01248.dialog.ActivityStackManager: void printStack(java.lang.String)>
+    <com.hss01248.dialog.ActivityStackManager: void printStack(java.lang.String)>
+
+Leak 5:
+  Source: $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>() (<android.location.Location: double getLatitude()>)
+  Sink: staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("printStack dialog", $r2) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <io.silvrr.installment.module.stores.ui.StoreDetailActivity$4: void a(android.location.Location)>
+    <io.silvrr.installment.module.stores.ui.StoreDetailActivity$4: void a(android.location.Location)>
+    <io.silvrr.installment.module.stores.ui.StoreDetailActivity: double b(io.silvrr.installment.module.stores.ui.StoreDetailActivity,double)>
+    <io.silvrr.installment.module.stores.ui.StoreDetailActivity: double b(io.silvrr.installment.module.stores.ui.StoreDetailActivity,double)>
+    <io.silvrr.installment.module.stores.ui.StoreDetailActivity$4: void a(android.location.Location)>
+    <io.silvrr.installment.module.stores.ui.StoreDetailActivity$4: void a(android.location.Location)>
+    <io.silvrr.installment.location.FastLocationFragment: void b(android.location.Location)>
+    <io.silvrr.installment.location.FastLocationFragment: void b(android.location.Location)>
+    <io.silvrr.installment.location.FastLocationFragment: void e()>
+    <io.silvrr.installment.location.g: void a(android.support.v4.app.FragmentActivity,com.yayandroid.locationmanager.d)>
+    <io.silvrr.installment.location.FastLocationFragment: void a(com.yayandroid.locationmanager.d)>
+    <io.silvrr.installment.location.FastLocationFragment: void a(com.yayandroid.locationmanager.d)>
+    <io.silvrr.installment.location.g: void a(android.support.v4.app.FragmentActivity,com.yayandroid.locationmanager.d)>
+    <io.silvrr.installment.module.stores.ui.StoreDetailActivity: void q()>
+    <io.silvrr.installment.module.stores.ui.StoreDetailActivity$4: void <init>(io.silvrr.installment.module.stores.ui.StoreDetailActivity)>
+    <io.silvrr.installment.module.stores.ui.StoreDetailActivity$4: void <init>(io.silvrr.installment.module.stores.ui.StoreDetailActivity)>
+    <io.silvrr.installment.module.stores.ui.StoreDetailActivity: void q()>
+    <io.silvrr.installment.location.g: void a(android.support.v4.app.FragmentActivity,com.yayandroid.locationmanager.d)>
+    <io.silvrr.installment.module.stores.ui.StoreDetailActivity: void q()>
+    <io.silvrr.installment.module.stores.ui.StoreDetailActivity: void p()>
+    <io.silvrr.installment.module.stores.ui.StoreDetailActivity: void onCreate(android.os.Bundle)>
+    <dummyMainClass: io.silvrr.installment.module.stores.ui.StoreDetailActivity dummyMainMethod_io_silvrr_installment_module_stores_ui_StoreDetailActivity(android.content.Intent)>
+    <io.silvrr.installment.a: void onActivityCreated(android.app.Activity,android.os.Bundle)>
+    <com.hss01248.dialog.ActivityStackManager: void addActivity(android.app.Activity)>
+    <com.hss01248.dialog.ActivityStackManager: void addActivity(android.app.Activity)>
+    <com.hss01248.dialog.ActivityStackManager: void addActivity(android.app.Activity)>
+    <com.hss01248.dialog.ActivityStackManager: void printStack(java.lang.String)>
+    <com.hss01248.dialog.ActivityStackManager: void printStack(java.lang.String)>
+    <com.hss01248.dialog.ActivityStackManager: void printStack(java.lang.String)>
+    <com.hss01248.dialog.ActivityStackManager: void printStack(java.lang.String)>
+    <com.hss01248.dialog.ActivityStackManager: void printStack(java.lang.String)>
+    <com.hss01248.dialog.ActivityStackManager: void printStack(java.lang.String)>
+    <com.hss01248.dialog.ActivityStackManager: void printStack(java.lang.String)>
+    <com.hss01248.dialog.ActivityStackManager: void printStack(java.lang.String)>
+    <com.hss01248.dialog.ActivityStackManager: void printStack(java.lang.String)>
+
+Leak 6:
+  Source: $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>() (<android.location.Location: double getLongitude()>)
+  Sink: staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("printStack dialog", $r2) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <io.silvrr.installment.module.stores.ui.StoreDetailActivity$4: void a(android.location.Location)>
+    <io.silvrr.installment.module.stores.ui.StoreDetailActivity$4: void a(android.location.Location)>
+    <io.silvrr.installment.module.stores.ui.StoreDetailActivity: double a(io.silvrr.installment.module.stores.ui.StoreDetailActivity,double)>
+    <io.silvrr.installment.module.stores.ui.StoreDetailActivity: double a(io.silvrr.installment.module.stores.ui.StoreDetailActivity,double)>
+    <io.silvrr.installment.module.stores.ui.StoreDetailActivity$4: void a(android.location.Location)>
+    <io.silvrr.installment.module.stores.ui.StoreDetailActivity$4: void a(android.location.Location)>
+    <io.silvrr.installment.location.FastLocationFragment: void b(android.location.Location)>
+    <io.silvrr.installment.location.FastLocationFragment: void b(android.location.Location)>
+    <io.silvrr.installment.location.FastLocationFragment: void e()>
+    <io.silvrr.installment.location.g: void a(android.support.v4.app.FragmentActivity,com.yayandroid.locationmanager.d)>
+    <io.silvrr.installment.location.FastLocationFragment: void a(com.yayandroid.locationmanager.d)>
+    <io.silvrr.installment.location.FastLocationFragment: void a(com.yayandroid.locationmanager.d)>
+    <io.silvrr.installment.location.g: void a(android.support.v4.app.FragmentActivity,com.yayandroid.locationmanager.d)>
+    <io.silvrr.installment.module.stores.ui.StoreDetailActivity: void q()>
+    <io.silvrr.installment.module.stores.ui.StoreDetailActivity$4: void <init>(io.silvrr.installment.module.stores.ui.StoreDetailActivity)>
+    <io.silvrr.installment.module.stores.ui.StoreDetailActivity$4: void <init>(io.silvrr.installment.module.stores.ui.StoreDetailActivity)>
+    <io.silvrr.installment.module.stores.ui.StoreDetailActivity: void q()>
+    <io.silvrr.installment.location.g: void a(android.support.v4.app.FragmentActivity,com.yayandroid.locationmanager.d)>
+    <io.silvrr.installment.module.stores.ui.StoreDetailActivity: void q()>
+    <io.silvrr.installment.module.stores.ui.StoreDetailActivity: void p()>
+    <io.silvrr.installment.module.stores.ui.StoreDetailActivity: void onCreate(android.os.Bundle)>
+    <dummyMainClass: io.silvrr.installment.module.stores.ui.StoreDetailActivity dummyMainMethod_io_silvrr_installment_module_stores_ui_StoreDetailActivity(android.content.Intent)>
+    <io.silvrr.installment.a: void onActivityCreated(android.app.Activity,android.os.Bundle)>
+    <com.hss01248.dialog.ActivityStackManager: void addActivity(android.app.Activity)>
+    <com.hss01248.dialog.ActivityStackManager: void addActivity(android.app.Activity)>
+    <com.hss01248.dialog.ActivityStackManager: void addActivity(android.app.Activity)>
+    <com.hss01248.dialog.ActivityStackManager: void printStack(java.lang.String)>
+    <com.hss01248.dialog.ActivityStackManager: void printStack(java.lang.String)>
+    <com.hss01248.dialog.ActivityStackManager: void printStack(java.lang.String)>
+    <com.hss01248.dialog.ActivityStackManager: void printStack(java.lang.String)>
+    <com.hss01248.dialog.ActivityStackManager: void printStack(java.lang.String)>
+    <com.hss01248.dialog.ActivityStackManager: void printStack(java.lang.String)>
+    <com.hss01248.dialog.ActivityStackManager: void printStack(java.lang.String)>
+    <com.hss01248.dialog.ActivityStackManager: void printStack(java.lang.String)>
+    <com.hss01248.dialog.ActivityStackManager: void printStack(java.lang.String)>
+
+Leak 7:
+  Source: $r2 = virtualinvoke r0.<io.silvrr.installment.module.address.EnterPasswordActivity: android.view.View findViewById(int)>(2131298340) (None)
+  Sink: staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("printStack dialog", $r2) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <io.silvrr.installment.module.address.EnterPasswordActivity: void onCreate(android.os.Bundle)>
+    <io.silvrr.installment.module.address.EnterPasswordActivity: void onCreate(android.os.Bundle)>
+    <io.silvrr.installment.module.address.EnterPasswordActivity: void onCreate(android.os.Bundle)>
+    <io.silvrr.installment.module.address.EnterPasswordActivity: void onCreate(android.os.Bundle)>
+    <dummyMainClass: io.silvrr.installment.module.address.EnterPasswordActivity dummyMainMethod_io_silvrr_installment_module_address_EnterPasswordActivity(android.content.Intent)>
+    <io.silvrr.installment.a: void onActivityCreated(android.app.Activity,android.os.Bundle)>
+    <com.hss01248.dialog.ActivityStackManager: void addActivity(android.app.Activity)>
+    <com.hss01248.dialog.ActivityStackManager: void addActivity(android.app.Activity)>
+    <com.hss01248.dialog.ActivityStackManager: void addActivity(android.app.Activity)>
+    <com.hss01248.dialog.ActivityStackManager: void printStack(java.lang.String)>
+    <com.hss01248.dialog.ActivityStackManager: void printStack(java.lang.String)>
+    <com.hss01248.dialog.ActivityStackManager: void printStack(java.lang.String)>
+    <com.hss01248.dialog.ActivityStackManager: void printStack(java.lang.String)>
+    <com.hss01248.dialog.ActivityStackManager: void printStack(java.lang.String)>
+    <com.hss01248.dialog.ActivityStackManager: void printStack(java.lang.String)>
+    <com.hss01248.dialog.ActivityStackManager: void printStack(java.lang.String)>
+    <com.hss01248.dialog.ActivityStackManager: void printStack(java.lang.String)>
+    <com.hss01248.dialog.ActivityStackManager: void printStack(java.lang.String)>
+
+Leak 8:
+  Source: $r2 = virtualinvoke r0.<io.silvrr.installment.module.password.ChangePasswordActivity: android.view.View findViewById(int)>(2131297034) (None)
+  Sink: staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("printStack dialog", $r2) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <io.silvrr.installment.module.password.ChangePasswordActivity: void onCreate(android.os.Bundle)>
+    <io.silvrr.installment.module.password.ChangePasswordActivity: void onCreate(android.os.Bundle)>
+    <io.silvrr.installment.module.password.ChangePasswordActivity: void onCreate(android.os.Bundle)>
+    <io.silvrr.installment.module.password.ChangePasswordActivity: void onCreate(android.os.Bundle)>
+    <dummyMainClass: io.silvrr.installment.module.password.ChangePasswordActivity dummyMainMethod_io_silvrr_installment_module_password_ChangePasswordActivity(android.content.Intent)>
+    <io.silvrr.installment.a: void onActivityCreated(android.app.Activity,android.os.Bundle)>
+    <com.hss01248.dialog.ActivityStackManager: void addActivity(android.app.Activity)>
+    <com.hss01248.dialog.ActivityStackManager: void addActivity(android.app.Activity)>
+    <com.hss01248.dialog.ActivityStackManager: void addActivity(android.app.Activity)>
+    <com.hss01248.dialog.ActivityStackManager: void printStack(java.lang.String)>
+    <com.hss01248.dialog.ActivityStackManager: void printStack(java.lang.String)>
+    <com.hss01248.dialog.ActivityStackManager: void printStack(java.lang.String)>
+    <com.hss01248.dialog.ActivityStackManager: void printStack(java.lang.String)>
+    <com.hss01248.dialog.ActivityStackManager: void printStack(java.lang.String)>
+    <com.hss01248.dialog.ActivityStackManager: void printStack(java.lang.String)>
+    <com.hss01248.dialog.ActivityStackManager: void printStack(java.lang.String)>
+    <com.hss01248.dialog.ActivityStackManager: void printStack(java.lang.String)>
+    <com.hss01248.dialog.ActivityStackManager: void printStack(java.lang.String)>
+
+Leak 9:
+  Source: $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>() (<android.location.Location: double getLatitude()>)
+  Sink: staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("printStack dialog", $r2) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <io.silvrr.installment.module.stores.ui.StoreListActivity$1: void a(android.location.Location)>
+    <io.silvrr.installment.module.stores.ui.StoreListActivity$1: void a(android.location.Location)>
+    <io.silvrr.installment.module.stores.ui.StoreListActivity: double b(io.silvrr.installment.module.stores.ui.StoreListActivity,double)>
+    <io.silvrr.installment.module.stores.ui.StoreListActivity: double b(io.silvrr.installment.module.stores.ui.StoreListActivity,double)>
+    <io.silvrr.installment.module.stores.ui.StoreListActivity$1: void a(android.location.Location)>
+    <io.silvrr.installment.module.stores.ui.StoreListActivity$1: void a(android.location.Location)>
+    <io.silvrr.installment.location.FastLocationFragment: void b(android.location.Location)>
+    <io.silvrr.installment.location.FastLocationFragment: void b(android.location.Location)>
+    <io.silvrr.installment.location.FastLocationFragment: void e()>
+    <io.silvrr.installment.location.g: void a(android.support.v4.app.FragmentActivity,com.yayandroid.locationmanager.d)>
+    <io.silvrr.installment.location.FastLocationFragment: void a(com.yayandroid.locationmanager.d)>
+    <io.silvrr.installment.location.FastLocationFragment: void a(com.yayandroid.locationmanager.d)>
+    <io.silvrr.installment.location.g: void a(android.support.v4.app.FragmentActivity,com.yayandroid.locationmanager.d)>
+    <io.silvrr.installment.module.stores.ui.StoreListActivity: void t()>
+    <io.silvrr.installment.module.stores.ui.StoreListActivity$1: void <init>(io.silvrr.installment.module.stores.ui.StoreListActivity)>
+    <io.silvrr.installment.module.stores.ui.StoreListActivity$1: void <init>(io.silvrr.installment.module.stores.ui.StoreListActivity)>
+    <io.silvrr.installment.module.stores.ui.StoreListActivity: void t()>
+    <io.silvrr.installment.location.g: void a(android.support.v4.app.FragmentActivity,com.yayandroid.locationmanager.d)>
+    <io.silvrr.installment.module.stores.ui.StoreListActivity: void t()>
+    <io.silvrr.installment.module.stores.ui.StoreListActivity: void e()>
+    <io.silvrr.installment.module.base.BaseActivity: void onCreate(android.os.Bundle)>
+    <dummyMainClass: io.silvrr.installment.module.stores.ui.StoreListActivity dummyMainMethod_io_silvrr_installment_module_stores_ui_StoreListActivity(android.content.Intent)>
+    <io.silvrr.installment.a: void onActivityCreated(android.app.Activity,android.os.Bundle)>
+    <com.hss01248.dialog.ActivityStackManager: void addActivity(android.app.Activity)>
+    <com.hss01248.dialog.ActivityStackManager: void addActivity(android.app.Activity)>
+    <com.hss01248.dialog.ActivityStackManager: void addActivity(android.app.Activity)>
+    <com.hss01248.dialog.ActivityStackManager: void printStack(java.lang.String)>
+    <com.hss01248.dialog.ActivityStackManager: void printStack(java.lang.String)>
+    <com.hss01248.dialog.ActivityStackManager: void printStack(java.lang.String)>
+    <com.hss01248.dialog.ActivityStackManager: void printStack(java.lang.String)>
+    <com.hss01248.dialog.ActivityStackManager: void printStack(java.lang.String)>
+    <com.hss01248.dialog.ActivityStackManager: void printStack(java.lang.String)>
+    <com.hss01248.dialog.ActivityStackManager: void printStack(java.lang.String)>
+    <com.hss01248.dialog.ActivityStackManager: void printStack(java.lang.String)>
+    <com.hss01248.dialog.ActivityStackManager: void printStack(java.lang.String)>
+
+Leak 10:
+  Source: $r2 = virtualinvoke r0.<io.silvrr.installment.module.password.ChangePasswordActivity: android.view.View findViewById(int)>(2131297037) (None)
+  Sink: staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("printStack dialog", $r2) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <io.silvrr.installment.module.password.ChangePasswordActivity: void onCreate(android.os.Bundle)>
+    <io.silvrr.installment.module.password.ChangePasswordActivity: void onCreate(android.os.Bundle)>
+    <io.silvrr.installment.module.password.ChangePasswordActivity: void onCreate(android.os.Bundle)>
+    <io.silvrr.installment.module.password.ChangePasswordActivity: void onCreate(android.os.Bundle)>
+    <dummyMainClass: io.silvrr.installment.module.password.ChangePasswordActivity dummyMainMethod_io_silvrr_installment_module_password_ChangePasswordActivity(android.content.Intent)>
+    <io.silvrr.installment.a: void onActivityCreated(android.app.Activity,android.os.Bundle)>
+    <com.hss01248.dialog.ActivityStackManager: void addActivity(android.app.Activity)>
+    <com.hss01248.dialog.ActivityStackManager: void addActivity(android.app.Activity)>
+    <com.hss01248.dialog.ActivityStackManager: void addActivity(android.app.Activity)>
+    <com.hss01248.dialog.ActivityStackManager: void printStack(java.lang.String)>
+    <com.hss01248.dialog.ActivityStackManager: void printStack(java.lang.String)>
+    <com.hss01248.dialog.ActivityStackManager: void printStack(java.lang.String)>
+    <com.hss01248.dialog.ActivityStackManager: void printStack(java.lang.String)>
+    <com.hss01248.dialog.ActivityStackManager: void printStack(java.lang.String)>
+    <com.hss01248.dialog.ActivityStackManager: void printStack(java.lang.String)>
+    <com.hss01248.dialog.ActivityStackManager: void printStack(java.lang.String)>
+    <com.hss01248.dialog.ActivityStackManager: void printStack(java.lang.String)>
+    <com.hss01248.dialog.ActivityStackManager: void printStack(java.lang.String)>
+
+Leak 11:
+  Source: $r5 = virtualinvoke $r3.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r4, 8) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("Multi_S_Preferences", $r4) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <io.silvrr.installment.common.shareperferences.MultiProcessSharedPreferences: void b(android.content.Context)>
+    <io.silvrr.installment.common.shareperferences.MultiProcessSharedPreferences: void b(android.content.Context)>
+    <io.silvrr.installment.common.shareperferences.MultiProcessSharedPreferences: void b(android.content.Context)>
+    <io.silvrr.installment.common.shareperferences.MultiProcessSharedPreferences: void b(android.content.Context)>
+    <io.silvrr.installment.common.shareperferences.MultiProcessSharedPreferences: void b(android.content.Context)>
+    <io.silvrr.installment.common.shareperferences.MultiProcessSharedPreferences: void b(android.content.Context)>
+    <io.silvrr.installment.common.shareperferences.MultiProcessSharedPreferences: void b(android.content.Context)>
+    <io.silvrr.installment.common.shareperferences.MultiProcessSharedPreferences: void b(android.content.Context)>
+    <io.silvrr.installment.common.shareperferences.MultiProcessSharedPreferences: void b(android.content.Context)>
+

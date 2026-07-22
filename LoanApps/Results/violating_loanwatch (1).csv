@@ -1,0 +1,318 @@
+App Name,Package Name,Country/Classification,ViolatingPermissions
+Ngao Credit,com.extrainch.ngaocredit,Kenya/Approved,"android.permission.WRITE_EXTERNAL_STORAGE, android.permission.ACCESS_FINE_LOCATION, android.permission.READ_EXTERNAL_STORAGE"
+L-Pesa,com.app.l_pesa,Kenya/Approved,"android.permission.ACCESS_FINE_LOCATION, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE"
+FlashCredit,com.flash.flashcredit,Kenya/Approved,"android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_SMS"
+Lipa Later,com.lipalater.androidapp,Kenya/Approved,"android.permission.WRITE_EXTERNAL_STORAGE, android.permission.ACCESS_FINE_LOCATION, android.permission.READ_EXTERNAL_STORAGE, android.permission.READ_PHONE_NUMBERS"
+HelaCash,ke.helacash.cash,Kenya/Approved,android.permission.READ_SMS
+MetaLoan,com.metaloan,Kenya/Approved,"android.permission.READ_SMS, android.permission.READ_CALL_LOG"
+MaxLend,com.max.lend.kencash,Kenya/Approved,android.permission.READ_SMS
+TruePesa,com.credit.truepesa.loan.kenya,Kenya/Approved,android.permission.READ_SMS
+KopaKash,com.kopakash,Kenya/Approved,"android.permission.READ_CALL_LOG, android.permission.READ_SMS"
+Senti,com.roamtech.dm.azima,Kenya/Approved,"android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_SMS"
+Leja,com.okoleainternational.okoleamobile,Kenya/Approved,"android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_SMS"
+FairKash,com.fair.kash.money.finance.loan,Kenya/Approved,android.permission.READ_SMS
+Bayes,bank.com.bank,Kenya/Approved,"android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_EXTERNAL_STORAGE"
+DirectLoan,direct.loans.dirloan.kecredit,Kenya/Approved,android.permission.READ_SMS
+Okolea,com.astronpank.TENK_LOAN,Kenya/Approved,android.permission.READ_EXTERNAL_STORAGE
+Mojacredit,ke.mojacredit,Kenya/Approved,"android.permission.READ_CALL_LOG, android.permission.READ_SMS"
+Kashbean,com.kashbean,Kenya/Approved,"android.permission.READ_SMS, android.permission.READ_CALL_LOG"
+Creditmoja,com.kenya.credit.app.loan.cash.money.pesa,Kenya/Approved,"android.permission.READ_CALL_LOG, android.permission.READ_SMS"
+UbaPesa,com.ubapesa.app,Kenya/Approved,android.permission.READ_SMS
+Jijenge Credit Limited,com.mobincube.jijenge_credit_limited.sc_5S1N1N,Kenya/Approved,"android.permission.WRITE_EXTERNAL_STORAGE, android.permission.ACCESS_FINE_LOCATION"
+Rewot Ciro Credit,com.rewot.app,Kenya/Approved,"android.permission.WRITE_EXTERNAL_STORAGE, android.permission.ACCESS_FINE_LOCATION, android.permission.READ_EXTERNAL_STORAGE"
+MyCredit,com.mycredit.mycredit,Kenya/Approved,"android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_CONTACTS"
+Soko Hela,com.sokohela.lending,Kenya/Approved,"android.permission.WRITE_EXTERNAL_STORAGE, android.permission.ACCESS_FINE_LOCATION, android.permission.READ_EXTERNAL_STORAGE"
+Zenka Loan App Kenya,com.zenkafinance.microloans,Kenya/Approved,android.permission.READ_SMS
+Autochek,com.autochek.buysalefixcars,Kenya/Approved,"android.permission.READ_MEDIA_AUDIO, android.permission.READ_EXTERNAL_STORAGE"
+YoYi,com.sxsydai.yoyi,Nigeria/Delisted,android.permission.READ_SMS
+MoneyEstate,com.loancloud.nigeria.moneyestate,Nigeria/Delisted,"android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.QUERY_ALL_PACKAGES, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_SMS"
+LCredit,ni.lcredit.money.cash,Nigeria/Delisted,"android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_SMS"
+ThankUCash,com.hm.thankucard,Nigeria/Delisted,"android.permission.WRITE_EXTERNAL_STORAGE, android.permission.ACCESS_FINE_LOCATION"
+NairaLand,com.cash.loan.credit9.kash.plamcredit.naira.payday.money.xcredit,Nigeria/Delisted,"android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_SMS"
+Quick Loan,com.indiaquickloan.quickloan,Nigeria/Delisted,"android.permission.WRITE_EXTERNAL_STORAGE, android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.READ_CALL_LOG, android.permission.READ_SMS, android.permission.QUERY_ALL_PACKAGES"
+MOCredit,com.loancloud.nigeria.mocredit,Nigeria/Delisted,"android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.QUERY_ALL_PACKAGES, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_SMS"
+CashDoor,com.cd.cashdoor,Nigeria/Delisted,"android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_MEDIA_IMAGES, android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.READ_SMS"
+CashCredit,com.instant.cash.loan.payday.money.nigeria.new.credit,Nigeria/Delisted,"android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.READ_SMS"
+JoyCash,joycash.mobile.online.quick.loan.money.cash.app,Nigeria/Delisted,"android.permission.READ_CALL_LOG, android.permission.READ_SMS"
+Eagle Cash,com.eagle.cash,Nigeria/Delisted,android.permission.READ_EXTERNAL_STORAGE
+CashMe,com.cash.me.online.loan.app,Nigeria/Delisted,"android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.READ_SMS"
+Cash Mall,com.cashmallet.app,Nigeria/Delisted,"android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_SMS"
+SmartCash,com.loancloud.nigeria.smartcash,Nigeria/Delisted,"android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.QUERY_ALL_PACKAGES, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_SMS"
+XCredit,com.xcredit.loan.nigeria,Nigeria/Delisted,"android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.QUERY_ALL_PACKAGES, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_CALL_LOG, android.permission.READ_SMS"
+Gomoni,ng.moni.gomoni,Nigeria/Delisted,android.permission.READ_SMS
+UCredit,com.ucreditapp.app.cash.loan.carbon.jumia.pay,Nigeria/Delisted,"android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_SMS"
+Hcash,com.nigeria.cashkj.hcash,Nigeria/Delisted,android.permission.READ_SMS
+CashDey,ng.dey.cashdey,Nigeria/Delisted,android.permission.READ_SMS
+Swiftkash,swiftkash.safe.go,Nigeria/Delisted,"android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_SMS"
+Cashlawn,com.grew.sw.cashlawn,Nigeria/Delisted,"android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_SMS"
+EasyCash,com.loancloud.nigeria.easycash,Nigeria/Delisted,"android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.QUERY_ALL_PACKAGES, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_SMS"
+Cash Loan,com.cash.loan.lending.cash.credit,Nigeria/Delisted,"android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.QUERY_ALL_PACKAGES, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_SMS"
+Cash9ja,com.cash9ja.credit.cash.loan.naira,Nigeria/Delisted,"android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_SMS"
+SharpCredit,com.sharp.credit.app,Nigeria/Delisted,"android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.READ_SMS"
+QuickCredit,com.cash.loan.credit.quick.kash.cash9ja.mobile9.mkopo.instant.online.gocash,Nigeria/Delisted,"android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_SMS"
+Lucky Loan,com.sx.luckyloan,Nigeria/Delisted,android.permission.READ_SMS
+Xcash,com.loanx.cashloan,Nigeria/Delisted,android.permission.READ_SMS
+Kashpal,com.kashpal.credit.money.cash.moni,Nigeria/Delisted,"android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_SMS"
+Naira9ja,com.naira9ja.loan.credit.cash.borrow,Nigeria/Delisted,"android.permission.READ_CALL_LOG, android.permission.READ_SMS"
+Moneytree,jp.moneytree.moneytree,Nigeria/Delisted,"android.permission.READ_MEDIA_AUDIO, android.permission.READ_MEDIA_IMAGES"
+SoftNaira,com.sotifai.nai,Nigeria/Delisted,"android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_SMS"
+MoneyMart,com.lcloan.moneymart,Nigeria/Delisted,"android.permission.WRITE_EXTERNAL_STORAGE, android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.READ_SMS"
+Crancash,com.loan.crancash.cash,Nigeria/Delisted,android.permission.READ_SMS
+nutLoan,xyz.niki.loan.nut,Nigeria/Delisted,android.permission.READ_SMS
+Camelloan,com.cashniriql.camelloan,Nigeria/Delisted,"android.permission.READ_CALL_LOG, android.permission.READ_SMS"
+SureCredit,ng.sure.surecredit,Nigeria/Delisted,"android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_PHONE_NUMBERS, android.permission.READ_SMS"
+GGmoney,com.ggmoney.money.online.loan.instant.credit.bank.app,Nigeria/Delisted,"android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_SMS"
+C Money,com.creditville,Nigeria/Delisted,"android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE"
+Ease Cash,com.ng.easecash,Nigeria/Delisted,android.permission.READ_SMS
+Henloan,com.nairacash.henloan,Nigeria/Delisted,"android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_SMS"
+Flypay Pro,loan.flypaypro.ydysx,Nigeria/Delisted,android.permission.READ_SMS
+Nigeria Loan,com.nigeria.loan.credit.nigerialoan,Nigeria/Delisted,android.permission.READ_SMS
+Get Loan,com.qc.getloan,Nigeria/Delisted,android.permission.READ_SMS
+Apex Lending,al.cash.easy.creditapp,Nigeria/Delisted,"android.permission.READ_CALL_LOG, android.permission.READ_SMS"
+Secucash,com.ng.secucash,Nigeria/Delisted,"android.permission.READ_CALL_LOG, android.permission.READ_SMS"
+WeCredit,com.we.ng.credit,Nigeria/Delisted,android.permission.READ_SMS
+CashMama,com.loancloud.nigeria.cashmama,Nigeria/Delisted,"android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.QUERY_ALL_PACKAGES, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_SMS"
+FINE KUDI,cn.fk.fine.kudi,Nigeria/Delisted,android.permission.READ_SMS
+Fibo,com.ftfarm.fibo,Pakistan/Delisted,"android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE"
+Get Loan On PanCard,com.loan.aadhar.pan.insurance.calculator.getloanonpancard,Pakistan/Delisted,"android.permission.ACCESS_FINE_LOCATION, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE"
+LoanMarket,com.loanmarket,Pakistan/Delisted,"android.permission.WRITE_EXTERNAL_STORAGE, android.permission.ACCESS_FINE_LOCATION, android.permission.READ_EXTERNAL_STORAGE"
+5 Minute Loan Apply Online,com.loanapp.onlineloan.applyonline.calc.Bankbalancecheck,Pakistan/Delisted,"android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE"
+Get Easy Paisa Loan App,com.paisaloanguide.loanguidepaisatips,Pakistan/Delisted,"android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE"
+Fast Manee Loan Guide,com.simpleloan.instant.suparkash,Pakistan/Delisted,"android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_EXTERNAL_STORAGE"
+SingleClick Pe Loan,com.singleclick.loanpe.trading.colourloan.b2l,Pakistan/Delisted,"android.permission.WRITE_EXTERNAL_STORAGE, android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE"
+Instant Cash Loan,com.getinstantloan.creditloan.cashloan,Pakistan/Delisted,"android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_EXTERNAL_STORAGE"
+Cash Dana,com.jalurlaba.app,Pakistan/Delisted,android.permission.WRITE_EXTERNAL_STORAGE
+CreditBook,com.creditbookpk.creditbook,Pakistan/Approved,"android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE"
+Qist Bazaar,com.app.qistbazaar4,Pakistan/Approved,"android.permission.ACCESS_FINE_LOCATION, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE"
+Taleem,com.m7.taleem,Pakistan/Approved,"android.permission.WRITE_EXTERNAL_STORAGE, android.permission.ACCESS_FINE_LOCATION, android.permission.READ_EXTERNAL_STORAGE"
+MoneyTap,com.mycash.moneytap.app,Pakistan/Approved,"android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_SMS"
+Edufi,com.edufi.parent,Pakistan/Approved,"android.permission.WRITE_EXTERNAL_STORAGE, android.permission.ACCESS_FINE_LOCATION"
+Zood,com.zoodel.kz,Pakistan/Approved,"android.permission.READ_MEDIA_VIDEO, android.permission.ACCESS_FINE_LOCATION, android.permission.READ_MEDIA_IMAGES, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE"
+JazzCash,com.techlogix.mobilinkcustomer,Pakistan/Approved,"android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_MEDIA_IMAGES, android.permission.READ_EXTERNAL_STORAGE, android.permission.QUERY_ALL_PACKAGES, android.permission.WRITE_EXTERNAL_STORAGE"
+Abhi finance,com.abhifinance,Pakistan/Approved,"android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE"
+Muawin,com.raqqam.monamitech,Pakistan/Approved,"android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_SMS"
+Pinja Modal,com.pinjammodal,Indonesia/Approved,android.permission.ACCESS_FINE_LOCATION
+DanaBagus,mobile.danabagus.android,Indonesia/Approved,android.permission.ACCESS_FINE_LOCATION
+Danakini,com.pyeuiioa.zaxfrccf,Indonesia/Approved,"android.permission.WRITE_EXTERNAL_STORAGE, android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE"
+KTA Kilat,com.pinjam.ktakilat,Indonesia/Approved,"android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE"
+Duha Syariah,com.duhasyariah.app,Indonesia/Approved,"android.permission.WRITE_EXTERNAL_STORAGE, android.permission.ACCESS_FINE_LOCATION"
+Avantee,com.id.avantee,Indonesia/Approved,"android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_EXTERNAL_STORAGE"
+Kredito,com.kredito.fintek,Indonesia/Approved,android.permission.ACCESS_FINE_LOCATION
+DanaRupiah,id.danarupiah.weshare.jiekuan,Indonesia/Approved,"android.permission.ACCESS_FINE_LOCATION, android.permission.QUERY_ALL_PACKAGES"
+@7F0F001E,com.klikcairapp,Indonesia/Approved,android.permission.ACCESS_FINE_LOCATION
+Danabijak,com.danabijak.mobile,Indonesia/Approved,"android.permission.WRITE_EXTERNAL_STORAGE, android.permission.ACCESS_FINE_LOCATION, android.permission.READ_EXTERNAL_STORAGE"
+Solusiku,com.mysolusiku.solusiku,Indonesia/Approved,"android.permission.WRITE_EXTERNAL_STORAGE, android.permission.ACCESS_FINE_LOCATION, android.permission.READ_EXTERNAL_STORAGE"
+Invoila,com.solmitrafintec.solmitramobile,Indonesia/Approved,android.permission.ACCESS_FINE_LOCATION
+KTA KILAT,com.ktakilat.loan,Indonesia/Approved,"android.permission.ACCESS_FINE_LOCATION, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_CALL_LOG, android.permission.READ_SMS"
+@7F0F001E,com.danasyariah.mobiledanasyariah,Indonesia/Approved,android.permission.ACCESS_FINE_LOCATION
+Danamas Borrower (Peminjam),id.co.danamasbor,Indonesia/Approved,android.permission.ACCESS_FINE_LOCATION
+@7F0E001D,id.co.tokomodal.mobile,Indonesia/Approved,android.permission.WRITE_EXTERNAL_STORAGE
+Fintek Syariah,id.co.finteksyariah.app.pembiayaan,Indonesia/Approved,android.permission.ACCESS_FINE_LOCATION
+PinjamanGo,com.pinjamango,Indonesia/Approved,"android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_CALL_LOG, android.permission.READ_PHONE_NUMBERS, android.permission.READ_SMS"
+Crowde,com.crowde.investor,Indonesia/Approved,"android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_EXTERNAL_STORAGE"
+Finmas,com.oriente.finmas,Indonesia/Approved,android.permission.ACCESS_FINE_LOCATION
+MEKAR PINJAM,id.mekartigasampurna.mekarpinjam.app,Indonesia/Approved,"android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE"
+Klik Kami,com.ayo.klikkami,Indonesia/Approved,android.permission.ACCESS_FINE_LOCATION
+Dana Cepat,biro.pinjamuang.ngreditmurahki,Indonesia/Approved,"android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_EXTERNAL_STORAGE"
+DompetKilat,com.dompetkilat.pinjaman,Indonesia/Approved,android.permission.ACCESS_FINE_LOCATION
+DanaKita,com.wDanaKita_KBL,Indonesia/Approved,"android.permission.ACCESS_FINE_LOCATION, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE"
+Danakini,com.pbejydgb.ygzxmzcg,Indonesia/Approved,"android.permission.WRITE_EXTERNAL_STORAGE, android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE"
+,com.oriente.finmas,Indonesia/Approved,android.permission.ACCESS_FINE_LOCATION
+True Loan,team.trueloan.loan,Nigeria/Approved,android.permission.READ_SMS
+RexAfrica,com.rexmfb.mobile,Nigeria/Approved,"android.permission.ACCESS_FINE_LOCATION, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE"
+Future Cash,com.futurecash.nl.re,Nigeria/Approved,android.permission.READ_SMS
+Umba,com.beatha.mkopokaka,Nigeria/Approved,"android.permission.READ_MEDIA_VIDEO, android.permission.READ_MEDIA_AUDIO, android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_MEDIA_IMAGES, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_PHONE_NUMBERS, android.permission.READ_SMS"
+9money,com.credit.ninemoney,Nigeria/Approved,android.permission.READ_SMS
+Flex Finance,business.finance.flex,Nigeria/Approved,"android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE"
+EasyKash,easykash.creditapp.loan,Nigeria/Approved,"android.permission.READ_CALL_LOG, android.permission.READ_SMS"
+Veend,com.veendhq.mobileApp,Nigeria/Approved,"android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE"
+Aella,com.aella.comportal,Nigeria/Approved,android.permission.ACCESS_FINE_LOCATION
+IntsWallet,com.ng.flexfund,Nigeria/Approved,android.permission.READ_CALL_LOG
+Tcredit,com.nigeria.tcredit,Nigeria/Approved,android.permission.READ_SMS
+SavingsBox,com.reliance.savingsbox,Nigeria/Approved,"android.permission.READ_MEDIA_VIDEO, android.permission.READ_MEDIA_AUDIO, android.permission.READ_MEDIA_IMAGES, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE"
+Traction,co.tractionapp.traction,Nigeria/Approved,"android.permission.READ_MEDIA_VIDEO, android.permission.READ_MEDIA_AUDIO, android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_MEDIA_IMAGES, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE"
+Pivo,africa.pivo,Nigeria/Approved,"android.permission.READ_MEDIA_IMAGES, android.permission.READ_MEDIA_AUDIO, android.permission.READ_EXTERNAL_STORAGE, android.permission.QUERY_ALL_PACKAGES"
+Quickcheck,io.quickcheck.loans,Nigeria/Approved,"android.permission.ACCESS_FINE_LOCATION, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_SMS"
+Gogetcredit,go.get.credit,Nigeria/Approved,android.permission.READ_SMS
+GoLoan,com.wegoloan.app.nigeria,Nigeria/Approved,android.permission.READ_SMS
+Aibanc,co.aibanc.Aibanc_APP,Nigeria/Approved,"android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_EXTERNAL_STORAGE"
+SilkLoan,silkloan.nigeria.credit.cash.loan,Nigeria/Approved,android.permission.READ_SMS
+EaseMoni,com.loan.cash.credit.easemoni.nigeria,Nigeria/Approved,android.permission.READ_SMS
+MintBag,com.finles.mintbag,Nigeria/Approved,"android.permission.READ_CALL_LOG, android.permission.READ_SMS"
+Zelia,com.zeliaapp,Nigeria/Approved,"android.permission.ACCESS_FINE_LOCATION, android.permission.READ_MEDIA_IMAGES, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE"
+VendorCredit,ng.vendorcredit.app,Nigeria/Approved,"android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_EXTERNAL_STORAGE"
+Lilycash,ng.personal.loan.lily.cash,Nigeria/Approved,"android.permission.READ_CALL_LOG, android.permission.READ_SMS"
+Gocash,com.go.cash.cash.gocash,Nigeria/Approved,android.permission.READ_SMS
+monee,com.nidcomsolutions.monee,Nigeria/Approved,android.permission.ACCESS_FINE_LOCATION
+liberty-pay,com.libertyassured.libertypay,Nigeria/Approved,"android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_SMS"
+Palmcredit,com.transsnetfinancial.palmcredit,Nigeria/Approved,"android.permission.READ_CALL_LOG, android.permission.READ_SMS"
+Payhippo,app.payhippo,Nigeria/Approved,"android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_EXTERNAL_STORAGE"
+P2Vest,com.p2vest,Nigeria/Approved,"android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE"
+AllCredit,com.allcredit.ls,Nigeria/Approved,android.permission.READ_SMS
+Credit Wallet,com.credit.wallet,Nigeria/Approved,"android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.READ_SMS"
+Allawee,com.allaweepersonal.mobile,Nigeria/Approved,"android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE"
+NaijaEase,com.summit.naijaease,Nigeria/Approved,android.permission.READ_SMS
+Newcredit,com.pbank.newcredit,Nigeria/Approved,"android.permission.READ_CALL_LOG, android.permission.READ_SMS"
+FastCent,com.ng.FastCent,Nigeria/Approved,android.permission.READ_CALL_LOG
+,com.loan.naira.cash.ng9,Nigeria/Approved,android.permission.READ_SMS
+Xcrosscash,com.xcash.xcrosscash,Nigeria/Approved,"android.permission.READ_CALL_LOG, android.permission.READ_SMS"
+Irorun,com.irorun,Nigeria/Approved,"android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_SMS"
+VoiceMoney,com.voicemoney.vmey,Nigeria/Approved,"android.permission.READ_CALL_LOG, android.permission.READ_SMS"
+Apex Loan,com.apex.loan.ng.app,Nigeria/Approved,android.permission.READ_SMS
+HadiFinance,com.hadifinance.hadifinanceapp,Nigeria/Approved,"android.permission.ACCESS_FINE_LOCATION, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_SMS"
+Hi Fund,com.hifund.money.kash.loan,Nigeria/Approved,android.permission.READ_SMS
+OmniKash,com.omnikash.xxko,Nigeria/Approved,"android.permission.READ_CALL_LOG, android.permission.READ_SMS"
+Easy Money Loan,com.cash.loan.personal.kash.cash9ja.xcredit.payday.credit9.money,Nigeria/Approved,android.permission.READ_SMS
+Credpal,com.credpal.loan,Nigeria/Approved,"android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE"
+KashLoan,com.principal.loan.cash.principalloan,Nigeria/Approved,android.permission.READ_SMS
+Airmoni,com.commercemen.airmoni,Nigeria/Approved,android.permission.READ_SMS
+Bold,com.dodo_mobile,Nigeria/Approved,"android.permission.READ_MEDIA_VIDEO, android.permission.READ_MEDIA_AUDIO, android.permission.READ_CONTACTS, android.permission.READ_MEDIA_IMAGES, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE"
+LendMe,co.mylendme.mobile,Nigeria/Approved,"android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE"
+TrustLaon,com.trustloan.finserve.nigeria.creditline.xpress,Nigeria/Approved,"android.permission.READ_CALL_LOG, android.permission.READ_SMS"
+NairaGo,com.muska.tech.nairago,Nigeria/Approved,android.permission.READ_SMS
+KashCash,ng.kashcash.kash,Nigeria/Approved,android.permission.READ_SMS
+Rockshield MFB,com.fintellia.rockshieldmfb,Nigeria/Approved,"android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE"
+Easyfund,com.loan.easyfund,Nigeria/Approved,android.permission.READ_SMS
+Care Finance,care.finance,Nigeria/Approved,android.permission.READ_SMS
+,com.lenddo.mobile.paylater,Nigeria/Approved,"android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE"
+Rapaid,com.rapaidv1,Nigeria/Approved,"android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE"
+TradeCredit,com.trade.ca.credit,Nigeria/Approved,"android.permission.READ_CALL_LOG, android.permission.READ_SMS"
+Edike,com.edikemobile,Nigeria/Approved,"android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE"
+Our Pass,co.our.pass.stg,Nigeria/Approved,"android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE"
+CashRun,cash.run.credit.easy.loan,Nigeria/Approved,android.permission.READ_SMS
+Lendigo,com.lendigo.app,Nigeria/Approved,android.permission.WRITE_EXTERNAL_STORAGE
+Dot,com.digicore.dot,Nigeria/Approved,"android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE"
+PayLater,com.paylaterapp.paylater,Nigeria/Approved,"android.permission.ACCESS_FINE_LOCATION, android.permission.READ_EXTERNAL_STORAGE"
+@7F0F002C,com.nigeria.android.mooncard,Nigeria/Approved,"android.permission.READ_CALL_LOG, android.permission.READ_SMS"
+9Credit Go,com.ted.ng.ninecreditgo.credit.loans,Nigeria/Approved,"android.permission.READ_CALL_LOG, android.permission.READ_SMS"
+Sycamore,ng.sycamore.app2,Nigeria/Approved,"android.permission.READ_MEDIA_IMAGES, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE"
+Finpadi,com.finpadimobile,Nigeria/Approved,"android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE"
+OyesCredit,com.end.wall.week,Nigeria/Approved,android.permission.READ_SMS
+MenaCred,com.menamobile,Nigeria/Approved,"android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_SMS"
+Hometown,com.hometown.app,Nigeria/Approved,android.permission.READ_CONTACTS
+Credlock Business,app.credlockng.merchant,Nigeria/Approved,"android.permission.ACCESS_FINE_LOCATION, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE"
+OKCash,com.falcon.teer.baro.cash,Nigeria/Approved,android.permission.READ_SMS
+Cash9ja,com.samued.cashnaija,Nigeria/Approved,android.permission.READ_SMS
+Okloan,com.oxloanpro.cash.credit.nigeria,Nigeria/Approved,android.permission.READ_SMS
+Cashpaddie,com.lucky.cashpaddie,Nigeria/Approved,android.permission.READ_SMS
+SwiftNaira,swift.loan.naira.app,Nigeria/Approved,android.permission.READ_SMS
+Hermoney,com.hermoney.app,Nigeria/Approved,"android.permission.WRITE_EXTERNAL_STORAGE, android.permission.ACCESS_FINE_LOCATION, android.permission.READ_EXTERNAL_STORAGE"
+Morecash,com.loan.credit.new.morecash,Nigeria/Approved,android.permission.READ_SMS
+Fewchore Mobile,com.exolve.fewchorepay,Nigeria/Approved,"android.permission.READ_MEDIA_VIDEO, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_MEDIA_IMAGES, android.permission.READ_MEDIA_AUDIO, android.permission.READ_EXTERNAL_STORAGE"
+VybeCash,com.vybecash.app,Nigeria/Approved,"android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE"
+Ellimoney,com.airopay.agents,Nigeria/Approved,android.permission.READ_EXTERNAL_STORAGE
+Koins,com.primerabank.primera_mobile,Nigeria/Approved,"android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_EXTERNAL_STORAGE"
+GetNaira,com.getnaira.online.loan.instant.credit,Nigeria/Approved,android.permission.READ_SMS
+Adashe,com.adashe.app.adashe,Nigeria/Approved,"android.permission.ACCESS_FINE_LOCATION, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_PHONE_NUMBERS"
+Primepay,com.client.primepay,Nigeria/Approved,android.permission.READ_CALL_LOG
+TradeLenda,com.tradelenda.app,Nigeria/Approved,"android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE"
+Vkash,safe.vkashpro.loan,Nigeria/Approved,android.permission.READ_SMS
+Renmoney,com.renmoney.android,Nigeria/Approved,"android.permission.READ_MEDIA_VIDEO, android.permission.READ_MEDIA_AUDIO, android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_MEDIA_IMAGES, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_PHONE_NUMBERS, android.permission.READ_SMS"
+Plenty Cash,ng.com.plentycash,Nigeria/Approved,android.permission.READ_SMS
+com.kash.money.palm.minicredit.new.naira.loan,com.kash.money.palm.minicredit.new.naira.loan,Nigeria/Approved,android.permission.READ_SMS
+Pasa,com.pride.pasa,Nigeria/Approved,android.permission.READ_SMS
+Nicenaira Plus,com.credit.nicenaira,Nigeria/Approved,android.permission.READ_SMS
+Xcash,com.loanx.cashloan,Nigeria/Approved,"android.permission.READ_CALL_LOG, android.permission.READ_SMS"
+ZoomCash,com.zoomcash.app.financial.services.mobilepay,Nigeria/Approved,"android.permission.READ_CALL_LOG, android.permission.READ_SMS"
+Hi Wallet,nigeria.cash.loan.hiwallet,Nigeria/Approved,android.permission.READ_CALL_LOG
+Regxta,com.info.regxta,Nigeria/Approved,"android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_EXTERNAL_STORAGE"
+UltraCash,ultracash.fast.loan,Nigeria/Approved,"android.permission.READ_CALL_LOG, android.permission.READ_SMS"
+Vibecredit,com.vibecredit,Nigeria/Approved,android.permission.READ_SMS
+@7F10001C,com.cash.lnonline,Nigeria/Approved,android.permission.READ_SMS
+PhastMoney,com.phastmoney,Nigeria/Approved,android.permission.WRITE_EXTERNAL_STORAGE
+Raiz,com.raiz.application,Nigeria/Approved,"android.permission.READ_MEDIA_AUDIO, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE"
+O2 Finance,com.o2intlfin.loans,Nigeria/Approved,"android.permission.WRITE_EXTERNAL_STORAGE, android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE"
+Loanmate,com.bwfoxlending.nigeria,Nigeria/Approved,android.permission.READ_SMS
+Tradedepot,co.tradedepot.shop,Nigeria/Approved,"android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE"
+HerVest,com.hervest,Nigeria/Approved,"android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_EXTERNAL_STORAGE"
+Rocket Loan Plus,com.silver.gooseplus.wallet.goosewallet,Nigeria/Approved,android.permission.READ_SMS
+LCredit Max,cashigo.loan.lcreditmax,Nigeria/Approved,android.permission.READ_SMS
+@7F10001C,com.smart.loan.money.smartloan,Nigeria/Approved,android.permission.READ_SMS
+Klump,com.klump.inc.mobile,Nigeria/Approved,"android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_EXTERNAL_STORAGE"
+WayaCredit,com.mycrat.wayacreditng,Nigeria/Approved,"android.permission.READ_CALL_LOG, android.permission.READ_SMS"
+PearlCash,com.nigeria.app.vsnaira,Nigeria/Approved,android.permission.READ_SMS
+Pilla,com.investment.pilla,Nigeria/Approved,android.permission.READ_EXTERNAL_STORAGE
+PayFiMobile,com.otoreport.apkpayfimobile,Nigeria/Approved,"android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE"
+Payfi,com.payfi.ng,Nigeria/Approved,"android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE"
+Branch,com.branch_international.branch.branch_demo_android,Nigeria/Approved,"android.permission.READ_CONTACTS, android.permission.READ_SMS"
+Alladin Digital,com.aladdin.digital,Nigeria/Approved,"android.permission.READ_MEDIA_VIDEO, android.permission.READ_CONTACTS, android.permission.READ_MEDIA_IMAGES, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE"
+Moni,com.rank.moni,Nigeria/Approved,"android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE"
+LairaPlus,com.lairaplus.naira.loan.nigeria,Nigeria/Approved,android.permission.READ_SMS
+NCASH,com.ng.product.ncash,Nigeria/Approved,android.permission.READ_SMS
+AjeLoan,ng.com.ajeloan,Nigeria/Approved,android.permission.READ_SMS
+Nicekash,com.loan.nicekash,Nigeria/Approved,android.permission.READ_SMS
+Riverbank,io.ionic.riverbank,Nigeria/Approved,"android.permission.READ_MEDIA_IMAGES, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.ACCESS_FINE_LOCATION, android.permission.READ_EXTERNAL_STORAGE"
+Shara,co.shara.lite,Nigeria/Approved,"android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE"
+Hcwallet,com.ng.haloocredit,Nigeria/Approved,android.permission.READ_CALL_LOG
+Pennee,com.pennee.tech,Nigeria/Approved,"android.permission.ACCESS_FINE_LOCATION, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE"
+Incash,com.nig.incash.org,Nigeria/Approved,"android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_EXTERNAL_STORAGE"
+KiaKia finance,com.kiakiafinance.app,Nigeria/Approved,"android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE"
+FairMoney,ng.com.fairmoney.fairmoney,Nigeria/Approved,"android.permission.READ_MEDIA_VIDEO, android.permission.READ_MEDIA_AUDIO, android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_MEDIA_IMAGES, android.permission.READ_EXTERNAL_STORAGE, android.permission.QUERY_ALL_PACKAGES, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_SMS"
+Max Moni,com.loan.new.maxmoni,Nigeria/Approved,android.permission.READ_SMS
+LoanNaira,com.loan.naira.now,Nigeria/Approved,android.permission.READ_SMS
+@7F10002D,com.ng.swifund,Nigeria/Approved,android.permission.READ_CALL_LOG
+CayCredit,credit.caycredit.finance.loan.money,Nigeria/Approved,android.permission.READ_SMS
+iCredit,com.loan.icredit.creditng,Nigeria/Approved,android.permission.READ_SMS
+EaziPay,com.myeazipay.business,Nigeria/Approved,"android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_EXTERNAL_STORAGE"
+UnlockCash,com.boyu.luans,Nigeria/Approved,android.permission.READ_SMS
+Hi Credit,com.may.android.hicredit,Nigeria/Approved,android.permission.READ_SMS
+Newlending,com.loan.newlending.through,Nigeria/Approved,"android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE"
+Growly,com.tpdn.growly.mobile,Nigeria/Approved,android.permission.WRITE_EXTERNAL_STORAGE
+PonyCash,com.ponycash.poca.nysh,Nigeria/Approved,"android.permission.READ_CALL_LOG, android.permission.READ_SMS"
+CreditWise,ng.wise.creditwise,Nigeria/Approved,android.permission.READ_SMS
+Supreme MFB,com.fintellia.suprememfbs,Nigeria/Approved,"android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE"
+retailboosters,com.retailboosters,Nigeria/Approved,android.permission.READ_EXTERNAL_STORAGE
+ClanPay,com.repay.com,Nigeria/Approved,android.permission.ACCESS_FINE_LOCATION
+WowPera,com.wow.pera,Philippines/Approved,android.permission.READ_SMS
+HappyPera 2,com.happyperatwo.app,Philippines/Approved,"android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE"
+BillEase,ph.billease,Philippines/Approved,"android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.READ_SMS, android.permission.READ_CALL_LOG"
+PeraJet,perajet.ph.credoapp,Philippines/Approved,"android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE"
+Valley loan,com.valley.loan,Philippines/Approved,android.permission.READ_SMS
+PesoCash,com.myloan.pesocash,Philippines/Approved,android.permission.READ_SMS
+Cashcash Philippines,com.firestorm.sea.loanmarket,Philippines/Approved,"android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE"
+Zippeso - Online Cash Loan,ph.zippeso.online.cash.loan,Philippines/Approved,android.permission.READ_SMS
+Vplus,com.v.plus.vplus,Philippines/Approved,android.permission.READ_SMS
+Pesokwento,com.philipin.pesokwento.loan,Philippines/Approved,android.permission.READ_SMS
+@7F100022,com.liang.chan,Philippines/Approved,android.permission.READ_SMS
+CredTap,in.atome,Philippines/Approved,"android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE"
+PesoGo,com.yigomob.philippine.pesogo,Philippines/Approved,"android.permission.WRITE_EXTERNAL_STORAGE, android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE"
+cashwow,ph.cashwow11.android,Philippines/Approved,"android.permission.WRITE_EXTERNAL_STORAGE, android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE"
+Pesolaon,com.pesoloan,Philippines/Approved,"android.permission.READ_CALL_LOG, android.permission.READ_SMS"
+iPeso,com.qiantanglending.vps,Philippines/Approved,"android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE"
+pera247,versluisant.kredit24,Philippines/Approved,"android.permission.WRITE_EXTERNAL_STORAGE, android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE"
+Pesohere,com.pesohere.android,Philippines/Approved,android.permission.READ_SMS
+GoPeso,com.ph.loan.android,Philippines/Approved,"android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE"
+Pinoy Peso,com.cga.cash,Philippines/Approved,"android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE"
+JuanHand,com.juanhand.fast.cash.peso.loan.app,Philippines/Approved,android.permission.READ_SMS
+MadaLoan,ooifxdso.opxosduf.oqexred,Philippines/Approved,"android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_PHONE_NUMBERS, android.permission.READ_SMS"
+Fast Peso,ph.fast.peso,Philippines/Approved,"android.permission.WRITE_EXTERNAL_STORAGE, android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE"
+Peso2Go,com.peso2go,Philippines/Approved,"android.permission.WRITE_EXTERNAL_STORAGE, android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.READ_PHONE_NUMBERS"
+Pesos.ph,pesop.jkaht,Philippines/Approved,"android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS"
+Pera,com.vip.pera,Philippines/Approved,android.permission.READ_SMS
+PesoQ,com.tmart.pesoq,Philippines/Approved,android.permission.READ_SMS
+Credit Peso,com.wdjk.mcvay,Philippines/Approved,"android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS"
+Easy Peso,com.easy.cash.loan,Philippines/Approved,"android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE"
+LendPeso Market,com.jrweid.pilipinas.loanmarket,Philippines/Approved,"android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_EXTERNAL_STORAGE"
+Borrow Peso,com.jrweid.pautang.peso,Philippines/Approved,"android.permission.WRITE_EXTERNAL_STORAGE, android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE"
+QuickLa,com.luck.duck.quickla,Philippines/Approved,"android.permission.READ_CALL_LOG, android.permission.READ_SMS"
+OkPeso,tech.codeblock.okpeso,Philippines/Approved,android.permission.READ_SMS
+PesoBuffet,com.abs.pesobuffet.android,Philippines/Approved,"android.permission.READ_CALL_LOG, android.permission.READ_SMS"
+Akulaku Finance,io.silvrr.finance,Philippines/Approved,android.permission.ACCESS_FINE_LOCATION
+Fcash,com.touchlend.fcash,Philippines/Approved,"android.permission.WRITE_EXTERNAL_STORAGE, android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE"
+PagHiram,com.phoneapp.paghiram,Philippines/Approved,"android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE"
+MayPera,com.maypera.peso,Philippines/Approved,android.permission.READ_SMS
+Lemon Loan,com.lemon.loan,Philippines/Approved,"android.permission.WRITE_EXTERNAL_STORAGE, android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE"
+Cashme,ph.cashme666.android,Philippines/Approved,android.permission.READ_SMS
+Peso Advance,com.pesoadvance.app,Philippines/Approved,"android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE"
+Peso Pocket,com.hffeilvbin.pesopocket,Philippines/Approved,"android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE"
+Light Kredit,com.hffeilvbin.lightkredit,Philippines/Approved,"android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE"
+HappyCash,com.yinshan.happycashPro,Philippines/Approved,"android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE"
+Pautang Peso,ph.lhl.pautangpeso,Philippines/Delisted,android.permission.READ_SMS
+CashStar,com.cashstar.mobile,Philippines/Delisted,"android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_SMS"
+Start Loan,ph.fk.startloan,Philippines/Delisted,"android.permission.WRITE_EXTERNAL_STORAGE, android.permission.ACCESS_FINE_LOCATION, android.permission.READ_EXTERNAL_STORAGE"
+Pesopop,com.pesopop,Philippines/Delisted,"android.permission.WRITE_EXTERNAL_STORAGE, android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE"
+First Cash,com.vincocopeso.propitious,Philippines/Delisted,android.permission.READ_SMS
+Lucky Loan,luckyloan.shelck,Philippines/Delisted,"android.permission.ACCESS_FINE_LOCATION, android.permission.READ_CONTACTS"
+upeso,com.lanhai.upesocash,Philippines/Delisted,"android.permission.READ_CALL_LOG, android.permission.READ_SMS"
+Pondo Loan,ph.fk.pondoloan,Philippines/Delisted,"android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_EXTERNAL_STORAGE"
+NewCash,com.perabag.app,Philippines/Delisted,"android.permission.READ_SMS, android.permission.WRITE_EXTERNAL_STORAGE"

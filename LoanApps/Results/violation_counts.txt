@@ -1,0 +1,107 @@
+Violation Counts by Country/Classification:
+
+Indonesia/Approved:
+  Permission-Based Country Policy: 0
+  Permission-Based Google Policy: 27
+  Permission-Based LoanWatch Policy: 27
+  Permission-Based Country but Not Google: 0 (None)
+  Permission-Based Google but Not Country: 27 (access_fine_location = 22, query_all_packages = 1, read_contacts = 4, read_external_storage = 12, read_phone_numbers = 1, write_external_storage = 14)
+  Permission-Based LoanWatch but Not Country: 27 (access_fine_location = 22, query_all_packages = 1, read_call_log = 2, read_contacts = 4, read_external_storage = 12, read_sms = 2, write_external_storage = 14)
+  Permission-Based LoanWatch but Not Google: 0 (None)
+  CSV ViolateCountryPolicy: 0
+  CSV ViolateGoogle: 27
+  CSV ViolateLoanWatch: 27
+  CSV Country but Not Google (ViolateCountryPolicy=True, ViolateGoogle=False): 0
+
+Kenya/Approved:
+  Permission-Based Country Policy: 9
+  Permission-Based Google Policy: 13
+  Permission-Based LoanWatch Policy: 25
+  Permission-Based Country but Not Google: 5 (read_call_log = 5)
+  Permission-Based Google but Not Country: 9 (access_fine_location = 6, read_external_storage = 8, read_phone_numbers = 1, write_external_storage = 7)
+  Permission-Based LoanWatch but Not Country: 16 (access_fine_location = 6, read_external_storage = 8, read_media_audio = 1, read_sms = 7, write_external_storage = 7)
+  Permission-Based LoanWatch but Not Google: 12 (read_call_log = 5, read_sms = 12)
+  CSV ViolateCountryPolicy: 9
+  CSV ViolateGoogle: 13
+  CSV ViolateLoanWatch: 25
+  CSV Country but Not Google (ViolateCountryPolicy=True, ViolateGoogle=False): 5
+
+Nigeria/Approved:
+  Permission-Based Country Policy: 85
+  Permission-Based Google Policy: 69
+  Permission-Based LoanWatch Policy: 145
+  Permission-Based Country but Not Google: 23 (read_call_log = 23)
+  Permission-Based Google but Not Country: 7 (access_fine_location = 3, write_external_storage = 4)
+  Permission-Based LoanWatch but Not Country: 60 (access_fine_location = 3, read_sms = 54, write_external_storage = 4)
+  Permission-Based LoanWatch but Not Google: 76 (read_call_log = 23, read_sms = 70)
+  CSV ViolateCountryPolicy: 85
+  CSV ViolateGoogle: 69
+  CSV ViolateLoanWatch: 145
+  CSV Country but Not Google (ViolateCountryPolicy=True, ViolateGoogle=False): 23
+
+Nigeria/Delisted:
+  Permission-Based Country Policy: 34
+  Permission-Based Google Policy: 30
+  Permission-Based LoanWatch Policy: 49
+  Permission-Based Country but Not Google: 5 (read_call_log = 5)
+  Permission-Based Google but Not Country: 1 (access_fine_location = 1, write_external_storage = 1)
+  Permission-Based LoanWatch but Not Country: 15 (access_fine_location = 1, read_sms = 14, write_external_storage = 1)
+  Permission-Based LoanWatch but Not Google: 19 (read_call_log = 5, read_sms = 19)
+  CSV ViolateCountryPolicy: 34
+  CSV ViolateGoogle: 30
+  CSV ViolateLoanWatch: 49
+  CSV Country but Not Google (ViolateCountryPolicy=True, ViolateGoogle=False): 5
+
+Pakistan/Approved:
+  Permission-Based Country Policy: 8
+  Permission-Based Google Policy: 9
+  Permission-Based LoanWatch Policy: 9
+  Permission-Based Country but Not Google: 0 (None)
+  Permission-Based Google but Not Country: 1 (access_fine_location = 1, write_external_storage = 1)
+  Permission-Based LoanWatch but Not Country: 1 (access_fine_location = 1, write_external_storage = 1)
+  Permission-Based LoanWatch but Not Google: 0 (None)
+  CSV ViolateCountryPolicy: 8
+  CSV ViolateGoogle: 9
+  CSV ViolateLoanWatch: 9
+  CSV Country but Not Google (ViolateCountryPolicy=True, ViolateGoogle=False): 0
+
+Pakistan/Delisted:
+  Permission-Based Country Policy: 8
+  Permission-Based Google Policy: 9
+  Permission-Based LoanWatch Policy: 9
+  Permission-Based Country but Not Google: 0 (None)
+  Permission-Based Google but Not Country: 1 (write_external_storage = 1)
+  Permission-Based LoanWatch but Not Country: 1 (write_external_storage = 1)
+  Permission-Based LoanWatch but Not Google: 0 (None)
+  CSV ViolateCountryPolicy: 8
+  CSV ViolateGoogle: 9
+  CSV ViolateLoanWatch: 9
+  CSV Country but Not Google (ViolateCountryPolicy=True, ViolateGoogle=False): 0
+
+Philippines/Approved:
+  Permission-Based Country Policy: 25
+  Permission-Based Google Policy: 27
+  Permission-Based LoanWatch Policy: 44
+  Permission-Based Country but Not Google: 0 (None)
+  Permission-Based Google but Not Country: 2 (access_fine_location = 1, read_external_storage = 1, write_external_storage = 1)
+  Permission-Based LoanWatch but Not Country: 19 (access_fine_location = 1, read_call_log = 3, read_external_storage = 1, read_sms = 17, write_external_storage = 1)
+  Permission-Based LoanWatch but Not Google: 17 (read_call_log = 3, read_sms = 17)
+  CSV ViolateCountryPolicy: 25
+  CSV ViolateGoogle: 27
+  CSV ViolateLoanWatch: 44
+  CSV Country but Not Google (ViolateCountryPolicy=True, ViolateGoogle=False): 0
+
+Philippines/Delisted:
+  Permission-Based Country Policy: 3
+  Permission-Based Google Policy: 6
+  Permission-Based LoanWatch Policy: 9
+  Permission-Based Country but Not Google: 0 (None)
+  Permission-Based Google but Not Country: 3 (access_fine_location = 1, read_external_storage = 2, write_external_storage = 3)
+  Permission-Based LoanWatch but Not Country: 6 (access_fine_location = 1, read_call_log = 1, read_external_storage = 2, read_sms = 4, write_external_storage = 3)
+  Permission-Based LoanWatch but Not Google: 3 (read_call_log = 1, read_sms = 3)
+  CSV ViolateCountryPolicy: 3
+  CSV ViolateGoogle: 6
+  CSV ViolateLoanWatch: 9
+  CSV Country but Not Google (ViolateCountryPolicy=True, ViolateGoogle=False): 0
+
+Total Discrepancies: 0

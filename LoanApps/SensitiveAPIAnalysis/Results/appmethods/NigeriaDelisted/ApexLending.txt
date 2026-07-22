@@ -1,0 +1,63 @@
+APK: ApexLending (NigeriaDelisted)
+Leak 1:
+  Source: $r5 = virtualinvoke $r3.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r4, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r5.<java.io.FileOutputStream: void write(byte[])>($r4) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <ai.advance.core.f: java.lang.String w0()>
+    <ai.advance.core.f: java.lang.String w0()>
+    <ai.advance.core.f: java.lang.String w0()>
+    <ai.advance.event.j: void s()>
+    <ai.advance.event.j: void l(java.lang.String,java.lang.Object)>
+    <ai.advance.event.c: void l(java.lang.String,java.lang.Object)>
+    <ai.advance.event.c: void l(java.lang.String,java.lang.Object)>
+    <ai.advance.event.c: void l(java.lang.String,java.lang.Object)>
+    <ai.advance.event.j: void l(java.lang.String,java.lang.Object)>
+    <ai.advance.event.j: void s()>
+    <ai.advance.event.j: org.json.JSONObject m()>
+    <ai.advance.event.c: org.json.JSONObject m()>
+    <ai.advance.event.c: org.json.JSONObject m()>
+    <ai.advance.event.j: org.json.JSONObject m()>
+    <ai.advance.core.g: void j(java.lang.String)>
+    <ai.advance.core.g: void j(java.lang.String)>
+    <ai.advance.core.c: void j(java.lang.String)>
+    <ai.advance.core.c: void h(java.lang.String)>
+    <ai.advance.core.c: void h(java.lang.String)>
+    <b.d: void f(org.json.JSONObject,java.lang.String,java.lang.Object)>
+    <b.d: void f(org.json.JSONObject,java.lang.String,java.lang.Object)>
+    <ai.advance.core.c: void h(java.lang.String)>
+    <ai.advance.core.c: void h(java.lang.String)>
+    <b.c: void c(android.content.Context,java.lang.String,java.lang.String)>
+    <b.c: void c(android.content.Context,java.lang.String,java.lang.String)>
+    <b.c: void c(android.content.Context,java.lang.String,java.lang.String)>
+
+Leak 2:
+  Source: $r5 = virtualinvoke $r3.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r4, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r5.<java.io.FileOutputStream: void write(byte[])>($r4) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <ai.advance.core.f: java.lang.String I()>
+    <ai.advance.core.f: java.lang.String I()>
+    <ai.advance.core.f: java.lang.String I()>
+    <ai.advance.event.j: void s()>
+    <ai.advance.event.j: void l(java.lang.String,java.lang.Object)>
+    <ai.advance.event.c: void l(java.lang.String,java.lang.Object)>
+    <ai.advance.event.c: void l(java.lang.String,java.lang.Object)>
+    <ai.advance.event.c: void l(java.lang.String,java.lang.Object)>
+    <ai.advance.event.j: void l(java.lang.String,java.lang.Object)>
+    <ai.advance.event.j: void s()>
+    <ai.advance.event.j: org.json.JSONObject m()>
+    <ai.advance.event.c: org.json.JSONObject m()>
+    <ai.advance.event.c: org.json.JSONObject m()>
+    <ai.advance.event.j: org.json.JSONObject m()>
+    <ai.advance.core.g: void j(java.lang.String)>
+    <ai.advance.core.g: void j(java.lang.String)>
+    <ai.advance.core.c: void j(java.lang.String)>
+    <ai.advance.core.c: void h(java.lang.String)>
+    <ai.advance.core.c: void h(java.lang.String)>
+    <b.d: void f(org.json.JSONObject,java.lang.String,java.lang.Object)>
+    <b.d: void f(org.json.JSONObject,java.lang.String,java.lang.Object)>
+    <ai.advance.core.c: void h(java.lang.String)>
+    <ai.advance.core.c: void h(java.lang.String)>
+    <b.c: void c(android.content.Context,java.lang.String,java.lang.String)>
+    <b.c: void c(android.content.Context,java.lang.String,java.lang.String)>
+    <b.c: void c(android.content.Context,java.lang.String,java.lang.String)>
+

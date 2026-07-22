@@ -1,0 +1,52 @@
+APK: com.pesohere.android_2024-05-14 (PhilippinesApproved)
+Leak 1:
+  Source: $r7 = virtualinvoke $r5.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r6, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("AppsFlyer_6.9.4", $r2) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.appsflyer.internal.AFc1ySDK: java.lang.String AFInAppEventType(java.lang.String)>
+    <com.appsflyer.internal.AFc1ySDK: java.lang.String AFInAppEventType(java.lang.String)>
+    <com.appsflyer.internal.AFc1ySDK: java.lang.String AFInAppEventType(java.lang.String)>
+    <com.appsflyer.internal.AFc1ySDK: java.lang.String AFInAppEventType(java.lang.String)>
+    <com.appsflyer.internal.AFc1ySDK: java.lang.String AFInAppEventType(java.lang.String)>
+    <com.appsflyer.internal.AFc1ySDK: java.lang.String AFInAppEventParameterName()>
+    <com.appsflyer.internal.AFb1zSDK: java.lang.String values(android.content.Context)>
+    <com.appsflyer.internal.AFb1zSDK: void AFKeystoreWrapper(java.lang.ref.WeakReference)>
+    <com.appsflyer.internal.AFb1zSDK: void AFKeystoreWrapper(java.lang.ref.WeakReference)>
+    <com.appsflyer.internal.AFb1zSDK: void AFKeystoreWrapper(java.lang.ref.WeakReference)>
+    <com.appsflyer.internal.AFb1zSDK: void AFKeystoreWrapper(java.lang.ref.WeakReference)>
+    <com.appsflyer.internal.AFc1zSDK: com.appsflyer.internal.AFd1fSDK AFLogger$LogLevel()>
+    <com.appsflyer.internal.AFc1zSDK: com.appsflyer.internal.AFd1fSDK AFLogger$LogLevel()>
+    <com.appsflyer.internal.AFb1zSDK: void AFKeystoreWrapper(java.lang.ref.WeakReference)>
+    <com.appsflyer.internal.AFb1zSDK: void AFKeystoreWrapper(java.lang.ref.WeakReference)>
+    <com.appsflyer.internal.AFb1zSDK$3: void values(android.content.Context)>
+    <com.appsflyer.internal.AFb1zSDK$3: void values(android.content.Context)>
+    <com.appsflyer.internal.AFb1zSDK$3: void values(android.content.Context)>
+    <com.appsflyer.internal.AFb1zSDK: com.appsflyer.internal.AFc1zSDK values(com.appsflyer.internal.AFb1zSDK)>
+    <com.appsflyer.internal.AFb1zSDK: com.appsflyer.internal.AFc1zSDK values(com.appsflyer.internal.AFb1zSDK)>
+    <com.appsflyer.internal.AFb1zSDK$3: void values(android.content.Context)>
+    <com.appsflyer.internal.AFb1nSDK: void values(java.lang.String,android.content.pm.PackageManager,com.appsflyer.internal.AFb1aSDK)>
+    <com.appsflyer.internal.AFd1nSDK: void <init>(java.util.Map,com.appsflyer.internal.AFb1aSDK)>
+    <com.appsflyer.internal.AFd1vSDK: void <init>(com.appsflyer.internal.AFc1fSDK,com.appsflyer.internal.AFc1fSDK[],com.appsflyer.internal.AFb1aSDK,java.lang.String)>
+    <com.appsflyer.internal.AFc1zSDK: com.appsflyer.internal.AFa1mSDK afErrorLogForExcManagerOnly()>
+    <com.appsflyer.internal.AFc1zSDK: com.appsflyer.internal.AFc1xSDK afWarnLog()>
+    <com.appsflyer.internal.AFc1zSDK: com.appsflyer.internal.AFa1mSDK afErrorLogForExcManagerOnly()>
+    <com.appsflyer.internal.AFd1vSDK: void <init>(com.appsflyer.internal.AFc1fSDK,com.appsflyer.internal.AFc1fSDK[],com.appsflyer.internal.AFb1aSDK,java.lang.String)>
+    <com.appsflyer.internal.AFc1zSDK: com.appsflyer.internal.AFd1fSDK AFLogger$LogLevel()>
+    <com.appsflyer.internal.AFc1zSDK: com.appsflyer.internal.AFd1fSDK AFLogger$LogLevel()>
+    <com.appsflyer.internal.AFd1vSDK: void <init>(com.appsflyer.internal.AFc1fSDK,com.appsflyer.internal.AFc1fSDK[],com.appsflyer.internal.AFb1aSDK,java.lang.String)>
+    <com.appsflyer.internal.AFd1vSDK: void <init>(com.appsflyer.internal.AFc1fSDK,com.appsflyer.internal.AFc1fSDK[],com.appsflyer.internal.AFc1vSDK,com.appsflyer.internal.AFd1fSDK,com.appsflyer.internal.AFb1nSDK,com.appsflyer.internal.AFa1mSDK,java.lang.String)>
+    <com.appsflyer.internal.AFd1vSDK: void <init>(com.appsflyer.internal.AFc1fSDK,com.appsflyer.internal.AFc1fSDK[],com.appsflyer.internal.AFc1vSDK,com.appsflyer.internal.AFd1fSDK,com.appsflyer.internal.AFb1nSDK,com.appsflyer.internal.AFa1mSDK,java.lang.String)>
+    <com.appsflyer.internal.AFd1vSDK: void <init>(com.appsflyer.internal.AFc1fSDK,com.appsflyer.internal.AFc1fSDK[],com.appsflyer.internal.AFb1aSDK,java.lang.String)>
+    <com.appsflyer.internal.AFd1nSDK: void <init>(java.util.Map,com.appsflyer.internal.AFb1aSDK)>
+    <com.appsflyer.internal.AFb1nSDK: void values(java.lang.String,android.content.pm.PackageManager,com.appsflyer.internal.AFb1aSDK)>
+    <com.appsflyer.internal.AFc1gSDK$1: void <init>(com.appsflyer.internal.AFc1gSDK,com.appsflyer.internal.AFc1eSDK)>
+    <com.appsflyer.internal.AFc1gSDK$1: void <init>(com.appsflyer.internal.AFc1gSDK,com.appsflyer.internal.AFc1eSDK)>
+    <com.appsflyer.internal.AFb1nSDK: void values(java.lang.String,android.content.pm.PackageManager,com.appsflyer.internal.AFb1aSDK)>
+    <com.appsflyer.internal.AFc1gSDK$1: void run()>
+    <com.appsflyer.internal.AFc1gSDK$1: void run()>
+    <com.appsflyer.internal.AFc1gSDK$1: void run()>
+    <com.appsflyer.internal.AFc1gSDK$1: void run()>
+    <com.appsflyer.AFLogger: void afDebugLog(java.lang.String)>
+    <com.appsflyer.AFLogger: java.lang.String valueOf(java.lang.String,boolean)>
+    <com.appsflyer.AFLogger: void afDebugLog(java.lang.String)>
+

@@ -1,0 +1,56 @@
+APK: Lipalater (KenyaApproved)
+Leak 1:
+  Source: $r3 = staticinvoke <android.os.Environment: java.io.File getExternalStorageDirectory()>() (<android.os.Environment: java.io.File getExternalStorageDirectory()>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r2, "Would like to authenticate, but config variable is nil") (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.smileidentity.libsmileid.core.SIFileManager: java.io.File getSmileIDDir()>
+    <com.smileidentity.libsmileid.core.SIFileManager: java.io.File getSmileIDDir()>
+    <com.smileidentity.libsmileid.core.SIFileManager: java.io.File getSmileIDDir()>
+    <com.smileidentity.libsmileid.core.SIFileManager: java.io.File getSmileIDDir()>
+    <com.smileidentity.libsmileid.core.SIFileManager: java.io.File getSmileIDDir()>
+    <com.smileidentity.libsmileid.core.SIFileManager: java.util.Set getIdleTags()>
+    <com.smileidentity.libsmileid.core.SIFileManager: java.util.Set getIdleTags()>
+    <com.smileidentity.libsmileid.core.SIFileManager: java.util.Set getIdleTags()>
+    <com.smileidentity.libsmileid.core.SIFileManager: java.util.Set getIdleTags()>
+    <com.smileidentity.libsmileid.core.SIFileManager: java.util.Set getIdleTags()>
+    <com.smileidentity.libsmileid.core.SIFileManager: java.util.Set getIdleTags()>
+    <com.smileidentity.libsmileid.core.AllJobsQueueHandler: void reloadIdleTags()>
+    <com.smileidentity.libsmileid.core.AllJobsQueueHandler: void reloadIdleTags()>
+    <com.smileidentity.libsmileid.core.AllJobsQueueHandler: void reloadIdleTags()>
+    <com.smileidentity.libsmileid.core.AllJobsQueueHandler: void dequeueNextJob()>
+    <com.smileidentity.libsmileid.core.SIDNetworkRequest: void dequeueNextJob(com.smileidentity.libsmileid.exception.SIDException)>
+    <com.smileidentity.libsmileid.core.SIDNetworkRequest: void dequeueNextJob(com.smileidentity.libsmileid.exception.SIDException)>
+    <com.smileidentity.libsmileid.core.SIDNetworkRequest: boolean checkTagExists(java.lang.String)>
+    <com.smileidentity.libsmileid.core.SIDNetworkRequest: void submit(com.smileidentity.libsmileid.core.SIDConfig)>
+    <com.lipalater.androidapp.smileId.SelfieAuthenticationActivity: void upload(com.smileidentity.libsmileid.core.SIDConfig)>
+    <com.lipalater.androidapp.smileId.SelfieAuthenticationActivity: void upload(com.smileidentity.libsmileid.core.SIDConfig)>
+    <com.lipalater.androidapp.smileId.SelfieAuthenticationActivity: void onCreate(android.os.Bundle)>
+    <com.lipalater.androidapp.smileId.SelfieAuthenticationActivity: com.smileidentity.libsmileid.core.SIDConfig createConfig()>
+    <com.smileidentity.libsmileid.core.SIDConfig$Builder: void <init>(android.content.Context)>
+    <com.smileidentity.libsmileid.utils.AppData: com.smileidentity.libsmileid.utils.AppData getInstance(android.content.Context)>
+    <com.smileidentity.libsmileid.utils.AppData: void <init>(android.content.Context)>
+    <com.smileidentity.libsmileid.utils.AppData: void <init>(android.content.Context)>
+    <com.smileidentity.libsmileid.utils.AppData: com.smileidentity.libsmileid.utils.AppData getInstance(android.content.Context)>
+    <com.smileidentity.libsmileid.utils.AppData: com.smileidentity.libsmileid.utils.AppData getInstance(android.content.Context)>
+    <com.smileidentity.libsmileid.utils.AppData: com.smileidentity.libsmileid.utils.AppData getInstance(android.content.Context)>
+    <com.smileidentity.libsmileid.core.SIDConfig$Builder: void <init>(android.content.Context)>
+    <com.smileidentity.libsmileid.core.SIDConfig: com.smileidentity.libsmileid.utils.AppData access$302(com.smileidentity.libsmileid.core.SIDConfig,com.smileidentity.libsmileid.utils.AppData)>
+    <com.smileidentity.libsmileid.core.SIDConfig: com.smileidentity.libsmileid.utils.AppData access$302(com.smileidentity.libsmileid.core.SIDConfig,com.smileidentity.libsmileid.utils.AppData)>
+    <com.smileidentity.libsmileid.core.SIDConfig$Builder: void <init>(android.content.Context)>
+    <com.smileidentity.libsmileid.core.SIDConfig$Builder: void <init>(android.content.Context)>
+    <com.lipalater.androidapp.smileId.SelfieAuthenticationActivity: com.smileidentity.libsmileid.core.SIDConfig createConfig()>
+    <com.smileidentity.libsmileid.core.SIDConfig$Builder: com.smileidentity.libsmileid.core.SIDConfig build(java.lang.String)>
+    <com.smileidentity.libsmileid.core.SIDConfig$Builder: com.smileidentity.libsmileid.core.SIDConfig build(java.lang.String)>
+    <com.smileidentity.libsmileid.core.SIDConfig: void save()>
+    <com.smileidentity.libsmileid.core.SIDConfig: void save()>
+    <com.smileidentity.libsmileid.core.SIDNetworkRequest: void saveDataForLaterUse(java.lang.String,com.smileidentity.libsmileid.model.SIDNetData)>
+    <com.smileidentity.libsmileid.core.SIDConfig: void save()>
+    <com.smileidentity.libsmileid.core.SIDConfig: void save()>
+    <com.smileidentity.libsmileid.core.SIDConfig$Builder: com.smileidentity.libsmileid.core.SIDConfig build(java.lang.String)>
+    <com.smileidentity.libsmileid.core.SIDConfig$Builder: com.smileidentity.libsmileid.core.SIDConfig build(java.lang.String)>
+    <com.smileidentity.libsmileid.core.SIDConfig$Builder: com.smileidentity.libsmileid.core.SIDConfig build(java.lang.String)>
+    <com.lipalater.androidapp.smileId.SelfieAuthenticationActivity: com.smileidentity.libsmileid.core.SIDConfig createConfig()>
+    <com.lipalater.androidapp.smileId.SelfieAuthenticationActivity: void onCreate(android.os.Bundle)>
+    <com.lipalater.androidapp.smileId.SelfieAuthenticationActivity: void onCreate(android.os.Bundle)>
+    <com.lipalater.androidapp.smileId.SelfieAuthenticationActivity: void onCreate(android.os.Bundle)>
+

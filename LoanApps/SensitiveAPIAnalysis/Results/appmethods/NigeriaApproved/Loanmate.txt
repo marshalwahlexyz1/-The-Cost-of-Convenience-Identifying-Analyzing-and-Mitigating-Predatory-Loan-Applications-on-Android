@@ -1,0 +1,88 @@
+APK: Loanmate (NigeriaApproved)
+Leak 1:
+  Source: $r5 = virtualinvoke $r4.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r3, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r5.<java.io.FileOutputStream: void write(byte[])>($r7) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <q2.k0: java.lang.String v()>
+    <q2.k0: java.lang.String v()>
+    <q2.k0: java.lang.String v()>
+    <s2.c: void <init>(java.lang.Throwable,s2.c$c)>
+    <s2.c: void <init>(java.lang.Throwable,s2.c$c)>
+    <s2.c: void <init>(java.lang.Throwable,s2.c$c,ob.g)>
+    <s2.c$a: s2.c b(java.lang.Throwable,s2.c$c)>
+    <v2.a: void b(java.lang.Throwable,java.lang.Object)>
+    <s2.c: void g()>
+    <s2.c: java.lang.String toString()>
+    <s2.c: org.json.JSONObject e()>
+    <s2.c: org.json.JSONObject d()>
+    <s2.c: org.json.JSONObject d()>
+    <s2.c: org.json.JSONObject d()>
+    <s2.c: org.json.JSONObject e()>
+    <s2.c: java.lang.String toString()>
+    <s2.c: java.lang.String toString()>
+    <s2.c: void g()>
+    <s2.k: void s(java.lang.String,java.lang.String)>
+    <s2.k: void s(java.lang.String,java.lang.String)>
+
+Leak 2:
+  Source: $r5 = virtualinvoke $r3.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r4, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r5.<java.io.FileOutputStream: void write(byte[])>($r4) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <d.f: java.lang.String k()>
+    <d.f: java.lang.String k()>
+    <d.f: java.lang.String k()>
+    <e.h: void s()>
+    <e.h: void l(java.lang.String,java.lang.Object)>
+    <e.b: void l(java.lang.String,java.lang.Object)>
+    <e.b: void l(java.lang.String,java.lang.Object)>
+    <e.b: void l(java.lang.String,java.lang.Object)>
+    <e.h: void l(java.lang.String,java.lang.Object)>
+    <e.h: void s()>
+    <e.h: org.json.JSONObject m()>
+    <e.b: org.json.JSONObject m()>
+    <e.b: org.json.JSONObject m()>
+    <e.h: org.json.JSONObject m()>
+    <d.g: void j(java.lang.String)>
+    <d.g: void j(java.lang.String)>
+    <d.b: void j(java.lang.String)>
+    <d.b: void h(java.lang.String)>
+    <d.b: void h(java.lang.String)>
+    <c.d: void e(org.json.JSONObject,java.lang.String,java.lang.Object)>
+    <c.d: void e(org.json.JSONObject,java.lang.String,java.lang.Object)>
+    <d.b: void h(java.lang.String)>
+    <d.b: void h(java.lang.String)>
+    <c.c: void c(android.content.Context,java.lang.String,java.lang.String)>
+    <c.c: void c(android.content.Context,java.lang.String,java.lang.String)>
+    <c.c: void c(android.content.Context,java.lang.String,java.lang.String)>
+
+Leak 3:
+  Source: $r5 = virtualinvoke $r3.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r4, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r5.<java.io.FileOutputStream: void write(byte[])>($r4) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <d.f: java.lang.String g()>
+    <d.f: java.lang.String g()>
+    <d.f: java.lang.String g()>
+    <e.h: void s()>
+    <e.h: void l(java.lang.String,java.lang.Object)>
+    <e.b: void l(java.lang.String,java.lang.Object)>
+    <e.b: void l(java.lang.String,java.lang.Object)>
+    <e.b: void l(java.lang.String,java.lang.Object)>
+    <e.h: void l(java.lang.String,java.lang.Object)>
+    <e.h: void s()>
+    <e.h: org.json.JSONObject m()>
+    <e.b: org.json.JSONObject m()>
+    <e.b: org.json.JSONObject m()>
+    <e.h: org.json.JSONObject m()>
+    <d.g: void j(java.lang.String)>
+    <d.g: void j(java.lang.String)>
+    <d.b: void j(java.lang.String)>
+    <d.b: void h(java.lang.String)>
+    <d.b: void h(java.lang.String)>
+    <c.d: void e(org.json.JSONObject,java.lang.String,java.lang.Object)>
+    <c.d: void e(org.json.JSONObject,java.lang.String,java.lang.Object)>
+    <d.b: void h(java.lang.String)>
+    <d.b: void h(java.lang.String)>
+    <c.c: void c(android.content.Context,java.lang.String,java.lang.String)>
+    <c.c: void c(android.content.Context,java.lang.String,java.lang.String)>
+    <c.c: void c(android.content.Context,java.lang.String,java.lang.String)>
+

@@ -1,0 +1,26 @@
+APK: com.liang.chan_2024-04-08 (PhilippinesApproved)
+Leak 1:
+  Source: $r4 = virtualinvoke $r3.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r2, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r5.<java.io.FileOutputStream: void write(byte[])>($r7) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <o05: java.lang.String v()>
+    <o05: java.lang.String v()>
+    <o05: java.lang.String v()>
+    <c42: void <init>(java.lang.Throwable,c42$c)>
+    <c42: void <init>(java.lang.Throwable,c42$c)>
+    <c42: void <init>(java.lang.Throwable,c42$c,gw0)>
+    <c42$a: c42 b(java.lang.Throwable,c42$c)>
+    <in0: void b(java.lang.Throwable,java.lang.Object)>
+    <c42: void g()>
+    <c42: java.lang.String toString()>
+    <c42: org.json.JSONObject e()>
+    <c42: org.json.JSONObject d()>
+    <c42: org.json.JSONObject d()>
+    <c42: org.json.JSONObject d()>
+    <c42: org.json.JSONObject e()>
+    <c42: java.lang.String toString()>
+    <c42: java.lang.String toString()>
+    <c42: void g()>
+    <k42: void s(java.lang.String,java.lang.String)>
+    <k42: void s(java.lang.String,java.lang.String)>
+

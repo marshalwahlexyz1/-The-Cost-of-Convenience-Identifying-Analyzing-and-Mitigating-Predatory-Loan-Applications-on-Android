@@ -1,0 +1,265 @@
+APK: HerVest (NigeriaApproved)
+Leak 1:
+  Source: $r4 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r3, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r0.<java.io.OutputStream: void write(byte[])>($r12) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <uh.f: android.util.Pair l(android.content.Context)>
+    <uh.f: android.util.Pair l(android.content.Context)>
+    <uh.f: android.util.Pair l(android.content.Context)>
+    <uh.f: android.util.Pair l(android.content.Context)>
+    <uh.f: android.util.Pair l(android.content.Context)>
+    <mh.u0: java.io.File b(java.lang.String,mh.t5,java.lang.String)>
+    <mh.u0: java.io.File b(java.lang.String,mh.t5,java.lang.String)>
+    <mh.u0: java.io.File b(java.lang.String,mh.t5,java.lang.String)>
+    <mh.u0: java.io.File b(java.lang.String,mh.t5,java.lang.String)>
+    <mh.u0: void g(java.lang.String,java.lang.String)>
+    <mh.u0: void g(java.lang.String,java.lang.String)>
+
+Leak 2:
+  Source: $r5 = virtualinvoke $r3.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r4, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("ManifestParser", $r4) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <i8.e: java.util.List a()>
+    <i8.e: java.util.List a()>
+    <i8.e: java.util.List a()>
+    <i8.e: java.util.List a()>
+    <i8.e: java.util.List a()>
+    <i8.e: java.util.List a()>
+    <i8.e: java.util.List a()>
+    <i8.e: java.util.List a()>
+    <i8.e: java.util.List a()>
+
+Leak 3:
+  Source: $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r2, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("FragmentManager", $r5) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <bk.a: android.content.pm.ApplicationInfo a(android.content.Context)>
+    <bk.a: android.content.pm.ApplicationInfo a(android.content.Context)>
+    <bk.a: bk.b e(android.content.Context)>
+    <bk.a: bk.b e(android.content.Context)>
+    <bk.a: java.lang.String d(android.os.Bundle,java.lang.String)>
+    <bk.a: java.lang.String d(android.os.Bundle,java.lang.String)>
+    <bk.a: bk.b e(android.content.Context)>
+    <bk.b: void <init>(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean)>
+    <bk.b: void <init>(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean)>
+    <bk.a: bk.b e(android.content.Context)>
+    <bk.f: void s(android.content.Context,bk.f$c)>
+    <bk.f: void s(android.content.Context,bk.f$c)>
+    <bk.f: void r(android.content.Context)>
+    <ok.e: void k(bk.f,android.os.Handler,yj.e,long)>
+    <ok.e: void a(ok.e,bk.f,android.os.Handler,yj.e,long)>
+    <ok.c: void run()>
+    <ok.c: void run()>
+    <android.os.Handler: boolean post(java.lang.Runnable)>
+    <h5.h0: void q1()>
+    <h5.h0: void q1()>
+    <h5.h0: void y1()>
+    <h5.h0: void y1()>
+    <h5.h0: void y1()>
+
+Leak 4:
+  Source: $r2 = staticinvoke <android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>($r3) (<android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>)
+  Sink: virtualinvoke $r5.<java.io.FileOutputStream: void write(byte[])>($r12) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <uh.c: java.io.File a(java.lang.String)>
+    <uh.c: java.io.File a(java.lang.String)>
+    <uh.c: java.io.File a(java.lang.String)>
+    <uh.c: java.lang.String d(boolean)>
+    <uh.c: java.lang.String d(boolean)>
+    <uh.c: java.lang.String g(java.lang.String,java.lang.Boolean)>
+    <uh.c: java.lang.String g(java.lang.String,java.lang.Boolean)>
+    <uh.c: java.lang.String g(java.lang.String,java.lang.Boolean)>
+    <mh.r5: void f(java.lang.String,boolean,java.io.File)>
+    <mh.u0: java.io.File b(java.lang.String,mh.t5,java.lang.String)>
+    <mh.u0: java.io.File b(java.lang.String,mh.t5,java.lang.String)>
+    <mh.u0: void g(java.lang.String,java.lang.String)>
+    <mh.u0: void g(java.lang.String,java.lang.String)>
+    <mh.u0: void g(java.lang.String,java.lang.String)>
+    <mh.u0: void g(java.lang.String,java.lang.String)>
+
+Leak 5:
+  Source: $r4 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r3, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r5.<java.io.FileOutputStream: void write(byte[])>($r12) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <uh.f: android.util.Pair l(android.content.Context)>
+    <uh.f: android.util.Pair l(android.content.Context)>
+    <uh.f: android.util.Pair l(android.content.Context)>
+    <uh.f: android.util.Pair l(android.content.Context)>
+    <uh.f: android.util.Pair l(android.content.Context)>
+    <mh.u0: java.io.File b(java.lang.String,mh.t5,java.lang.String)>
+    <mh.u0: java.io.File b(java.lang.String,mh.t5,java.lang.String)>
+    <mh.u0: java.io.File b(java.lang.String,mh.t5,java.lang.String)>
+    <mh.u0: java.io.File b(java.lang.String,mh.t5,java.lang.String)>
+    <mh.u0: void g(java.lang.String,java.lang.String)>
+    <mh.u0: void g(java.lang.String,java.lang.String)>
+
+Leak 6:
+  Source: $r2 = staticinvoke <android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>($r3) (<android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>)
+  Sink: virtualinvoke $r5.<java.io.FileOutputStream: void write(byte[])>($r6) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <uh.c: java.io.File a(java.lang.String)>
+    <uh.c: java.io.File a(java.lang.String)>
+    <uh.c: java.io.File a(java.lang.String)>
+    <uh.c: java.lang.String d(boolean)>
+    <uh.c: java.lang.String d(boolean)>
+    <uh.c: java.lang.String g(java.lang.String,java.lang.Boolean)>
+    <uh.c: java.lang.String g(java.lang.String,java.lang.Boolean)>
+    <uh.c: java.lang.String g(java.lang.String,java.lang.Boolean)>
+    <mh.u0: void f(java.lang.String)>
+    <mh.u0: void f(java.lang.String)>
+    <mh.u0: void f(java.lang.String)>
+    <mh.u0: void f(java.lang.String)>
+
+Leak 7:
+  Source: $r2 = staticinvoke <android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>($r3) (<android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>)
+  Sink: virtualinvoke $r0.<java.io.OutputStream: void write(byte[])>($r4) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <uh.c: java.io.File a(java.lang.String)>
+    <uh.c: java.io.File a(java.lang.String)>
+    <uh.c: java.io.File a(java.lang.String)>
+    <uh.c: java.lang.String d(boolean)>
+    <uh.c: java.lang.String d(boolean)>
+    <uh.c: java.lang.String g(java.lang.String,java.lang.Boolean)>
+    <uh.c: java.lang.String g(java.lang.String,java.lang.Boolean)>
+    <uh.c: java.lang.String g(java.lang.String,java.lang.Boolean)>
+    <mh.t3: java.lang.Object invokeSuspend(java.lang.Object)>
+    <mh.u0: java.io.File b(java.lang.String,mh.t5,java.lang.String)>
+    <mh.u0: java.io.File b(java.lang.String,mh.t5,java.lang.String)>
+    <mh.u0: void g(java.lang.String,java.lang.String)>
+    <mh.u0: void g(java.lang.String,java.lang.String)>
+    <mh.u0: void g(java.lang.String,java.lang.String)>
+    <mh.u0: void g(java.lang.String,java.lang.String)>
+    <mh.u0: void g(java.lang.String,java.lang.String)>
+    <mh.u0: void h(java.util.zip.ZipOutputStream,java.io.ByteArrayOutputStream,mh.i7)>
+
+Leak 8:
+  Source: $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r2, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("FragmentManager", $r5) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <bk.a: android.content.pm.ApplicationInfo a(android.content.Context)>
+    <bk.a: android.content.pm.ApplicationInfo a(android.content.Context)>
+    <bk.a: bk.b e(android.content.Context)>
+    <bk.a: bk.b e(android.content.Context)>
+    <bk.b: void <init>(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean)>
+    <bk.b: void <init>(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean)>
+    <bk.a: bk.b e(android.content.Context)>
+    <bk.f: void s(android.content.Context,bk.f$c)>
+    <bk.f: void s(android.content.Context,bk.f$c)>
+    <bk.f: void r(android.content.Context)>
+    <ok.e: void k(bk.f,android.os.Handler,yj.e,long)>
+    <ok.e: void a(ok.e,bk.f,android.os.Handler,yj.e,long)>
+    <ok.c: void run()>
+    <ok.c: void run()>
+    <android.os.Handler: boolean post(java.lang.Runnable)>
+    <h5.h0: void q1()>
+    <h5.h0: void q1()>
+    <h5.h0: void y1()>
+    <h5.h0: void y1()>
+    <h5.h0: void y1()>
+
+Leak 9:
+  Source: $r4 = virtualinvoke $r3.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r2, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r5.<java.io.FileOutputStream: void write(byte[])>($r7) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <g9.n0: java.lang.String w()>
+    <g9.n0: java.lang.String w()>
+    <g9.n0: java.lang.String w()>
+    <i9.c: void <init>(java.lang.Throwable,i9.c$c)>
+    <i9.c: void <init>(java.lang.Throwable,i9.c$c)>
+    <i9.c: void <init>(java.lang.Throwable,i9.c$c,nl.g)>
+    <i9.c$a: i9.c b(java.lang.Throwable,i9.c$c)>
+    <l9.a: void b(java.lang.Throwable,java.lang.Object)>
+    <i9.c: void g()>
+    <i9.c: java.lang.String toString()>
+    <i9.c: org.json.JSONObject e()>
+    <i9.c: org.json.JSONObject d()>
+    <i9.c: org.json.JSONObject d()>
+    <i9.c: org.json.JSONObject d()>
+    <i9.c: org.json.JSONObject e()>
+    <i9.c: java.lang.String toString()>
+    <i9.c: java.lang.String toString()>
+    <i9.c: void g()>
+    <i9.k: void t(java.lang.String,java.lang.String)>
+    <i9.k: void t(java.lang.String,java.lang.String)>
+
+Leak 10:
+  Source: $r2 = staticinvoke <android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>($r3) (<android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>)
+  Sink: virtualinvoke $r0.<java.io.OutputStream: void write(byte[])>($r4) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <uh.c: java.io.File a(java.lang.String)>
+    <uh.c: java.io.File a(java.lang.String)>
+    <uh.c: java.io.File a(java.lang.String)>
+    <uh.c: java.lang.String d(boolean)>
+    <uh.c: java.lang.String d(boolean)>
+    <mh.m5: void e(java.io.File,java.lang.String)>
+    <mh.m5: void e(java.io.File,java.lang.String)>
+    <mh.m5: void e(java.io.File,java.lang.String)>
+    <mh.u0: java.io.File b(java.lang.String,mh.t5,java.lang.String)>
+    <mh.u0: java.io.File b(java.lang.String,mh.t5,java.lang.String)>
+    <mh.u0: void g(java.lang.String,java.lang.String)>
+    <mh.u0: void g(java.lang.String,java.lang.String)>
+    <mh.u0: void g(java.lang.String,java.lang.String)>
+    <mh.u0: void g(java.lang.String,java.lang.String)>
+    <mh.u0: void g(java.lang.String,java.lang.String)>
+    <mh.u0: void h(java.util.zip.ZipOutputStream,java.io.ByteArrayOutputStream,mh.i7)>
+
+Leak 11:
+  Source: $r2 = staticinvoke <android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>($r3) (<android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>)
+  Sink: virtualinvoke $r1.<java.io.OutputStream: void write(byte[])>($r7) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <uh.c: java.io.File a(java.lang.String)>
+    <uh.c: java.io.File a(java.lang.String)>
+    <uh.c: java.io.File a(java.lang.String)>
+    <uh.c: java.lang.String d(boolean)>
+    <uh.c: java.lang.String d(boolean)>
+    <uh.c: java.lang.String g(java.lang.String,java.lang.Boolean)>
+    <uh.c: java.lang.String g(java.lang.String,java.lang.Boolean)>
+    <uh.c: java.lang.String g(java.lang.String,java.lang.Boolean)>
+    <uh.c: java.lang.String f(java.lang.String,java.lang.Boolean)>
+    <mh.c5: java.io.File f()>
+    <mh.c5: java.io.File f()>
+    <mh.c5: void <init>()>
+    <mh.c5: void <init>()>
+    <mh.c5: void <init>()>
+    <mh.c5: void d(java.util.concurrent.CountDownLatch)>
+    <mh.c5: void d(java.util.concurrent.CountDownLatch)>
+    <mh.z4: void run()>
+    <mh.c5: mh.c5 a()>
+    <mh.c5: mh.c5 a()>
+    <mh.r5: void e(java.lang.String)>
+    <mh.c5: void e(mh.n5)>
+    <mh.c5: void e(mh.n5)>
+    <mh.p5: void a(java.io.File)>
+    <mh.c5: void e(mh.n5)>
+    <mh.c5: void e(mh.n5)>
+    <mh.c5: void k()>
+    <mh.c5: void k()>
+    <mh.f9: void <init>(java.io.File)>
+    <mh.f9: void <init>(java.io.File)>
+    <mh.c5: void k()>
+    <mh.c5: void k()>
+    <mh.c5: void k()>
+    <mh.c5: void k()>
+    <mh.c5: void k()>
+    <mh.c5: void k()>
+    <mh.f9: void c(java.util.zip.ZipOutputStream)>
+
+Leak 12:
+  Source: $r4 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r3, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r4.<java.io.OutputStream: void write(byte[])>($r6) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <uh.f: android.util.Pair l(android.content.Context)>
+    <uh.f: android.util.Pair l(android.content.Context)>
+    <uh.f: android.util.Pair l(android.content.Context)>
+    <uh.f: android.util.Pair l(android.content.Context)>
+    <uh.f: android.util.Pair l(android.content.Context)>
+    <mh.u0: java.io.File b(java.lang.String,mh.t5,java.lang.String)>
+    <mh.u0: java.io.File b(java.lang.String,mh.t5,java.lang.String)>
+    <mh.u0: java.io.File b(java.lang.String,mh.t5,java.lang.String)>
+    <mh.u0: java.io.File b(java.lang.String,mh.t5,java.lang.String)>
+    <mh.t5: void b(java.lang.String)>
+    <mh.t5: void b(java.lang.String)>
+    <mh.u5: void a()>
+    <mh.u5: void a()>
+    <mh.u5: void a()>
+

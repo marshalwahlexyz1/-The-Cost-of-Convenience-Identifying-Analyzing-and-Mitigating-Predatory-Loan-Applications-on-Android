@@ -1,0 +1,15 @@
+APK: Muawin (PakistanApproved)
+Leak 1:
+  Source: $r8 = virtualinvoke $r6.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r7, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("ManifestParser", $r7) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <d.d.a.b: void a(android.content.Context,com.bumptech.glide.GeneratedAppGlideModule)>
+    <d.d.a.b: void a(android.content.Context,com.bumptech.glide.GeneratedAppGlideModule)>
+    <d.d.a.b: void a(android.content.Context,com.bumptech.glide.GeneratedAppGlideModule)>
+    <d.d.a.b: void a(android.content.Context,com.bumptech.glide.GeneratedAppGlideModule)>
+    <d.d.a.b: void a(android.content.Context,com.bumptech.glide.GeneratedAppGlideModule)>
+    <d.d.a.b: void a(android.content.Context,com.bumptech.glide.GeneratedAppGlideModule)>
+    <d.d.a.b: void a(android.content.Context,com.bumptech.glide.GeneratedAppGlideModule)>
+    <d.d.a.b: void a(android.content.Context,com.bumptech.glide.GeneratedAppGlideModule)>
+    <d.d.a.b: void a(android.content.Context,com.bumptech.glide.GeneratedAppGlideModule)>
+

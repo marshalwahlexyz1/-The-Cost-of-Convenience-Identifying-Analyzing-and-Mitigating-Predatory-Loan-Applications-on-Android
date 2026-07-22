@@ -1,0 +1,168 @@
+APK: Mycredit (KenyaApproved)
+Leak 1:
+  Source: $r3 = virtualinvoke $r2.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() (<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r3, $r5) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.mycredit.mycredit.activity.Helaplan: java.lang.String readIMSI()>
+    <com.mycredit.mycredit.activity.Helaplan: java.lang.String readIMSI()>
+    <com.mycredit.mycredit.activity.Helaplan: java.lang.String readIMSI()>
+    <com.mycredit.mycredit.activity.Helaplan: java.lang.String readIMSI()>
+    <com.mycredit.mycredit.activity.Helaplan: java.lang.String readIMSI()>
+    <com.mycredit.mycredit.activity.Helaplan: java.lang.String readIMSI()>
+
+Leak 2:
+  Source: $r5 = virtualinvoke r0.<com.mycredit.mycredit.activity.UserLoginActivity: android.view.View findViewById(int)>(2131296634) (None)
+  Sink: staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r6, $r7) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.mycredit.mycredit.activity.UserLoginActivity: void onCreate(android.os.Bundle)>
+    <com.mycredit.mycredit.activity.UserLoginActivity: void onCreate(android.os.Bundle)>
+    <com.mycredit.mycredit.activity.UserLoginActivity: void onCreate(android.os.Bundle)>
+    <com.mycredit.mycredit.activity.UserLoginActivity: void onCreate(android.os.Bundle)>
+    <dummyMainClass: com.mycredit.mycredit.activity.UserLoginActivity dummyMainMethod_com_mycredit_mycredit_activity_UserLoginActivity(android.content.Intent)>
+    <com.mycredit.mycredit.activity.UserLoginActivity: void onClick(android.view.View)>
+    <com.mycredit.mycredit.activity.UserLoginActivity: void onClick(android.view.View)>
+    <com.mycredit.mycredit.activity.UserLoginActivity: void onClick(android.view.View)>
+    <com.mycredit.mycredit.activity.UserLoginActivity: void onClick(android.view.View)>
+    <com.mycredit.mycredit.activity.UserLoginActivity: void onClick(android.view.View)>
+    <com.mycredit.mycredit.activity.Helaplan: void putPayload(java.lang.String,java.lang.String)>
+    <com.mycredit.mycredit.activity.Helaplan: void putPayload(java.lang.String,java.lang.String)>
+    <com.mycredit.mycredit.activity.Helaplan: void putPayload(java.lang.String,java.lang.String)>
+    <com.mycredit.mycredit.activity.UserLoginActivity: void onClick(android.view.View)>
+    <com.mycredit.mycredit.activity.UserLoginActivity: void onClick(android.view.View)>
+    <dummyMainClass: com.mycredit.mycredit.activity.UserLoginActivity dummyMainMethod_com_mycredit_mycredit_activity_UserLoginActivity(android.content.Intent)>
+    <com.mycredit.mycredit.activity.UserLoginActivity: void onResume()>
+    <android.app.Activity: android.app.Application getApplication()>
+    <com.mycredit.mycredit.activity.UserLoginActivity: void onResume()>
+    <dummyMainClass: com.mycredit.mycredit.activity.UserLoginActivity dummyMainMethod_com_mycredit_mycredit_activity_UserLoginActivity(android.content.Intent)>
+    <com.mycredit.mycredit.activity.UserLoginActivity: void onCreate(android.os.Bundle)>
+    <com.mycredit.mycredit.activity.UserLoginActivity: void setUpReadSMS()>
+    <com.mycredit.mycredit.activity.UserLoginActivity: void setUpReadSMS()>
+    <com.mycredit.mycredit.sms.SMSReceiver: void <init>(java.util.List,android.content.Context,com.mycredit.mycredit.activity.Helaplan,java.lang.String)>
+    <com.mycredit.mycredit.sms.SMSReceiver: void <init>(java.util.List,android.content.Context,com.mycredit.mycredit.activity.Helaplan,java.lang.String)>
+    <com.mycredit.mycredit.activity.UserLoginActivity: void setUpReadSMS()>
+    <com.mycredit.mycredit.activity.UserLoginActivity: void setUpReadSMS()>
+    <com.mycredit.mycredit.activity.UserLoginActivity: void onCreate(android.os.Bundle)>
+    <dummyMainClass: com.mycredit.mycredit.activity.UserLoginActivity dummyMainMethod_com_mycredit_mycredit_activity_UserLoginActivity(android.content.Intent)>
+    <com.mycredit.mycredit.activity.UserLoginActivity: void onResume()>
+    <com.mycredit.mycredit.activity.Helaplan: void setActivity(android.app.Activity)>
+    <com.mycredit.mycredit.activity.Helaplan: void setActivity(android.app.Activity)>
+    <com.mycredit.mycredit.activity.UserLoginActivity: void onResume()>
+    <com.mycredit.mycredit.activity.UserLoginActivity: void onResume()>
+    <com.mycredit.mycredit.activity.UserLoginActivity: void onResume()>
+    <com.mycredit.mycredit.activity.UserLoginActivity: void onResume()>
+    <android.app.Activity: android.app.Application getApplication()>
+    <android.app.Activity: android.app.Application getApplication()>
+    <com.mycredit.mycredit.activity.UserLoginActivity: void onResume()>
+    <android.app.Activity: android.app.Application getApplication()>
+    <com.mycredit.mycredit.activity.UserLoginActivity: void onCreate(android.os.Bundle)>
+    <dummyMainClass: com.mycredit.mycredit.activity.ForgotPasswordActivity dummyMainMethod_com_mycredit_mycredit_activity_ForgotPasswordActivity(android.content.Intent)>
+    <com.mycredit.mycredit.activity.ForgotPasswordActivity: void onResume()>
+    <android.app.Activity: android.app.Application getApplication()>
+    <android.app.Activity: android.app.Application getApplication()>
+    <com.mycredit.mycredit.activity.ForgotPasswordActivity: void onResume()>
+    <com.mycredit.mycredit.activity.ForgotPasswordActivity: void onResume()>
+    <com.mycredit.mycredit.activity.ForgotPasswordActivity: void onResume()>
+    <dummyMainClass: com.mycredit.mycredit.activity.ForgotPasswordActivity dummyMainMethod_com_mycredit_mycredit_activity_ForgotPasswordActivity(android.content.Intent)>
+    <com.mycredit.mycredit.activity.ForgotPasswordActivity: void onCreate(android.os.Bundle)>
+    <com.mycredit.mycredit.activity.ForgotPasswordActivity: void onCreate(android.os.Bundle)>
+    <com.mycredit.mycredit.sms.SMSReceiver: void <init>(java.util.List,android.content.Context,com.mycredit.mycredit.activity.Helaplan,java.lang.String)>
+    <com.mycredit.mycredit.sms.SMSReceiver: void <init>(java.util.List,android.content.Context,com.mycredit.mycredit.activity.Helaplan,java.lang.String)>
+    <com.mycredit.mycredit.activity.ForgotPasswordActivity: void onCreate(android.os.Bundle)>
+    <com.mycredit.mycredit.activity.ForgotPasswordActivity: void onCreate(android.os.Bundle)>
+    <com.mycredit.mycredit.activity.ForgotPasswordActivity: void fetchSecurityQuestion(java.lang.String,java.lang.String)>
+    <com.mycredit.mycredit.activity.ForgotPasswordActivity: void fetchSecurityQuestion(java.lang.String,java.lang.String)>
+    <com.mycredit.mycredit.activity.Helaplan: void putPayload(java.lang.String,java.lang.String)>
+    <com.mycredit.mycredit.activity.ForgotPasswordActivity: void fetchSecurityQuestion(java.lang.String,java.lang.String)>
+    <com.mycredit.mycredit.activity.ForgotPasswordActivity: void fetchSecurityQuestion(java.lang.String,java.lang.String)>
+    <com.mycredit.mycredit.activity.ForgotPasswordActivity: void fetchSecurityQuestion(java.lang.String,java.lang.String)>
+    <com.mycredit.mycredit.activity.Helaplan: org.json.JSONObject getPayloadObject()>
+    <com.mycredit.mycredit.activity.Helaplan: org.json.JSONObject getPayloadObject()>
+    <com.mycredit.mycredit.activity.ForgotPasswordActivity: void fetchSecurityQuestion(java.lang.String,java.lang.String)>
+    <com.mycredit.mycredit.network.VolleyManager: void sendJsonObjectRequestRequest(android.content.Context,java.lang.String,org.json.JSONObject,int)>
+    <com.mycredit.mycredit.network.VolleyManager: void sendJsonObjectRequestRequest(android.content.Context,java.lang.String,org.json.JSONObject,int)>
+    <com.mycredit.mycredit.network.VolleyManager: void sendJsonObjectRequestRequest(android.content.Context,java.lang.String,org.json.JSONObject,int)>
+
+Leak 3:
+  Source: $r5 = virtualinvoke r0.<com.mycredit.mycredit.activity.ForgotPasswordActivity: android.view.View findViewById(int)>(2131296634) (None)
+  Sink: staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r6, $r7) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.mycredit.mycredit.activity.ForgotPasswordActivity: void onCreate(android.os.Bundle)>
+    <com.mycredit.mycredit.activity.ForgotPasswordActivity: void onCreate(android.os.Bundle)>
+    <com.mycredit.mycredit.activity.ForgotPasswordActivity: void onCreate(android.os.Bundle)>
+    <com.mycredit.mycredit.activity.ForgotPasswordActivity: void onCreate(android.os.Bundle)>
+    <dummyMainClass: com.mycredit.mycredit.activity.ForgotPasswordActivity dummyMainMethod_com_mycredit_mycredit_activity_ForgotPasswordActivity(android.content.Intent)>
+    <com.mycredit.mycredit.activity.ForgotPasswordActivity: void onClick(android.view.View)>
+    <com.mycredit.mycredit.activity.ForgotPasswordActivity: void onClick(android.view.View)>
+    <com.mycredit.mycredit.activity.Helaplan: void clearPayloadObject()>
+    <com.mycredit.mycredit.activity.ForgotPasswordActivity: void onClick(android.view.View)>
+    <com.mycredit.mycredit.activity.ForgotPasswordActivity: void onClick(android.view.View)>
+    <com.mycredit.mycredit.activity.ForgotPasswordActivity: void onClick(android.view.View)>
+    <com.mycredit.mycredit.activity.ForgotPasswordActivity: void onClick(android.view.View)>
+    <com.mycredit.mycredit.activity.ForgotPasswordActivity: void onClick(android.view.View)>
+    <com.mycredit.mycredit.activity.ForgotPasswordActivity: void onClick(android.view.View)>
+    <com.mycredit.mycredit.activity.Helaplan: void putPayload(java.lang.String,java.lang.String)>
+    <com.mycredit.mycredit.activity.Helaplan: void putPayload(java.lang.String,java.lang.String)>
+    <com.mycredit.mycredit.activity.Helaplan: void putPayload(java.lang.String,java.lang.String)>
+    <com.mycredit.mycredit.activity.ForgotPasswordActivity: void onClick(android.view.View)>
+    <com.mycredit.mycredit.activity.ForgotPasswordActivity: void onClick(android.view.View)>
+    <dummyMainClass: com.mycredit.mycredit.activity.ForgotPasswordActivity dummyMainMethod_com_mycredit_mycredit_activity_ForgotPasswordActivity(android.content.Intent)>
+    <com.mycredit.mycredit.activity.ForgotPasswordActivity: void onCreate(android.os.Bundle)>
+    <com.mycredit.mycredit.activity.ForgotPasswordActivity: void onCreate(android.os.Bundle)>
+    <com.mycredit.mycredit.sms.SMSReceiver: void <init>(java.util.List,android.content.Context,com.mycredit.mycredit.activity.Helaplan,java.lang.String)>
+    <com.mycredit.mycredit.sms.SMSReceiver: void <init>(java.util.List,android.content.Context,com.mycredit.mycredit.activity.Helaplan,java.lang.String)>
+    <com.mycredit.mycredit.activity.ForgotPasswordActivity: void onCreate(android.os.Bundle)>
+    <com.mycredit.mycredit.activity.ForgotPasswordActivity: void onCreate(android.os.Bundle)>
+    <com.mycredit.mycredit.activity.ForgotPasswordActivity: void fetchSecurityQuestion(java.lang.String,java.lang.String)>
+    <com.mycredit.mycredit.activity.ForgotPasswordActivity: void fetchSecurityQuestion(java.lang.String,java.lang.String)>
+    <com.mycredit.mycredit.activity.Helaplan: void putPayload(java.lang.String,java.lang.String)>
+    <com.mycredit.mycredit.activity.ForgotPasswordActivity: void fetchSecurityQuestion(java.lang.String,java.lang.String)>
+    <com.mycredit.mycredit.activity.ForgotPasswordActivity: void fetchSecurityQuestion(java.lang.String,java.lang.String)>
+    <com.mycredit.mycredit.activity.ForgotPasswordActivity: void fetchSecurityQuestion(java.lang.String,java.lang.String)>
+    <com.mycredit.mycredit.activity.Helaplan: org.json.JSONObject getPayloadObject()>
+    <com.mycredit.mycredit.activity.Helaplan: org.json.JSONObject getPayloadObject()>
+    <com.mycredit.mycredit.activity.ForgotPasswordActivity: void fetchSecurityQuestion(java.lang.String,java.lang.String)>
+    <com.mycredit.mycredit.network.VolleyManager: void sendJsonObjectRequestRequest(android.content.Context,java.lang.String,org.json.JSONObject,int)>
+    <com.mycredit.mycredit.network.VolleyManager: void sendJsonObjectRequestRequest(android.content.Context,java.lang.String,org.json.JSONObject,int)>
+    <com.mycredit.mycredit.network.VolleyManager: void sendJsonObjectRequestRequest(android.content.Context,java.lang.String,org.json.JSONObject,int)>
+
+Leak 4:
+  Source: $r3 = virtualinvoke $r2.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() (<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>)
+  Sink: staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r6, $r7) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.mycredit.mycredit.activity.Helaplan: java.lang.String readIMSI()>
+    <com.mycredit.mycredit.activity.Helaplan: java.lang.String readIMSI()>
+    <com.mycredit.mycredit.activity.Helaplan: java.lang.String readIMSI()>
+    <com.mycredit.mycredit.activity.Helaplan: java.lang.String readIMSI()>
+    <com.mycredit.mycredit.activity.SignUpActivity: void counterCheckPermissionsBeforeSubmit()>
+    <com.mycredit.mycredit.activity.Helaplan: void putPayload(java.lang.String,java.lang.String)>
+    <com.mycredit.mycredit.activity.Helaplan: void putPayload(java.lang.String,java.lang.String)>
+    <com.mycredit.mycredit.activity.Helaplan: void putPayload(java.lang.String,java.lang.String)>
+    <com.mycredit.mycredit.activity.SignUpActivity: void counterCheckPermissionsBeforeSubmit()>
+    <com.mycredit.mycredit.activity.SignUpActivity: void counterCheckPermissionsBeforeSubmit()>
+    <com.mycredit.mycredit.activity.SignUpActivity: void onRequestPermissionsResult(int,java.lang.String[],int[])>
+    <dummyMainClass: com.mycredit.mycredit.activity.SignUpActivity dummyMainMethod_com_mycredit_mycredit_activity_SignUpActivity(android.content.Intent)>
+    <com.mycredit.mycredit.activity.SignUpActivity$2: void <init>(com.mycredit.mycredit.activity.SignUpActivity,com.mycredit.mycredit.fragments.DatePickerFragment)>
+    <com.mycredit.mycredit.activity.SignUpActivity$2: void <init>(com.mycredit.mycredit.activity.SignUpActivity,com.mycredit.mycredit.fragments.DatePickerFragment)>
+    <dummyMainClass: com.mycredit.mycredit.activity.SignUpActivity dummyMainMethod_com_mycredit_mycredit_activity_SignUpActivity(android.content.Intent)>
+    <com.mycredit.mycredit.activity.SignUpActivity$2: void onClick(android.view.View)>
+    <com.mycredit.mycredit.activity.SignUpActivity$2$1: void <init>(com.mycredit.mycredit.activity.SignUpActivity$2)>
+    <com.mycredit.mycredit.activity.SignUpActivity$2$1: void <init>(com.mycredit.mycredit.activity.SignUpActivity$2)>
+    <com.mycredit.mycredit.activity.SignUpActivity$2: void onClick(android.view.View)>
+    <com.mycredit.mycredit.fragments.DatePickerFragment: void setCallBack(android.app.DatePickerDialog$OnDateSetListener)>
+    <com.mycredit.mycredit.fragments.DatePickerFragment: void setCallBack(android.app.DatePickerDialog$OnDateSetListener)>
+    <com.mycredit.mycredit.activity.SignUpActivity$2: void onClick(android.view.View)>
+    <com.mycredit.mycredit.activity.SignUpActivity$2: void onClick(android.view.View)>
+    <dummyMainClass: com.mycredit.mycredit.activity.SignUpActivity dummyMainMethod_com_mycredit_mycredit_activity_SignUpActivity(android.content.Intent)>
+    <com.mycredit.mycredit.activity.SignUpActivity$2: void <init>(com.mycredit.mycredit.activity.SignUpActivity,com.mycredit.mycredit.fragments.DatePickerFragment)>
+    <com.mycredit.mycredit.activity.SignUpActivity$2: void <init>(com.mycredit.mycredit.activity.SignUpActivity,com.mycredit.mycredit.fragments.DatePickerFragment)>
+    <dummyMainClass: com.mycredit.mycredit.activity.SignUpActivity dummyMainMethod_com_mycredit_mycredit_activity_SignUpActivity(android.content.Intent)>
+    <com.mycredit.mycredit.activity.SignUpActivity: void onRequestPermissionsResult(int,java.lang.String[],int[])>
+    <com.mycredit.mycredit.activity.SignUpActivity: void counterCheckPermissionsBeforeSubmit()>
+    <com.mycredit.mycredit.activity.SignUpActivity: void counterCheckPermissionsBeforeSubmit()>
+    <com.mycredit.mycredit.activity.Helaplan: org.json.JSONObject getPayloadObject()>
+    <com.mycredit.mycredit.activity.Helaplan: org.json.JSONObject getPayloadObject()>
+    <com.mycredit.mycredit.activity.SignUpActivity: void counterCheckPermissionsBeforeSubmit()>
+    <com.mycredit.mycredit.network.VolleyManager: void sendJsonObjectRequestRequest(android.content.Context,java.lang.String,org.json.JSONObject,int)>
+    <com.mycredit.mycredit.network.VolleyManager: void sendJsonObjectRequestRequest(android.content.Context,java.lang.String,org.json.JSONObject,int)>
+    <com.mycredit.mycredit.network.VolleyManager: void sendJsonObjectRequestRequest(android.content.Context,java.lang.String,org.json.JSONObject,int)>
+

@@ -1,0 +1,198 @@
+APK: Easyfund (NigeriaApproved)
+Leak 1:
+  Source: $r3 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r1, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r16.<java.io.BufferedWriter: void write(java.lang.String)>($r1) (<java.io.OutputStreamWriter: void write(java.lang.String)>)
+  Methods:
+    <com.blankj.utilcode.util.b: java.lang.String c()>
+    <com.blankj.utilcode.util.b: java.lang.String c()>
+    <com.blankj.utilcode.util.b: java.lang.String c()>
+    <com.blankj.utilcode.util.l$a: java.lang.String toString()>
+    <com.blankj.utilcode.util.l$a: java.lang.String toString()>
+    <com.blankj.utilcode.util.l$a: java.lang.String toString()>
+    <com.blankj.utilcode.util.c: void h(java.lang.String,java.lang.String)>
+    <com.blankj.utilcode.util.c: void e(java.lang.String,java.lang.String)>
+
+Leak 2:
+  Source: $r3 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r1, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r16.<java.io.BufferedWriter: void write(java.lang.String)>($r1) (<java.io.OutputStreamWriter: void write(java.lang.String)>)
+  Methods:
+    <com.blankj.utilcode.util.b: int b()>
+    <com.blankj.utilcode.util.b: int b()>
+    <com.blankj.utilcode.util.b: int b()>
+    <com.blankj.utilcode.util.l$a: java.lang.String toString()>
+    <com.blankj.utilcode.util.l$a: java.lang.String toString()>
+    <com.blankj.utilcode.util.l$a: java.lang.String toString()>
+    <com.blankj.utilcode.util.c: void h(java.lang.String,java.lang.String)>
+    <com.blankj.utilcode.util.c: void e(java.lang.String,java.lang.String)>
+
+Leak 3:
+  Source: $r3 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r1, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r16.<java.io.BufferedWriter: void write(java.lang.String)>($r1) (<java.io.BufferedWriter: void write(java.lang.String)>)
+  Methods:
+    <com.blankj.utilcode.util.b: java.lang.String c()>
+    <com.blankj.utilcode.util.b: java.lang.String c()>
+    <com.blankj.utilcode.util.b: java.lang.String c()>
+    <com.blankj.utilcode.util.l$a: java.lang.String toString()>
+    <com.blankj.utilcode.util.l$a: java.lang.String toString()>
+    <com.blankj.utilcode.util.l$a: java.lang.String toString()>
+    <com.blankj.utilcode.util.c: void h(java.lang.String,java.lang.String)>
+    <com.blankj.utilcode.util.c: void e(java.lang.String,java.lang.String)>
+
+Leak 4:
+  Source: $r3 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r1, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r16.<java.io.BufferedWriter: void write(java.lang.String)>($r1) (<java.io.BufferedWriter: void write(java.lang.String)>)
+  Methods:
+    <com.blankj.utilcode.util.b: int b()>
+    <com.blankj.utilcode.util.b: int b()>
+    <com.blankj.utilcode.util.b: int b()>
+    <com.blankj.utilcode.util.l$a: java.lang.String toString()>
+    <com.blankj.utilcode.util.l$a: java.lang.String toString()>
+    <com.blankj.utilcode.util.l$a: java.lang.String toString()>
+    <com.blankj.utilcode.util.c: void h(java.lang.String,java.lang.String)>
+    <com.blankj.utilcode.util.c: void e(java.lang.String,java.lang.String)>
+
+Leak 5:
+  Source: $r4 = virtualinvoke $r3.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r2, null, null, null, null) (<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>)
+  Sink: interfaceinvoke $r3.<retrofit2.Call: void enqueue(retrofit2.Callback)>($r4) (<retrofit2.Call: void enqueue(retrofit2.Callback)>)
+  Methods:
+    <com.loan.easyfund.ui.activity.loan.KinActivity: void onActivityResult(int,int,android.content.Intent)>
+    <com.loan.easyfund.ui.activity.loan.KinActivity: void onActivityResult(int,int,android.content.Intent)>
+    <com.loan.easyfund.ui.activity.loan.KinActivity: void onActivityResult(int,int,android.content.Intent)>
+    <com.loan.easyfund.ui.activity.loan.KinActivity: void onActivityResult(int,int,android.content.Intent)>
+    <dummyMainClass: com.loan.easyfund.ui.activity.loan.KinActivity dummyMainMethod_com_loan_easyfund_ui_activity_loan_KinActivity(android.content.Intent)>
+    <com.loan.easyfund.ui.activity.loan.KinActivity: void onActivityResult(int,int,android.content.Intent)>
+    <dummyMainClass: com.loan.easyfund.ui.activity.loan.KinActivity dummyMainMethod_com_loan_easyfund_ui_activity_loan_KinActivity(android.content.Intent)>
+    <com.loan.easyfund.ui.activity.loan.KinActivity: boolean onKeyDown(int,android.view.KeyEvent)>
+    <dummyMainClass: com.loan.easyfund.ui.activity.loan.KinActivity dummyMainMethod_com_loan_easyfund_ui_activity_loan_KinActivity(android.content.Intent)>
+    <g1.g$a: void <init>(android.content.Context)>
+    <g1.g$a: void <init>(android.content.Context)>
+    <dummyMainClass: com.loan.easyfund.ui.activity.loan.KinActivity dummyMainMethod_com_loan_easyfund_ui_activity_loan_KinActivity(android.content.Intent)>
+    <g1.g: void <init>(g1.g$a)>
+    <g1.g: void <init>(g1.g$a)>
+    <g1.g: void <init>(g1.g$a)>
+    <g1.g: void <init>(g1.g$a)>
+    <g1.g: void <init>(g1.g$a)>
+    <dummyMainClass: com.loan.easyfund.ui.activity.loan.KinActivity dummyMainMethod_com_loan_easyfund_ui_activity_loan_KinActivity(android.content.Intent)>
+    <g1.g$a: void <init>(android.content.Context)>
+    <g1.g$a: void <init>(android.content.Context)>
+    <dummyMainClass: com.loan.easyfund.ui.activity.loan.KinActivity dummyMainMethod_com_loan_easyfund_ui_activity_loan_KinActivity(android.content.Intent)>
+    <com.loan.easyfund.ui.activity.loan.KinActivity: void onActivityResult(int,int,android.content.Intent)>
+    <com.loan.easyfund.ui.activity.loan.KinActivity: void onActivityResult(int,int,android.content.Intent)>
+    <com.loan.easyfund.tools.UploadBehaviorInfo: void wheelBehavior(java.lang.String,java.lang.String,java.lang.String)>
+    <com.loan.easyfund.bean.BehaviorRequestBean$RecordBean: void setOldValue(java.lang.String)>
+    <com.loan.easyfund.bean.BehaviorRequestBean$RecordBean: void setOldValue(java.lang.String)>
+    <com.loan.easyfund.tools.UploadBehaviorInfo: void wheelBehavior(java.lang.String,java.lang.String,java.lang.String)>
+    <com.loan.easyfund.tools.UploadBehaviorInfo: void wheelBehavior(java.lang.String,java.lang.String,java.lang.String)>
+    <com.loan.easyfund.bean.BehaviorRequestBean: java.util.List getRecords()>
+    <com.loan.easyfund.bean.BehaviorRequestBean: java.util.List getRecords()>
+    <com.loan.easyfund.tools.UploadBehaviorInfo: void wheelBehavior(java.lang.String,java.lang.String,java.lang.String)>
+    <dummyMainClass: void dummyMainMethod(java.lang.String[])>
+    <dummyMainClass: com.loan.easyfund.ui.activity.loan.KinActivity dummyMainMethod_com_loan_easyfund_ui_activity_loan_KinActivity(android.content.Intent)>
+    <dummyMainClass: void dummyMainMethod(java.lang.String[])>
+    <dummyMainClass: com.loan.easyfund.ui.activity.loan.CameraActivity dummyMainMethod_com_loan_easyfund_ui_activity_loan_CameraActivity(android.content.Intent)>
+    <com.loan.easyfund.ui.activity.loan.CameraActivity: void onBackPressed()>
+    <com.loan.easyfund.tools.UploadBehaviorInfo: void exitPage(java.lang.String)>
+    <com.loan.easyfund.tools.UploadBehaviorInfo: void exitPage(java.lang.String)>
+    <com.loan.easyfund.tools.UploadBehaviorInfo: void uploadBe(com.loan.easyfund.bean.BehaviorRequestBean)>
+    <com.loan.easyfund.tools.UploadBehaviorInfo$1: void <init>(com.loan.easyfund.bean.BehaviorRequestBean)>
+    <com.loan.easyfund.tools.UploadBehaviorInfo: void uploadBe(com.loan.easyfund.bean.BehaviorRequestBean)>
+    <com.loan.easyfund.tools.UploadBehaviorInfo$1: void <init>(com.loan.easyfund.bean.BehaviorRequestBean)>
+    <com.loan.easyfund.tools.UploadBehaviorInfo$1: void <init>(com.loan.easyfund.bean.BehaviorRequestBean)>
+    <com.loan.easyfund.tools.UploadBehaviorInfo: void uploadBe(com.loan.easyfund.bean.BehaviorRequestBean)>
+
+Leak 6:
+  Source: $r5 = virtualinvoke $r4.<android.telephony.TelephonyManager: java.lang.String getLine1Number()>() (<android.telephony.TelephonyManager: java.lang.String getLine1Number()>)
+  Sink: interfaceinvoke $r10.<retrofit2.Call: void enqueue(retrofit2.Callback)>($r11) (<retrofit2.Call: void enqueue(retrofit2.Callback)>)
+  Methods:
+    <com.loan.easyfund.ui.activity.user.DeviceLoginActivity: void onRequestPermissionsResult(int,java.lang.String[],int[])>
+    <com.loan.easyfund.ui.activity.user.DeviceLoginActivity: void onRequestPermissionsResult(int,java.lang.String[],int[])>
+    <com.loan.easyfund.ui.activity.user.DeviceLoginActivity: void onRequestPermissionsResult(int,java.lang.String[],int[])>
+    <com.loan.easyfund.ui.activity.user.DeviceLoginActivity: void onRequestPermissionsResult(int,java.lang.String[],int[])>
+    <com.loan.easyfund.ui.activity.user.DeviceLoginActivity: void onRequestPermissionsResult(int,java.lang.String[],int[])>
+    <dummyMainClass: com.loan.easyfund.ui.activity.user.DeviceLoginActivity dummyMainMethod_com_loan_easyfund_ui_activity_user_DeviceLoginActivity(android.content.Intent)>
+    <com.loan.easyfund.ui.activity.user.DeviceLoginActivity$1: void <init>(com.loan.easyfund.ui.activity.user.DeviceLoginActivity)>
+    <com.loan.easyfund.ui.activity.user.DeviceLoginActivity$1: void <init>(com.loan.easyfund.ui.activity.user.DeviceLoginActivity)>
+    <dummyMainClass: com.loan.easyfund.ui.activity.user.DeviceLoginActivity dummyMainMethod_com_loan_easyfund_ui_activity_user_DeviceLoginActivity(android.content.Intent)>
+    <com.loan.easyfund.ui.activity.user.DeviceLoginActivity$1: void onClick(android.view.View)>
+    <com.loan.easyfund.ui.activity.user.DeviceLoginActivity$1: void onClick(android.view.View)>
+    <com.loan.easyfund.ui.activity.user.DeviceLoginActivity: void access$000(com.loan.easyfund.ui.activity.user.DeviceLoginActivity)>
+    <com.loan.easyfund.ui.activity.user.DeviceLoginActivity: void login()>
+    <com.loan.easyfund.tools.LoadingUtils: void showLoading(android.app.Activity)>
+    <g1.g$a: void <init>(android.content.Context)>
+    <i1.b: g1.d j(android.content.Context,int,g1.d)>
+    <g1.g$a: void <init>(android.content.Context)>
+    <i1.b: g1.d j(android.content.Context,int,g1.d)>
+    <g1.g$a: void <init>(android.content.Context)>
+    <g1.g$a: void <init>(android.content.Context)>
+    <com.loan.easyfund.tools.LoadingUtils: void showLoading(android.app.Activity)>
+    <g1.g: void <init>(g1.g$a)>
+    <g1.g: void <init>(g1.g$a)>
+    <g1.c: void a()>
+    <g1.g: void <init>(g1.g$a)>
+    <g1.a: void <init>(g1.g,int)>
+    <g1.a: void <init>(g1.g,int)>
+    <g1.g: void <init>(g1.g$a)>
+    <g1.g: void <init>(g1.g$a)>
+    <com.loan.easyfund.tools.LoadingUtils: void showLoading(android.app.Activity)>
+    <g1.g$a: void <init>(android.content.Context)>
+    <g1.g$a: void <init>(android.content.Context)>
+    <com.loan.easyfund.tools.LoadingUtils: void showLoading(android.app.Activity)>
+    <com.loan.easyfund.ui.activity.user.DeviceLoginActivity: void login()>
+    <com.loan.easyfund.ui.activity.user.DeviceLoginActivity: void login()>
+    <com.loan.easyfund.ui.activity.user.DeviceLoginActivity: void login()>
+    <com.loan.easyfund.ui.activity.user.DeviceLoginActivity: void login()>
+    <com.loan.easyfund.ui.activity.user.DeviceLoginActivity: void login()>
+    <com.loan.easyfund.ui.activity.user.DeviceLoginActivity: void login()>
+    <com.loan.easyfund.ui.activity.user.DeviceLoginActivity$2: void <init>(com.loan.easyfund.ui.activity.user.DeviceLoginActivity,java.lang.String)>
+    <com.loan.easyfund.ui.activity.user.DeviceLoginActivity$2: void <init>(com.loan.easyfund.ui.activity.user.DeviceLoginActivity,java.lang.String)>
+    <com.loan.easyfund.ui.activity.user.DeviceLoginActivity: void login()>
+
+Leak 7:
+  Source: $r3 = virtualinvoke $r6.<android.telephony.TelephonyManager: java.lang.String getLine1Number()>() (<android.telephony.TelephonyManager: java.lang.String getLine1Number()>)
+  Sink: interfaceinvoke $r10.<retrofit2.Call: void enqueue(retrofit2.Callback)>($r11) (<retrofit2.Call: void enqueue(retrofit2.Callback)>)
+  Methods:
+    <com.loan.easyfund.ui.activity.user.DeviceLoginActivity: void applyPhonePermission()>
+    <com.loan.easyfund.ui.activity.user.DeviceLoginActivity: void applyPhonePermission()>
+    <com.loan.easyfund.ui.activity.user.DeviceLoginActivity: void applyPhonePermission()>
+    <com.loan.easyfund.ui.activity.user.DeviceLoginActivity: void applyPhonePermission()>
+    <com.loan.easyfund.ui.activity.user.DeviceLoginActivity: void applyPhonePermission()>
+    <com.loan.easyfund.ui.activity.user.DeviceLoginActivity: void init()>
+    <com.loan.easyfund.ui.activity.user.DeviceLoginActivity: void onCreate(android.os.Bundle)>
+    <dummyMainClass: com.loan.easyfund.ui.activity.user.DeviceLoginActivity dummyMainMethod_com_loan_easyfund_ui_activity_user_DeviceLoginActivity(android.content.Intent)>
+    <com.loan.easyfund.ui.activity.user.DeviceLoginActivity$1: void <init>(com.loan.easyfund.ui.activity.user.DeviceLoginActivity)>
+    <com.loan.easyfund.ui.activity.user.DeviceLoginActivity$1: void <init>(com.loan.easyfund.ui.activity.user.DeviceLoginActivity)>
+    <dummyMainClass: com.loan.easyfund.ui.activity.user.DeviceLoginActivity dummyMainMethod_com_loan_easyfund_ui_activity_user_DeviceLoginActivity(android.content.Intent)>
+    <com.loan.easyfund.ui.activity.user.DeviceLoginActivity$1: void onClick(android.view.View)>
+    <com.loan.easyfund.ui.activity.user.DeviceLoginActivity$1: void onClick(android.view.View)>
+    <com.loan.easyfund.ui.activity.user.DeviceLoginActivity: void access$000(com.loan.easyfund.ui.activity.user.DeviceLoginActivity)>
+    <com.loan.easyfund.ui.activity.user.DeviceLoginActivity: void login()>
+    <com.loan.easyfund.tools.LoadingUtils: void showLoading(android.app.Activity)>
+    <g1.g$a: void <init>(android.content.Context)>
+    <i1.b: g1.d j(android.content.Context,int,g1.d)>
+    <g1.g$a: void <init>(android.content.Context)>
+    <i1.b: g1.d j(android.content.Context,int,g1.d)>
+    <g1.g$a: void <init>(android.content.Context)>
+    <g1.g$a: void <init>(android.content.Context)>
+    <com.loan.easyfund.tools.LoadingUtils: void showLoading(android.app.Activity)>
+    <g1.g: void <init>(g1.g$a)>
+    <g1.g: void <init>(g1.g$a)>
+    <g1.c: void a()>
+    <g1.g: void <init>(g1.g$a)>
+    <g1.a: void <init>(g1.g,int)>
+    <g1.a: void <init>(g1.g,int)>
+    <g1.g: void <init>(g1.g$a)>
+    <g1.g: void <init>(g1.g$a)>
+    <com.loan.easyfund.tools.LoadingUtils: void showLoading(android.app.Activity)>
+    <g1.g$a: void <init>(android.content.Context)>
+    <g1.g$a: void <init>(android.content.Context)>
+    <com.loan.easyfund.tools.LoadingUtils: void showLoading(android.app.Activity)>
+    <com.loan.easyfund.ui.activity.user.DeviceLoginActivity: void login()>
+    <com.loan.easyfund.ui.activity.user.DeviceLoginActivity: void login()>
+    <com.loan.easyfund.ui.activity.user.DeviceLoginActivity: void login()>
+    <com.loan.easyfund.ui.activity.user.DeviceLoginActivity: void login()>
+    <com.loan.easyfund.ui.activity.user.DeviceLoginActivity: void login()>
+    <com.loan.easyfund.ui.activity.user.DeviceLoginActivity: void login()>
+    <com.loan.easyfund.ui.activity.user.DeviceLoginActivity$2: void <init>(com.loan.easyfund.ui.activity.user.DeviceLoginActivity,java.lang.String)>
+    <com.loan.easyfund.ui.activity.user.DeviceLoginActivity$2: void <init>(com.loan.easyfund.ui.activity.user.DeviceLoginActivity,java.lang.String)>
+    <com.loan.easyfund.ui.activity.user.DeviceLoginActivity: void login()>
+

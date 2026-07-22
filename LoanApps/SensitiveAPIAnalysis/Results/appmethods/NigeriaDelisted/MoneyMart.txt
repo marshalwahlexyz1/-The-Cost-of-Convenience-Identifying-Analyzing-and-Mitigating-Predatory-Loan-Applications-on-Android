@@ -1,0 +1,151 @@
+APK: MoneyMart (NigeriaDelisted)
+Leak 1:
+  Source: $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>() (<android.location.Location: double getLatitude()>)
+  Sink: virtualinvoke $r6.<java.io.FileWriter: void write(java.lang.String)>($r0) (<java.io.BufferedWriter: void write(java.lang.String)>)
+  Methods:
+    <com.lcloan.moneymart.activity.SignUpActivityMoneyMart: void A0(com.lcloan.moneymart.activity.SignUpActivityMoneyMart,android.view.View)>
+    <com.lcloan.moneymart.activity.SignUpActivityMoneyMart: void A0(com.lcloan.moneymart.activity.SignUpActivityMoneyMart,android.view.View)>
+    <com.lcloan.moneymart.activity.SignUpActivityMoneyMart: void A0(com.lcloan.moneymart.activity.SignUpActivityMoneyMart,android.view.View)>
+    <com.lcloan.moneymart.activity.SignUpActivityMoneyMart: void A0(com.lcloan.moneymart.activity.SignUpActivityMoneyMart,android.view.View)>
+    <fr: void n(android.content.Context,java.lang.String,java.util.Map)>
+    <fr: void n(android.content.Context,java.lang.String,java.util.Map)>
+    <ms: void a(java.lang.String,java.lang.String)>
+    <ms: void a(java.lang.String,java.lang.String)>
+    <ms: void a(java.lang.String,java.lang.String)>
+    <ms: void c(java.lang.String)>
+    <ms: void c(java.lang.String)>
+    <ms: void c(java.lang.String)>
+
+Leak 2:
+  Source: $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>() (<android.location.Location: double getLatitude()>)
+  Sink: virtualinvoke $r6.<java.io.FileWriter: void write(java.lang.String)>($r0) (<java.io.BufferedWriter: void write(java.lang.String)>)
+  Methods:
+    <com.lcloan.moneymart.activity.SignUpActivityMoneyMart: void A0(com.lcloan.moneymart.activity.SignUpActivityMoneyMart,android.view.View)>
+    <com.lcloan.moneymart.activity.SignUpActivityMoneyMart: void A0(com.lcloan.moneymart.activity.SignUpActivityMoneyMart,android.view.View)>
+    <com.lcloan.moneymart.activity.SignUpActivityMoneyMart: void A0(com.lcloan.moneymart.activity.SignUpActivityMoneyMart,android.view.View)>
+    <com.lcloan.moneymart.activity.SignUpActivityMoneyMart: void A0(com.lcloan.moneymart.activity.SignUpActivityMoneyMart,android.view.View)>
+    <fr: void n(android.content.Context,java.lang.String,java.util.Map)>
+    <fr: void n(android.content.Context,java.lang.String,java.util.Map)>
+    <ms: void a(java.lang.String,java.lang.String)>
+    <ms: void a(java.lang.String,java.lang.String)>
+    <ms: void a(java.lang.String,java.lang.String)>
+    <ms: void c(java.lang.String)>
+    <ms: void c(java.lang.String)>
+    <ms: void c(java.lang.String)>
+
+Leak 3:
+  Source: $d0 = virtualinvoke $r6.<android.location.Location: double getLongitude()>() (<android.location.Location: double getLongitude()>)
+  Sink: virtualinvoke $r6.<java.io.FileWriter: void write(java.lang.String)>($r0) (<java.io.BufferedWriter: void write(java.lang.String)>)
+  Methods:
+    <com.lcloan.moneymart.activity.SignUpActivityMoneyMart: void A0(com.lcloan.moneymart.activity.SignUpActivityMoneyMart,android.view.View)>
+    <com.lcloan.moneymart.activity.SignUpActivityMoneyMart: void A0(com.lcloan.moneymart.activity.SignUpActivityMoneyMart,android.view.View)>
+    <com.lcloan.moneymart.activity.SignUpActivityMoneyMart: void A0(com.lcloan.moneymart.activity.SignUpActivityMoneyMart,android.view.View)>
+    <com.lcloan.moneymart.activity.SignUpActivityMoneyMart: void A0(com.lcloan.moneymart.activity.SignUpActivityMoneyMart,android.view.View)>
+    <fr: void n(android.content.Context,java.lang.String,java.util.Map)>
+    <fr: void n(android.content.Context,java.lang.String,java.util.Map)>
+    <ms: void a(java.lang.String,java.lang.String)>
+    <ms: void a(java.lang.String,java.lang.String)>
+    <ms: void a(java.lang.String,java.lang.String)>
+    <ms: void c(java.lang.String)>
+    <ms: void c(java.lang.String)>
+    <ms: void c(java.lang.String)>
+
+Leak 4:
+  Source: $d0 = virtualinvoke $r6.<android.location.Location: double getLongitude()>() (<android.location.Location: double getLongitude()>)
+  Sink: virtualinvoke $r6.<java.io.FileWriter: void write(java.lang.String)>($r0) (<java.io.BufferedWriter: void write(java.lang.String)>)
+  Methods:
+    <com.lcloan.moneymart.activity.SignUpActivityMoneyMart: void A0(com.lcloan.moneymart.activity.SignUpActivityMoneyMart,android.view.View)>
+    <com.lcloan.moneymart.activity.SignUpActivityMoneyMart: void A0(com.lcloan.moneymart.activity.SignUpActivityMoneyMart,android.view.View)>
+    <com.lcloan.moneymart.activity.SignUpActivityMoneyMart: void A0(com.lcloan.moneymart.activity.SignUpActivityMoneyMart,android.view.View)>
+    <com.lcloan.moneymart.activity.SignUpActivityMoneyMart: void A0(com.lcloan.moneymart.activity.SignUpActivityMoneyMart,android.view.View)>
+    <fr: void n(android.content.Context,java.lang.String,java.util.Map)>
+    <fr: void n(android.content.Context,java.lang.String,java.util.Map)>
+    <ms: void a(java.lang.String,java.lang.String)>
+    <ms: void a(java.lang.String,java.lang.String)>
+    <ms: void a(java.lang.String,java.lang.String)>
+    <ms: void c(java.lang.String)>
+    <ms: void c(java.lang.String)>
+    <ms: void c(java.lang.String)>
+
+Leak 5:
+  Source: $r5 = virtualinvoke $r3.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r4, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("ManifestParser", $r4) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.bumptech.glide.module.ManifestParser: java.util.List parse()>
+    <com.bumptech.glide.module.ManifestParser: java.util.List parse()>
+    <com.bumptech.glide.module.ManifestParser: java.util.List parse()>
+    <com.bumptech.glide.module.ManifestParser: java.util.List parse()>
+    <com.bumptech.glide.module.ManifestParser: java.util.List parse()>
+    <com.bumptech.glide.module.ManifestParser: java.util.List parse()>
+    <com.bumptech.glide.module.ManifestParser: java.util.List parse()>
+    <com.bumptech.glide.module.ManifestParser: java.util.List parse()>
+    <com.bumptech.glide.module.ManifestParser: java.util.List parse()>
+
+Leak 6:
+  Source: $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>() (<android.location.Location: double getLatitude()>)
+  Sink: virtualinvoke $r6.<java.io.FileWriter: void write(java.lang.String)>($r0) (<java.io.OutputStreamWriter: void write(java.lang.String)>)
+  Methods:
+    <com.lcloan.moneymart.activity.SignUpActivityMoneyMart: void A0(com.lcloan.moneymart.activity.SignUpActivityMoneyMart,android.view.View)>
+    <com.lcloan.moneymart.activity.SignUpActivityMoneyMart: void A0(com.lcloan.moneymart.activity.SignUpActivityMoneyMart,android.view.View)>
+    <com.lcloan.moneymart.activity.SignUpActivityMoneyMart: void A0(com.lcloan.moneymart.activity.SignUpActivityMoneyMart,android.view.View)>
+    <com.lcloan.moneymart.activity.SignUpActivityMoneyMart: void A0(com.lcloan.moneymart.activity.SignUpActivityMoneyMart,android.view.View)>
+    <fr: void n(android.content.Context,java.lang.String,java.util.Map)>
+    <fr: void n(android.content.Context,java.lang.String,java.util.Map)>
+    <ms: void a(java.lang.String,java.lang.String)>
+    <ms: void a(java.lang.String,java.lang.String)>
+    <ms: void a(java.lang.String,java.lang.String)>
+    <ms: void c(java.lang.String)>
+    <ms: void c(java.lang.String)>
+    <ms: void c(java.lang.String)>
+
+Leak 7:
+  Source: $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>() (<android.location.Location: double getLatitude()>)
+  Sink: virtualinvoke $r6.<java.io.FileWriter: void write(java.lang.String)>($r0) (<java.io.OutputStreamWriter: void write(java.lang.String)>)
+  Methods:
+    <com.lcloan.moneymart.activity.SignUpActivityMoneyMart: void A0(com.lcloan.moneymart.activity.SignUpActivityMoneyMart,android.view.View)>
+    <com.lcloan.moneymart.activity.SignUpActivityMoneyMart: void A0(com.lcloan.moneymart.activity.SignUpActivityMoneyMart,android.view.View)>
+    <com.lcloan.moneymart.activity.SignUpActivityMoneyMart: void A0(com.lcloan.moneymart.activity.SignUpActivityMoneyMart,android.view.View)>
+    <com.lcloan.moneymart.activity.SignUpActivityMoneyMart: void A0(com.lcloan.moneymart.activity.SignUpActivityMoneyMart,android.view.View)>
+    <fr: void n(android.content.Context,java.lang.String,java.util.Map)>
+    <fr: void n(android.content.Context,java.lang.String,java.util.Map)>
+    <ms: void a(java.lang.String,java.lang.String)>
+    <ms: void a(java.lang.String,java.lang.String)>
+    <ms: void a(java.lang.String,java.lang.String)>
+    <ms: void c(java.lang.String)>
+    <ms: void c(java.lang.String)>
+    <ms: void c(java.lang.String)>
+
+Leak 8:
+  Source: $d0 = virtualinvoke $r6.<android.location.Location: double getLongitude()>() (<android.location.Location: double getLongitude()>)
+  Sink: virtualinvoke $r6.<java.io.FileWriter: void write(java.lang.String)>($r0) (<java.io.OutputStreamWriter: void write(java.lang.String)>)
+  Methods:
+    <com.lcloan.moneymart.activity.SignUpActivityMoneyMart: void A0(com.lcloan.moneymart.activity.SignUpActivityMoneyMart,android.view.View)>
+    <com.lcloan.moneymart.activity.SignUpActivityMoneyMart: void A0(com.lcloan.moneymart.activity.SignUpActivityMoneyMart,android.view.View)>
+    <com.lcloan.moneymart.activity.SignUpActivityMoneyMart: void A0(com.lcloan.moneymart.activity.SignUpActivityMoneyMart,android.view.View)>
+    <com.lcloan.moneymart.activity.SignUpActivityMoneyMart: void A0(com.lcloan.moneymart.activity.SignUpActivityMoneyMart,android.view.View)>
+    <fr: void n(android.content.Context,java.lang.String,java.util.Map)>
+    <fr: void n(android.content.Context,java.lang.String,java.util.Map)>
+    <ms: void a(java.lang.String,java.lang.String)>
+    <ms: void a(java.lang.String,java.lang.String)>
+    <ms: void a(java.lang.String,java.lang.String)>
+    <ms: void c(java.lang.String)>
+    <ms: void c(java.lang.String)>
+    <ms: void c(java.lang.String)>
+
+Leak 9:
+  Source: $d0 = virtualinvoke $r6.<android.location.Location: double getLongitude()>() (<android.location.Location: double getLongitude()>)
+  Sink: virtualinvoke $r6.<java.io.FileWriter: void write(java.lang.String)>($r0) (<java.io.OutputStreamWriter: void write(java.lang.String)>)
+  Methods:
+    <com.lcloan.moneymart.activity.SignUpActivityMoneyMart: void A0(com.lcloan.moneymart.activity.SignUpActivityMoneyMart,android.view.View)>
+    <com.lcloan.moneymart.activity.SignUpActivityMoneyMart: void A0(com.lcloan.moneymart.activity.SignUpActivityMoneyMart,android.view.View)>
+    <com.lcloan.moneymart.activity.SignUpActivityMoneyMart: void A0(com.lcloan.moneymart.activity.SignUpActivityMoneyMart,android.view.View)>
+    <com.lcloan.moneymart.activity.SignUpActivityMoneyMart: void A0(com.lcloan.moneymart.activity.SignUpActivityMoneyMart,android.view.View)>
+    <fr: void n(android.content.Context,java.lang.String,java.util.Map)>
+    <fr: void n(android.content.Context,java.lang.String,java.util.Map)>
+    <ms: void a(java.lang.String,java.lang.String)>
+    <ms: void a(java.lang.String,java.lang.String)>
+    <ms: void a(java.lang.String,java.lang.String)>
+    <ms: void c(java.lang.String)>
+    <ms: void c(java.lang.String)>
+    <ms: void c(java.lang.String)>
+

@@ -1,0 +1,129 @@
+APK: com.getinstantloan.creditloan.cashloan (PakistanDelisted)
+Leak 1:
+  Source: $r5 = virtualinvoke $r3.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r4, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("ManifestParser", $r4) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.bumptech.glide.module.ManifestParser: java.util.List parse()>
+    <com.bumptech.glide.module.ManifestParser: java.util.List parse()>
+    <com.bumptech.glide.module.ManifestParser: java.util.List parse()>
+    <com.bumptech.glide.module.ManifestParser: java.util.List parse()>
+    <com.bumptech.glide.module.ManifestParser: java.util.List parse()>
+    <com.bumptech.glide.module.ManifestParser: java.util.List parse()>
+    <com.bumptech.glide.module.ManifestParser: java.util.List parse()>
+    <com.bumptech.glide.module.ManifestParser: java.util.List parse()>
+    <com.bumptech.glide.module.ManifestParser: java.util.List parse()>
+
+Leak 2:
+  Source: $r20 = staticinvoke <android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>($r18) (<android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>)
+  Sink: virtualinvoke $r24.<java.io.FileOutputStream: void write(byte[])>($r22) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <app.getinstantloan.creditloans.activity.instantcash.SalarySlipDocumentActivitiy: java.lang.String saveCameraImage(android.graphics.Bitmap)>
+    <app.getinstantloan.creditloans.activity.instantcash.SalarySlipDocumentActivitiy: java.lang.String saveCameraImage(android.graphics.Bitmap)>
+    <app.getinstantloan.creditloans.activity.instantcash.SalarySlipDocumentActivitiy: java.lang.String saveCameraImage(android.graphics.Bitmap)>
+    <app.getinstantloan.creditloans.activity.instantcash.SalarySlipDocumentActivitiy: java.lang.String saveCameraImage(android.graphics.Bitmap)>
+    <app.getinstantloan.creditloans.activity.instantcash.SalarySlipDocumentActivitiy: java.lang.String saveCameraImage(android.graphics.Bitmap)>
+
+Leak 3:
+  Source: $r20 = staticinvoke <android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>($r18) (<android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>)
+  Sink: virtualinvoke $r24.<java.io.FileOutputStream: void write(byte[])>($r22) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <app.getinstantloan.creditloans.activity.instantcash.KycDocumentActivity: java.lang.String saveCameraImage(android.graphics.Bitmap)>
+    <app.getinstantloan.creditloans.activity.instantcash.KycDocumentActivity: java.lang.String saveCameraImage(android.graphics.Bitmap)>
+    <app.getinstantloan.creditloans.activity.instantcash.KycDocumentActivity: java.lang.String saveCameraImage(android.graphics.Bitmap)>
+    <app.getinstantloan.creditloans.activity.instantcash.KycDocumentActivity: java.lang.String saveCameraImage(android.graphics.Bitmap)>
+    <app.getinstantloan.creditloans.activity.instantcash.KycDocumentActivity: java.lang.String saveCameraImage(android.graphics.Bitmap)>
+
+Leak 4:
+  Source: $r20 = staticinvoke <android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>($r18) (<android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>)
+  Sink: virtualinvoke $r24.<java.io.FileOutputStream: void write(byte[])>($r22) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <app.getinstantloan.creditloans.activity.savingplan.SavingStepThreeActivity: java.lang.String saveCameraImage(android.graphics.Bitmap)>
+    <app.getinstantloan.creditloans.activity.savingplan.SavingStepThreeActivity: java.lang.String saveCameraImage(android.graphics.Bitmap)>
+    <app.getinstantloan.creditloans.activity.savingplan.SavingStepThreeActivity: java.lang.String saveCameraImage(android.graphics.Bitmap)>
+    <app.getinstantloan.creditloans.activity.savingplan.SavingStepThreeActivity: java.lang.String saveCameraImage(android.graphics.Bitmap)>
+    <app.getinstantloan.creditloans.activity.savingplan.SavingStepThreeActivity: java.lang.String saveCameraImage(android.graphics.Bitmap)>
+
+Leak 5:
+  Source: $r20 = staticinvoke <android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>($r18) (<android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>)
+  Sink: virtualinvoke $r24.<java.io.FileOutputStream: void write(byte[])>($r22) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <app.getinstantloan.creditloans.activity.instantcash.SalarySlipActivity: java.lang.String saveCameraImage(android.graphics.Bitmap)>
+    <app.getinstantloan.creditloans.activity.instantcash.SalarySlipActivity: java.lang.String saveCameraImage(android.graphics.Bitmap)>
+    <app.getinstantloan.creditloans.activity.instantcash.SalarySlipActivity: java.lang.String saveCameraImage(android.graphics.Bitmap)>
+    <app.getinstantloan.creditloans.activity.instantcash.SalarySlipActivity: java.lang.String saveCameraImage(android.graphics.Bitmap)>
+    <app.getinstantloan.creditloans.activity.instantcash.SalarySlipActivity: java.lang.String saveCameraImage(android.graphics.Bitmap)>
+
+Leak 6:
+  Source: $r20 = staticinvoke <android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>($r18) (<android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>)
+  Sink: virtualinvoke $r24.<java.io.FileOutputStream: void write(byte[])>($r22) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <app.getinstantloan.creditloans.activity.savingplan.SavingStepFiveActivity: java.lang.String saveCameraImage(android.graphics.Bitmap)>
+    <app.getinstantloan.creditloans.activity.savingplan.SavingStepFiveActivity: java.lang.String saveCameraImage(android.graphics.Bitmap)>
+    <app.getinstantloan.creditloans.activity.savingplan.SavingStepFiveActivity: java.lang.String saveCameraImage(android.graphics.Bitmap)>
+    <app.getinstantloan.creditloans.activity.savingplan.SavingStepFiveActivity: java.lang.String saveCameraImage(android.graphics.Bitmap)>
+    <app.getinstantloan.creditloans.activity.savingplan.SavingStepFiveActivity: java.lang.String saveCameraImage(android.graphics.Bitmap)>
+
+Leak 7:
+  Source: $r20 = staticinvoke <android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>($r18) (<android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>)
+  Sink: virtualinvoke $r24.<java.io.FileOutputStream: void write(byte[])>($r22) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <app.getinstantloan.creditloans.activity.savingplan.SavingStepTwoActivity: java.lang.String saveCameraImage(android.graphics.Bitmap)>
+    <app.getinstantloan.creditloans.activity.savingplan.SavingStepTwoActivity: java.lang.String saveCameraImage(android.graphics.Bitmap)>
+    <app.getinstantloan.creditloans.activity.savingplan.SavingStepTwoActivity: java.lang.String saveCameraImage(android.graphics.Bitmap)>
+    <app.getinstantloan.creditloans.activity.savingplan.SavingStepTwoActivity: java.lang.String saveCameraImage(android.graphics.Bitmap)>
+    <app.getinstantloan.creditloans.activity.savingplan.SavingStepTwoActivity: java.lang.String saveCameraImage(android.graphics.Bitmap)>
+
+Leak 8:
+  Source: $r7 = staticinvoke <android.os.Environment: java.io.File getExternalStorageDirectory()>() (<android.os.Environment: java.io.File getExternalStorageDirectory()>)
+  Sink: virtualinvoke $r24.<java.io.FileOutputStream: void write(byte[])>($r22) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <app.getinstantloan.creditloans.utils.ProfileFileUtils: java.lang.String getPath(android.content.Context,android.net.Uri)>
+    <app.getinstantloan.creditloans.utils.ProfileFileUtils: java.lang.String getPath(android.content.Context,android.net.Uri)>
+    <app.getinstantloan.creditloans.utils.ProfileFileUtils: java.lang.String getPath(android.content.Context,android.net.Uri)>
+    <app.getinstantloan.creditloans.utils.ProfileFileUtils: java.lang.String getPath(android.content.Context,android.net.Uri)>
+    <app.getinstantloan.creditloans.utils.ProfileFileUtils: java.io.File getFile(android.content.Context,android.net.Uri)>
+    <app.getinstantloan.creditloans.utils.ProfileFileUtils: java.io.File getFile(android.content.Context,android.net.Uri)>
+    <app.getinstantloan.creditloans.activity.instantcash.UploadSelfieActivity: java.lang.String saveCameraImage(android.graphics.Bitmap)>
+    <app.getinstantloan.creditloans.activity.instantcash.UploadSelfieActivity: java.lang.String saveCameraImage(android.graphics.Bitmap)>
+    <app.getinstantloan.creditloans.activity.instantcash.UploadSelfieActivity: java.lang.String saveCameraImage(android.graphics.Bitmap)>
+    <app.getinstantloan.creditloans.activity.instantcash.UploadSelfieActivity: java.lang.String saveCameraImage(android.graphics.Bitmap)>
+    <app.getinstantloan.creditloans.activity.instantcash.UploadSelfieActivity: java.lang.String saveCameraImage(android.graphics.Bitmap)>
+    <app.getinstantloan.creditloans.activity.instantcash.UploadSelfieActivity: java.lang.String saveCameraImage(android.graphics.Bitmap)>
+
+Leak 9:
+  Source: $r20 = staticinvoke <android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>($r18) (<android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>)
+  Sink: virtualinvoke $r24.<java.io.FileOutputStream: void write(byte[])>($r22) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <app.getinstantloan.creditloans.activity.instantcash.UploadSelfieActivity: java.lang.String saveCameraImage(android.graphics.Bitmap)>
+    <app.getinstantloan.creditloans.activity.instantcash.UploadSelfieActivity: java.lang.String saveCameraImage(android.graphics.Bitmap)>
+    <app.getinstantloan.creditloans.activity.instantcash.UploadSelfieActivity: java.lang.String saveCameraImage(android.graphics.Bitmap)>
+    <app.getinstantloan.creditloans.activity.instantcash.UploadSelfieActivity: java.lang.String saveCameraImage(android.graphics.Bitmap)>
+    <app.getinstantloan.creditloans.activity.instantcash.UploadSelfieActivity: java.lang.String saveCameraImage(android.graphics.Bitmap)>
+
+Leak 10:
+  Source: $r7 = virtualinvoke $r6.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r3, $r4, $r0, $r1, null) (<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>)
+  Sink: virtualinvoke $r24.<java.io.FileOutputStream: void write(byte[])>($r22) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <app.getinstantloan.creditloans.utils.ProfileFileUtils: java.lang.String getDataColumn(android.content.Context,android.net.Uri,java.lang.String,java.lang.String[])>
+    <app.getinstantloan.creditloans.utils.ProfileFileUtils: java.lang.String getDataColumn(android.content.Context,android.net.Uri,java.lang.String,java.lang.String[])>
+    <app.getinstantloan.creditloans.utils.ProfileFileUtils: java.lang.String getDataColumn(android.content.Context,android.net.Uri,java.lang.String,java.lang.String[])>
+    <app.getinstantloan.creditloans.utils.ProfileFileUtils: java.lang.String getPath(android.content.Context,android.net.Uri)>
+    <app.getinstantloan.creditloans.utils.ProfileFileUtils: java.io.File getFile(android.content.Context,android.net.Uri)>
+    <app.getinstantloan.creditloans.utils.ProfileFileUtils: java.io.File getFile(android.content.Context,android.net.Uri)>
+    <app.getinstantloan.creditloans.activity.instantcash.UploadSelfieActivity: java.lang.String saveCameraImage(android.graphics.Bitmap)>
+    <app.getinstantloan.creditloans.activity.instantcash.UploadSelfieActivity: java.lang.String saveCameraImage(android.graphics.Bitmap)>
+    <app.getinstantloan.creditloans.activity.instantcash.UploadSelfieActivity: java.lang.String saveCameraImage(android.graphics.Bitmap)>
+    <app.getinstantloan.creditloans.activity.instantcash.UploadSelfieActivity: java.lang.String saveCameraImage(android.graphics.Bitmap)>
+    <app.getinstantloan.creditloans.activity.instantcash.UploadSelfieActivity: java.lang.String saveCameraImage(android.graphics.Bitmap)>
+    <app.getinstantloan.creditloans.activity.instantcash.UploadSelfieActivity: java.lang.String saveCameraImage(android.graphics.Bitmap)>
+
+Leak 11:
+  Source: $r20 = staticinvoke <android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>($r18) (<android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>)
+  Sink: virtualinvoke $r24.<java.io.FileOutputStream: void write(byte[])>($r22) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <app.getinstantloan.creditloans.activity.savingplan.SavingStepFourActivity: java.lang.String saveCameraImage(android.graphics.Bitmap)>
+    <app.getinstantloan.creditloans.activity.savingplan.SavingStepFourActivity: java.lang.String saveCameraImage(android.graphics.Bitmap)>
+    <app.getinstantloan.creditloans.activity.savingplan.SavingStepFourActivity: java.lang.String saveCameraImage(android.graphics.Bitmap)>
+    <app.getinstantloan.creditloans.activity.savingplan.SavingStepFourActivity: java.lang.String saveCameraImage(android.graphics.Bitmap)>
+    <app.getinstantloan.creditloans.activity.savingplan.SavingStepFourActivity: java.lang.String saveCameraImage(android.graphics.Bitmap)>
+

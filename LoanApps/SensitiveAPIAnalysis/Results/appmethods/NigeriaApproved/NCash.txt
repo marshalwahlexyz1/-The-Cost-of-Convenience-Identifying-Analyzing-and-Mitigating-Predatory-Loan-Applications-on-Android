@@ -1,0 +1,685 @@
+APK: NCash (NigeriaApproved)
+Leak 1:
+  Source: $r4 = virtualinvoke $r3.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r2, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: $r2 = staticinvoke <okhttp3.RequestBody: okhttp3.RequestBody create(okhttp3.MediaType,java.lang.String)>(null, $r1) (<okhttp3.RequestBody: okhttp3.RequestBody create(okhttp3.MediaType,java.lang.String)>)
+  Methods:
+    <com.module.toolbox.util.Util: android.content.pm.PackageInfo getPackageInfo(android.content.Context,java.lang.String)>
+    <com.module.toolbox.util.Util: android.content.pm.PackageInfo getPackageInfo(android.content.Context,java.lang.String)>
+    <com.module.toolbox.util.Util: android.content.pm.PackageInfo getPackageInfo(android.content.Context)>
+    <com.module.toolbox.util.Util: java.util.Map getPublicParams()>
+    <com.module.toolbox.util.Util: java.util.Map getPublicParams()>
+    <com.module.toolbox.util.Util: java.util.Map getPublicParams()>
+    <com.module.toolbox.interceptor.CommonParamsInterceptor: java.util.Map getCommonParams()>
+    <com.module.toolbox.interceptor.CommonParamsInterceptor: okhttp3.Request injectParamsIntoBody(okhttp3.Request)>
+    <com.module.toolbox.interceptor.CommonParamsInterceptor: okhttp3.Request injectParamsIntoBody(okhttp3.Request)>
+    <com.module.toolbox.interceptor.CommonParamsInterceptor: okhttp3.Request injectParamsIntoBody(okhttp3.Request)>
+    <com.module.toolbox.interceptor.CommonParamsInterceptor: okhttp3.Request injectParamsIntoBody(okhttp3.Request)>
+    <com.module.toolbox.interceptor.CommonParamsInterceptor: okhttp3.Request injectParamsIntoBody(okhttp3.Request)>
+    <com.module.toolbox.interceptor.CommonParamsInterceptor: okhttp3.Request injectParamsIntoBody(okhttp3.Request)>
+    <com.module.toolbox.interceptor.CommonParamsInterceptor: okhttp3.Request injectParamsIntoBody(okhttp3.Request)>
+    <com.module.toolbox.interceptor.CommonParamsInterceptor: okhttp3.Request injectParamsIntoBody(okhttp3.Request)>
+    <com.module.toolbox.interceptor.CommonParamsInterceptor: okhttp3.Request injectParamsIntoBody(okhttp3.Request)>
+    <okhttp3.MultipartBody$Builder: okhttp3.MultipartBody$Builder addFormDataPart(java.lang.String,java.lang.String)>
+    <okhttp3.MultipartBody$Part: okhttp3.MultipartBody$Part createFormData(java.lang.String,java.lang.String)>
+
+Leak 2:
+  Source: $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r2, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r2.<java.io.Writer: void write(java.lang.String)>($r7) (<java.io.BufferedWriter: void write(java.lang.String)>)
+  Methods:
+    <com.module.commonutils.general.AppUtil: int getVersionCode()>
+    <com.module.commonutils.general.AppUtil: int getVersionCode()>
+    <com.module.commonutils.general.AppUtil: int getVersionCode()>
+    <com.module.library.cache.DiskCache: void <init>(java.io.File,long)>
+    <com.module.library.cache.DiskLruCache: com.module.library.cache.DiskLruCache open(java.io.File,int,int,long)>
+    <com.module.library.cache.DiskLruCache: void <init>(java.io.File,int,int,long)>
+    <com.module.library.cache.DiskLruCache: void <init>(java.io.File,int,int,long)>
+    <com.module.library.cache.DiskLruCache$a: void <init>(com.module.library.cache.DiskLruCache)>
+    <com.module.library.cache.DiskLruCache$a: void <init>(com.module.library.cache.DiskLruCache)>
+    <com.module.library.cache.DiskLruCache: void <init>(java.io.File,int,int,long)>
+    <com.module.library.cache.DiskLruCache: void <init>(java.io.File,int,int,long)>
+    <com.module.library.cache.DiskLruCache: com.module.library.cache.DiskLruCache open(java.io.File,int,int,long)>
+    <com.module.library.cache.DiskLruCache: void s()>
+    <com.module.library.cache.DiskLruCache: void u()>
+    <com.module.library.cache.DiskLruCache: void u()>
+    <com.module.library.cache.DiskLruCache: void u()>
+    <com.module.library.cache.DiskLruCache: void u()>
+
+Leak 3:
+  Source: $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r2, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r2.<java.io.Writer: void write(java.lang.String)>($r7) (<java.io.OutputStreamWriter: void write(java.lang.String)>)
+  Methods:
+    <com.module.commonutils.general.AppUtil: int getVersionCode()>
+    <com.module.commonutils.general.AppUtil: int getVersionCode()>
+    <com.module.commonutils.general.AppUtil: int getVersionCode()>
+    <com.module.library.cache.DiskCache: void <init>(java.io.File,long)>
+    <com.module.library.cache.DiskLruCache: com.module.library.cache.DiskLruCache open(java.io.File,int,int,long)>
+    <com.module.library.cache.DiskLruCache: void <init>(java.io.File,int,int,long)>
+    <com.module.library.cache.DiskLruCache: void <init>(java.io.File,int,int,long)>
+    <com.module.library.cache.DiskLruCache$a: void <init>(com.module.library.cache.DiskLruCache)>
+    <com.module.library.cache.DiskLruCache$a: void <init>(com.module.library.cache.DiskLruCache)>
+    <com.module.library.cache.DiskLruCache: void <init>(java.io.File,int,int,long)>
+    <com.module.library.cache.DiskLruCache: void <init>(java.io.File,int,int,long)>
+    <com.module.library.cache.DiskLruCache: com.module.library.cache.DiskLruCache open(java.io.File,int,int,long)>
+    <com.module.library.cache.DiskLruCache: void s()>
+    <com.module.library.cache.DiskLruCache: void u()>
+    <com.module.library.cache.DiskLruCache: void u()>
+    <com.module.library.cache.DiskLruCache: void u()>
+    <com.module.library.cache.DiskLruCache: void u()>
+
+Leak 4:
+  Source: $r5 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r8) (<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>)
+  Sink: virtualinvoke $r8.<java.util.zip.GZIPOutputStream: void write(byte[])>($r2) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.module.collect.LocationTask: android.location.Location getLocation()>
+    <com.module.collect.LocationTask: android.location.Location getLocation()>
+    <com.module.collect.LocationTask: void saveLocation(android.location.Location)>
+    <com.module.collect.LocationTask: void saveLocation(android.location.Location)>
+    <com.module.collect.LocationTask: void saveLocation(android.location.Location)>
+    <com.module.collect.LocationTask: android.location.Location getLocation()>
+    <com.module.collect.LocationTask: android.location.Location getLocation()>
+    <com.module.collect.LocationTask: android.location.Location getLocation()>
+    <com.module.collect.LocationTask: android.location.Location getLocation()>
+    <com.module.collect.LocationTask: void execute()>
+    <com.module.collect.LocationTask: void l(android.location.Location)>
+    <com.module.collect.LocationTask$f: void <init>(com.module.collect.LocationTask,android.location.Location)>
+    <com.module.collect.LocationTask$f: void <init>(com.module.collect.LocationTask,android.location.Location)>
+    <com.module.collect.LocationTask: void l(android.location.Location)>
+    <com.module.collect.LocationTask$f: void run()>
+    <com.module.collect.LocationTask$f: void run()>
+    <com.module.collect.LocationTask$f: void run()>
+    <com.module.collect.LocationTask$f: void run()>
+    <com.module.collect.LocationTask$f: void run()>
+    <com.module.collect.LocationTask$f: void run()>
+    <com.module.collect.LocationTask$f: void run()>
+    <com.module.collect.a: void put(java.lang.String,java.lang.String)>
+    <com.module.collect.GZIPUtils: java.lang.String compress(java.lang.String)>
+    <com.module.collect.GZIPUtils: java.lang.String compress(java.lang.String)>
+
+Leak 5:
+  Source: $f0 = virtualinvoke $r5.<android.location.Location: float getBearing()>() (<android.location.Location: float getBearing()>)
+  Sink: virtualinvoke $r8.<java.util.zip.GZIPOutputStream: void write(byte[])>($r2) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.module.collect.LocationTask$f: void run()>
+    <com.module.collect.LocationTask$f: void run()>
+    <com.module.collect.LocationTask$f: void run()>
+    <com.module.collect.LocationTask$f: void run()>
+    <com.module.collect.LocationTask$f: void run()>
+    <com.module.collect.LocationTask$f: void run()>
+    <com.module.collect.LocationTask$f: void run()>
+    <com.module.collect.a: void put(java.lang.String,java.lang.String)>
+    <com.module.collect.GZIPUtils: java.lang.String compress(java.lang.String)>
+    <com.module.collect.GZIPUtils: java.lang.String compress(java.lang.String)>
+
+Leak 6:
+  Source: $r2 = virtualinvoke $r1.<android.telephony.TelephonyManager: java.lang.String getLine1Number()>() (<android.telephony.TelephonyManager: java.lang.String getLine1Number()>)
+  Sink: virtualinvoke $r8.<java.util.zip.GZIPOutputStream: void write(byte[])>($r2) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.module.collect.TelephonyInfo: java.lang.String e(android.telephony.TelephonyManager)>
+    <com.module.collect.TelephonyInfo: java.lang.String e(android.telephony.TelephonyManager)>
+    <com.module.collect.TelephonyInfo: java.lang.String getPhones(android.content.Context)>
+    <com.module.collect.TelephonyInfo: java.lang.String getPhones(android.content.Context)>
+    <com.module.collect.TelephonyInfo: java.lang.String getPhones(android.content.Context)>
+    <com.module.collect.TelephonyInfo: java.lang.String getPhones(android.content.Context)>
+    <com.module.collect.TelephonyInfo: java.lang.String getPhones(android.content.Context)>
+    <com.module.collect.TelephonyInfo: java.lang.String getPhones(android.content.Context)>
+    <com.module.collect.TelephonyInfo: java.lang.String getPhones(android.content.Context)>
+    <com.module.collect.e: void run()>
+    <com.module.collect.e: void run()>
+    <com.module.collect.i: java.lang.String Y(java.util.Map)>
+    <com.module.collect.i: java.lang.String Y(java.util.Map)>
+    <com.module.collect.i: java.lang.String Y(java.util.Map)>
+    <com.module.collect.i: java.lang.String Y(java.util.Map)>
+    <com.module.collect.i: java.lang.String Y(java.util.Map)>
+    <com.module.collect.i: java.lang.String Y(java.util.Map)>
+    <com.module.collect.i: java.lang.String Y(java.util.Map)>
+    <com.module.collect.i: java.lang.String Y(java.util.Map)>
+    <com.module.collect.i: java.lang.String Y(java.util.Map)>
+    <com.module.collect.i: java.lang.String Y(java.util.Map)>
+    <com.module.collect.i: java.lang.String Y(java.util.Map)>
+    <com.module.collect.e: void run()>
+    <com.module.collect.e: void run()>
+    <com.module.collect.e: void run()>
+    <com.module.collect.e: void run()>
+    <com.module.collect.e: void run()>
+    <com.module.collect.a: void put(java.lang.String,java.lang.String)>
+    <com.module.collect.GZIPUtils: java.lang.String compress(java.lang.String)>
+    <com.module.collect.GZIPUtils: java.lang.String compress(java.lang.String)>
+
+Leak 7:
+  Source: $r3 = virtualinvoke $r2.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r1, null, null, null, null) (<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>)
+  Sink: virtualinvoke $r8.<java.util.zip.GZIPOutputStream: void write(byte[])>($r2) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.module.collect.TelephonyInfo: java.util.ArrayList m(android.content.Context)>
+    <com.module.collect.TelephonyInfo: java.util.ArrayList m(android.content.Context)>
+    <com.module.collect.TelephonyInfo: java.util.ArrayList m(android.content.Context)>
+    <com.module.collect.TelephonyInfo: java.util.ArrayList m(android.content.Context)>
+    <com.module.collect.TelephonyInfo: java.lang.String getPhones(android.content.Context)>
+    <com.module.collect.TelephonyInfo: java.lang.String getPhones(android.content.Context)>
+    <com.module.collect.TelephonyInfo: java.lang.String getPhones(android.content.Context)>
+    <com.module.collect.TelephonyInfo: java.lang.String getPhones(android.content.Context)>
+    <com.module.collect.TelephonyInfo: java.lang.String getPhones(android.content.Context)>
+    <com.module.collect.TelephonyInfo: java.lang.String getPhones(android.content.Context)>
+    <com.module.collect.e: void run()>
+    <com.module.collect.e: void run()>
+    <com.module.collect.i: java.lang.String Y(java.util.Map)>
+    <com.module.collect.i: java.lang.String Y(java.util.Map)>
+    <com.module.collect.i: java.lang.String Y(java.util.Map)>
+    <com.module.collect.i: java.lang.String Y(java.util.Map)>
+    <com.module.collect.i: java.lang.String Y(java.util.Map)>
+    <com.module.collect.i: java.lang.String Y(java.util.Map)>
+    <com.module.collect.i: java.lang.String Y(java.util.Map)>
+    <com.module.collect.i: java.lang.String Y(java.util.Map)>
+    <com.module.collect.i: java.lang.String Y(java.util.Map)>
+    <com.module.collect.i: java.lang.String Y(java.util.Map)>
+    <com.module.collect.i: java.lang.String Y(java.util.Map)>
+    <com.module.collect.e: void run()>
+    <com.module.collect.e: void run()>
+    <com.module.collect.e: void run()>
+    <com.module.collect.e: void run()>
+    <com.module.collect.e: void run()>
+    <com.module.collect.a: void put(java.lang.String,java.lang.String)>
+    <com.module.collect.GZIPUtils: java.lang.String compress(java.lang.String)>
+    <com.module.collect.GZIPUtils: java.lang.String compress(java.lang.String)>
+
+Leak 8:
+  Source: $r10 = virtualinvoke $r4.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r8, 4096) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r8.<java.util.zip.GZIPOutputStream: void write(byte[])>($r2) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.module.collect.AppListTask: void run()>
+    <com.module.collect.AppListTask: void run()>
+    <com.module.collect.AppListTask: void run()>
+    <com.module.collect.AppListTask: void run()>
+    <com.module.collect.AppListTask: void run()>
+    <com.module.collect.AppListTask: void run()>
+    <com.module.collect.AppListTask: void run()>
+    <com.module.collect.AppListTask: void run()>
+    <com.module.collect.AppListTask: void run()>
+    <com.module.collect.AppListTask: void run()>
+    <com.module.collect.AppListTask: void run()>
+    <com.module.collect.AppListTask: void run()>
+    <com.module.collect.a: void put(java.lang.String,java.lang.String)>
+    <com.module.collect.GZIPUtils: java.lang.String compress(java.lang.String)>
+    <com.module.collect.GZIPUtils: java.lang.String compress(java.lang.String)>
+
+Leak 9:
+  Source: $f0 = virtualinvoke $r5.<android.location.Location: float getSpeed()>() (<android.location.Location: float getSpeed()>)
+  Sink: virtualinvoke $r8.<java.util.zip.GZIPOutputStream: void write(byte[])>($r2) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.module.collect.LocationTask$f: void run()>
+    <com.module.collect.LocationTask$f: void run()>
+    <com.module.collect.LocationTask$f: void run()>
+    <com.module.collect.LocationTask$f: void run()>
+    <com.module.collect.LocationTask$f: void run()>
+    <com.module.collect.LocationTask$f: void run()>
+    <com.module.collect.LocationTask$f: void run()>
+    <com.module.collect.a: void put(java.lang.String,java.lang.String)>
+    <com.module.collect.GZIPUtils: java.lang.String compress(java.lang.String)>
+    <com.module.collect.GZIPUtils: java.lang.String compress(java.lang.String)>
+
+Leak 10:
+  Source: $r3 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r1, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r8.<java.util.zip.GZIPOutputStream: void write(byte[])>($r2) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.module.collect.i: java.lang.String k()>
+    <com.module.collect.i: java.lang.String k()>
+    <com.module.collect.i: java.lang.String k()>
+    <com.module.collect.i: java.lang.String C()>
+    <com.module.collect.i: java.lang.String C()>
+    <com.module.collect.i: java.lang.String C()>
+    <com.module.collect.e: void run()>
+    <com.module.collect.e: void run()>
+    <com.module.collect.i: java.lang.String Y(java.util.Map)>
+    <com.module.collect.i: java.lang.String Y(java.util.Map)>
+    <com.module.collect.i: java.lang.String Y(java.util.Map)>
+    <com.module.collect.i: java.lang.String Y(java.util.Map)>
+    <com.module.collect.i: java.lang.String Y(java.util.Map)>
+    <com.module.collect.i: java.lang.String Y(java.util.Map)>
+    <com.module.collect.i: java.lang.String Y(java.util.Map)>
+    <com.module.collect.i: java.lang.String Y(java.util.Map)>
+    <com.module.collect.i: java.lang.String Y(java.util.Map)>
+    <com.module.collect.i: java.lang.String Y(java.util.Map)>
+    <com.module.collect.i: java.lang.String Y(java.util.Map)>
+    <com.module.collect.e: void run()>
+    <com.module.collect.e: void run()>
+    <com.module.collect.e: void run()>
+    <com.module.collect.e: void run()>
+    <com.module.collect.e: void run()>
+    <com.module.collect.a: void put(java.lang.String,java.lang.String)>
+    <com.module.collect.GZIPUtils: java.lang.String compress(java.lang.String)>
+    <com.module.collect.GZIPUtils: java.lang.String compress(java.lang.String)>
+
+Leak 11:
+  Source: $r5 = virtualinvoke $r4.<android.content.pm.PackageManager: java.util.List getInstalledPackages(int)>(0) (<android.content.pm.PackageManager: java.util.List getInstalledPackages(int)>)
+  Sink: virtualinvoke $r8.<java.util.zip.GZIPOutputStream: void write(byte[])>($r2) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.module.collect.AppListTask: void run()>
+    <com.module.collect.AppListTask: void run()>
+    <com.module.collect.AppListTask: void run()>
+    <com.module.collect.AppListTask: void run()>
+    <com.module.collect.AppListTask: void run()>
+    <com.module.collect.AppListTask: void run()>
+    <com.module.collect.AppListTask: void run()>
+    <com.module.collect.AppListTask: void run()>
+    <com.module.collect.AppListTask: void run()>
+    <com.module.collect.AppListTask: void run()>
+    <com.module.collect.a: void put(java.lang.String,java.lang.String)>
+    <com.module.collect.GZIPUtils: java.lang.String compress(java.lang.String)>
+    <com.module.collect.GZIPUtils: java.lang.String compress(java.lang.String)>
+
+Leak 12:
+  Source: $r10 = virtualinvoke $r5.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r6, $r7, "_id<?", $r8, "_id desc") (<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>)
+  Sink: virtualinvoke $r8.<java.util.zip.GZIPOutputStream: void write(byte[])>($r2) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.module.collect.h: void run()>
+    <com.module.collect.h: void run()>
+    <com.module.collect.h: void run()>
+    <com.module.collect.h: void run()>
+    <com.module.collect.h: void run()>
+    <com.module.collect.h: void run()>
+    <com.module.collect.h: void run()>
+    <com.module.collect.h: void run()>
+    <com.module.collect.h: void run()>
+    <com.module.collect.h: void run()>
+    <com.module.collect.h: void run()>
+    <com.module.collect.a: void put(java.lang.String,java.lang.String)>
+    <com.module.collect.GZIPUtils: java.lang.String compress(java.lang.String)>
+    <com.module.collect.GZIPUtils: java.lang.String compress(java.lang.String)>
+
+Leak 13:
+  Source: $r2 = virtualinvoke $r1.<android.telephony.TelephonyManager: java.lang.String getSimSerialNumber()>() (<android.telephony.TelephonyManager: java.lang.String getSimSerialNumber()>)
+  Sink: virtualinvoke $r8.<java.util.zip.GZIPOutputStream: void write(byte[])>($r2) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.module.collect.TelephonyInfo: java.lang.String i(android.telephony.TelephonyManager)>
+    <com.module.collect.TelephonyInfo: java.lang.String i(android.telephony.TelephonyManager)>
+    <com.module.collect.TelephonyInfo: java.lang.String printTelephoneInfo(android.content.Context)>
+    <com.module.collect.TelephonyInfo: java.lang.String printTelephoneInfo(android.content.Context)>
+    <com.module.collect.TelephonyInfo: java.lang.String printTelephoneInfo(android.content.Context)>
+    <com.module.collect.e: void run()>
+    <com.module.collect.e: void run()>
+    <com.module.collect.i: java.lang.String Y(java.util.Map)>
+    <com.module.collect.i: java.lang.String Y(java.util.Map)>
+    <com.module.collect.i: java.lang.String Y(java.util.Map)>
+    <com.module.collect.i: java.lang.String Y(java.util.Map)>
+    <com.module.collect.i: java.lang.String Y(java.util.Map)>
+    <com.module.collect.i: java.lang.String Y(java.util.Map)>
+    <com.module.collect.i: java.lang.String Y(java.util.Map)>
+    <com.module.collect.i: java.lang.String Y(java.util.Map)>
+    <com.module.collect.i: java.lang.String Y(java.util.Map)>
+    <com.module.collect.i: java.lang.String Y(java.util.Map)>
+    <com.module.collect.i: java.lang.String Y(java.util.Map)>
+    <com.module.collect.e: void run()>
+    <com.module.collect.e: void run()>
+    <com.module.collect.e: void run()>
+    <com.module.collect.e: void run()>
+    <com.module.collect.e: void run()>
+    <com.module.collect.a: void put(java.lang.String,java.lang.String)>
+    <com.module.collect.GZIPUtils: java.lang.String compress(java.lang.String)>
+    <com.module.collect.GZIPUtils: java.lang.String compress(java.lang.String)>
+
+Leak 14:
+  Source: $r9 = virtualinvoke $r4.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r5, $r6, "_id<?", $r7, "_id desc") (<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>)
+  Sink: virtualinvoke $r8.<java.util.zip.GZIPOutputStream: void write(byte[])>($r2) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.module.collect.g: void run()>
+    <com.module.collect.g: void run()>
+    <com.module.collect.g: void run()>
+    <com.module.collect.g: void run()>
+    <com.module.collect.g: void run()>
+    <com.module.collect.g: void run()>
+    <com.module.collect.g: void run()>
+    <com.module.collect.g: void run()>
+    <com.module.collect.g: void run()>
+    <com.module.collect.g: void run()>
+    <com.module.collect.g: void run()>
+    <com.module.collect.a: void put(java.lang.String,java.lang.String)>
+    <com.module.collect.GZIPUtils: java.lang.String compress(java.lang.String)>
+    <com.module.collect.GZIPUtils: java.lang.String compress(java.lang.String)>
+
+Leak 15:
+  Source: $r3 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r1, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r8.<java.util.zip.GZIPOutputStream: void write(byte[])>($r2) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.module.collect.i: java.lang.String i()>
+    <com.module.collect.i: java.lang.String i()>
+    <com.module.collect.i: java.lang.String i()>
+    <com.module.collect.i: java.lang.String i()>
+    <com.module.collect.i: java.lang.String i()>
+    <com.module.collect.i: java.lang.String C()>
+    <com.module.collect.i: java.lang.String C()>
+    <com.module.collect.i: java.lang.String C()>
+    <com.module.collect.e: void run()>
+    <com.module.collect.e: void run()>
+    <com.module.collect.i: java.lang.String Y(java.util.Map)>
+    <com.module.collect.i: java.lang.String Y(java.util.Map)>
+    <com.module.collect.i: java.lang.String Y(java.util.Map)>
+    <com.module.collect.i: java.lang.String Y(java.util.Map)>
+    <com.module.collect.i: java.lang.String Y(java.util.Map)>
+    <com.module.collect.i: java.lang.String Y(java.util.Map)>
+    <com.module.collect.i: java.lang.String Y(java.util.Map)>
+    <com.module.collect.i: java.lang.String Y(java.util.Map)>
+    <com.module.collect.i: java.lang.String Y(java.util.Map)>
+    <com.module.collect.i: java.lang.String Y(java.util.Map)>
+    <com.module.collect.i: java.lang.String Y(java.util.Map)>
+    <com.module.collect.e: void run()>
+    <com.module.collect.e: void run()>
+    <com.module.collect.e: void run()>
+    <com.module.collect.e: void run()>
+    <com.module.collect.e: void run()>
+    <com.module.collect.a: void put(java.lang.String,java.lang.String)>
+    <com.module.collect.GZIPUtils: java.lang.String compress(java.lang.String)>
+    <com.module.collect.GZIPUtils: java.lang.String compress(java.lang.String)>
+
+Leak 16:
+  Source: $r2 = virtualinvoke $r1.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() (<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>)
+  Sink: virtualinvoke $r8.<java.util.zip.GZIPOutputStream: void write(byte[])>($r2) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.module.collect.TelephonyInfo: java.lang.String k(android.telephony.TelephonyManager)>
+    <com.module.collect.TelephonyInfo: java.lang.String k(android.telephony.TelephonyManager)>
+    <com.module.collect.TelephonyInfo: java.lang.String printTelephoneInfo(android.content.Context)>
+    <com.module.collect.TelephonyInfo: java.lang.String printTelephoneInfo(android.content.Context)>
+    <com.module.collect.TelephonyInfo: java.lang.String printTelephoneInfo(android.content.Context)>
+    <com.module.collect.e: void run()>
+    <com.module.collect.e: void run()>
+    <com.module.collect.i: java.lang.String Y(java.util.Map)>
+    <com.module.collect.i: java.lang.String Y(java.util.Map)>
+    <com.module.collect.i: java.lang.String Y(java.util.Map)>
+    <com.module.collect.i: java.lang.String Y(java.util.Map)>
+    <com.module.collect.i: java.lang.String Y(java.util.Map)>
+    <com.module.collect.i: java.lang.String Y(java.util.Map)>
+    <com.module.collect.i: java.lang.String Y(java.util.Map)>
+    <com.module.collect.i: java.lang.String Y(java.util.Map)>
+    <com.module.collect.i: java.lang.String Y(java.util.Map)>
+    <com.module.collect.i: java.lang.String Y(java.util.Map)>
+    <com.module.collect.i: java.lang.String Y(java.util.Map)>
+    <com.module.collect.e: void run()>
+    <com.module.collect.e: void run()>
+    <com.module.collect.e: void run()>
+    <com.module.collect.e: void run()>
+    <com.module.collect.e: void run()>
+    <com.module.collect.a: void put(java.lang.String,java.lang.String)>
+    <com.module.collect.GZIPUtils: java.lang.String compress(java.lang.String)>
+    <com.module.collect.GZIPUtils: java.lang.String compress(java.lang.String)>
+
+Leak 17:
+  Source: $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r2, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r2.<java.io.Writer: void write(java.lang.String)>($r7) (<java.io.BufferedWriter: void write(java.lang.String)>)
+  Methods:
+    <com.module.commonutils.general.AppUtil: int getVersionCode()>
+    <com.module.commonutils.general.AppUtil: int getVersionCode()>
+    <com.module.commonutils.general.AppUtil: int getVersionCode()>
+    <com.module.library.cache.DiskCache: void <init>(java.io.File,long)>
+    <com.module.library.cache.DiskLruCache: com.module.library.cache.DiskLruCache open(java.io.File,int,int,long)>
+    <com.module.library.cache.DiskLruCache: void <init>(java.io.File,int,int,long)>
+    <com.module.library.cache.DiskLruCache: void <init>(java.io.File,int,int,long)>
+    <com.module.library.cache.DiskLruCache: com.module.library.cache.DiskLruCache open(java.io.File,int,int,long)>
+    <com.module.library.cache.DiskLruCache: void u()>
+    <com.module.library.cache.DiskLruCache: void u()>
+    <com.module.library.cache.DiskLruCache: void u()>
+    <com.module.library.cache.DiskLruCache: void u()>
+
+Leak 18:
+  Source: $r4 = virtualinvoke $r3.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r2, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r5.<java.io.FileOutputStream: void write(byte[])>($r7) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <com.facebook.internal.Utility: java.lang.String getAppVersion()>
+    <com.facebook.internal.Utility: java.lang.String getAppVersion()>
+    <com.facebook.internal.Utility: java.lang.String getAppVersion()>
+    <com.facebook.internal.instrument.InstrumentData: void <init>(java.lang.Throwable,com.facebook.internal.instrument.InstrumentData$Type)>
+    <com.facebook.internal.instrument.InstrumentData: void <init>(java.lang.Throwable,com.facebook.internal.instrument.InstrumentData$Type)>
+    <com.facebook.internal.instrument.InstrumentData: void <init>(java.lang.Throwable,com.facebook.internal.instrument.InstrumentData$Type,com.facebook.internal.instrument.InstrumentData$1)>
+    <com.facebook.internal.instrument.InstrumentData$Builder: com.facebook.internal.instrument.InstrumentData build(java.lang.Throwable,com.facebook.internal.instrument.InstrumentData$Type)>
+    <com.facebook.internal.instrument.crashshield.CrashShieldHandler: void handleThrowable(java.lang.Throwable,java.lang.Object)>
+    <com.facebook.internal.instrument.InstrumentData: void save()>
+    <com.facebook.internal.instrument.InstrumentData: java.lang.String toString()>
+    <com.facebook.internal.instrument.InstrumentData: org.json.JSONObject getParameters()>
+    <com.facebook.internal.instrument.InstrumentData: org.json.JSONObject getExceptionReportParameters()>
+    <com.facebook.internal.instrument.InstrumentData: org.json.JSONObject getExceptionReportParameters()>
+    <com.facebook.internal.instrument.InstrumentData: org.json.JSONObject getExceptionReportParameters()>
+    <com.facebook.internal.instrument.InstrumentData: org.json.JSONObject getParameters()>
+    <com.facebook.internal.instrument.InstrumentData: java.lang.String toString()>
+    <com.facebook.internal.instrument.InstrumentData: java.lang.String toString()>
+    <com.facebook.internal.instrument.InstrumentData: void save()>
+    <com.facebook.internal.instrument.InstrumentUtility: void writeFile(java.lang.String,java.lang.String)>
+    <com.facebook.internal.instrument.InstrumentUtility: void writeFile(java.lang.String,java.lang.String)>
+
+Leak 19:
+  Source: $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r2, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r2.<java.io.Writer: void write(java.lang.String)>("\n") (<java.io.OutputStreamWriter: void write(java.lang.String)>)
+  Methods:
+    <com.module.commonutils.general.AppUtil: int getVersionCode()>
+    <com.module.commonutils.general.AppUtil: int getVersionCode()>
+    <com.module.commonutils.general.AppUtil: int getVersionCode()>
+    <com.module.library.cache.DiskCache: void <init>(java.io.File,long)>
+    <com.module.library.cache.DiskLruCache: com.module.library.cache.DiskLruCache open(java.io.File,int,int,long)>
+    <com.module.library.cache.DiskLruCache: void <init>(java.io.File,int,int,long)>
+    <com.module.library.cache.DiskLruCache: void <init>(java.io.File,int,int,long)>
+    <com.module.library.cache.DiskLruCache: com.module.library.cache.DiskLruCache open(java.io.File,int,int,long)>
+    <com.module.library.cache.DiskLruCache: void s()>
+    <com.module.library.cache.DiskLruCache: void u()>
+    <com.module.library.cache.DiskLruCache: void u()>
+    <com.module.library.cache.DiskLruCache: void u()>
+    <com.module.library.cache.DiskLruCache: void u()>
+
+Leak 20:
+  Source: $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r2, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r2.<java.io.Writer: void write(java.lang.String)>($r7) (<java.io.BufferedWriter: void write(java.lang.String)>)
+  Methods:
+    <com.module.commonutils.general.AppUtil: int getVersionCode()>
+    <com.module.commonutils.general.AppUtil: int getVersionCode()>
+    <com.module.commonutils.general.AppUtil: int getVersionCode()>
+    <com.module.library.cache.DiskCache: void <init>(java.io.File,long)>
+    <com.module.library.cache.DiskLruCache: com.module.library.cache.DiskLruCache open(java.io.File,int,int,long)>
+    <com.module.library.cache.DiskLruCache: void <init>(java.io.File,int,int,long)>
+    <com.module.library.cache.DiskLruCache: void <init>(java.io.File,int,int,long)>
+    <com.module.library.cache.DiskLruCache$a: void <init>(com.module.library.cache.DiskLruCache)>
+    <com.module.library.cache.DiskLruCache$a: void <init>(com.module.library.cache.DiskLruCache)>
+    <com.module.library.cache.DiskLruCache: void <init>(java.io.File,int,int,long)>
+    <com.module.library.cache.DiskLruCache: void <init>(java.io.File,int,int,long)>
+    <com.module.library.cache.DiskLruCache: com.module.library.cache.DiskLruCache open(java.io.File,int,int,long)>
+    <com.module.library.cache.DiskLruCache: void u()>
+    <com.module.library.cache.DiskLruCache: void u()>
+    <com.module.library.cache.DiskLruCache: void u()>
+    <com.module.library.cache.DiskLruCache: void u()>
+
+Leak 21:
+  Source: $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r2, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r2.<java.io.Writer: void write(java.lang.String)>("\n") (<java.io.BufferedWriter: void write(java.lang.String)>)
+  Methods:
+    <com.module.commonutils.general.AppUtil: int getVersionCode()>
+    <com.module.commonutils.general.AppUtil: int getVersionCode()>
+    <com.module.commonutils.general.AppUtil: int getVersionCode()>
+    <com.module.library.cache.DiskCache: void <init>(java.io.File,long)>
+    <com.module.library.cache.DiskLruCache: com.module.library.cache.DiskLruCache open(java.io.File,int,int,long)>
+    <com.module.library.cache.DiskLruCache: void <init>(java.io.File,int,int,long)>
+    <com.module.library.cache.DiskLruCache: void <init>(java.io.File,int,int,long)>
+    <com.module.library.cache.DiskLruCache: com.module.library.cache.DiskLruCache open(java.io.File,int,int,long)>
+    <com.module.library.cache.DiskLruCache: void s()>
+    <com.module.library.cache.DiskLruCache: void u()>
+    <com.module.library.cache.DiskLruCache: void u()>
+    <com.module.library.cache.DiskLruCache: void u()>
+    <com.module.library.cache.DiskLruCache: void u()>
+
+Leak 22:
+  Source: $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r2, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r1.<java.io.FileOutputStream: void write(byte[])>($r0) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <com.umeng.analytics.pro.bt: java.lang.String p(android.content.Context)>
+    <com.umeng.analytics.pro.bt: java.lang.String p(android.content.Context)>
+    <com.umeng.analytics.pro.bt: java.lang.String p(android.content.Context)>
+    <com.umeng.analytics.pro.bt: java.lang.String p(android.content.Context)>
+    <com.umeng.analytics.pro.bt: java.lang.String p(android.content.Context)>
+    <com.umeng.analytics.AnalyticsConfig: java.lang.String getAppkey(android.content.Context)>
+    <com.umeng.analytics.AnalyticsConfig: java.lang.String getAppkey(android.content.Context)>
+    <com.umeng.analytics.AnalyticsConfig: java.lang.String getAppkey(android.content.Context)>
+    <com.umeng.analytics.pro.ap: void c(org.json.JSONObject)>
+    <com.umeng.analytics.pro.aa: com.umeng.analytics.pro.aa a(android.content.Context,java.lang.String,byte[])>
+    <com.umeng.analytics.pro.aa: void <init>(byte[],java.lang.String,byte[])>
+    <com.umeng.analytics.pro.aa: void <init>(byte[],java.lang.String,byte[])>
+    <com.umeng.analytics.pro.aa: com.umeng.analytics.pro.aa a(android.content.Context,java.lang.String,byte[])>
+    <com.umeng.analytics.pro.aa: void b(android.content.Context)>
+    <com.umeng.analytics.pro.aa: void b(android.content.Context)>
+    <com.umeng.analytics.pro.aa: void b(android.content.Context)>
+    <com.umeng.analytics.pro.aa: void b(android.content.Context)>
+    <com.umeng.analytics.pro.bu: void a(java.io.File,java.lang.String)>
+    <com.umeng.analytics.pro.bu: void a(java.io.File,java.lang.String)>
+    <com.umeng.analytics.pro.bu: void a(java.io.File,byte[])>
+
+Leak 23:
+  Source: $r4 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r3, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r1.<java.io.FileOutputStream: void write(byte[])>($r0) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <com.umeng.analytics.pro.bt: java.lang.String s(android.content.Context)>
+    <com.umeng.analytics.pro.bt: java.lang.String s(android.content.Context)>
+    <com.umeng.analytics.pro.bt: java.lang.String s(android.content.Context)>
+    <com.umeng.analytics.pro.bt: java.lang.String s(android.content.Context)>
+    <com.umeng.analytics.pro.bt: java.lang.String s(android.content.Context)>
+    <com.umeng.analytics.AnalyticsConfig: java.lang.String getChannel(android.content.Context)>
+    <com.umeng.analytics.AnalyticsConfig: java.lang.String getChannel(android.content.Context)>
+    <com.umeng.analytics.AnalyticsConfig: java.lang.String getChannel(android.content.Context)>
+    <com.umeng.analytics.pro.aa: void b(android.content.Context)>
+    <com.umeng.analytics.pro.aa: void b(android.content.Context)>
+    <com.umeng.analytics.pro.aa: void b(android.content.Context)>
+    <com.umeng.analytics.pro.bu: void a(java.io.File,java.lang.String)>
+    <com.umeng.analytics.pro.bu: void a(java.io.File,java.lang.String)>
+    <com.umeng.analytics.pro.bu: void a(java.io.File,byte[])>
+
+Leak 24:
+  Source: $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r2, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r2.<java.io.Writer: void write(java.lang.String)>("\n") (<java.io.OutputStreamWriter: void write(java.lang.String)>)
+  Methods:
+    <com.module.commonutils.general.AppUtil: int getVersionCode()>
+    <com.module.commonutils.general.AppUtil: int getVersionCode()>
+    <com.module.commonutils.general.AppUtil: int getVersionCode()>
+    <com.module.library.cache.DiskCache: void <init>(java.io.File,long)>
+    <com.module.library.cache.DiskLruCache: com.module.library.cache.DiskLruCache open(java.io.File,int,int,long)>
+    <com.module.library.cache.DiskLruCache: void <init>(java.io.File,int,int,long)>
+    <com.module.library.cache.DiskLruCache: void <init>(java.io.File,int,int,long)>
+    <com.module.library.cache.DiskLruCache: com.module.library.cache.DiskLruCache open(java.io.File,int,int,long)>
+    <com.module.library.cache.DiskLruCache: void u()>
+    <com.module.library.cache.DiskLruCache: void u()>
+    <com.module.library.cache.DiskLruCache: void u()>
+    <com.module.library.cache.DiskLruCache: void u()>
+
+Leak 25:
+  Source: $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r2, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r2.<java.io.Writer: void write(java.lang.String)>("\n") (<java.io.BufferedWriter: void write(java.lang.String)>)
+  Methods:
+    <com.module.commonutils.general.AppUtil: int getVersionCode()>
+    <com.module.commonutils.general.AppUtil: int getVersionCode()>
+    <com.module.commonutils.general.AppUtil: int getVersionCode()>
+    <com.module.library.cache.DiskCache: void <init>(java.io.File,long)>
+    <com.module.library.cache.DiskLruCache: com.module.library.cache.DiskLruCache open(java.io.File,int,int,long)>
+    <com.module.library.cache.DiskLruCache: void <init>(java.io.File,int,int,long)>
+    <com.module.library.cache.DiskLruCache: void <init>(java.io.File,int,int,long)>
+    <com.module.library.cache.DiskLruCache: com.module.library.cache.DiskLruCache open(java.io.File,int,int,long)>
+    <com.module.library.cache.DiskLruCache: void u()>
+    <com.module.library.cache.DiskLruCache: void u()>
+    <com.module.library.cache.DiskLruCache: void u()>
+    <com.module.library.cache.DiskLruCache: void u()>
+
+Leak 26:
+  Source: $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r2, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r2.<java.io.Writer: void write(java.lang.String)>("\n") (<java.io.OutputStreamWriter: void write(java.lang.String)>)
+  Methods:
+    <com.module.commonutils.general.AppUtil: int getVersionCode()>
+    <com.module.commonutils.general.AppUtil: int getVersionCode()>
+    <com.module.commonutils.general.AppUtil: int getVersionCode()>
+    <com.module.library.cache.DiskCache: void <init>(java.io.File,long)>
+    <com.module.library.cache.DiskLruCache: com.module.library.cache.DiskLruCache open(java.io.File,int,int,long)>
+    <com.module.library.cache.DiskLruCache: void <init>(java.io.File,int,int,long)>
+    <com.module.library.cache.DiskLruCache: void <init>(java.io.File,int,int,long)>
+    <com.module.library.cache.DiskLruCache: com.module.library.cache.DiskLruCache open(java.io.File,int,int,long)>
+    <com.module.library.cache.DiskLruCache: void u()>
+    <com.module.library.cache.DiskLruCache: void u()>
+    <com.module.library.cache.DiskLruCache: void u()>
+    <com.module.library.cache.DiskLruCache: void u()>
+
+Leak 27:
+  Source: $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r2, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r2.<java.io.Writer: void write(java.lang.String)>($r7) (<java.io.OutputStreamWriter: void write(java.lang.String)>)
+  Methods:
+    <com.module.commonutils.general.AppUtil: int getVersionCode()>
+    <com.module.commonutils.general.AppUtil: int getVersionCode()>
+    <com.module.commonutils.general.AppUtil: int getVersionCode()>
+    <com.module.library.cache.DiskCache: void <init>(java.io.File,long)>
+    <com.module.library.cache.DiskLruCache: com.module.library.cache.DiskLruCache open(java.io.File,int,int,long)>
+    <com.module.library.cache.DiskLruCache: void <init>(java.io.File,int,int,long)>
+    <com.module.library.cache.DiskLruCache: void <init>(java.io.File,int,int,long)>
+    <com.module.library.cache.DiskLruCache$a: void <init>(com.module.library.cache.DiskLruCache)>
+    <com.module.library.cache.DiskLruCache$a: void <init>(com.module.library.cache.DiskLruCache)>
+    <com.module.library.cache.DiskLruCache: void <init>(java.io.File,int,int,long)>
+    <com.module.library.cache.DiskLruCache: void <init>(java.io.File,int,int,long)>
+    <com.module.library.cache.DiskLruCache: com.module.library.cache.DiskLruCache open(java.io.File,int,int,long)>
+    <com.module.library.cache.DiskLruCache: void u()>
+    <com.module.library.cache.DiskLruCache: void u()>
+    <com.module.library.cache.DiskLruCache: void u()>
+    <com.module.library.cache.DiskLruCache: void u()>
+
+Leak 28:
+  Source: $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r2, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r2.<java.io.Writer: void write(java.lang.String)>($r7) (<java.io.BufferedWriter: void write(java.lang.String)>)
+  Methods:
+    <com.module.commonutils.general.AppUtil: int getVersionCode()>
+    <com.module.commonutils.general.AppUtil: int getVersionCode()>
+    <com.module.commonutils.general.AppUtil: int getVersionCode()>
+    <com.module.library.cache.DiskCache: void <init>(java.io.File,long)>
+    <com.module.library.cache.DiskLruCache: com.module.library.cache.DiskLruCache open(java.io.File,int,int,long)>
+    <com.module.library.cache.DiskLruCache: void <init>(java.io.File,int,int,long)>
+    <com.module.library.cache.DiskLruCache: void <init>(java.io.File,int,int,long)>
+    <com.module.library.cache.DiskLruCache: com.module.library.cache.DiskLruCache open(java.io.File,int,int,long)>
+    <com.module.library.cache.DiskLruCache: void s()>
+    <com.module.library.cache.DiskLruCache: void u()>
+    <com.module.library.cache.DiskLruCache: void u()>
+    <com.module.library.cache.DiskLruCache: void u()>
+
+Leak 29:
+  Source: $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r2, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r2.<java.io.Writer: void write(java.lang.String)>("\n") (<java.io.BufferedWriter: void write(java.lang.String)>)
+  Methods:
+    <com.module.commonutils.general.AppUtil: int getVersionCode()>
+    <com.module.commonutils.general.AppUtil: int getVersionCode()>
+    <com.module.commonutils.general.AppUtil: int getVersionCode()>
+    <com.module.library.cache.DiskCache: void <init>(java.io.File,long)>
+    <com.module.library.cache.DiskLruCache: com.module.library.cache.DiskLruCache open(java.io.File,int,int,long)>
+    <com.module.library.cache.DiskLruCache: void <init>(java.io.File,int,int,long)>
+    <com.module.library.cache.DiskLruCache: void <init>(java.io.File,int,int,long)>
+    <com.module.library.cache.DiskLruCache: com.module.library.cache.DiskLruCache open(java.io.File,int,int,long)>
+    <com.module.library.cache.DiskLruCache: void u()>
+    <com.module.library.cache.DiskLruCache: void u()>
+    <com.module.library.cache.DiskLruCache: void u()>
+    <com.module.library.cache.DiskLruCache: void u()>
+
+Leak 30:
+  Source: $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r2, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r2.<java.io.Writer: void write(java.lang.String)>($r7) (<java.io.OutputStreamWriter: void write(java.lang.String)>)
+  Methods:
+    <com.module.commonutils.general.AppUtil: int getVersionCode()>
+    <com.module.commonutils.general.AppUtil: int getVersionCode()>
+    <com.module.commonutils.general.AppUtil: int getVersionCode()>
+    <com.module.library.cache.DiskCache: void <init>(java.io.File,long)>
+    <com.module.library.cache.DiskLruCache: com.module.library.cache.DiskLruCache open(java.io.File,int,int,long)>
+    <com.module.library.cache.DiskLruCache: void <init>(java.io.File,int,int,long)>
+    <com.module.library.cache.DiskLruCache: void <init>(java.io.File,int,int,long)>
+    <com.module.library.cache.DiskLruCache: com.module.library.cache.DiskLruCache open(java.io.File,int,int,long)>
+    <com.module.library.cache.DiskLruCache: void u()>
+    <com.module.library.cache.DiskLruCache: void u()>
+    <com.module.library.cache.DiskLruCache: void u()>
+    <com.module.library.cache.DiskLruCache: void u()>
+
+Leak 31:
+  Source: $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r2, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r2.<java.io.Writer: void write(java.lang.String)>($r7) (<java.io.OutputStreamWriter: void write(java.lang.String)>)
+  Methods:
+    <com.module.commonutils.general.AppUtil: int getVersionCode()>
+    <com.module.commonutils.general.AppUtil: int getVersionCode()>
+    <com.module.commonutils.general.AppUtil: int getVersionCode()>
+    <com.module.library.cache.DiskCache: void <init>(java.io.File,long)>
+    <com.module.library.cache.DiskLruCache: com.module.library.cache.DiskLruCache open(java.io.File,int,int,long)>
+    <com.module.library.cache.DiskLruCache: void <init>(java.io.File,int,int,long)>
+    <com.module.library.cache.DiskLruCache: void <init>(java.io.File,int,int,long)>
+    <com.module.library.cache.DiskLruCache: com.module.library.cache.DiskLruCache open(java.io.File,int,int,long)>
+    <com.module.library.cache.DiskLruCache: void s()>
+    <com.module.library.cache.DiskLruCache: void u()>
+    <com.module.library.cache.DiskLruCache: void u()>
+    <com.module.library.cache.DiskLruCache: void u()>
+

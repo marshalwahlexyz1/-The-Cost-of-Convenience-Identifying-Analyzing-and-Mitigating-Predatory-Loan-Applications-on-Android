@@ -1,0 +1,84 @@
+APK: Crancash (NigeriaDelisted)
+Leak 1:
+  Source: $r9 = virtualinvoke $r8.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r7, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r5.<java.io.FileOutputStream: void write(byte[])>($r7) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <q5.a: void <init>(java.lang.Throwable,q5.a$a)>
+    <q5.a: void <init>(java.lang.Throwable,q5.a$a)>
+    <q5.a: void <init>(java.lang.Throwable,q5.a$a)>
+    <q5.a: void <init>(java.lang.Throwable,q5.a$a)>
+    <t5.a: void a(java.lang.Object,java.lang.Throwable)>
+    <q5.a: void c()>
+    <q5.a: java.lang.String toString()>
+    <q5.a: java.lang.String toString()>
+    <q5.a: java.lang.String toString()>
+    <q5.a: java.lang.String toString()>
+    <q5.a: java.lang.String toString()>
+    <q5.a: void c()>
+    <q5.e: void g(java.lang.String,java.lang.String)>
+    <q5.e: void g(java.lang.String,java.lang.String)>
+
+Leak 2:
+  Source: $r10 = virtualinvoke $r9.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r8, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r5.<java.io.FileOutputStream: void write(byte[])>($r7) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <q5.a: void <init>(java.lang.String,java.lang.String)>
+    <q5.a: void <init>(java.lang.String,java.lang.String)>
+    <q5.a: void <init>(java.lang.String,java.lang.String)>
+    <q5.a: void <init>(java.lang.String,java.lang.String)>
+    <r5.a: void a(android.app.ActivityManager)>
+    <q5.a: void c()>
+    <q5.a: java.lang.String toString()>
+    <q5.a: java.lang.String toString()>
+    <q5.a: java.lang.String toString()>
+    <q5.a: java.lang.String toString()>
+    <q5.a: java.lang.String toString()>
+    <q5.a: void c()>
+    <q5.e: void g(java.lang.String,java.lang.String)>
+    <q5.e: void g(java.lang.String,java.lang.String)>
+
+Leak 3:
+  Source: $r7 = virtualinvoke $r5.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r6, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: $r4 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() (<java.net.URL: java.net.URLConnection openConnection()>)
+  Methods:
+    <com.appsflyer.internal.AFd1qSDK: java.lang.String getRevenue(java.lang.String)>
+    <com.appsflyer.internal.AFd1qSDK: java.lang.String getRevenue(java.lang.String)>
+    <com.appsflyer.internal.AFd1qSDK: java.lang.String getRevenue(java.lang.String)>
+    <com.appsflyer.internal.AFd1qSDK: java.lang.String getRevenue(java.lang.String)>
+    <com.appsflyer.internal.AFd1qSDK: java.lang.String getRevenue(java.lang.String)>
+    <com.appsflyer.internal.AFd1qSDK: java.lang.String component4()>
+    <com.appsflyer.internal.AFe1iSDK$4: java.lang.String AFAdRevenueData()>
+    <com.appsflyer.internal.AFb1rSDK: java.lang.String getMonetizationNetwork(com.appsflyer.internal.AFd1rSDK,java.lang.String)>
+    <com.appsflyer.internal.AFe1iSDK$4: java.lang.String AFAdRevenueData()>
+    <com.appsflyer.internal.AFe1iSDK$4: java.lang.String AFAdRevenueData()>
+    <com.appsflyer.internal.AFe1iSDK$4: java.lang.String AFAdRevenueData()>
+    <kotlin.text.m: java.lang.CharSequence v(java.lang.String)>
+    <kotlin.text.m: java.lang.CharSequence v(java.lang.String)>
+    <com.appsflyer.internal.AFe1iSDK$4: java.lang.String AFAdRevenueData()>
+    <com.appsflyer.internal.AFe1iSDK$4: java.lang.String AFAdRevenueData()>
+    <com.appsflyer.internal.AFe1iSDK$4: java.lang.Object invoke()>
+    <vb.i: java.lang.Object getValue()>
+    <vb.i: java.lang.Object getValue()>
+    <com.appsflyer.internal.AFe1iSDK: java.lang.String getMediationNetwork()>
+    <com.appsflyer.internal.AFe1iSDK: java.lang.String getMediationNetwork()>
+    <com.appsflyer.internal.AFb1rSDK: java.lang.String getHostPrefix()>
+    <com.appsflyer.internal.AFd1aSDK: java.lang.String getRevenue()>
+    <com.appsflyer.internal.AFd1aSDK: java.lang.String getRevenue()>
+    <com.appsflyer.internal.AFd1aSDK: java.lang.String getRevenue()>
+    <com.appsflyer.internal.AFd1gSDK: boolean AFAdRevenueData()>
+    <com.appsflyer.internal.AFd1gSDK: boolean AFAdRevenueData()>
+
+Leak 4:
+  Source: $r9 = virtualinvoke $r7.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r8, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("ManifestParser", $r8) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.bumptech.glide.b: void a(android.content.Context,com.bumptech.glide.GeneratedAppGlideModule)>
+    <com.bumptech.glide.b: void a(android.content.Context,com.bumptech.glide.GeneratedAppGlideModule)>
+    <com.bumptech.glide.b: void a(android.content.Context,com.bumptech.glide.GeneratedAppGlideModule)>
+    <com.bumptech.glide.b: void a(android.content.Context,com.bumptech.glide.GeneratedAppGlideModule)>
+    <com.bumptech.glide.b: void a(android.content.Context,com.bumptech.glide.GeneratedAppGlideModule)>
+    <com.bumptech.glide.b: void a(android.content.Context,com.bumptech.glide.GeneratedAppGlideModule)>
+    <com.bumptech.glide.b: void a(android.content.Context,com.bumptech.glide.GeneratedAppGlideModule)>
+    <com.bumptech.glide.b: void a(android.content.Context,com.bumptech.glide.GeneratedAppGlideModule)>
+    <com.bumptech.glide.b: void a(android.content.Context,com.bumptech.glide.GeneratedAppGlideModule)>
+

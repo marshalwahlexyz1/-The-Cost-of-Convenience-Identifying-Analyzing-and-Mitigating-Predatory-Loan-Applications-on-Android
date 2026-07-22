@@ -1,0 +1,203 @@
+APK: Sycamore (NigeriaApproved)
+Leak 1:
+  Source: $r5 = virtualinvoke $r3.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r4, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("RNFBCrashlyticsInit", $r4) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <io.invertase.firebase.common.ReactNativeFirebaseMeta: android.os.Bundle getMetaData()>
+    <io.invertase.firebase.common.ReactNativeFirebaseMeta: android.os.Bundle getMetaData()>
+    <io.invertase.firebase.common.ReactNativeFirebaseMeta: android.os.Bundle getMetaData()>
+    <io.invertase.firebase.common.ReactNativeFirebaseMeta: boolean getBooleanValue(java.lang.String,boolean)>
+    <io.invertase.firebase.common.ReactNativeFirebaseMeta: boolean getBooleanValue(java.lang.String,boolean)>
+    <io.invertase.firebase.crashlytics.ReactNativeFirebaseCrashlyticsInitProvider: boolean isCrashlyticsCollectionEnabled()>
+    <io.invertase.firebase.crashlytics.ReactNativeFirebaseCrashlyticsInitProvider: boolean isCrashlyticsCollectionEnabled()>
+    <io.invertase.firebase.crashlytics.ReactNativeFirebaseCrashlyticsInitProvider: boolean isCrashlyticsCollectionEnabled()>
+    <io.invertase.firebase.crashlytics.ReactNativeFirebaseCrashlyticsInitProvider: boolean isCrashlyticsCollectionEnabled()>
+
+Leak 2:
+  Source: $r5 = virtualinvoke $r3.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r4, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("RNFBCrashlyticsInit", $r4) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <io.invertase.firebase.common.ReactNativeFirebaseMeta: android.os.Bundle getMetaData()>
+    <io.invertase.firebase.common.ReactNativeFirebaseMeta: android.os.Bundle getMetaData()>
+    <io.invertase.firebase.common.ReactNativeFirebaseMeta: android.os.Bundle getMetaData()>
+    <io.invertase.firebase.common.ReactNativeFirebaseMeta: boolean getBooleanValue(java.lang.String,boolean)>
+    <io.invertase.firebase.common.ReactNativeFirebaseMeta: boolean getBooleanValue(java.lang.String,boolean)>
+    <io.invertase.firebase.crashlytics.ReactNativeFirebaseCrashlyticsInitProvider: boolean isCrashlyticsCollectionEnabled()>
+    <io.invertase.firebase.crashlytics.ReactNativeFirebaseCrashlyticsInitProvider: boolean isCrashlyticsCollectionEnabled()>
+    <io.invertase.firebase.crashlytics.ReactNativeFirebaseCrashlyticsInitProvider: boolean isCrashlyticsCollectionEnabled()>
+
+Leak 3:
+  Source: $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>() (<android.location.Location: double getLongitude()>)
+  Sink: staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r1, $r2) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.netcore.android.j.c: void a(android.location.Location)>
+    <com.netcore.android.j.c: void a(android.location.Location)>
+    <com.netcore.android.j.c: void a(android.location.Location)>
+    <com.netcore.android.j.c: void a(android.location.Location)>
+    <com.netcore.android.logger.SMTLogger: void i(java.lang.String,java.lang.String)>
+    <com.netcore.android.logger.SMTLoggerPrinter: void i(java.lang.String,java.lang.String)>
+
+Leak 4:
+  Source: $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>() (<android.location.Location: double getLatitude()>)
+  Sink: staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r1, $r2) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.netcore.android.j.c: void a(android.location.Location)>
+    <com.netcore.android.j.c: void a(android.location.Location)>
+    <com.netcore.android.j.c: void a(android.location.Location)>
+    <com.netcore.android.j.c: void a(android.location.Location)>
+    <com.netcore.android.j.c$b: void onLocationFetchSuccess(android.location.Location)>
+    <com.netcore.android.j.c$b: void onLocationFetchSuccess(android.location.Location)>
+    <com.netcore.android.j.d: void a()>
+    <com.netcore.android.j.d: void a()>
+    <com.netcore.android.j.c: void b(com.netcore.android.j.c)>
+    <com.netcore.android.j.c: void b(com.netcore.android.j.c)>
+    <com.netcore.android.j.c: void $r8$lambda$HYKAgqi_3T9kLIyIeo3FNs2sLTI(com.netcore.android.j.c)>
+    <com.netcore.android.j.c$$ExternalSyntheticLambda0: void run()>
+    <com.netcore.android.j.c$$ExternalSyntheticLambda0: void run()>
+    <com.netcore.android.j.c: void k()>
+    <com.netcore.android.j.c$$ExternalSyntheticLambda0: void <init>(com.netcore.android.j.c)>
+    <com.netcore.android.j.c$$ExternalSyntheticLambda0: void <init>(com.netcore.android.j.c)>
+    <com.netcore.android.j.c: void k()>
+    <com.netcore.android.j.c: void <init>(android.content.Context)>
+    <com.netcore.android.j.f: void <init>(java.lang.ref.WeakReference)>
+    <com.netcore.android.j.f: void <init>(java.lang.ref.WeakReference)>
+    <com.netcore.android.j.f: void <init>(java.lang.ref.WeakReference,kotlin.jvm.internal.DefaultConstructorMarker)>
+    <com.netcore.android.j.f$a: com.netcore.android.j.f a(java.lang.ref.WeakReference)>
+    <com.netcore.android.j.f$a: com.netcore.android.j.f b(java.lang.ref.WeakReference)>
+    <com.netcore.android.j.f$a: com.netcore.android.j.f b(java.lang.ref.WeakReference)>
+    <com.netcore.android.c.e$a: com.netcore.android.c.e a(android.content.Context)>
+    <com.netcore.android.c.e: void a(com.netcore.android.j.f)>
+    <com.netcore.android.c.e: void a(com.netcore.android.j.f)>
+    <com.netcore.android.c.e$a: com.netcore.android.c.e a(android.content.Context)>
+    <com.netcore.android.c.e$a: com.netcore.android.c.e b(android.content.Context)>
+    <com.netcore.android.d.a: void a(int,java.lang.String,java.util.List)>
+    <com.netcore.android.c.e: void a(com.netcore.android.c.e,int,java.lang.String,java.util.HashMap,java.lang.String,boolean,int,java.lang.Object)>
+    <com.netcore.android.c.e: void a(int,java.lang.String,java.util.HashMap,java.lang.String,boolean)>
+    <com.netcore.android.c.e: void a(int,java.lang.String,java.util.HashMap,java.lang.String,boolean)>
+    <com.netcore.android.c.c: java.util.HashMap a(android.content.Context,int,java.lang.String,com.netcore.android.j.f,java.util.HashMap)>
+    <com.netcore.android.j.f: com.netcore.android.j.c c()>
+    <com.netcore.android.j.f: com.netcore.android.j.c c()>
+    <com.netcore.android.c.c: java.util.HashMap a(android.content.Context,int,java.lang.String,com.netcore.android.j.f,java.util.HashMap)>
+    <com.netcore.android.j.c: java.lang.String j()>
+    <com.netcore.android.j.c: java.lang.String j()>
+    <com.netcore.android.c.c: java.util.HashMap a(android.content.Context,int,java.lang.String,com.netcore.android.j.f,java.util.HashMap)>
+    <com.netcore.android.c.c: java.util.HashMap a(android.content.Context,int,java.lang.String,com.netcore.android.j.f,java.util.HashMap)>
+    <com.netcore.android.c.c: java.util.HashMap a(android.content.Context,int,java.lang.String,com.netcore.android.j.f,java.util.HashMap)>
+    <com.netcore.android.c.e: void a(int,java.lang.String,java.util.HashMap,java.lang.String,boolean)>
+    <com.netcore.android.c.e: void a(int,java.lang.String,java.util.HashMap,java.lang.String,boolean)>
+    <com.netcore.android.c.e: void a(int,java.lang.String,java.util.HashMap,java.lang.String,boolean)>
+    <com.netcore.android.c.e: void a(int,java.lang.String,java.util.HashMap,java.lang.String,boolean)>
+    <com.netcore.android.c.e: void a(int,java.lang.String,java.util.HashMap,java.lang.String,boolean)>
+    <com.netcore.android.logger.SMTLogger: void i(java.lang.String,java.lang.String)>
+    <com.netcore.android.logger.SMTLoggerPrinter: void i(java.lang.String,java.lang.String)>
+
+Leak 5:
+  Source: $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>() (<android.location.Location: double getLatitude()>)
+  Sink: staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r1, $r2) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.netcore.android.j.c: void a(android.location.Location)>
+    <com.netcore.android.j.c: void a(android.location.Location)>
+    <com.netcore.android.j.c: void a(android.location.Location)>
+    <com.netcore.android.j.c: void a(android.location.Location)>
+    <com.netcore.android.logger.SMTLogger: void i(java.lang.String,java.lang.String)>
+    <com.netcore.android.logger.SMTLoggerPrinter: void i(java.lang.String,java.lang.String)>
+
+Leak 6:
+  Source: $r8 = virtualinvoke $r5.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r6, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r1, $r2) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.netcore.android.j.g: void d()>
+    <com.netcore.android.j.g: void d()>
+    <com.netcore.android.j.g: void d()>
+    <com.netcore.android.j.g: int c(android.os.Bundle,java.lang.String)>
+    <com.netcore.android.j.g: int c(android.os.Bundle,java.lang.String)>
+    <com.netcore.android.j.g: int c(android.os.Bundle,java.lang.String)>
+    <com.netcore.android.j.g: int c(android.os.Bundle,java.lang.String)>
+    <com.netcore.android.j.g: void d()>
+    <com.netcore.android.j.g: void d()>
+    <com.netcore.android.j.g: void d()>
+    <com.netcore.android.j.g: void d()>
+    <com.netcore.android.j.g: void d()>
+    <com.netcore.android.logger.SMTLogger: void i(java.lang.String,java.lang.String)>
+    <com.netcore.android.logger.SMTLoggerPrinter: void i(java.lang.String,java.lang.String)>
+
+Leak 7:
+  Source: $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>() (<android.location.Location: double getLongitude()>)
+  Sink: staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r1, $r2) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.netcore.android.j.c: void a(android.location.Location)>
+    <com.netcore.android.j.c: void a(android.location.Location)>
+    <com.netcore.android.j.c: void a(android.location.Location)>
+    <com.netcore.android.j.c: void a(android.location.Location)>
+    <com.netcore.android.j.c$b: void onLocationFetchSuccess(android.location.Location)>
+    <com.netcore.android.j.c$b: void onLocationFetchSuccess(android.location.Location)>
+    <com.netcore.android.j.d: void a()>
+    <com.netcore.android.j.d: void a()>
+    <com.netcore.android.j.c: void b(com.netcore.android.j.c)>
+    <com.netcore.android.j.c: void b(com.netcore.android.j.c)>
+    <com.netcore.android.j.c: void $r8$lambda$HYKAgqi_3T9kLIyIeo3FNs2sLTI(com.netcore.android.j.c)>
+    <com.netcore.android.j.c$$ExternalSyntheticLambda0: void run()>
+    <com.netcore.android.j.c$$ExternalSyntheticLambda0: void run()>
+    <com.netcore.android.j.c: void k()>
+    <com.netcore.android.j.c$$ExternalSyntheticLambda0: void <init>(com.netcore.android.j.c)>
+    <com.netcore.android.j.c$$ExternalSyntheticLambda0: void <init>(com.netcore.android.j.c)>
+    <com.netcore.android.j.c: void k()>
+    <com.netcore.android.j.c: void <init>(android.content.Context)>
+    <com.netcore.android.j.f: void <init>(java.lang.ref.WeakReference)>
+    <com.netcore.android.j.f: void <init>(java.lang.ref.WeakReference)>
+    <com.netcore.android.j.f: void <init>(java.lang.ref.WeakReference,kotlin.jvm.internal.DefaultConstructorMarker)>
+    <com.netcore.android.j.f$a: com.netcore.android.j.f a(java.lang.ref.WeakReference)>
+    <com.netcore.android.j.f$a: com.netcore.android.j.f b(java.lang.ref.WeakReference)>
+    <com.netcore.android.j.f$a: com.netcore.android.j.f b(java.lang.ref.WeakReference)>
+    <com.netcore.android.c.e$a: com.netcore.android.c.e a(android.content.Context)>
+    <com.netcore.android.c.e: void a(com.netcore.android.j.f)>
+    <com.netcore.android.c.e: void a(com.netcore.android.j.f)>
+    <com.netcore.android.c.e$a: com.netcore.android.c.e a(android.content.Context)>
+    <com.netcore.android.c.e$a: com.netcore.android.c.e b(android.content.Context)>
+    <com.netcore.android.d.a: void a(int,java.lang.String,java.util.List)>
+    <com.netcore.android.c.e: void a(com.netcore.android.c.e,int,java.lang.String,java.util.HashMap,java.lang.String,boolean,int,java.lang.Object)>
+    <com.netcore.android.c.e: void a(int,java.lang.String,java.util.HashMap,java.lang.String,boolean)>
+    <com.netcore.android.c.e: void a(int,java.lang.String,java.util.HashMap,java.lang.String,boolean)>
+    <com.netcore.android.c.c: java.util.HashMap a(android.content.Context,int,java.lang.String,com.netcore.android.j.f,java.util.HashMap)>
+    <com.netcore.android.j.f: com.netcore.android.j.c c()>
+    <com.netcore.android.j.f: com.netcore.android.j.c c()>
+    <com.netcore.android.c.c: java.util.HashMap a(android.content.Context,int,java.lang.String,com.netcore.android.j.f,java.util.HashMap)>
+    <com.netcore.android.j.c: java.lang.String m()>
+    <com.netcore.android.j.c: java.lang.String m()>
+    <com.netcore.android.c.c: java.util.HashMap a(android.content.Context,int,java.lang.String,com.netcore.android.j.f,java.util.HashMap)>
+    <com.netcore.android.c.c: java.util.HashMap a(android.content.Context,int,java.lang.String,com.netcore.android.j.f,java.util.HashMap)>
+    <com.netcore.android.c.c: java.util.HashMap a(android.content.Context,int,java.lang.String,com.netcore.android.j.f,java.util.HashMap)>
+    <com.netcore.android.c.e: void a(int,java.lang.String,java.util.HashMap,java.lang.String,boolean)>
+    <com.netcore.android.c.e: void a(int,java.lang.String,java.util.HashMap,java.lang.String,boolean)>
+    <com.netcore.android.c.e: void a(int,java.lang.String,java.util.HashMap,java.lang.String,boolean)>
+    <com.netcore.android.c.e: void a(int,java.lang.String,java.util.HashMap,java.lang.String,boolean)>
+    <com.netcore.android.c.e: void a(int,java.lang.String,java.util.HashMap,java.lang.String,boolean)>
+    <com.netcore.android.logger.SMTLogger: void i(java.lang.String,java.lang.String)>
+    <com.netcore.android.logger.SMTLoggerPrinter: void i(java.lang.String,java.lang.String)>
+
+Leak 8:
+  Source: $r8 = virtualinvoke $r5.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r6, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r1, $r2) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.netcore.android.j.g: void d()>
+    <com.netcore.android.j.g: void d()>
+    <com.netcore.android.j.g: void d()>
+    <com.netcore.android.j.g: boolean a(android.os.Bundle,java.lang.String)>
+    <com.netcore.android.j.g: boolean a(android.os.Bundle,java.lang.String)>
+    <com.netcore.android.j.g: void d()>
+    <com.netcore.android.j.g: void d()>
+    <com.netcore.android.j.g: void <init>(java.lang.ref.WeakReference)>
+    <com.netcore.android.j.g: void <init>(java.lang.ref.WeakReference,kotlin.jvm.internal.DefaultConstructorMarker)>
+    <com.netcore.android.j.g$a: com.netcore.android.j.g a(java.lang.ref.WeakReference)>
+    <com.netcore.android.j.g$a: com.netcore.android.j.g b(java.lang.ref.WeakReference)>
+    <com.netcore.android.j.g$a: com.netcore.android.j.g b(java.lang.ref.WeakReference)>
+    <com.netcore.android.a.c: boolean b(java.lang.ref.WeakReference)>
+    <com.netcore.android.j.g: boolean c()>
+    <com.netcore.android.j.g: boolean c()>
+    <com.netcore.android.a.c: boolean b(java.lang.ref.WeakReference)>
+    <com.netcore.android.Smartech: void a(com.netcore.android.Smartech,long)>
+    <com.netcore.android.Smartech: void a(com.netcore.android.Smartech,long)>
+    <com.netcore.android.Smartech: void a(com.netcore.android.Smartech,long)>
+    <com.netcore.android.logger.SMTLogger: void d(java.lang.String,java.lang.String)>
+    <com.netcore.android.logger.SMTLoggerPrinter: void d(java.lang.String,java.lang.String)>
+

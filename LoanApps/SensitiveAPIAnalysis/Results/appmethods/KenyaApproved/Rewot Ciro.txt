@@ -1,0 +1,114 @@
+APK: Rewot Ciro (KenyaApproved)
+Leak 1:
+  Source: $r5 = virtualinvoke $r3.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r4, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: $r12 = virtualinvoke $r4.<okhttp3.OkHttpClient: okhttp3.Call newCall(okhttp3.Request)>($r11) (<okhttp3.OkHttpClient: okhttp3.Call newCall(okhttp3.Request)>)
+  Methods:
+    <com.paypal.android.sdk.a: java.lang.String c()>
+    <com.paypal.android.sdk.a: java.lang.String c()>
+    <com.paypal.android.sdk.a: java.lang.String c()>
+    <com.paypal.android.sdk.a: java.lang.String c()>
+    <com.paypal.android.sdk.a: java.lang.String c()>
+    <com.paypal.android.sdk.payments.h: void a(java.lang.String,java.util.Map)>
+    <com.paypal.android.sdk.payments.h: void a(java.lang.String,java.util.Map)>
+    <com.paypal.android.sdk.payments.h: void a(java.lang.String,java.util.Map)>
+    <com.paypal.android.sdk.payments.h: void a(java.lang.String,java.util.Map)>
+    <com.paypal.android.sdk.bs: void <init>(java.lang.String,java.util.Map)>
+    <com.paypal.android.sdk.bs: void <init>(java.lang.String,java.util.Map)>
+    <com.paypal.android.sdk.payments.h: void a(java.lang.String,java.util.Map)>
+    <com.paypal.android.sdk.payments.ci: void a(com.paypal.android.sdk.bs)>
+    <com.paypal.android.sdk.payments.PayPalService: void doTrackingRequest(com.paypal.android.sdk.bs)>
+    <com.paypal.android.sdk.ff: void <init>(com.paypal.android.sdk.ct,com.paypal.android.sdk.b,com.paypal.android.sdk.bs)>
+    <com.paypal.android.sdk.br: void <init>(com.paypal.android.sdk.cq,com.paypal.android.sdk.ct,com.paypal.android.sdk.b,com.paypal.android.sdk.bs)>
+    <com.paypal.android.sdk.br: void <init>(com.paypal.android.sdk.cq,com.paypal.android.sdk.ct,com.paypal.android.sdk.b,com.paypal.android.sdk.bs)>
+    <com.paypal.android.sdk.ff: void <init>(com.paypal.android.sdk.ct,com.paypal.android.sdk.b,com.paypal.android.sdk.bs)>
+    <com.paypal.android.sdk.payments.PayPalService: void doTrackingRequest(com.paypal.android.sdk.bs)>
+    <com.paypal.android.sdk.payments.PayPalService: void a(com.paypal.android.sdk.cs)>
+    <com.paypal.android.sdk.bp: void b(com.paypal.android.sdk.cs)>
+    <com.paypal.android.sdk.co: void a(com.paypal.android.sdk.cs)>
+    <com.paypal.android.sdk.cs: java.lang.String n()>
+    <com.paypal.android.sdk.co: void a(com.paypal.android.sdk.cs)>
+    <com.paypal.android.sdk.co: void a(com.paypal.android.sdk.cs)>
+    <com.paypal.android.sdk.co: void a(com.paypal.android.sdk.cs)>
+    <com.paypal.android.sdk.bp: void b(com.paypal.android.sdk.cs)>
+    <com.paypal.android.sdk.bp: void b(com.paypal.android.sdk.cs)>
+    <com.paypal.android.sdk.payments.PayPalService: void a(com.paypal.android.sdk.cs)>
+    <com.paypal.android.sdk.payments.PayPalService: void a(com.paypal.android.sdk.cs)>
+    <com.paypal.android.sdk.payments.PayPalService: void doTrackingRequest(com.paypal.android.sdk.bs)>
+    <com.paypal.android.sdk.payments.ci: void a(com.paypal.android.sdk.bs)>
+    <com.paypal.android.sdk.payments.ci: void a(com.paypal.android.sdk.bs)>
+    <com.paypal.android.sdk.payments.h: void a(java.lang.String,java.util.Map)>
+    <com.paypal.android.sdk.payments.i: com.paypal.android.sdk.payments.ci b()>
+    <com.paypal.android.sdk.payments.i: com.paypal.android.sdk.payments.ci b()>
+    <com.paypal.android.sdk.payments.h: void a(java.lang.String,java.util.Map)>
+    <com.paypal.android.sdk.payments.i: void a(com.paypal.android.sdk.ey,boolean,java.lang.String,java.lang.String,java.lang.String)>
+    <com.paypal.android.sdk.payments.PayPalService: void a(com.paypal.android.sdk.ey,boolean,java.lang.String,java.lang.String,java.lang.String)>
+    <com.paypal.android.sdk.payments.PayPalService: void a(com.paypal.android.sdk.ey,boolean,java.lang.String,java.lang.String,java.lang.String)>
+    <com.paypal.android.sdk.payments.PayPalService: void a(com.paypal.android.sdk.ey)>
+    <com.paypal.android.sdk.payments.PayPalService: void a(android.content.Intent)>
+    <com.paypal.android.sdk.payments.PayPalService: void a(android.content.Intent)>
+    <com.paypal.android.sdk.a: android.content.Context f()>
+    <com.paypal.android.sdk.payments.PayPalService: void a(android.content.Intent)>
+    <com.paypal.android.sdk.payments.PayPalService: void a(android.content.Intent)>
+    <com.paypal.android.sdk.payments.PayPalService: void a(android.content.Intent)>
+    <com.paypal.android.sdk.co: void <init>(com.paypal.android.sdk.ct,com.paypal.android.sdk.cp)>
+    <com.paypal.android.sdk.payments.PayPalService: void a(android.content.Intent)>
+    <com.paypal.android.sdk.payments.PayPalService: void a(android.content.Intent)>
+    <com.paypal.android.sdk.payments.PayPalService: void a(com.paypal.android.sdk.ey)>
+    <com.paypal.android.sdk.payments.PayPalService: void a(com.paypal.android.sdk.ey,boolean,java.lang.String,java.lang.String,java.lang.String)>
+    <com.paypal.android.sdk.payments.PayPalService: void a(com.paypal.android.sdk.ey,boolean,java.lang.String,java.lang.String,java.lang.String)>
+    <com.paypal.android.sdk.payments.PayPalService: void a(com.paypal.android.sdk.ey,boolean,java.lang.String,java.lang.String,java.lang.String)>
+    <com.paypal.android.sdk.payments.PayPalService: void a(com.paypal.android.sdk.ey)>
+    <com.paypal.android.sdk.payments.PayPalService: void a(android.content.Intent)>
+    <com.paypal.android.sdk.payments.PayPalService: void a(android.content.Intent)>
+    <com.paypal.android.sdk.co: void <init>(com.paypal.android.sdk.ct,com.paypal.android.sdk.cp)>
+    <com.paypal.android.sdk.co: void <init>(com.paypal.android.sdk.ct,com.paypal.android.sdk.cp)>
+    <com.paypal.android.sdk.co: void run()>
+    <com.paypal.android.sdk.co: void run()>
+    <com.paypal.android.sdk.ci: boolean b(com.paypal.android.sdk.cs)>
+    <com.paypal.android.sdk.ci: boolean b(com.paypal.android.sdk.cs)>
+    <com.paypal.android.sdk.ci: void a(com.paypal.android.sdk.cs,java.lang.String,okhttp3.OkHttpClient,okhttp3.Callback)>
+
+Leak 2:
+  Source: $r5 = virtualinvoke $r3.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r4, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("ManifestParser", $r4) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.bumptech.glide.module.ManifestParser: java.util.List parse()>
+    <com.bumptech.glide.module.ManifestParser: java.util.List parse()>
+    <com.bumptech.glide.module.ManifestParser: java.util.List parse()>
+    <com.bumptech.glide.module.ManifestParser: java.util.List parse()>
+    <com.bumptech.glide.module.ManifestParser: java.util.List parse()>
+    <com.bumptech.glide.module.ManifestParser: java.util.List parse()>
+    <com.bumptech.glide.module.ManifestParser: java.util.List parse()>
+    <com.bumptech.glide.module.ManifestParser: java.util.List parse()>
+    <com.bumptech.glide.module.ManifestParser: java.util.List parse()>
+
+Leak 3:
+  Source: $r6 = staticinvoke <android.os.Environment: java.io.File getExternalStorageDirectory()>() (<android.os.Environment: java.io.File getExternalStorageDirectory()>)
+  Sink: virtualinvoke $r6.<java.io.FileOutputStream: void write(byte[])>($r3) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <com.paypal.android.sdk.bm: java.lang.String a()>
+    <com.paypal.android.sdk.bm: java.lang.String a()>
+    <com.paypal.android.sdk.bm: java.lang.String a()>
+    <com.paypal.android.sdk.bm: java.lang.String a()>
+    <com.paypal.android.sdk.bm: java.lang.String a()>
+    <com.paypal.android.sdk.aq: void a(java.lang.String)>
+    <com.paypal.android.sdk.aq: void a(java.lang.String)>
+    <com.paypal.android.sdk.aq: void a(java.lang.String)>
+    <com.paypal.android.sdk.bm: java.lang.String a()>
+    <com.paypal.android.sdk.aq: void a(java.lang.String,byte[])>
+    <com.paypal.android.sdk.aq: void a(java.lang.String,byte[])>
+    <com.paypal.android.sdk.aq: void a(java.lang.String,byte[])>
+    <com.paypal.android.sdk.aq: void a(java.lang.String,byte[])>
+
+Leak 4:
+  Source: $r6 = staticinvoke <android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>($r5) (<android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("EasyImage", $r2) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <pl.aprilapps.easyphotopicker.Files: java.lang.String legacyCopyImageToPublicGallery(java.io.File,java.lang.String)>
+    <pl.aprilapps.easyphotopicker.Files: java.lang.String legacyCopyImageToPublicGallery(java.io.File,java.lang.String)>
+    <pl.aprilapps.easyphotopicker.Files: java.lang.String legacyCopyImageToPublicGallery(java.io.File,java.lang.String)>
+    <pl.aprilapps.easyphotopicker.Files: java.lang.String legacyCopyImageToPublicGallery(java.io.File,java.lang.String)>
+    <pl.aprilapps.easyphotopicker.Files: java.lang.String legacyCopyImageToPublicGallery(java.io.File,java.lang.String)>
+    <pl.aprilapps.easyphotopicker.Files: java.lang.String legacyCopyImageToPublicGallery(java.io.File,java.lang.String)>
+    <pl.aprilapps.easyphotopicker.Files: java.lang.String legacyCopyImageToPublicGallery(java.io.File,java.lang.String)>
+

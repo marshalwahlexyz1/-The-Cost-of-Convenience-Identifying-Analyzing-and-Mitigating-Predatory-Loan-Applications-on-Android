@@ -1,0 +1,391 @@
+APK: biro.pinjamuang.ngreditmurahki_2018-02-01 (IndonesiaApproved)
+Leak 1:
+  Source: $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>() (<android.location.Location: double getLongitude()>)
+  Sink: virtualinvoke $r5.<java.io.OutputStream: void write(byte[])>($r2) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.startapp.android.publish.common.commonUtils.j: java.lang.String a(java.util.List)>
+    <com.startapp.android.publish.common.commonUtils.j: java.lang.String a(java.util.List)>
+    <com.startapp.android.publish.common.commonUtils.j: java.lang.String a(java.util.List)>
+    <com.startapp.android.publish.common.commonUtils.j: java.lang.String a(java.util.List)>
+    <com.startapp.android.publish.common.commonUtils.j: java.lang.String a(java.util.List)>
+    <com.startapp.android.publish.common.commonUtils.j: java.lang.String a(java.util.List)>
+    <com.startapp.android.publish.common.commonUtils.j: java.lang.String a(java.util.List)>
+    <com.startapp.android.publish.common.commonUtils.j: java.lang.String a(java.util.List)>
+    <com.startapp.android.publish.common.BaseRequest: void addParams(com.startapp.android.publish.common.commonUtils.n)>
+    <com.startapp.android.publish.common.commonUtils.n: void a(java.lang.String,java.lang.Object,boolean)>
+    <com.startapp.android.publish.common.commonUtils.i: void a(java.lang.String,java.lang.Object,boolean,boolean)>
+    <com.startapp.android.publish.common.commonUtils.i: void a(java.lang.String,java.lang.Object,boolean,boolean)>
+    <com.startapp.android.publish.common.commonUtils.i: void a(java.lang.String,java.lang.Object,boolean,boolean)>
+    <com.startapp.android.publish.common.commonUtils.n: void a(java.lang.String,java.lang.Object,boolean)>
+    <com.startapp.android.publish.common.BaseRequest: void addParams(com.startapp.android.publish.common.commonUtils.n)>
+    <com.startapp.android.publish.common.BaseRequest: com.startapp.android.publish.common.commonUtils.n getNameValueJson()>
+    <com.startapp.android.publish.common.b.e: com.startapp.android.publish.common.commonUtils.n getNameValueJson()>
+    <com.startapp.android.publish.common.b.e: com.startapp.android.publish.common.commonUtils.n getNameValueJson()>
+    <com.startapp.android.publish.common.f.c: void b(android.content.Context,java.lang.String,com.startapp.android.publish.common.BaseRequest,java.util.Map,int,long)>
+    <com.startapp.android.publish.common.f.c: void b(android.content.Context,java.lang.String,com.startapp.android.publish.common.BaseRequest,java.util.Map,int,long)>
+    <com.startapp.android.publish.common.f.c: void b(android.content.Context,java.lang.String,com.startapp.android.publish.common.BaseRequest,java.util.Map,int,long)>
+    <com.startapp.android.publish.common.f.c: void b(android.content.Context,java.lang.String,com.startapp.android.publish.common.BaseRequest,java.util.Map,int,long)>
+    <com.startapp.android.publish.common.commonUtils.m: java.lang.String a(android.content.Context,java.lang.String,byte[],java.util.Map)>
+
+Leak 2:
+  Source: $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>() (<android.location.Location: double getLatitude()>)
+  Sink: virtualinvoke $r5.<java.io.OutputStream: void write(byte[])>($r2) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.startapp.android.publish.common.commonUtils.j: java.lang.String a(java.util.List)>
+    <com.startapp.android.publish.common.commonUtils.j: java.lang.String a(java.util.List)>
+    <com.startapp.android.publish.common.commonUtils.j: java.lang.String a(java.util.List)>
+    <com.startapp.android.publish.common.commonUtils.j: java.lang.String a(java.util.List)>
+    <com.startapp.android.publish.common.commonUtils.j: java.lang.String a(java.util.List)>
+    <com.startapp.android.publish.common.commonUtils.j: java.lang.String a(java.util.List)>
+    <com.startapp.android.publish.common.commonUtils.j: java.lang.String a(java.util.List)>
+    <com.startapp.android.publish.common.commonUtils.j: java.lang.String a(java.util.List)>
+    <com.startapp.android.publish.common.BaseRequest: void addParams(com.startapp.android.publish.common.commonUtils.n)>
+    <com.startapp.android.publish.common.commonUtils.n: void a(java.lang.String,java.lang.Object,boolean)>
+    <com.startapp.android.publish.common.commonUtils.i: void a(java.lang.String,java.lang.Object,boolean,boolean)>
+    <com.startapp.android.publish.common.commonUtils.i: void a(java.lang.String,java.lang.Object,boolean,boolean)>
+    <com.startapp.android.publish.common.commonUtils.i: void a(java.lang.String,java.lang.Object,boolean,boolean)>
+    <com.startapp.android.publish.common.commonUtils.n: void a(java.lang.String,java.lang.Object,boolean)>
+    <com.startapp.android.publish.common.BaseRequest: void addParams(com.startapp.android.publish.common.commonUtils.n)>
+    <com.startapp.android.publish.common.BaseRequest: com.startapp.android.publish.common.commonUtils.n getNameValueJson()>
+    <com.startapp.android.publish.common.b.e: com.startapp.android.publish.common.commonUtils.n getNameValueJson()>
+    <com.startapp.android.publish.common.b.e: com.startapp.android.publish.common.commonUtils.n getNameValueJson()>
+    <com.startapp.android.publish.common.f.c: void b(android.content.Context,java.lang.String,com.startapp.android.publish.common.BaseRequest,java.util.Map,int,long)>
+    <com.startapp.android.publish.common.f.c: void b(android.content.Context,java.lang.String,com.startapp.android.publish.common.BaseRequest,java.util.Map,int,long)>
+    <com.startapp.android.publish.common.f.c: void b(android.content.Context,java.lang.String,com.startapp.android.publish.common.BaseRequest,java.util.Map,int,long)>
+    <com.startapp.android.publish.common.f.c: void b(android.content.Context,java.lang.String,com.startapp.android.publish.common.BaseRequest,java.util.Map,int,long)>
+    <com.startapp.android.publish.common.commonUtils.m: java.lang.String a(android.content.Context,java.lang.String,byte[],java.util.Map)>
+
+Leak 3:
+  Source: $f0 = virtualinvoke $r4.<android.location.Location: float getAccuracy()>() (<android.location.Location: float getAccuracy()>)
+  Sink: virtualinvoke $r5.<java.io.OutputStream: void write(byte[])>($r2) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.startapp.android.publish.common.commonUtils.j: java.lang.String a(java.util.List)>
+    <com.startapp.android.publish.common.commonUtils.j: java.lang.String a(java.util.List)>
+    <com.startapp.android.publish.common.commonUtils.j: java.lang.String a(java.util.List)>
+    <com.startapp.android.publish.common.commonUtils.j: java.lang.String a(java.util.List)>
+    <com.startapp.android.publish.common.commonUtils.j: java.lang.String a(java.util.List)>
+    <com.startapp.android.publish.common.commonUtils.j: java.lang.String a(java.util.List)>
+    <com.startapp.android.publish.common.commonUtils.j: java.lang.String a(java.util.List)>
+    <com.startapp.android.publish.common.commonUtils.j: java.lang.String a(java.util.List)>
+    <com.startapp.android.publish.common.BaseRequest: void addParams(com.startapp.android.publish.common.commonUtils.n)>
+    <com.startapp.android.publish.common.commonUtils.n: void a(java.lang.String,java.lang.Object,boolean)>
+    <com.startapp.android.publish.common.commonUtils.i: void a(java.lang.String,java.lang.Object,boolean,boolean)>
+    <com.startapp.android.publish.common.commonUtils.i: void a(java.lang.String,java.lang.Object,boolean,boolean)>
+    <com.startapp.android.publish.common.commonUtils.i: void a(java.lang.String,java.lang.Object,boolean,boolean)>
+    <com.startapp.android.publish.common.commonUtils.n: void a(java.lang.String,java.lang.Object,boolean)>
+    <com.startapp.android.publish.common.BaseRequest: void addParams(com.startapp.android.publish.common.commonUtils.n)>
+    <com.startapp.android.publish.common.BaseRequest: com.startapp.android.publish.common.commonUtils.n getNameValueJson()>
+    <com.startapp.android.publish.common.b.e: com.startapp.android.publish.common.commonUtils.n getNameValueJson()>
+    <com.startapp.android.publish.common.b.e: com.startapp.android.publish.common.commonUtils.n getNameValueJson()>
+    <com.startapp.android.publish.common.f.c: void b(android.content.Context,java.lang.String,com.startapp.android.publish.common.BaseRequest,java.util.Map,int,long)>
+    <com.startapp.android.publish.common.f.c: void b(android.content.Context,java.lang.String,com.startapp.android.publish.common.BaseRequest,java.util.Map,int,long)>
+    <com.startapp.android.publish.common.f.c: void b(android.content.Context,java.lang.String,com.startapp.android.publish.common.BaseRequest,java.util.Map,int,long)>
+    <com.startapp.android.publish.common.f.c: void b(android.content.Context,java.lang.String,com.startapp.android.publish.common.BaseRequest,java.util.Map,int,long)>
+    <com.startapp.android.publish.common.commonUtils.m: java.lang.String a(android.content.Context,java.lang.String,byte[],java.util.Map)>
+
+Leak 4:
+  Source: $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>() (<android.location.Location: double getLongitude()>)
+  Sink: virtualinvoke $r3.<java.util.zip.GZIPOutputStream: void write(byte[])>($r0) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.startapp.android.publish.common.commonUtils.j: java.lang.String a(java.util.List)>
+    <com.startapp.android.publish.common.commonUtils.j: java.lang.String a(java.util.List)>
+    <com.startapp.android.publish.common.commonUtils.j: java.lang.String a(java.util.List)>
+    <com.startapp.android.publish.common.commonUtils.j: java.lang.String a(java.util.List)>
+    <com.startapp.android.publish.common.commonUtils.j: java.lang.String a(java.util.List)>
+    <com.startapp.android.publish.common.commonUtils.j: java.lang.String a(java.util.List)>
+    <com.startapp.android.publish.common.commonUtils.j: java.lang.String a(java.util.List)>
+    <com.startapp.android.publish.common.commonUtils.j: java.lang.String a(java.util.List)>
+    <com.startapp.android.publish.common.BaseRequest: void addParams(com.startapp.android.publish.common.commonUtils.n)>
+    <com.startapp.android.publish.common.commonUtils.n: void a(java.lang.String,java.lang.Object,boolean)>
+    <com.startapp.android.publish.common.commonUtils.i: void a(java.lang.String,java.lang.Object,boolean,boolean)>
+    <com.startapp.android.publish.common.commonUtils.i: void a(java.lang.String,java.lang.Object,boolean,boolean)>
+    <com.startapp.android.publish.common.commonUtils.i: void a(java.lang.String,java.lang.Object,boolean,boolean)>
+    <com.startapp.android.publish.common.commonUtils.n: void a(java.lang.String,java.lang.Object,boolean)>
+    <com.startapp.android.publish.common.BaseRequest: void addParams(com.startapp.android.publish.common.commonUtils.n)>
+    <com.startapp.android.publish.common.BaseRequest: com.startapp.android.publish.common.commonUtils.n getNameValueJson()>
+    <com.startapp.android.publish.common.b.e: com.startapp.android.publish.common.commonUtils.n getNameValueJson()>
+    <com.startapp.android.publish.common.b.e: com.startapp.android.publish.common.commonUtils.n getNameValueJson()>
+    <com.startapp.android.publish.common.f.c: void b(android.content.Context,java.lang.String,com.startapp.android.publish.common.BaseRequest,java.util.Map,int,long)>
+    <com.startapp.android.publish.common.f.c: void b(android.content.Context,java.lang.String,com.startapp.android.publish.common.BaseRequest,java.util.Map,int,long)>
+    <com.startapp.android.publish.common.f.c: void b(android.content.Context,java.lang.String,com.startapp.android.publish.common.BaseRequest,java.util.Map,int,long)>
+    <com.startapp.android.publish.common.f.c: byte[] a(byte[])>
+
+Leak 5:
+  Source: $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>() (<android.location.Location: double getLatitude()>)
+  Sink: virtualinvoke $r3.<java.util.zip.GZIPOutputStream: void write(byte[])>($r0) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.startapp.android.publish.common.commonUtils.j: java.lang.String a(java.util.List)>
+    <com.startapp.android.publish.common.commonUtils.j: java.lang.String a(java.util.List)>
+    <com.startapp.android.publish.common.commonUtils.j: java.lang.String a(java.util.List)>
+    <com.startapp.android.publish.common.commonUtils.j: java.lang.String a(java.util.List)>
+    <com.startapp.android.publish.common.commonUtils.j: java.lang.String a(java.util.List)>
+    <com.startapp.android.publish.common.commonUtils.j: java.lang.String a(java.util.List)>
+    <com.startapp.android.publish.common.commonUtils.j: java.lang.String a(java.util.List)>
+    <com.startapp.android.publish.common.commonUtils.j: java.lang.String a(java.util.List)>
+    <com.startapp.android.publish.common.BaseRequest: void addParams(com.startapp.android.publish.common.commonUtils.n)>
+    <com.startapp.android.publish.common.commonUtils.n: void a(java.lang.String,java.lang.Object,boolean)>
+    <com.startapp.android.publish.common.commonUtils.i: void a(java.lang.String,java.lang.Object,boolean,boolean)>
+    <com.startapp.android.publish.common.commonUtils.i: void a(java.lang.String,java.lang.Object,boolean,boolean)>
+    <com.startapp.android.publish.common.commonUtils.i: void a(java.lang.String,java.lang.Object,boolean,boolean)>
+    <com.startapp.android.publish.common.commonUtils.n: void a(java.lang.String,java.lang.Object,boolean)>
+    <com.startapp.android.publish.common.BaseRequest: void addParams(com.startapp.android.publish.common.commonUtils.n)>
+    <com.startapp.android.publish.common.BaseRequest: com.startapp.android.publish.common.commonUtils.n getNameValueJson()>
+    <com.startapp.android.publish.common.b.e: com.startapp.android.publish.common.commonUtils.n getNameValueJson()>
+    <com.startapp.android.publish.common.b.e: com.startapp.android.publish.common.commonUtils.n getNameValueJson()>
+    <com.startapp.android.publish.common.f.c: void b(android.content.Context,java.lang.String,com.startapp.android.publish.common.BaseRequest,java.util.Map,int,long)>
+    <com.startapp.android.publish.common.f.c: void b(android.content.Context,java.lang.String,com.startapp.android.publish.common.BaseRequest,java.util.Map,int,long)>
+    <com.startapp.android.publish.common.f.c: void b(android.content.Context,java.lang.String,com.startapp.android.publish.common.BaseRequest,java.util.Map,int,long)>
+    <com.startapp.android.publish.common.f.c: byte[] a(byte[])>
+
+Leak 6:
+  Source: $f0 = virtualinvoke $r4.<android.location.Location: float getAccuracy()>() (<android.location.Location: float getAccuracy()>)
+  Sink: virtualinvoke $r3.<java.util.zip.GZIPOutputStream: void write(byte[])>($r0) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.startapp.android.publish.common.commonUtils.j: java.lang.String a(java.util.List)>
+    <com.startapp.android.publish.common.commonUtils.j: java.lang.String a(java.util.List)>
+    <com.startapp.android.publish.common.commonUtils.j: java.lang.String a(java.util.List)>
+    <com.startapp.android.publish.common.commonUtils.j: java.lang.String a(java.util.List)>
+    <com.startapp.android.publish.common.commonUtils.j: java.lang.String a(java.util.List)>
+    <com.startapp.android.publish.common.commonUtils.j: java.lang.String a(java.util.List)>
+    <com.startapp.android.publish.common.commonUtils.j: java.lang.String a(java.util.List)>
+    <com.startapp.android.publish.common.commonUtils.j: java.lang.String a(java.util.List)>
+    <com.startapp.android.publish.common.BaseRequest: void addParams(com.startapp.android.publish.common.commonUtils.n)>
+    <com.startapp.android.publish.common.commonUtils.n: void a(java.lang.String,java.lang.Object,boolean)>
+    <com.startapp.android.publish.common.commonUtils.i: void a(java.lang.String,java.lang.Object,boolean,boolean)>
+    <com.startapp.android.publish.common.commonUtils.i: void a(java.lang.String,java.lang.Object,boolean,boolean)>
+    <com.startapp.android.publish.common.commonUtils.i: void a(java.lang.String,java.lang.Object,boolean,boolean)>
+    <com.startapp.android.publish.common.commonUtils.n: void a(java.lang.String,java.lang.Object,boolean)>
+    <com.startapp.android.publish.common.BaseRequest: void addParams(com.startapp.android.publish.common.commonUtils.n)>
+    <com.startapp.android.publish.common.BaseRequest: com.startapp.android.publish.common.commonUtils.n getNameValueJson()>
+    <com.startapp.android.publish.common.b.e: com.startapp.android.publish.common.commonUtils.n getNameValueJson()>
+    <com.startapp.android.publish.common.b.e: com.startapp.android.publish.common.commonUtils.n getNameValueJson()>
+    <com.startapp.android.publish.common.f.c: void b(android.content.Context,java.lang.String,com.startapp.android.publish.common.BaseRequest,java.util.Map,int,long)>
+    <com.startapp.android.publish.common.f.c: void b(android.content.Context,java.lang.String,com.startapp.android.publish.common.BaseRequest,java.util.Map,int,long)>
+    <com.startapp.android.publish.common.f.c: void b(android.content.Context,java.lang.String,com.startapp.android.publish.common.BaseRequest,java.util.Map,int,long)>
+    <com.startapp.android.publish.common.f.c: byte[] a(byte[])>
+
+Leak 7:
+  Source: $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>() (<android.location.Location: double getLongitude()>)
+  Sink: $r5 = virtualinvoke $r4.<java.net.URL: java.net.URLConnection openConnection()>() (<java.net.URL: java.net.URLConnection openConnection()>)
+  Methods:
+    <com.startapp.android.publish.common.commonUtils.j: java.lang.String a(java.util.List)>
+    <com.startapp.android.publish.common.commonUtils.j: java.lang.String a(java.util.List)>
+    <com.startapp.android.publish.common.commonUtils.j: java.lang.String a(java.util.List)>
+    <com.startapp.android.publish.common.commonUtils.j: java.lang.String a(java.util.List)>
+    <com.startapp.android.publish.common.commonUtils.j: java.lang.String a(java.util.List)>
+    <com.startapp.android.publish.common.commonUtils.j: java.lang.String a(java.util.List)>
+    <com.startapp.android.publish.common.commonUtils.j: java.lang.String a(java.util.List)>
+    <com.startapp.android.publish.common.commonUtils.j: java.lang.String a(java.util.List)>
+    <com.startapp.android.publish.common.BaseRequest: void addParams(com.startapp.android.publish.common.commonUtils.n)>
+    <com.startapp.android.publish.common.commonUtils.n: void a(java.lang.String,java.lang.Object,boolean)>
+    <com.startapp.android.publish.common.commonUtils.l: void a(java.lang.String,java.lang.Object,boolean,boolean)>
+    <com.startapp.android.publish.common.commonUtils.l: void a(java.lang.String,java.lang.Object,boolean,boolean)>
+    <com.startapp.android.publish.common.commonUtils.l: void a(java.lang.String,java.lang.Object,boolean,boolean)>
+    <com.startapp.android.publish.common.commonUtils.NameValueObject: void setValue(java.lang.String)>
+    <com.startapp.android.publish.common.commonUtils.NameValueObject: void setValue(java.lang.String)>
+    <com.startapp.android.publish.common.commonUtils.l: void a(java.lang.String,java.lang.Object,boolean,boolean)>
+    <com.startapp.android.publish.common.commonUtils.l: void a(java.lang.String,java.lang.Object,boolean,boolean)>
+    <com.startapp.android.publish.common.commonUtils.l: void a(java.lang.String,java.lang.Object,boolean,boolean)>
+    <com.startapp.android.publish.common.commonUtils.n: void a(java.lang.String,java.lang.Object,boolean)>
+    <com.startapp.android.publish.common.BaseRequest: void addParams(com.startapp.android.publish.common.commonUtils.n)>
+    <com.startapp.android.publish.common.BaseRequest: com.startapp.android.publish.common.commonUtils.n getNameValueMap()>
+    <com.startapp.android.publish.adsCommon.j: com.startapp.android.publish.common.commonUtils.n getNameValueMap()>
+    <com.startapp.android.publish.adsCommon.j: com.startapp.android.publish.common.commonUtils.n getNameValueMap()>
+    <com.startapp.android.publish.common.BaseRequest: java.lang.String getRequestString()>
+    <com.startapp.android.publish.common.BaseRequest: java.lang.String getRequestString()>
+    <com.startapp.android.publish.common.f.c: void a(android.content.Context,java.lang.String,com.startapp.android.publish.common.BaseRequest,java.util.Map,java.lang.StringBuilder,int,long)>
+    <com.startapp.android.publish.common.f.c: void a(android.content.Context,java.lang.String,com.startapp.android.publish.common.BaseRequest,java.util.Map,java.lang.StringBuilder,int,long)>
+    <com.startapp.android.publish.common.f.c: void a(android.content.Context,java.lang.String,com.startapp.android.publish.common.BaseRequest,java.util.Map,java.lang.StringBuilder,int,long)>
+    <com.startapp.android.publish.common.commonUtils.m: boolean a(android.content.Context,java.lang.String,java.util.Map,java.lang.StringBuilder)>
+    <com.startapp.android.publish.common.commonUtils.m: java.net.HttpURLConnection b(android.content.Context,java.lang.String,byte[],java.util.Map)>
+    <com.startapp.android.publish.common.commonUtils.m: java.net.HttpURLConnection b(android.content.Context,java.lang.String,byte[],java.util.Map)>
+
+Leak 8:
+  Source: $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>() (<android.location.Location: double getLatitude()>)
+  Sink: $r5 = virtualinvoke $r4.<java.net.URL: java.net.URLConnection openConnection()>() (<java.net.URL: java.net.URLConnection openConnection()>)
+  Methods:
+    <com.startapp.android.publish.common.commonUtils.j: java.lang.String a(java.util.List)>
+    <com.startapp.android.publish.common.commonUtils.j: java.lang.String a(java.util.List)>
+    <com.startapp.android.publish.common.commonUtils.j: java.lang.String a(java.util.List)>
+    <com.startapp.android.publish.common.commonUtils.j: java.lang.String a(java.util.List)>
+    <com.startapp.android.publish.common.commonUtils.j: java.lang.String a(java.util.List)>
+    <com.startapp.android.publish.common.commonUtils.j: java.lang.String a(java.util.List)>
+    <com.startapp.android.publish.common.commonUtils.j: java.lang.String a(java.util.List)>
+    <com.startapp.android.publish.common.commonUtils.j: java.lang.String a(java.util.List)>
+    <com.startapp.android.publish.common.BaseRequest: void addParams(com.startapp.android.publish.common.commonUtils.n)>
+    <com.startapp.android.publish.common.commonUtils.n: void a(java.lang.String,java.lang.Object,boolean)>
+    <com.startapp.android.publish.common.commonUtils.l: void a(java.lang.String,java.lang.Object,boolean,boolean)>
+    <com.startapp.android.publish.common.commonUtils.l: void a(java.lang.String,java.lang.Object,boolean,boolean)>
+    <com.startapp.android.publish.common.commonUtils.l: void a(java.lang.String,java.lang.Object,boolean,boolean)>
+    <com.startapp.android.publish.common.commonUtils.NameValueObject: void setValue(java.lang.String)>
+    <com.startapp.android.publish.common.commonUtils.NameValueObject: void setValue(java.lang.String)>
+    <com.startapp.android.publish.common.commonUtils.l: void a(java.lang.String,java.lang.Object,boolean,boolean)>
+    <com.startapp.android.publish.common.commonUtils.l: void a(java.lang.String,java.lang.Object,boolean,boolean)>
+    <com.startapp.android.publish.common.commonUtils.l: void a(java.lang.String,java.lang.Object,boolean,boolean)>
+    <com.startapp.android.publish.common.commonUtils.n: void a(java.lang.String,java.lang.Object,boolean)>
+    <com.startapp.android.publish.common.BaseRequest: void addParams(com.startapp.android.publish.common.commonUtils.n)>
+    <com.startapp.android.publish.common.BaseRequest: com.startapp.android.publish.common.commonUtils.n getNameValueMap()>
+    <com.startapp.android.publish.adsCommon.j: com.startapp.android.publish.common.commonUtils.n getNameValueMap()>
+    <com.startapp.android.publish.adsCommon.j: com.startapp.android.publish.common.commonUtils.n getNameValueMap()>
+    <com.startapp.android.publish.common.BaseRequest: java.lang.String getRequestString()>
+    <com.startapp.android.publish.common.BaseRequest: java.lang.String getRequestString()>
+    <com.startapp.android.publish.common.f.c: void a(android.content.Context,java.lang.String,com.startapp.android.publish.common.BaseRequest,java.util.Map,java.lang.StringBuilder,int,long)>
+    <com.startapp.android.publish.common.f.c: void a(android.content.Context,java.lang.String,com.startapp.android.publish.common.BaseRequest,java.util.Map,java.lang.StringBuilder,int,long)>
+    <com.startapp.android.publish.common.f.c: void a(android.content.Context,java.lang.String,com.startapp.android.publish.common.BaseRequest,java.util.Map,java.lang.StringBuilder,int,long)>
+    <com.startapp.android.publish.common.commonUtils.m: boolean a(android.content.Context,java.lang.String,java.util.Map,java.lang.StringBuilder)>
+    <com.startapp.android.publish.common.commonUtils.m: java.net.HttpURLConnection b(android.content.Context,java.lang.String,byte[],java.util.Map)>
+    <com.startapp.android.publish.common.commonUtils.m: java.net.HttpURLConnection b(android.content.Context,java.lang.String,byte[],java.util.Map)>
+
+Leak 9:
+  Source: $f0 = virtualinvoke $r4.<android.location.Location: float getAccuracy()>() (<android.location.Location: float getAccuracy()>)
+  Sink: $r5 = virtualinvoke $r4.<java.net.URL: java.net.URLConnection openConnection()>() (<java.net.URL: java.net.URLConnection openConnection()>)
+  Methods:
+    <com.startapp.android.publish.common.commonUtils.j: java.lang.String a(java.util.List)>
+    <com.startapp.android.publish.common.commonUtils.j: java.lang.String a(java.util.List)>
+    <com.startapp.android.publish.common.commonUtils.j: java.lang.String a(java.util.List)>
+    <com.startapp.android.publish.common.commonUtils.j: java.lang.String a(java.util.List)>
+    <com.startapp.android.publish.common.commonUtils.j: java.lang.String a(java.util.List)>
+    <com.startapp.android.publish.common.commonUtils.j: java.lang.String a(java.util.List)>
+    <com.startapp.android.publish.common.commonUtils.j: java.lang.String a(java.util.List)>
+    <com.startapp.android.publish.common.commonUtils.j: java.lang.String a(java.util.List)>
+    <com.startapp.android.publish.common.BaseRequest: void addParams(com.startapp.android.publish.common.commonUtils.n)>
+    <com.startapp.android.publish.common.commonUtils.n: void a(java.lang.String,java.lang.Object,boolean)>
+    <com.startapp.android.publish.common.commonUtils.l: void a(java.lang.String,java.lang.Object,boolean,boolean)>
+    <com.startapp.android.publish.common.commonUtils.l: void a(java.lang.String,java.lang.Object,boolean,boolean)>
+    <com.startapp.android.publish.common.commonUtils.l: void a(java.lang.String,java.lang.Object,boolean,boolean)>
+    <com.startapp.android.publish.common.commonUtils.NameValueObject: void setValue(java.lang.String)>
+    <com.startapp.android.publish.common.commonUtils.NameValueObject: void setValue(java.lang.String)>
+    <com.startapp.android.publish.common.commonUtils.l: void a(java.lang.String,java.lang.Object,boolean,boolean)>
+    <com.startapp.android.publish.common.commonUtils.l: void a(java.lang.String,java.lang.Object,boolean,boolean)>
+    <com.startapp.android.publish.common.commonUtils.l: void a(java.lang.String,java.lang.Object,boolean,boolean)>
+    <com.startapp.android.publish.common.commonUtils.n: void a(java.lang.String,java.lang.Object,boolean)>
+    <com.startapp.android.publish.common.BaseRequest: void addParams(com.startapp.android.publish.common.commonUtils.n)>
+    <com.startapp.android.publish.common.BaseRequest: com.startapp.android.publish.common.commonUtils.n getNameValueMap()>
+    <com.startapp.android.publish.adsCommon.j: com.startapp.android.publish.common.commonUtils.n getNameValueMap()>
+    <com.startapp.android.publish.adsCommon.j: com.startapp.android.publish.common.commonUtils.n getNameValueMap()>
+    <com.startapp.android.publish.common.BaseRequest: java.lang.String getRequestString()>
+    <com.startapp.android.publish.common.BaseRequest: java.lang.String getRequestString()>
+    <com.startapp.android.publish.common.f.c: void a(android.content.Context,java.lang.String,com.startapp.android.publish.common.BaseRequest,java.util.Map,java.lang.StringBuilder,int,long)>
+    <com.startapp.android.publish.common.f.c: void a(android.content.Context,java.lang.String,com.startapp.android.publish.common.BaseRequest,java.util.Map,java.lang.StringBuilder,int,long)>
+    <com.startapp.android.publish.common.f.c: void a(android.content.Context,java.lang.String,com.startapp.android.publish.common.BaseRequest,java.util.Map,java.lang.StringBuilder,int,long)>
+    <com.startapp.android.publish.common.commonUtils.m: boolean a(android.content.Context,java.lang.String,java.util.Map,java.lang.StringBuilder)>
+    <com.startapp.android.publish.common.commonUtils.m: java.net.HttpURLConnection b(android.content.Context,java.lang.String,byte[],java.util.Map)>
+    <com.startapp.android.publish.common.commonUtils.m: java.net.HttpURLConnection b(android.content.Context,java.lang.String,byte[],java.util.Map)>
+
+Leak 10:
+  Source: $r7 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r6) (<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>)
+  Sink: $r5 = virtualinvoke $r4.<java.net.URL: java.net.URLConnection openConnection()>() (<java.net.URL: java.net.URLConnection openConnection()>)
+  Methods:
+    <com.startapp.android.publish.common.commonUtils.j: java.util.List a(android.content.Context)>
+    <com.startapp.android.publish.common.commonUtils.j: java.util.List a(android.content.Context)>
+    <com.startapp.android.publish.common.commonUtils.j: java.util.List a(android.content.Context)>
+    <com.startapp.android.publish.adsCommon.c.b: void setLocation(android.content.Context)>
+    <com.startapp.android.publish.common.commonUtils.j: java.lang.String a(java.util.List)>
+    <com.startapp.android.publish.common.commonUtils.j: java.lang.String a(java.util.List)>
+    <com.startapp.android.publish.common.commonUtils.j: java.lang.String a(java.util.List)>
+    <com.startapp.android.publish.common.commonUtils.j: java.lang.String a(java.util.List)>
+    <com.startapp.android.publish.common.commonUtils.j: java.lang.String a(java.util.List)>
+    <com.startapp.android.publish.common.commonUtils.j: java.lang.String a(java.util.List)>
+    <com.startapp.android.publish.common.commonUtils.j: java.lang.String a(java.util.List)>
+    <com.startapp.android.publish.common.commonUtils.j: java.lang.String a(java.util.List)>
+    <com.startapp.android.publish.common.commonUtils.j: java.lang.String a(java.util.List)>
+    <com.startapp.android.publish.common.commonUtils.j: java.lang.String a(java.util.List)>
+    <com.startapp.android.publish.common.commonUtils.j: java.lang.String a(java.util.List)>
+    <com.startapp.android.publish.adsCommon.c.b: void setLocation(android.content.Context)>
+    <com.startapp.android.publish.adsCommon.c.b: void setLocation(android.content.Context)>
+    <com.startapp.android.publish.adsCommon.c: void a(android.content.Context,java.lang.String,com.startapp.android.publish.adsCommon.c.b)>
+    <com.startapp.android.publish.adsCommon.c: void a(android.content.Context,java.lang.String,com.startapp.android.publish.adsCommon.c.b,boolean)>
+    <com.startapp.android.publish.adsCommon.c$1: void <init>(boolean,android.content.Context,java.lang.String,com.startapp.android.publish.adsCommon.c.b)>
+    <com.startapp.android.publish.adsCommon.c$1: void <init>(boolean,android.content.Context,java.lang.String,com.startapp.android.publish.adsCommon.c.b)>
+    <com.startapp.android.publish.adsCommon.c: void a(android.content.Context,java.lang.String,com.startapp.android.publish.adsCommon.c.b,boolean)>
+    <com.startapp.android.publish.adsCommon.c$1: void run()>
+    <com.startapp.android.publish.adsCommon.c$1: void run()>
+    <com.startapp.android.publish.adsCommon.c.b: java.lang.String getQueryString()>
+    <com.startapp.android.publish.adsCommon.c.b: java.lang.String getLocationQuery()>
+    <com.startapp.android.publish.adsCommon.c.b: java.lang.String getLocationQuery()>
+    <com.startapp.android.publish.adsCommon.c.b: java.lang.String getLocationQuery()>
+    <com.startapp.android.publish.adsCommon.c.b: java.lang.String getLocationQuery()>
+    <com.startapp.android.publish.adsCommon.c.b: java.lang.String getQueryString()>
+    <com.startapp.android.publish.adsCommon.c.b: java.lang.String getQueryString()>
+    <com.startapp.android.publish.adsCommon.c.b: java.lang.String getQueryString()>
+    <com.startapp.android.publish.adsCommon.c$1: void run()>
+    <com.startapp.android.publish.adsCommon.c$1: void run()>
+    <com.startapp.android.publish.adsCommon.c$1: void run()>
+    <com.startapp.android.publish.common.f.c: boolean a(android.content.Context,java.lang.String,java.util.Map)>
+    <com.startapp.android.publish.common.f.c: void a(android.content.Context,java.lang.String,com.startapp.android.publish.common.BaseRequest,java.util.Map,java.lang.StringBuilder,int,long)>
+    <com.startapp.android.publish.common.f.c: void a(android.content.Context,java.lang.String,com.startapp.android.publish.common.BaseRequest,java.util.Map,java.lang.StringBuilder,int,long)>
+    <com.startapp.android.publish.common.commonUtils.m: boolean a(android.content.Context,java.lang.String,java.util.Map,java.lang.StringBuilder)>
+    <com.startapp.android.publish.common.commonUtils.m: java.net.HttpURLConnection b(android.content.Context,java.lang.String,byte[],java.util.Map)>
+    <com.startapp.android.publish.common.commonUtils.m: java.net.HttpURLConnection b(android.content.Context,java.lang.String,byte[],java.util.Map)>
+
+Leak 11:
+  Source: $r4 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r3, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r3.<java.io.OutputStream: void write(byte[])>($r5) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.facebook.FacebookSdk: void loadDefaultsFromMetadata(android.content.Context)>
+    <com.facebook.FacebookSdk: void loadDefaultsFromMetadata(android.content.Context)>
+    <com.facebook.FacebookSdk: void loadDefaultsFromMetadata(android.content.Context)>
+    <com.facebook.FacebookSdk: void loadDefaultsFromMetadata(android.content.Context)>
+    <com.facebook.FacebookSdk: void loadDefaultsFromMetadata(android.content.Context)>
+    <com.facebook.FacebookSdk: void loadDefaultsFromMetadata(android.content.Context)>
+    <com.facebook.FacebookSdk: void sdkInitialize(android.content.Context,com.facebook.FacebookSdk$InitializeCallback)>
+    <com.facebook.internal.FetchedAppSettingsManager: void loadAppSettingsAsync()>
+    <com.facebook.internal.FetchedAppSettingsManager$1: void run()>
+    <com.facebook.internal.FetchedAppSettingsManager: org.json.JSONObject access$100(java.lang.String)>
+    <com.facebook.internal.FetchedAppSettingsManager: org.json.JSONObject getAppSettingsQueryResponse(java.lang.String)>
+    <com.facebook.GraphRequest: com.facebook.GraphResponse executeAndWait()>
+    <com.facebook.GraphRequest: com.facebook.GraphResponse executeAndWait(com.facebook.GraphRequest)>
+    <com.facebook.GraphRequest: java.util.List executeBatchAndWait(com.facebook.GraphRequest[])>
+    <com.facebook.GraphRequest: java.util.List executeBatchAndWait(java.util.Collection)>
+    <com.facebook.GraphRequest: java.util.List executeBatchAndWait(com.facebook.GraphRequestBatch)>
+    <com.facebook.GraphRequest: java.net.HttpURLConnection toHttpConnection(com.facebook.GraphRequestBatch)>
+    <com.facebook.GraphRequest: void serializeToUrlConnection(com.facebook.GraphRequestBatch,java.net.HttpURLConnection)>
+    <com.facebook.GraphRequest: void processRequest(com.facebook.GraphRequestBatch,com.facebook.internal.Logger,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.GraphRequest: java.lang.String getBatchAppId(com.facebook.GraphRequestBatch)>
+    <com.facebook.FacebookSdk: java.lang.String getApplicationId()>
+    <com.facebook.FacebookSdk: java.lang.String getApplicationId()>
+    <com.facebook.GraphRequest: java.lang.String getBatchAppId(com.facebook.GraphRequestBatch)>
+    <com.facebook.GraphRequest: void processRequest(com.facebook.GraphRequestBatch,com.facebook.internal.Logger,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.GraphRequest$Serializer: void writeString(java.lang.String,java.lang.String)>
+    <com.facebook.GraphRequest$Serializer: void writeString(java.lang.String,java.lang.String)>
+    <com.facebook.GraphRequest$Serializer: void writeLine(java.lang.String,java.lang.Object[])>
+    <com.facebook.GraphRequest$Serializer: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.GraphRequest$Serializer: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.GraphRequest$Serializer: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.GraphRequest$Serializer: void write(java.lang.String,java.lang.Object[])>
+
+Leak 12:
+  Source: $r4 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r3, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r3.<java.io.OutputStream: void write(byte[])>($r5) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.facebook.FacebookSdk: void loadDefaultsFromMetadata(android.content.Context)>
+    <com.facebook.FacebookSdk: void loadDefaultsFromMetadata(android.content.Context)>
+    <com.facebook.FacebookSdk: void loadDefaultsFromMetadata(android.content.Context)>
+    <com.facebook.FacebookSdk: void loadDefaultsFromMetadata(android.content.Context)>
+    <com.facebook.FacebookSdk: void loadDefaultsFromMetadata(android.content.Context)>
+    <com.facebook.FacebookSdk: void loadDefaultsFromMetadata(android.content.Context)>
+    <com.facebook.FacebookSdk: void sdkInitialize(android.content.Context,com.facebook.FacebookSdk$InitializeCallback)>
+    <com.facebook.internal.FetchedAppSettingsManager: void loadAppSettingsAsync()>
+    <com.facebook.internal.FetchedAppSettingsManager$1: void run()>
+    <com.facebook.internal.FetchedAppSettingsManager: org.json.JSONObject access$100(java.lang.String)>
+    <com.facebook.internal.FetchedAppSettingsManager: org.json.JSONObject getAppSettingsQueryResponse(java.lang.String)>
+    <com.facebook.GraphRequest: com.facebook.GraphResponse executeAndWait()>
+    <com.facebook.GraphRequest: com.facebook.GraphResponse executeAndWait(com.facebook.GraphRequest)>
+    <com.facebook.GraphRequest: java.util.List executeBatchAndWait(com.facebook.GraphRequest[])>
+    <com.facebook.GraphRequest: java.util.List executeBatchAndWait(java.util.Collection)>
+    <com.facebook.GraphRequest: java.util.List executeBatchAndWait(com.facebook.GraphRequestBatch)>
+    <com.facebook.GraphRequest: java.net.HttpURLConnection toHttpConnection(com.facebook.GraphRequestBatch)>
+    <com.facebook.GraphRequest: void serializeToUrlConnection(com.facebook.GraphRequestBatch,java.net.HttpURLConnection)>
+    <com.facebook.GraphRequest: void processRequest(com.facebook.GraphRequestBatch,com.facebook.internal.Logger,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.GraphRequest: java.lang.String getBatchAppId(com.facebook.GraphRequestBatch)>
+    <com.facebook.FacebookSdk: java.lang.String getApplicationId()>
+    <com.facebook.FacebookSdk: java.lang.String getApplicationId()>
+    <com.facebook.GraphRequest: java.lang.String getBatchAppId(com.facebook.GraphRequestBatch)>
+    <com.facebook.GraphRequest: void processRequest(com.facebook.GraphRequestBatch,com.facebook.internal.Logger,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.GraphRequest$Serializer: void writeString(java.lang.String,java.lang.String)>
+    <com.facebook.GraphRequest$Serializer: void writeString(java.lang.String,java.lang.String)>
+    <com.facebook.GraphRequest$Serializer: void writeLine(java.lang.String,java.lang.Object[])>
+    <com.facebook.GraphRequest$Serializer: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.GraphRequest$Serializer: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.GraphRequest$Serializer: void write(java.lang.String,java.lang.Object[])>
+

@@ -1,0 +1,1003 @@
+APK: versluisant.kredit24_2023-01-02 (PhilippinesApproved)
+Leak 1:
+  Source: $r5 = virtualinvoke $r3.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r4, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("AppsFlyer_6.1.3", $r2) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <sa.a: boolean d()>
+    <sa.a: boolean d()>
+    <sa.a: boolean d()>
+    <sa.a: boolean d()>
+    <sa.a: boolean c()>
+    <sa.a: void <init>(android.content.Context,java.lang.String,ja.c)>
+    <sa.a: void <init>(android.content.Context,java.lang.String,ja.c)>
+    <com.google.firebase.a: sa.a u(android.content.Context)>
+    <com.google.firebase.a: sa.a b(com.google.firebase.a,android.content.Context)>
+    <k9.c: java.lang.Object get()>
+    <o9.w: java.lang.Object get()>
+    <o9.w: java.lang.Object get()>
+    <com.google.firebase.perf.session.gauges.GaugeManager: void collectGaugeMetricOnce(com.google.firebase.perf.util.h)>
+    <com.google.firebase.perf.session.gauges.GaugeManager: void collectGaugeMetricOnce(com.google.firebase.perf.util.h)>
+    <za.b: za.b n(long)>
+    <za.b: za.b n(long)>
+    <com.google.firebase.perf.network.c: void a0()>
+    <com.google.firebase.perf.network.c: void a0()>
+    <com.google.firebase.perf.network.c: java.io.InputStream z()>
+    <com.google.firebase.perf.network.b: java.io.InputStream getInputStream()>
+    <com.google.firebase.perf.network.b: java.io.InputStream getInputStream()>
+    <com.google.firebase.perf.network.c: java.io.InputStream z()>
+    <com.google.firebase.perf.network.c: java.io.InputStream z()>
+    <com.google.firebase.perf.network.c: java.io.InputStream z()>
+    <bb.a: void <init>(java.io.InputStream,za.b,com.google.firebase.perf.util.h)>
+    <bb.a: void <init>(java.io.InputStream,za.b,com.google.firebase.perf.util.h)>
+    <com.google.firebase.perf.network.c: java.io.InputStream z()>
+    <com.google.firebase.perf.network.a: java.io.InputStream getInputStream()>
+    <com.appsflyer.AppsFlyerLibCore: java.lang.String readServerResponse(java.net.HttpURLConnection)>
+    <com.appsflyer.AppsFlyerLibCore: java.lang.String readServerResponse(java.net.HttpURLConnection)>
+    <com.appsflyer.AppsFlyerLibCore: java.lang.String readServerResponse(java.net.HttpURLConnection)>
+    <com.appsflyer.AppsFlyerLibCore: java.lang.String readServerResponse(java.net.HttpURLConnection)>
+    <com.appsflyer.AppsFlyerLibCore: java.lang.String readServerResponse(java.net.HttpURLConnection)>
+    <com.appsflyer.AppsFlyerLibCore: java.lang.String readServerResponse(java.net.HttpURLConnection)>
+    <com.appsflyer.AppsFlyerLibCore: java.lang.String readServerResponse(java.net.HttpURLConnection)>
+    <com.appsflyer.OneLinkHttpTask: void doRequest()>
+    <com.appsflyer.OneLinkHttpTask: void doRequest()>
+    <com.appsflyer.internal.y: void handleResponse(java.lang.String)>
+    <com.appsflyer.internal.y: void handleResponse(java.lang.String)>
+    <com.appsflyer.internal.y: void handleResponse(java.lang.String)>
+    <com.appsflyer.internal.y: void handleResponse(java.lang.String)>
+    <com.appsflyer.AppsFlyerLibCore$7: void ɩ(java.util.Map)>
+    <com.appsflyer.AppsFlyerLibCore$7: void ɩ(java.util.Map)>
+    <com.appsflyer.AppsFlyerLibCore$7: void ɩ(java.util.Map)>
+    <com.appsflyer.AppsFlyerLibCore$7: void ɩ(java.util.Map)>
+    <com.appsflyer.AppsFlyerLibCore$7: void ɩ(java.util.Map)>
+    <com.appsflyer.AppsFlyerLibCore$7: void ɩ(java.util.Map)>
+    <com.appsflyer.deeplink.DeepLinkCallbacks: void onDeepLinkingSuccess(java.util.Map)>
+    <com.appsflyer.deeplink.DeepLinkCallbacks: void onAppOpenAttribution(java.util.Map)>
+    <com.appsflyer.deeplink.DeepLinkCallbacks: void onAppOpenAttribution(java.util.Map)>
+    <com.appsflyer.deeplink.DeepLinkCallbacks: void onAppOpenAttribution(java.util.Map)>
+    <com.appsflyer.deeplink.DeepLinkCallbacks: void onAppOpenAttribution(java.util.Map)>
+    <com.appsflyer.AFLogger: void afDebugLog(java.lang.String)>
+    <com.appsflyer.AFLogger: java.lang.String ǃ(java.lang.String,boolean)>
+    <com.appsflyer.AFLogger: java.lang.String ǃ(java.lang.String,boolean)>
+    <com.appsflyer.AFLogger: java.lang.String ǃ(java.lang.String,boolean)>
+    <com.appsflyer.AFLogger: void afDebugLog(java.lang.String)>
+
+Leak 2:
+  Source: $r4 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r3, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r3.<java.io.OutputStream: void write(byte[])>($r5) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <t3.b: java.lang.String d()>
+    <t3.b: java.lang.String d()>
+    <t3.b: java.lang.String d()>
+    <q3.e: com.facebook.n i(java.lang.String,com.facebook.a,java.lang.String,java.lang.String)>
+    <q3.e: com.facebook.n i(java.lang.String,com.facebook.a,java.lang.String,java.lang.String)>
+    <com.facebook.n: void Z(android.os.Bundle)>
+    <com.facebook.n: void Z(android.os.Bundle)>
+    <q3.e: com.facebook.n i(java.lang.String,com.facebook.a,java.lang.String,java.lang.String)>
+    <q3.e$c: void run()>
+    <com.facebook.n: com.facebook.q g()>
+    <com.facebook.n: com.facebook.q h(com.facebook.n)>
+    <com.facebook.n: com.facebook.q h(com.facebook.n)>
+    <com.facebook.n: java.util.List l(com.facebook.n[])>
+    <com.facebook.n: java.util.List l(com.facebook.n[])>
+    <com.facebook.n: java.util.List k(java.util.Collection)>
+    <com.facebook.p: void <init>(java.util.Collection)>
+    <com.facebook.p: void <init>(java.util.Collection)>
+    <com.facebook.p: void <init>(java.util.Collection)>
+    <com.facebook.n: java.util.List k(java.util.Collection)>
+    <com.facebook.n: java.util.List j(com.facebook.p)>
+    <com.facebook.n: java.net.HttpURLConnection d0(com.facebook.p)>
+    <com.facebook.n: void U(com.facebook.p,java.net.HttpURLConnection)>
+    <com.facebook.n: void O(com.facebook.p,com.facebook.internal.q,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.p: com.facebook.n s(int)>
+    <com.facebook.p: com.facebook.n s(int)>
+    <com.facebook.p: com.facebook.n s(int)>
+    <com.facebook.p: com.facebook.n s(int)>
+    <com.facebook.n: void O(com.facebook.p,com.facebook.internal.q,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.n: void O(com.facebook.p,com.facebook.internal.q,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.n: void R(android.os.Bundle,com.facebook.n$i,com.facebook.n)>
+    <com.facebook.n: void R(android.os.Bundle,com.facebook.n$i,com.facebook.n)>
+    <com.facebook.n$i: void j(java.lang.String,java.lang.Object,com.facebook.n)>
+    <com.facebook.n$i: void j(java.lang.String,java.lang.Object,com.facebook.n)>
+    <com.facebook.n$i: void e(java.lang.String,byte[])>
+    <com.facebook.n$i: void e(java.lang.String,byte[])>
+    <com.facebook.n$i: void e(java.lang.String,byte[])>
+    <com.facebook.n$i: void i(java.lang.String,java.lang.Object[])>
+    <com.facebook.n$i: void c(java.lang.String,java.lang.Object[])>
+    <com.facebook.n$i: void c(java.lang.String,java.lang.Object[])>
+
+Leak 3:
+  Source: $r13 = virtualinvoke $r12.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r11, $r6, null, null, null) (<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>)
+  Sink: virtualinvoke $r3.<java.io.OutputStream: void write(byte[])>($r5) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.facebook.internal.a: com.facebook.internal.a h(android.content.Context)>
+    <com.facebook.internal.a: com.facebook.internal.a h(android.content.Context)>
+    <com.facebook.internal.a: com.facebook.internal.a h(android.content.Context)>
+    <com.facebook.internal.a: com.facebook.internal.a h(android.content.Context)>
+    <com.facebook.internal.a: com.facebook.internal.a a(com.facebook.internal.a)>
+    <com.facebook.internal.a: com.facebook.internal.a a(com.facebook.internal.a)>
+    <com.facebook.internal.a: com.facebook.internal.a h(android.content.Context)>
+    <o3.d: o3.o e(o3.a)>
+    <o3.d: void a(o3.a,o3.c)>
+    <o3.e: o3.l o(o3.j,o3.d)>
+    <o3.e: void k(o3.j)>
+    <o3.d: void b(o3.n)>
+    <o3.d: o3.o e(o3.a)>
+    <com.facebook.internal.a: com.facebook.internal.a h(android.content.Context)>
+    <com.facebook.internal.a: java.lang.String b()>
+    <com.facebook.j: boolean d()>
+    <com.facebook.b0: boolean e()>
+    <com.facebook.b0: void j()>
+    <com.facebook.b0: void k(com.facebook.b0$b[])>
+    <com.facebook.b0: void i()>
+    <com.facebook.b0$a: void run()>
+    <com.facebook.internal.a: com.facebook.internal.a h(android.content.Context)>
+    <com.facebook.internal.a: com.facebook.internal.a h(android.content.Context)>
+    <com.facebook.b0$a: void run()>
+    <com.facebook.internal.a: java.lang.String b()>
+    <com.facebook.internal.a: java.lang.String b()>
+    <com.facebook.b0$a: void run()>
+    <com.facebook.b0$a: void run()>
+    <com.facebook.n: void Z(android.os.Bundle)>
+    <com.facebook.n: void Z(android.os.Bundle)>
+    <com.facebook.b0$a: void run()>
+    <com.facebook.n: com.facebook.q g()>
+    <com.facebook.n: com.facebook.q h(com.facebook.n)>
+    <com.facebook.n: com.facebook.q h(com.facebook.n)>
+    <com.facebook.n: java.util.List l(com.facebook.n[])>
+    <com.facebook.n: java.util.List l(com.facebook.n[])>
+    <com.facebook.n: java.util.List k(java.util.Collection)>
+    <com.facebook.p: void <init>(java.util.Collection)>
+    <com.facebook.p: void <init>(java.util.Collection)>
+    <com.facebook.p: void <init>(java.util.Collection)>
+    <com.facebook.n: java.util.List k(java.util.Collection)>
+    <com.facebook.n: java.util.List j(com.facebook.p)>
+    <com.facebook.n: java.net.HttpURLConnection d0(com.facebook.p)>
+    <com.facebook.n: void U(com.facebook.p,java.net.HttpURLConnection)>
+    <com.facebook.n: void O(com.facebook.p,com.facebook.internal.q,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.p: com.facebook.n s(int)>
+    <com.facebook.p: com.facebook.n s(int)>
+    <com.facebook.p: com.facebook.n s(int)>
+    <com.facebook.p: com.facebook.n s(int)>
+    <com.facebook.n: void O(com.facebook.p,com.facebook.internal.q,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.n: void O(com.facebook.p,com.facebook.internal.q,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.n: void R(android.os.Bundle,com.facebook.n$i,com.facebook.n)>
+    <com.facebook.n: void R(android.os.Bundle,com.facebook.n$i,com.facebook.n)>
+    <com.facebook.n$i: void j(java.lang.String,java.lang.Object,com.facebook.n)>
+    <com.facebook.n$i: void j(java.lang.String,java.lang.Object,com.facebook.n)>
+    <com.facebook.n$i: void e(java.lang.String,byte[])>
+    <com.facebook.n$i: void e(java.lang.String,byte[])>
+    <com.facebook.n$i: void e(java.lang.String,byte[])>
+    <com.facebook.n$i: void i(java.lang.String,java.lang.Object[])>
+    <com.facebook.n$i: void c(java.lang.String,java.lang.Object[])>
+    <com.facebook.n$i: void c(java.lang.String,java.lang.Object[])>
+
+Leak 4:
+  Source: $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r2, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r17.<java.io.OutputStream: void write(byte[])>($r7) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.appsflyer.AppsFlyerLibCore: java.lang.String Ι(java.lang.String,android.content.pm.PackageManager,java.lang.String)>
+    <com.appsflyer.AppsFlyerLibCore: java.lang.String Ι(java.lang.String,android.content.pm.PackageManager,java.lang.String)>
+    <com.appsflyer.AppsFlyerLibCore: java.lang.String Ι(java.lang.String,android.content.pm.PackageManager,java.lang.String)>
+    <com.appsflyer.AppsFlyerLibCore: java.lang.String Ι(java.lang.String,android.content.pm.PackageManager,java.lang.String)>
+    <com.appsflyer.AppsFlyerLibCore: java.lang.String Ι(java.lang.String,android.content.pm.PackageManager,java.lang.String)>
+    <com.appsflyer.AppsFlyerLibCore: java.lang.String getConfiguredChannel(android.content.Context)>
+    <com.appsflyer.AppsFlyerLibCore: void ı(java.lang.ref.WeakReference)>
+    <com.appsflyer.AppsFlyerLibCore: void ı(java.lang.ref.WeakReference)>
+    <com.appsflyer.AFEvent: com.appsflyer.AFEvent addParams(java.util.Map)>
+    <com.appsflyer.AFEvent: com.appsflyer.AFEvent addParams(java.util.Map)>
+    <com.appsflyer.AFEvent: com.appsflyer.AFEvent addParams(java.util.Map)>
+    <com.appsflyer.AppsFlyerLibCore: void ı(java.lang.ref.WeakReference)>
+    <com.appsflyer.AppsFlyerLibCore: void ı(java.lang.ref.WeakReference)>
+    <com.appsflyer.BackgroundHttpTask: void <init>(com.appsflyer.internal.model.event.BackgroundEvent)>
+    <com.appsflyer.BackgroundHttpTask: void <init>(com.appsflyer.internal.model.event.BackgroundEvent)>
+    <com.appsflyer.AppsFlyerLibCore: void ı(java.lang.ref.WeakReference)>
+    <com.appsflyer.BackgroundHttpTask$5: void <init>(com.appsflyer.BackgroundHttpTask)>
+    <com.appsflyer.BackgroundHttpTask$5: void <init>(com.appsflyer.BackgroundHttpTask)>
+    <com.appsflyer.AppsFlyerLibCore: void ı(java.lang.ref.WeakReference)>
+    <com.appsflyer.AppsFlyerLibCore: void ı(java.lang.ref.WeakReference)>
+    <com.appsflyer.BackgroundHttpTask$5: void run()>
+    <com.appsflyer.BackgroundHttpTask$5: void run()>
+    <com.appsflyer.BackgroundHttpTask: java.net.HttpURLConnection doInBackground()>
+    <com.appsflyer.BackgroundHttpTask: java.net.HttpURLConnection doInBackground()>
+    <com.appsflyer.internal.model.event.BackgroundEvent: java.lang.String body()>
+    <com.appsflyer.AFEvent: java.util.Map params()>
+    <com.appsflyer.AFEvent: java.util.Map params()>
+    <com.appsflyer.internal.model.event.BackgroundEvent: java.lang.String body()>
+    <com.appsflyer.AFHelper: org.json.JSONObject toJsonObject(java.util.Map)>
+    <com.appsflyer.AFHelper: org.json.JSONObject toJsonObject(java.util.Map)>
+    <com.appsflyer.AFHelper: org.json.JSONObject toJsonObject(java.util.Map)>
+    <com.appsflyer.AFHelper: org.json.JSONObject toJsonObject(java.util.Map)>
+    <com.appsflyer.AFHelper: org.json.JSONObject toJsonObject(java.util.Map)>
+    <com.appsflyer.AFHelper: org.json.JSONObject toJsonObject(java.util.Map)>
+    <com.appsflyer.AFHelper: org.json.JSONObject toJsonObject(java.util.Map)>
+    <com.appsflyer.internal.model.event.BackgroundEvent: java.lang.String body()>
+    <com.appsflyer.internal.model.event.BackgroundEvent: java.lang.String body()>
+    <com.appsflyer.BackgroundHttpTask: java.net.HttpURLConnection doInBackground()>
+    <com.appsflyer.BackgroundHttpTask: java.net.HttpURLConnection doInBackground()>
+    <com.appsflyer.BackgroundHttpTask: java.net.HttpURLConnection doInBackground()>
+
+Leak 5:
+  Source: $r15 = virtualinvoke $r8.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r7, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r17.<java.io.OutputStream: void write(byte[])>($r7) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.appsflyer.internal.aa: void ı(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.internal.aa: void ı(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.internal.aa: void ı(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.internal.aa: void ı(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.internal.aa: void ɩ(java.lang.String,java.lang.String,java.lang.String,java.lang.String)>
+    <com.appsflyer.internal.aa: void ɩ(java.lang.String,java.lang.String,java.lang.String,java.lang.String)>
+    <com.appsflyer.internal.aa: void ɩ(java.lang.String,java.lang.String,java.lang.String,java.lang.String)>
+    <com.appsflyer.internal.aa: void ı(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.internal.aa: void Ι(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.internal.aa: void Ι(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.internal.aa: void Ι(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.internal.aa: java.lang.String ɹ()>
+    <com.appsflyer.internal.aa: java.lang.String ɹ()>
+    <com.appsflyer.internal.aa: java.lang.String ɹ()>
+    <com.appsflyer.internal.aa: void Ι(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.internal.model.event.ProxyEvent: com.appsflyer.internal.model.event.BackgroundEvent body(java.lang.String)>
+    <com.appsflyer.internal.model.event.ProxyEvent: com.appsflyer.internal.model.event.BackgroundEvent body(java.lang.String)>
+    <com.appsflyer.internal.aa: void Ι(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.AFEvent: com.appsflyer.AFEvent urlString(java.lang.String)>
+    <com.appsflyer.internal.aa: void Ι(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.internal.aa: void Ι(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.BackgroundHttpTask: void <init>(com.appsflyer.internal.model.event.BackgroundEvent)>
+    <com.appsflyer.BackgroundHttpTask: void <init>(com.appsflyer.internal.model.event.BackgroundEvent)>
+    <com.appsflyer.internal.aa: void Ι(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.BackgroundHttpTask$5: void <init>(com.appsflyer.BackgroundHttpTask)>
+    <com.appsflyer.BackgroundHttpTask$5: void <init>(com.appsflyer.BackgroundHttpTask)>
+    <com.appsflyer.internal.aa: void Ι(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.internal.aa: void Ι(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.BackgroundHttpTask$5: void run()>
+    <com.appsflyer.BackgroundHttpTask$5: void run()>
+    <com.appsflyer.BackgroundHttpTask: java.net.HttpURLConnection doInBackground()>
+    <com.appsflyer.BackgroundHttpTask: java.net.HttpURLConnection doInBackground()>
+    <com.appsflyer.internal.model.event.ProxyEvent: java.lang.String body()>
+    <com.appsflyer.internal.model.event.ProxyEvent: java.lang.String body()>
+    <com.appsflyer.BackgroundHttpTask: java.net.HttpURLConnection doInBackground()>
+    <com.appsflyer.BackgroundHttpTask: java.net.HttpURLConnection doInBackground()>
+    <com.appsflyer.BackgroundHttpTask: java.net.HttpURLConnection doInBackground()>
+
+Leak 6:
+  Source: $r8 = virtualinvoke $r7.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r5, null, null, null, "updated ASC") (<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>)
+  Sink: virtualinvoke $r18.<java.io.OutputStreamWriter: void write(java.lang.String)>($r2) (<java.io.BufferedWriter: void write(java.lang.String)>)
+  Methods:
+    <com.rudderstack.android.sdk.core.DBPersistentManager: void fetchEventsFromDB(java.util.ArrayList,java.util.ArrayList,int)>
+    <com.rudderstack.android.sdk.core.DBPersistentManager: void fetchEventsFromDB(java.util.ArrayList,java.util.ArrayList,int)>
+    <com.rudderstack.android.sdk.core.DBPersistentManager: void fetchEventsFromDB(java.util.ArrayList,java.util.ArrayList,int)>
+    <com.rudderstack.android.sdk.core.DBPersistentManager: void fetchEventsFromDB(java.util.ArrayList,java.util.ArrayList,int)>
+    <com.rudderstack.android.sdk.core.EventRepository$2: void run()>
+    <com.rudderstack.android.sdk.core.EventRepository: java.lang.String access$1200(com.rudderstack.android.sdk.core.EventRepository,java.util.ArrayList,java.util.ArrayList)>
+    <com.rudderstack.android.sdk.core.EventRepository: java.lang.String getPayloadFromMessages(java.util.ArrayList,java.util.ArrayList)>
+    <com.rudderstack.android.sdk.core.EventRepository: java.lang.String getPayloadFromMessages(java.util.ArrayList,java.util.ArrayList)>
+    <com.rudderstack.android.sdk.core.EventRepository: java.lang.String getPayloadFromMessages(java.util.ArrayList,java.util.ArrayList)>
+    <com.rudderstack.android.sdk.core.EventRepository: java.lang.String getPayloadFromMessages(java.util.ArrayList,java.util.ArrayList)>
+    <com.rudderstack.android.sdk.core.EventRepository: java.lang.String getPayloadFromMessages(java.util.ArrayList,java.util.ArrayList)>
+    <com.rudderstack.android.sdk.core.EventRepository: java.lang.String getPayloadFromMessages(java.util.ArrayList,java.util.ArrayList)>
+    <com.rudderstack.android.sdk.core.EventRepository: java.lang.String getPayloadFromMessages(java.util.ArrayList,java.util.ArrayList)>
+    <com.rudderstack.android.sdk.core.EventRepository: java.lang.String getPayloadFromMessages(java.util.ArrayList,java.util.ArrayList)>
+    <com.rudderstack.android.sdk.core.EventRepository: java.lang.String access$1200(com.rudderstack.android.sdk.core.EventRepository,java.util.ArrayList,java.util.ArrayList)>
+    <com.rudderstack.android.sdk.core.EventRepository$2: void run()>
+    <com.rudderstack.android.sdk.core.EventRepository: com.rudderstack.android.sdk.core.util.Utils$NetworkResponses access$1300(com.rudderstack.android.sdk.core.EventRepository,java.lang.String)>
+    <com.rudderstack.android.sdk.core.EventRepository: com.rudderstack.android.sdk.core.util.Utils$NetworkResponses flushEventsToServer(java.lang.String)>
+
+Leak 7:
+  Source: $r8 = virtualinvoke $r7.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r5, null, null, null, "updated ASC") (<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>)
+  Sink: virtualinvoke $r18.<java.io.OutputStreamWriter: void write(java.lang.String)>($r2) (<java.io.OutputStreamWriter: void write(java.lang.String)>)
+  Methods:
+    <com.rudderstack.android.sdk.core.DBPersistentManager: void fetchEventsFromDB(java.util.ArrayList,java.util.ArrayList,int)>
+    <com.rudderstack.android.sdk.core.DBPersistentManager: void fetchEventsFromDB(java.util.ArrayList,java.util.ArrayList,int)>
+    <com.rudderstack.android.sdk.core.DBPersistentManager: void fetchEventsFromDB(java.util.ArrayList,java.util.ArrayList,int)>
+    <com.rudderstack.android.sdk.core.DBPersistentManager: void fetchEventsFromDB(java.util.ArrayList,java.util.ArrayList,int)>
+    <com.rudderstack.android.sdk.core.EventRepository$2: void run()>
+    <com.rudderstack.android.sdk.core.EventRepository: java.lang.String access$1200(com.rudderstack.android.sdk.core.EventRepository,java.util.ArrayList,java.util.ArrayList)>
+    <com.rudderstack.android.sdk.core.EventRepository: java.lang.String getPayloadFromMessages(java.util.ArrayList,java.util.ArrayList)>
+    <com.rudderstack.android.sdk.core.EventRepository: java.lang.String getPayloadFromMessages(java.util.ArrayList,java.util.ArrayList)>
+    <com.rudderstack.android.sdk.core.EventRepository: java.lang.String getPayloadFromMessages(java.util.ArrayList,java.util.ArrayList)>
+    <com.rudderstack.android.sdk.core.EventRepository: java.lang.String getPayloadFromMessages(java.util.ArrayList,java.util.ArrayList)>
+    <com.rudderstack.android.sdk.core.EventRepository: java.lang.String getPayloadFromMessages(java.util.ArrayList,java.util.ArrayList)>
+    <com.rudderstack.android.sdk.core.EventRepository: java.lang.String getPayloadFromMessages(java.util.ArrayList,java.util.ArrayList)>
+    <com.rudderstack.android.sdk.core.EventRepository: java.lang.String getPayloadFromMessages(java.util.ArrayList,java.util.ArrayList)>
+    <com.rudderstack.android.sdk.core.EventRepository: java.lang.String getPayloadFromMessages(java.util.ArrayList,java.util.ArrayList)>
+    <com.rudderstack.android.sdk.core.EventRepository: java.lang.String access$1200(com.rudderstack.android.sdk.core.EventRepository,java.util.ArrayList,java.util.ArrayList)>
+    <com.rudderstack.android.sdk.core.EventRepository$2: void run()>
+    <com.rudderstack.android.sdk.core.EventRepository: com.rudderstack.android.sdk.core.util.Utils$NetworkResponses access$1300(com.rudderstack.android.sdk.core.EventRepository,java.lang.String)>
+    <com.rudderstack.android.sdk.core.EventRepository: com.rudderstack.android.sdk.core.util.Utils$NetworkResponses flushEventsToServer(java.lang.String)>
+
+Leak 8:
+  Source: $r4 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r3, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r3.<java.io.OutputStream: void write(byte[])>($r5) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <t3.b: java.lang.String d()>
+    <t3.b: java.lang.String d()>
+    <t3.b: java.lang.String d()>
+    <q3.e: com.facebook.n i(java.lang.String,com.facebook.a,java.lang.String,java.lang.String)>
+    <q3.e: com.facebook.n i(java.lang.String,com.facebook.a,java.lang.String,java.lang.String)>
+    <com.facebook.n: void Z(android.os.Bundle)>
+    <com.facebook.n: void Z(android.os.Bundle)>
+    <q3.e: com.facebook.n i(java.lang.String,com.facebook.a,java.lang.String,java.lang.String)>
+    <q3.e$c: void run()>
+    <com.facebook.n: com.facebook.q g()>
+    <com.facebook.n: com.facebook.q h(com.facebook.n)>
+    <com.facebook.n: com.facebook.q h(com.facebook.n)>
+    <com.facebook.n: java.util.List l(com.facebook.n[])>
+    <com.facebook.n: java.util.List l(com.facebook.n[])>
+    <com.facebook.n: java.util.List k(java.util.Collection)>
+    <com.facebook.p: void <init>(java.util.Collection)>
+    <com.facebook.p: void <init>(java.util.Collection)>
+    <com.facebook.p: void <init>(java.util.Collection)>
+    <com.facebook.n: java.util.List k(java.util.Collection)>
+    <com.facebook.n: java.util.List j(com.facebook.p)>
+    <com.facebook.n: java.net.HttpURLConnection d0(com.facebook.p)>
+    <com.facebook.n: void U(com.facebook.p,java.net.HttpURLConnection)>
+    <com.facebook.n: void O(com.facebook.p,com.facebook.internal.q,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.p: com.facebook.n s(int)>
+    <com.facebook.p: com.facebook.n s(int)>
+    <com.facebook.p: com.facebook.n s(int)>
+    <com.facebook.p: com.facebook.n s(int)>
+    <com.facebook.n: void O(com.facebook.p,com.facebook.internal.q,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.n: void O(com.facebook.p,com.facebook.internal.q,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.n: void R(android.os.Bundle,com.facebook.n$i,com.facebook.n)>
+    <com.facebook.n: void R(android.os.Bundle,com.facebook.n$i,com.facebook.n)>
+    <com.facebook.n$i: void j(java.lang.String,java.lang.Object,com.facebook.n)>
+    <com.facebook.n$i: void j(java.lang.String,java.lang.Object,com.facebook.n)>
+    <com.facebook.n$i: void e(java.lang.String,byte[])>
+    <com.facebook.n$i: void e(java.lang.String,byte[])>
+    <com.facebook.n$i: void e(java.lang.String,byte[])>
+    <com.facebook.n$i: void i(java.lang.String,java.lang.Object[])>
+    <com.facebook.n$i: void c(java.lang.String,java.lang.Object[])>
+    <com.facebook.n$i: void c(java.lang.String,java.lang.Object[])>
+
+Leak 9:
+  Source: $r4 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r3, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r3.<java.io.OutputStream: void write(byte[])>($r5) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <t3.b: java.lang.String d()>
+    <t3.b: java.lang.String d()>
+    <t3.b: java.lang.String d()>
+    <q3.e: com.facebook.n i(java.lang.String,com.facebook.a,java.lang.String,java.lang.String)>
+    <q3.e: com.facebook.n i(java.lang.String,com.facebook.a,java.lang.String,java.lang.String)>
+    <com.facebook.n: void Z(android.os.Bundle)>
+    <com.facebook.n: void Z(android.os.Bundle)>
+    <q3.e: com.facebook.n i(java.lang.String,com.facebook.a,java.lang.String,java.lang.String)>
+    <q3.e$c: void run()>
+    <com.facebook.n: com.facebook.q g()>
+    <com.facebook.n: com.facebook.q h(com.facebook.n)>
+    <com.facebook.n: com.facebook.q h(com.facebook.n)>
+    <com.facebook.n: java.util.List l(com.facebook.n[])>
+    <com.facebook.n: java.util.List l(com.facebook.n[])>
+    <com.facebook.n: java.util.List k(java.util.Collection)>
+    <com.facebook.p: void <init>(java.util.Collection)>
+    <com.facebook.p: void <init>(java.util.Collection)>
+    <com.facebook.p: void <init>(java.util.Collection)>
+    <com.facebook.n: java.util.List k(java.util.Collection)>
+    <com.facebook.n: java.util.List j(com.facebook.p)>
+    <com.facebook.n: java.net.HttpURLConnection d0(com.facebook.p)>
+    <com.facebook.n: void U(com.facebook.p,java.net.HttpURLConnection)>
+    <com.facebook.n: void O(com.facebook.p,com.facebook.internal.q,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.p: com.facebook.n s(int)>
+    <com.facebook.p: com.facebook.n s(int)>
+    <com.facebook.p: com.facebook.n s(int)>
+    <com.facebook.p: com.facebook.n s(int)>
+    <com.facebook.n: void O(com.facebook.p,com.facebook.internal.q,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.n: void O(com.facebook.p,com.facebook.internal.q,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.n: void R(android.os.Bundle,com.facebook.n$i,com.facebook.n)>
+    <com.facebook.n: void R(android.os.Bundle,com.facebook.n$i,com.facebook.n)>
+    <com.facebook.n$i: void j(java.lang.String,java.lang.Object,com.facebook.n)>
+    <com.facebook.n$i: void j(java.lang.String,java.lang.Object,com.facebook.n)>
+    <com.facebook.n$i: void e(java.lang.String,byte[])>
+    <com.facebook.n$i: void e(java.lang.String,byte[])>
+    <com.facebook.n$i: void e(java.lang.String,byte[])>
+    <com.facebook.n$i: void i(java.lang.String,java.lang.Object[])>
+    <com.facebook.n$i: void c(java.lang.String,java.lang.Object[])>
+    <com.facebook.n$i: void c(java.lang.String,java.lang.Object[])>
+
+Leak 10:
+  Source: $r13 = virtualinvoke $r12.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r11, $r6, null, null, null) (<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>)
+  Sink: virtualinvoke $r3.<java.io.OutputStream: void write(byte[])>($r5) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.facebook.internal.a: com.facebook.internal.a h(android.content.Context)>
+    <com.facebook.internal.a: com.facebook.internal.a h(android.content.Context)>
+    <com.facebook.internal.a: com.facebook.internal.a h(android.content.Context)>
+    <com.facebook.internal.a: com.facebook.internal.a h(android.content.Context)>
+    <com.facebook.b0$a: void run()>
+    <com.facebook.internal.a: java.lang.String b()>
+    <com.facebook.internal.a: java.lang.String b()>
+    <com.facebook.b0$a: void run()>
+    <com.facebook.b0$a: void run()>
+    <com.facebook.n: void Z(android.os.Bundle)>
+    <com.facebook.n: void Z(android.os.Bundle)>
+    <com.facebook.b0$a: void run()>
+    <com.facebook.n: com.facebook.q g()>
+    <com.facebook.n: com.facebook.q h(com.facebook.n)>
+    <com.facebook.n: com.facebook.q h(com.facebook.n)>
+    <com.facebook.n: java.util.List l(com.facebook.n[])>
+    <com.facebook.n: java.util.List l(com.facebook.n[])>
+    <com.facebook.n: java.util.List k(java.util.Collection)>
+    <com.facebook.p: void <init>(java.util.Collection)>
+    <com.facebook.p: void <init>(java.util.Collection)>
+    <com.facebook.p: void <init>(java.util.Collection)>
+    <com.facebook.n: java.util.List k(java.util.Collection)>
+    <com.facebook.n: java.util.List j(com.facebook.p)>
+    <com.facebook.n: java.net.HttpURLConnection d0(com.facebook.p)>
+    <com.facebook.n: void U(com.facebook.p,java.net.HttpURLConnection)>
+    <com.facebook.n: void O(com.facebook.p,com.facebook.internal.q,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.p: com.facebook.n s(int)>
+    <com.facebook.p: com.facebook.n s(int)>
+    <com.facebook.p: com.facebook.n s(int)>
+    <com.facebook.p: com.facebook.n s(int)>
+    <com.facebook.n: void O(com.facebook.p,com.facebook.internal.q,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.n: void O(com.facebook.p,com.facebook.internal.q,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.n: void R(android.os.Bundle,com.facebook.n$i,com.facebook.n)>
+    <com.facebook.n: void R(android.os.Bundle,com.facebook.n$i,com.facebook.n)>
+    <com.facebook.n$i: void j(java.lang.String,java.lang.Object,com.facebook.n)>
+    <com.facebook.n$i: void j(java.lang.String,java.lang.Object,com.facebook.n)>
+    <com.facebook.n$i: void e(java.lang.String,byte[])>
+    <com.facebook.n$i: void e(java.lang.String,byte[])>
+    <com.facebook.n$i: void e(java.lang.String,byte[])>
+    <com.facebook.n$i: void i(java.lang.String,java.lang.Object[])>
+    <com.facebook.n$i: void c(java.lang.String,java.lang.Object[])>
+    <com.facebook.n$i: void c(java.lang.String,java.lang.Object[])>
+
+Leak 11:
+  Source: $r4 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r3, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r3.<java.io.OutputStream: void write(byte[])>($r5) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <t3.b: java.lang.String d()>
+    <t3.b: java.lang.String d()>
+    <t3.b: java.lang.String d()>
+    <q3.e: com.facebook.n i(java.lang.String,com.facebook.a,java.lang.String,java.lang.String)>
+    <q3.e: com.facebook.n i(java.lang.String,com.facebook.a,java.lang.String,java.lang.String)>
+    <com.facebook.n: void Z(android.os.Bundle)>
+    <com.facebook.n: void Z(android.os.Bundle)>
+    <q3.e: com.facebook.n i(java.lang.String,com.facebook.a,java.lang.String,java.lang.String)>
+    <q3.e$c: void run()>
+    <com.facebook.n: com.facebook.q g()>
+    <com.facebook.n: com.facebook.q h(com.facebook.n)>
+    <com.facebook.n: com.facebook.q h(com.facebook.n)>
+    <com.facebook.n: java.util.List l(com.facebook.n[])>
+    <com.facebook.n: java.util.List l(com.facebook.n[])>
+    <com.facebook.n: java.util.List k(java.util.Collection)>
+    <com.facebook.p: void <init>(java.util.Collection)>
+    <com.facebook.p: void <init>(java.util.Collection)>
+    <com.facebook.p: void <init>(java.util.Collection)>
+    <com.facebook.n: java.util.List k(java.util.Collection)>
+    <com.facebook.n: java.util.List j(com.facebook.p)>
+    <com.facebook.n: java.net.HttpURLConnection d0(com.facebook.p)>
+    <com.facebook.n: void U(com.facebook.p,java.net.HttpURLConnection)>
+    <com.facebook.n: void O(com.facebook.p,com.facebook.internal.q,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.p: com.facebook.n s(int)>
+    <com.facebook.p: com.facebook.n s(int)>
+    <com.facebook.p: com.facebook.n s(int)>
+    <com.facebook.p: com.facebook.n s(int)>
+    <com.facebook.n: void O(com.facebook.p,com.facebook.internal.q,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.n: void O(com.facebook.p,com.facebook.internal.q,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.n: void R(android.os.Bundle,com.facebook.n$i,com.facebook.n)>
+    <com.facebook.n: void R(android.os.Bundle,com.facebook.n$i,com.facebook.n)>
+    <com.facebook.n$i: void j(java.lang.String,java.lang.Object,com.facebook.n)>
+    <com.facebook.n$i: void j(java.lang.String,java.lang.Object,com.facebook.n)>
+    <com.facebook.n$i: void e(java.lang.String,byte[])>
+    <com.facebook.n$i: void e(java.lang.String,byte[])>
+    <com.facebook.n$i: void e(java.lang.String,byte[])>
+    <com.facebook.n$i: void i(java.lang.String,java.lang.Object[])>
+    <com.facebook.n$i: void c(java.lang.String,java.lang.Object[])>
+    <com.facebook.n$i: void c(java.lang.String,java.lang.Object[])>
+
+Leak 12:
+  Source: $r13 = virtualinvoke $r12.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r11, $r6, null, null, null) (<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>)
+  Sink: virtualinvoke $r3.<java.io.OutputStream: void write(byte[])>($r5) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.facebook.internal.a: com.facebook.internal.a h(android.content.Context)>
+    <com.facebook.internal.a: com.facebook.internal.a h(android.content.Context)>
+    <com.facebook.internal.a: com.facebook.internal.a h(android.content.Context)>
+    <com.facebook.internal.a: com.facebook.internal.a h(android.content.Context)>
+    <com.facebook.b0$a: void run()>
+    <com.facebook.internal.a: java.lang.String b()>
+    <com.facebook.internal.a: java.lang.String b()>
+    <com.facebook.b0$a: void run()>
+    <com.facebook.b0$a: void run()>
+    <com.facebook.n: void Z(android.os.Bundle)>
+    <com.facebook.n: void Z(android.os.Bundle)>
+    <com.facebook.b0$a: void run()>
+    <com.facebook.n: com.facebook.q g()>
+    <com.facebook.n: com.facebook.q h(com.facebook.n)>
+    <com.facebook.n: com.facebook.q h(com.facebook.n)>
+    <com.facebook.n: java.util.List l(com.facebook.n[])>
+    <com.facebook.n: java.util.List l(com.facebook.n[])>
+    <com.facebook.n: java.util.List k(java.util.Collection)>
+    <com.facebook.p: void <init>(java.util.Collection)>
+    <com.facebook.p: void <init>(java.util.Collection)>
+    <com.facebook.p: void <init>(java.util.Collection)>
+    <com.facebook.n: java.util.List k(java.util.Collection)>
+    <com.facebook.n: java.util.List j(com.facebook.p)>
+    <com.facebook.n: java.net.HttpURLConnection d0(com.facebook.p)>
+    <com.facebook.n: void U(com.facebook.p,java.net.HttpURLConnection)>
+    <com.facebook.n: void O(com.facebook.p,com.facebook.internal.q,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.p: com.facebook.n s(int)>
+    <com.facebook.p: com.facebook.n s(int)>
+    <com.facebook.p: com.facebook.n s(int)>
+    <com.facebook.p: com.facebook.n s(int)>
+    <com.facebook.n: void O(com.facebook.p,com.facebook.internal.q,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.n: void O(com.facebook.p,com.facebook.internal.q,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.n: void R(android.os.Bundle,com.facebook.n$i,com.facebook.n)>
+    <com.facebook.n: void R(android.os.Bundle,com.facebook.n$i,com.facebook.n)>
+    <com.facebook.n$i: void j(java.lang.String,java.lang.Object,com.facebook.n)>
+    <com.facebook.n$i: void j(java.lang.String,java.lang.Object,com.facebook.n)>
+    <com.facebook.n$i: void e(java.lang.String,byte[])>
+    <com.facebook.n$i: void e(java.lang.String,byte[])>
+    <com.facebook.n$i: void e(java.lang.String,byte[])>
+    <com.facebook.n$i: void i(java.lang.String,java.lang.Object[])>
+    <com.facebook.n$i: void c(java.lang.String,java.lang.Object[])>
+    <com.facebook.n$i: void c(java.lang.String,java.lang.Object[])>
+
+Leak 13:
+  Source: $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r2, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("AppsFlyer_6.1.3", $r2) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.appsflyer.AppsFlyerLibCore: java.lang.String Ι(java.lang.String,android.content.pm.PackageManager,java.lang.String)>
+    <com.appsflyer.AppsFlyerLibCore: java.lang.String Ι(java.lang.String,android.content.pm.PackageManager,java.lang.String)>
+    <com.appsflyer.AppsFlyerLibCore: java.lang.String Ι(java.lang.String,android.content.pm.PackageManager,java.lang.String)>
+    <com.appsflyer.AppsFlyerLibCore: java.lang.String Ι(java.lang.String,android.content.pm.PackageManager,java.lang.String)>
+    <com.appsflyer.AppsFlyerLibCore: java.lang.String Ι(java.lang.String,android.content.pm.PackageManager,java.lang.String)>
+    <com.appsflyer.AppsFlyerLibCore: java.lang.String getConfiguredChannel(android.content.Context)>
+    <com.appsflyer.AppsFlyerLibCore: void ı(java.lang.ref.WeakReference)>
+    <com.appsflyer.AppsFlyerLibCore: void ı(java.lang.ref.WeakReference)>
+    <com.appsflyer.AFEvent: com.appsflyer.AFEvent addParams(java.util.Map)>
+    <com.appsflyer.AFEvent: com.appsflyer.AFEvent addParams(java.util.Map)>
+    <com.appsflyer.AFEvent: com.appsflyer.AFEvent addParams(java.util.Map)>
+    <com.appsflyer.AppsFlyerLibCore: void ı(java.lang.ref.WeakReference)>
+    <com.appsflyer.AppsFlyerLibCore: void ı(java.lang.ref.WeakReference)>
+    <com.appsflyer.BackgroundHttpTask: void <init>(com.appsflyer.internal.model.event.BackgroundEvent)>
+    <com.appsflyer.BackgroundHttpTask: void <init>(com.appsflyer.internal.model.event.BackgroundEvent)>
+    <com.appsflyer.AppsFlyerLibCore: void ı(java.lang.ref.WeakReference)>
+    <com.appsflyer.BackgroundHttpTask$5: void <init>(com.appsflyer.BackgroundHttpTask)>
+    <com.appsflyer.BackgroundHttpTask$5: void <init>(com.appsflyer.BackgroundHttpTask)>
+    <com.appsflyer.AppsFlyerLibCore: void ı(java.lang.ref.WeakReference)>
+    <com.appsflyer.AppsFlyerLibCore: void ı(java.lang.ref.WeakReference)>
+    <com.appsflyer.BackgroundHttpTask$5: void run()>
+    <com.appsflyer.BackgroundHttpTask$5: void run()>
+    <com.appsflyer.BackgroundHttpTask: java.net.HttpURLConnection doInBackground()>
+    <com.appsflyer.BackgroundHttpTask: java.net.HttpURLConnection doInBackground()>
+    <com.appsflyer.internal.model.event.BackgroundEvent: java.lang.String body()>
+    <com.appsflyer.AFEvent: java.util.Map params()>
+    <com.appsflyer.AFEvent: java.util.Map params()>
+    <com.appsflyer.internal.model.event.BackgroundEvent: java.lang.String body()>
+    <com.appsflyer.AFHelper: org.json.JSONObject toJsonObject(java.util.Map)>
+    <com.appsflyer.AFHelper: org.json.JSONObject toJsonObject(java.util.Map)>
+    <com.appsflyer.AFHelper: org.json.JSONObject toJsonObject(java.util.Map)>
+    <com.appsflyer.AFHelper: org.json.JSONObject toJsonObject(java.util.Map)>
+    <com.appsflyer.AFHelper: org.json.JSONObject toJsonObject(java.util.Map)>
+    <com.appsflyer.AFHelper: org.json.JSONObject toJsonObject(java.util.Map)>
+    <com.appsflyer.AFHelper: org.json.JSONObject toJsonObject(java.util.Map)>
+    <com.appsflyer.internal.model.event.BackgroundEvent: java.lang.String body()>
+    <com.appsflyer.internal.model.event.BackgroundEvent: java.lang.String body()>
+    <com.appsflyer.BackgroundHttpTask: java.net.HttpURLConnection doInBackground()>
+    <com.appsflyer.BackgroundHttpTask: java.net.HttpURLConnection doInBackground()>
+    <com.appsflyer.BackgroundHttpTask: java.net.HttpURLConnection doInBackground()>
+    <com.appsflyer.internal.ab: void ɩ(java.lang.String)>
+    <com.appsflyer.internal.ab: void ɩ(java.lang.String)>
+    <com.appsflyer.AFLogger: void afInfoLog(java.lang.String)>
+    <com.appsflyer.AFLogger: void afInfoLog(java.lang.String,boolean)>
+    <com.appsflyer.AFLogger: java.lang.String ǃ(java.lang.String,boolean)>
+    <com.appsflyer.AFLogger: void afInfoLog(java.lang.String,boolean)>
+
+Leak 14:
+  Source: $r15 = virtualinvoke $r8.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r7, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("AppsFlyer_6.1.3", $r2) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.appsflyer.internal.aa: void ı(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.internal.aa: void ı(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.internal.aa: void ı(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.internal.aa: void ı(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.internal.aa: void ɩ(java.lang.String,java.lang.String,java.lang.String,java.lang.String)>
+    <com.appsflyer.internal.aa: void ɩ(java.lang.String,java.lang.String,java.lang.String,java.lang.String)>
+    <com.appsflyer.internal.aa: void ɩ(java.lang.String,java.lang.String,java.lang.String,java.lang.String)>
+    <com.appsflyer.internal.aa: void ı(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.internal.aa: void Ι(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.internal.aa: void Ι(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.internal.aa: void Ι(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.internal.aa: java.lang.String ɹ()>
+    <com.appsflyer.internal.aa: java.lang.String ɹ()>
+    <com.appsflyer.internal.aa: java.lang.String ɹ()>
+    <com.appsflyer.internal.aa: void Ι(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.internal.model.event.ProxyEvent: com.appsflyer.internal.model.event.BackgroundEvent body(java.lang.String)>
+    <com.appsflyer.internal.model.event.ProxyEvent: com.appsflyer.internal.model.event.BackgroundEvent body(java.lang.String)>
+    <com.appsflyer.internal.aa: void Ι(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.AFEvent: com.appsflyer.AFEvent urlString(java.lang.String)>
+    <com.appsflyer.internal.aa: void Ι(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.internal.aa: void Ι(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.BackgroundHttpTask: void <init>(com.appsflyer.internal.model.event.BackgroundEvent)>
+    <com.appsflyer.BackgroundHttpTask: void <init>(com.appsflyer.internal.model.event.BackgroundEvent)>
+    <com.appsflyer.internal.aa: void Ι(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.BackgroundHttpTask$5: void <init>(com.appsflyer.BackgroundHttpTask)>
+    <com.appsflyer.BackgroundHttpTask$5: void <init>(com.appsflyer.BackgroundHttpTask)>
+    <com.appsflyer.internal.aa: void Ι(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.internal.aa: void Ι(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.BackgroundHttpTask$5: void run()>
+    <com.appsflyer.BackgroundHttpTask$5: void run()>
+    <com.appsflyer.BackgroundHttpTask: java.net.HttpURLConnection doInBackground()>
+    <com.appsflyer.BackgroundHttpTask: java.net.HttpURLConnection doInBackground()>
+    <com.appsflyer.internal.model.event.ProxyEvent: java.lang.String body()>
+    <com.appsflyer.internal.model.event.ProxyEvent: java.lang.String body()>
+    <com.appsflyer.BackgroundHttpTask: java.net.HttpURLConnection doInBackground()>
+    <com.appsflyer.BackgroundHttpTask: java.net.HttpURLConnection doInBackground()>
+    <com.appsflyer.BackgroundHttpTask: java.net.HttpURLConnection doInBackground()>
+    <com.appsflyer.internal.ab: void ɩ(java.lang.String)>
+    <com.appsflyer.internal.ab: void ɩ(java.lang.String)>
+    <com.appsflyer.AFLogger: void afInfoLog(java.lang.String)>
+    <com.appsflyer.AFLogger: void afInfoLog(java.lang.String,boolean)>
+    <com.appsflyer.AFLogger: java.lang.String ǃ(java.lang.String,boolean)>
+    <com.appsflyer.AFLogger: void afInfoLog(java.lang.String,boolean)>
+
+Leak 15:
+  Source: $r5 = virtualinvoke $r3.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r4, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("AppsFlyer_6.1.3", $r2) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <sa.a: boolean d()>
+    <sa.a: boolean d()>
+    <sa.a: boolean d()>
+    <sa.a: boolean d()>
+    <sa.a: boolean c()>
+    <sa.a: void <init>(android.content.Context,java.lang.String,ja.c)>
+    <sa.a: void <init>(android.content.Context,java.lang.String,ja.c)>
+    <com.google.firebase.a: sa.a u(android.content.Context)>
+    <com.google.firebase.a: sa.a b(com.google.firebase.a,android.content.Context)>
+    <k9.c: java.lang.Object get()>
+    <o9.w: java.lang.Object get()>
+    <o9.w: java.lang.Object get()>
+    <com.google.firebase.perf.session.gauges.GaugeManager: void collectGaugeMetricOnce(com.google.firebase.perf.util.h)>
+    <com.google.firebase.perf.session.gauges.GaugeManager: void collectGaugeMetricOnce(com.google.firebase.perf.util.h)>
+    <za.b: za.b n(long)>
+    <za.b: za.b n(long)>
+    <com.google.firebase.perf.network.c: void a0()>
+    <com.google.firebase.perf.network.c: void a0()>
+    <com.google.firebase.perf.network.c: java.io.InputStream z()>
+    <com.google.firebase.perf.network.a: java.io.InputStream getInputStream()>
+    <com.google.firebase.perf.network.a: java.io.InputStream getInputStream()>
+    <com.google.firebase.perf.network.c: java.io.InputStream z()>
+    <com.google.firebase.perf.network.c: java.io.InputStream z()>
+    <com.google.firebase.perf.network.c: java.io.InputStream z()>
+    <bb.a: void <init>(java.io.InputStream,za.b,com.google.firebase.perf.util.h)>
+    <bb.a: void <init>(java.io.InputStream,za.b,com.google.firebase.perf.util.h)>
+    <com.google.firebase.perf.network.c: java.io.InputStream z()>
+    <com.google.firebase.perf.network.a: java.io.InputStream getInputStream()>
+    <com.appsflyer.AppsFlyerLibCore: java.lang.String readServerResponse(java.net.HttpURLConnection)>
+    <com.appsflyer.AppsFlyerLibCore: java.lang.String readServerResponse(java.net.HttpURLConnection)>
+    <com.appsflyer.AppsFlyerLibCore: java.lang.String readServerResponse(java.net.HttpURLConnection)>
+    <com.appsflyer.AppsFlyerLibCore: java.lang.String readServerResponse(java.net.HttpURLConnection)>
+    <com.appsflyer.AppsFlyerLibCore: java.lang.String readServerResponse(java.net.HttpURLConnection)>
+    <com.appsflyer.AppsFlyerLibCore: java.lang.String readServerResponse(java.net.HttpURLConnection)>
+    <com.appsflyer.AppsFlyerLibCore: java.lang.String readServerResponse(java.net.HttpURLConnection)>
+    <com.appsflyer.OneLinkHttpTask: void doRequest()>
+    <com.appsflyer.OneLinkHttpTask: void doRequest()>
+    <com.appsflyer.OneLinkHttpTask: void doRequest()>
+    <com.appsflyer.OneLinkHttpTask: void doRequest()>
+    <com.appsflyer.AFLogger: void afInfoLog(java.lang.String)>
+    <com.appsflyer.AFLogger: void afInfoLog(java.lang.String,boolean)>
+    <com.appsflyer.AFLogger: java.lang.String ǃ(java.lang.String,boolean)>
+    <com.appsflyer.AFLogger: void afInfoLog(java.lang.String,boolean)>
+
+Leak 16:
+  Source: $r4 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r3, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r3.<java.io.OutputStream: void write(byte[])>($r4) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <t3.b: java.lang.String d()>
+    <t3.b: java.lang.String d()>
+    <t3.b: java.lang.String d()>
+    <q3.e: com.facebook.n i(java.lang.String,com.facebook.a,java.lang.String,java.lang.String)>
+    <q3.e: com.facebook.n i(java.lang.String,com.facebook.a,java.lang.String,java.lang.String)>
+    <com.facebook.n: void Z(android.os.Bundle)>
+    <com.facebook.n: void Z(android.os.Bundle)>
+    <q3.e: com.facebook.n i(java.lang.String,com.facebook.a,java.lang.String,java.lang.String)>
+    <q3.e$c: void run()>
+    <com.facebook.n: com.facebook.q g()>
+    <com.facebook.n: com.facebook.q h(com.facebook.n)>
+    <com.facebook.n: com.facebook.q h(com.facebook.n)>
+    <com.facebook.n: java.util.List l(com.facebook.n[])>
+    <com.facebook.n: java.util.List l(com.facebook.n[])>
+    <com.facebook.n: java.util.List k(java.util.Collection)>
+    <com.facebook.p: void <init>(java.util.Collection)>
+    <com.facebook.p: void <init>(java.util.Collection)>
+    <com.facebook.p: void <init>(java.util.Collection)>
+    <com.facebook.n: java.util.List k(java.util.Collection)>
+    <com.facebook.n: java.util.List j(com.facebook.p)>
+    <com.facebook.n: java.net.HttpURLConnection d0(com.facebook.p)>
+    <com.facebook.n: void U(com.facebook.p,java.net.HttpURLConnection)>
+    <com.facebook.n: void O(com.facebook.p,com.facebook.internal.q,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.p: com.facebook.n s(int)>
+    <com.facebook.p: com.facebook.n s(int)>
+    <com.facebook.p: com.facebook.n s(int)>
+    <com.facebook.p: com.facebook.n s(int)>
+    <com.facebook.n: void O(com.facebook.p,com.facebook.internal.q,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.n: void O(com.facebook.p,com.facebook.internal.q,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.n: void R(android.os.Bundle,com.facebook.n$i,com.facebook.n)>
+    <com.facebook.n: void R(android.os.Bundle,com.facebook.n$i,com.facebook.n)>
+    <com.facebook.n$i: void j(java.lang.String,java.lang.Object,com.facebook.n)>
+    <com.facebook.n$i: void j(java.lang.String,java.lang.Object,com.facebook.n)>
+    <com.facebook.n$i: void e(java.lang.String,byte[])>
+    <com.facebook.n$i: void e(java.lang.String,byte[])>
+    <com.facebook.n$i: void e(java.lang.String,byte[])>
+    <com.facebook.n$i: void k()>
+    <com.facebook.n$i: void k()>
+
+Leak 17:
+  Source: $r4 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r3, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r3.<java.io.OutputStream: void write(byte[])>($r2) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <t3.b: java.lang.String d()>
+    <t3.b: java.lang.String d()>
+    <t3.b: java.lang.String d()>
+    <q3.e: com.facebook.n i(java.lang.String,com.facebook.a,java.lang.String,java.lang.String)>
+    <q3.e: com.facebook.n i(java.lang.String,com.facebook.a,java.lang.String,java.lang.String)>
+    <com.facebook.n: void Z(android.os.Bundle)>
+    <com.facebook.n: void Z(android.os.Bundle)>
+    <q3.e: com.facebook.n i(java.lang.String,com.facebook.a,java.lang.String,java.lang.String)>
+    <q3.e$c: void run()>
+    <com.facebook.n: com.facebook.q g()>
+    <com.facebook.n: com.facebook.q h(com.facebook.n)>
+    <com.facebook.n: com.facebook.q h(com.facebook.n)>
+    <com.facebook.n: java.util.List l(com.facebook.n[])>
+    <com.facebook.n: java.util.List l(com.facebook.n[])>
+    <com.facebook.n: java.util.List k(java.util.Collection)>
+    <com.facebook.p: void <init>(java.util.Collection)>
+    <com.facebook.p: void <init>(java.util.Collection)>
+    <com.facebook.p: void <init>(java.util.Collection)>
+    <com.facebook.n: java.util.List k(java.util.Collection)>
+    <com.facebook.n: java.util.List j(com.facebook.p)>
+    <com.facebook.n: java.net.HttpURLConnection d0(com.facebook.p)>
+    <com.facebook.n: void U(com.facebook.p,java.net.HttpURLConnection)>
+    <com.facebook.n: void O(com.facebook.p,com.facebook.internal.q,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.p: com.facebook.n s(int)>
+    <com.facebook.p: com.facebook.n s(int)>
+    <com.facebook.p: com.facebook.n s(int)>
+    <com.facebook.p: com.facebook.n s(int)>
+    <com.facebook.n: void O(com.facebook.p,com.facebook.internal.q,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.n: void O(com.facebook.p,com.facebook.internal.q,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.n: void R(android.os.Bundle,com.facebook.n$i,com.facebook.n)>
+    <com.facebook.n: void R(android.os.Bundle,com.facebook.n$i,com.facebook.n)>
+    <com.facebook.n$i: void j(java.lang.String,java.lang.Object,com.facebook.n)>
+    <com.facebook.n$i: void j(java.lang.String,java.lang.Object,com.facebook.n)>
+    <com.facebook.n$i: void e(java.lang.String,byte[])>
+
+Leak 18:
+  Source: $r13 = virtualinvoke $r12.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r11, $r6, null, null, null) (<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>)
+  Sink: virtualinvoke $r3.<java.io.OutputStream: void write(byte[])>($r2) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.facebook.internal.a: com.facebook.internal.a h(android.content.Context)>
+    <com.facebook.internal.a: com.facebook.internal.a h(android.content.Context)>
+    <com.facebook.internal.a: com.facebook.internal.a h(android.content.Context)>
+    <com.facebook.internal.a: com.facebook.internal.a h(android.content.Context)>
+    <com.facebook.b0$a: void run()>
+    <com.facebook.internal.a: java.lang.String b()>
+    <com.facebook.internal.a: java.lang.String b()>
+    <com.facebook.b0$a: void run()>
+    <com.facebook.b0$a: void run()>
+    <com.facebook.n: void Z(android.os.Bundle)>
+    <com.facebook.n: void Z(android.os.Bundle)>
+    <com.facebook.b0$a: void run()>
+    <com.facebook.n: com.facebook.q g()>
+    <com.facebook.n: com.facebook.q h(com.facebook.n)>
+    <com.facebook.n: com.facebook.q h(com.facebook.n)>
+    <com.facebook.n: java.util.List l(com.facebook.n[])>
+    <com.facebook.n: java.util.List l(com.facebook.n[])>
+    <com.facebook.n: java.util.List k(java.util.Collection)>
+    <com.facebook.p: void <init>(java.util.Collection)>
+    <com.facebook.p: void <init>(java.util.Collection)>
+    <com.facebook.p: void <init>(java.util.Collection)>
+    <com.facebook.n: java.util.List k(java.util.Collection)>
+    <com.facebook.n: java.util.List j(com.facebook.p)>
+    <com.facebook.n: java.net.HttpURLConnection d0(com.facebook.p)>
+    <com.facebook.n: void U(com.facebook.p,java.net.HttpURLConnection)>
+    <com.facebook.n: void O(com.facebook.p,com.facebook.internal.q,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.p: com.facebook.n s(int)>
+    <com.facebook.p: com.facebook.n s(int)>
+    <com.facebook.p: com.facebook.n s(int)>
+    <com.facebook.p: com.facebook.n s(int)>
+    <com.facebook.n: void O(com.facebook.p,com.facebook.internal.q,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.n: void O(com.facebook.p,com.facebook.internal.q,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.n: void R(android.os.Bundle,com.facebook.n$i,com.facebook.n)>
+    <com.facebook.n: void R(android.os.Bundle,com.facebook.n$i,com.facebook.n)>
+    <com.facebook.n$i: void j(java.lang.String,java.lang.Object,com.facebook.n)>
+    <com.facebook.n$i: void j(java.lang.String,java.lang.Object,com.facebook.n)>
+    <com.facebook.n$i: void e(java.lang.String,byte[])>
+
+Leak 19:
+  Source: $r8 = virtualinvoke $r7.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r5, null, null, null, "updated ASC") (<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("RudderSDK", $r0) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.rudderstack.android.sdk.core.DBPersistentManager: void fetchEventsFromDB(java.util.ArrayList,java.util.ArrayList,int)>
+    <com.rudderstack.android.sdk.core.DBPersistentManager: void fetchEventsFromDB(java.util.ArrayList,java.util.ArrayList,int)>
+    <com.rudderstack.android.sdk.core.DBPersistentManager: void fetchEventsFromDB(java.util.ArrayList,java.util.ArrayList,int)>
+    <com.rudderstack.android.sdk.core.DBPersistentManager: void fetchEventsFromDB(java.util.ArrayList,java.util.ArrayList,int)>
+    <com.rudderstack.android.sdk.core.EventRepository$2: void run()>
+    <com.rudderstack.android.sdk.core.EventRepository: java.lang.String access$1200(com.rudderstack.android.sdk.core.EventRepository,java.util.ArrayList,java.util.ArrayList)>
+    <com.rudderstack.android.sdk.core.EventRepository: java.lang.String getPayloadFromMessages(java.util.ArrayList,java.util.ArrayList)>
+    <com.rudderstack.android.sdk.core.EventRepository: java.lang.String getPayloadFromMessages(java.util.ArrayList,java.util.ArrayList)>
+    <com.rudderstack.android.sdk.core.EventRepository: java.lang.String getPayloadFromMessages(java.util.ArrayList,java.util.ArrayList)>
+    <com.rudderstack.android.sdk.core.EventRepository: java.lang.String getPayloadFromMessages(java.util.ArrayList,java.util.ArrayList)>
+    <com.rudderstack.android.sdk.core.EventRepository: java.lang.String getPayloadFromMessages(java.util.ArrayList,java.util.ArrayList)>
+    <com.rudderstack.android.sdk.core.EventRepository: java.lang.String getPayloadFromMessages(java.util.ArrayList,java.util.ArrayList)>
+    <com.rudderstack.android.sdk.core.EventRepository: java.lang.String getPayloadFromMessages(java.util.ArrayList,java.util.ArrayList)>
+    <com.rudderstack.android.sdk.core.EventRepository: java.lang.String getPayloadFromMessages(java.util.ArrayList,java.util.ArrayList)>
+    <com.rudderstack.android.sdk.core.EventRepository: java.lang.String access$1200(com.rudderstack.android.sdk.core.EventRepository,java.util.ArrayList,java.util.ArrayList)>
+    <com.rudderstack.android.sdk.core.EventRepository$2: void run()>
+    <com.rudderstack.android.sdk.core.EventRepository$2: void run()>
+    <com.rudderstack.android.sdk.core.EventRepository$2: void run()>
+    <com.rudderstack.android.sdk.core.RudderLogger: void logDebug(java.lang.String)>
+    <com.rudderstack.android.sdk.core.RudderLogger: void logDebug(java.lang.String)>
+    <com.rudderstack.android.sdk.core.RudderLogger: void logDebug(java.lang.String)>
+
+Leak 20:
+  Source: $r5 = virtualinvoke $r3.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r4, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("RudderSDK", $r0) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <sa.a: boolean d()>
+    <sa.a: boolean d()>
+    <sa.a: boolean d()>
+    <sa.a: boolean d()>
+    <sa.a: boolean c()>
+    <sa.a: void <init>(android.content.Context,java.lang.String,ja.c)>
+    <sa.a: void <init>(android.content.Context,java.lang.String,ja.c)>
+    <com.google.firebase.a: sa.a u(android.content.Context)>
+    <com.google.firebase.a: sa.a b(com.google.firebase.a,android.content.Context)>
+    <k9.c: java.lang.Object get()>
+    <o9.w: java.lang.Object get()>
+    <o9.w: java.lang.Object get()>
+    <com.google.firebase.perf.session.gauges.GaugeManager: void collectGaugeMetricOnce(com.google.firebase.perf.util.h)>
+    <com.google.firebase.perf.session.gauges.GaugeManager: void collectGaugeMetricOnce(com.google.firebase.perf.util.h)>
+    <za.b: za.b n(long)>
+    <za.b: za.b n(long)>
+    <com.google.firebase.perf.network.c: void a0()>
+    <com.google.firebase.perf.network.c: void a0()>
+    <com.google.firebase.perf.network.c: java.io.InputStream z()>
+    <com.google.firebase.perf.network.c: java.io.InputStream z()>
+    <bb.a: void <init>(java.io.InputStream,za.b,com.google.firebase.perf.util.h)>
+    <bb.a: void <init>(java.io.InputStream,za.b,com.google.firebase.perf.util.h)>
+    <com.google.firebase.perf.network.c: java.io.InputStream z()>
+    <com.google.firebase.perf.network.a: java.io.InputStream getInputStream()>
+    <com.rudderstack.android.sdk.core.RudderServerConfigManager: void downloadConfig(java.lang.String)>
+    <com.rudderstack.android.sdk.core.RudderServerConfigManager: void downloadConfig(java.lang.String)>
+    <com.rudderstack.android.sdk.core.RudderServerConfigManager: void downloadConfig(java.lang.String)>
+    <com.rudderstack.android.sdk.core.RudderServerConfigManager: void downloadConfig(java.lang.String)>
+    <com.rudderstack.android.sdk.core.RudderServerConfigManager: void downloadConfig(java.lang.String)>
+    <com.rudderstack.android.sdk.core.RudderServerConfigManager: void downloadConfig(java.lang.String)>
+    <com.rudderstack.android.sdk.core.RudderServerConfigManager: void downloadConfig(java.lang.String)>
+    <com.rudderstack.android.sdk.core.RudderServerConfigManager: void downloadConfig(java.lang.String)>
+    <com.rudderstack.android.sdk.core.RudderServerConfigManager: void downloadConfig(java.lang.String)>
+    <com.rudderstack.android.sdk.core.RudderServerConfigManager: void downloadConfig(java.lang.String)>
+    <com.rudderstack.android.sdk.core.RudderLogger: void logDebug(java.lang.String)>
+    <com.rudderstack.android.sdk.core.RudderLogger: void logDebug(java.lang.String)>
+    <com.rudderstack.android.sdk.core.RudderLogger: void logDebug(java.lang.String)>
+
+Leak 21:
+  Source: $r5 = virtualinvoke $r4.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r3, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("RudderSDK", $r0) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.rudderstack.android.sdk.core.EventRepository: void checkApplicationUpdateStatus(android.app.Application)>
+    <com.rudderstack.android.sdk.core.EventRepository: void checkApplicationUpdateStatus(android.app.Application)>
+    <com.rudderstack.android.sdk.core.EventRepository: void checkApplicationUpdateStatus(android.app.Application)>
+    <com.rudderstack.android.sdk.core.EventRepository: void checkApplicationUpdateStatus(android.app.Application)>
+    <com.rudderstack.android.sdk.core.EventRepository: void checkApplicationUpdateStatus(android.app.Application)>
+    <com.rudderstack.android.sdk.core.RudderLogger: void logDebug(java.lang.String)>
+    <com.rudderstack.android.sdk.core.RudderLogger: void logDebug(java.lang.String)>
+    <com.rudderstack.android.sdk.core.RudderLogger: void logDebug(java.lang.String)>
+
+Leak 22:
+  Source: $r4 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r3, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r3.<java.io.OutputStream: void write(byte[])>($r5) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <t3.b: java.lang.String d()>
+    <t3.b: java.lang.String d()>
+    <t3.b: java.lang.String d()>
+    <q3.e: com.facebook.n i(java.lang.String,com.facebook.a,java.lang.String,java.lang.String)>
+    <q3.e: com.facebook.n i(java.lang.String,com.facebook.a,java.lang.String,java.lang.String)>
+    <com.facebook.n: void Z(android.os.Bundle)>
+    <com.facebook.n: void Z(android.os.Bundle)>
+    <q3.e: com.facebook.n i(java.lang.String,com.facebook.a,java.lang.String,java.lang.String)>
+    <q3.e$c: void run()>
+    <com.facebook.n: com.facebook.q g()>
+    <com.facebook.n: com.facebook.q h(com.facebook.n)>
+    <com.facebook.n: com.facebook.q h(com.facebook.n)>
+    <com.facebook.n: java.util.List l(com.facebook.n[])>
+    <com.facebook.n: java.util.List l(com.facebook.n[])>
+    <com.facebook.n: java.util.List k(java.util.Collection)>
+    <com.facebook.p: void <init>(java.util.Collection)>
+    <com.facebook.p: void <init>(java.util.Collection)>
+    <com.facebook.p: void <init>(java.util.Collection)>
+    <com.facebook.n: java.util.List k(java.util.Collection)>
+    <com.facebook.n: java.util.List j(com.facebook.p)>
+    <com.facebook.n: java.net.HttpURLConnection d0(com.facebook.p)>
+    <com.facebook.n: void U(com.facebook.p,java.net.HttpURLConnection)>
+    <com.facebook.n: void O(com.facebook.p,com.facebook.internal.q,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.p: com.facebook.n s(int)>
+    <com.facebook.p: com.facebook.n s(int)>
+    <com.facebook.p: com.facebook.n s(int)>
+    <com.facebook.p: com.facebook.n s(int)>
+    <com.facebook.n: void O(com.facebook.p,com.facebook.internal.q,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.n: void O(com.facebook.p,com.facebook.internal.q,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.n: void R(android.os.Bundle,com.facebook.n$i,com.facebook.n)>
+    <com.facebook.n: void R(android.os.Bundle,com.facebook.n$i,com.facebook.n)>
+    <com.facebook.n$i: void j(java.lang.String,java.lang.Object,com.facebook.n)>
+    <com.facebook.n: java.lang.String b(java.lang.Object)>
+    <com.facebook.n: java.lang.String L(java.lang.Object)>
+    <com.facebook.n: java.lang.String L(java.lang.Object)>
+    <com.facebook.n: java.lang.String b(java.lang.Object)>
+    <com.facebook.n$i: void j(java.lang.String,java.lang.Object,com.facebook.n)>
+    <com.facebook.n$i: void a(java.lang.String,java.lang.String)>
+    <com.facebook.n$i: void a(java.lang.String,java.lang.String)>
+    <com.facebook.n$i: void i(java.lang.String,java.lang.Object[])>
+    <com.facebook.n$i: void c(java.lang.String,java.lang.Object[])>
+    <com.facebook.n$i: void c(java.lang.String,java.lang.Object[])>
+    <com.facebook.n$i: void c(java.lang.String,java.lang.Object[])>
+    <com.facebook.n$i: void c(java.lang.String,java.lang.Object[])>
+
+Leak 23:
+  Source: $r13 = virtualinvoke $r12.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r11, $r6, null, null, null) (<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>)
+  Sink: virtualinvoke $r3.<java.io.OutputStream: void write(byte[])>($r5) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.facebook.internal.a: com.facebook.internal.a h(android.content.Context)>
+    <com.facebook.internal.a: com.facebook.internal.a h(android.content.Context)>
+    <com.facebook.internal.a: com.facebook.internal.a h(android.content.Context)>
+    <com.facebook.internal.a: com.facebook.internal.a h(android.content.Context)>
+    <com.facebook.internal.a: com.facebook.internal.a a(com.facebook.internal.a)>
+    <com.facebook.internal.a: com.facebook.internal.a a(com.facebook.internal.a)>
+    <com.facebook.internal.a: com.facebook.internal.a h(android.content.Context)>
+    <o3.d: o3.o e(o3.a)>
+    <o3.d: void a(o3.a,o3.c)>
+    <o3.e$d: void run()>
+    <o3.e: void k(o3.j)>
+    <o3.d: void b(o3.n)>
+    <o3.d: o3.o e(o3.a)>
+    <com.facebook.internal.a: com.facebook.internal.a h(android.content.Context)>
+    <com.facebook.internal.a: java.lang.String b()>
+    <com.facebook.j: boolean d()>
+    <com.facebook.b0: boolean e()>
+    <com.facebook.b0: void j()>
+    <com.facebook.b0: void i()>
+    <com.facebook.b0$a: void run()>
+    <com.facebook.internal.a: com.facebook.internal.a h(android.content.Context)>
+    <com.facebook.internal.a: com.facebook.internal.a h(android.content.Context)>
+    <com.facebook.b0$a: void run()>
+    <com.facebook.internal.a: java.lang.String b()>
+    <com.facebook.internal.a: java.lang.String b()>
+    <com.facebook.b0$a: void run()>
+    <com.facebook.b0$a: void run()>
+    <com.facebook.n: void Z(android.os.Bundle)>
+    <com.facebook.n: void Z(android.os.Bundle)>
+    <com.facebook.b0$a: void run()>
+    <com.facebook.n: com.facebook.q g()>
+    <com.facebook.n: com.facebook.q h(com.facebook.n)>
+    <com.facebook.n: com.facebook.q h(com.facebook.n)>
+    <com.facebook.n: java.util.List l(com.facebook.n[])>
+    <com.facebook.n: java.util.List l(com.facebook.n[])>
+    <com.facebook.n: java.util.List k(java.util.Collection)>
+    <com.facebook.p: void <init>(java.util.Collection)>
+    <com.facebook.p: void <init>(java.util.Collection)>
+    <com.facebook.p: void <init>(java.util.Collection)>
+    <com.facebook.n: java.util.List k(java.util.Collection)>
+    <com.facebook.n: java.util.List j(com.facebook.p)>
+    <com.facebook.n: java.net.HttpURLConnection d0(com.facebook.p)>
+    <com.facebook.n: void U(com.facebook.p,java.net.HttpURLConnection)>
+    <com.facebook.n: void O(com.facebook.p,com.facebook.internal.q,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.p: com.facebook.n s(int)>
+    <com.facebook.p: com.facebook.n s(int)>
+    <com.facebook.p: com.facebook.n s(int)>
+    <com.facebook.p: com.facebook.n s(int)>
+    <com.facebook.n: void O(com.facebook.p,com.facebook.internal.q,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.n: void O(com.facebook.p,com.facebook.internal.q,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.n: void R(android.os.Bundle,com.facebook.n$i,com.facebook.n)>
+    <com.facebook.n: void R(android.os.Bundle,com.facebook.n$i,com.facebook.n)>
+    <com.facebook.n$i: void j(java.lang.String,java.lang.Object,com.facebook.n)>
+    <com.facebook.n: java.lang.String b(java.lang.Object)>
+    <com.facebook.n: java.lang.String L(java.lang.Object)>
+    <com.facebook.n: java.lang.String L(java.lang.Object)>
+    <com.facebook.n: java.lang.String b(java.lang.Object)>
+    <com.facebook.n$i: void j(java.lang.String,java.lang.Object,com.facebook.n)>
+    <com.facebook.n$i: void a(java.lang.String,java.lang.String)>
+    <com.facebook.n$i: void a(java.lang.String,java.lang.String)>
+    <com.facebook.n$i: void i(java.lang.String,java.lang.Object[])>
+    <com.facebook.n$i: void c(java.lang.String,java.lang.Object[])>
+    <com.facebook.n$i: void c(java.lang.String,java.lang.Object[])>
+    <com.facebook.n$i: void c(java.lang.String,java.lang.Object[])>
+    <com.facebook.n$i: void c(java.lang.String,java.lang.Object[])>
+

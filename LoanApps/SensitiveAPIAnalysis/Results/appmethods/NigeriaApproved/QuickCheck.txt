@@ -1,0 +1,178 @@
+APK: QuickCheck (NigeriaApproved)
+Leak 1:
+  Source: $r4 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r3, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r5.<java.io.FileOutputStream: void write(byte[])>($r12) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <com.uxcam.screenaction.utils.Util: android.util.Pair getApplicationVersionName(android.content.Context)>
+    <com.uxcam.screenaction.utils.Util: android.util.Pair getApplicationVersionName(android.content.Context)>
+    <com.uxcam.screenaction.utils.Util: android.util.Pair getApplicationVersionName(android.content.Context)>
+    <com.uxcam.screenaction.utils.Util: android.util.Pair getApplicationVersionName(android.content.Context)>
+    <com.uxcam.screenaction.utils.Util: android.util.Pair getApplicationVersionName(android.content.Context)>
+    <com.uxcam.internals.bm: java.io.File a(java.lang.String,com.uxcam.internals.fu,java.lang.String)>
+    <com.uxcam.internals.bm: java.io.File a(java.lang.String,com.uxcam.internals.fu,java.lang.String)>
+    <com.uxcam.internals.bm: java.io.File a(java.lang.String,com.uxcam.internals.fu,java.lang.String)>
+    <com.uxcam.internals.bm: java.io.File a(java.lang.String,com.uxcam.internals.fu,java.lang.String)>
+    <com.uxcam.internals.bm: void a(java.lang.String,java.lang.String)>
+    <com.uxcam.internals.bm: void a(java.lang.String,java.lang.String)>
+
+Leak 2:
+  Source: $r5 = virtualinvoke $r3.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r4, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("RNFBCrashlyticsInit", $r4) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <io.invertase.firebase.common.ReactNativeFirebaseMeta: android.os.Bundle getMetaData()>
+    <io.invertase.firebase.common.ReactNativeFirebaseMeta: android.os.Bundle getMetaData()>
+    <io.invertase.firebase.common.ReactNativeFirebaseMeta: android.os.Bundle getMetaData()>
+    <io.invertase.firebase.common.ReactNativeFirebaseMeta: boolean getBooleanValue(java.lang.String,boolean)>
+    <io.invertase.firebase.common.ReactNativeFirebaseMeta: boolean getBooleanValue(java.lang.String,boolean)>
+    <io.invertase.firebase.crashlytics.ReactNativeFirebaseCrashlyticsInitProvider: boolean isCrashlyticsCollectionEnabled()>
+    <io.invertase.firebase.crashlytics.ReactNativeFirebaseCrashlyticsInitProvider: boolean isCrashlyticsCollectionEnabled()>
+    <io.invertase.firebase.crashlytics.ReactNativeFirebaseCrashlyticsInitProvider: boolean isCrashlyticsCollectionEnabled()>
+    <io.invertase.firebase.crashlytics.ReactNativeFirebaseCrashlyticsInitProvider: boolean isCrashlyticsCollectionEnabled()>
+
+Leak 3:
+  Source: $r2 = staticinvoke <android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>($r3) (<android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>)
+  Sink: virtualinvoke $r5.<java.io.FileOutputStream: void write(byte[])>($r6) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <com.uxcam.screenaction.utils.FilePath: java.io.File getAlbumStorageDir(java.lang.String)>
+    <com.uxcam.screenaction.utils.FilePath: java.io.File getAlbumStorageDir(java.lang.String)>
+    <com.uxcam.screenaction.utils.FilePath: java.io.File getAlbumStorageDir(java.lang.String)>
+    <com.uxcam.screenaction.utils.FilePath: java.lang.String getRootUrl(boolean)>
+    <com.uxcam.screenaction.utils.FilePath: java.lang.String getRootUrl(boolean)>
+    <com.uxcam.screenaction.utils.FilePath: java.lang.String getSessionRootUrl(java.lang.String,java.lang.Boolean)>
+    <com.uxcam.screenaction.utils.FilePath: java.lang.String getSessionRootUrl(java.lang.String,java.lang.Boolean)>
+    <com.uxcam.screenaction.utils.FilePath: java.lang.String getSessionRootUrl(java.lang.String,java.lang.Boolean)>
+    <com.uxcam.internals.bm: void a(java.lang.String)>
+    <com.uxcam.internals.bm: void a(java.lang.String)>
+    <com.uxcam.internals.bm: void a(java.lang.String)>
+    <com.uxcam.internals.bm: void a(java.lang.String)>
+
+Leak 4:
+  Source: $r5 = virtualinvoke $r3.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r4, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("RNFBCrashlyticsInit", $r4) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <io.invertase.firebase.common.ReactNativeFirebaseMeta: android.os.Bundle getMetaData()>
+    <io.invertase.firebase.common.ReactNativeFirebaseMeta: android.os.Bundle getMetaData()>
+    <io.invertase.firebase.common.ReactNativeFirebaseMeta: android.os.Bundle getMetaData()>
+    <io.invertase.firebase.common.ReactNativeFirebaseMeta: boolean getBooleanValue(java.lang.String,boolean)>
+    <io.invertase.firebase.common.ReactNativeFirebaseMeta: boolean getBooleanValue(java.lang.String,boolean)>
+    <io.invertase.firebase.crashlytics.ReactNativeFirebaseCrashlyticsInitProvider: boolean isCrashlyticsCollectionEnabled()>
+    <io.invertase.firebase.crashlytics.ReactNativeFirebaseCrashlyticsInitProvider: boolean isCrashlyticsCollectionEnabled()>
+    <io.invertase.firebase.crashlytics.ReactNativeFirebaseCrashlyticsInitProvider: boolean isCrashlyticsCollectionEnabled()>
+
+Leak 5:
+  Source: $r5 = virtualinvoke $r3.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r4, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: $r4 = virtualinvoke $r9.<retrofit2.Retrofit: java.lang.Object create(java.lang.Class)>(class "Lio/customer/sdk/api/service/CustomerIOService;") (<retrofit2.Retrofit: java.lang.Object create(java.lang.Class)>)
+  Methods:
+    <io.customer.sdk.data.store.ApplicationStoreImp$customerAppVersion$1: java.lang.String invoke()>
+    <io.customer.sdk.data.store.ApplicationStoreImp$customerAppVersion$1: java.lang.String invoke()>
+    <io.customer.sdk.data.store.ApplicationStoreImp$customerAppVersion$1: java.lang.String invoke()>
+    <io.customer.sdk.data.store.ApplicationStoreImp: java.lang.String tryGetValueOrNull(kotlin.jvm.functions.Function0)>
+    <io.customer.sdk.data.store.ApplicationStoreImp: java.lang.String tryGetValueOrNull(kotlin.jvm.functions.Function0)>
+    <io.customer.sdk.data.store.ApplicationStoreImp: java.lang.String getCustomerAppVersion()>
+    <io.customer.sdk.data.store.DeviceStoreImp: java.lang.String getCustomerAppVersion()>
+    <io.customer.sdk.data.store.DeviceStoreImp: java.lang.String buildUserAgent()>
+    <io.customer.sdk.data.store.DeviceStoreImp: java.lang.String buildUserAgent()>
+    <io.customer.sdk.data.store.DeviceStoreImp: java.lang.String buildUserAgent()>
+    <io.customer.sdk.data.store.DeviceStoreImp: java.lang.String buildUserAgent()>
+    <io.customer.sdk.data.store.DeviceStoreImp: java.lang.String buildUserAgent()>
+    <io.customer.sdk.data.store.DeviceStoreImp: java.lang.String buildUserAgent()>
+    <io.customer.sdk.api.interceptors.HeadersInterceptor$intercept$userAgent$2: java.lang.String invoke()>
+    <kotlin.SynchronizedLazyImpl: java.lang.Object getValue()>
+    <kotlin.SynchronizedLazyImpl: java.lang.Object getValue()>
+    <io.customer.sdk.di.CustomerIOStaticComponent: io.customer.sdk.util.StaticSettingsProvider getStaticSettingsProvider()>
+    <io.customer.sdk.di.CustomerIOStaticComponent: io.customer.sdk.util.StaticSettingsProvider getStaticSettingsProvider()>
+    <io.customer.sdk.di.CustomerIOStaticComponent$logger$2: io.customer.sdk.util.Logger invoke()>
+    <io.customer.sdk.di.CustomerIOStaticComponent$logger$2: io.customer.sdk.util.Logger invoke()>
+    <kotlin.SynchronizedLazyImpl: java.lang.Object getValue()>
+    <kotlin.SynchronizedLazyImpl: java.lang.Object getValue()>
+    <kotlin.SynchronizedLazyImpl: java.lang.Object getValue()>
+    <io.customer.sdk.di.CustomerIOStaticComponent: io.customer.sdk.util.Logger getLogger()>
+    <io.customer.sdk.di.CustomerIOStaticComponent: io.customer.sdk.util.Logger getLogger()>
+    <io.customer.sdk.di.CustomerIOComponent: io.customer.sdk.util.Logger getLogger()>
+    <io.customer.sdk.di.CustomerIOComponent: io.customer.sdk.api.HttpRequestRunner getHttpRequestRunner()>
+    <io.customer.sdk.di.CustomerIOComponent: io.customer.sdk.util.Logger getLogger()>
+    <io.customer.sdk.di.CustomerIOComponent: io.customer.sdk.util.Logger getLogger()>
+    <io.customer.sdk.di.CustomerIOComponent: io.customer.sdk.util.Logger getLogger()>
+    <io.customer.sdk.di.CustomerIOComponent: io.customer.sdk.util.Logger getLogger()>
+    <io.customer.sdk.di.DiGraph: java.util.Map getOverrides()>
+    <io.customer.sdk.di.DiGraph: java.util.Map getOverrides()>
+    <io.customer.sdk.di.CustomerIOComponent: io.customer.sdk.util.Logger getLogger()>
+    <io.customer.sdk.di.CustomerIOComponent: io.customer.sdk.util.Logger getLogger()>
+    <io.customer.sdk.di.CustomerIOComponent: io.customer.sdk.api.HttpRequestRunner getHttpRequestRunner()>
+    <io.customer.sdk.di.CustomerIOComponent: io.customer.sdk.api.TrackingHttpClient getCioHttpClient()>
+    <io.customer.sdk.di.CustomerIOComponent: retrofit2.Retrofit buildRetrofit(java.lang.String,long)>
+    <io.customer.sdk.di.CustomerIOComponent: retrofit2.Retrofit buildRetrofit(java.lang.String,long)>
+    <io.customer.sdk.di.DiGraph: java.util.Map getOverrides()>
+    <io.customer.sdk.di.DiGraph: java.util.Map getOverrides()>
+    <io.customer.sdk.di.CustomerIOComponent: retrofit2.Retrofit buildRetrofit(java.lang.String,long)>
+    <io.customer.sdk.di.CustomerIOComponent: retrofit2.Retrofit buildRetrofit(java.lang.String,long)>
+    <io.customer.sdk.di.CustomerIOComponent: retrofit2.Retrofit buildRetrofit(java.lang.String,long)>
+    <io.customer.sdk.di.CustomerIOComponent: retrofit2.Retrofit buildRetrofit(java.lang.String,long)>
+    <io.customer.sdk.di.CustomerIOComponent: io.customer.sdk.api.TrackingHttpClient getCioHttpClient()>
+
+Leak 6:
+  Source: $r5 = virtualinvoke $r3.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r4, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("[CIO]", $r1) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <io.customer.sdk.data.store.ApplicationStoreImp$customerAppVersion$1: java.lang.String invoke()>
+    <io.customer.sdk.data.store.ApplicationStoreImp$customerAppVersion$1: java.lang.String invoke()>
+    <io.customer.sdk.data.store.ApplicationStoreImp$customerAppVersion$1: java.lang.String invoke()>
+    <io.customer.sdk.data.store.ApplicationStoreImp: java.lang.String tryGetValueOrNull(kotlin.jvm.functions.Function0)>
+    <io.customer.sdk.data.store.ApplicationStoreImp: java.lang.String tryGetValueOrNull(kotlin.jvm.functions.Function0)>
+    <io.customer.sdk.data.store.ApplicationStoreImp: java.lang.String getCustomerAppVersion()>
+    <io.customer.sdk.data.store.DeviceStoreImp: java.lang.String getCustomerAppVersion()>
+    <io.customer.sdk.data.store.DeviceStoreImp: java.lang.String buildUserAgent()>
+    <io.customer.sdk.data.store.DeviceStoreImp: java.lang.String buildUserAgent()>
+    <io.customer.sdk.data.store.DeviceStoreImp: java.lang.String buildUserAgent()>
+    <io.customer.sdk.data.store.DeviceStoreImp: java.lang.String buildUserAgent()>
+    <io.customer.sdk.data.store.DeviceStoreImp: java.lang.String buildUserAgent()>
+    <io.customer.sdk.data.store.DeviceStoreImp: java.lang.String buildUserAgent()>
+    <io.customer.sdk.api.interceptors.HeadersInterceptor$intercept$userAgent$2: java.lang.String invoke()>
+    <kotlin.SynchronizedLazyImpl: java.lang.Object getValue()>
+    <kotlin.SynchronizedLazyImpl: java.lang.Object getValue()>
+    <io.customer.messagingpush.CustomerIOPushNotificationHandler: android.os.Bundle getBundle()>
+    <io.customer.messagingpush.CustomerIOPushNotificationHandler: android.os.Bundle getBundle()>
+    <io.customer.messagingpush.CustomerIOPushNotificationHandler: boolean handleMessage(android.content.Context,boolean)>
+    <io.customer.messagingpush.CustomerIOPushNotificationHandler: android.os.Bundle getBundle()>
+    <io.customer.messagingpush.CustomerIOPushNotificationHandler: boolean handleMessage(android.content.Context,boolean)>
+    <io.customer.messagingpush.CustomerIOPushNotificationHandler: android.os.Bundle getBundle()>
+    <io.customer.messagingpush.CustomerIOPushNotificationHandler: android.os.Bundle getBundle()>
+    <kotlin.SynchronizedLazyImpl: java.lang.Object getValue()>
+    <kotlin.SynchronizedLazyImpl: java.lang.Object getValue()>
+    <io.customer.messagingpush.CustomerIOPushNotificationHandler: android.os.Bundle getBundle()>
+    <io.customer.messagingpush.CustomerIOPushNotificationHandler: android.os.Bundle getBundle()>
+    <io.customer.messagingpush.CustomerIOPushNotificationHandler: boolean handleMessage(android.content.Context,boolean)>
+    <io.customer.messagingpush.CustomerIOPushNotificationHandler: boolean handleMessage(android.content.Context,boolean)>
+    <io.customer.messagingpush.processor.PushMessageProcessorImpl: void processRemoteMessageDeliveredMetrics(java.lang.String,java.lang.String)>
+    <io.customer.messagingpush.processor.PushMessageProcessorImpl: boolean getOrUpdateMessageAlreadyProcessed$messagingpush_release(java.lang.String)>
+    <io.customer.messagingpush.processor.PushMessageProcessorImpl: boolean getOrUpdateMessageAlreadyProcessed$messagingpush_release(java.lang.String)>
+    <io.customer.messagingpush.processor.PushMessageProcessorImpl: boolean getOrUpdateMessageAlreadyProcessed$messagingpush_release(java.lang.String)>
+    <io.customer.sdk.util.LogcatLogger: void debug(java.lang.String)>
+    <io.customer.sdk.util.LogcatLogger$debug$1: void <init>(java.lang.String)>
+    <io.customer.sdk.util.LogcatLogger$debug$1: void <init>(java.lang.String)>
+    <io.customer.sdk.util.LogcatLogger: void debug(java.lang.String)>
+    <io.customer.sdk.util.LogcatLogger: void debug(java.lang.String)>
+    <io.customer.sdk.util.LogcatLogger: void runIfMeetsLogLevelCriteria(io.customer.sdk.util.CioLogLevel,kotlin.jvm.functions.Function0)>
+    <io.customer.sdk.util.LogcatLogger$debug$1: java.lang.Object invoke()>
+    <io.customer.sdk.util.LogcatLogger$debug$1: void invoke()>
+    <io.customer.sdk.util.LogcatLogger$debug$1: void invoke()>
+
+Leak 7:
+  Source: $r4 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r3, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r4.<java.io.OutputStream: void write(byte[])>($r6) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.uxcam.screenaction.utils.Util: android.util.Pair getApplicationVersionName(android.content.Context)>
+    <com.uxcam.screenaction.utils.Util: android.util.Pair getApplicationVersionName(android.content.Context)>
+    <com.uxcam.screenaction.utils.Util: android.util.Pair getApplicationVersionName(android.content.Context)>
+    <com.uxcam.screenaction.utils.Util: android.util.Pair getApplicationVersionName(android.content.Context)>
+    <com.uxcam.screenaction.utils.Util: android.util.Pair getApplicationVersionName(android.content.Context)>
+    <com.uxcam.internals.bm: java.io.File a(java.lang.String,com.uxcam.internals.fu,java.lang.String)>
+    <com.uxcam.internals.bm: java.io.File a(java.lang.String,com.uxcam.internals.fu,java.lang.String)>
+    <com.uxcam.internals.bm: java.io.File a(java.lang.String,com.uxcam.internals.fu,java.lang.String)>
+    <com.uxcam.internals.bm: java.io.File a(java.lang.String,com.uxcam.internals.fu,java.lang.String)>
+    <com.uxcam.internals.fu: void a(java.lang.String)>
+    <com.uxcam.internals.fu: void a(java.lang.String)>
+    <com.uxcam.internals.fv: void a()>
+    <com.uxcam.internals.fv: void a()>
+    <com.uxcam.internals.fv: void a()>
+

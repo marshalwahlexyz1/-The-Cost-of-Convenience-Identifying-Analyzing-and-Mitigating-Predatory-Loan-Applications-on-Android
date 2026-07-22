@@ -1,0 +1,342 @@
+APK: CashCredit (NigeriaDelisted)
+Leak 1:
+  Source: $r3 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r1, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r14.<java.io.BufferedWriter: void write(java.lang.String)>($r1) (<java.io.BufferedWriter: void write(java.lang.String)>)
+  Methods:
+    <FAIMIer.fR.NPd.MIXY.fR: int fR()>
+    <FAIMIer.fR.NPd.MIXY.fR: int fR()>
+    <FAIMIer.fR.NPd.MIXY.fR: int fR()>
+    <FAIMIer.fR.NPd.MIXY.X1YPNP8f$NPd: java.lang.String toString()>
+    <FAIMIer.fR.NPd.MIXY.X1YPNP8f$NPd: java.lang.String toString()>
+    <FAIMIer.fR.NPd.MIXY.X1YPNP8f$NPd: java.lang.String toString()>
+    <FAIMIer.fR.NPd.MIXY.fyU1: void a6(java.lang.String,java.lang.String)>
+    <FAIMIer.fR.NPd.MIXY.fyU1: void vBFI(java.lang.String,java.lang.String)>
+
+Leak 2:
+  Source: $r3 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r1, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r14.<java.io.BufferedWriter: void write(java.lang.String)>($r1) (<java.io.BufferedWriter: void write(java.lang.String)>)
+  Methods:
+    <FAIMIer.fR.NPd.MIXY.fR: java.lang.String EAonoFri()>
+    <FAIMIer.fR.NPd.MIXY.fR: java.lang.String EAonoFri()>
+    <FAIMIer.fR.NPd.MIXY.fR: java.lang.String EAonoFri()>
+    <FAIMIer.fR.NPd.MIXY.X1YPNP8f$NPd: java.lang.String toString()>
+    <FAIMIer.fR.NPd.MIXY.X1YPNP8f$NPd: java.lang.String toString()>
+    <FAIMIer.fR.NPd.MIXY.X1YPNP8f$NPd: java.lang.String toString()>
+    <FAIMIer.fR.NPd.MIXY.fyU1: void a6(java.lang.String,java.lang.String)>
+    <FAIMIer.fR.NPd.MIXY.fyU1: void vBFI(java.lang.String,java.lang.String)>
+
+Leak 3:
+  Source: $r2 = virtualinvoke $r0.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() (<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>)
+  Sink: virtualinvoke $r16.<java.io.OutputStream: void write(byte[])>($r7) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <P0elnPlo.FAIMIer.a6.EAonoFri: java.lang.String XlsA()>
+    <P0elnPlo.FAIMIer.a6.EAonoFri: java.lang.String XlsA()>
+    <FAIMIer.EAonoFri.NPd.FAIMIer.fyU1: java.util.Map xRXOCvMd(boolean)>
+    <FAIMIer.EAonoFri.NPd.FAIMIer.fyU1: java.util.Map xRXOCvMd(boolean)>
+    <FAIMIer.EAonoFri.NPd.FAIMIer.fyU1: java.util.Map xRXOCvMd(boolean)>
+    <FAIMIer.EAonoFri.NPd.FAIMIer.fyU1: java.util.Map xRXOCvMd(boolean)>
+    <com.cashcredit.app.activity.CashCreditMainActivity: void h95l()>
+    <com.cashcredit.app.base.BaseActivity: void onCreate(android.os.Bundle)>
+    <dummyMainClass: com.cashcredit.app.activity.CashCreditSubmitActivity dummyMainMethod_com_cashcredit_app_activity_CashCreditSubmitActivity(android.content.Intent)>
+    <dummyMainClass: void dummyMainMethod(java.lang.String[])>
+    <dummyMainClass: com.appsflyer.FirebaseMessagingServiceListener dummyMainMethod_com_appsflyer_FirebaseMessagingServiceListener(android.content.Intent)>
+    <com.appsflyer.FirebaseMessagingServiceListener: void onNewToken(java.lang.String)>
+    <com.appsflyer.internal.af: void ı(android.content.Context,java.lang.String)>
+    <com.appsflyer.AppsFlyerLibCore: void ι(android.content.Context,java.lang.String)>
+    <com.appsflyer.AppsFlyerLibCore: void ι(android.content.Context,java.lang.String)>
+    <com.appsflyer.AppsFlyerLibCore: void ι(android.content.Context,java.lang.String)>
+    <com.appsflyer.AFEvent: com.appsflyer.AFEvent params(java.util.Map)>
+    <com.appsflyer.AFEvent: com.appsflyer.AFEvent params(java.util.Map)>
+    <com.appsflyer.AppsFlyerLibCore: void ι(android.content.Context,java.lang.String)>
+    <com.appsflyer.AppsFlyerLibCore: void ι(android.content.Context,java.lang.String)>
+    <com.appsflyer.internal.w: void <init>(com.appsflyer.internal.model.event.BackgroundEvent)>
+    <com.appsflyer.AFEvent: com.appsflyer.AFEvent weakContext()>
+    <com.appsflyer.internal.w: void <init>(com.appsflyer.internal.model.event.BackgroundEvent)>
+    <com.appsflyer.internal.w: void <init>(com.appsflyer.internal.model.event.BackgroundEvent)>
+    <com.appsflyer.internal.w: void <init>(com.appsflyer.internal.model.event.BackgroundEvent)>
+    <com.appsflyer.AppsFlyerLibCore: void ι(android.content.Context,java.lang.String)>
+    <com.appsflyer.AppsFlyerLibCore: void ι(android.content.Context,java.lang.String)>
+    <com.appsflyer.internal.w: void run()>
+    <com.appsflyer.internal.w: java.net.HttpURLConnection ǃ()>
+    <com.appsflyer.internal.w: java.net.HttpURLConnection ǃ()>
+    <com.appsflyer.internal.model.event.BackgroundEvent: java.lang.String body()>
+    <com.appsflyer.AFEvent: java.util.Map params()>
+    <com.appsflyer.AFEvent: java.util.Map params()>
+    <com.appsflyer.internal.model.event.BackgroundEvent: java.lang.String body()>
+    <com.appsflyer.AFHelper: org.json.JSONObject toJsonObject(java.util.Map)>
+    <com.appsflyer.AFHelper: org.json.JSONObject toJsonObject(java.util.Map)>
+    <com.appsflyer.AFHelper: org.json.JSONObject toJsonObject(java.util.Map)>
+    <com.appsflyer.AFHelper: org.json.JSONObject toJsonObject(java.util.Map)>
+    <com.appsflyer.AFHelper: org.json.JSONObject toJsonObject(java.util.Map)>
+    <com.appsflyer.AFHelper: org.json.JSONObject toJsonObject(java.util.Map)>
+    <com.appsflyer.AFHelper: org.json.JSONObject toJsonObject(java.util.Map)>
+    <com.appsflyer.internal.model.event.BackgroundEvent: java.lang.String body()>
+    <com.appsflyer.internal.model.event.BackgroundEvent: java.lang.String body()>
+    <com.appsflyer.internal.w: java.net.HttpURLConnection ǃ()>
+    <com.appsflyer.internal.w: java.net.HttpURLConnection ǃ()>
+    <com.appsflyer.internal.w: java.net.HttpURLConnection ǃ()>
+
+Leak 4:
+  Source: $r3 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r1, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r16.<java.io.OutputStream: void write(byte[])>($r7) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <FAIMIer.fR.NPd.MIXY.fR: java.lang.String EAonoFri()>
+    <FAIMIer.fR.NPd.MIXY.fR: java.lang.String EAonoFri()>
+    <FAIMIer.fR.NPd.MIXY.fR: java.lang.String EAonoFri()>
+    <FAIMIer.EAonoFri.NPd.h6.MIXY: void FAIMIer(java.lang.Throwable)>
+    <FAIMIer.EAonoFri.NPd.h6.MIXY: void FAIMIer(java.lang.Throwable)>
+    <FAIMIer.EAonoFri.NPd.h6.MIXY: void FAIMIer(java.lang.Throwable)>
+    <com.cashcredit.app.service.CashCredit1Service: void onMessageReceived(com.google.firebase.messaging.RemoteMessage)>
+    <dummyMainClass: com.cashcredit.app.service.CashCredit1Service dummyMainMethod_com_cashcredit_app_service_CashCredit1Service(android.content.Intent)>
+    <com.cashcredit.app.service.CashCredit1Service: void onNewToken(java.lang.String)>
+    <com.appsflyer.AppsFlyerLibCore: void updateServerUninstallToken(android.content.Context,java.lang.String)>
+    <com.appsflyer.internal.af: void ı(android.content.Context,java.lang.String)>
+    <com.appsflyer.AppsFlyerLibCore: void ι(android.content.Context,java.lang.String)>
+    <com.appsflyer.AppsFlyerLibCore: void ι(android.content.Context,java.lang.String)>
+    <com.appsflyer.AppsFlyerLibCore: void ι(android.content.Context,java.lang.String)>
+    <com.appsflyer.AFEvent: com.appsflyer.AFEvent params(java.util.Map)>
+    <com.appsflyer.AFEvent: com.appsflyer.AFEvent params(java.util.Map)>
+    <com.appsflyer.AppsFlyerLibCore: void ι(android.content.Context,java.lang.String)>
+    <com.appsflyer.AppsFlyerLibCore: void ι(android.content.Context,java.lang.String)>
+    <com.appsflyer.internal.w: void <init>(com.appsflyer.internal.model.event.BackgroundEvent)>
+    <com.appsflyer.AFEvent: com.appsflyer.AFEvent weakContext()>
+    <com.appsflyer.internal.w: void <init>(com.appsflyer.internal.model.event.BackgroundEvent)>
+    <com.appsflyer.internal.w: void <init>(com.appsflyer.internal.model.event.BackgroundEvent)>
+    <com.appsflyer.internal.w: void <init>(com.appsflyer.internal.model.event.BackgroundEvent)>
+    <com.appsflyer.AppsFlyerLibCore: void ι(android.content.Context,java.lang.String)>
+    <com.appsflyer.AppsFlyerLibCore: void ι(android.content.Context,java.lang.String)>
+    <com.appsflyer.internal.w: void run()>
+    <com.appsflyer.internal.w: java.net.HttpURLConnection ǃ()>
+    <com.appsflyer.internal.w: java.net.HttpURLConnection ǃ()>
+    <com.appsflyer.internal.model.event.BackgroundEvent: java.lang.String body()>
+    <com.appsflyer.AFEvent: java.util.Map params()>
+    <com.appsflyer.AFEvent: java.util.Map params()>
+    <com.appsflyer.internal.model.event.BackgroundEvent: java.lang.String body()>
+    <com.appsflyer.AFHelper: org.json.JSONObject toJsonObject(java.util.Map)>
+    <com.appsflyer.AFHelper: org.json.JSONObject toJsonObject(java.util.Map)>
+    <com.appsflyer.AFHelper: org.json.JSONObject toJsonObject(java.util.Map)>
+    <com.appsflyer.AFHelper: org.json.JSONObject toJsonObject(java.util.Map)>
+    <com.appsflyer.AFHelper: org.json.JSONObject toJsonObject(java.util.Map)>
+    <com.appsflyer.AFHelper: org.json.JSONObject toJsonObject(java.util.Map)>
+    <com.appsflyer.AFHelper: org.json.JSONObject toJsonObject(java.util.Map)>
+    <com.appsflyer.internal.model.event.BackgroundEvent: java.lang.String body()>
+    <com.appsflyer.internal.model.event.BackgroundEvent: java.lang.String body()>
+    <com.appsflyer.internal.w: java.net.HttpURLConnection ǃ()>
+    <com.appsflyer.internal.w: java.net.HttpURLConnection ǃ()>
+    <com.appsflyer.internal.w: java.net.HttpURLConnection ǃ()>
+
+Leak 5:
+  Source: $r8 = virtualinvoke $r6.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r7, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r16.<java.io.OutputStream: void write(byte[])>($r7) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.appsflyer.AppsFlyerLibCore: void ι(android.content.Context,java.lang.String)>
+    <com.appsflyer.AppsFlyerLibCore: void ι(android.content.Context,java.lang.String)>
+    <com.appsflyer.AppsFlyerLibCore: void ι(android.content.Context,java.lang.String)>
+    <com.appsflyer.AppsFlyerLibCore: void ι(android.content.Context,java.lang.String)>
+    <com.appsflyer.AFEvent: com.appsflyer.AFEvent params(java.util.Map)>
+    <com.appsflyer.AFEvent: com.appsflyer.AFEvent params(java.util.Map)>
+    <com.appsflyer.AppsFlyerLibCore: void ι(android.content.Context,java.lang.String)>
+    <com.appsflyer.AppsFlyerLibCore: void ι(android.content.Context,java.lang.String)>
+    <com.appsflyer.internal.w: void <init>(com.appsflyer.internal.model.event.BackgroundEvent)>
+    <com.appsflyer.AFEvent: com.appsflyer.AFEvent weakContext()>
+    <com.appsflyer.internal.w: void <init>(com.appsflyer.internal.model.event.BackgroundEvent)>
+    <com.appsflyer.internal.w: void <init>(com.appsflyer.internal.model.event.BackgroundEvent)>
+    <com.appsflyer.internal.w: void <init>(com.appsflyer.internal.model.event.BackgroundEvent)>
+    <com.appsflyer.AppsFlyerLibCore: void ι(android.content.Context,java.lang.String)>
+    <com.appsflyer.AppsFlyerLibCore: void ι(android.content.Context,java.lang.String)>
+    <com.appsflyer.internal.w: void run()>
+    <com.appsflyer.internal.w: java.net.HttpURLConnection ǃ()>
+    <com.appsflyer.internal.w: java.net.HttpURLConnection ǃ()>
+    <com.appsflyer.internal.model.event.BackgroundEvent: java.lang.String body()>
+    <com.appsflyer.AFEvent: java.util.Map params()>
+    <com.appsflyer.AFEvent: java.util.Map params()>
+    <com.appsflyer.internal.model.event.BackgroundEvent: java.lang.String body()>
+    <com.appsflyer.AFHelper: org.json.JSONObject toJsonObject(java.util.Map)>
+    <com.appsflyer.AFHelper: org.json.JSONObject toJsonObject(java.util.Map)>
+    <com.appsflyer.AFHelper: org.json.JSONObject toJsonObject(java.util.Map)>
+    <com.appsflyer.AFHelper: org.json.JSONObject toJsonObject(java.util.Map)>
+    <com.appsflyer.AFHelper: org.json.JSONObject toJsonObject(java.util.Map)>
+    <com.appsflyer.AFHelper: org.json.JSONObject toJsonObject(java.util.Map)>
+    <com.appsflyer.AFHelper: org.json.JSONObject toJsonObject(java.util.Map)>
+    <com.appsflyer.internal.model.event.BackgroundEvent: java.lang.String body()>
+    <com.appsflyer.internal.model.event.BackgroundEvent: java.lang.String body()>
+    <com.appsflyer.internal.w: java.net.HttpURLConnection ǃ()>
+    <com.appsflyer.internal.w: java.net.HttpURLConnection ǃ()>
+    <com.appsflyer.internal.w: java.net.HttpURLConnection ǃ()>
+
+Leak 6:
+  Source: $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r2, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r16.<java.io.OutputStream: void write(byte[])>($r7) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.appsflyer.AppsFlyerLibCore: java.lang.String ɩ(java.lang.String,android.content.pm.PackageManager,java.lang.String)>
+    <com.appsflyer.AppsFlyerLibCore: java.lang.String ɩ(java.lang.String,android.content.pm.PackageManager,java.lang.String)>
+    <com.appsflyer.AppsFlyerLibCore: java.lang.String ɩ(java.lang.String,android.content.pm.PackageManager,java.lang.String)>
+    <com.appsflyer.AppsFlyerLibCore: java.lang.String ɩ(java.lang.String,android.content.pm.PackageManager,java.lang.String)>
+    <com.appsflyer.AppsFlyerLibCore: java.lang.String ɩ(java.lang.String,android.content.pm.PackageManager,java.lang.String)>
+    <com.appsflyer.AppsFlyerLibCore: java.lang.String getConfiguredChannel(android.content.Context)>
+    <com.appsflyer.AppsFlyerLibCore: void ι(android.content.Context,java.lang.String)>
+    <com.appsflyer.AppsFlyerLibCore: void ι(android.content.Context,java.lang.String)>
+    <com.appsflyer.AFEvent: com.appsflyer.AFEvent params(java.util.Map)>
+    <com.appsflyer.AFEvent: com.appsflyer.AFEvent params(java.util.Map)>
+    <com.appsflyer.AppsFlyerLibCore: void ι(android.content.Context,java.lang.String)>
+    <com.appsflyer.AppsFlyerLibCore: void ι(android.content.Context,java.lang.String)>
+    <com.appsflyer.internal.w: void <init>(com.appsflyer.internal.model.event.BackgroundEvent)>
+    <com.appsflyer.AFEvent: com.appsflyer.AFEvent weakContext()>
+    <com.appsflyer.internal.w: void <init>(com.appsflyer.internal.model.event.BackgroundEvent)>
+    <com.appsflyer.internal.w: void <init>(com.appsflyer.internal.model.event.BackgroundEvent)>
+    <com.appsflyer.internal.w: void <init>(com.appsflyer.internal.model.event.BackgroundEvent)>
+    <com.appsflyer.AppsFlyerLibCore: void ι(android.content.Context,java.lang.String)>
+    <com.appsflyer.AppsFlyerLibCore: void ι(android.content.Context,java.lang.String)>
+    <com.appsflyer.internal.w: void run()>
+    <com.appsflyer.internal.w: java.net.HttpURLConnection ǃ()>
+    <com.appsflyer.internal.w: java.net.HttpURLConnection ǃ()>
+    <com.appsflyer.internal.model.event.BackgroundEvent: java.lang.String body()>
+    <com.appsflyer.AFEvent: java.util.Map params()>
+    <com.appsflyer.AFEvent: java.util.Map params()>
+    <com.appsflyer.internal.model.event.BackgroundEvent: java.lang.String body()>
+    <com.appsflyer.AFHelper: org.json.JSONObject toJsonObject(java.util.Map)>
+    <com.appsflyer.AFHelper: org.json.JSONObject toJsonObject(java.util.Map)>
+    <com.appsflyer.AFHelper: org.json.JSONObject toJsonObject(java.util.Map)>
+    <com.appsflyer.AFHelper: org.json.JSONObject toJsonObject(java.util.Map)>
+    <com.appsflyer.AFHelper: org.json.JSONObject toJsonObject(java.util.Map)>
+    <com.appsflyer.AFHelper: org.json.JSONObject toJsonObject(java.util.Map)>
+    <com.appsflyer.AFHelper: org.json.JSONObject toJsonObject(java.util.Map)>
+    <com.appsflyer.internal.model.event.BackgroundEvent: java.lang.String body()>
+    <com.appsflyer.internal.model.event.BackgroundEvent: java.lang.String body()>
+    <com.appsflyer.internal.w: java.net.HttpURLConnection ǃ()>
+    <com.appsflyer.internal.w: java.net.HttpURLConnection ǃ()>
+    <com.appsflyer.internal.w: java.net.HttpURLConnection ǃ()>
+
+Leak 7:
+  Source: $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getSimSerialNumber()>() (<android.telephony.TelephonyManager: java.lang.String getSimSerialNumber()>)
+  Sink: virtualinvoke $r16.<java.io.OutputStream: void write(byte[])>($r7) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <FAIMIer.EAonoFri.NPd.FAIMIer.fyU1: java.lang.String X1YPNP8f(android.content.Context)>
+    <FAIMIer.EAonoFri.NPd.FAIMIer.fyU1: java.lang.String X1YPNP8f(android.content.Context)>
+    <FAIMIer.EAonoFri.NPd.FAIMIer.fyU1: java.util.Map xRXOCvMd(boolean)>
+    <FAIMIer.EAonoFri.NPd.FAIMIer.fyU1: java.util.Map xRXOCvMd(boolean)>
+    <FAIMIer.EAonoFri.NPd.FAIMIer.fyU1: java.util.Map xRXOCvMd(boolean)>
+    <FAIMIer.EAonoFri.NPd.FAIMIer.fyU1: java.util.Map xRXOCvMd(boolean)>
+    <com.cashcredit.app.activity.CashCreditMainActivity: void h95l()>
+    <com.cashcredit.app.base.BaseActivity: void onCreate(android.os.Bundle)>
+    <dummyMainClass: com.cashcredit.app.activity.CashCreditSubmitActivity dummyMainMethod_com_cashcredit_app_activity_CashCreditSubmitActivity(android.content.Intent)>
+    <dummyMainClass: void dummyMainMethod(java.lang.String[])>
+    <dummyMainClass: com.appsflyer.FirebaseMessagingServiceListener dummyMainMethod_com_appsflyer_FirebaseMessagingServiceListener(android.content.Intent)>
+    <com.appsflyer.FirebaseMessagingServiceListener: void onNewToken(java.lang.String)>
+    <com.appsflyer.internal.af: void ı(android.content.Context,java.lang.String)>
+    <com.appsflyer.AppsFlyerLibCore: void ι(android.content.Context,java.lang.String)>
+    <com.appsflyer.AppsFlyerLibCore: void ι(android.content.Context,java.lang.String)>
+    <com.appsflyer.AppsFlyerLibCore: void ι(android.content.Context,java.lang.String)>
+    <com.appsflyer.AFEvent: com.appsflyer.AFEvent params(java.util.Map)>
+    <com.appsflyer.AFEvent: com.appsflyer.AFEvent params(java.util.Map)>
+    <com.appsflyer.AppsFlyerLibCore: void ι(android.content.Context,java.lang.String)>
+    <com.appsflyer.AppsFlyerLibCore: void ι(android.content.Context,java.lang.String)>
+    <com.appsflyer.internal.w: void <init>(com.appsflyer.internal.model.event.BackgroundEvent)>
+    <com.appsflyer.AFEvent: com.appsflyer.AFEvent weakContext()>
+    <com.appsflyer.internal.w: void <init>(com.appsflyer.internal.model.event.BackgroundEvent)>
+    <com.appsflyer.internal.w: void <init>(com.appsflyer.internal.model.event.BackgroundEvent)>
+    <com.appsflyer.internal.w: void <init>(com.appsflyer.internal.model.event.BackgroundEvent)>
+    <com.appsflyer.AppsFlyerLibCore: void ι(android.content.Context,java.lang.String)>
+    <com.appsflyer.AppsFlyerLibCore: void ι(android.content.Context,java.lang.String)>
+    <com.appsflyer.internal.w: void run()>
+    <com.appsflyer.internal.w: java.net.HttpURLConnection ǃ()>
+    <com.appsflyer.internal.w: java.net.HttpURLConnection ǃ()>
+    <com.appsflyer.internal.model.event.BackgroundEvent: java.lang.String body()>
+    <com.appsflyer.AFEvent: java.util.Map params()>
+    <com.appsflyer.AFEvent: java.util.Map params()>
+    <com.appsflyer.internal.model.event.BackgroundEvent: java.lang.String body()>
+    <com.appsflyer.AFHelper: org.json.JSONObject toJsonObject(java.util.Map)>
+    <com.appsflyer.AFHelper: org.json.JSONObject toJsonObject(java.util.Map)>
+    <com.appsflyer.AFHelper: org.json.JSONObject toJsonObject(java.util.Map)>
+    <com.appsflyer.AFHelper: org.json.JSONObject toJsonObject(java.util.Map)>
+    <com.appsflyer.AFHelper: org.json.JSONObject toJsonObject(java.util.Map)>
+    <com.appsflyer.AFHelper: org.json.JSONObject toJsonObject(java.util.Map)>
+    <com.appsflyer.AFHelper: org.json.JSONObject toJsonObject(java.util.Map)>
+    <com.appsflyer.internal.model.event.BackgroundEvent: java.lang.String body()>
+    <com.appsflyer.internal.model.event.BackgroundEvent: java.lang.String body()>
+    <com.appsflyer.internal.w: java.net.HttpURLConnection ǃ()>
+    <com.appsflyer.internal.w: java.net.HttpURLConnection ǃ()>
+    <com.appsflyer.internal.w: java.net.HttpURLConnection ǃ()>
+
+Leak 8:
+  Source: $r3 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r1, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r16.<java.io.OutputStream: void write(byte[])>($r7) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <FAIMIer.fR.NPd.MIXY.fR: java.lang.String NPd()>
+    <FAIMIer.fR.NPd.MIXY.fR: java.lang.String NPd()>
+    <FAIMIer.fR.NPd.MIXY.fR: java.lang.String NPd()>
+    <FAIMIer.fR.NPd.MIXY.fR: java.lang.String NPd()>
+    <FAIMIer.fR.NPd.MIXY.fR: java.lang.String NPd()>
+    <FAIMIer.EAonoFri.NPd.FAIMIer.fyU1: java.util.Map xRXOCvMd(boolean)>
+    <FAIMIer.EAonoFri.NPd.FAIMIer.fyU1: java.util.Map xRXOCvMd(boolean)>
+    <FAIMIer.EAonoFri.NPd.FAIMIer.fyU1: java.util.Map xRXOCvMd(boolean)>
+    <FAIMIer.EAonoFri.NPd.FAIMIer.fyU1: java.util.Map xRXOCvMd(boolean)>
+    <FAIMIer.EAonoFri.NPd.FAIMIer.fyU1: java.util.Map xRXOCvMd(boolean)>
+    <FAIMIer.EAonoFri.NPd.FAIMIer.fyU1: java.util.Map xRXOCvMd(boolean)>
+    <com.cashcredit.app.activity.CashCreditMainActivity: void h95l()>
+    <com.cashcredit.app.base.BaseActivity: void onCreate(android.os.Bundle)>
+    <dummyMainClass: com.cashcredit.app.activity.CashCreditSubmitActivity dummyMainMethod_com_cashcredit_app_activity_CashCreditSubmitActivity(android.content.Intent)>
+    <dummyMainClass: void dummyMainMethod(java.lang.String[])>
+    <dummyMainClass: com.appsflyer.FirebaseMessagingServiceListener dummyMainMethod_com_appsflyer_FirebaseMessagingServiceListener(android.content.Intent)>
+    <com.appsflyer.FirebaseMessagingServiceListener: void onNewToken(java.lang.String)>
+    <com.appsflyer.internal.af: void ı(android.content.Context,java.lang.String)>
+    <com.appsflyer.AppsFlyerLibCore: void ι(android.content.Context,java.lang.String)>
+    <com.appsflyer.AppsFlyerLibCore: void ι(android.content.Context,java.lang.String)>
+    <com.appsflyer.AppsFlyerLibCore: void ι(android.content.Context,java.lang.String)>
+    <com.appsflyer.AFEvent: com.appsflyer.AFEvent params(java.util.Map)>
+    <com.appsflyer.AFEvent: com.appsflyer.AFEvent params(java.util.Map)>
+    <com.appsflyer.AppsFlyerLibCore: void ι(android.content.Context,java.lang.String)>
+    <com.appsflyer.AppsFlyerLibCore: void ι(android.content.Context,java.lang.String)>
+    <com.appsflyer.internal.w: void <init>(com.appsflyer.internal.model.event.BackgroundEvent)>
+    <com.appsflyer.AFEvent: com.appsflyer.AFEvent weakContext()>
+    <com.appsflyer.internal.w: void <init>(com.appsflyer.internal.model.event.BackgroundEvent)>
+    <com.appsflyer.internal.w: void <init>(com.appsflyer.internal.model.event.BackgroundEvent)>
+    <com.appsflyer.internal.w: void <init>(com.appsflyer.internal.model.event.BackgroundEvent)>
+    <com.appsflyer.AppsFlyerLibCore: void ι(android.content.Context,java.lang.String)>
+    <com.appsflyer.AppsFlyerLibCore: void ι(android.content.Context,java.lang.String)>
+    <com.appsflyer.internal.w: void run()>
+    <com.appsflyer.internal.w: java.net.HttpURLConnection ǃ()>
+    <com.appsflyer.internal.w: java.net.HttpURLConnection ǃ()>
+    <com.appsflyer.internal.model.event.BackgroundEvent: java.lang.String body()>
+    <com.appsflyer.AFEvent: java.util.Map params()>
+    <com.appsflyer.AFEvent: java.util.Map params()>
+    <com.appsflyer.internal.model.event.BackgroundEvent: java.lang.String body()>
+    <com.appsflyer.AFHelper: org.json.JSONObject toJsonObject(java.util.Map)>
+    <com.appsflyer.AFHelper: org.json.JSONObject toJsonObject(java.util.Map)>
+    <com.appsflyer.AFHelper: org.json.JSONObject toJsonObject(java.util.Map)>
+    <com.appsflyer.AFHelper: org.json.JSONObject toJsonObject(java.util.Map)>
+    <com.appsflyer.AFHelper: org.json.JSONObject toJsonObject(java.util.Map)>
+    <com.appsflyer.AFHelper: org.json.JSONObject toJsonObject(java.util.Map)>
+    <com.appsflyer.AFHelper: org.json.JSONObject toJsonObject(java.util.Map)>
+    <com.appsflyer.internal.model.event.BackgroundEvent: java.lang.String body()>
+    <com.appsflyer.internal.model.event.BackgroundEvent: java.lang.String body()>
+    <com.appsflyer.internal.w: java.net.HttpURLConnection ǃ()>
+    <com.appsflyer.internal.w: java.net.HttpURLConnection ǃ()>
+    <com.appsflyer.internal.w: java.net.HttpURLConnection ǃ()>
+
+Leak 9:
+  Source: $r3 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r1, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r14.<java.io.BufferedWriter: void write(java.lang.String)>($r1) (<java.io.OutputStreamWriter: void write(java.lang.String)>)
+  Methods:
+    <FAIMIer.fR.NPd.MIXY.fR: int fR()>
+    <FAIMIer.fR.NPd.MIXY.fR: int fR()>
+    <FAIMIer.fR.NPd.MIXY.fR: int fR()>
+    <FAIMIer.fR.NPd.MIXY.X1YPNP8f$NPd: java.lang.String toString()>
+    <FAIMIer.fR.NPd.MIXY.X1YPNP8f$NPd: java.lang.String toString()>
+    <FAIMIer.fR.NPd.MIXY.X1YPNP8f$NPd: java.lang.String toString()>
+    <FAIMIer.fR.NPd.MIXY.fyU1: void a6(java.lang.String,java.lang.String)>
+    <FAIMIer.fR.NPd.MIXY.fyU1: void vBFI(java.lang.String,java.lang.String)>
+
+Leak 10:
+  Source: $r3 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r1, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r14.<java.io.BufferedWriter: void write(java.lang.String)>($r1) (<java.io.OutputStreamWriter: void write(java.lang.String)>)
+  Methods:
+    <FAIMIer.fR.NPd.MIXY.fR: java.lang.String EAonoFri()>
+    <FAIMIer.fR.NPd.MIXY.fR: java.lang.String EAonoFri()>
+    <FAIMIer.fR.NPd.MIXY.fR: java.lang.String EAonoFri()>
+    <FAIMIer.fR.NPd.MIXY.X1YPNP8f$NPd: java.lang.String toString()>
+    <FAIMIer.fR.NPd.MIXY.X1YPNP8f$NPd: java.lang.String toString()>
+    <FAIMIer.fR.NPd.MIXY.X1YPNP8f$NPd: java.lang.String toString()>
+    <FAIMIer.fR.NPd.MIXY.fyU1: void a6(java.lang.String,java.lang.String)>
+    <FAIMIer.fR.NPd.MIXY.fyU1: void vBFI(java.lang.String,java.lang.String)>
+

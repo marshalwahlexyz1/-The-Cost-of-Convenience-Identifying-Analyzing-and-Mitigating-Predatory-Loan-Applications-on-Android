@@ -1,0 +1,397 @@
+APK: CreditWise (NigeriaApproved)
+Leak 1:
+  Source: $r7 = virtualinvoke $r5.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r6, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r21.<java.io.OutputStream: void write(byte[])>($r13) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.appsflyer.internal.AFb1fSDK: java.lang.String AFKeystoreWrapper(java.lang.String)>
+    <com.appsflyer.internal.AFb1fSDK: java.lang.String AFKeystoreWrapper(java.lang.String)>
+    <com.appsflyer.internal.AFb1fSDK: java.lang.String AFKeystoreWrapper(java.lang.String)>
+    <com.appsflyer.internal.AFb1fSDK: java.lang.String AFKeystoreWrapper(java.lang.String)>
+    <com.appsflyer.internal.AFb1fSDK: java.lang.String AFKeystoreWrapper(java.lang.String)>
+    <com.appsflyer.internal.AFb1fSDK: java.lang.String AFKeystoreWrapper(java.lang.String)>
+    <com.appsflyer.internal.AFb1fSDK: java.lang.String AFKeystoreWrapper(java.lang.String)>
+    <com.appsflyer.internal.AFb1fSDK: java.lang.String values()>
+    <com.appsflyer.internal.AFc1cSDK$2: java.lang.String AFInAppEventParameterName()>
+    <com.appsflyer.internal.AFb1zSDK: java.lang.String AFKeystoreWrapper(com.appsflyer.internal.AFb1gSDK,java.lang.String)>
+    <com.appsflyer.internal.AFc1cSDK$2: java.lang.String AFInAppEventParameterName()>
+    <com.appsflyer.internal.AFc1cSDK$2: java.lang.String AFInAppEventParameterName()>
+    <com.appsflyer.internal.AFc1cSDK$2: java.lang.String AFInAppEventParameterName()>
+    <creditwise.sR0: java.lang.CharSequence vEd(java.lang.CharSequence)>
+    <creditwise.sR0: java.lang.CharSequence vEd(java.lang.CharSequence)>
+    <com.appsflyer.internal.AFc1cSDK$2: java.lang.String AFInAppEventParameterName()>
+    <com.appsflyer.internal.AFc1cSDK$2: java.lang.String AFInAppEventParameterName()>
+    <com.appsflyer.internal.AFc1cSDK$2: java.lang.Object invoke()>
+    <creditwise.EP0: java.lang.Object getValue()>
+    <creditwise.EP0: java.lang.Object getValue()>
+    <com.appsflyer.internal.AFc1cSDK: java.lang.String AFInAppEventParameterName()>
+    <com.appsflyer.internal.AFc1cSDK: java.lang.String AFInAppEventParameterName()>
+    <com.appsflyer.internal.AFb1zSDK: java.lang.String getHostPrefix()>
+    <com.appsflyer.internal.AFc1nSDK: boolean values()>
+    <com.appsflyer.internal.AFc1nSDK: boolean values()>
+    <com.appsflyer.internal.AFc1nSDK: boolean values()>
+    <com.appsflyer.internal.AFc1nSDK: boolean values()>
+    <com.appsflyer.internal.AFc1nSDK: boolean values()>
+    <com.appsflyer.internal.AFc1nSDK: boolean values()>
+    <com.appsflyer.internal.AFc1nSDK: boolean values()>
+    <com.appsflyer.internal.AFc1nSDK: boolean values()>
+
+Leak 2:
+  Source: $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r2, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r3, $r0) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.tencent.bugly.proguard.z: java.util.Map d(android.content.Context)>
+    <com.tencent.bugly.proguard.z: java.util.Map d(android.content.Context)>
+    <com.tencent.bugly.proguard.z: java.util.Map d(android.content.Context)>
+    <com.tencent.bugly.proguard.z: java.util.Map d(android.content.Context)>
+    <com.tencent.bugly.proguard.z: java.util.Map d(android.content.Context)>
+    <com.tencent.bugly.proguard.z: java.util.Map d(android.content.Context)>
+    <com.tencent.bugly.proguard.aa: void <init>(android.content.Context)>
+    <com.tencent.bugly.proguard.aa: void <init>(android.content.Context)>
+    <com.tencent.bugly.proguard.aa: void <init>(android.content.Context)>
+    <com.tencent.bugly.proguard.aa: void b(java.lang.String,java.lang.String)>
+    <com.tencent.bugly.proguard.aa: void b(java.lang.String,java.lang.String)>
+    <com.tencent.bugly.proguard.aa: void b(java.lang.String,java.lang.String)>
+    <com.tencent.bugly.proguard.al: boolean d(java.lang.String,java.lang.Object[])>
+    <com.tencent.bugly.proguard.al: boolean a(int,java.lang.String,java.lang.Object[])>
+    <com.tencent.bugly.proguard.al: boolean a(int,java.lang.String,java.lang.Object[])>
+
+Leak 3:
+  Source: $r2 = virtualinvoke $r1.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>("com.google.android.gms", 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r1, $r2) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <creditwise.qG0: boolean CEd(android.content.Context)>
+    <creditwise.qG0: boolean CEd(android.content.Context)>
+    <creditwise.qG0: boolean CEd(android.content.Context)>
+    <creditwise.qG0: boolean CEd(android.content.Context)>
+    <creditwise.qG0: boolean CEd(android.content.Context)>
+    <com.tencent.mars.xlog.Log: void i(java.lang.String,java.lang.String)>
+    <com.tencent.mars.xlog.Log: void i(java.lang.String,java.lang.String,java.lang.Object[])>
+    <com.tencent.mars.xlog.Log$1: void logI(java.lang.String,java.lang.String,java.lang.String,int,int,long,long,java.lang.String)>
+
+Leak 4:
+  Source: $r13 = virtualinvoke $r9.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r5, $r6, $r4, null, $r11) (<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>)
+  Sink: staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r1, $r2) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <creditwise.qo: void run()>
+    <creditwise.qo: void run()>
+    <creditwise.qo: void run()>
+    <creditwise.qo: void run()>
+    <creditwise.qo: void run()>
+    <com.tencent.mars.xlog.Log: void i(java.lang.String,java.lang.String)>
+    <com.tencent.mars.xlog.Log: void i(java.lang.String,java.lang.String,java.lang.Object[])>
+    <com.tencent.mars.xlog.Log$1: void logI(java.lang.String,java.lang.String,java.lang.String,int,int,long,long,java.lang.String)>
+
+Leak 5:
+  Source: $r4 = virtualinvoke $r3.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r1, null, null, null, null) (<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>)
+  Sink: staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r1, $r2) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.sensorsdata.analytics.android.sdk.data.adapter.PersistentDataOperation: java.lang.String[] handleQueryUri(android.net.Uri)>
+    <com.sensorsdata.analytics.android.sdk.data.adapter.PersistentDataOperation: java.lang.String[] handleQueryUri(android.net.Uri)>
+    <com.sensorsdata.analytics.android.sdk.data.adapter.PersistentDataOperation: java.lang.String[] handleQueryUri(android.net.Uri)>
+    <com.sensorsdata.analytics.android.sdk.data.adapter.PersistentDataOperation: java.lang.String[] handleQueryUri(android.net.Uri)>
+    <com.sensorsdata.analytics.android.sdk.data.adapter.PersistentDataOperation: java.lang.String[] queryData(android.net.Uri,int)>
+    <com.sensorsdata.analytics.android.sdk.data.adapter.DbAdapter: java.lang.String getRemoteConfig()>
+    <com.sensorsdata.analytics.android.sdk.data.adapter.DbAdapter: java.lang.String getRemoteConfig()>
+    <com.sensorsdata.analytics.android.sdk.remote.SensorsDataRemoteManager: void applySDKConfigFromCache()>
+    <com.sensorsdata.analytics.android.sdk.remote.BaseSensorsDataSDKRemoteManager: com.sensorsdata.analytics.android.sdk.remote.SensorsDataSDKRemoteConfig toSDKRemoteConfig(java.lang.String)>
+    <com.sensorsdata.analytics.android.sdk.remote.BaseSensorsDataSDKRemoteManager: com.sensorsdata.analytics.android.sdk.remote.SensorsDataSDKRemoteConfig toSDKRemoteConfig(java.lang.String)>
+    <com.sensorsdata.analytics.android.sdk.remote.BaseSensorsDataSDKRemoteManager: com.sensorsdata.analytics.android.sdk.remote.SensorsDataSDKRemoteConfig toSDKRemoteConfig(java.lang.String)>
+    <com.sensorsdata.analytics.android.sdk.remote.SensorsDataSDKRemoteConfig: void setOldVersion(java.lang.String)>
+    <com.sensorsdata.analytics.android.sdk.remote.SensorsDataSDKRemoteConfig: void setOldVersion(java.lang.String)>
+    <com.sensorsdata.analytics.android.sdk.remote.BaseSensorsDataSDKRemoteManager: com.sensorsdata.analytics.android.sdk.remote.SensorsDataSDKRemoteConfig toSDKRemoteConfig(java.lang.String)>
+    <com.sensorsdata.analytics.android.sdk.remote.SensorsDataRemoteManager: void applySDKConfigFromCache()>
+    <com.sensorsdata.analytics.android.sdk.remote.SensorsDataSDKRemoteConfig: java.lang.String toString()>
+    <com.sensorsdata.analytics.android.sdk.remote.SensorsDataSDKRemoteConfig: java.lang.String toString()>
+    <com.sensorsdata.analytics.android.sdk.remote.SensorsDataSDKRemoteConfig: java.lang.String toString()>
+    <creditwise.xi: java.lang.String CEd(java.lang.StringBuilder,int,java.lang.String)>
+    <creditwise.xi: java.lang.String CEd(java.lang.StringBuilder,int,java.lang.String)>
+    <com.sensorsdata.analytics.android.sdk.remote.SensorsDataSDKRemoteConfig: java.lang.String toString()>
+    <com.sensorsdata.analytics.android.sdk.remote.SensorsDataRemoteManager: void applySDKConfigFromCache()>
+    <com.sensorsdata.analytics.android.sdk.remote.SensorsDataRemoteManager: void applySDKConfigFromCache()>
+    <com.sensorsdata.analytics.android.sdk.remote.SensorsDataRemoteManager: void applySDKConfigFromCache()>
+    <com.sensorsdata.analytics.android.sdk.SALog: void i(java.lang.String,java.lang.String)>
+    <com.sensorsdata.analytics.android.sdk.SALog: void info(java.lang.String,java.lang.String,java.lang.Throwable)>
+    <com.tencent.mars.xlog.Log: void i(java.lang.String,java.lang.String)>
+    <com.tencent.mars.xlog.Log: void i(java.lang.String,java.lang.String,java.lang.Object[])>
+    <com.tencent.mars.xlog.Log$1: void logI(java.lang.String,java.lang.String,java.lang.String,int,int,long,long,java.lang.String)>
+
+Leak 6:
+  Source: $r7 = virtualinvoke $r5.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r6, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: $r20 = virtualinvoke $r10.<java.net.URLConnection: java.io.OutputStream getOutputStream()>() (<java.net.HttpURLConnection: java.io.OutputStream getOutputStream()>)
+  Methods:
+    <com.appsflyer.internal.AFb1fSDK: java.lang.String AFKeystoreWrapper(java.lang.String)>
+    <com.appsflyer.internal.AFb1fSDK: java.lang.String AFKeystoreWrapper(java.lang.String)>
+    <com.appsflyer.internal.AFb1fSDK: java.lang.String AFKeystoreWrapper(java.lang.String)>
+    <com.appsflyer.internal.AFb1fSDK: java.lang.String AFKeystoreWrapper(java.lang.String)>
+    <com.appsflyer.internal.AFb1fSDK: java.lang.String AFKeystoreWrapper(java.lang.String)>
+    <com.appsflyer.internal.AFb1fSDK: java.lang.String AFKeystoreWrapper(java.lang.String)>
+    <com.appsflyer.internal.AFb1fSDK: java.lang.String AFKeystoreWrapper(java.lang.String)>
+    <com.appsflyer.internal.AFb1fSDK: java.lang.String values()>
+    <com.appsflyer.internal.AFc1cSDK$2: java.lang.String AFInAppEventParameterName()>
+    <com.appsflyer.internal.AFb1zSDK: java.lang.String AFKeystoreWrapper(com.appsflyer.internal.AFb1gSDK,java.lang.String)>
+    <com.appsflyer.internal.AFc1cSDK$2: java.lang.String AFInAppEventParameterName()>
+    <com.appsflyer.internal.AFc1cSDK$2: java.lang.String AFInAppEventParameterName()>
+    <com.appsflyer.internal.AFc1cSDK$2: java.lang.String AFInAppEventParameterName()>
+    <creditwise.sR0: java.lang.CharSequence vEd(java.lang.CharSequence)>
+    <creditwise.sR0: java.lang.CharSequence vEd(java.lang.CharSequence)>
+    <com.appsflyer.internal.AFc1cSDK$2: java.lang.String AFInAppEventParameterName()>
+    <com.appsflyer.internal.AFc1cSDK$2: java.lang.String AFInAppEventParameterName()>
+    <com.appsflyer.internal.AFc1cSDK$2: java.lang.Object invoke()>
+    <creditwise.EP0: java.lang.Object getValue()>
+    <creditwise.EP0: java.lang.Object getValue()>
+    <com.appsflyer.internal.AFc1cSDK: java.lang.String AFInAppEventParameterName()>
+    <com.appsflyer.internal.AFc1cSDK: java.lang.String AFInAppEventParameterName()>
+    <com.appsflyer.internal.AFb1zSDK: java.lang.String getHostPrefix()>
+    <com.appsflyer.internal.AFc1nSDK: boolean values()>
+    <com.appsflyer.internal.AFc1nSDK: boolean values()>
+    <com.appsflyer.internal.AFc1nSDK: boolean values()>
+    <com.appsflyer.internal.AFc1nSDK: boolean values()>
+    <com.appsflyer.internal.AFc1nSDK: boolean values()>
+    <com.appsflyer.internal.AFc1nSDK: boolean values()>
+
+Leak 7:
+  Source: $r7 = virtualinvoke $r5.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r6, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: $r9 = virtualinvoke $r8.<java.net.URL: java.net.URLConnection openConnection()>() (<java.net.URL: java.net.URLConnection openConnection()>)
+  Methods:
+    <com.appsflyer.internal.AFb1fSDK: java.lang.String AFKeystoreWrapper(java.lang.String)>
+    <com.appsflyer.internal.AFb1fSDK: java.lang.String AFKeystoreWrapper(java.lang.String)>
+    <com.appsflyer.internal.AFb1fSDK: java.lang.String AFKeystoreWrapper(java.lang.String)>
+    <com.appsflyer.internal.AFb1fSDK: java.lang.String AFKeystoreWrapper(java.lang.String)>
+    <com.appsflyer.internal.AFb1fSDK: java.lang.String AFKeystoreWrapper(java.lang.String)>
+    <com.appsflyer.internal.AFb1fSDK: java.lang.String AFKeystoreWrapper(java.lang.String)>
+    <com.appsflyer.internal.AFb1fSDK: java.lang.String AFKeystoreWrapper(java.lang.String)>
+    <com.appsflyer.internal.AFb1fSDK: java.lang.String values()>
+    <com.appsflyer.internal.AFc1cSDK$2: java.lang.String AFInAppEventParameterName()>
+    <com.appsflyer.internal.AFb1zSDK: java.lang.String AFKeystoreWrapper(com.appsflyer.internal.AFb1gSDK,java.lang.String)>
+    <com.appsflyer.internal.AFc1cSDK$2: java.lang.String AFInAppEventParameterName()>
+    <com.appsflyer.internal.AFc1cSDK$2: java.lang.String AFInAppEventParameterName()>
+    <com.appsflyer.internal.AFc1cSDK$2: java.lang.String AFInAppEventParameterName()>
+    <creditwise.sR0: java.lang.CharSequence vEd(java.lang.CharSequence)>
+    <creditwise.sR0: java.lang.CharSequence vEd(java.lang.CharSequence)>
+    <com.appsflyer.internal.AFc1cSDK$2: java.lang.String AFInAppEventParameterName()>
+    <com.appsflyer.internal.AFc1cSDK$2: java.lang.String AFInAppEventParameterName()>
+    <com.appsflyer.internal.AFc1cSDK$2: java.lang.Object invoke()>
+    <creditwise.EP0: java.lang.Object getValue()>
+    <creditwise.EP0: java.lang.Object getValue()>
+    <com.appsflyer.internal.AFc1cSDK: java.lang.String AFInAppEventParameterName()>
+    <com.appsflyer.internal.AFc1cSDK: java.lang.String AFInAppEventParameterName()>
+    <com.appsflyer.internal.AFb1zSDK: java.lang.String getHostPrefix()>
+    <com.appsflyer.internal.AFc1nSDK: boolean values()>
+    <com.appsflyer.internal.AFc1nSDK: boolean values()>
+    <com.appsflyer.internal.AFc1nSDK: boolean values()>
+    <com.appsflyer.internal.AFc1nSDK: boolean values()>
+
+Leak 8:
+  Source: $r8 = virtualinvoke $r6.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r7, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("ManifestParser", $r7) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <creditwise.Ui: void CEd(android.content.Context,com.bumptech.glide.GeneratedAppGlideModule)>
+    <creditwise.Ui: void CEd(android.content.Context,com.bumptech.glide.GeneratedAppGlideModule)>
+    <creditwise.Ui: void CEd(android.content.Context,com.bumptech.glide.GeneratedAppGlideModule)>
+    <creditwise.Ui: void CEd(android.content.Context,com.bumptech.glide.GeneratedAppGlideModule)>
+    <creditwise.Ui: void CEd(android.content.Context,com.bumptech.glide.GeneratedAppGlideModule)>
+    <creditwise.Ui: void CEd(android.content.Context,com.bumptech.glide.GeneratedAppGlideModule)>
+    <creditwise.Ui: void CEd(android.content.Context,com.bumptech.glide.GeneratedAppGlideModule)>
+    <creditwise.Ui: void CEd(android.content.Context,com.bumptech.glide.GeneratedAppGlideModule)>
+    <creditwise.Ui: void CEd(android.content.Context,com.bumptech.glide.GeneratedAppGlideModule)>
+
+Leak 9:
+  Source: $r4 = staticinvoke <android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>($r5) (<android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>)
+  Sink: virtualinvoke $r10.<java.io.FileOutputStream: void write(byte[])>($r3) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <creditwise.gL0: java.lang.String yEd(java.lang.String)>
+    <creditwise.gL0: java.lang.String yEd(java.lang.String)>
+    <creditwise.gL0: void CEd(java.lang.String,java.lang.String,java.io.File)>
+    <creditwise.gL0: void CEd(java.lang.String,java.lang.String,java.io.File)>
+    <creditwise.gL0: void CEd(java.lang.String,java.lang.String,java.io.File)>
+
+Leak 10:
+  Source: $r4 = staticinvoke <android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>($r5) (<android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>)
+  Sink: virtualinvoke $r10.<java.io.FileOutputStream: void write(byte[])>($r3) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <creditwise.gL0: java.lang.String yEd(java.lang.String)>
+    <creditwise.gL0: java.lang.String yEd(java.lang.String)>
+    <creditwise.gL0: void CEd(java.lang.String,java.lang.String,java.io.File)>
+    <creditwise.gL0: void CEd(java.lang.String,java.lang.String,java.io.File)>
+    <creditwise.gL0: void CEd(java.lang.String,java.lang.String,java.io.File)>
+
+Leak 11:
+  Source: $r4 = staticinvoke <android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>($r5) (<android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>)
+  Sink: virtualinvoke $r10.<java.io.FileOutputStream: void write(byte[])>($r3) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <creditwise.gL0: java.lang.String yEd(java.lang.String)>
+    <creditwise.gL0: java.lang.String yEd(java.lang.String)>
+    <creditwise.gL0: void CEd(java.lang.String,java.lang.String,java.io.File)>
+    <creditwise.gL0: void CEd(java.lang.String,java.lang.String,java.io.File)>
+    <creditwise.gL0: void CEd(java.lang.String,java.lang.String,java.io.File)>
+
+Leak 12:
+  Source: $r4 = staticinvoke <android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>($r5) (<android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>)
+  Sink: virtualinvoke $r10.<java.io.FileOutputStream: void write(byte[])>($r3) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <creditwise.gL0: java.lang.String yEd(java.lang.String)>
+    <creditwise.gL0: java.lang.String yEd(java.lang.String)>
+    <creditwise.gL0: void CEd(java.lang.String,java.lang.String,java.io.File)>
+    <creditwise.gL0: void CEd(java.lang.String,java.lang.String,java.io.File)>
+    <creditwise.gL0: void CEd(java.lang.String,java.lang.String,java.io.File)>
+
+Leak 13:
+  Source: $r4 = staticinvoke <android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>($r5) (<android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>)
+  Sink: virtualinvoke $r10.<java.io.FileOutputStream: void write(byte[])>($r3) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <creditwise.gL0: java.lang.String yEd(java.lang.String)>
+    <creditwise.gL0: java.lang.String yEd(java.lang.String)>
+    <creditwise.gL0: void CEd(java.lang.String,java.lang.String,java.io.File)>
+    <creditwise.gL0: void CEd(java.lang.String,java.lang.String,java.io.File)>
+    <creditwise.gL0: void CEd(java.lang.String,java.lang.String,java.io.File)>
+
+Leak 14:
+  Source: $r4 = staticinvoke <android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>($r5) (<android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>)
+  Sink: virtualinvoke $r10.<java.io.FileOutputStream: void write(byte[])>($r3) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <creditwise.gL0: java.lang.String yEd(java.lang.String)>
+    <creditwise.gL0: java.lang.String yEd(java.lang.String)>
+    <creditwise.gL0: void CEd(java.lang.String,java.lang.String,java.io.File)>
+    <creditwise.gL0: void CEd(java.lang.String,java.lang.String,java.io.File)>
+    <creditwise.gL0: void CEd(java.lang.String,java.lang.String,java.io.File)>
+
+Leak 15:
+  Source: $r4 = staticinvoke <android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>($r5) (<android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>)
+  Sink: virtualinvoke $r10.<java.io.FileOutputStream: void write(byte[])>($r3) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <creditwise.gL0: java.lang.String yEd(java.lang.String)>
+    <creditwise.gL0: java.lang.String yEd(java.lang.String)>
+    <creditwise.gL0: void CEd(java.lang.String,java.lang.String,java.io.File)>
+    <creditwise.gL0: void CEd(java.lang.String,java.lang.String,java.io.File)>
+    <creditwise.gL0: void CEd(java.lang.String,java.lang.String,java.io.File)>
+
+Leak 16:
+  Source: $r4 = staticinvoke <android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>($r5) (<android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>)
+  Sink: virtualinvoke $r10.<java.io.FileOutputStream: void write(byte[])>($r3) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <creditwise.gL0: java.lang.String yEd(java.lang.String)>
+    <creditwise.gL0: java.lang.String yEd(java.lang.String)>
+    <creditwise.gL0: void CEd(java.lang.String,java.lang.String,java.io.File)>
+    <creditwise.gL0: void CEd(java.lang.String,java.lang.String,java.io.File)>
+    <creditwise.gL0: void CEd(java.lang.String,java.lang.String,java.io.File)>
+
+Leak 17:
+  Source: $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r2, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r3, $r0) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.tencent.bugly.proguard.z: java.util.Map d(android.content.Context)>
+    <com.tencent.bugly.proguard.z: java.util.Map d(android.content.Context)>
+    <com.tencent.bugly.proguard.z: java.util.Map d(android.content.Context)>
+    <com.tencent.bugly.proguard.z: java.util.Map d(android.content.Context)>
+    <com.tencent.bugly.proguard.z: java.util.Map d(android.content.Context)>
+    <com.tencent.bugly.proguard.z: java.util.Map d(android.content.Context)>
+    <com.tencent.bugly.proguard.aa: void <init>(android.content.Context)>
+    <com.tencent.bugly.proguard.aa: void <init>(android.content.Context)>
+    <com.tencent.bugly.proguard.aa: void <init>(android.content.Context)>
+    <com.tencent.bugly.proguard.aa: void b(java.lang.String,java.lang.String)>
+    <com.tencent.bugly.proguard.aa: void b(java.lang.String,java.lang.String)>
+    <com.tencent.bugly.proguard.aa: void b(java.lang.String,java.lang.String)>
+    <com.tencent.bugly.proguard.al: boolean d(java.lang.String,java.lang.Object[])>
+    <com.tencent.bugly.proguard.al: boolean a(int,java.lang.String,java.lang.Object[])>
+    <com.tencent.bugly.proguard.al: boolean a(int,java.lang.String,java.lang.Object[])>
+
+Leak 18:
+  Source: $r4 = staticinvoke <android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>($r5) (<android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>)
+  Sink: virtualinvoke $r10.<java.io.FileOutputStream: void write(byte[])>($r3) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <creditwise.gL0: java.lang.String yEd(java.lang.String)>
+    <creditwise.gL0: java.lang.String yEd(java.lang.String)>
+    <creditwise.gL0: void CEd(java.lang.String,java.lang.String,java.io.File)>
+    <creditwise.gL0: void CEd(java.lang.String,java.lang.String,java.io.File)>
+    <creditwise.gL0: void CEd(java.lang.String,java.lang.String,java.io.File)>
+
+Leak 19:
+  Source: $r4 = staticinvoke <android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>($r5) (<android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>)
+  Sink: virtualinvoke $r10.<java.io.FileOutputStream: void write(byte[])>($r3) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <creditwise.gL0: java.lang.String yEd(java.lang.String)>
+    <creditwise.gL0: java.lang.String yEd(java.lang.String)>
+    <creditwise.gL0: void CEd(java.lang.String,java.lang.String,java.io.File)>
+    <creditwise.gL0: void CEd(java.lang.String,java.lang.String,java.io.File)>
+    <creditwise.gL0: void CEd(java.lang.String,java.lang.String,java.io.File)>
+
+Leak 20:
+  Source: $r4 = staticinvoke <android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>($r5) (<android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>)
+  Sink: virtualinvoke $r10.<java.io.FileOutputStream: void write(byte[])>($r3) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <creditwise.gL0: java.lang.String yEd(java.lang.String)>
+    <creditwise.gL0: java.lang.String yEd(java.lang.String)>
+    <creditwise.gL0: void CEd(java.lang.String,java.lang.String,java.io.File)>
+    <creditwise.gL0: void CEd(java.lang.String,java.lang.String,java.io.File)>
+    <creditwise.gL0: void CEd(java.lang.String,java.lang.String,java.io.File)>
+
+Leak 21:
+  Source: $r4 = staticinvoke <android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>($r5) (<android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>)
+  Sink: virtualinvoke $r10.<java.io.FileOutputStream: void write(byte[])>($r3) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <creditwise.gL0: java.lang.String yEd(java.lang.String)>
+    <creditwise.gL0: java.lang.String yEd(java.lang.String)>
+    <creditwise.gL0: void CEd(java.lang.String,java.lang.String,java.io.File)>
+    <creditwise.gL0: void CEd(java.lang.String,java.lang.String,java.io.File)>
+    <creditwise.gL0: void CEd(java.lang.String,java.lang.String,java.io.File)>
+
+Leak 22:
+  Source: $r4 = staticinvoke <android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>($r5) (<android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>)
+  Sink: virtualinvoke $r10.<java.io.FileOutputStream: void write(byte[])>($r3) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <creditwise.gL0: java.lang.String yEd(java.lang.String)>
+    <creditwise.gL0: java.lang.String yEd(java.lang.String)>
+    <creditwise.gL0: void CEd(java.lang.String,java.lang.String,java.io.File)>
+    <creditwise.gL0: void CEd(java.lang.String,java.lang.String,java.io.File)>
+    <creditwise.gL0: void CEd(java.lang.String,java.lang.String,java.io.File)>
+
+Leak 23:
+  Source: $r4 = staticinvoke <android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>($r5) (<android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>)
+  Sink: virtualinvoke $r10.<java.io.FileOutputStream: void write(byte[])>($r3) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <creditwise.gL0: java.lang.String yEd(java.lang.String)>
+    <creditwise.gL0: java.lang.String yEd(java.lang.String)>
+    <creditwise.gL0: void CEd(java.lang.String,java.lang.String,java.io.File)>
+    <creditwise.gL0: void CEd(java.lang.String,java.lang.String,java.io.File)>
+    <creditwise.gL0: void CEd(java.lang.String,java.lang.String,java.io.File)>
+
+Leak 24:
+  Source: $r4 = staticinvoke <android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>($r5) (<android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>)
+  Sink: virtualinvoke $r10.<java.io.FileOutputStream: void write(byte[])>($r3) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <creditwise.gL0: java.lang.String yEd(java.lang.String)>
+    <creditwise.gL0: java.lang.String yEd(java.lang.String)>
+    <creditwise.gL0: void CEd(java.lang.String,java.lang.String,java.io.File)>
+    <creditwise.gL0: void CEd(java.lang.String,java.lang.String,java.io.File)>
+    <creditwise.gL0: void CEd(java.lang.String,java.lang.String,java.io.File)>
+
+Leak 25:
+  Source: $r4 = staticinvoke <android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>($r5) (<android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>)
+  Sink: virtualinvoke $r10.<java.io.FileOutputStream: void write(byte[])>($r3) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <creditwise.gL0: java.lang.String yEd(java.lang.String)>
+    <creditwise.gL0: java.lang.String yEd(java.lang.String)>
+    <creditwise.gL0: void CEd(java.lang.String,java.lang.String,java.io.File)>
+    <creditwise.gL0: void CEd(java.lang.String,java.lang.String,java.io.File)>
+    <creditwise.gL0: void CEd(java.lang.String,java.lang.String,java.io.File)>
+
+Leak 26:
+  Source: $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r2, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r3, $r0) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.tencent.bugly.proguard.z: java.util.Map d(android.content.Context)>
+    <com.tencent.bugly.proguard.z: java.util.Map d(android.content.Context)>
+    <com.tencent.bugly.proguard.z: java.util.Map d(android.content.Context)>
+    <com.tencent.bugly.proguard.z: java.util.Map d(android.content.Context)>
+    <com.tencent.bugly.proguard.z: java.util.Map d(android.content.Context)>
+    <com.tencent.bugly.proguard.z: java.util.Map d(android.content.Context)>
+    <com.tencent.bugly.proguard.aa: void <init>(android.content.Context)>
+    <com.tencent.bugly.proguard.aa: void <init>(android.content.Context)>
+    <com.tencent.bugly.proguard.aa: void <init>(android.content.Context)>
+    <com.tencent.bugly.proguard.aa: void b(java.lang.String,java.lang.String)>
+    <com.tencent.bugly.proguard.aa: void b(java.lang.String,java.lang.String)>
+    <com.tencent.bugly.proguard.aa: void b(java.lang.String,java.lang.String)>
+    <com.tencent.bugly.proguard.al: boolean d(java.lang.String,java.lang.Object[])>
+    <com.tencent.bugly.proguard.al: boolean a(int,java.lang.String,java.lang.Object[])>
+    <com.tencent.bugly.proguard.al: boolean a(int,java.lang.String,java.lang.Object[])>
+

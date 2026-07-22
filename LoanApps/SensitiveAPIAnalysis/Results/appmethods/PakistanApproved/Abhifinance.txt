@@ -1,0 +1,26 @@
+APK: Abhifinance (PakistanApproved)
+Leak 1:
+  Source: $r5 = virtualinvoke $r4.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r3, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r5.<java.io.FileOutputStream: void write(byte[])>($r7) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <com.facebook.internal.Utility: java.lang.String getAppVersion()>
+    <com.facebook.internal.Utility: java.lang.String getAppVersion()>
+    <com.facebook.internal.Utility: java.lang.String getAppVersion()>
+    <com.facebook.internal.instrument.InstrumentData: void <init>(java.lang.Throwable,com.facebook.internal.instrument.InstrumentData$Type)>
+    <com.facebook.internal.instrument.InstrumentData: void <init>(java.lang.Throwable,com.facebook.internal.instrument.InstrumentData$Type)>
+    <com.facebook.internal.instrument.InstrumentData: void <init>(java.lang.Throwable,com.facebook.internal.instrument.InstrumentData$Type,kotlin.jvm.internal.DefaultConstructorMarker)>
+    <com.facebook.internal.instrument.InstrumentData$Builder: com.facebook.internal.instrument.InstrumentData build(java.lang.Throwable,com.facebook.internal.instrument.InstrumentData$Type)>
+    <com.facebook.internal.instrument.crashshield.CrashShieldHandler: void handleThrowable(java.lang.Throwable,java.lang.Object)>
+    <com.facebook.internal.instrument.InstrumentData: void save()>
+    <com.facebook.internal.instrument.InstrumentData: java.lang.String toString()>
+    <com.facebook.internal.instrument.InstrumentData: org.json.JSONObject getParameters()>
+    <com.facebook.internal.instrument.InstrumentData: org.json.JSONObject getExceptionReportParameters()>
+    <com.facebook.internal.instrument.InstrumentData: org.json.JSONObject getExceptionReportParameters()>
+    <com.facebook.internal.instrument.InstrumentData: org.json.JSONObject getExceptionReportParameters()>
+    <com.facebook.internal.instrument.InstrumentData: org.json.JSONObject getParameters()>
+    <com.facebook.internal.instrument.InstrumentData: java.lang.String toString()>
+    <com.facebook.internal.instrument.InstrumentData: java.lang.String toString()>
+    <com.facebook.internal.instrument.InstrumentData: void save()>
+    <com.facebook.internal.instrument.InstrumentUtility: void writeFile(java.lang.String,java.lang.String)>
+    <com.facebook.internal.instrument.InstrumentUtility: void writeFile(java.lang.String,java.lang.String)>
+

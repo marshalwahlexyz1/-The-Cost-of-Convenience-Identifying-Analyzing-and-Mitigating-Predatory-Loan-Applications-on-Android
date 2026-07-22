@@ -1,0 +1,138 @@
+Apps Violating Country Policy by Country
+==================================================
+
+Kenya:
+- com.flash.flashcredit: android.permission.READ_CONTACTS, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_SMS, android.permission.ACCESS_FINE_LOCATION
+- com.metaloan: android.permission.READ_CALL_LOG, android.permission.READ_SMS
+- com.kopakash: android.permission.READ_CALL_LOG, android.permission.READ_SMS
+- com.roamtech.dm.azima: android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_SMS, android.permission.ACCESS_FINE_LOCATION
+- com.okoleainternational.okoleamobile: android.permission.READ_CONTACTS, android.permission.READ_SMS, android.permission.ACCESS_FINE_LOCATION
+- ke.mojacredit: android.permission.READ_CALL_LOG, android.permission.READ_SMS
+- com.kashbean: android.permission.READ_CALL_LOG, android.permission.READ_SMS
+- com.kenya.credit.app.loan.cash.money.pesa: android.permission.READ_CALL_LOG, android.permission.READ_SMS
+- com.mycredit.mycredit: android.permission.READ_CONTACTS, android.permission.WRITE_EXTERNAL_STORAGE
+
+Pakistan:
+- com.creditbookpk.creditbook: android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE
+- com.app.qistbazaar4: android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.ACCESS_FINE_LOCATION
+- com.m7.taleem: android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.ACCESS_FINE_LOCATION
+- com.mycash.moneytap.app: android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_SMS
+- com.zoodel.kz: android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_MEDIA_IMAGES, android.permission.READ_MEDIA_VIDEO, android.permission.ACCESS_FINE_LOCATION
+- com.techlogix.mobilinkcustomer: android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_MEDIA_IMAGES, android.permission.QUERY_ALL_PACKAGES, android.permission.ACCESS_FINE_LOCATION
+- com.abhifinance: android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE
+- com.raqqam.monamitech: android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_SMS, android.permission.ACCESS_FINE_LOCATION
+
+Nigeria:
+- com.rexmfb.mobile: android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.ACCESS_FINE_LOCATION
+- com.beatha.mkopokaka: android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_MEDIA_AUDIO, android.permission.READ_MEDIA_IMAGES, android.permission.READ_MEDIA_VIDEO, android.permission.READ_PHONE_NUMBERS, android.permission.READ_SMS, android.permission.ACCESS_FINE_LOCATION
+- business.finance.flex: android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE
+- easykash.creditapp.loan: android.permission.READ_CALL_LOG, android.permission.READ_SMS
+- com.veendhq.mobileApp: android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE
+- com.ng.flexfund: android.permission.READ_CALL_LOG
+- com.reliance.savingsbox: android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_MEDIA_AUDIO, android.permission.READ_MEDIA_IMAGES, android.permission.READ_MEDIA_VIDEO
+- co.tractionapp.traction: android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_MEDIA_AUDIO, android.permission.READ_MEDIA_IMAGES, android.permission.READ_MEDIA_VIDEO, android.permission.ACCESS_FINE_LOCATION
+- africa.pivo: android.permission.READ_EXTERNAL_STORAGE, android.permission.READ_MEDIA_AUDIO, android.permission.READ_MEDIA_IMAGES, android.permission.QUERY_ALL_PACKAGES
+- io.quickcheck.loans: android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_SMS, android.permission.ACCESS_FINE_LOCATION
+- co.aibanc.Aibanc_APP: android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE
+- com.finles.mintbag: android.permission.READ_CALL_LOG, android.permission.READ_SMS
+- com.zeliaapp: android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_MEDIA_IMAGES, android.permission.ACCESS_FINE_LOCATION
+- ng.vendorcredit.app: android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE
+- ng.personal.loan.lily.cash: android.permission.READ_CALL_LOG, android.permission.READ_SMS
+- com.libertyassured.libertypay: android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_SMS
+- com.transsnetfinancial.palmcredit: android.permission.READ_CALL_LOG, android.permission.READ_SMS
+- app.payhippo: android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE
+- com.p2vest: android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE
+- com.credit.wallet: android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.READ_SMS, android.permission.ACCESS_FINE_LOCATION
+- com.allaweepersonal.mobile: android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE
+- com.pbank.newcredit: android.permission.READ_CALL_LOG, android.permission.READ_SMS
+- com.ng.FastCent: android.permission.READ_CALL_LOG
+- com.xcash.xcrosscash: android.permission.READ_CALL_LOG, android.permission.READ_SMS
+- com.voicemoney.vmey: android.permission.READ_CALL_LOG, android.permission.READ_SMS
+- com.hadifinance.hadifinanceapp: android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_SMS, android.permission.ACCESS_FINE_LOCATION
+- com.omnikash.xxko: android.permission.READ_CALL_LOG, android.permission.READ_SMS
+- com.credpal.loan: android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.ACCESS_FINE_LOCATION
+- com.dodo_mobile: android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_MEDIA_AUDIO, android.permission.READ_MEDIA_IMAGES, android.permission.READ_MEDIA_VIDEO
+- co.mylendme.mobile: android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.ACCESS_FINE_LOCATION
+- com.trustloan.finserve.nigeria.creditline.xpress: android.permission.READ_CALL_LOG, android.permission.READ_SMS
+- com.fintellia.rockshieldmfb: android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE
+- com.lenddo.mobile.paylater: android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.ACCESS_FINE_LOCATION
+- com.rapaidv1: android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE
+- com.trade.ca.credit: android.permission.READ_CALL_LOG, android.permission.READ_SMS
+- com.edikemobile: android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE
+- co.our.pass.stg: android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.ACCESS_FINE_LOCATION
+- com.digicore.dot: android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE
+- com.paylaterapp.paylater: android.permission.READ_EXTERNAL_STORAGE, android.permission.ACCESS_FINE_LOCATION
+- com.nigeria.android.mooncard: android.permission.READ_CALL_LOG, android.permission.READ_SMS
+- com.ted.ng.ninecreditgo.credit.loans: android.permission.READ_CALL_LOG, android.permission.READ_SMS
+- ng.sycamore.app2: android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_MEDIA_IMAGES
+- com.finpadimobile: android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE
+- com.menamobile: android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_SMS
+- com.hometown.app: android.permission.READ_CONTACTS
+- app.credlockng.merchant: android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.ACCESS_FINE_LOCATION
+- com.hermoney.app: android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.ACCESS_FINE_LOCATION
+- com.exolve.fewchorepay: android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_MEDIA_AUDIO, android.permission.READ_MEDIA_IMAGES, android.permission.READ_MEDIA_VIDEO
+- com.vybecash.app: android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.ACCESS_FINE_LOCATION
+- com.airopay.agents: android.permission.READ_EXTERNAL_STORAGE
+- com.primerabank.primera_mobile: android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE
+- com.adashe.app.adashe: android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_PHONE_NUMBERS, android.permission.ACCESS_FINE_LOCATION
+- com.client.primepay: android.permission.READ_CALL_LOG
+- com.tradelenda.app: android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE
+- com.renmoney.android: android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_MEDIA_AUDIO, android.permission.READ_MEDIA_IMAGES, android.permission.READ_MEDIA_VIDEO, android.permission.READ_PHONE_NUMBERS, android.permission.READ_SMS, android.permission.ACCESS_FINE_LOCATION
+- com.loanx.cashloan: android.permission.READ_CALL_LOG, android.permission.READ_SMS
+- com.zoomcash.app.financial.services.mobilepay: android.permission.READ_CALL_LOG, android.permission.READ_SMS
+- nigeria.cash.loan.hiwallet: android.permission.READ_CALL_LOG
+- com.info.regxta: android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE
+- ultracash.fast.loan: android.permission.READ_CALL_LOG, android.permission.READ_SMS
+- com.raiz.application: android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_MEDIA_AUDIO
+- com.o2intlfin.loans: android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.ACCESS_FINE_LOCATION
+- co.tradedepot.shop: android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.ACCESS_FINE_LOCATION
+- com.hervest: android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE
+- com.klump.inc.mobile: android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE
+- com.mycrat.wayacreditng: android.permission.READ_CALL_LOG, android.permission.READ_SMS
+- com.investment.pilla: android.permission.READ_EXTERNAL_STORAGE
+- com.otoreport.apkpayfimobile: android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.ACCESS_FINE_LOCATION
+- com.payfi.ng: android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.ACCESS_FINE_LOCATION
+- com.branch_international.branch.branch_demo_android: android.permission.READ_CONTACTS, android.permission.READ_SMS
+- com.aladdin.digital: android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_MEDIA_IMAGES, android.permission.READ_MEDIA_VIDEO
+- com.rank.moni: android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.ACCESS_FINE_LOCATION
+- io.ionic.riverbank: android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_MEDIA_IMAGES, android.permission.ACCESS_FINE_LOCATION
+- co.shara.lite: android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.ACCESS_FINE_LOCATION
+- com.ng.haloocredit: android.permission.READ_CALL_LOG
+- com.pennee.tech: android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.ACCESS_FINE_LOCATION
+- com.nig.incash.org: android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE
+- com.kiakiafinance.app: android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE
+- ng.com.fairmoney.fairmoney: android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_MEDIA_AUDIO, android.permission.READ_MEDIA_IMAGES, android.permission.READ_MEDIA_VIDEO, android.permission.READ_SMS, android.permission.QUERY_ALL_PACKAGES, android.permission.ACCESS_FINE_LOCATION
+- com.ng.swifund: android.permission.READ_CALL_LOG
+- com.myeazipay.business: android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE
+- com.loan.newlending.through: android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.ACCESS_FINE_LOCATION
+- com.ponycash.poca.nysh: android.permission.READ_CALL_LOG, android.permission.READ_SMS
+- com.fintellia.suprememfbs: android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE
+- com.retailboosters: android.permission.READ_EXTERNAL_STORAGE
+
+Philippines:
+- com.happyperatwo.app: android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.ACCESS_FINE_LOCATION
+- ph.billease: android.permission.READ_CONTACTS, android.permission.READ_CALL_LOG, android.permission.READ_EXTERNAL_STORAGE, android.permission.READ_SMS, android.permission.ACCESS_FINE_LOCATION
+- perajet.ph.credoapp: android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE
+- com.firestorm.sea.loanmarket: android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.ACCESS_FINE_LOCATION
+- in.atome: android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.ACCESS_FINE_LOCATION
+- com.yigomob.philippine.pesogo: android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.ACCESS_FINE_LOCATION
+- ph.cashwow11.android: android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.ACCESS_FINE_LOCATION
+- com.qiantanglending.vps: android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.ACCESS_FINE_LOCATION
+- versluisant.kredit24: android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.ACCESS_FINE_LOCATION
+- com.ph.loan.android: android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.ACCESS_FINE_LOCATION
+- com.cga.cash: android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.ACCESS_FINE_LOCATION
+- ooifxdso.opxosduf.oqexred: android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_PHONE_NUMBERS, android.permission.READ_SMS, android.permission.ACCESS_FINE_LOCATION
+- ph.fast.peso: android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.ACCESS_FINE_LOCATION
+- com.peso2go: android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_PHONE_NUMBERS, android.permission.ACCESS_FINE_LOCATION
+- pesop.jkaht: android.permission.READ_CONTACTS, android.permission.ACCESS_FINE_LOCATION
+- com.wdjk.mcvay: android.permission.READ_CONTACTS, android.permission.ACCESS_FINE_LOCATION
+- com.easy.cash.loan: android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.ACCESS_FINE_LOCATION
+- com.jrweid.pautang.peso: android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.ACCESS_FINE_LOCATION
+- com.touchlend.fcash: android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.ACCESS_FINE_LOCATION
+- com.phoneapp.paghiram: android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.ACCESS_FINE_LOCATION
+- com.lemon.loan: android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.ACCESS_FINE_LOCATION
+- com.pesoadvance.app: android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.ACCESS_FINE_LOCATION
+- com.hffeilvbin.pesopocket: android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.ACCESS_FINE_LOCATION
+- com.hffeilvbin.lightkredit: android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.ACCESS_FINE_LOCATION
+- com.yinshan.happycashPro: android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.ACCESS_FINE_LOCATION
+

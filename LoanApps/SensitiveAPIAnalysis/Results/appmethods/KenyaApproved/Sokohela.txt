@@ -1,0 +1,15 @@
+APK: Sokohela (KenyaApproved)
+Leak 1:
+  Source: $r5 = virtualinvoke $r3.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r4, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("ManifestParser", $r4) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.bumptech.glide.d.e: java.util.List a()>
+    <com.bumptech.glide.d.e: java.util.List a()>
+    <com.bumptech.glide.d.e: java.util.List a()>
+    <com.bumptech.glide.d.e: java.util.List a()>
+    <com.bumptech.glide.d.e: java.util.List a()>
+    <com.bumptech.glide.d.e: java.util.List a()>
+    <com.bumptech.glide.d.e: java.util.List a()>
+    <com.bumptech.glide.d.e: java.util.List a()>
+    <com.bumptech.glide.d.e: java.util.List a()>
+

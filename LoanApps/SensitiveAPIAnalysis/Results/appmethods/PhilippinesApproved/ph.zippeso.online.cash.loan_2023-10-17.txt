@@ -1,0 +1,322 @@
+APK: ph.zippeso.online.cash.loan_2023-10-17 (PhilippinesApproved)
+Leak 1:
+  Source: $r3 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r0, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r10.<java.io.BufferedWriter: void write(java.lang.String)>($r1) (<java.io.OutputStreamWriter: void write(java.lang.String)>)
+  Methods:
+    <com.blankj.utilcode.util.AppUtils: int getAppVersionCode(java.lang.String)>
+    <com.blankj.utilcode.util.AppUtils: int getAppVersionCode(java.lang.String)>
+    <com.blankj.utilcode.util.AppUtils: int getAppVersionCode(java.lang.String)>
+    <com.blankj.utilcode.util.AppUtils: int getAppVersionCode()>
+    <com.blankj.utilcode.util.UtilsBridge$FileHead: java.lang.String toString()>
+    <com.blankj.utilcode.util.UtilsBridge$FileHead: java.lang.String toString()>
+    <com.blankj.utilcode.util.UtilsBridge$FileHead: java.lang.String toString()>
+    <com.blankj.utilcode.util.LogUtils: void printDeviceInfo(java.lang.String,java.lang.String)>
+    <com.blankj.utilcode.util.LogUtils: void input2File(java.lang.String,java.lang.String)>
+    <com.blankj.utilcode.util.UtilsBridge: boolean writeFileFromString(java.lang.String,java.lang.String,boolean)>
+    <com.blankj.utilcode.util.FileIOUtils: boolean writeFileFromString(java.lang.String,java.lang.String,boolean)>
+    <com.blankj.utilcode.util.FileIOUtils: boolean writeFileFromString(java.io.File,java.lang.String,boolean)>
+
+Leak 2:
+  Source: $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r2, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r10.<java.io.BufferedWriter: void write(java.lang.String)>($r1) (<java.io.OutputStreamWriter: void write(java.lang.String)>)
+  Methods:
+    <com.zip.peso.tools.DeviceInfoUtils: java.lang.String getPackageName()>
+    <com.zip.peso.tools.DeviceInfoUtils: java.lang.String getPackageName()>
+    <com.zip.peso.tools.DeviceInfoUtils: java.lang.String getPackageName()>
+    <com.zip.peso.network.HeaderEncoderInterceptor: okhttp3.Response intercept(okhttp3.Interceptor$Chain)>
+    <com.zip.peso.bean.HeaderBean: void setPackageName(java.lang.String)>
+    <com.zip.peso.bean.HeaderBean: void setPackageName(java.lang.String)>
+    <com.zip.peso.network.HeaderEncoderInterceptor: okhttp3.Response intercept(okhttp3.Interceptor$Chain)>
+    <com.zip.peso.network.HeaderEncoderInterceptor: okhttp3.Response intercept(okhttp3.Interceptor$Chain)>
+    <com.zip.peso.network.HeaderEncoderInterceptor: okhttp3.Response intercept(okhttp3.Interceptor$Chain)>
+    <com.zip.peso.network.HeaderEncoderInterceptor: okhttp3.Response intercept(okhttp3.Interceptor$Chain)>
+    <com.zip.peso.network.HeaderEncoderInterceptor: okhttp3.Response intercept(okhttp3.Interceptor$Chain)>
+    <com.blankj.utilcode.util.LogUtils: void i(java.lang.Object[])>
+    <com.blankj.utilcode.util.LogUtils: void log(int,java.lang.String,java.lang.Object[])>
+    <com.blankj.utilcode.util.LogUtils: java.lang.String processBody(int,java.lang.Object[])>
+    <com.blankj.utilcode.util.LogUtils: java.lang.String processBody(int,java.lang.Object[])>
+    <com.blankj.utilcode.util.LogUtils: java.lang.String formatObject(int,java.lang.Object)>
+    <com.blankj.utilcode.util.LogUtils: java.lang.String formatObject(java.lang.Object)>
+    <com.blankj.utilcode.util.LogUtils$LogFormatter: java.lang.String object2String(java.lang.Object)>
+    <com.blankj.utilcode.util.LogUtils$LogFormatter: java.lang.String object2String(java.lang.Object,int)>
+    <com.blankj.utilcode.util.LogUtils$LogFormatter: java.lang.String object2String(java.lang.Object,int)>
+    <com.blankj.utilcode.util.LogUtils$LogFormatter: java.lang.String object2String(java.lang.Object)>
+    <com.blankj.utilcode.util.LogUtils: java.lang.String formatObject(java.lang.Object)>
+    <com.blankj.utilcode.util.LogUtils: java.lang.String formatObject(int,java.lang.Object)>
+    <com.blankj.utilcode.util.LogUtils: java.lang.String processBody(int,java.lang.Object[])>
+    <com.blankj.utilcode.util.LogUtils: void log(int,java.lang.String,java.lang.Object[])>
+    <com.blankj.utilcode.util.LogUtils$1: void <init>(int,com.blankj.utilcode.util.LogUtils$TagHead,java.lang.String)>
+    <com.blankj.utilcode.util.LogUtils$1: void <init>(int,com.blankj.utilcode.util.LogUtils$TagHead,java.lang.String)>
+    <com.blankj.utilcode.util.LogUtils: void log(int,java.lang.String,java.lang.Object[])>
+    <com.blankj.utilcode.util.LogUtils$1: void run()>
+    <com.blankj.utilcode.util.LogUtils$1: void run()>
+    <com.blankj.utilcode.util.LogUtils$1: void run()>
+    <com.blankj.utilcode.util.LogUtils$1: void run()>
+    <com.blankj.utilcode.util.LogUtils: void access$300(int,java.lang.String,java.lang.String)>
+    <com.blankj.utilcode.util.LogUtils: void print2File(int,java.lang.String,java.lang.String)>
+    <com.blankj.utilcode.util.LogUtils: void print2File(int,java.lang.String,java.lang.String)>
+    <com.blankj.utilcode.util.LogUtils: void print2File(int,java.lang.String,java.lang.String)>
+    <com.blankj.utilcode.util.LogUtils: void input2File(java.lang.String,java.lang.String)>
+    <com.blankj.utilcode.util.UtilsBridge: boolean writeFileFromString(java.lang.String,java.lang.String,boolean)>
+    <com.blankj.utilcode.util.FileIOUtils: boolean writeFileFromString(java.lang.String,java.lang.String,boolean)>
+    <com.blankj.utilcode.util.FileIOUtils: boolean writeFileFromString(java.io.File,java.lang.String,boolean)>
+
+Leak 3:
+  Source: $r3 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r0, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r10.<java.io.BufferedWriter: void write(java.lang.String)>($r1) (<java.io.OutputStreamWriter: void write(java.lang.String)>)
+  Methods:
+    <com.blankj.utilcode.util.AppUtils: java.lang.String getAppVersionName(java.lang.String)>
+    <com.blankj.utilcode.util.AppUtils: java.lang.String getAppVersionName(java.lang.String)>
+    <com.blankj.utilcode.util.AppUtils: java.lang.String getAppVersionName(java.lang.String)>
+    <com.blankj.utilcode.util.AppUtils: java.lang.String getAppVersionName()>
+    <com.blankj.utilcode.util.UtilsBridge$FileHead: java.lang.String toString()>
+    <com.blankj.utilcode.util.UtilsBridge$FileHead: java.lang.String toString()>
+    <com.blankj.utilcode.util.UtilsBridge$FileHead: java.lang.String toString()>
+    <com.blankj.utilcode.util.LogUtils: void printDeviceInfo(java.lang.String,java.lang.String)>
+    <com.blankj.utilcode.util.LogUtils: void input2File(java.lang.String,java.lang.String)>
+    <com.blankj.utilcode.util.UtilsBridge: boolean writeFileFromString(java.lang.String,java.lang.String,boolean)>
+    <com.blankj.utilcode.util.FileIOUtils: boolean writeFileFromString(java.lang.String,java.lang.String,boolean)>
+    <com.blankj.utilcode.util.FileIOUtils: boolean writeFileFromString(java.io.File,java.lang.String,boolean)>
+
+Leak 4:
+  Source: $r15 = virtualinvoke $r8.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r7, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r15.<java.io.OutputStream: void write(byte[])>($r6) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.appsflyer.internal.aj: void AFInAppEventType(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.internal.aj: void AFInAppEventType(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.internal.aj: void AFInAppEventType(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.internal.aj: void AFInAppEventType(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.internal.aj: void AFKeystoreWrapper(java.lang.String,java.lang.String,java.lang.String,java.lang.String)>
+    <com.appsflyer.internal.aj: void AFKeystoreWrapper(java.lang.String,java.lang.String,java.lang.String,java.lang.String)>
+    <com.appsflyer.internal.aj: void AFKeystoreWrapper(java.lang.String,java.lang.String,java.lang.String,java.lang.String)>
+    <com.appsflyer.internal.aj: void AFInAppEventType(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.internal.aj: void valueOf(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.internal.aj: void valueOf(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.internal.aj: void valueOf(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.internal.aj: java.lang.String init()>
+    <com.appsflyer.internal.aj: java.lang.String init()>
+    <com.appsflyer.internal.aj: java.lang.String init()>
+    <com.appsflyer.internal.aj: void valueOf(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.internal.aj: void valueOf(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.internal.g: com.appsflyer.internal.g AFInAppEventParameterName(java.lang.String)>
+    <com.appsflyer.internal.aj: void valueOf(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.internal.aj: void valueOf(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.internal.m: void <init>(com.appsflyer.internal.bf)>
+    <com.appsflyer.internal.m: void <init>(com.appsflyer.internal.bf)>
+    <com.appsflyer.internal.aj: void valueOf(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.internal.aj: void valueOf(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.internal.m: void run()>
+    <com.appsflyer.internal.m: java.net.HttpURLConnection AFInAppEventType()>
+    <com.appsflyer.internal.m: java.net.HttpURLConnection AFInAppEventType()>
+    <com.appsflyer.internal.bi: java.lang.String AFLogger$LogLevel()>
+    <com.appsflyer.internal.bi: java.lang.String AFLogger$LogLevel()>
+    <com.appsflyer.internal.m: java.net.HttpURLConnection AFInAppEventType()>
+    <com.appsflyer.internal.m: java.net.HttpURLConnection AFInAppEventType()>
+    <com.appsflyer.internal.m: java.net.HttpURLConnection AFInAppEventType()>
+
+Leak 5:
+  Source: $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r2, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r15.<java.io.OutputStream: void write(byte[])>($r6) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.appsflyer.internal.ae: java.lang.String AFKeystoreWrapper(java.lang.String,android.content.pm.PackageManager,java.lang.String)>
+    <com.appsflyer.internal.ae: java.lang.String AFKeystoreWrapper(java.lang.String,android.content.pm.PackageManager,java.lang.String)>
+    <com.appsflyer.internal.ae: java.lang.String AFKeystoreWrapper(java.lang.String,android.content.pm.PackageManager,java.lang.String)>
+    <com.appsflyer.internal.ae: java.lang.String AFKeystoreWrapper(java.lang.String,android.content.pm.PackageManager,java.lang.String)>
+    <com.appsflyer.internal.ae: java.lang.String AFKeystoreWrapper(java.lang.String,android.content.pm.PackageManager,java.lang.String)>
+    <com.appsflyer.internal.ae: java.lang.String valueOf(android.content.Context)>
+    <com.appsflyer.internal.ae: void AFKeystoreWrapper(java.lang.ref.WeakReference)>
+    <com.appsflyer.internal.ae: void AFKeystoreWrapper(java.lang.ref.WeakReference)>
+    <com.appsflyer.internal.g: com.appsflyer.internal.g valueOf(java.util.Map)>
+    <com.appsflyer.internal.g: com.appsflyer.internal.g valueOf(java.util.Map)>
+    <com.appsflyer.internal.g: com.appsflyer.internal.g valueOf(java.util.Map)>
+    <com.appsflyer.internal.ae: void AFKeystoreWrapper(java.lang.ref.WeakReference)>
+    <com.appsflyer.internal.ae: void AFKeystoreWrapper(java.lang.ref.WeakReference)>
+    <com.appsflyer.internal.m: void <init>(com.appsflyer.internal.bf)>
+    <com.appsflyer.internal.m: void <init>(com.appsflyer.internal.bf)>
+    <com.appsflyer.internal.ae: void AFKeystoreWrapper(java.lang.ref.WeakReference)>
+    <com.appsflyer.internal.ae: void AFKeystoreWrapper(java.lang.ref.WeakReference)>
+    <com.appsflyer.internal.m: void run()>
+    <com.appsflyer.internal.m: java.net.HttpURLConnection AFInAppEventType()>
+    <com.appsflyer.internal.m: java.net.HttpURLConnection AFInAppEventType()>
+    <com.appsflyer.internal.bf: java.lang.String AFLogger$LogLevel()>
+    <com.appsflyer.internal.g: java.util.Map AFInAppEventType()>
+    <com.appsflyer.internal.g: java.util.Map AFInAppEventType()>
+    <com.appsflyer.internal.bf: java.lang.String AFLogger$LogLevel()>
+    <com.appsflyer.internal.m: org.json.JSONObject AFInAppEventType(java.util.Map)>
+    <com.appsflyer.internal.m: org.json.JSONObject AFInAppEventType(java.util.Map)>
+    <com.appsflyer.internal.m: org.json.JSONObject AFInAppEventType(java.util.Map)>
+    <com.appsflyer.internal.m: org.json.JSONObject AFInAppEventType(java.util.Map)>
+    <com.appsflyer.internal.m: org.json.JSONObject AFInAppEventType(java.util.Map)>
+    <com.appsflyer.internal.m: org.json.JSONObject AFInAppEventType(java.util.Map)>
+    <com.appsflyer.internal.m: org.json.JSONObject AFInAppEventType(java.util.Map)>
+    <com.appsflyer.internal.bf: java.lang.String AFLogger$LogLevel()>
+    <com.appsflyer.internal.bf: java.lang.String AFLogger$LogLevel()>
+    <com.appsflyer.internal.m: java.net.HttpURLConnection AFInAppEventType()>
+    <com.appsflyer.internal.m: java.net.HttpURLConnection AFInAppEventType()>
+    <com.appsflyer.internal.m: java.net.HttpURLConnection AFInAppEventType()>
+
+Leak 6:
+  Source: $r5 = virtualinvoke $r3.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r4, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("ManifestParser", $r4) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.bumptech.glide.module.ManifestParser: java.util.List parse()>
+    <com.bumptech.glide.module.ManifestParser: java.util.List parse()>
+    <com.bumptech.glide.module.ManifestParser: java.util.List parse()>
+    <com.bumptech.glide.module.ManifestParser: java.util.List parse()>
+    <com.bumptech.glide.module.ManifestParser: java.util.List parse()>
+    <com.bumptech.glide.module.ManifestParser: java.util.List parse()>
+    <com.bumptech.glide.module.ManifestParser: java.util.List parse()>
+    <com.bumptech.glide.module.ManifestParser: java.util.List parse()>
+    <com.bumptech.glide.module.ManifestParser: java.util.List parse()>
+
+Leak 7:
+  Source: $r5 = virtualinvoke $r4.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r3, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r5.<java.io.FileOutputStream: void write(byte[])>($r7) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <com.facebook.internal.Utility: java.lang.String getAppVersion()>
+    <com.facebook.internal.Utility: java.lang.String getAppVersion()>
+    <com.facebook.internal.Utility: java.lang.String getAppVersion()>
+    <com.facebook.internal.instrument.InstrumentData: void <init>(java.lang.Throwable,com.facebook.internal.instrument.InstrumentData$Type)>
+    <com.facebook.internal.instrument.InstrumentData: void <init>(java.lang.Throwable,com.facebook.internal.instrument.InstrumentData$Type)>
+    <com.facebook.internal.instrument.InstrumentData: void <init>(java.lang.Throwable,com.facebook.internal.instrument.InstrumentData$Type,kotlin.jvm.internal.DefaultConstructorMarker)>
+    <com.facebook.internal.instrument.InstrumentData$Builder: com.facebook.internal.instrument.InstrumentData build(java.lang.Throwable,com.facebook.internal.instrument.InstrumentData$Type)>
+    <com.facebook.internal.instrument.crashshield.CrashShieldHandler: void handleThrowable(java.lang.Throwable,java.lang.Object)>
+    <com.facebook.internal.instrument.InstrumentData: void save()>
+    <com.facebook.internal.instrument.InstrumentData: java.lang.String toString()>
+    <com.facebook.internal.instrument.InstrumentData: org.json.JSONObject getParameters()>
+    <com.facebook.internal.instrument.InstrumentData: org.json.JSONObject getExceptionReportParameters()>
+    <com.facebook.internal.instrument.InstrumentData: org.json.JSONObject getExceptionReportParameters()>
+    <com.facebook.internal.instrument.InstrumentData: org.json.JSONObject getExceptionReportParameters()>
+    <com.facebook.internal.instrument.InstrumentData: org.json.JSONObject getParameters()>
+    <com.facebook.internal.instrument.InstrumentData: java.lang.String toString()>
+    <com.facebook.internal.instrument.InstrumentData: java.lang.String toString()>
+    <com.facebook.internal.instrument.InstrumentData: void save()>
+    <com.facebook.internal.instrument.InstrumentUtility: void writeFile(java.lang.String,java.lang.String)>
+    <com.facebook.internal.instrument.InstrumentUtility: void writeFile(java.lang.String,java.lang.String)>
+
+Leak 8:
+  Source: $r3 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r0, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r10.<java.io.BufferedWriter: void write(java.lang.String)>($r1) (<java.io.BufferedWriter: void write(java.lang.String)>)
+  Methods:
+    <com.blankj.utilcode.util.AppUtils: int getAppVersionCode(java.lang.String)>
+    <com.blankj.utilcode.util.AppUtils: int getAppVersionCode(java.lang.String)>
+    <com.blankj.utilcode.util.AppUtils: int getAppVersionCode(java.lang.String)>
+    <com.blankj.utilcode.util.AppUtils: int getAppVersionCode()>
+    <com.blankj.utilcode.util.UtilsBridge$FileHead: java.lang.String toString()>
+    <com.blankj.utilcode.util.UtilsBridge$FileHead: java.lang.String toString()>
+    <com.blankj.utilcode.util.UtilsBridge$FileHead: java.lang.String toString()>
+    <com.blankj.utilcode.util.LogUtils: void printDeviceInfo(java.lang.String,java.lang.String)>
+    <com.blankj.utilcode.util.LogUtils: void input2File(java.lang.String,java.lang.String)>
+    <com.blankj.utilcode.util.UtilsBridge: boolean writeFileFromString(java.lang.String,java.lang.String,boolean)>
+    <com.blankj.utilcode.util.FileIOUtils: boolean writeFileFromString(java.lang.String,java.lang.String,boolean)>
+    <com.blankj.utilcode.util.FileIOUtils: boolean writeFileFromString(java.io.File,java.lang.String,boolean)>
+
+Leak 9:
+  Source: $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r2, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r10.<java.io.BufferedWriter: void write(java.lang.String)>($r1) (<java.io.BufferedWriter: void write(java.lang.String)>)
+  Methods:
+    <com.zip.peso.tools.DeviceInfoUtils: java.lang.String getPackageName()>
+    <com.zip.peso.tools.DeviceInfoUtils: java.lang.String getPackageName()>
+    <com.zip.peso.tools.DeviceInfoUtils: java.lang.String getPackageName()>
+    <com.zip.peso.network.HeaderEncoderInterceptor: okhttp3.Response intercept(okhttp3.Interceptor$Chain)>
+    <com.zip.peso.bean.HeaderBean: void setPackageName(java.lang.String)>
+    <com.zip.peso.bean.HeaderBean: void setPackageName(java.lang.String)>
+    <com.zip.peso.network.HeaderEncoderInterceptor: okhttp3.Response intercept(okhttp3.Interceptor$Chain)>
+    <com.zip.peso.network.HeaderEncoderInterceptor: okhttp3.Response intercept(okhttp3.Interceptor$Chain)>
+    <com.zip.peso.network.HeaderEncoderInterceptor: okhttp3.Response intercept(okhttp3.Interceptor$Chain)>
+    <com.zip.peso.network.HeaderEncoderInterceptor: okhttp3.Response intercept(okhttp3.Interceptor$Chain)>
+    <com.zip.peso.network.HeaderEncoderInterceptor: okhttp3.Response intercept(okhttp3.Interceptor$Chain)>
+    <com.blankj.utilcode.util.LogUtils: void i(java.lang.Object[])>
+    <com.blankj.utilcode.util.LogUtils: void log(int,java.lang.String,java.lang.Object[])>
+    <com.blankj.utilcode.util.LogUtils: java.lang.String processBody(int,java.lang.Object[])>
+    <com.blankj.utilcode.util.LogUtils: java.lang.String processBody(int,java.lang.Object[])>
+    <com.blankj.utilcode.util.LogUtils: java.lang.String formatObject(int,java.lang.Object)>
+    <com.blankj.utilcode.util.LogUtils: java.lang.String formatObject(java.lang.Object)>
+    <com.blankj.utilcode.util.LogUtils$LogFormatter: java.lang.String object2String(java.lang.Object)>
+    <com.blankj.utilcode.util.LogUtils$LogFormatter: java.lang.String object2String(java.lang.Object,int)>
+    <com.blankj.utilcode.util.LogUtils$LogFormatter: java.lang.String object2String(java.lang.Object,int)>
+    <com.blankj.utilcode.util.LogUtils$LogFormatter: java.lang.String object2String(java.lang.Object)>
+    <com.blankj.utilcode.util.LogUtils: java.lang.String formatObject(java.lang.Object)>
+    <com.blankj.utilcode.util.LogUtils: java.lang.String formatObject(int,java.lang.Object)>
+    <com.blankj.utilcode.util.LogUtils: java.lang.String processBody(int,java.lang.Object[])>
+    <com.blankj.utilcode.util.LogUtils: void log(int,java.lang.String,java.lang.Object[])>
+    <com.blankj.utilcode.util.LogUtils$1: void <init>(int,com.blankj.utilcode.util.LogUtils$TagHead,java.lang.String)>
+    <com.blankj.utilcode.util.LogUtils$1: void <init>(int,com.blankj.utilcode.util.LogUtils$TagHead,java.lang.String)>
+    <com.blankj.utilcode.util.LogUtils: void log(int,java.lang.String,java.lang.Object[])>
+    <com.blankj.utilcode.util.LogUtils$1: void run()>
+    <com.blankj.utilcode.util.LogUtils$1: void run()>
+    <com.blankj.utilcode.util.LogUtils$1: void run()>
+    <com.blankj.utilcode.util.LogUtils$1: void run()>
+    <com.blankj.utilcode.util.LogUtils: void access$300(int,java.lang.String,java.lang.String)>
+    <com.blankj.utilcode.util.LogUtils: void print2File(int,java.lang.String,java.lang.String)>
+    <com.blankj.utilcode.util.LogUtils: void print2File(int,java.lang.String,java.lang.String)>
+    <com.blankj.utilcode.util.LogUtils: void print2File(int,java.lang.String,java.lang.String)>
+    <com.blankj.utilcode.util.LogUtils: void input2File(java.lang.String,java.lang.String)>
+    <com.blankj.utilcode.util.UtilsBridge: boolean writeFileFromString(java.lang.String,java.lang.String,boolean)>
+    <com.blankj.utilcode.util.FileIOUtils: boolean writeFileFromString(java.lang.String,java.lang.String,boolean)>
+    <com.blankj.utilcode.util.FileIOUtils: boolean writeFileFromString(java.io.File,java.lang.String,boolean)>
+
+Leak 10:
+  Source: $r3 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r0, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r10.<java.io.BufferedWriter: void write(java.lang.String)>($r1) (<java.io.BufferedWriter: void write(java.lang.String)>)
+  Methods:
+    <com.blankj.utilcode.util.AppUtils: java.lang.String getAppVersionName(java.lang.String)>
+    <com.blankj.utilcode.util.AppUtils: java.lang.String getAppVersionName(java.lang.String)>
+    <com.blankj.utilcode.util.AppUtils: java.lang.String getAppVersionName(java.lang.String)>
+    <com.blankj.utilcode.util.AppUtils: java.lang.String getAppVersionName()>
+    <com.blankj.utilcode.util.UtilsBridge$FileHead: java.lang.String toString()>
+    <com.blankj.utilcode.util.UtilsBridge$FileHead: java.lang.String toString()>
+    <com.blankj.utilcode.util.UtilsBridge$FileHead: java.lang.String toString()>
+    <com.blankj.utilcode.util.LogUtils: void printDeviceInfo(java.lang.String,java.lang.String)>
+    <com.blankj.utilcode.util.LogUtils: void input2File(java.lang.String,java.lang.String)>
+    <com.blankj.utilcode.util.UtilsBridge: boolean writeFileFromString(java.lang.String,java.lang.String,boolean)>
+    <com.blankj.utilcode.util.FileIOUtils: boolean writeFileFromString(java.lang.String,java.lang.String,boolean)>
+    <com.blankj.utilcode.util.FileIOUtils: boolean writeFileFromString(java.io.File,java.lang.String,boolean)>
+
+Leak 11:
+  Source: $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r2, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("AppsFlyer_6.3.2", $r2) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.appsflyer.internal.ae: java.lang.String AFKeystoreWrapper(java.lang.String,android.content.pm.PackageManager,java.lang.String)>
+    <com.appsflyer.internal.ae: java.lang.String AFKeystoreWrapper(java.lang.String,android.content.pm.PackageManager,java.lang.String)>
+    <com.appsflyer.internal.ae: java.lang.String AFKeystoreWrapper(java.lang.String,android.content.pm.PackageManager,java.lang.String)>
+    <com.appsflyer.internal.ae: java.lang.String AFKeystoreWrapper(java.lang.String,android.content.pm.PackageManager,java.lang.String)>
+    <com.appsflyer.internal.ae: java.lang.String AFKeystoreWrapper(java.lang.String,android.content.pm.PackageManager,java.lang.String)>
+    <com.appsflyer.internal.ae: java.lang.String valueOf(android.content.Context)>
+    <com.appsflyer.internal.ae: void AFKeystoreWrapper(java.lang.ref.WeakReference)>
+    <com.appsflyer.internal.ae: void AFKeystoreWrapper(java.lang.ref.WeakReference)>
+    <com.appsflyer.internal.g: com.appsflyer.internal.g valueOf(java.util.Map)>
+    <com.appsflyer.internal.g: com.appsflyer.internal.g valueOf(java.util.Map)>
+    <com.appsflyer.internal.g: com.appsflyer.internal.g valueOf(java.util.Map)>
+    <com.appsflyer.internal.ae: void AFKeystoreWrapper(java.lang.ref.WeakReference)>
+    <com.appsflyer.internal.ae: void AFKeystoreWrapper(java.lang.ref.WeakReference)>
+    <com.appsflyer.internal.m: void <init>(com.appsflyer.internal.bf)>
+    <com.appsflyer.internal.m: void <init>(com.appsflyer.internal.bf)>
+    <com.appsflyer.internal.ae: void AFKeystoreWrapper(java.lang.ref.WeakReference)>
+    <com.appsflyer.internal.ae: void AFKeystoreWrapper(java.lang.ref.WeakReference)>
+    <com.appsflyer.internal.m: void run()>
+    <com.appsflyer.internal.m: java.net.HttpURLConnection AFInAppEventType()>
+    <com.appsflyer.internal.m: java.net.HttpURLConnection AFInAppEventType()>
+    <com.appsflyer.internal.bf: java.lang.String AFLogger$LogLevel()>
+    <com.appsflyer.internal.g: java.util.Map AFInAppEventType()>
+    <com.appsflyer.internal.g: java.util.Map AFInAppEventType()>
+    <com.appsflyer.internal.bf: java.lang.String AFLogger$LogLevel()>
+    <com.appsflyer.internal.m: org.json.JSONObject AFInAppEventType(java.util.Map)>
+    <com.appsflyer.internal.m: org.json.JSONObject AFInAppEventType(java.util.Map)>
+    <com.appsflyer.internal.m: org.json.JSONObject AFInAppEventType(java.util.Map)>
+    <com.appsflyer.internal.m: org.json.JSONObject AFInAppEventType(java.util.Map)>
+    <com.appsflyer.internal.m: org.json.JSONObject AFInAppEventType(java.util.Map)>
+    <com.appsflyer.internal.m: org.json.JSONObject AFInAppEventType(java.util.Map)>
+    <com.appsflyer.internal.m: org.json.JSONObject AFInAppEventType(java.util.Map)>
+    <com.appsflyer.internal.bf: java.lang.String AFLogger$LogLevel()>
+    <com.appsflyer.internal.bf: java.lang.String AFLogger$LogLevel()>
+    <com.appsflyer.internal.m: java.net.HttpURLConnection AFInAppEventType()>
+    <com.appsflyer.internal.m: java.net.HttpURLConnection AFInAppEventType()>
+    <com.appsflyer.internal.m: java.net.HttpURLConnection AFInAppEventType()>
+    <com.appsflyer.internal.am: void AFKeystoreWrapper(java.lang.String)>
+    <com.appsflyer.internal.am: void AFKeystoreWrapper(java.lang.String)>
+    <com.appsflyer.AFLogger: void AFKeystoreWrapper(java.lang.String)>
+    <com.appsflyer.AFLogger: void AFInAppEventType(java.lang.String,boolean)>
+    <com.appsflyer.AFLogger: java.lang.String AFInAppEventParameterName(java.lang.String,boolean)>
+    <com.appsflyer.AFLogger: void AFInAppEventType(java.lang.String,boolean)>
+

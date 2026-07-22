@@ -1,0 +1,104 @@
+APK: Go Cash (NigeriaApproved)
+Leak 1:
+  Source: $f0 = virtualinvoke $r21.<android.location.Location: float getAccuracy()>() (<android.location.Location: float getAccuracy()>)
+  Sink: staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("TAG===", $r25) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.go.cash.cash.gocash.app.activity.SplashActivity$b: void run()>
+    <com.go.cash.cash.gocash.app.activity.SplashActivity$b: void run()>
+    <com.go.cash.cash.gocash.app.activity.SplashActivity$b: void run()>
+    <com.go.cash.cash.gocash.app.activity.SplashActivity$b: void run()>
+    <com.go.cash.cash.gocash.app.activity.SplashActivity$b: void run()>
+    <com.go.cash.cash.gocash.app.activity.SplashActivity$b: void run()>
+    <com.go.cash.cash.gocash.app.activity.SplashActivity$b: void run()>
+
+Leak 2:
+  Source: $d0 = virtualinvoke $r21.<android.location.Location: double getLatitude()>() (<android.location.Location: double getLatitude()>)
+  Sink: staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("TAG===", $r25) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.go.cash.cash.gocash.app.activity.SplashActivity$b: void run()>
+    <com.go.cash.cash.gocash.app.activity.SplashActivity$b: void run()>
+    <com.go.cash.cash.gocash.app.activity.SplashActivity$b: void run()>
+    <com.go.cash.cash.gocash.app.activity.SplashActivity$b: void run()>
+    <com.go.cash.cash.gocash.app.activity.SplashActivity$b: void run()>
+    <com.go.cash.cash.gocash.app.activity.SplashActivity$b: void run()>
+    <com.go.cash.cash.gocash.app.activity.SplashActivity$b: void run()>
+    <com.go.cash.cash.gocash.app.activity.SplashActivity$b: void run()>
+    <com.go.cash.cash.gocash.app.activity.SplashActivity$b: void run()>
+
+Leak 3:
+  Source: $d1 = virtualinvoke $r21.<android.location.Location: double getLongitude()>() (<android.location.Location: double getLongitude()>)
+  Sink: staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("TAG===", $r25) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.go.cash.cash.gocash.app.activity.SplashActivity$b: void run()>
+    <com.go.cash.cash.gocash.app.activity.SplashActivity$b: void run()>
+    <com.go.cash.cash.gocash.app.activity.SplashActivity$b: void run()>
+    <com.go.cash.cash.gocash.app.activity.SplashActivity$b: void run()>
+    <com.go.cash.cash.gocash.app.activity.SplashActivity$b: void run()>
+    <com.go.cash.cash.gocash.app.activity.SplashActivity$b: void run()>
+    <com.go.cash.cash.gocash.app.activity.SplashActivity$b: void run()>
+
+Leak 4:
+  Source: $r11 = virtualinvoke $r10.<android.content.pm.PackageManager: java.util.List getInstalledPackages(int)>(1) (<android.content.pm.PackageManager: java.util.List getInstalledPackages(int)>)
+  Sink: staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("TAG===", $r25) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.go.cash.cash.gocash.app.activity.SplashActivity$b: void run()>
+    <com.go.cash.cash.gocash.app.activity.SplashActivity$b: void run()>
+    <com.go.cash.cash.gocash.app.activity.SplashActivity$b: void run()>
+    <com.go.cash.cash.gocash.app.activity.SplashActivity$b: void run()>
+    <com.go.cash.cash.gocash.app.activity.SplashActivity$b: void run()>
+    <com.go.cash.cash.gocash.app.activity.SplashActivity$b: void run()>
+    <com.go.cash.cash.gocash.app.activity.SplashActivity$b: void run()>
+    <com.go.cash.cash.gocash.app.activity.SplashActivity$b: void run()>
+    <com.go.cash.cash.gocash.app.activity.SplashActivity$b: void run()>
+    <com.go.cash.cash.gocash.app.activity.SplashActivity$b: void run()>
+    <com.go.cash.cash.gocash.app.activity.SplashActivity$b: void run()>
+    <com.go.cash.cash.gocash.app.activity.SplashActivity$b: void run()>
+    <com.go.cash.cash.gocash.app.activity.SplashActivity$b: void run()>
+    <com.go.cash.cash.gocash.app.activity.SplashActivity$b: void run()>
+    <com.go.cash.cash.gocash.app.activity.SplashActivity$b: void run()>
+
+Leak 5:
+  Source: $r1 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r6) (<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>)
+  Sink: staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("TAG===", $r18) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <i.j: android.location.Location a()>
+    <i.j: android.location.Location a()>
+    <com.go.cash.cash.gocash.app.activity.SplashActivity$b: void run()>
+    <com.go.cash.cash.gocash.app.activity.SplashActivity$b: void run()>
+    <com.go.cash.cash.gocash.app.activity.SplashActivity$b: void run()>
+
+Leak 6:
+  Source: $r1 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7) (<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>)
+  Sink: staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("TAG===", $r18) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <i.j: android.location.Location a()>
+    <i.j: android.location.Location a()>
+    <com.go.cash.cash.gocash.app.activity.SplashActivity$b: void run()>
+    <com.go.cash.cash.gocash.app.activity.SplashActivity$b: void run()>
+    <com.go.cash.cash.gocash.app.activity.SplashActivity$b: void run()>
+
+Leak 7:
+  Source: $r4 = virtualinvoke $r3.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r2, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r5.<java.io.FileOutputStream: void write(byte[])>($r6) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <com.facebook.internal.Utility: java.lang.String getAppVersion()>
+    <com.facebook.internal.Utility: java.lang.String getAppVersion()>
+    <com.facebook.internal.Utility: java.lang.String getAppVersion()>
+    <com.facebook.internal.instrument.InstrumentData: void <init>(java.lang.Throwable,com.facebook.internal.instrument.InstrumentData$Type)>
+    <com.facebook.internal.instrument.InstrumentData: void <init>(java.lang.Throwable,com.facebook.internal.instrument.InstrumentData$Type)>
+    <com.facebook.internal.instrument.InstrumentData: void <init>(java.lang.Throwable,com.facebook.internal.instrument.InstrumentData$Type,com.facebook.internal.instrument.InstrumentData$1)>
+    <com.facebook.internal.instrument.InstrumentData$Builder: com.facebook.internal.instrument.InstrumentData build(java.lang.Throwable,com.facebook.internal.instrument.InstrumentData$Type)>
+    <com.facebook.internal.instrument.crashshield.CrashShieldHandler: void handleThrowable(java.lang.Throwable,java.lang.Object)>
+    <com.facebook.internal.instrument.InstrumentData: void save()>
+    <com.facebook.internal.instrument.InstrumentData: java.lang.String toString()>
+    <com.facebook.internal.instrument.InstrumentData: org.json.JSONObject getParameters()>
+    <com.facebook.internal.instrument.InstrumentData: org.json.JSONObject getExceptionReportParameters()>
+    <com.facebook.internal.instrument.InstrumentData: org.json.JSONObject getExceptionReportParameters()>
+    <com.facebook.internal.instrument.InstrumentData: org.json.JSONObject getExceptionReportParameters()>
+    <com.facebook.internal.instrument.InstrumentData: org.json.JSONObject getParameters()>
+    <com.facebook.internal.instrument.InstrumentData: java.lang.String toString()>
+    <com.facebook.internal.instrument.InstrumentData: java.lang.String toString()>
+    <com.facebook.internal.instrument.InstrumentData: void save()>
+    <com.facebook.internal.instrument.InstrumentUtility: void writeFile(java.lang.String,java.lang.String)>
+    <com.facebook.internal.instrument.InstrumentUtility: void writeFile(java.lang.String,java.lang.String)>
+

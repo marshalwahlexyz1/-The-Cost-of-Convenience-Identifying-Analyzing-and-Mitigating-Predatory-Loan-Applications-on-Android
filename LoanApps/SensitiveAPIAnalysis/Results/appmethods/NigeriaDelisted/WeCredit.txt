@@ -1,0 +1,189 @@
+APK: WeCredit (NigeriaDelisted)
+Leak 1:
+  Source: $r4 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r3, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r0, $r1) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <xw0: void J(android.content.Context)>
+    <xw0: void J(android.content.Context)>
+    <xw0: void J(android.content.Context)>
+    <xw0: void J(android.content.Context)>
+    <xw0: void J(android.content.Context)>
+    <xw0: void J(android.content.Context)>
+    <xw0: void O(android.content.Context,xw0$b)>
+    <xw0: void N(android.content.Context)>
+    <cn.rutyi.kgnwer.KgnApp: void b()>
+    <ae: void a(android.app.Application)>
+    <ae$a: void a(android.app.Application)>
+    <de$a: void f(android.app.Application,java.lang.String)>
+    <xw0: java.lang.String m()>
+    <xw0: java.lang.String m()>
+    <de$a: void f(android.app.Application,java.lang.String)>
+    <xw0: void L(android.content.Context,java.lang.String)>
+    <fj2: void g(java.lang.String,java.lang.String)>
+    <ej2: void <init>(android.content.Context,java.lang.String,java.lang.String)>
+    <ej2: void <init>(android.content.Context,java.lang.String,java.lang.String)>
+    <fj2: void g(java.lang.String,java.lang.String)>
+    <ej2: void run()>
+    <ej2: void run()>
+    <fj2: void a(android.content.Context,java.lang.String,java.lang.String)>
+    <fj2: void h(android.content.Context,java.lang.String,java.lang.String)>
+    <a33: a33$c e(java.lang.String)>
+    <a33: a33$c d(a33$a,java.lang.String,java.util.List)>
+    <z23: android.os.Bundle a(a33$a,java.lang.String,java.util.List)>
+    <z23: android.os.Bundle a(a33$a,java.lang.String,java.util.List)>
+    <a33: a33$c d(a33$a,java.lang.String,java.util.List)>
+    <up1: java.lang.String n(java.lang.String,java.lang.Object)>
+    <up1: java.lang.String n(java.lang.String,java.lang.Object)>
+    <up1: java.lang.String n(java.lang.String,java.lang.Object)>
+    <a33: a33$c d(a33$a,java.lang.String,java.util.List)>
+    <ha4: void f0(java.lang.String,java.lang.String)>
+
+Leak 2:
+  Source: $r15 = virtualinvoke $r8.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r7, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r15.<java.io.OutputStream: void write(byte[])>($r6) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.appsflyer.internal.aj: void AFInAppEventType(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.internal.aj: void AFInAppEventType(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.internal.aj: void AFInAppEventType(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.internal.aj: void AFInAppEventType(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.internal.aj: void AFKeystoreWrapper(java.lang.String,java.lang.String,java.lang.String,java.lang.String)>
+    <com.appsflyer.internal.aj: void AFKeystoreWrapper(java.lang.String,java.lang.String,java.lang.String,java.lang.String)>
+    <com.appsflyer.internal.aj: void AFKeystoreWrapper(java.lang.String,java.lang.String,java.lang.String,java.lang.String)>
+    <com.appsflyer.internal.aj: void AFInAppEventType(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.internal.aj: void valueOf(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.internal.aj: void valueOf(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.internal.aj: void valueOf(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.internal.aj: java.lang.String init()>
+    <com.appsflyer.internal.aj: java.lang.String init()>
+    <com.appsflyer.internal.aj: java.lang.String init()>
+    <com.appsflyer.internal.aj: void valueOf(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.internal.aj: void valueOf(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.internal.g: com.appsflyer.internal.g AFInAppEventParameterName(java.lang.String)>
+    <com.appsflyer.internal.aj: void valueOf(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.internal.aj: void valueOf(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.internal.m: void <init>(com.appsflyer.internal.bf)>
+    <com.appsflyer.internal.m: void <init>(com.appsflyer.internal.bf)>
+    <com.appsflyer.internal.aj: void valueOf(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.internal.aj: void valueOf(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.internal.m: void run()>
+    <com.appsflyer.internal.m: java.net.HttpURLConnection AFInAppEventType()>
+    <com.appsflyer.internal.m: java.net.HttpURLConnection AFInAppEventType()>
+    <com.appsflyer.internal.bi: java.lang.String AFLogger$LogLevel()>
+    <com.appsflyer.internal.bi: java.lang.String AFLogger$LogLevel()>
+    <com.appsflyer.internal.m: java.net.HttpURLConnection AFInAppEventType()>
+    <com.appsflyer.internal.m: java.net.HttpURLConnection AFInAppEventType()>
+    <com.appsflyer.internal.m: java.net.HttpURLConnection AFInAppEventType()>
+
+Leak 3:
+  Source: $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r2, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r15.<java.io.OutputStream: void write(byte[])>($r6) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.appsflyer.internal.ae: java.lang.String AFKeystoreWrapper(java.lang.String,android.content.pm.PackageManager,java.lang.String)>
+    <com.appsflyer.internal.ae: java.lang.String AFKeystoreWrapper(java.lang.String,android.content.pm.PackageManager,java.lang.String)>
+    <com.appsflyer.internal.ae: java.lang.String AFKeystoreWrapper(java.lang.String,android.content.pm.PackageManager,java.lang.String)>
+    <com.appsflyer.internal.ae: java.lang.String AFKeystoreWrapper(java.lang.String,android.content.pm.PackageManager,java.lang.String)>
+    <com.appsflyer.internal.ae: java.lang.String AFKeystoreWrapper(java.lang.String,android.content.pm.PackageManager,java.lang.String)>
+    <com.appsflyer.internal.ae: java.lang.String valueOf(android.content.Context)>
+    <com.appsflyer.internal.ae: void AFKeystoreWrapper(java.lang.ref.WeakReference)>
+    <com.appsflyer.internal.ae: void AFKeystoreWrapper(java.lang.ref.WeakReference)>
+    <com.appsflyer.internal.g: com.appsflyer.internal.g valueOf(java.util.Map)>
+    <com.appsflyer.internal.g: com.appsflyer.internal.g valueOf(java.util.Map)>
+    <com.appsflyer.internal.g: com.appsflyer.internal.g valueOf(java.util.Map)>
+    <com.appsflyer.internal.ae: void AFKeystoreWrapper(java.lang.ref.WeakReference)>
+    <com.appsflyer.internal.ae: void AFKeystoreWrapper(java.lang.ref.WeakReference)>
+    <com.appsflyer.internal.m: void <init>(com.appsflyer.internal.bf)>
+    <com.appsflyer.internal.m: void <init>(com.appsflyer.internal.bf)>
+    <com.appsflyer.internal.ae: void AFKeystoreWrapper(java.lang.ref.WeakReference)>
+    <com.appsflyer.internal.ae: void AFKeystoreWrapper(java.lang.ref.WeakReference)>
+    <com.appsflyer.internal.m: void run()>
+    <com.appsflyer.internal.m: java.net.HttpURLConnection AFInAppEventType()>
+    <com.appsflyer.internal.m: java.net.HttpURLConnection AFInAppEventType()>
+    <com.appsflyer.internal.bf: java.lang.String AFLogger$LogLevel()>
+    <com.appsflyer.internal.g: java.util.Map AFInAppEventType()>
+    <com.appsflyer.internal.g: java.util.Map AFInAppEventType()>
+    <com.appsflyer.internal.bf: java.lang.String AFLogger$LogLevel()>
+    <com.appsflyer.internal.m: org.json.JSONObject AFInAppEventType(java.util.Map)>
+    <com.appsflyer.internal.m: org.json.JSONObject AFInAppEventType(java.util.Map)>
+    <com.appsflyer.internal.m: org.json.JSONObject AFInAppEventType(java.util.Map)>
+    <com.appsflyer.internal.m: org.json.JSONObject AFInAppEventType(java.util.Map)>
+    <com.appsflyer.internal.m: org.json.JSONObject AFInAppEventType(java.util.Map)>
+    <com.appsflyer.internal.m: org.json.JSONObject AFInAppEventType(java.util.Map)>
+    <com.appsflyer.internal.m: org.json.JSONObject AFInAppEventType(java.util.Map)>
+    <com.appsflyer.internal.bf: java.lang.String AFLogger$LogLevel()>
+    <com.appsflyer.internal.bf: java.lang.String AFLogger$LogLevel()>
+    <com.appsflyer.internal.m: java.net.HttpURLConnection AFInAppEventType()>
+    <com.appsflyer.internal.m: java.net.HttpURLConnection AFInAppEventType()>
+    <com.appsflyer.internal.m: java.net.HttpURLConnection AFInAppEventType()>
+
+Leak 4:
+  Source: $r4 = virtualinvoke $r3.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r2, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r5.<java.io.FileOutputStream: void write(byte[])>($r7) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <ha4: java.lang.String v()>
+    <ha4: java.lang.String v()>
+    <ha4: java.lang.String v()>
+    <do1: void <init>(java.lang.Throwable,do1$c)>
+    <do1: void <init>(java.lang.Throwable,do1$c)>
+    <do1: void <init>(java.lang.Throwable,do1$c,xg0)>
+    <do1$a: do1 b(java.lang.Throwable,do1$c)>
+    <bd0: void b(java.lang.Throwable,java.lang.Object)>
+    <do1: void g()>
+    <do1: java.lang.String toString()>
+    <do1: org.json.JSONObject e()>
+    <do1: org.json.JSONObject d()>
+    <do1: org.json.JSONObject d()>
+    <do1: org.json.JSONObject d()>
+    <do1: org.json.JSONObject e()>
+    <do1: java.lang.String toString()>
+    <do1: java.lang.String toString()>
+    <do1: void g()>
+    <lo1: void s(java.lang.String,java.lang.String)>
+    <lo1: void s(java.lang.String,java.lang.String)>
+
+Leak 5:
+  Source: $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r2, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("AppsFlyer_6.3.2", $r2) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.appsflyer.internal.ae: java.lang.String AFKeystoreWrapper(java.lang.String,android.content.pm.PackageManager,java.lang.String)>
+    <com.appsflyer.internal.ae: java.lang.String AFKeystoreWrapper(java.lang.String,android.content.pm.PackageManager,java.lang.String)>
+    <com.appsflyer.internal.ae: java.lang.String AFKeystoreWrapper(java.lang.String,android.content.pm.PackageManager,java.lang.String)>
+    <com.appsflyer.internal.ae: java.lang.String AFKeystoreWrapper(java.lang.String,android.content.pm.PackageManager,java.lang.String)>
+    <com.appsflyer.internal.ae: java.lang.String AFKeystoreWrapper(java.lang.String,android.content.pm.PackageManager,java.lang.String)>
+    <com.appsflyer.internal.ae: java.lang.String valueOf(android.content.Context)>
+    <com.appsflyer.internal.ae: void AFKeystoreWrapper(java.lang.ref.WeakReference)>
+    <com.appsflyer.internal.ae: void AFKeystoreWrapper(java.lang.ref.WeakReference)>
+    <com.appsflyer.internal.g: com.appsflyer.internal.g valueOf(java.util.Map)>
+    <com.appsflyer.internal.g: com.appsflyer.internal.g valueOf(java.util.Map)>
+    <com.appsflyer.internal.g: com.appsflyer.internal.g valueOf(java.util.Map)>
+    <com.appsflyer.internal.ae: void AFKeystoreWrapper(java.lang.ref.WeakReference)>
+    <com.appsflyer.internal.ae: void AFKeystoreWrapper(java.lang.ref.WeakReference)>
+    <com.appsflyer.internal.m: void <init>(com.appsflyer.internal.bf)>
+    <com.appsflyer.internal.m: void <init>(com.appsflyer.internal.bf)>
+    <com.appsflyer.internal.ae: void AFKeystoreWrapper(java.lang.ref.WeakReference)>
+    <com.appsflyer.internal.ae: void AFKeystoreWrapper(java.lang.ref.WeakReference)>
+    <com.appsflyer.internal.m: void run()>
+    <com.appsflyer.internal.m: java.net.HttpURLConnection AFInAppEventType()>
+    <com.appsflyer.internal.m: java.net.HttpURLConnection AFInAppEventType()>
+    <com.appsflyer.internal.bf: java.lang.String AFLogger$LogLevel()>
+    <com.appsflyer.internal.g: java.util.Map AFInAppEventType()>
+    <com.appsflyer.internal.g: java.util.Map AFInAppEventType()>
+    <com.appsflyer.internal.bf: java.lang.String AFLogger$LogLevel()>
+    <com.appsflyer.internal.m: org.json.JSONObject AFInAppEventType(java.util.Map)>
+    <com.appsflyer.internal.m: org.json.JSONObject AFInAppEventType(java.util.Map)>
+    <com.appsflyer.internal.m: org.json.JSONObject AFInAppEventType(java.util.Map)>
+    <com.appsflyer.internal.m: org.json.JSONObject AFInAppEventType(java.util.Map)>
+    <com.appsflyer.internal.m: org.json.JSONObject AFInAppEventType(java.util.Map)>
+    <com.appsflyer.internal.m: org.json.JSONObject AFInAppEventType(java.util.Map)>
+    <com.appsflyer.internal.m: org.json.JSONObject AFInAppEventType(java.util.Map)>
+    <com.appsflyer.internal.bf: java.lang.String AFLogger$LogLevel()>
+    <com.appsflyer.internal.bf: java.lang.String AFLogger$LogLevel()>
+    <com.appsflyer.internal.m: java.net.HttpURLConnection AFInAppEventType()>
+    <com.appsflyer.internal.m: java.net.HttpURLConnection AFInAppEventType()>
+    <com.appsflyer.internal.m: java.net.HttpURLConnection AFInAppEventType()>
+    <com.appsflyer.internal.am: void AFKeystoreWrapper(java.lang.String)>
+    <com.appsflyer.internal.am: void AFKeystoreWrapper(java.lang.String)>
+    <com.appsflyer.AFLogger: void AFKeystoreWrapper(java.lang.String)>
+    <com.appsflyer.AFLogger: void AFInAppEventType(java.lang.String,boolean)>
+    <com.appsflyer.AFLogger: java.lang.String AFInAppEventParameterName(java.lang.String,boolean)>
+    <com.appsflyer.AFLogger: void AFInAppEventType(java.lang.String,boolean)>
+

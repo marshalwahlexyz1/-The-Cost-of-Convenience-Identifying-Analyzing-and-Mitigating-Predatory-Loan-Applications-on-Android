@@ -1,0 +1,16 @@
+APK: RexAfrica (NigeriaApproved)
+Leak 1:
+  Source: $r4 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r3, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("ManifestParser", $r5) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <v3.d: android.content.pm.ApplicationInfo a()>
+    <v3.d: android.content.pm.ApplicationInfo a()>
+    <v3.d: java.util.List b()>
+    <v3.d: java.util.List b()>
+    <v3.d: java.util.List b()>
+    <v3.d: java.util.List b()>
+    <v3.d: java.util.List b()>
+    <v3.d: java.util.List b()>
+    <v3.d: java.util.List b()>
+    <v3.d: java.util.List b()>
+

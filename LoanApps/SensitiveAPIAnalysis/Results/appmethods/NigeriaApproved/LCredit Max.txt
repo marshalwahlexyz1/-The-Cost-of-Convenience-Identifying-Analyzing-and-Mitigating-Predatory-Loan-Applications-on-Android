@@ -1,0 +1,78 @@
+APK: LCredit Max (NigeriaApproved)
+Leak 1:
+  Source: $r3 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r1, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r5.<java.io.Writer: void write(java.lang.String)>($r2) (<java.io.BufferedWriter: void write(java.lang.String)>)
+  Methods:
+    <com.blankj.utilcode.util.c: java.lang.String b()>
+    <com.blankj.utilcode.util.c: java.lang.String b()>
+    <com.blankj.utilcode.util.c: java.lang.String b()>
+    <com.blankj.utilcode.util.i0$a: java.lang.String toString()>
+    <com.blankj.utilcode.util.i0$a: java.lang.String toString()>
+    <com.blankj.utilcode.util.i0$a: java.lang.String toString()>
+    <com.blankj.utilcode.util.LogUtils: void f(java.lang.String,java.lang.String)>
+    <com.blankj.utilcode.util.j: boolean a(java.lang.String,java.lang.String)>
+
+Leak 2:
+  Source: $r3 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r1, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r5.<java.io.Writer: void write(java.lang.String)>($r2) (<java.io.BufferedWriter: void write(java.lang.String)>)
+  Methods:
+    <com.blankj.utilcode.util.c: int a()>
+    <com.blankj.utilcode.util.c: int a()>
+    <com.blankj.utilcode.util.c: int a()>
+    <com.blankj.utilcode.util.i0$a: java.lang.String toString()>
+    <com.blankj.utilcode.util.i0$a: java.lang.String toString()>
+    <com.blankj.utilcode.util.i0$a: java.lang.String toString()>
+    <com.blankj.utilcode.util.LogUtils: void f(java.lang.String,java.lang.String)>
+    <com.blankj.utilcode.util.j: boolean a(java.lang.String,java.lang.String)>
+
+Leak 3:
+  Source: $r4 = virtualinvoke $r3.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r2, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r5.<java.io.FileOutputStream: void write(byte[])>($r7) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <com.facebook.internal.Utility: java.lang.String getAppVersion()>
+    <com.facebook.internal.Utility: java.lang.String getAppVersion()>
+    <com.facebook.internal.Utility: java.lang.String getAppVersion()>
+    <com.facebook.internal.instrument.InstrumentData: void <init>(java.lang.Throwable,com.facebook.internal.instrument.InstrumentData$Type)>
+    <com.facebook.internal.instrument.InstrumentData: void <init>(java.lang.Throwable,com.facebook.internal.instrument.InstrumentData$Type)>
+    <com.facebook.internal.instrument.InstrumentData: void <init>(java.lang.Throwable,com.facebook.internal.instrument.InstrumentData$Type,kotlin.jvm.internal.DefaultConstructorMarker)>
+    <com.facebook.internal.instrument.InstrumentData$Builder: com.facebook.internal.instrument.InstrumentData build(java.lang.Throwable,com.facebook.internal.instrument.InstrumentData$Type)>
+    <com.facebook.internal.instrument.crashshield.CrashShieldHandler: void handleThrowable(java.lang.Throwable,java.lang.Object)>
+    <com.facebook.internal.instrument.InstrumentData: void save()>
+    <com.facebook.internal.instrument.InstrumentData: java.lang.String toString()>
+    <com.facebook.internal.instrument.InstrumentData: org.json.JSONObject getParameters()>
+    <com.facebook.internal.instrument.InstrumentData: org.json.JSONObject getExceptionReportParameters()>
+    <com.facebook.internal.instrument.InstrumentData: org.json.JSONObject getExceptionReportParameters()>
+    <com.facebook.internal.instrument.InstrumentData: org.json.JSONObject getExceptionReportParameters()>
+    <com.facebook.internal.instrument.InstrumentData: org.json.JSONObject getParameters()>
+    <com.facebook.internal.instrument.InstrumentData: java.lang.String toString()>
+    <com.facebook.internal.instrument.InstrumentData: java.lang.String toString()>
+    <com.facebook.internal.instrument.InstrumentData: void save()>
+    <com.facebook.internal.instrument.InstrumentUtility: void writeFile(java.lang.String,java.lang.String)>
+    <com.facebook.internal.instrument.InstrumentUtility: void writeFile(java.lang.String,java.lang.String)>
+
+Leak 4:
+  Source: $r3 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r1, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r5.<java.io.Writer: void write(java.lang.String)>($r2) (<java.io.OutputStreamWriter: void write(java.lang.String)>)
+  Methods:
+    <com.blankj.utilcode.util.c: java.lang.String b()>
+    <com.blankj.utilcode.util.c: java.lang.String b()>
+    <com.blankj.utilcode.util.c: java.lang.String b()>
+    <com.blankj.utilcode.util.i0$a: java.lang.String toString()>
+    <com.blankj.utilcode.util.i0$a: java.lang.String toString()>
+    <com.blankj.utilcode.util.i0$a: java.lang.String toString()>
+    <com.blankj.utilcode.util.LogUtils: void f(java.lang.String,java.lang.String)>
+    <com.blankj.utilcode.util.j: boolean a(java.lang.String,java.lang.String)>
+
+Leak 5:
+  Source: $r3 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r1, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r5.<java.io.Writer: void write(java.lang.String)>($r2) (<java.io.OutputStreamWriter: void write(java.lang.String)>)
+  Methods:
+    <com.blankj.utilcode.util.c: int a()>
+    <com.blankj.utilcode.util.c: int a()>
+    <com.blankj.utilcode.util.c: int a()>
+    <com.blankj.utilcode.util.i0$a: java.lang.String toString()>
+    <com.blankj.utilcode.util.i0$a: java.lang.String toString()>
+    <com.blankj.utilcode.util.i0$a: java.lang.String toString()>
+    <com.blankj.utilcode.util.LogUtils: void f(java.lang.String,java.lang.String)>
+    <com.blankj.utilcode.util.j: boolean a(java.lang.String,java.lang.String)>
+

@@ -1,0 +1,83 @@
+APK: LoanNaira (NigeriaApproved)
+Leak 1:
+  Source: $r5 = virtualinvoke $r3.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r4, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("ManifestParser", $r4) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <j2.e: java.util.List a()>
+    <j2.e: java.util.List a()>
+    <j2.e: java.util.List a()>
+    <j2.e: java.util.List a()>
+    <j2.e: java.util.List a()>
+    <j2.e: java.util.List a()>
+    <j2.e: java.util.List a()>
+    <j2.e: java.util.List a()>
+    <j2.e: java.util.List a()>
+
+Leak 2:
+  Source: $r3 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r0, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r10.<java.io.BufferedWriter: void write(java.lang.String)>($r1) (<java.io.BufferedWriter: void write(java.lang.String)>)
+  Methods:
+    <com.blankj.utilcode.util.AppUtils: int getAppVersionCode(java.lang.String)>
+    <com.blankj.utilcode.util.AppUtils: int getAppVersionCode(java.lang.String)>
+    <com.blankj.utilcode.util.AppUtils: int getAppVersionCode(java.lang.String)>
+    <com.blankj.utilcode.util.AppUtils: int getAppVersionCode()>
+    <com.blankj.utilcode.util.UtilsBridge$FileHead: java.lang.String toString()>
+    <com.blankj.utilcode.util.UtilsBridge$FileHead: java.lang.String toString()>
+    <com.blankj.utilcode.util.UtilsBridge$FileHead: java.lang.String toString()>
+    <com.blankj.utilcode.util.LogUtils: void printDeviceInfo(java.lang.String,java.lang.String)>
+    <com.blankj.utilcode.util.LogUtils: void input2File(java.lang.String,java.lang.String)>
+    <com.blankj.utilcode.util.UtilsBridge: boolean writeFileFromString(java.lang.String,java.lang.String,boolean)>
+    <com.blankj.utilcode.util.FileIOUtils: boolean writeFileFromString(java.lang.String,java.lang.String,boolean)>
+    <com.blankj.utilcode.util.FileIOUtils: boolean writeFileFromString(java.io.File,java.lang.String,boolean)>
+
+Leak 3:
+  Source: $r3 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r0, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r10.<java.io.BufferedWriter: void write(java.lang.String)>($r1) (<java.io.BufferedWriter: void write(java.lang.String)>)
+  Methods:
+    <com.blankj.utilcode.util.AppUtils: java.lang.String getAppVersionName(java.lang.String)>
+    <com.blankj.utilcode.util.AppUtils: java.lang.String getAppVersionName(java.lang.String)>
+    <com.blankj.utilcode.util.AppUtils: java.lang.String getAppVersionName(java.lang.String)>
+    <com.blankj.utilcode.util.AppUtils: java.lang.String getAppVersionName()>
+    <com.blankj.utilcode.util.UtilsBridge$FileHead: java.lang.String toString()>
+    <com.blankj.utilcode.util.UtilsBridge$FileHead: java.lang.String toString()>
+    <com.blankj.utilcode.util.UtilsBridge$FileHead: java.lang.String toString()>
+    <com.blankj.utilcode.util.LogUtils: void printDeviceInfo(java.lang.String,java.lang.String)>
+    <com.blankj.utilcode.util.LogUtils: void input2File(java.lang.String,java.lang.String)>
+    <com.blankj.utilcode.util.UtilsBridge: boolean writeFileFromString(java.lang.String,java.lang.String,boolean)>
+    <com.blankj.utilcode.util.FileIOUtils: boolean writeFileFromString(java.lang.String,java.lang.String,boolean)>
+    <com.blankj.utilcode.util.FileIOUtils: boolean writeFileFromString(java.io.File,java.lang.String,boolean)>
+
+Leak 4:
+  Source: $r3 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r0, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r10.<java.io.BufferedWriter: void write(java.lang.String)>($r1) (<java.io.OutputStreamWriter: void write(java.lang.String)>)
+  Methods:
+    <com.blankj.utilcode.util.AppUtils: int getAppVersionCode(java.lang.String)>
+    <com.blankj.utilcode.util.AppUtils: int getAppVersionCode(java.lang.String)>
+    <com.blankj.utilcode.util.AppUtils: int getAppVersionCode(java.lang.String)>
+    <com.blankj.utilcode.util.AppUtils: int getAppVersionCode()>
+    <com.blankj.utilcode.util.UtilsBridge$FileHead: java.lang.String toString()>
+    <com.blankj.utilcode.util.UtilsBridge$FileHead: java.lang.String toString()>
+    <com.blankj.utilcode.util.UtilsBridge$FileHead: java.lang.String toString()>
+    <com.blankj.utilcode.util.LogUtils: void printDeviceInfo(java.lang.String,java.lang.String)>
+    <com.blankj.utilcode.util.LogUtils: void input2File(java.lang.String,java.lang.String)>
+    <com.blankj.utilcode.util.UtilsBridge: boolean writeFileFromString(java.lang.String,java.lang.String,boolean)>
+    <com.blankj.utilcode.util.FileIOUtils: boolean writeFileFromString(java.lang.String,java.lang.String,boolean)>
+    <com.blankj.utilcode.util.FileIOUtils: boolean writeFileFromString(java.io.File,java.lang.String,boolean)>
+
+Leak 5:
+  Source: $r3 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r0, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r10.<java.io.BufferedWriter: void write(java.lang.String)>($r1) (<java.io.OutputStreamWriter: void write(java.lang.String)>)
+  Methods:
+    <com.blankj.utilcode.util.AppUtils: java.lang.String getAppVersionName(java.lang.String)>
+    <com.blankj.utilcode.util.AppUtils: java.lang.String getAppVersionName(java.lang.String)>
+    <com.blankj.utilcode.util.AppUtils: java.lang.String getAppVersionName(java.lang.String)>
+    <com.blankj.utilcode.util.AppUtils: java.lang.String getAppVersionName()>
+    <com.blankj.utilcode.util.UtilsBridge$FileHead: java.lang.String toString()>
+    <com.blankj.utilcode.util.UtilsBridge$FileHead: java.lang.String toString()>
+    <com.blankj.utilcode.util.UtilsBridge$FileHead: java.lang.String toString()>
+    <com.blankj.utilcode.util.LogUtils: void printDeviceInfo(java.lang.String,java.lang.String)>
+    <com.blankj.utilcode.util.LogUtils: void input2File(java.lang.String,java.lang.String)>
+    <com.blankj.utilcode.util.UtilsBridge: boolean writeFileFromString(java.lang.String,java.lang.String,boolean)>
+    <com.blankj.utilcode.util.FileIOUtils: boolean writeFileFromString(java.lang.String,java.lang.String,boolean)>
+    <com.blankj.utilcode.util.FileIOUtils: boolean writeFileFromString(java.io.File,java.lang.String,boolean)>
+

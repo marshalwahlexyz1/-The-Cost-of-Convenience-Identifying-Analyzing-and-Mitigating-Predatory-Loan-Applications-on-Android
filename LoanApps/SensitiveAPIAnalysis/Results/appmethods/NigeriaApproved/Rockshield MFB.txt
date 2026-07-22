@@ -1,0 +1,28 @@
+APK: Rockshield MFB (NigeriaApproved)
+Leak 1:
+  Source: $r5 = virtualinvoke $r3.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r4, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("RNFBCrashlyticsInit", $r4) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <io.invertase.firebase.common.ReactNativeFirebaseMeta: android.os.Bundle getMetaData()>
+    <io.invertase.firebase.common.ReactNativeFirebaseMeta: android.os.Bundle getMetaData()>
+    <io.invertase.firebase.common.ReactNativeFirebaseMeta: android.os.Bundle getMetaData()>
+    <io.invertase.firebase.common.ReactNativeFirebaseMeta: boolean getBooleanValue(java.lang.String,boolean)>
+    <io.invertase.firebase.common.ReactNativeFirebaseMeta: boolean getBooleanValue(java.lang.String,boolean)>
+    <io.invertase.firebase.crashlytics.ReactNativeFirebaseCrashlyticsInitProvider: boolean isCrashlyticsCollectionEnabled()>
+    <io.invertase.firebase.crashlytics.ReactNativeFirebaseCrashlyticsInitProvider: boolean isCrashlyticsCollectionEnabled()>
+    <io.invertase.firebase.crashlytics.ReactNativeFirebaseCrashlyticsInitProvider: boolean isCrashlyticsCollectionEnabled()>
+    <io.invertase.firebase.crashlytics.ReactNativeFirebaseCrashlyticsInitProvider: boolean isCrashlyticsCollectionEnabled()>
+
+Leak 2:
+  Source: $r5 = virtualinvoke $r3.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r4, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("RNFBCrashlyticsInit", $r4) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <io.invertase.firebase.common.ReactNativeFirebaseMeta: android.os.Bundle getMetaData()>
+    <io.invertase.firebase.common.ReactNativeFirebaseMeta: android.os.Bundle getMetaData()>
+    <io.invertase.firebase.common.ReactNativeFirebaseMeta: android.os.Bundle getMetaData()>
+    <io.invertase.firebase.common.ReactNativeFirebaseMeta: boolean getBooleanValue(java.lang.String,boolean)>
+    <io.invertase.firebase.common.ReactNativeFirebaseMeta: boolean getBooleanValue(java.lang.String,boolean)>
+    <io.invertase.firebase.crashlytics.ReactNativeFirebaseCrashlyticsInitProvider: boolean isCrashlyticsCollectionEnabled()>
+    <io.invertase.firebase.crashlytics.ReactNativeFirebaseCrashlyticsInitProvider: boolean isCrashlyticsCollectionEnabled()>
+    <io.invertase.firebase.crashlytics.ReactNativeFirebaseCrashlyticsInitProvider: boolean isCrashlyticsCollectionEnabled()>
+

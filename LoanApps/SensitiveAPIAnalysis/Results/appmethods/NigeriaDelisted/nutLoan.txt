@@ -1,0 +1,567 @@
+APK: nutLoan (NigeriaDelisted)
+Leak 1:
+  Source: $r5 = virtualinvoke $r3.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r4, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("ManifestParser", $r4) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <d.e.a.q.e: java.util.List a()>
+    <d.e.a.q.e: java.util.List a()>
+    <d.e.a.q.e: java.util.List a()>
+    <d.e.a.q.e: java.util.List a()>
+    <d.e.a.q.e: java.util.List a()>
+    <d.e.a.q.e: java.util.List a()>
+    <d.e.a.q.e: java.util.List a()>
+    <d.e.a.q.e: java.util.List a()>
+    <d.e.a.q.e: java.util.List a()>
+
+Leak 2:
+  Source: $d0 = virtualinvoke $r74.<android.location.Location: double getLatitude()>() (<android.location.Location: double getLatitude()>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("AppsFlyer_5.4.6", $r0) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.internal.ac: java.lang.String ǃ(java.lang.String)>
+    <com.appsflyer.internal.ac: java.lang.String ǃ(java.lang.String)>
+    <com.appsflyer.internal.ac: java.lang.String ǃ(java.lang.String)>
+    <com.appsflyer.internal.ac: java.lang.String ǃ(java.lang.String)>
+    <com.appsflyer.AFLogger: void afErrorLog(java.lang.String,java.lang.Throwable)>
+    <com.appsflyer.AFLogger: void ι(java.lang.String,java.lang.Throwable,boolean,boolean)>
+
+Leak 3:
+  Source: $r4 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r3, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("AppsFlyer_5.4.6", $r0) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.appsflyer.internal.b: java.lang.String ǃ(android.content.Context)>
+    <com.appsflyer.internal.b: java.lang.String ǃ(android.content.Context)>
+    <com.appsflyer.internal.b: java.lang.String ǃ(android.content.Context)>
+    <com.appsflyer.internal.b: java.lang.String Ι(android.content.Context,long)>
+    <com.appsflyer.internal.b: java.lang.String Ι(android.content.Context,long)>
+    <com.appsflyer.internal.b: java.lang.String Ι(android.content.Context,long)>
+    <com.appsflyer.internal.b: java.lang.String Ι(android.content.Context,long)>
+    <com.appsflyer.internal.b: java.lang.String Ι(android.content.Context,long)>
+    <com.appsflyer.internal.ac: java.lang.String ι(java.lang.String)>
+    <com.appsflyer.internal.ac: java.lang.String ι(java.lang.String)>
+    <com.appsflyer.internal.ac: java.lang.String ι(java.lang.String)>
+    <com.appsflyer.internal.ac: java.lang.String ι(java.lang.String)>
+    <com.appsflyer.AFLogger: void afErrorLog(java.lang.String,java.lang.Throwable)>
+    <com.appsflyer.AFLogger: void ι(java.lang.String,java.lang.Throwable,boolean,boolean)>
+
+Leak 4:
+  Source: $r24 = virtualinvoke $r23.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r9, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("AppsFlyer_5.4.6", $r0) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.internal.ac: java.lang.String ǃ(java.lang.String)>
+    <com.appsflyer.internal.ac: java.lang.String ǃ(java.lang.String)>
+    <com.appsflyer.internal.ac: java.lang.String ǃ(java.lang.String)>
+    <com.appsflyer.internal.ac: java.lang.String ǃ(java.lang.String)>
+    <com.appsflyer.AFLogger: void afErrorLog(java.lang.String,java.lang.Throwable)>
+    <com.appsflyer.AFLogger: void ι(java.lang.String,java.lang.Throwable,boolean,boolean)>
+
+Leak 5:
+  Source: $d0 = virtualinvoke $r74.<android.location.Location: double getLongitude()>() (<android.location.Location: double getLongitude()>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("AppsFlyer_5.4.6", $r0) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.internal.ac: java.lang.String ǃ(java.lang.String)>
+    <com.appsflyer.internal.ac: java.lang.String ǃ(java.lang.String)>
+    <com.appsflyer.internal.ac: java.lang.String ǃ(java.lang.String)>
+    <com.appsflyer.internal.ac: java.lang.String ǃ(java.lang.String)>
+    <com.appsflyer.AFLogger: void afErrorLog(java.lang.String,java.lang.Throwable)>
+    <com.appsflyer.AFLogger: void ι(java.lang.String,java.lang.Throwable,boolean,boolean)>
+
+Leak 6:
+  Source: $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r2, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("AppsFlyer_5.4.6", $r0) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.appsflyer.AppsFlyerLibCore: java.lang.String ɩ(java.lang.String,android.content.pm.PackageManager,java.lang.String)>
+    <com.appsflyer.AppsFlyerLibCore: java.lang.String ɩ(java.lang.String,android.content.pm.PackageManager,java.lang.String)>
+    <com.appsflyer.AppsFlyerLibCore: java.lang.String ɩ(java.lang.String,android.content.pm.PackageManager,java.lang.String)>
+    <com.appsflyer.AppsFlyerLibCore: java.lang.String ɩ(java.lang.String,android.content.pm.PackageManager,java.lang.String)>
+    <com.appsflyer.AppsFlyerLibCore: java.lang.String ɩ(java.lang.String,android.content.pm.PackageManager,java.lang.String)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.internal.ac: java.lang.String ǃ(java.lang.String)>
+    <com.appsflyer.internal.ac: java.lang.String ǃ(java.lang.String)>
+    <com.appsflyer.internal.ac: java.lang.String ǃ(java.lang.String)>
+    <com.appsflyer.internal.ac: java.lang.String ǃ(java.lang.String)>
+    <com.appsflyer.AFLogger: void afErrorLog(java.lang.String,java.lang.Throwable)>
+    <com.appsflyer.AFLogger: void ι(java.lang.String,java.lang.Throwable,boolean,boolean)>
+
+Leak 7:
+  Source: $r2 = virtualinvoke $r0.<android.content.Context: java.io.File getExternalFilesDir(java.lang.String)>($r1) (<android.content.Context: java.io.File getExternalFilesDir(java.lang.String)>)
+  Sink: virtualinvoke $r11.<java.io.FileOutputStream: void write(byte[])>($r13) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <com.luck.picture.lib.compress.Luban: java.io.File getImageCacheDir(android.content.Context)>
+    <com.luck.picture.lib.compress.Luban: java.io.File getImageCacheDir(android.content.Context)>
+    <com.luck.picture.lib.compress.Luban: java.io.File getImageCustomFile(android.content.Context,java.lang.String)>
+    <com.luck.picture.lib.compress.Luban: java.io.File getImageCustomFile(android.content.Context,java.lang.String)>
+    <com.luck.picture.lib.compress.Luban: java.io.File getImageCustomFile(android.content.Context,java.lang.String)>
+    <com.luck.picture.lib.compress.Luban: java.io.File getImageCustomFile(android.content.Context,java.lang.String)>
+    <com.luck.picture.lib.compress.Luban: java.io.File getImageCustomFile(android.content.Context,java.lang.String)>
+    <com.luck.picture.lib.compress.Luban: java.io.File getImageCustomFile(android.content.Context,java.lang.String)>
+    <com.luck.picture.lib.compress.Luban: java.io.File getImageCustomFile(android.content.Context,java.lang.String)>
+    <com.luck.picture.lib.compress.Luban: java.io.File compressRealLocalMedia(android.content.Context,com.luck.picture.lib.compress.InputStreamProvider)>
+    <com.luck.picture.lib.compress.Engine: void <init>(com.luck.picture.lib.compress.InputStreamProvider,java.io.File,boolean,int)>
+    <com.luck.picture.lib.compress.Engine: void <init>(com.luck.picture.lib.compress.InputStreamProvider,java.io.File,boolean,int)>
+    <com.luck.picture.lib.compress.Luban: java.io.File compressRealLocalMedia(android.content.Context,com.luck.picture.lib.compress.InputStreamProvider)>
+    <com.luck.picture.lib.compress.Engine: java.io.File compress()>
+    <com.luck.picture.lib.compress.Engine: java.io.File compress()>
+    <com.luck.picture.lib.compress.Engine: java.io.File compress()>
+
+Leak 8:
+  Source: $d0 = virtualinvoke $r74.<android.location.Location: double getLatitude()>() (<android.location.Location: double getLatitude()>)
+  Sink: virtualinvoke $r16.<java.io.OutputStream: void write(byte[])>($r7) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: void ι(com.appsflyer.AFEvent)>
+    <com.appsflyer.AFEvent: com.appsflyer.AFEvent params(java.util.Map)>
+    <com.appsflyer.AppsFlyerLibCore: void ι(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.internal.z: java.lang.String Ι(java.lang.ref.WeakReference)>
+    <com.appsflyer.internal.z: java.lang.String Ι(java.lang.ref.WeakReference)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: void ι(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: void Ι(com.appsflyer.AppsFlyerLibCore)>
+    <com.appsflyer.AppsFlyerLibCore$5: void run()>
+    <com.appsflyer.internal.referrer.GoogleReferrer$2: void onInstallReferrerSetupFinished(int)>
+    <com.appsflyer.internal.referrer.GoogleReferrer: void start(android.content.Context,java.lang.Runnable)>
+    <com.appsflyer.AppsFlyerLibCore: com.appsflyer.AppsFlyerLib init(java.lang.String,com.appsflyer.AppsFlyerConversionListener,android.content.Context)>
+    <xyz.niki.loan.nut.base.ApplicationNut: void e()>
+    <xyz.niki.loan.nut.base.ApplicationNut: void f()>
+    <xyz.niki.loan.nut.base.ApplicationNut: void onCreate()>
+    <dummyMainClass: void dummyMainMethod(java.lang.String[])>
+    <dummyMainClass: ai.advance.liveness.sdk.activity.LivenessActivity dummyMainMethod_ai_advance_liveness_sdk_activity_LivenessActivity(android.content.Intent)>
+    <com.appsflyer.Foreground$5: void onActivityPaused(android.app.Activity)>
+    <com.appsflyer.Foreground$5$3: void run()>
+    <java.util.Timer: void schedule(java.util.TimerTask,long)>
+    <com.appsflyer.Foreground$5$3$4: void run()>
+    <com.appsflyer.AppsFlyerLibCore$1: void onBecameBackground(android.content.Context)>
+    <com.appsflyer.AppsFlyerLibCore: void ı(java.lang.ref.WeakReference)>
+    <com.appsflyer.internal.z: java.lang.String Ι(java.lang.ref.WeakReference)>
+    <com.appsflyer.internal.z: java.lang.String Ι(java.lang.ref.WeakReference)>
+    <com.appsflyer.AppsFlyerLibCore: void ı(java.lang.ref.WeakReference)>
+    <com.appsflyer.AppsFlyerLibCore: void ı(java.lang.ref.WeakReference)>
+    <com.appsflyer.AFEvent: com.appsflyer.AFEvent params(java.util.Map)>
+    <com.appsflyer.AFEvent: com.appsflyer.AFEvent params(java.util.Map)>
+    <com.appsflyer.AppsFlyerLibCore: void ı(java.lang.ref.WeakReference)>
+    <com.appsflyer.AppsFlyerLibCore: void ı(java.lang.ref.WeakReference)>
+    <com.appsflyer.internal.w: void <init>(com.appsflyer.internal.model.event.BackgroundEvent)>
+    <com.appsflyer.AFEvent: com.appsflyer.AFEvent weakContext()>
+    <com.appsflyer.internal.w: void <init>(com.appsflyer.internal.model.event.BackgroundEvent)>
+    <com.appsflyer.internal.w: void <init>(com.appsflyer.internal.model.event.BackgroundEvent)>
+    <com.appsflyer.internal.w: void <init>(com.appsflyer.internal.model.event.BackgroundEvent)>
+    <com.appsflyer.AppsFlyerLibCore: void ı(java.lang.ref.WeakReference)>
+    <com.appsflyer.AppsFlyerLibCore: void ı(java.lang.ref.WeakReference)>
+    <com.appsflyer.internal.w: void run()>
+    <com.appsflyer.internal.w: java.net.HttpURLConnection ǃ()>
+    <com.appsflyer.internal.w: java.net.HttpURLConnection ǃ()>
+    <com.appsflyer.internal.model.event.BackgroundEvent: java.lang.String body()>
+    <com.appsflyer.AFEvent: java.util.Map params()>
+    <com.appsflyer.AFEvent: java.util.Map params()>
+    <com.appsflyer.internal.model.event.BackgroundEvent: java.lang.String body()>
+    <com.appsflyer.AFHelper: org.json.JSONObject toJsonObject(java.util.Map)>
+    <com.appsflyer.AFHelper: org.json.JSONObject toJsonObject(java.util.Map)>
+    <com.appsflyer.AFHelper: org.json.JSONObject toJsonObject(java.util.Map)>
+    <com.appsflyer.AFHelper: org.json.JSONObject toJsonObject(java.util.Map)>
+    <com.appsflyer.AFHelper: org.json.JSONObject toJsonObject(java.util.Map)>
+    <com.appsflyer.AFHelper: org.json.JSONObject toJsonObject(java.util.Map)>
+    <com.appsflyer.AFHelper: org.json.JSONObject toJsonObject(java.util.Map)>
+    <com.appsflyer.internal.model.event.BackgroundEvent: java.lang.String body()>
+    <com.appsflyer.internal.model.event.BackgroundEvent: java.lang.String body()>
+    <com.appsflyer.internal.w: java.net.HttpURLConnection ǃ()>
+    <com.appsflyer.internal.w: java.net.HttpURLConnection ǃ()>
+    <com.appsflyer.internal.w: java.net.HttpURLConnection ǃ()>
+
+Leak 9:
+  Source: $r15 = virtualinvoke $r8.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r7, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r16.<java.io.OutputStream: void write(byte[])>($r7) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.appsflyer.internal.ae: void Ι(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.internal.ae: void Ι(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.internal.ae: void Ι(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.internal.ae: void Ι(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.internal.ae: void ι(java.lang.String,java.lang.String,java.lang.String,java.lang.String)>
+    <com.appsflyer.internal.ae: void ι(java.lang.String,java.lang.String,java.lang.String,java.lang.String)>
+    <com.appsflyer.internal.ae: void ι(java.lang.String,java.lang.String,java.lang.String,java.lang.String)>
+    <com.appsflyer.internal.ae: void Ι(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.internal.ae: void ı(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.internal.ae: void ı(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.internal.ae: void Ι(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.internal.ae: void ı(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.internal.ae: void ı(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.internal.ae: java.lang.String Ɩ()>
+    <com.appsflyer.internal.ae: java.lang.String Ɩ()>
+    <com.appsflyer.internal.ae: java.lang.String Ɩ()>
+    <com.appsflyer.internal.ae: void ı(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.internal.model.event.ProxyEvent: com.appsflyer.internal.model.event.BackgroundEvent body(java.lang.String)>
+    <com.appsflyer.internal.model.event.ProxyEvent: com.appsflyer.internal.model.event.BackgroundEvent body(java.lang.String)>
+    <com.appsflyer.internal.ae: void ı(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.AFEvent: com.appsflyer.AFEvent urlString(java.lang.String)>
+    <com.appsflyer.internal.ae: void ı(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.internal.ae: void ı(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.internal.w: void <init>(com.appsflyer.internal.model.event.BackgroundEvent)>
+    <com.appsflyer.AFEvent: com.appsflyer.AFEvent weakContext()>
+    <com.appsflyer.internal.w: void <init>(com.appsflyer.internal.model.event.BackgroundEvent)>
+    <com.appsflyer.internal.w: void <init>(com.appsflyer.internal.model.event.BackgroundEvent)>
+    <com.appsflyer.internal.w: void <init>(com.appsflyer.internal.model.event.BackgroundEvent)>
+    <com.appsflyer.internal.ae: void ı(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.internal.ae: void ı(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.internal.w: void run()>
+    <com.appsflyer.internal.w: java.net.HttpURLConnection ǃ()>
+    <com.appsflyer.internal.w: java.net.HttpURLConnection ǃ()>
+    <com.appsflyer.internal.model.event.ProxyEvent: java.lang.String body()>
+    <com.appsflyer.internal.model.event.ProxyEvent: java.lang.String body()>
+    <com.appsflyer.internal.w: java.net.HttpURLConnection ǃ()>
+    <com.appsflyer.internal.w: java.net.HttpURLConnection ǃ()>
+    <com.appsflyer.internal.w: java.net.HttpURLConnection ǃ()>
+
+Leak 10:
+  Source: $r24 = virtualinvoke $r23.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r9, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r16.<java.io.OutputStream: void write(byte[])>($r7) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: void ι(com.appsflyer.AFEvent)>
+    <com.appsflyer.AFEvent: com.appsflyer.AFEvent params(java.util.Map)>
+    <com.appsflyer.AppsFlyerLibCore: void ι(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.internal.z: java.lang.String Ι(java.lang.ref.WeakReference)>
+    <com.appsflyer.internal.z: java.lang.String Ι(java.lang.ref.WeakReference)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: void ι(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: void Ι(com.appsflyer.AppsFlyerLibCore)>
+    <com.appsflyer.AppsFlyerLibCore$5: void run()>
+    <com.appsflyer.internal.referrer.GoogleReferrer$2: void onInstallReferrerSetupFinished(int)>
+    <com.appsflyer.internal.referrer.GoogleReferrer: void start(android.content.Context,java.lang.Runnable)>
+    <com.appsflyer.AppsFlyerLibCore: com.appsflyer.AppsFlyerLib init(java.lang.String,com.appsflyer.AppsFlyerConversionListener,android.content.Context)>
+    <xyz.niki.loan.nut.base.ApplicationNut: void e()>
+    <xyz.niki.loan.nut.base.ApplicationNut: void f()>
+    <xyz.niki.loan.nut.base.ApplicationNut: void onCreate()>
+    <dummyMainClass: void dummyMainMethod(java.lang.String[])>
+    <dummyMainClass: ai.advance.liveness.sdk.activity.LivenessActivity dummyMainMethod_ai_advance_liveness_sdk_activity_LivenessActivity(android.content.Intent)>
+    <com.appsflyer.Foreground$5: void onActivityPaused(android.app.Activity)>
+    <com.appsflyer.Foreground$5$3: void run()>
+    <java.util.Timer: void schedule(java.util.TimerTask,long)>
+    <com.appsflyer.Foreground$5$3$4: void run()>
+    <com.appsflyer.AppsFlyerLibCore$1: void onBecameBackground(android.content.Context)>
+    <com.appsflyer.AppsFlyerLibCore: void ı(java.lang.ref.WeakReference)>
+    <com.appsflyer.internal.z: java.lang.String Ι(java.lang.ref.WeakReference)>
+    <com.appsflyer.internal.z: java.lang.String Ι(java.lang.ref.WeakReference)>
+    <com.appsflyer.AppsFlyerLibCore: void ı(java.lang.ref.WeakReference)>
+    <com.appsflyer.AppsFlyerLibCore: void ı(java.lang.ref.WeakReference)>
+    <com.appsflyer.AFEvent: com.appsflyer.AFEvent params(java.util.Map)>
+    <com.appsflyer.AFEvent: com.appsflyer.AFEvent params(java.util.Map)>
+    <com.appsflyer.AppsFlyerLibCore: void ı(java.lang.ref.WeakReference)>
+    <com.appsflyer.AppsFlyerLibCore: void ı(java.lang.ref.WeakReference)>
+    <com.appsflyer.internal.w: void <init>(com.appsflyer.internal.model.event.BackgroundEvent)>
+    <com.appsflyer.AFEvent: com.appsflyer.AFEvent weakContext()>
+    <com.appsflyer.internal.w: void <init>(com.appsflyer.internal.model.event.BackgroundEvent)>
+    <com.appsflyer.internal.w: void <init>(com.appsflyer.internal.model.event.BackgroundEvent)>
+    <com.appsflyer.internal.w: void <init>(com.appsflyer.internal.model.event.BackgroundEvent)>
+    <com.appsflyer.AppsFlyerLibCore: void ı(java.lang.ref.WeakReference)>
+    <com.appsflyer.AppsFlyerLibCore: void ı(java.lang.ref.WeakReference)>
+    <com.appsflyer.internal.w: void run()>
+    <com.appsflyer.internal.w: java.net.HttpURLConnection ǃ()>
+    <com.appsflyer.internal.w: java.net.HttpURLConnection ǃ()>
+    <com.appsflyer.internal.model.event.BackgroundEvent: java.lang.String body()>
+    <com.appsflyer.AFEvent: java.util.Map params()>
+    <com.appsflyer.AFEvent: java.util.Map params()>
+    <com.appsflyer.internal.model.event.BackgroundEvent: java.lang.String body()>
+    <com.appsflyer.AFHelper: org.json.JSONObject toJsonObject(java.util.Map)>
+    <com.appsflyer.AFHelper: org.json.JSONObject toJsonObject(java.util.Map)>
+    <com.appsflyer.AFHelper: org.json.JSONObject toJsonObject(java.util.Map)>
+    <com.appsflyer.AFHelper: org.json.JSONObject toJsonObject(java.util.Map)>
+    <com.appsflyer.AFHelper: org.json.JSONObject toJsonObject(java.util.Map)>
+    <com.appsflyer.AFHelper: org.json.JSONObject toJsonObject(java.util.Map)>
+    <com.appsflyer.AFHelper: org.json.JSONObject toJsonObject(java.util.Map)>
+    <com.appsflyer.internal.model.event.BackgroundEvent: java.lang.String body()>
+    <com.appsflyer.internal.model.event.BackgroundEvent: java.lang.String body()>
+    <com.appsflyer.internal.w: java.net.HttpURLConnection ǃ()>
+    <com.appsflyer.internal.w: java.net.HttpURLConnection ǃ()>
+    <com.appsflyer.internal.w: java.net.HttpURLConnection ǃ()>
+
+Leak 11:
+  Source: $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r2, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r16.<java.io.OutputStream: void write(byte[])>($r7) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.appsflyer.AppsFlyerLibCore: java.lang.String ɩ(java.lang.String,android.content.pm.PackageManager,java.lang.String)>
+    <com.appsflyer.AppsFlyerLibCore: java.lang.String ɩ(java.lang.String,android.content.pm.PackageManager,java.lang.String)>
+    <com.appsflyer.AppsFlyerLibCore: java.lang.String ɩ(java.lang.String,android.content.pm.PackageManager,java.lang.String)>
+    <com.appsflyer.AppsFlyerLibCore: java.lang.String ɩ(java.lang.String,android.content.pm.PackageManager,java.lang.String)>
+    <com.appsflyer.AppsFlyerLibCore: java.lang.String ɩ(java.lang.String,android.content.pm.PackageManager,java.lang.String)>
+    <com.appsflyer.AppsFlyerLibCore: java.lang.String getConfiguredChannel(android.content.Context)>
+    <com.appsflyer.AppsFlyerLibCore: void ı(java.lang.ref.WeakReference)>
+    <com.appsflyer.AppsFlyerLibCore: void ı(java.lang.ref.WeakReference)>
+    <com.appsflyer.AFEvent: com.appsflyer.AFEvent params(java.util.Map)>
+    <com.appsflyer.AFEvent: com.appsflyer.AFEvent params(java.util.Map)>
+    <com.appsflyer.AppsFlyerLibCore: void ı(java.lang.ref.WeakReference)>
+    <com.appsflyer.AppsFlyerLibCore: void ı(java.lang.ref.WeakReference)>
+    <com.appsflyer.internal.w: void <init>(com.appsflyer.internal.model.event.BackgroundEvent)>
+    <com.appsflyer.AFEvent: com.appsflyer.AFEvent weakContext()>
+    <com.appsflyer.internal.w: void <init>(com.appsflyer.internal.model.event.BackgroundEvent)>
+    <com.appsflyer.internal.w: void <init>(com.appsflyer.internal.model.event.BackgroundEvent)>
+    <com.appsflyer.internal.w: void <init>(com.appsflyer.internal.model.event.BackgroundEvent)>
+    <com.appsflyer.AppsFlyerLibCore: void ı(java.lang.ref.WeakReference)>
+    <com.appsflyer.AppsFlyerLibCore: void ı(java.lang.ref.WeakReference)>
+    <com.appsflyer.internal.w: void run()>
+    <com.appsflyer.internal.w: java.net.HttpURLConnection ǃ()>
+    <com.appsflyer.internal.w: java.net.HttpURLConnection ǃ()>
+    <com.appsflyer.internal.model.event.BackgroundEvent: java.lang.String body()>
+    <com.appsflyer.AFEvent: java.util.Map params()>
+    <com.appsflyer.AFEvent: java.util.Map params()>
+    <com.appsflyer.internal.model.event.BackgroundEvent: java.lang.String body()>
+    <com.appsflyer.AFHelper: org.json.JSONObject toJsonObject(java.util.Map)>
+    <com.appsflyer.AFHelper: org.json.JSONObject toJsonObject(java.util.Map)>
+    <com.appsflyer.AFHelper: org.json.JSONObject toJsonObject(java.util.Map)>
+    <com.appsflyer.AFHelper: org.json.JSONObject toJsonObject(java.util.Map)>
+    <com.appsflyer.AFHelper: org.json.JSONObject toJsonObject(java.util.Map)>
+    <com.appsflyer.AFHelper: org.json.JSONObject toJsonObject(java.util.Map)>
+    <com.appsflyer.AFHelper: org.json.JSONObject toJsonObject(java.util.Map)>
+    <com.appsflyer.internal.model.event.BackgroundEvent: java.lang.String body()>
+    <com.appsflyer.internal.model.event.BackgroundEvent: java.lang.String body()>
+    <com.appsflyer.internal.w: java.net.HttpURLConnection ǃ()>
+    <com.appsflyer.internal.w: java.net.HttpURLConnection ǃ()>
+    <com.appsflyer.internal.w: java.net.HttpURLConnection ǃ()>
+
+Leak 12:
+  Source: $d0 = virtualinvoke $r74.<android.location.Location: double getLongitude()>() (<android.location.Location: double getLongitude()>)
+  Sink: virtualinvoke $r16.<java.io.OutputStream: void write(byte[])>($r7) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: void ι(com.appsflyer.AFEvent)>
+    <com.appsflyer.AFEvent: com.appsflyer.AFEvent params(java.util.Map)>
+    <com.appsflyer.AppsFlyerLibCore: void ι(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.internal.z: java.lang.String Ι(java.lang.ref.WeakReference)>
+    <com.appsflyer.internal.z: java.lang.String Ι(java.lang.ref.WeakReference)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: void ι(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: void Ι(com.appsflyer.AppsFlyerLibCore)>
+    <com.appsflyer.AppsFlyerLibCore$5: void run()>
+    <com.appsflyer.internal.referrer.GoogleReferrer$2: void onInstallReferrerSetupFinished(int)>
+    <com.appsflyer.internal.referrer.GoogleReferrer: void start(android.content.Context,java.lang.Runnable)>
+    <com.appsflyer.AppsFlyerLibCore: com.appsflyer.AppsFlyerLib init(java.lang.String,com.appsflyer.AppsFlyerConversionListener,android.content.Context)>
+    <xyz.niki.loan.nut.base.ApplicationNut: void e()>
+    <xyz.niki.loan.nut.base.ApplicationNut: void f()>
+    <xyz.niki.loan.nut.base.ApplicationNut: void onCreate()>
+    <dummyMainClass: void dummyMainMethod(java.lang.String[])>
+    <dummyMainClass: ai.advance.liveness.sdk.activity.LivenessActivity dummyMainMethod_ai_advance_liveness_sdk_activity_LivenessActivity(android.content.Intent)>
+    <com.appsflyer.Foreground$5: void onActivityPaused(android.app.Activity)>
+    <com.appsflyer.Foreground$5$3: void run()>
+    <java.util.Timer: void schedule(java.util.TimerTask,long)>
+    <com.appsflyer.Foreground$5$3$4: void run()>
+    <com.appsflyer.AppsFlyerLibCore$1: void onBecameBackground(android.content.Context)>
+    <com.appsflyer.AppsFlyerLibCore: void ı(java.lang.ref.WeakReference)>
+    <com.appsflyer.internal.z: java.lang.String Ι(java.lang.ref.WeakReference)>
+    <com.appsflyer.internal.z: java.lang.String Ι(java.lang.ref.WeakReference)>
+    <com.appsflyer.AppsFlyerLibCore: void ı(java.lang.ref.WeakReference)>
+    <com.appsflyer.AppsFlyerLibCore: void ı(java.lang.ref.WeakReference)>
+    <com.appsflyer.AFEvent: com.appsflyer.AFEvent params(java.util.Map)>
+    <com.appsflyer.AFEvent: com.appsflyer.AFEvent params(java.util.Map)>
+    <com.appsflyer.AppsFlyerLibCore: void ı(java.lang.ref.WeakReference)>
+    <com.appsflyer.AppsFlyerLibCore: void ı(java.lang.ref.WeakReference)>
+    <com.appsflyer.internal.w: void <init>(com.appsflyer.internal.model.event.BackgroundEvent)>
+    <com.appsflyer.AFEvent: com.appsflyer.AFEvent weakContext()>
+    <com.appsflyer.internal.w: void <init>(com.appsflyer.internal.model.event.BackgroundEvent)>
+    <com.appsflyer.internal.w: void <init>(com.appsflyer.internal.model.event.BackgroundEvent)>
+    <com.appsflyer.internal.w: void <init>(com.appsflyer.internal.model.event.BackgroundEvent)>
+    <com.appsflyer.AppsFlyerLibCore: void ı(java.lang.ref.WeakReference)>
+    <com.appsflyer.AppsFlyerLibCore: void ı(java.lang.ref.WeakReference)>
+    <com.appsflyer.internal.w: void run()>
+    <com.appsflyer.internal.w: java.net.HttpURLConnection ǃ()>
+    <com.appsflyer.internal.w: java.net.HttpURLConnection ǃ()>
+    <com.appsflyer.internal.model.event.BackgroundEvent: java.lang.String body()>
+    <com.appsflyer.AFEvent: java.util.Map params()>
+    <com.appsflyer.AFEvent: java.util.Map params()>
+    <com.appsflyer.internal.model.event.BackgroundEvent: java.lang.String body()>
+    <com.appsflyer.AFHelper: org.json.JSONObject toJsonObject(java.util.Map)>
+    <com.appsflyer.AFHelper: org.json.JSONObject toJsonObject(java.util.Map)>
+    <com.appsflyer.AFHelper: org.json.JSONObject toJsonObject(java.util.Map)>
+    <com.appsflyer.AFHelper: org.json.JSONObject toJsonObject(java.util.Map)>
+    <com.appsflyer.AFHelper: org.json.JSONObject toJsonObject(java.util.Map)>
+    <com.appsflyer.AFHelper: org.json.JSONObject toJsonObject(java.util.Map)>
+    <com.appsflyer.AFHelper: org.json.JSONObject toJsonObject(java.util.Map)>
+    <com.appsflyer.internal.model.event.BackgroundEvent: java.lang.String body()>
+    <com.appsflyer.internal.model.event.BackgroundEvent: java.lang.String body()>
+    <com.appsflyer.internal.w: java.net.HttpURLConnection ǃ()>
+    <com.appsflyer.internal.w: java.net.HttpURLConnection ǃ()>
+    <com.appsflyer.internal.w: java.net.HttpURLConnection ǃ()>
+
+Leak 13:
+  Source: $d0 = virtualinvoke $r74.<android.location.Location: double getLatitude()>() (<android.location.Location: double getLatitude()>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("AppsFlyer_5.4.6", $r2) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AFDeepLinkManager: void ɩ(android.content.Intent,android.content.Context,java.util.Map)>
+    <com.appsflyer.AFDeepLinkManager: void ǃ(android.content.Context,java.util.Map,android.net.Uri)>
+    <com.appsflyer.AFDeepLinkManager$3: void <init>(android.net.Uri,java.util.Map,android.content.Context)>
+    <com.appsflyer.AFDeepLinkManager$3: void <init>(android.net.Uri,java.util.Map,android.content.Context)>
+    <com.appsflyer.AFDeepLinkManager: void ǃ(android.content.Context,java.util.Map,android.net.Uri)>
+    <com.appsflyer.AFDeepLinkManager$3: void run()>
+    <com.appsflyer.AFDeepLinkManager$3: void run()>
+    <com.appsflyer.AFDeepLinkManager$3: void run()>
+    <com.appsflyer.AFDeepLinkManager$3: void run()>
+    <com.appsflyer.AFDeepLinkManager$3: void run()>
+    <com.appsflyer.AFDeepLinkManager$3: void run()>
+    <com.appsflyer.AppsFlyerLibCore: void handleDeepLinkCallback(android.content.Context,java.util.Map,android.net.Uri)>
+    <com.appsflyer.internal.ad: void <init>(android.net.Uri,com.appsflyer.AppsFlyerLibCore)>
+    <com.appsflyer.internal.ad: void <init>(android.net.Uri,com.appsflyer.AppsFlyerLibCore)>
+    <com.appsflyer.internal.ad: void <init>(android.net.Uri,com.appsflyer.AppsFlyerLibCore)>
+    <com.appsflyer.internal.ad: void <init>(android.net.Uri,com.appsflyer.AppsFlyerLibCore)>
+    <com.appsflyer.AFLogger: void afDebugLog(java.lang.String)>
+    <com.appsflyer.AFLogger: java.lang.String ı(java.lang.String,boolean)>
+    <com.appsflyer.AFLogger: void afDebugLog(java.lang.String)>
+
+Leak 14:
+  Source: $r24 = virtualinvoke $r23.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r9, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("AppsFlyer_5.4.6", $r2) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AFDeepLinkManager: void ɩ(android.content.Intent,android.content.Context,java.util.Map)>
+    <com.appsflyer.AFDeepLinkManager: void ǃ(android.content.Context,java.util.Map,android.net.Uri)>
+    <com.appsflyer.AFDeepLinkManager$3: void <init>(android.net.Uri,java.util.Map,android.content.Context)>
+    <com.appsflyer.AFDeepLinkManager$3: void <init>(android.net.Uri,java.util.Map,android.content.Context)>
+    <com.appsflyer.AFDeepLinkManager: void ǃ(android.content.Context,java.util.Map,android.net.Uri)>
+    <com.appsflyer.AFDeepLinkManager$3: void run()>
+    <com.appsflyer.AFDeepLinkManager$3: void run()>
+    <com.appsflyer.AFDeepLinkManager$3: void run()>
+    <com.appsflyer.AFDeepLinkManager$3: void run()>
+    <com.appsflyer.AFDeepLinkManager$3: void run()>
+    <com.appsflyer.AFDeepLinkManager$3: void run()>
+    <com.appsflyer.AppsFlyerLibCore: void handleDeepLinkCallback(android.content.Context,java.util.Map,android.net.Uri)>
+    <com.appsflyer.internal.ad: void <init>(android.net.Uri,com.appsflyer.AppsFlyerLibCore)>
+    <com.appsflyer.internal.ad: void <init>(android.net.Uri,com.appsflyer.AppsFlyerLibCore)>
+    <com.appsflyer.internal.ad: void <init>(android.net.Uri,com.appsflyer.AppsFlyerLibCore)>
+    <com.appsflyer.internal.ad: void <init>(android.net.Uri,com.appsflyer.AppsFlyerLibCore)>
+    <com.appsflyer.AFLogger: void afDebugLog(java.lang.String)>
+    <com.appsflyer.AFLogger: java.lang.String ı(java.lang.String,boolean)>
+    <com.appsflyer.AFLogger: void afDebugLog(java.lang.String)>
+
+Leak 15:
+  Source: $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r2, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("AppsFlyer_5.4.6", $r2) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.appsflyer.AppsFlyerLibCore: java.lang.String ɩ(java.lang.String,android.content.pm.PackageManager,java.lang.String)>
+    <com.appsflyer.AppsFlyerLibCore: java.lang.String ɩ(java.lang.String,android.content.pm.PackageManager,java.lang.String)>
+    <com.appsflyer.AppsFlyerLibCore: java.lang.String ɩ(java.lang.String,android.content.pm.PackageManager,java.lang.String)>
+    <com.appsflyer.AppsFlyerLibCore: java.lang.String ɩ(java.lang.String,android.content.pm.PackageManager,java.lang.String)>
+    <com.appsflyer.AppsFlyerLibCore: java.lang.String ɩ(java.lang.String,android.content.pm.PackageManager,java.lang.String)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.io.File ǃ(java.lang.String)>
+    <com.appsflyer.AppsFlyerLibCore: java.io.File ǃ(java.lang.String)>
+    <com.appsflyer.AppsFlyerLibCore: java.io.File ǃ(java.lang.String)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.lang.String ι(java.io.File,java.lang.String)>
+    <com.appsflyer.AppsFlyerLibCore: java.lang.String ι(java.io.File,java.lang.String)>
+    <com.appsflyer.AppsFlyerLibCore: java.lang.String ι(java.io.File,java.lang.String)>
+    <com.appsflyer.AppsFlyerLibCore: java.lang.String ι(java.io.File,java.lang.String)>
+    <com.appsflyer.AFLogger: void afDebugLog(java.lang.String)>
+    <com.appsflyer.AFLogger: java.lang.String ı(java.lang.String,boolean)>
+    <com.appsflyer.AFLogger: void afDebugLog(java.lang.String)>
+
+Leak 16:
+  Source: $d0 = virtualinvoke $r74.<android.location.Location: double getLongitude()>() (<android.location.Location: double getLongitude()>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("AppsFlyer_5.4.6", $r2) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AFDeepLinkManager: void ɩ(android.content.Intent,android.content.Context,java.util.Map)>
+    <com.appsflyer.AFDeepLinkManager: void ǃ(android.content.Context,java.util.Map,android.net.Uri)>
+    <com.appsflyer.AFDeepLinkManager$3: void <init>(android.net.Uri,java.util.Map,android.content.Context)>
+    <com.appsflyer.AFDeepLinkManager$3: void <init>(android.net.Uri,java.util.Map,android.content.Context)>
+    <com.appsflyer.AFDeepLinkManager: void ǃ(android.content.Context,java.util.Map,android.net.Uri)>
+    <com.appsflyer.AFDeepLinkManager$3: void run()>
+    <com.appsflyer.AFDeepLinkManager$3: void run()>
+    <com.appsflyer.AFDeepLinkManager$3: void run()>
+    <com.appsflyer.AFDeepLinkManager$3: void run()>
+    <com.appsflyer.AFDeepLinkManager$3: void run()>
+    <com.appsflyer.AFDeepLinkManager$3: void run()>
+    <com.appsflyer.AppsFlyerLibCore: void handleDeepLinkCallback(android.content.Context,java.util.Map,android.net.Uri)>
+    <com.appsflyer.internal.ad: void <init>(android.net.Uri,com.appsflyer.AppsFlyerLibCore)>
+    <com.appsflyer.internal.ad: void <init>(android.net.Uri,com.appsflyer.AppsFlyerLibCore)>
+    <com.appsflyer.internal.ad: void <init>(android.net.Uri,com.appsflyer.AppsFlyerLibCore)>
+    <com.appsflyer.internal.ad: void <init>(android.net.Uri,com.appsflyer.AppsFlyerLibCore)>
+    <com.appsflyer.AFLogger: void afDebugLog(java.lang.String)>
+    <com.appsflyer.AFLogger: java.lang.String ı(java.lang.String,boolean)>
+    <com.appsflyer.AFLogger: void afDebugLog(java.lang.String)>
+

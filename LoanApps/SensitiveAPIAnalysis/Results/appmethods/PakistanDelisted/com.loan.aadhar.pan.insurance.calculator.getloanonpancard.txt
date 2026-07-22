@@ -1,0 +1,65 @@
+APK: com.loan.aadhar.pan.insurance.calculator.getloanonpancard (PakistanDelisted)
+Leak 1:
+  Source: $r6 = virtualinvoke $r4.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r5, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("ManifestParser", $r5) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.bumptech.glide.b: void c(android.content.Context,com.bumptech.glide.GeneratedAppGlideModule)>
+    <com.bumptech.glide.b: void c(android.content.Context,com.bumptech.glide.GeneratedAppGlideModule)>
+    <com.bumptech.glide.b: void c(android.content.Context,com.bumptech.glide.GeneratedAppGlideModule)>
+    <com.bumptech.glide.b: void c(android.content.Context,com.bumptech.glide.GeneratedAppGlideModule)>
+    <com.bumptech.glide.b: void c(android.content.Context,com.bumptech.glide.GeneratedAppGlideModule)>
+    <com.bumptech.glide.b: void c(android.content.Context,com.bumptech.glide.GeneratedAppGlideModule)>
+    <com.bumptech.glide.b: void c(android.content.Context,com.bumptech.glide.GeneratedAppGlideModule)>
+    <com.bumptech.glide.b: void c(android.content.Context,com.bumptech.glide.GeneratedAppGlideModule)>
+    <com.bumptech.glide.b: void c(android.content.Context,com.bumptech.glide.GeneratedAppGlideModule)>
+
+Leak 2:
+  Source: $r5 = virtualinvoke $r4.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>("com.google.android.gms", 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("Ads", $r0) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <k5.f: int a(android.content.Context)>
+    <k5.f: int a(android.content.Context)>
+    <k5.f: int a(android.content.Context)>
+    <x5.x60: void m(android.content.Context,java.lang.String,android.os.Bundle,x5.w60)>
+    <x5.x60: void m(android.content.Context,java.lang.String,android.os.Bundle,x5.w60)>
+    <x5.x60: void m(android.content.Context,java.lang.String,android.os.Bundle,x5.w60)>
+    <x5.x60: void m(android.content.Context,java.lang.String,android.os.Bundle,x5.w60)>
+    <x5.x60: void m(android.content.Context,java.lang.String,android.os.Bundle,x5.w60)>
+    <x5.x60: void m(android.content.Context,java.lang.String,android.os.Bundle,x5.w60)>
+    <x5.x60: void m(android.content.Context,java.lang.String,android.os.Bundle,x5.w60)>
+    <n1.o: boolean r(java.lang.String)>
+    <x5.v60: void <init>(java.lang.String)>
+    <x5.v60: void <init>(java.lang.String)>
+    <n1.o: boolean r(java.lang.String)>
+    <x5.v60: void run()>
+    <x5.v60: void run()>
+    <x5.e70: boolean r(java.lang.String)>
+    <x5.e70: boolean r(java.lang.String)>
+    <x5.e70: boolean r(java.lang.String)>
+    <x5.c70: void b(java.lang.String)>
+
+Leak 3:
+  Source: $r5 = virtualinvoke $r4.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>("com.google.android.gms", 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: $r4 = virtualinvoke $r13.<java.net.URL: java.net.URLConnection openConnection()>() (<java.net.URL: java.net.URLConnection openConnection()>)
+  Methods:
+    <k5.f: int a(android.content.Context)>
+    <k5.f: int a(android.content.Context)>
+    <k5.f: int a(android.content.Context)>
+    <x5.i20: void b(java.lang.Throwable,java.lang.String,float)>
+    <x5.i20: void b(java.lang.Throwable,java.lang.String,float)>
+    <x5.i20: void b(java.lang.Throwable,java.lang.String,float)>
+    <x5.i20: void b(java.lang.Throwable,java.lang.String,float)>
+    <x5.i20: void b(java.lang.Throwable,java.lang.String,float)>
+    <x5.i20: void b(java.lang.Throwable,java.lang.String,float)>
+    <x5.i20: void b(java.lang.Throwable,java.lang.String,float)>
+    <x5.i20: void b(java.lang.Throwable,java.lang.String,float)>
+    <x5.i20: void b(java.lang.Throwable,java.lang.String,float)>
+    <m4.r: void <init>(java.lang.Object,java.lang.Object,int)>
+    <m4.r: void <init>(java.lang.Object,java.lang.Object,int)>
+    <x5.i20: void b(java.lang.Throwable,java.lang.String,float)>
+    <m4.r: void run()>
+    <m4.r: void run()>
+    <m4.r: void run()>
+    <x5.e70: boolean r(java.lang.String)>
+    <x5.e70: boolean r(java.lang.String)>
+

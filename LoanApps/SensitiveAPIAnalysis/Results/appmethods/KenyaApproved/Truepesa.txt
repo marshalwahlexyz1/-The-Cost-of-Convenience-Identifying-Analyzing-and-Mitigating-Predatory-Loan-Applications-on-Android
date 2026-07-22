@@ -1,0 +1,112 @@
+APK: Truepesa (KenyaApproved)
+Leak 1:
+  Source: $r7 = virtualinvoke $r5.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r6, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: $r7 = virtualinvoke $r6.<java.net.URL: java.net.URLConnection openConnection()>() (<java.net.URL: java.net.URLConnection openConnection()>)
+  Methods:
+    <com.appsflyer.internal.AFd1vSDK: java.lang.String values(java.lang.String)>
+    <com.appsflyer.internal.AFd1vSDK: java.lang.String values(java.lang.String)>
+    <com.appsflyer.internal.AFd1vSDK: java.lang.String values(java.lang.String)>
+    <com.appsflyer.internal.AFd1vSDK: java.lang.String values(java.lang.String)>
+    <com.appsflyer.internal.AFd1vSDK: java.lang.String values(java.lang.String)>
+    <com.appsflyer.internal.AFd1vSDK: java.lang.String AFKeystoreWrapper()>
+    <com.appsflyer.internal.AFe1sSDK$5: java.lang.String AFKeystoreWrapper()>
+    <com.appsflyer.internal.AFb1tSDK: java.lang.String values(com.appsflyer.internal.AFd1xSDK,java.lang.String)>
+    <com.appsflyer.internal.AFe1sSDK$5: java.lang.String AFKeystoreWrapper()>
+    <com.appsflyer.internal.AFe1sSDK$5: java.lang.String AFKeystoreWrapper()>
+    <com.appsflyer.internal.AFe1sSDK$5: java.lang.String AFKeystoreWrapper()>
+    <kotlin.text.r: java.lang.CharSequence L(java.lang.CharSequence)>
+    <kotlin.text.r: java.lang.CharSequence L(java.lang.CharSequence)>
+    <com.appsflyer.internal.AFe1sSDK$5: java.lang.String AFKeystoreWrapper()>
+    <com.appsflyer.internal.AFe1sSDK$5: java.lang.String AFKeystoreWrapper()>
+    <com.appsflyer.internal.AFe1sSDK$5: java.lang.Object invoke()>
+    <t8.l: java.lang.Object getValue()>
+    <t8.l: java.lang.Object getValue()>
+    <com.appsflyer.internal.AFe1sSDK: java.lang.String valueOf(com.appsflyer.internal.AFe1sSDK)>
+    <com.appsflyer.internal.AFe1sSDK: java.lang.String valueOf(com.appsflyer.internal.AFe1sSDK)>
+    <com.appsflyer.internal.AFe1sSDK$2: java.lang.String AFInAppEventType()>
+    <com.appsflyer.internal.AFe1sSDK$2: java.lang.String AFInAppEventType()>
+    <com.appsflyer.internal.AFe1sSDK$2: java.lang.Object invoke()>
+    <t8.l: java.lang.Object getValue()>
+    <t8.l: java.lang.Object getValue()>
+    <t8.l: java.lang.Object getValue()>
+    <com.appsflyer.internal.AFe1sSDK: java.lang.String valueOf()>
+    <com.appsflyer.internal.AFe1sSDK: java.lang.String valueOf()>
+    <com.appsflyer.internal.AFb1tSDK: java.lang.String getHostPrefix()>
+    <com.appsflyer.internal.AFd1gSDK: boolean values()>
+    <com.appsflyer.internal.AFd1gSDK: boolean values()>
+    <com.appsflyer.internal.AFd1gSDK: boolean values()>
+    <com.appsflyer.internal.AFd1gSDK: boolean values()>
+
+Leak 2:
+  Source: $r7 = virtualinvoke $r5.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r6, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("AppsFlyer_6.12.5", $r2) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.appsflyer.internal.AFd1vSDK: java.lang.String values(java.lang.String)>
+    <com.appsflyer.internal.AFd1vSDK: java.lang.String values(java.lang.String)>
+    <com.appsflyer.internal.AFd1vSDK: java.lang.String values(java.lang.String)>
+    <com.appsflyer.internal.AFd1vSDK: java.lang.String values(java.lang.String)>
+    <com.appsflyer.internal.AFf1dSDK: java.lang.String AFInAppEventParameterName(java.lang.String)>
+    <com.appsflyer.internal.AFf1dSDK: java.lang.String AFInAppEventParameterName(java.lang.String)>
+    <com.appsflyer.internal.AFf1dSDK: java.lang.String afDebugLog()>
+    <com.appsflyer.internal.AFf1dSDK: java.lang.String afErrorLog()>
+    <com.appsflyer.internal.AFf1dSDK: void onAppOpenAttributionNative(java.util.Map)>
+    <com.appsflyer.internal.AFf1dSDK: java.lang.String AFVersionDeclaration()>
+    <com.appsflyer.internal.AFf1dSDK: java.lang.String afWarnLog()>
+    <com.appsflyer.internal.AFf1dSDK: java.lang.String AFInAppEventParameterName(java.lang.String)>
+    <com.appsflyer.internal.AFf1dSDK: java.lang.String AFInAppEventParameterName(java.lang.String)>
+    <com.appsflyer.internal.AFd1vSDK: java.lang.String values(java.lang.String)>
+    <com.appsflyer.internal.AFd1vSDK: java.lang.String values(java.lang.String)>
+    <com.appsflyer.internal.AFd1vSDK: java.lang.String values(java.lang.String)>
+    <com.appsflyer.internal.AFd1vSDK: java.lang.String values(java.lang.String)>
+    <com.appsflyer.internal.AFf1dSDK: java.lang.String AFInAppEventParameterName(java.lang.String)>
+    <com.appsflyer.internal.AFf1dSDK: java.lang.String afWarnLog()>
+    <com.appsflyer.internal.AFf1dSDK: java.io.File AFKeystoreWrapper(java.lang.String)>
+    <kotlin.text.r: java.lang.CharSequence L(java.lang.CharSequence)>
+    <kotlin.text.r: java.lang.CharSequence L(java.lang.CharSequence)>
+    <com.appsflyer.internal.AFf1dSDK: java.io.File AFKeystoreWrapper(java.lang.String)>
+    <com.appsflyer.internal.AFf1dSDK: java.io.File AFKeystoreWrapper(java.lang.String)>
+    <com.appsflyer.internal.AFf1dSDK: java.io.File AFKeystoreWrapper(java.lang.String)>
+    <com.appsflyer.internal.AFf1dSDK: java.lang.String afWarnLog()>
+    <com.appsflyer.internal.AFf1dSDK: java.lang.String AFInAppEventType(java.io.File,java.lang.String)>
+    <com.appsflyer.internal.AFf1dSDK: java.lang.String AFInAppEventType(java.io.File,java.lang.String)>
+    <com.appsflyer.internal.AFf1dSDK: java.lang.String AFInAppEventType(java.io.File,java.lang.String)>
+    <com.appsflyer.internal.AFf1dSDK: java.lang.String AFInAppEventType(java.io.File,java.lang.String)>
+    <com.appsflyer.AFLogger: void afDebugLog(java.lang.String)>
+    <com.appsflyer.AFLogger: java.lang.String AFInAppEventParameterName(java.lang.String,boolean)>
+    <com.appsflyer.AFLogger: void afDebugLog(java.lang.String)>
+
+Leak 3:
+  Source: $r5 = virtualinvoke $r4.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r3, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r5.<java.io.FileOutputStream: void write(byte[])>($r7) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <d4.e0: java.lang.String n()>
+    <d4.e0: java.lang.String n()>
+    <d4.e0: java.lang.String n()>
+    <f4.a: void <init>(java.lang.String,java.lang.String)>
+    <f4.a: void <init>(java.lang.String,java.lang.String)>
+    <g4.a: void a(android.app.ActivityManager)>
+    <f4.a: void d()>
+    <f4.a: java.lang.String toString()>
+    <f4.a: java.lang.String toString()>
+    <f4.a: java.lang.String toString()>
+    <f4.a: java.lang.String toString()>
+    <f4.a: java.lang.String toString()>
+    <f4.a: java.lang.String toString()>
+    <f4.a: void d()>
+    <f4.e: void g(java.lang.String,java.lang.String)>
+    <f4.e: void g(java.lang.String,java.lang.String)>
+
+Leak 4:
+  Source: $r7 = virtualinvoke $r5.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r6, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("ManifestParser", $r6) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.bumptech.glide.c: void a(android.content.Context,com.bumptech.glide.GeneratedAppGlideModule)>
+    <com.bumptech.glide.c: void a(android.content.Context,com.bumptech.glide.GeneratedAppGlideModule)>
+    <com.bumptech.glide.c: void a(android.content.Context,com.bumptech.glide.GeneratedAppGlideModule)>
+    <com.bumptech.glide.c: void a(android.content.Context,com.bumptech.glide.GeneratedAppGlideModule)>
+    <com.bumptech.glide.c: void a(android.content.Context,com.bumptech.glide.GeneratedAppGlideModule)>
+    <com.bumptech.glide.c: void a(android.content.Context,com.bumptech.glide.GeneratedAppGlideModule)>
+    <com.bumptech.glide.c: void a(android.content.Context,com.bumptech.glide.GeneratedAppGlideModule)>
+    <com.bumptech.glide.c: void a(android.content.Context,com.bumptech.glide.GeneratedAppGlideModule)>
+    <com.bumptech.glide.c: void a(android.content.Context,com.bumptech.glide.GeneratedAppGlideModule)>
+

@@ -1,0 +1,3 @@
+androguard>=3.4.0
+groq>=0.11.0
+pymupdf>=1.23.0

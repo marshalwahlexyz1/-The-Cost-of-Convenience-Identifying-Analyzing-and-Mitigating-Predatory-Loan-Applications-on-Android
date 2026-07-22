@@ -1,0 +1,21 @@
+APK: com.ftfarm.fibo (PakistanDelisted)
+Leak 1:
+  Source: $i3 = virtualinvoke $r16.<java.io.InputStream: int read(byte[])>($r32) (<java.io.FileInputStream: int read(byte[])>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r1, $r2) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.regula.documentreader.api.DbDownloadService: void d(android.content.Intent)>
+    <com.regula.documentreader.api.DbDownloadService: void d(android.content.Intent)>
+    <com.regula.documentreader.api.DbDownloadService: void d(android.content.Intent)>
+    <com.regula.documentreader.api.DbDownloadService: void d(android.content.Intent)>
+    <com.regula.documentreader.api.DbDownloadService: void d(android.content.Intent)>
+    <com.regula.documentreader.api.DbDownloadService: void d(android.content.Intent)>
+    <com.regula.documentreader.api.DbDownloadService: void d(android.content.Intent)>
+    <com.regula.documentreader.api.DbDownloadService: void e(int)>
+    <com.regula.documentreader.api.DbDownloadService: void e(int)>
+    <com.regula.documentreader.api.DbDownloadService: void e(int)>
+    <com.regula.common.utils.i: void b(java.lang.String)>
+    <com.regula.common.utils.i: java.lang.String k(java.lang.String)>
+    <com.regula.common.utils.i: java.lang.String k(java.lang.String)>
+    <com.regula.common.utils.i: java.lang.String k(java.lang.String)>
+    <com.regula.common.utils.i: void b(java.lang.String)>
+

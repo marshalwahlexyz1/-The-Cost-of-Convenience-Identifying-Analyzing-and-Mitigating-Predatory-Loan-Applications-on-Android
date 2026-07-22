@@ -1,0 +1,311 @@
+APK: NigeriaLoan (NigeriaDelisted)
+Leak 1:
+  Source: $r4 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r3, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r0, $r1) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.facebook.FacebookSdk: void loadDefaultsFromMetadata(android.content.Context)>
+    <com.facebook.FacebookSdk: void loadDefaultsFromMetadata(android.content.Context)>
+    <com.facebook.FacebookSdk: void loadDefaultsFromMetadata(android.content.Context)>
+    <com.facebook.FacebookSdk: void loadDefaultsFromMetadata(android.content.Context)>
+    <com.facebook.FacebookSdk: void loadDefaultsFromMetadata(android.content.Context)>
+    <com.facebook.FacebookSdk: void loadDefaultsFromMetadata(android.content.Context)>
+    <com.facebook.FacebookSdk: void sdkInitialize(android.content.Context,com.facebook.FacebookSdk$InitializeCallback)>
+    <com.facebook.FacebookSdk: void sdkInitialize(android.content.Context,com.facebook.FacebookSdk$InitializeCallback)>
+    <com.facebook.appevents.internal.ActivityLifecycleTracker: void startTracking(android.app.Application,java.lang.String)>
+    <com.facebook.appevents.internal.ActivityLifecycleTracker: void startTracking(android.app.Application,java.lang.String)>
+    <com.facebook.FacebookSdk: void sdkInitialize(android.content.Context,com.facebook.FacebookSdk$InitializeCallback)>
+    <com.facebook.FacebookSdk: void sdkInitialize(android.content.Context)>
+    <com.facebook.internal.Utility: java.lang.String getMetadataApplicationId(android.content.Context)>
+    <com.facebook.appevents.AppEventsLoggerImpl: void <init>(java.lang.String,java.lang.String,com.facebook.AccessToken)>
+    <com.facebook.appevents.AppEventsLoggerImpl: void <init>(android.content.Context,java.lang.String,com.facebook.AccessToken)>
+    <com.facebook.appevents.InternalAppEventsLogger: void <init>(android.content.Context)>
+    <com.facebook.UserSettingsManager: void logIfSDKSettingsChanged()>
+    <com.facebook.UserSettingsManager: void initializeIfNotInitialized()>
+    <com.facebook.UserSettingsManager: boolean getAutoLogAppEventsEnabled()>
+    <com.facebook.FacebookSdk: boolean getAutoLogAppEventsEnabled()>
+    <com.facebook.internal.instrument.crashshield.CrashShieldHandler: void handleThrowable(java.lang.Throwable,java.lang.Object)>
+    <com.facebook.appevents.suggestedevents.SuggestedEventsManager: void trackActivity(android.app.Activity)>
+    <com.facebook.appevents.internal.ActivityLifecycleTracker: void onActivityResumed(android.app.Activity)>
+    <com.facebook.appevents.internal.ActivityLifecycleTracker$4: void run()>
+    <com.facebook.appevents.internal.ActivityLifecycleTracker: java.lang.String access$500()>
+    <com.facebook.appevents.internal.ActivityLifecycleTracker: java.lang.String access$500()>
+    <com.facebook.appevents.internal.ActivityLifecycleTracker$4: void run()>
+    <com.facebook.appevents.internal.SessionLogger: void logDeactivateApp(java.lang.String,com.facebook.appevents.internal.SessionInfo,java.lang.String)>
+    <com.facebook.appevents.InternalAppEventsLogger: void <init>(java.lang.String,java.lang.String,com.facebook.AccessToken)>
+    <com.facebook.appevents.AppEventsLoggerImpl: void <init>(java.lang.String,java.lang.String,com.facebook.AccessToken)>
+    <com.facebook.appevents.AccessTokenAppIdPair: void <init>(java.lang.String,java.lang.String)>
+    <com.facebook.appevents.AccessTokenAppIdPair: void <init>(java.lang.String,java.lang.String)>
+    <com.facebook.appevents.AppEventsLoggerImpl: void <init>(java.lang.String,java.lang.String,com.facebook.AccessToken)>
+    <com.facebook.appevents.AppEventsLoggerImpl: void <init>(java.lang.String,java.lang.String,com.facebook.AccessToken)>
+    <com.facebook.appevents.InternalAppEventsLogger: void <init>(java.lang.String,java.lang.String,com.facebook.AccessToken)>
+    <com.facebook.appevents.InternalAppEventsLogger: void <init>(com.facebook.appevents.AppEventsLoggerImpl)>
+    <com.facebook.appevents.InternalAppEventsLogger: void <init>(com.facebook.appevents.AppEventsLoggerImpl)>
+    <com.facebook.appevents.InternalAppEventsLogger: void <init>(java.lang.String,java.lang.String,com.facebook.AccessToken)>
+    <com.facebook.appevents.internal.SessionLogger: void logDeactivateApp(java.lang.String,com.facebook.appevents.internal.SessionInfo,java.lang.String)>
+    <com.facebook.appevents.InternalAppEventsLogger: void logEvent(java.lang.String,double,android.os.Bundle)>
+    <com.facebook.appevents.InternalAppEventsLogger: void logEvent(java.lang.String,double,android.os.Bundle)>
+    <com.facebook.appevents.AppEventsLoggerImpl: void logEvent(java.lang.String,double,android.os.Bundle)>
+    <com.facebook.appevents.AppEventsLoggerImpl: void logEvent(java.lang.String,java.lang.Double,android.os.Bundle,boolean,java.util.UUID)>
+    <com.facebook.appevents.AppEventsLoggerImpl: void logEvent(java.lang.String,java.lang.Double,android.os.Bundle,boolean,java.util.UUID)>
+    <com.facebook.appevents.AppEventsLoggerImpl: void logEvent(com.facebook.appevents.AppEvent,com.facebook.appevents.AccessTokenAppIdPair)>
+    <com.facebook.appevents.AccessTokenAppIdPair: java.lang.String getApplicationId()>
+    <com.facebook.appevents.AccessTokenAppIdPair: java.lang.String getApplicationId()>
+    <com.facebook.appevents.AppEventsLoggerImpl: void logEvent(com.facebook.appevents.AppEvent,com.facebook.appevents.AccessTokenAppIdPair)>
+    <com.facebook.appevents.ondeviceprocessing.OnDeviceProcessingManager: void sendCustomEventAsync(java.lang.String,com.facebook.appevents.AppEvent)>
+    <com.facebook.appevents.ondeviceprocessing.OnDeviceProcessingManager$2: void <init>(java.lang.String,com.facebook.appevents.AppEvent)>
+    <com.facebook.appevents.ondeviceprocessing.OnDeviceProcessingManager$2: void <init>(java.lang.String,com.facebook.appevents.AppEvent)>
+    <com.facebook.appevents.ondeviceprocessing.OnDeviceProcessingManager: void sendCustomEventAsync(java.lang.String,com.facebook.appevents.AppEvent)>
+    <com.facebook.appevents.ondeviceprocessing.OnDeviceProcessingManager$2: void run()>
+    <com.facebook.appevents.ondeviceprocessing.OnDeviceProcessingManager$2: void run()>
+    <com.facebook.appevents.ondeviceprocessing.RemoteServiceWrapper: com.facebook.appevents.ondeviceprocessing.RemoteServiceWrapper$ServiceResult sendCustomEvents(java.lang.String,java.util.List)>
+    <com.facebook.appevents.ondeviceprocessing.RemoteServiceWrapper: com.facebook.appevents.ondeviceprocessing.RemoteServiceWrapper$ServiceResult sendEvents(com.facebook.appevents.ondeviceprocessing.RemoteServiceWrapper$EventType,java.lang.String,java.util.List)>
+    <com.facebook.appevents.ondeviceprocessing.RemoteServiceParametersHelper: android.os.Bundle buildEventsBundle(com.facebook.appevents.ondeviceprocessing.RemoteServiceWrapper$EventType,java.lang.String,java.util.List)>
+    <com.facebook.appevents.ondeviceprocessing.RemoteServiceParametersHelper: android.os.Bundle buildEventsBundle(com.facebook.appevents.ondeviceprocessing.RemoteServiceWrapper$EventType,java.lang.String,java.util.List)>
+    <com.facebook.appevents.ondeviceprocessing.RemoteServiceWrapper: com.facebook.appevents.ondeviceprocessing.RemoteServiceWrapper$ServiceResult sendEvents(com.facebook.appevents.ondeviceprocessing.RemoteServiceWrapper$EventType,java.lang.String,java.util.List)>
+    <com.facebook.appevents.ondeviceprocessing.RemoteServiceWrapper: com.facebook.appevents.ondeviceprocessing.RemoteServiceWrapper$ServiceResult sendEvents(com.facebook.appevents.ondeviceprocessing.RemoteServiceWrapper$EventType,java.lang.String,java.util.List)>
+    <com.facebook.appevents.ondeviceprocessing.RemoteServiceWrapper: com.facebook.appevents.ondeviceprocessing.RemoteServiceWrapper$ServiceResult sendEvents(com.facebook.appevents.ondeviceprocessing.RemoteServiceWrapper$EventType,java.lang.String,java.util.List)>
+    <com.facebook.internal.Utility: void logd(java.lang.String,java.lang.String)>
+
+Leak 2:
+  Source: $r4 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r3, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r3.<java.io.OutputStream: void write(byte[])>($r5) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.facebook.FacebookSdk: void loadDefaultsFromMetadata(android.content.Context)>
+    <com.facebook.FacebookSdk: void loadDefaultsFromMetadata(android.content.Context)>
+    <com.facebook.FacebookSdk: void loadDefaultsFromMetadata(android.content.Context)>
+    <com.facebook.FacebookSdk: void loadDefaultsFromMetadata(android.content.Context)>
+    <com.facebook.FacebookSdk: void loadDefaultsFromMetadata(android.content.Context)>
+    <com.facebook.FacebookSdk: void loadDefaultsFromMetadata(android.content.Context)>
+    <com.facebook.FacebookSdk: void sdkInitialize(android.content.Context,com.facebook.FacebookSdk$InitializeCallback)>
+    <com.facebook.FacebookSdk: void sdkInitialize(android.content.Context)>
+    <com.facebook.internal.Utility: java.lang.String getMetadataApplicationId(android.content.Context)>
+    <com.facebook.appevents.AppEventsLoggerImpl: void <init>(java.lang.String,java.lang.String,com.facebook.AccessToken)>
+    <com.facebook.appevents.AppEventsLoggerImpl: void <init>(android.content.Context,java.lang.String,com.facebook.AccessToken)>
+    <com.facebook.appevents.InternalAppEventsLogger: void <init>(android.content.Context)>
+    <com.facebook.UserSettingsManager: void logIfSDKSettingsChanged()>
+    <com.facebook.UserSettingsManager: void initializeIfNotInitialized()>
+    <com.facebook.UserSettingsManager: boolean getAutoLogAppEventsEnabled()>
+    <com.facebook.FacebookSdk: boolean getAutoLogAppEventsEnabled()>
+    <com.facebook.internal.instrument.crashshield.CrashShieldHandler: void handleThrowable(java.lang.Throwable,java.lang.Object)>
+    <com.facebook.internal.FetchedAppGateKeepersManager$1: void run()>
+    <com.facebook.internal.FetchedAppGateKeepersManager: void loadAppGateKeepersAsync(com.facebook.internal.FetchedAppGateKeepersManager$Callback)>
+    <com.facebook.internal.FeatureManager: void checkFeature(com.facebook.internal.FeatureManager$Feature,com.facebook.internal.FeatureManager$Callback)>
+    <com.facebook.FacebookException: void <init>(java.lang.String)>
+    <com.facebook.FacebookSdkNotInitializedException: void <init>(java.lang.String)>
+    <com.facebook.internal.Validate: void sdkInitialized()>
+    <com.facebook.FacebookSdk: java.lang.String getApplicationId()>
+    <com.facebook.FacebookSdk: java.lang.String getApplicationId()>
+    <com.facebook.GraphRequest: java.lang.String getBatchAppId(com.facebook.GraphRequestBatch)>
+    <com.facebook.GraphRequest: void processRequest(com.facebook.GraphRequestBatch,com.facebook.internal.Logger,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.GraphRequest$Serializer: void writeString(java.lang.String,java.lang.String)>
+    <com.facebook.GraphRequest$Serializer: void writeString(java.lang.String,java.lang.String)>
+    <com.facebook.GraphRequest$Serializer: void writeLine(java.lang.String,java.lang.Object[])>
+    <com.facebook.GraphRequest$Serializer: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.GraphRequest$Serializer: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.GraphRequest$Serializer: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.GraphRequest$Serializer: void write(java.lang.String,java.lang.Object[])>
+
+Leak 3:
+  Source: $r4 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r3, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r3.<java.io.OutputStream: void write(byte[])>($r5) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.facebook.FacebookSdk: void loadDefaultsFromMetadata(android.content.Context)>
+    <com.facebook.FacebookSdk: void loadDefaultsFromMetadata(android.content.Context)>
+    <com.facebook.FacebookSdk: void loadDefaultsFromMetadata(android.content.Context)>
+    <com.facebook.FacebookSdk: void loadDefaultsFromMetadata(android.content.Context)>
+    <com.facebook.FacebookSdk: void loadDefaultsFromMetadata(android.content.Context)>
+    <com.facebook.FacebookSdk: void loadDefaultsFromMetadata(android.content.Context)>
+    <com.facebook.FacebookSdk: void sdkInitialize(android.content.Context,com.facebook.FacebookSdk$InitializeCallback)>
+    <com.facebook.FacebookSdk: void sdkInitialize(android.content.Context)>
+    <com.facebook.internal.Utility: java.lang.String getMetadataApplicationId(android.content.Context)>
+    <com.facebook.appevents.AppEventsLoggerImpl: void <init>(java.lang.String,java.lang.String,com.facebook.AccessToken)>
+    <com.facebook.appevents.AppEventsLoggerImpl: void <init>(android.content.Context,java.lang.String,com.facebook.AccessToken)>
+    <com.facebook.appevents.InternalAppEventsLogger: void <init>(android.content.Context)>
+    <com.facebook.UserSettingsManager: void logIfSDKSettingsChanged()>
+    <com.facebook.UserSettingsManager: void initializeIfNotInitialized()>
+    <com.facebook.UserSettingsManager: boolean getAutoLogAppEventsEnabled()>
+    <com.facebook.FacebookSdk: boolean getAutoLogAppEventsEnabled()>
+    <com.facebook.internal.instrument.crashshield.CrashShieldHandler: void handleThrowable(java.lang.Throwable,java.lang.Object)>
+    <com.facebook.internal.FetchedAppGateKeepersManager$1: void run()>
+    <com.facebook.internal.FetchedAppGateKeepersManager: void loadAppGateKeepersAsync(com.facebook.internal.FetchedAppGateKeepersManager$Callback)>
+    <com.facebook.internal.FeatureManager: void checkFeature(com.facebook.internal.FeatureManager$Feature,com.facebook.internal.FeatureManager$Callback)>
+    <com.facebook.FacebookException: void <init>(java.lang.String)>
+    <com.facebook.FacebookSdkNotInitializedException: void <init>(java.lang.String)>
+    <com.facebook.internal.Validate: void sdkInitialized()>
+    <com.facebook.FacebookSdk: java.lang.String getApplicationId()>
+    <com.facebook.FacebookSdk: java.lang.String getApplicationId()>
+    <com.facebook.GraphRequest: java.lang.String getBatchAppId(com.facebook.GraphRequestBatch)>
+    <com.facebook.GraphRequest: void processRequest(com.facebook.GraphRequestBatch,com.facebook.internal.Logger,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.GraphRequest$Serializer: void writeString(java.lang.String,java.lang.String)>
+    <com.facebook.GraphRequest$Serializer: void writeString(java.lang.String,java.lang.String)>
+    <com.facebook.GraphRequest$Serializer: void writeLine(java.lang.String,java.lang.Object[])>
+    <com.facebook.GraphRequest$Serializer: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.GraphRequest$Serializer: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.GraphRequest$Serializer: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.GraphRequest$Serializer: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.GraphRequest$Serializer: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.GraphRequest$Serializer: void writeLine(java.lang.String,java.lang.Object[])>
+    <com.facebook.GraphRequest$Serializer: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.GraphRequest$Serializer: void write(java.lang.String,java.lang.Object[])>
+
+Leak 4:
+  Source: $r4 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r3, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r3.<java.io.OutputStream: void write(byte[])>($r5) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.facebook.FacebookSdk: void loadDefaultsFromMetadata(android.content.Context)>
+    <com.facebook.FacebookSdk: void loadDefaultsFromMetadata(android.content.Context)>
+    <com.facebook.FacebookSdk: void loadDefaultsFromMetadata(android.content.Context)>
+    <com.facebook.FacebookSdk: void loadDefaultsFromMetadata(android.content.Context)>
+    <com.facebook.FacebookSdk: void loadDefaultsFromMetadata(android.content.Context)>
+    <com.facebook.FacebookSdk: void loadDefaultsFromMetadata(android.content.Context)>
+    <com.facebook.FacebookSdk: void sdkInitialize(android.content.Context,com.facebook.FacebookSdk$InitializeCallback)>
+    <com.facebook.FacebookSdk: void sdkInitialize(android.content.Context)>
+    <com.facebook.internal.Utility: java.lang.String getMetadataApplicationId(android.content.Context)>
+    <com.facebook.appevents.AppEventsLoggerImpl: void <init>(java.lang.String,java.lang.String,com.facebook.AccessToken)>
+    <com.facebook.appevents.AppEventsLoggerImpl: void <init>(android.content.Context,java.lang.String,com.facebook.AccessToken)>
+    <com.facebook.appevents.InternalAppEventsLogger: void <init>(android.content.Context)>
+    <com.facebook.UserSettingsManager: void logIfSDKSettingsChanged()>
+    <com.facebook.UserSettingsManager: void initializeIfNotInitialized()>
+    <com.facebook.UserSettingsManager: boolean getAutoLogAppEventsEnabled()>
+    <com.facebook.FacebookSdk: boolean getAutoLogAppEventsEnabled()>
+    <com.facebook.internal.instrument.crashshield.CrashShieldHandler: void handleThrowable(java.lang.Throwable,java.lang.Object)>
+    <com.facebook.internal.FetchedAppGateKeepersManager$2: void run()>
+    <com.facebook.internal.FetchedAppGateKeepersManager: void pollCallbacks()>
+    <com.facebook.internal.FetchedAppGateKeepersManager: void loadAppGateKeepersAsync(com.facebook.internal.FetchedAppGateKeepersManager$Callback)>
+    <com.facebook.internal.FeatureManager: void checkFeature(com.facebook.internal.FeatureManager$Feature,com.facebook.internal.FeatureManager$Callback)>
+    <com.facebook.FacebookException: void <init>(java.lang.String)>
+    <com.facebook.FacebookSdkNotInitializedException: void <init>(java.lang.String)>
+    <com.facebook.internal.Validate: void sdkInitialized()>
+    <com.facebook.FacebookSdk: java.lang.String getApplicationId()>
+    <com.facebook.FacebookSdk: java.lang.String getApplicationId()>
+    <com.facebook.GraphRequest: java.lang.String getBatchAppId(com.facebook.GraphRequestBatch)>
+    <com.facebook.GraphRequest: void processRequest(com.facebook.GraphRequestBatch,com.facebook.internal.Logger,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.GraphRequest$Serializer: void writeString(java.lang.String,java.lang.String)>
+    <com.facebook.GraphRequest$Serializer: void writeString(java.lang.String,java.lang.String)>
+    <com.facebook.GraphRequest$Serializer: void writeLine(java.lang.String,java.lang.Object[])>
+    <com.facebook.GraphRequest$Serializer: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.GraphRequest$Serializer: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.GraphRequest$Serializer: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.GraphRequest$Serializer: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.GraphRequest$Serializer: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.GraphRequest$Serializer: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.GraphRequest$Serializer: void writeLine(java.lang.String,java.lang.Object[])>
+    <com.facebook.GraphRequest$Serializer: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.GraphRequest$Serializer: void write(java.lang.String,java.lang.Object[])>
+
+Leak 5:
+  Source: $r4 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r3, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r3.<java.io.OutputStream: void write(byte[])>($r5) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.facebook.FacebookSdk: void loadDefaultsFromMetadata(android.content.Context)>
+    <com.facebook.FacebookSdk: void loadDefaultsFromMetadata(android.content.Context)>
+    <com.facebook.FacebookSdk: void loadDefaultsFromMetadata(android.content.Context)>
+    <com.facebook.FacebookSdk: void loadDefaultsFromMetadata(android.content.Context)>
+    <com.facebook.FacebookSdk: void loadDefaultsFromMetadata(android.content.Context)>
+    <com.facebook.FacebookSdk: void loadDefaultsFromMetadata(android.content.Context)>
+    <com.facebook.FacebookSdk: void sdkInitialize(android.content.Context,com.facebook.FacebookSdk$InitializeCallback)>
+    <com.facebook.FacebookSdk: void sdkInitialize(android.content.Context)>
+    <com.facebook.internal.Utility: java.lang.String getMetadataApplicationId(android.content.Context)>
+    <com.facebook.appevents.AppEventsLoggerImpl: void <init>(java.lang.String,java.lang.String,com.facebook.AccessToken)>
+    <com.facebook.appevents.AppEventsLoggerImpl: void <init>(android.content.Context,java.lang.String,com.facebook.AccessToken)>
+    <com.facebook.appevents.InternalAppEventsLogger: void <init>(android.content.Context)>
+    <com.facebook.UserSettingsManager: void logIfSDKSettingsChanged()>
+    <com.facebook.UserSettingsManager: void writeSettingToCache(com.facebook.UserSettingsManager$UserSetting)>
+    <com.facebook.UserSettingsManager: void initializeUserSetting(com.facebook.UserSettingsManager$UserSetting[])>
+    <com.facebook.UserSettingsManager: void initializeIfNotInitialized()>
+    <com.facebook.UserSettingsManager: boolean getAdvertiserIDCollectionEnabled()>
+    <com.facebook.UserSettingsManager: void logWarnings()>
+    <com.facebook.UserSettingsManager: void initializeIfNotInitialized()>
+    <com.facebook.UserSettingsManager: boolean getAutoLogAppEventsEnabled()>
+    <com.facebook.FacebookSdk: boolean getAutoLogAppEventsEnabled()>
+    <com.facebook.internal.instrument.ExceptionAnalyzer: void execute(java.lang.Throwable)>
+    <com.facebook.internal.instrument.crashshield.CrashShieldHandler: void handleThrowable(java.lang.Throwable,java.lang.Object)>
+    <com.facebook.internal.FetchedAppGateKeepersManager$1: void run()>
+    <com.facebook.internal.FetchedAppGateKeepersManager: void loadAppGateKeepersAsync(com.facebook.internal.FetchedAppGateKeepersManager$Callback)>
+    <com.facebook.internal.FeatureManager: void checkFeature(com.facebook.internal.FeatureManager$Feature,com.facebook.internal.FeatureManager$Callback)>
+    <com.facebook.FacebookException: void <init>(java.lang.String)>
+    <com.facebook.FacebookSdkNotInitializedException: void <init>(java.lang.String)>
+    <com.facebook.internal.Validate: void sdkInitialized()>
+    <com.facebook.FacebookSdk: java.lang.String getApplicationId()>
+    <com.facebook.FacebookSdk: java.lang.String getApplicationId()>
+    <com.facebook.GraphRequest: java.lang.String getBatchAppId(com.facebook.GraphRequestBatch)>
+    <com.facebook.GraphRequest: void processRequest(com.facebook.GraphRequestBatch,com.facebook.internal.Logger,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.GraphRequest$Serializer: void writeString(java.lang.String,java.lang.String)>
+    <com.facebook.GraphRequest$Serializer: void writeString(java.lang.String,java.lang.String)>
+    <com.facebook.GraphRequest$Serializer: void writeLine(java.lang.String,java.lang.Object[])>
+    <com.facebook.GraphRequest$Serializer: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.GraphRequest$Serializer: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.GraphRequest$Serializer: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.GraphRequest$Serializer: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.GraphRequest$Serializer: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.GraphRequest$Serializer: void writeLine(java.lang.String,java.lang.Object[])>
+    <com.facebook.GraphRequest$Serializer: void writeString(java.lang.String,java.lang.String)>
+    <com.facebook.GraphRequest: void processRequest(com.facebook.GraphRequestBatch,com.facebook.internal.Logger,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.GraphRequest: void serializeRequestsAsJSON(com.facebook.GraphRequest$Serializer,java.util.Collection,java.util.Map)>
+    <com.facebook.GraphRequest$Serializer: void writeRequestsAsJson(java.lang.String,org.json.JSONArray,java.util.Collection)>
+    <com.facebook.GraphRequest$Serializer: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.GraphRequest$Serializer: void write(java.lang.String,java.lang.Object[])>
+
+Leak 6:
+  Source: $r4 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r3, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r3.<java.io.OutputStream: void write(byte[])>($r5) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.facebook.FacebookSdk: void loadDefaultsFromMetadata(android.content.Context)>
+    <com.facebook.FacebookSdk: void loadDefaultsFromMetadata(android.content.Context)>
+    <com.facebook.FacebookSdk: void loadDefaultsFromMetadata(android.content.Context)>
+    <com.facebook.FacebookSdk: void loadDefaultsFromMetadata(android.content.Context)>
+    <com.facebook.FacebookSdk: void loadDefaultsFromMetadata(android.content.Context)>
+    <com.facebook.FacebookSdk: void loadDefaultsFromMetadata(android.content.Context)>
+    <com.facebook.FacebookSdk: void sdkInitialize(android.content.Context,com.facebook.FacebookSdk$InitializeCallback)>
+    <com.facebook.FacebookSdk: void sdkInitialize(android.content.Context)>
+    <com.facebook.internal.Utility: java.lang.String getMetadataApplicationId(android.content.Context)>
+    <com.facebook.appevents.AppEventsLoggerImpl: void <init>(java.lang.String,java.lang.String,com.facebook.AccessToken)>
+    <com.facebook.appevents.AppEventsLoggerImpl: void <init>(android.content.Context,java.lang.String,com.facebook.AccessToken)>
+    <com.facebook.appevents.InternalAppEventsLogger: void <init>(android.content.Context)>
+    <com.facebook.UserSettingsManager: void logIfSDKSettingsChanged()>
+    <com.facebook.UserSettingsManager: void initializeIfNotInitialized()>
+    <com.facebook.UserSettingsManager: boolean getAutoLogAppEventsEnabled()>
+    <com.facebook.FacebookSdk: boolean getAutoLogAppEventsEnabled()>
+    <com.facebook.internal.instrument.crashshield.CrashShieldHandler: void handleThrowable(java.lang.Throwable,java.lang.Object)>
+    <com.facebook.internal.FetchedAppGateKeepersManager$1: void run()>
+    <com.facebook.internal.FetchedAppGateKeepersManager: void loadAppGateKeepersAsync(com.facebook.internal.FetchedAppGateKeepersManager$Callback)>
+    <com.facebook.internal.FeatureManager: void checkFeature(com.facebook.internal.FeatureManager$Feature,com.facebook.internal.FeatureManager$Callback)>
+    <com.facebook.FacebookException: void <init>(java.lang.String)>
+    <com.facebook.FacebookSdkNotInitializedException: void <init>(java.lang.String)>
+    <com.facebook.internal.Validate: void sdkInitialized()>
+    <com.facebook.FacebookSdk: java.lang.String getApplicationId()>
+    <com.facebook.FacebookSdk: java.lang.String getApplicationId()>
+    <com.facebook.GraphRequest: java.lang.String getBatchAppId(com.facebook.GraphRequestBatch)>
+    <com.facebook.GraphRequest: void processRequest(com.facebook.GraphRequestBatch,com.facebook.internal.Logger,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.GraphRequest$Serializer: void writeString(java.lang.String,java.lang.String)>
+    <com.facebook.GraphRequest$Serializer: void writeString(java.lang.String,java.lang.String)>
+    <com.facebook.GraphRequest$Serializer: void writeLine(java.lang.String,java.lang.Object[])>
+    <com.facebook.GraphRequest$Serializer: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.GraphRequest$Serializer: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.GraphRequest$Serializer: void write(java.lang.String,java.lang.Object[])>
+
+Leak 7:
+  Source: $r4 = virtualinvoke $r3.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r2, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r5.<java.io.FileOutputStream: void write(byte[])>($r6) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <com.facebook.internal.Utility: java.lang.String getAppVersion()>
+    <com.facebook.internal.Utility: java.lang.String getAppVersion()>
+    <com.facebook.internal.Utility: java.lang.String getAppVersion()>
+    <com.facebook.internal.instrument.InstrumentData: void <init>(java.lang.Throwable,com.facebook.internal.instrument.InstrumentData$Type)>
+    <com.facebook.internal.instrument.InstrumentData: void <init>(java.lang.Throwable,com.facebook.internal.instrument.InstrumentData$Type)>
+    <com.facebook.internal.instrument.InstrumentData: void <init>(java.lang.Throwable,com.facebook.internal.instrument.InstrumentData$Type,com.facebook.internal.instrument.InstrumentData$1)>
+    <com.facebook.internal.instrument.InstrumentData$Builder: com.facebook.internal.instrument.InstrumentData build(java.lang.Throwable,com.facebook.internal.instrument.InstrumentData$Type)>
+    <com.facebook.internal.instrument.crashshield.CrashShieldHandler: void handleThrowable(java.lang.Throwable,java.lang.Object)>
+    <com.facebook.internal.instrument.InstrumentData: void save()>
+    <com.facebook.internal.instrument.InstrumentData: java.lang.String toString()>
+    <com.facebook.internal.instrument.InstrumentData: org.json.JSONObject getParameters()>
+    <com.facebook.internal.instrument.InstrumentData: org.json.JSONObject getExceptionReportParameters()>
+    <com.facebook.internal.instrument.InstrumentData: org.json.JSONObject getExceptionReportParameters()>
+    <com.facebook.internal.instrument.InstrumentData: org.json.JSONObject getExceptionReportParameters()>
+    <com.facebook.internal.instrument.InstrumentData: org.json.JSONObject getParameters()>
+    <com.facebook.internal.instrument.InstrumentData: java.lang.String toString()>
+    <com.facebook.internal.instrument.InstrumentData: java.lang.String toString()>
+    <com.facebook.internal.instrument.InstrumentData: void save()>
+    <com.facebook.internal.instrument.InstrumentUtility: void writeFile(java.lang.String,java.lang.String)>
+    <com.facebook.internal.instrument.InstrumentUtility: void writeFile(java.lang.String,java.lang.String)>
+

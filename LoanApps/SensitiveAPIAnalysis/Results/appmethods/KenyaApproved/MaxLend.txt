@@ -1,0 +1,31 @@
+APK: MaxLend (KenyaApproved)
+Leak 1:
+  Source: $r7 = virtualinvoke $r5.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r6, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: $r4 = virtualinvoke $r3.<java.net.URL: java.net.URLConnection openConnection()>() (<java.net.URL: java.net.URLConnection openConnection()>)
+  Methods:
+    <com.appsflyer.internal.AFd1qSDK: java.lang.String getRevenue(java.lang.String)>
+    <com.appsflyer.internal.AFd1qSDK: java.lang.String getRevenue(java.lang.String)>
+    <com.appsflyer.internal.AFd1qSDK: java.lang.String getRevenue(java.lang.String)>
+    <com.appsflyer.internal.AFd1qSDK: java.lang.String getRevenue(java.lang.String)>
+    <com.appsflyer.internal.AFd1qSDK: java.lang.String getRevenue(java.lang.String)>
+    <com.appsflyer.internal.AFd1qSDK: java.lang.String component4()>
+    <com.appsflyer.internal.AFe1iSDK$4: java.lang.String AFAdRevenueData()>
+    <com.appsflyer.internal.AFb1rSDK: java.lang.String getMonetizationNetwork(com.appsflyer.internal.AFd1rSDK,java.lang.String)>
+    <com.appsflyer.internal.AFe1iSDK$4: java.lang.String AFAdRevenueData()>
+    <com.appsflyer.internal.AFe1iSDK$4: java.lang.String AFAdRevenueData()>
+    <com.appsflyer.internal.AFe1iSDK$4: java.lang.String AFAdRevenueData()>
+    <kotlin.text.o: java.lang.CharSequence w0(java.lang.CharSequence)>
+    <com.appsflyer.internal.AFe1iSDK$4: java.lang.String AFAdRevenueData()>
+    <com.appsflyer.internal.AFe1iSDK$4: java.lang.String AFAdRevenueData()>
+    <com.appsflyer.internal.AFe1iSDK$4: java.lang.Object invoke()>
+    <m7.f: java.lang.Object getValue()>
+    <m7.f: java.lang.Object getValue()>
+    <com.appsflyer.internal.AFe1iSDK: java.lang.String getMediationNetwork()>
+    <com.appsflyer.internal.AFe1iSDK: java.lang.String getMediationNetwork()>
+    <com.appsflyer.internal.AFb1rSDK: java.lang.String getHostPrefix()>
+    <com.appsflyer.internal.AFd1aSDK: java.lang.String getRevenue()>
+    <com.appsflyer.internal.AFd1aSDK: java.lang.String getRevenue()>
+    <com.appsflyer.internal.AFd1aSDK: java.lang.String getRevenue()>
+    <com.appsflyer.internal.AFd1gSDK: boolean AFAdRevenueData()>
+    <com.appsflyer.internal.AFd1gSDK: boolean AFAdRevenueData()>
+

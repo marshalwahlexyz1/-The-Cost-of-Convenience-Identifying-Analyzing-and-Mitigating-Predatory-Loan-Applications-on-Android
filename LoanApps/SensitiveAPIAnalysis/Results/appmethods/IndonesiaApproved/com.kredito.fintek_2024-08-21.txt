@@ -1,0 +1,156 @@
+APK: com.kredito.fintek_2024-08-21 (IndonesiaApproved)
+Leak 1:
+  Source: $r5 = virtualinvoke $r3.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r4, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("ManifestParser", $r4) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.bumptech.glide.module.ManifestParser: java.util.List parse()>
+    <com.bumptech.glide.module.ManifestParser: java.util.List parse()>
+    <com.bumptech.glide.module.ManifestParser: java.util.List parse()>
+    <com.bumptech.glide.module.ManifestParser: java.util.List parse()>
+    <com.bumptech.glide.module.ManifestParser: java.util.List parse()>
+    <com.bumptech.glide.module.ManifestParser: java.util.List parse()>
+    <com.bumptech.glide.module.ManifestParser: java.util.List parse()>
+    <com.bumptech.glide.module.ManifestParser: java.util.List parse()>
+    <com.bumptech.glide.module.ManifestParser: java.util.List parse()>
+
+Leak 2:
+  Source: $r3 = virtualinvoke $r2.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r1, null, null, null, null) (<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>)
+  Sink: staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("BranchSDK", $r0) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <zendesk.messaging.android.internal.conversationscreen.attachments.AttachmentActivity: zendesk.messaging.android.internal.conversationscreen.attachments.Attachment getAttachmentFileFromIntent(android.net.Uri)>
+    <zendesk.messaging.android.internal.conversationscreen.attachments.AttachmentActivity: zendesk.messaging.android.internal.conversationscreen.attachments.Attachment getAttachmentFileFromIntent(android.net.Uri)>
+    <zendesk.messaging.android.internal.conversationscreen.attachments.AttachmentActivity: java.lang.String getDisplayName(android.database.Cursor)>
+    <zendesk.messaging.android.internal.conversationscreen.attachments.AttachmentActivity: java.lang.String getDisplayName(android.database.Cursor)>
+    <zendesk.messaging.android.internal.conversationscreen.attachments.AttachmentActivity: zendesk.messaging.android.internal.conversationscreen.attachments.Attachment getAttachmentFileFromIntent(android.net.Uri)>
+    <zendesk.messaging.android.internal.conversationscreen.attachments.Attachment: void <init>(java.lang.String,java.lang.String,java.lang.String,long)>
+    <zendesk.messaging.android.internal.conversationscreen.attachments.Attachment: void <init>(java.lang.String,java.lang.String,java.lang.String,long)>
+    <zendesk.messaging.android.internal.conversationscreen.attachments.AttachmentActivity: zendesk.messaging.android.internal.conversationscreen.attachments.Attachment getAttachmentFileFromIntent(android.net.Uri)>
+    <zendesk.messaging.android.internal.conversationscreen.attachments.AttachmentActivity: void onActivityResult(int,int,android.content.Intent)>
+    <zendesk.messaging.android.internal.conversationscreen.attachments.AttachmentActivity: void onActivityResult(int,int,android.content.Intent)>
+    <zendesk.messaging.android.internal.conversationscreen.attachments.AttachmentActivity: void onActivityResult$setIntentResult(zendesk.messaging.android.internal.conversationscreen.attachments.AttachmentActivity,java.util.ArrayList)>
+    <zendesk.messaging.android.internal.conversationscreen.attachments.AttachmentActivity: void onActivityResult$setIntentResult(zendesk.messaging.android.internal.conversationscreen.attachments.AttachmentActivity,java.util.ArrayList)>
+    <zendesk.messaging.android.internal.conversationscreen.attachments.AttachmentActivity: void setResult(int,android.content.Intent)>
+    <zendesk.messaging.android.internal.conversationscreen.attachments.AttachmentActivity: void setResult(int,android.content.Intent)>
+    <zendesk.messaging.android.internal.conversationscreen.attachments.AttachmentActivity: void onActivityResult$setIntentResult(zendesk.messaging.android.internal.conversationscreen.attachments.AttachmentActivity,java.util.ArrayList)>
+    <zendesk.messaging.android.internal.conversationscreen.attachments.AttachmentActivity: void onActivityResult(int,int,android.content.Intent)>
+    <dummyMainClass: zendesk.messaging.android.internal.conversationscreen.attachments.AttachmentActivity dummyMainMethod_zendesk_messaging_android_internal_conversationscreen_attachments_AttachmentActivity(android.content.Intent)>
+    <io.branch.referral.BranchActivityLifecycleObserver: void onActivityStopped(android.app.Activity)>
+    <io.branch.referral.BranchActivityLifecycleObserver: void onActivityStopped(android.app.Activity)>
+    <io.branch.referral.BranchActivityLifecycleObserver: void onActivityStopped(android.app.Activity)>
+    <io.branch.referral.PrefHelper: void Debug(java.lang.String)>
+
+Leak 3:
+  Source: $r5 = virtualinvoke $r3.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r4, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r5.<java.io.FileOutputStream: void write(byte[])>($r4) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <ai.advance.core.RiskInfoInterfaceImpl: java.lang.String getAppVersionName()>
+    <ai.advance.core.RiskInfoInterfaceImpl: java.lang.String getAppVersionName()>
+    <ai.advance.core.RiskInfoInterfaceImpl: java.lang.String getAppVersionName()>
+    <ai.advance.event.RiskEvent: void b()>
+    <ai.advance.event.RiskEvent: void addEventInfo(java.lang.String,java.lang.Object)>
+    <ai.advance.event.BusinessEventsParent: void addEventInfo(java.lang.String,java.lang.Object)>
+    <ai.advance.event.BusinessEventsParent: void addEventInfo(java.lang.String,java.lang.Object)>
+    <ai.advance.event.BusinessEventsParent: void addEventInfo(java.lang.String,java.lang.Object)>
+    <ai.advance.event.RiskEvent: void addEventInfo(java.lang.String,java.lang.Object)>
+    <ai.advance.event.RiskEvent: void b()>
+    <ai.advance.event.RiskEvent: org.json.JSONObject create()>
+    <ai.advance.event.BusinessEventsParent: org.json.JSONObject create()>
+    <ai.advance.event.BusinessEventsParent: org.json.JSONObject create()>
+    <ai.advance.event.RiskEvent: org.json.JSONObject create()>
+    <ai.advance.core.WifiAndBLEScanLogic: void main(java.lang.String)>
+    <ai.advance.core.WifiAndBLEScanLogic: void main(java.lang.String)>
+    <ai.advance.core.EventTrackingLogic: void main(java.lang.String)>
+    <ai.advance.core.EventTrackingLogic: void a(java.lang.String)>
+    <ai.advance.core.EventTrackingLogic: void a(java.lang.String)>
+    <ai.advance.common.utils.JsonUtils: void putOpt(org.json.JSONObject,java.lang.String,java.lang.Object)>
+    <ai.advance.common.utils.JsonUtils: void putOpt(org.json.JSONObject,java.lang.String,java.lang.Object)>
+    <ai.advance.core.EventTrackingLogic: void a(java.lang.String)>
+    <ai.advance.core.EventTrackingLogic: void a(java.lang.String)>
+    <ai.advance.common.utils.FileUtil: void saveFile(android.content.Context,java.lang.String,java.lang.String)>
+    <ai.advance.common.utils.FileUtil: void saveFile(android.content.Context,java.lang.String,java.lang.String)>
+    <ai.advance.common.utils.FileUtil: void saveFile(android.content.Context,java.lang.String,java.lang.String)>
+
+Leak 4:
+  Source: $r5 = virtualinvoke $r3.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r4, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r5.<java.io.FileOutputStream: void write(byte[])>($r4) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <ai.advance.core.RiskInfoInterfaceImpl: java.lang.String getAppId()>
+    <ai.advance.core.RiskInfoInterfaceImpl: java.lang.String getAppId()>
+    <ai.advance.core.RiskInfoInterfaceImpl: java.lang.String getAppId()>
+    <ai.advance.event.RiskEvent: void b()>
+    <ai.advance.event.RiskEvent: void addEventInfo(java.lang.String,java.lang.Object)>
+    <ai.advance.event.BusinessEventsParent: void addEventInfo(java.lang.String,java.lang.Object)>
+    <ai.advance.event.BusinessEventsParent: void addEventInfo(java.lang.String,java.lang.Object)>
+    <ai.advance.event.BusinessEventsParent: void addEventInfo(java.lang.String,java.lang.Object)>
+    <ai.advance.event.RiskEvent: void addEventInfo(java.lang.String,java.lang.Object)>
+    <ai.advance.event.RiskEvent: void b()>
+    <ai.advance.event.RiskEvent: org.json.JSONObject create()>
+    <ai.advance.event.BusinessEventsParent: org.json.JSONObject create()>
+    <ai.advance.event.BusinessEventsParent: org.json.JSONObject create()>
+    <ai.advance.event.RiskEvent: org.json.JSONObject create()>
+    <ai.advance.core.WifiAndBLEScanLogic: void main(java.lang.String)>
+    <ai.advance.core.WifiAndBLEScanLogic: void main(java.lang.String)>
+    <ai.advance.core.EventTrackingLogic: void main(java.lang.String)>
+    <ai.advance.core.EventTrackingLogic: void a(java.lang.String)>
+    <ai.advance.core.EventTrackingLogic: void a(java.lang.String)>
+    <ai.advance.common.utils.JsonUtils: void putOpt(org.json.JSONObject,java.lang.String,java.lang.Object)>
+    <ai.advance.common.utils.JsonUtils: void putOpt(org.json.JSONObject,java.lang.String,java.lang.Object)>
+    <ai.advance.core.EventTrackingLogic: void a(java.lang.String)>
+    <ai.advance.core.EventTrackingLogic: void a(java.lang.String)>
+    <ai.advance.common.utils.FileUtil: void saveFile(android.content.Context,java.lang.String,java.lang.String)>
+    <ai.advance.common.utils.FileUtil: void saveFile(android.content.Context,java.lang.String,java.lang.String)>
+    <ai.advance.common.utils.FileUtil: void saveFile(android.content.Context,java.lang.String,java.lang.String)>
+
+Leak 5:
+  Source: $r7 = virtualinvoke $r5.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r6, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("AppsFlyer_6.9.4", $r2) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.appsflyer.internal.AFc1ySDK: java.lang.String AFInAppEventType(java.lang.String)>
+    <com.appsflyer.internal.AFc1ySDK: java.lang.String AFInAppEventType(java.lang.String)>
+    <com.appsflyer.internal.AFc1ySDK: java.lang.String AFInAppEventType(java.lang.String)>
+    <com.appsflyer.internal.AFc1ySDK: java.lang.String AFInAppEventType(java.lang.String)>
+    <com.appsflyer.internal.AFc1ySDK: java.lang.String AFInAppEventType(java.lang.String)>
+    <com.appsflyer.internal.AFc1ySDK: java.lang.String AFInAppEventType(java.lang.String)>
+    <com.appsflyer.internal.AFc1ySDK: java.lang.String AFInAppEventType(java.lang.String)>
+    <com.appsflyer.internal.AFc1ySDK: java.lang.String AFInAppEventParameterName()>
+    <com.appsflyer.internal.AFb1zSDK: java.lang.String values(android.content.Context)>
+    <com.appsflyer.internal.AFb1zSDK: void AFKeystoreWrapper(java.lang.ref.WeakReference)>
+    <com.appsflyer.internal.AFb1zSDK: void AFKeystoreWrapper(java.lang.ref.WeakReference)>
+    <com.appsflyer.internal.AFb1zSDK: void AFKeystoreWrapper(java.lang.ref.WeakReference)>
+    <com.appsflyer.internal.AFb1zSDK: void AFKeystoreWrapper(java.lang.ref.WeakReference)>
+    <com.appsflyer.internal.AFc1zSDK: com.appsflyer.internal.AFd1fSDK AFLogger$LogLevel()>
+    <com.appsflyer.internal.AFc1zSDK: com.appsflyer.internal.AFd1fSDK AFLogger$LogLevel()>
+    <com.appsflyer.internal.AFb1zSDK: void AFKeystoreWrapper(java.lang.ref.WeakReference)>
+    <com.appsflyer.internal.AFb1zSDK: void AFKeystoreWrapper(java.lang.ref.WeakReference)>
+    <com.appsflyer.internal.AFb1zSDK$3: void values(android.content.Context)>
+    <com.appsflyer.internal.AFb1zSDK$3: void values(android.content.Context)>
+    <com.appsflyer.internal.AFb1xSDK$1$1$2: void run()>
+    <com.appsflyer.internal.AFb1xSDK$1$1$2: void run()>
+    <java.util.Timer: void schedule(java.util.TimerTask,long)>
+    <com.appsflyer.internal.AFb1xSDK$1$1: void run()>
+    <com.appsflyer.internal.AFb1xSDK$1: void onActivityPaused(android.app.Activity)>
+    <dummyMainClass: zendesk.messaging.android.internal.conversationscreen.ImageViewerActivity dummyMainMethod_zendesk_messaging_android_internal_conversationscreen_ImageViewerActivity(android.content.Intent)>
+    <com.appsflyer.internal.AFb1xSDK$1: void onActivityResumed(android.app.Activity)>
+    <com.appsflyer.internal.AFb1xSDK$1$3: void run()>
+    <com.appsflyer.internal.AFb1xSDK$1$3: void run()>
+    <com.appsflyer.internal.AFb1zSDK$3: void AFInAppEventParameterName(android.app.Activity)>
+    <com.appsflyer.internal.AFb1zSDK$3: void AFInAppEventParameterName(android.app.Activity)>
+    <com.appsflyer.internal.AFb1zSDK: void AFInAppEventParameterName(com.appsflyer.internal.AFb1zSDK)>
+    <com.appsflyer.internal.AFb1zSDK: void afInfoLog()>
+    <com.appsflyer.internal.AFb1zSDK: com.appsflyer.internal.AFb1aSDK valueOf()>
+    <com.appsflyer.internal.AFb1zSDK: com.appsflyer.internal.AFb1aSDK valueOf()>
+    <com.appsflyer.internal.AFb1zSDK: void afInfoLog()>
+    <com.appsflyer.internal.AFd1wSDK: void <init>(com.appsflyer.internal.AFb1aSDK)>
+    <com.appsflyer.internal.AFd1wSDK: void <init>(com.appsflyer.internal.AFb1aSDK)>
+    <com.appsflyer.internal.AFb1zSDK: void afInfoLog()>
+    <com.appsflyer.internal.AFc1gSDK$1: void <init>(com.appsflyer.internal.AFc1gSDK,com.appsflyer.internal.AFc1eSDK)>
+    <com.appsflyer.internal.AFc1gSDK$1: void <init>(com.appsflyer.internal.AFc1gSDK,com.appsflyer.internal.AFc1eSDK)>
+    <com.appsflyer.internal.AFb1zSDK: void afInfoLog()>
+    <com.appsflyer.internal.AFc1gSDK$1: void run()>
+    <com.appsflyer.internal.AFc1gSDK$1: void run()>
+    <com.appsflyer.internal.AFc1gSDK$1: void run()>
+    <com.appsflyer.internal.AFc1gSDK$1: void run()>
+    <com.appsflyer.AFLogger: void afDebugLog(java.lang.String)>
+    <com.appsflyer.AFLogger: java.lang.String valueOf(java.lang.String,boolean)>
+    <com.appsflyer.AFLogger: void afDebugLog(java.lang.String)>
+

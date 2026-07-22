@@ -1,0 +1,284 @@
+APK: MiniCredit (NigeriaApproved)
+Leak 1:
+  Source: $r4 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r3, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r3.<java.io.OutputStream: void write(byte[])>($r5) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <b3.k: void h(android.content.Context)>
+    <b3.k: void h(android.content.Context)>
+    <b3.k: void h(android.content.Context)>
+    <b3.k: void h(android.content.Context)>
+    <b3.k: void h(android.content.Context)>
+    <b3.k: void h(android.content.Context)>
+    <b3.k: void l(android.content.Context)>
+    <b3.k: void k(android.content.Context)>
+    <p3.y: java.lang.String r(android.content.Context)>
+    <c3.m: void <init>(java.lang.String,java.lang.String)>
+    <c3.m: void <init>(android.content.Context,java.lang.String)>
+    <b3.j0: void g()>
+    <b3.j0: void e()>
+    <b3.j0: boolean c()>
+    <s3.a: void a(java.lang.Throwable,java.lang.Object)>
+    <p3.m$b: void run()>
+    <p3.m: void e()>
+    <p3.m: void c(p3.m$c)>
+    <p3.l: void a(p3.l$c,p3.l$b)>
+    <b3.g: void <init>(java.lang.String)>
+    <b3.s: void <init>(java.lang.String)>
+    <p3.a0: void e()>
+    <b3.u: void r(b3.x,p3.r,int,java.net.URL,java.io.OutputStream,boolean)>
+    <b3.u: void r(b3.x,p3.r,int,java.net.URL,java.io.OutputStream,boolean)>
+    <b3.u$g: void a(java.lang.String,java.lang.String)>
+    <b3.u$g: void a(java.lang.String,java.lang.String)>
+    <b3.u$g: void f(java.lang.String,java.lang.Object[])>
+    <b3.u$g: void b(java.lang.String,java.lang.Object[])>
+    <b3.u$g: void b(java.lang.String,java.lang.Object[])>
+    <b3.u$g: void b(java.lang.String,java.lang.Object[])>
+    <b3.u$g: void b(java.lang.String,java.lang.Object[])>
+    <b3.u$g: void b(java.lang.String,java.lang.Object[])>
+    <b3.u$g: void f(java.lang.String,java.lang.Object[])>
+    <b3.u$g: void b(java.lang.String,java.lang.Object[])>
+    <b3.u$g: void b(java.lang.String,java.lang.Object[])>
+
+Leak 2:
+  Source: $r4 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r3, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r5.<java.io.OutputStream: void write(byte[])>($r6) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <b3.k: void h(android.content.Context)>
+    <b3.k: void h(android.content.Context)>
+    <b3.k: void h(android.content.Context)>
+    <b3.k: void h(android.content.Context)>
+    <b3.k: void h(android.content.Context)>
+    <b3.k: void h(android.content.Context)>
+    <b3.k: void l(android.content.Context)>
+    <b3.k: void k(android.content.Context)>
+    <p3.y: java.lang.String r(android.content.Context)>
+    <c3.m: void <init>(java.lang.String,java.lang.String)>
+    <c3.m: void <init>(android.content.Context,java.lang.String)>
+    <b3.j0: void g()>
+    <b3.j0: void e()>
+    <b3.j0: boolean c()>
+    <s3.a: void a(java.lang.Throwable,java.lang.Object)>
+    <p3.m$a: void run()>
+    <p3.m: void c(p3.m$c)>
+    <p3.l: void a(p3.l$c,p3.l$b)>
+    <b3.g: void <init>(java.lang.String)>
+    <b3.s: void <init>(java.lang.String)>
+    <p3.a0: void e()>
+    <b3.u: void r(b3.x,p3.r,int,java.net.URL,java.io.OutputStream,boolean)>
+    <b3.u: void r(b3.x,p3.r,int,java.net.URL,java.io.OutputStream,boolean)>
+    <b3.u$g: void a(java.lang.String,java.lang.String)>
+    <b3.u$g: void a(java.lang.String,java.lang.String)>
+    <b3.u$g: void f(java.lang.String,java.lang.Object[])>
+    <b3.u$g: void b(java.lang.String,java.lang.Object[])>
+    <b3.u$g: void b(java.lang.String,java.lang.Object[])>
+    <b3.u$g: void b(java.lang.String,java.lang.Object[])>
+    <b3.u$g: void b(java.lang.String,java.lang.Object[])>
+    <b3.u$g: void b(java.lang.String,java.lang.Object[])>
+    <b3.u$g: void f(java.lang.String,java.lang.Object[])>
+    <b3.u$g: void a(java.lang.String,java.lang.String)>
+    <b3.u: void r(b3.x,p3.r,int,java.net.URL,java.io.OutputStream,boolean)>
+    <b3.u$g: void c(java.lang.String,java.lang.String,java.lang.String)>
+    <b3.u$g: void c(java.lang.String,java.lang.String,java.lang.String)>
+
+Leak 3:
+  Source: $r4 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r3, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r3.<java.io.OutputStream: void write(byte[])>($r5) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <b3.k: void h(android.content.Context)>
+    <b3.k: void h(android.content.Context)>
+    <b3.k: void h(android.content.Context)>
+    <b3.k: void h(android.content.Context)>
+    <b3.k: void h(android.content.Context)>
+    <b3.k: void h(android.content.Context)>
+    <b3.k: void l(android.content.Context)>
+    <b3.k: void k(android.content.Context)>
+    <p3.y: java.lang.String r(android.content.Context)>
+    <c3.m: void <init>(java.lang.String,java.lang.String)>
+    <c3.m: void <init>(android.content.Context,java.lang.String)>
+    <b3.j0: void g()>
+    <b3.j0: void e()>
+    <b3.j0: boolean c()>
+    <s3.a: void a(java.lang.Throwable,java.lang.Object)>
+    <p3.m$a: void run()>
+    <p3.m: void c(p3.m$c)>
+    <p3.l: void a(p3.l$c,p3.l$b)>
+    <b3.g: void <init>(java.lang.String)>
+    <b3.s: void <init>(java.lang.String)>
+    <p3.a0: void e()>
+    <b3.u: void r(b3.x,p3.r,int,java.net.URL,java.io.OutputStream,boolean)>
+    <b3.u: void r(b3.x,p3.r,int,java.net.URL,java.io.OutputStream,boolean)>
+    <b3.u$g: void a(java.lang.String,java.lang.String)>
+    <b3.u$g: void a(java.lang.String,java.lang.String)>
+    <b3.u$g: void f(java.lang.String,java.lang.Object[])>
+    <b3.u$g: void b(java.lang.String,java.lang.Object[])>
+    <b3.u$g: void b(java.lang.String,java.lang.Object[])>
+    <b3.u$g: void b(java.lang.String,java.lang.Object[])>
+    <b3.u$g: void b(java.lang.String,java.lang.Object[])>
+
+Leak 4:
+  Source: $r4 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r3, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r3.<java.io.OutputStream: void write(byte[])>($r5) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <b3.k: void h(android.content.Context)>
+    <b3.k: void h(android.content.Context)>
+    <b3.k: void h(android.content.Context)>
+    <b3.k: void h(android.content.Context)>
+    <b3.k: void h(android.content.Context)>
+    <b3.k: void h(android.content.Context)>
+    <b3.k: void l(android.content.Context)>
+    <b3.k: void k(android.content.Context)>
+    <p3.y: java.lang.String r(android.content.Context)>
+    <c3.m: void <init>(java.lang.String,java.lang.String)>
+    <c3.m: void <init>(android.content.Context,java.lang.String)>
+    <b3.j0: void g()>
+    <b3.j0: void e()>
+    <b3.j0: boolean c()>
+    <b3.j0: void g()>
+    <b3.j0: void k(b3.j0$b)>
+    <b3.j0: void e()>
+    <b3.j0: boolean c()>
+    <q3.b: void a(java.lang.Throwable)>
+    <s3.a: void a(java.lang.Throwable,java.lang.Object)>
+    <b3.j0: void e()>
+    <b3.j0: boolean c()>
+    <s3.a: void a(java.lang.Throwable,java.lang.Object)>
+    <p3.m$b: void run()>
+    <p3.m: void e()>
+    <p3.m: void c(p3.m$c)>
+    <p3.l: void a(p3.l$c,p3.l$b)>
+    <b3.g: void <init>(java.lang.String)>
+    <b3.s: void <init>(java.lang.String)>
+    <p3.a0: void e()>
+    <b3.u: void r(b3.x,p3.r,int,java.net.URL,java.io.OutputStream,boolean)>
+    <b3.u: void r(b3.x,p3.r,int,java.net.URL,java.io.OutputStream,boolean)>
+    <b3.u$g: void a(java.lang.String,java.lang.String)>
+    <b3.u$g: void a(java.lang.String,java.lang.String)>
+    <b3.u$g: void f(java.lang.String,java.lang.Object[])>
+    <b3.u$g: void b(java.lang.String,java.lang.Object[])>
+    <b3.u$g: void b(java.lang.String,java.lang.Object[])>
+    <b3.u$g: void b(java.lang.String,java.lang.Object[])>
+    <b3.u$g: void b(java.lang.String,java.lang.Object[])>
+    <b3.u$g: void b(java.lang.String,java.lang.Object[])>
+    <b3.u$g: void f(java.lang.String,java.lang.Object[])>
+    <b3.u$g: void a(java.lang.String,java.lang.String)>
+    <b3.u: void r(b3.x,p3.r,int,java.net.URL,java.io.OutputStream,boolean)>
+    <b3.u$g: void b(java.lang.String,java.lang.Object[])>
+    <b3.u$g: void b(java.lang.String,java.lang.Object[])>
+
+Leak 5:
+  Source: $r9 = virtualinvoke $r8.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r7, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r5.<java.io.FileOutputStream: void write(byte[])>($r6) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <q3.c: void <init>(java.lang.Throwable,q3.c$a)>
+    <q3.c: void <init>(java.lang.Throwable,q3.c$a)>
+    <q3.c: void <init>(java.lang.Throwable,q3.c$a)>
+    <q3.c: void <init>(java.lang.Throwable,q3.c$a)>
+    <s3.a: void a(java.lang.Throwable,java.lang.Object)>
+    <q3.c: void b()>
+    <q3.c: java.lang.String toString()>
+    <q3.c: java.lang.String toString()>
+    <q3.c: java.lang.String toString()>
+    <q3.c: java.lang.String toString()>
+    <q3.c: void b()>
+    <q3.h: void e(java.lang.String,java.lang.String)>
+    <q3.h: void e(java.lang.String,java.lang.String)>
+
+Leak 6:
+  Source: $r4 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r3, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r4.<java.io.OutputStream: void write(byte[])>($r2) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <b3.k: void h(android.content.Context)>
+    <b3.k: void h(android.content.Context)>
+    <b3.k: void h(android.content.Context)>
+    <b3.k: void h(android.content.Context)>
+    <b3.k: void h(android.content.Context)>
+    <b3.k: void h(android.content.Context)>
+    <b3.k: void l(android.content.Context)>
+    <b3.k: void k(android.content.Context)>
+    <p3.y: java.lang.String r(android.content.Context)>
+    <c3.m: void <init>(java.lang.String,java.lang.String)>
+    <c3.m: void <init>(android.content.Context,java.lang.String)>
+    <b3.j0: void g()>
+    <b3.j0: void e()>
+    <b3.j0: boolean c()>
+    <b3.j0: void g()>
+    <b3.j0: void k(b3.j0$b)>
+    <b3.j0: void e()>
+    <b3.j0: boolean c()>
+    <q3.b: void a(java.lang.Throwable)>
+    <s3.a: void a(java.lang.Throwable,java.lang.Object)>
+    <b3.j0: void e()>
+    <b3.j0: boolean c()>
+    <s3.a: void a(java.lang.Throwable,java.lang.Object)>
+    <p3.m$b: void run()>
+    <p3.m: void e()>
+    <p3.m: void c(p3.m$c)>
+    <p3.l: void a(p3.l$c,p3.l$b)>
+    <b3.g: void <init>(java.lang.String)>
+    <b3.s: void <init>(java.lang.String)>
+    <p3.a0: void e()>
+    <b3.u: void r(b3.x,p3.r,int,java.net.URL,java.io.OutputStream,boolean)>
+    <b3.u: void r(b3.x,p3.r,int,java.net.URL,java.io.OutputStream,boolean)>
+    <b3.u$g: void a(java.lang.String,java.lang.String)>
+    <b3.u$g: void a(java.lang.String,java.lang.String)>
+    <b3.u$g: void f(java.lang.String,java.lang.Object[])>
+    <b3.u$g: void b(java.lang.String,java.lang.Object[])>
+    <b3.u$g: void b(java.lang.String,java.lang.Object[])>
+    <b3.u$g: void b(java.lang.String,java.lang.Object[])>
+    <b3.u$g: void b(java.lang.String,java.lang.Object[])>
+    <b3.u$g: void b(java.lang.String,java.lang.Object[])>
+    <b3.u$g: void f(java.lang.String,java.lang.Object[])>
+    <b3.u$g: void a(java.lang.String,java.lang.String)>
+    <b3.u$g: void h()>
+    <b3.u$g: void h()>
+
+Leak 7:
+  Source: $r4 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r3, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r3.<java.io.OutputStream: void write(byte[])>($r5) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <b3.k: void h(android.content.Context)>
+    <b3.k: void h(android.content.Context)>
+    <b3.k: void h(android.content.Context)>
+    <b3.k: void h(android.content.Context)>
+    <b3.k: void h(android.content.Context)>
+    <b3.k: void h(android.content.Context)>
+    <b3.k: void l(android.content.Context)>
+    <b3.k: void k(android.content.Context)>
+    <p3.y: java.lang.String r(android.content.Context)>
+    <c3.m: void <init>(java.lang.String,java.lang.String)>
+    <c3.m: void <init>(android.content.Context,java.lang.String)>
+    <b3.j0: void g()>
+    <b3.j0: void e()>
+    <b3.j0: boolean c()>
+    <b3.j0: void g()>
+    <b3.j0: void k(b3.j0$b)>
+    <b3.j0: void e()>
+    <b3.j0: boolean c()>
+    <q3.b: void a(java.lang.Throwable)>
+    <s3.a: void a(java.lang.Throwable,java.lang.Object)>
+    <b3.j0: void e()>
+    <b3.j0: boolean c()>
+    <s3.a: void a(java.lang.Throwable,java.lang.Object)>
+    <p3.m$b: void run()>
+    <p3.m: void e()>
+    <p3.m: void c(p3.m$c)>
+    <p3.l: void a(p3.l$c,p3.l$b)>
+    <b3.g: void <init>(java.lang.String)>
+    <b3.s: void <init>(java.lang.String)>
+    <p3.a0: void e()>
+    <b3.u: void r(b3.x,p3.r,int,java.net.URL,java.io.OutputStream,boolean)>
+    <b3.u: void r(b3.x,p3.r,int,java.net.URL,java.io.OutputStream,boolean)>
+    <b3.u$g: void a(java.lang.String,java.lang.String)>
+    <b3.u$g: void a(java.lang.String,java.lang.String)>
+    <b3.u$g: void f(java.lang.String,java.lang.Object[])>
+    <b3.u$g: void b(java.lang.String,java.lang.Object[])>
+    <b3.u$g: void b(java.lang.String,java.lang.Object[])>
+    <b3.u$g: void b(java.lang.String,java.lang.Object[])>
+    <b3.u$g: void b(java.lang.String,java.lang.Object[])>
+    <b3.u$g: void b(java.lang.String,java.lang.Object[])>
+    <b3.u$g: void f(java.lang.String,java.lang.Object[])>
+    <b3.u$g: void a(java.lang.String,java.lang.String)>
+    <b3.u: void r(b3.x,p3.r,int,java.net.URL,java.io.OutputStream,boolean)>
+    <b3.u$g: void b(java.lang.String,java.lang.Object[])>
+    <b3.u$g: void b(java.lang.String,java.lang.Object[])>
+

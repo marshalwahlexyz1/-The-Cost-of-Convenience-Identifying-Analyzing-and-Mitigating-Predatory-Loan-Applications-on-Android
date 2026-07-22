@@ -1,0 +1,230 @@
+APK: com.app.qistbazaar4 (PakistanApproved)
+Leak 1:
+  Source: $i0 = virtualinvoke $r1.<java.io.InputStream: int read(byte[])>($r2) (<java.io.FileInputStream: int read(byte[])>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("DfltImageHeaderParser", $r6) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.bumptech.glide.load.resource.bitmap.RecyclableBufferedInputStream: int fillbuf(java.io.InputStream,byte[])>
+    <com.bumptech.glide.load.resource.bitmap.RecyclableBufferedInputStream: int fillbuf(java.io.InputStream,byte[])>
+    <com.bumptech.glide.load.resource.bitmap.RecyclableBufferedInputStream: int fillbuf(java.io.InputStream,byte[])>
+    <com.bumptech.glide.load.resource.bitmap.RecyclableBufferedInputStream: int read()>
+    <com.bumptech.glide.util.ExceptionCatchingInputStream: int read()>
+    <com.bumptech.glide.util.ExceptionCatchingInputStream: int read()>
+    <com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser$StreamReader: short getUInt8()>
+    <com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser$StreamReader: short getUInt8()>
+    <com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser: int moveToExifSegmentAndGetLength(com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser$Reader)>
+    <com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser$StreamReader: int getUInt16()>
+    <com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser$StreamReader: short getUInt8()>
+    <com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser$StreamReader: short getUInt8()>
+    <com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser$StreamReader: short getUInt8()>
+    <com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser$StreamReader: short getUInt8()>
+    <com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser$StreamReader: int getUInt16()>
+    <com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser$StreamReader: int getUInt16()>
+    <com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser$StreamReader: int getUInt16()>
+    <com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser: int moveToExifSegmentAndGetLength(com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser$Reader)>
+    <com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser: int moveToExifSegmentAndGetLength(com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser$Reader)>
+    <com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser: int getOrientation(com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser$Reader,com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)>
+    <com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser: int getOrientation(com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser$Reader,com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)>
+    <com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser: int getOrientation(com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser$Reader,com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)>
+
+Leak 2:
+  Source: $i0 = virtualinvoke $r1.<java.io.InputStream: int read(byte[])>($r2) (<java.io.FileInputStream: int read(byte[])>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("DfltImageHeaderParser", $r6) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.bumptech.glide.util.ExceptionCatchingInputStream: int read(byte[])>
+    <com.bumptech.glide.util.ExceptionCatchingInputStream: int read(byte[])>
+    <com.bumptech.glide.util.ExceptionCatchingInputStream: int read(byte[])>
+    <com.bumptech.glide.load.resource.bitmap.RecyclableBufferedInputStream: int fillbuf(java.io.InputStream,byte[])>
+    <com.bumptech.glide.load.resource.bitmap.RecyclableBufferedInputStream: int fillbuf(java.io.InputStream,byte[])>
+    <com.bumptech.glide.load.resource.bitmap.RecyclableBufferedInputStream: long skip(long)>
+    <com.bumptech.glide.load.resource.bitmap.RecyclableBufferedInputStream: long skip(long)>
+    <com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser$StreamReader: long skip(long)>
+    <com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser$StreamReader: long skip(long)>
+    <com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser$StreamReader: long skip(long)>
+    <com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser: int moveToExifSegmentAndGetLength(com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser$Reader)>
+    <com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser$StreamReader: int getUInt16()>
+    <com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser$StreamReader: short getUInt8()>
+    <com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser$StreamReader: short getUInt8()>
+    <com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser$StreamReader: short getUInt8()>
+    <com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser$StreamReader: short getUInt8()>
+    <com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser$StreamReader: int getUInt16()>
+    <com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser$StreamReader: int getUInt16()>
+    <com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser$StreamReader: int getUInt16()>
+    <com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser$StreamReader: int getUInt16()>
+    <com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser: int moveToExifSegmentAndGetLength(com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser$Reader)>
+    <com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser: int moveToExifSegmentAndGetLength(com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser$Reader)>
+    <com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser: int getOrientation(com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser$Reader,com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)>
+    <com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser: int getOrientation(com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser$Reader,com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)>
+    <com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser: int getOrientation(com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser$Reader,com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)>
+
+Leak 3:
+  Source: $i0 = virtualinvoke $r1.<java.io.InputStream: int read(byte[])>($r2) (<java.io.FileInputStream: int read(byte[])>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("DfltImageHeaderParser", $r2) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.bumptech.glide.load.resource.bitmap.RecyclableBufferedInputStream: int fillbuf(java.io.InputStream,byte[])>
+    <com.bumptech.glide.load.resource.bitmap.RecyclableBufferedInputStream: int fillbuf(java.io.InputStream,byte[])>
+    <com.bumptech.glide.load.resource.bitmap.RecyclableBufferedInputStream: int fillbuf(java.io.InputStream,byte[])>
+    <com.bumptech.glide.load.resource.bitmap.RecyclableBufferedInputStream: long skip(long)>
+    <com.bumptech.glide.load.resource.bitmap.RecyclableBufferedInputStream: long skip(long)>
+    <com.bumptech.glide.load.resource.bitmap.RecyclableBufferedInputStream: long skip(long)>
+    <com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser$StreamReader: long skip(long)>
+    <com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser$StreamReader: long skip(long)>
+    <com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser: int moveToExifSegmentAndGetLength(com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser$Reader)>
+    <com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser$StreamReader: short getUInt8()>
+    <com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser$StreamReader: short getUInt8()>
+    <com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser$StreamReader: short getUInt8()>
+    <com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser$StreamReader: short getUInt8()>
+    <com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser: int moveToExifSegmentAndGetLength(com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser$Reader)>
+    <com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser: int moveToExifSegmentAndGetLength(com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser$Reader)>
+    <com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser: int moveToExifSegmentAndGetLength(com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser$Reader)>
+    <com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser: int moveToExifSegmentAndGetLength(com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser$Reader)>
+
+Leak 4:
+  Source: $i0 = virtualinvoke $r1.<java.io.InputStream: int read(byte[])>($r2) (<java.io.FileInputStream: int read(byte[])>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("DfltImageHeaderParser", $r2) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.bumptech.glide.util.ExceptionCatchingInputStream: int read(byte[])>
+    <com.bumptech.glide.util.ExceptionCatchingInputStream: int read(byte[])>
+    <com.bumptech.glide.load.resource.bitmap.RecyclableBufferedInputStream: int fillbuf(java.io.InputStream,byte[])>
+    <com.bumptech.glide.load.resource.bitmap.RecyclableBufferedInputStream: int fillbuf(java.io.InputStream,byte[])>
+    <com.bumptech.glide.load.resource.bitmap.RecyclableBufferedInputStream: long skip(long)>
+    <com.bumptech.glide.load.resource.bitmap.RecyclableBufferedInputStream: long skip(long)>
+    <com.bumptech.glide.load.resource.bitmap.RecyclableBufferedInputStream: long skip(long)>
+    <com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser$StreamReader: long skip(long)>
+    <com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser$StreamReader: long skip(long)>
+    <com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser: int moveToExifSegmentAndGetLength(com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser$Reader)>
+    <com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser$StreamReader: short getUInt8()>
+    <com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser$StreamReader: short getUInt8()>
+    <com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser$StreamReader: short getUInt8()>
+    <com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser$StreamReader: short getUInt8()>
+    <com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser: int moveToExifSegmentAndGetLength(com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser$Reader)>
+    <com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser: int moveToExifSegmentAndGetLength(com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser$Reader)>
+    <com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser: int moveToExifSegmentAndGetLength(com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser$Reader)>
+    <com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser: int moveToExifSegmentAndGetLength(com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser$Reader)>
+
+Leak 5:
+  Source: $i0 = virtualinvoke $r1.<java.io.InputStream: int read(byte[])>($r2) (<java.io.FileInputStream: int read(byte[])>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("DfltImageHeaderParser", $r2) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.bumptech.glide.load.resource.bitmap.RecyclableBufferedInputStream: int fillbuf(java.io.InputStream,byte[])>
+    <com.bumptech.glide.load.resource.bitmap.RecyclableBufferedInputStream: int fillbuf(java.io.InputStream,byte[])>
+    <com.bumptech.glide.load.resource.bitmap.RecyclableBufferedInputStream: int fillbuf(java.io.InputStream,byte[])>
+    <com.bumptech.glide.load.resource.bitmap.RecyclableBufferedInputStream: long skip(long)>
+    <com.bumptech.glide.load.resource.bitmap.RecyclableBufferedInputStream: long skip(long)>
+    <com.bumptech.glide.load.resource.bitmap.RecyclableBufferedInputStream: long skip(long)>
+    <com.bumptech.glide.load.resource.bitmap.RecyclableBufferedInputStream: long skip(long)>
+    <com.bumptech.glide.load.resource.bitmap.RecyclableBufferedInputStream: long skip(long)>
+    <com.bumptech.glide.util.ExceptionCatchingInputStream: long skip(long)>
+    <com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser$StreamReader: long skip(long)>
+    <com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser$StreamReader: long skip(long)>
+    <com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser$StreamReader: long skip(long)>
+    <com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser$StreamReader: long skip(long)>
+    <com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser: int moveToExifSegmentAndGetLength(com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser$Reader)>
+    <com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser: int moveToExifSegmentAndGetLength(com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser$Reader)>
+    <com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser: int moveToExifSegmentAndGetLength(com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser$Reader)>
+
+Leak 6:
+  Source: $i0 = virtualinvoke $r1.<java.io.InputStream: int read(byte[])>($r2) (<java.io.FileInputStream: int read(byte[])>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("DfltImageHeaderParser", $r2) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.bumptech.glide.util.ExceptionCatchingInputStream: int read(byte[])>
+    <com.bumptech.glide.util.ExceptionCatchingInputStream: int read(byte[])>
+    <com.bumptech.glide.load.resource.bitmap.RecyclableBufferedInputStream: int fillbuf(java.io.InputStream,byte[])>
+    <com.bumptech.glide.load.resource.bitmap.RecyclableBufferedInputStream: int fillbuf(java.io.InputStream,byte[])>
+    <com.bumptech.glide.load.resource.bitmap.RecyclableBufferedInputStream: long skip(long)>
+    <com.bumptech.glide.load.resource.bitmap.RecyclableBufferedInputStream: long skip(long)>
+    <com.bumptech.glide.load.resource.bitmap.RecyclableBufferedInputStream: long skip(long)>
+    <com.bumptech.glide.load.resource.bitmap.RecyclableBufferedInputStream: long skip(long)>
+    <com.bumptech.glide.load.resource.bitmap.RecyclableBufferedInputStream: long skip(long)>
+    <com.bumptech.glide.util.ExceptionCatchingInputStream: long skip(long)>
+    <com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser$StreamReader: long skip(long)>
+    <com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser$StreamReader: long skip(long)>
+    <com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser$StreamReader: long skip(long)>
+    <com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser$StreamReader: long skip(long)>
+    <com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser: int moveToExifSegmentAndGetLength(com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser$Reader)>
+    <com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser: int moveToExifSegmentAndGetLength(com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser$Reader)>
+    <com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser: int moveToExifSegmentAndGetLength(com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser$Reader)>
+
+Leak 7:
+  Source: $r5 = virtualinvoke $r3.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r4, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("ManifestParser", $r4) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.bumptech.glide.module.ManifestParser: java.util.List parse()>
+    <com.bumptech.glide.module.ManifestParser: java.util.List parse()>
+    <com.bumptech.glide.module.ManifestParser: java.util.List parse()>
+    <com.bumptech.glide.module.ManifestParser: java.util.List parse()>
+    <com.bumptech.glide.module.ManifestParser: java.util.List parse()>
+    <com.bumptech.glide.module.ManifestParser: java.util.List parse()>
+    <com.bumptech.glide.module.ManifestParser: java.util.List parse()>
+    <com.bumptech.glide.module.ManifestParser: java.util.List parse()>
+    <com.bumptech.glide.module.ManifestParser: java.util.List parse()>
+
+Leak 8:
+  Source: $i0 = virtualinvoke $r1.<java.io.InputStream: int read(byte[])>($r2) (<java.io.FileInputStream: int read(byte[])>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("DfltImageHeaderParser", $r3) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.bumptech.glide.load.resource.bitmap.RecyclableBufferedInputStream: int fillbuf(java.io.InputStream,byte[])>
+    <com.bumptech.glide.load.resource.bitmap.RecyclableBufferedInputStream: int fillbuf(java.io.InputStream,byte[])>
+    <com.bumptech.glide.load.resource.bitmap.RecyclableBufferedInputStream: int fillbuf(java.io.InputStream,byte[])>
+    <com.bumptech.glide.load.resource.bitmap.RecyclableBufferedInputStream: int read(byte[],int,int)>
+    <com.bumptech.glide.load.resource.bitmap.RecyclableBufferedInputStream: int read(byte[],int,int)>
+    <com.bumptech.glide.load.resource.bitmap.RecyclableBufferedInputStream: int read(byte[],int,int)>
+    <com.bumptech.glide.load.resource.bitmap.RecyclableBufferedInputStream: int read(byte[],int,int)>
+    <com.bumptech.glide.load.resource.bitmap.RecyclableBufferedInputStream: int read(byte[],int,int)>
+    <com.bumptech.glide.load.resource.bitmap.RecyclableBufferedInputStream: int fillbuf(java.io.InputStream,byte[])>
+    <com.bumptech.glide.load.resource.bitmap.RecyclableBufferedInputStream: int fillbuf(java.io.InputStream,byte[])>
+    <com.bumptech.glide.load.resource.bitmap.RecyclableBufferedInputStream: int fillbuf(java.io.InputStream,byte[])>
+    <com.bumptech.glide.load.resource.bitmap.RecyclableBufferedInputStream: int read()>
+    <com.bumptech.glide.util.ExceptionCatchingInputStream: int read()>
+    <com.bumptech.glide.util.ExceptionCatchingInputStream: int read()>
+    <com.bumptech.glide.util.ExceptionCatchingInputStream: int read()>
+    <com.bumptech.glide.util.ExceptionCatchingInputStream: int read()>
+    <com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser$StreamReader: short getUInt8()>
+    <com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser$StreamReader: short getUInt8()>
+    <com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser: int moveToExifSegmentAndGetLength(com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser$Reader)>
+    <com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser$StreamReader: int getUInt16()>
+    <com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser$StreamReader: short getUInt8()>
+    <com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser$StreamReader: short getUInt8()>
+    <com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser$StreamReader: short getUInt8()>
+    <com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser$StreamReader: short getUInt8()>
+    <com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser$StreamReader: int getUInt16()>
+    <com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser$StreamReader: int getUInt16()>
+    <com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser$StreamReader: int getUInt16()>
+    <com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser: int moveToExifSegmentAndGetLength(com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser$Reader)>
+    <com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser: int moveToExifSegmentAndGetLength(com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser$Reader)>
+    <com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser: int getOrientation(com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser$Reader,com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)>
+    <com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser: int parseExifSegment(com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser$Reader,byte[],int)>
+    <com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser: int parseExifSegment(com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser$Reader,byte[],int)>
+    <com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser: int parseExifSegment(com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser$Reader,byte[],int)>
+
+Leak 9:
+  Source: $i0 = virtualinvoke $r1.<java.io.InputStream: int read(byte[])>($r2) (<java.io.FileInputStream: int read(byte[])>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("DfltImageHeaderParser", $r3) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.bumptech.glide.util.ExceptionCatchingInputStream: int read(byte[])>
+    <com.bumptech.glide.util.ExceptionCatchingInputStream: int read(byte[])>
+    <com.bumptech.glide.util.ExceptionCatchingInputStream: int read(byte[])>
+    <com.bumptech.glide.load.resource.bitmap.RecyclableBufferedInputStream: int fillbuf(java.io.InputStream,byte[])>
+    <com.bumptech.glide.load.resource.bitmap.RecyclableBufferedInputStream: int fillbuf(java.io.InputStream,byte[])>
+    <com.bumptech.glide.load.resource.bitmap.RecyclableBufferedInputStream: int read()>
+    <com.bumptech.glide.util.ExceptionCatchingInputStream: int read()>
+    <com.bumptech.glide.util.ExceptionCatchingInputStream: int read()>
+    <com.bumptech.glide.util.ExceptionCatchingInputStream: int read()>
+    <com.bumptech.glide.util.ExceptionCatchingInputStream: int read()>
+    <com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser$StreamReader: short getUInt8()>
+    <com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser$StreamReader: short getUInt8()>
+    <com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser: int moveToExifSegmentAndGetLength(com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser$Reader)>
+    <com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser$StreamReader: int getUInt16()>
+    <com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser$StreamReader: short getUInt8()>
+    <com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser$StreamReader: short getUInt8()>
+    <com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser$StreamReader: short getUInt8()>
+    <com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser$StreamReader: short getUInt8()>
+    <com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser$StreamReader: int getUInt16()>
+    <com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser$StreamReader: int getUInt16()>
+    <com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser$StreamReader: int getUInt16()>
+    <com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser: int moveToExifSegmentAndGetLength(com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser$Reader)>
+    <com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser: int moveToExifSegmentAndGetLength(com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser$Reader)>
+    <com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser: int getOrientation(com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser$Reader,com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)>
+    <com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser: int parseExifSegment(com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser$Reader,byte[],int)>
+    <com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser: int parseExifSegment(com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser$Reader,byte[],int)>
+    <com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser: int parseExifSegment(com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser$Reader,byte[],int)>
+

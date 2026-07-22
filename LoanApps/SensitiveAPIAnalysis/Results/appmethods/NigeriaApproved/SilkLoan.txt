@@ -1,0 +1,21 @@
+APK: SilkLoan (NigeriaApproved)
+Leak 1:
+  Source: $r8 = virtualinvoke $r7.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r5, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r5.<java.io.FileOutputStream: void write(byte[])>($r7) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <k2.b$a: k2.b b(java.lang.Throwable,k2.b$b)>
+    <k2.b$a: k2.b b(java.lang.Throwable,k2.b$b)>
+    <k2.b$a: k2.b b(java.lang.Throwable,k2.b$b)>
+    <k2.b$a: k2.b b(java.lang.Throwable,k2.b$b)>
+    <n2.a: void a(java.lang.Object,java.lang.Throwable)>
+    <k2.b: void b()>
+    <k2.b: java.lang.String toString()>
+    <k2.b: java.lang.String toString()>
+    <k2.b: java.lang.String toString()>
+    <k2.b: java.lang.String toString()>
+    <k2.b: java.lang.String toString()>
+    <k2.b: java.lang.String toString()>
+    <k2.b: void b()>
+    <k2.f: void g(java.lang.String,java.lang.String)>
+    <k2.f: void g(java.lang.String,java.lang.String)>
+

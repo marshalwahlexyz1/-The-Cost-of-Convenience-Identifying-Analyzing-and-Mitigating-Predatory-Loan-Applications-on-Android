@@ -1,0 +1,452 @@
+APK: PearlCash (NigeriaApproved)
+Leak 1:
+  Source: $r8 = virtualinvoke $r6.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r7, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("AppsFlyer_6.12.1", $r2) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.appsflyer.internal.AFd1gSDK: void values(com.appsflyer.internal.AFa1qSDK)>
+    <com.appsflyer.internal.AFd1gSDK: void values(com.appsflyer.internal.AFa1qSDK)>
+    <com.appsflyer.internal.AFd1gSDK: void values(com.appsflyer.internal.AFa1qSDK)>
+    <com.appsflyer.internal.AFa1qSDK: com.appsflyer.internal.AFa1qSDK AFInAppEventParameterName(java.lang.String,java.lang.Object)>
+    <com.appsflyer.internal.AFa1qSDK: com.appsflyer.internal.AFa1qSDK AFInAppEventParameterName(java.lang.String,java.lang.Object)>
+    <com.appsflyer.internal.AFa1qSDK: com.appsflyer.internal.AFa1qSDK AFInAppEventParameterName(java.lang.String,java.lang.Object)>
+    <com.appsflyer.internal.AFd1gSDK: void values(com.appsflyer.internal.AFa1qSDK)>
+    <com.appsflyer.internal.AFa1qSDK: com.appsflyer.internal.AFa1qSDK AFInAppEventParameterName(java.lang.String,java.lang.Object)>
+    <com.appsflyer.internal.AFa1qSDK: com.appsflyer.internal.AFa1qSDK AFInAppEventParameterName(java.lang.String,java.lang.Object)>
+    <com.appsflyer.internal.AFa1qSDK: com.appsflyer.internal.AFa1qSDK AFInAppEventParameterName(java.lang.String,java.lang.Object)>
+    <com.appsflyer.internal.AFd1gSDK: void values(com.appsflyer.internal.AFa1qSDK)>
+    <com.appsflyer.internal.AFd1gSDK: void values(com.appsflyer.internal.AFa1qSDK)>
+    <com.appsflyer.internal.AFd1gSDK: void values(com.appsflyer.internal.AFa1qSDK)>
+    <com.appsflyer.internal.AFd1eSDK: com.appsflyer.internal.AFc1nSDK AFKeystoreWrapper(java.lang.String)>
+    <com.appsflyer.internal.AFd1eSDK: com.appsflyer.internal.AFc1nSDK AFKeystoreWrapper(java.lang.String)>
+    <com.appsflyer.internal.AFd1eSDK: com.appsflyer.internal.AFc1nSDK AFKeystoreWrapper(java.lang.String)>
+    <com.appsflyer.internal.AFc1pSDK: void AFKeystoreWrapper(java.lang.String)>
+    <com.appsflyer.internal.AFc1pSDK: void AFKeystoreWrapper(java.lang.String)>
+    <com.appsflyer.AFLogger: void afInfoLog(java.lang.String)>
+    <com.appsflyer.AFLogger: void afInfoLog(java.lang.String,boolean)>
+    <com.appsflyer.AFLogger: java.lang.String AFKeystoreWrapper(java.lang.String,boolean)>
+    <com.appsflyer.AFLogger: void afInfoLog(java.lang.String,boolean)>
+
+Leak 2:
+  Source: $r7 = virtualinvoke $r5.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r6, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("AppsFlyer_6.12.1", $r2) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.appsflyer.internal.AFb1cSDK: java.lang.String valueOf(java.lang.String)>
+    <com.appsflyer.internal.AFb1cSDK: java.lang.String valueOf(java.lang.String)>
+    <com.appsflyer.internal.AFb1cSDK: java.lang.String valueOf(java.lang.String)>
+    <com.appsflyer.internal.AFb1cSDK: java.lang.String valueOf(java.lang.String)>
+    <com.appsflyer.internal.AFb1cSDK: java.lang.String valueOf(java.lang.String)>
+    <com.appsflyer.internal.AFb1cSDK: java.lang.String valueOf(java.lang.String)>
+    <com.appsflyer.internal.AFb1cSDK: java.lang.String valueOf(java.lang.String)>
+    <com.appsflyer.internal.AFb1cSDK: java.lang.String AFKeystoreWrapper()>
+    <com.appsflyer.internal.AFd1gSDK: void values(com.appsflyer.internal.AFa1qSDK)>
+    <com.appsflyer.internal.AFa1qSDK: com.appsflyer.internal.AFa1qSDK AFInAppEventParameterName(java.lang.String,java.lang.Object)>
+    <com.appsflyer.internal.AFa1qSDK: com.appsflyer.internal.AFa1qSDK AFInAppEventParameterName(java.lang.String,java.lang.Object)>
+    <com.appsflyer.internal.AFa1qSDK: com.appsflyer.internal.AFa1qSDK AFInAppEventParameterName(java.lang.String,java.lang.Object)>
+    <com.appsflyer.internal.AFd1gSDK: void values(com.appsflyer.internal.AFa1qSDK)>
+    <com.appsflyer.internal.AFa1qSDK: com.appsflyer.internal.AFa1qSDK AFInAppEventParameterName(java.lang.String,java.lang.Object)>
+    <com.appsflyer.internal.AFa1qSDK: com.appsflyer.internal.AFa1qSDK AFInAppEventParameterName(java.lang.String,java.lang.Object)>
+    <com.appsflyer.internal.AFa1qSDK: com.appsflyer.internal.AFa1qSDK AFInAppEventParameterName(java.lang.String,java.lang.Object)>
+    <com.appsflyer.internal.AFd1gSDK: void values(com.appsflyer.internal.AFa1qSDK)>
+    <com.appsflyer.internal.AFd1gSDK: void values(com.appsflyer.internal.AFa1qSDK)>
+    <com.appsflyer.internal.AFd1gSDK: void values(com.appsflyer.internal.AFa1qSDK)>
+    <com.appsflyer.internal.AFd1eSDK: com.appsflyer.internal.AFc1nSDK AFKeystoreWrapper(java.lang.String)>
+    <com.appsflyer.internal.AFd1eSDK: com.appsflyer.internal.AFc1nSDK AFKeystoreWrapper(java.lang.String)>
+    <com.appsflyer.internal.AFd1eSDK: com.appsflyer.internal.AFc1nSDK AFKeystoreWrapper(java.lang.String)>
+    <com.appsflyer.internal.AFc1pSDK: void AFKeystoreWrapper(java.lang.String)>
+    <com.appsflyer.internal.AFc1pSDK: void AFKeystoreWrapper(java.lang.String)>
+    <com.appsflyer.AFLogger: void afInfoLog(java.lang.String)>
+    <com.appsflyer.AFLogger: void afInfoLog(java.lang.String,boolean)>
+    <com.appsflyer.AFLogger: java.lang.String AFKeystoreWrapper(java.lang.String,boolean)>
+    <com.appsflyer.AFLogger: void afInfoLog(java.lang.String,boolean)>
+
+Leak 3:
+  Source: $r3 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r1, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r0.<java.io.Writer: void write(java.lang.String)>($r3) (<java.io.BufferedWriter: void write(java.lang.String)>)
+  Methods:
+    <com.blankj.utilcode.util.b: int b()>
+    <com.blankj.utilcode.util.b: int b()>
+    <com.blankj.utilcode.util.b: int b()>
+    <com.blankj.utilcode.util.p$a: java.lang.String toString()>
+    <com.blankj.utilcode.util.p$a: java.lang.String toString()>
+    <com.blankj.utilcode.util.p$a: java.lang.String toString()>
+    <com.blankj.utilcode.util.e: void f(java.lang.String,java.lang.String)>
+    <v1.c: boolean c(java.io.File,java.lang.String,boolean)>
+
+Leak 4:
+  Source: $r3 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r1, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r0.<java.io.Writer: void write(java.lang.String)>($r3) (<java.io.BufferedWriter: void write(java.lang.String)>)
+  Methods:
+    <com.blankj.utilcode.util.b: java.lang.String c()>
+    <com.blankj.utilcode.util.b: java.lang.String c()>
+    <com.blankj.utilcode.util.b: java.lang.String c()>
+    <com.blankj.utilcode.util.p$a: java.lang.String toString()>
+    <com.blankj.utilcode.util.p$a: java.lang.String toString()>
+    <com.blankj.utilcode.util.p$a: java.lang.String toString()>
+    <com.blankj.utilcode.util.e: void f(java.lang.String,java.lang.String)>
+    <v1.c: boolean c(java.io.File,java.lang.String,boolean)>
+
+Leak 5:
+  Source: $r3 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r1, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r0.<java.io.Writer: void write(java.lang.String)>($r3) (<java.io.OutputStreamWriter: void write(java.lang.String)>)
+  Methods:
+    <com.blankj.utilcode.util.b: int b()>
+    <com.blankj.utilcode.util.b: int b()>
+    <com.blankj.utilcode.util.b: int b()>
+    <com.blankj.utilcode.util.p$a: java.lang.String toString()>
+    <com.blankj.utilcode.util.p$a: java.lang.String toString()>
+    <com.blankj.utilcode.util.p$a: java.lang.String toString()>
+    <com.blankj.utilcode.util.e: void f(java.lang.String,java.lang.String)>
+    <v1.c: boolean c(java.io.File,java.lang.String,boolean)>
+
+Leak 6:
+  Source: $r3 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r1, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r0.<java.io.Writer: void write(java.lang.String)>($r3) (<java.io.OutputStreamWriter: void write(java.lang.String)>)
+  Methods:
+    <com.blankj.utilcode.util.b: java.lang.String c()>
+    <com.blankj.utilcode.util.b: java.lang.String c()>
+    <com.blankj.utilcode.util.b: java.lang.String c()>
+    <com.blankj.utilcode.util.p$a: java.lang.String toString()>
+    <com.blankj.utilcode.util.p$a: java.lang.String toString()>
+    <com.blankj.utilcode.util.p$a: java.lang.String toString()>
+    <com.blankj.utilcode.util.e: void f(java.lang.String,java.lang.String)>
+    <v1.c: boolean c(java.io.File,java.lang.String,boolean)>
+
+Leak 7:
+  Source: $r10 = virtualinvoke $r9.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r7, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r5.<java.io.FileOutputStream: void write(byte[])>($r7) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <m2.b: void <init>(java.lang.String,java.lang.String)>
+    <m2.b: void <init>(java.lang.String,java.lang.String)>
+    <m2.b: void <init>(java.lang.String,java.lang.String)>
+    <m2.b: void <init>(java.lang.String,java.lang.String)>
+    <n2.a: void a(android.app.ActivityManager)>
+    <m2.b: void c()>
+    <m2.b: java.lang.String toString()>
+    <m2.b: java.lang.String toString()>
+    <m2.b: java.lang.String toString()>
+    <m2.b: java.lang.String toString()>
+    <m2.b: java.lang.String toString()>
+    <m2.b: void c()>
+    <m2.d: void h(java.lang.String,java.lang.String)>
+    <m2.d: void h(java.lang.String,java.lang.String)>
+
+Leak 8:
+  Source: $r9 = virtualinvoke $r8.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r6, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r5.<java.io.FileOutputStream: void write(byte[])>($r7) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <m2.b: void <init>(java.lang.Throwable,m2.b$a)>
+    <m2.b: void <init>(java.lang.Throwable,m2.b$a)>
+    <m2.b: void <init>(java.lang.Throwable,m2.b$a)>
+    <m2.b: void <init>(java.lang.Throwable,m2.b$a)>
+    <p2.a: void a(java.lang.Object,java.lang.Throwable)>
+    <m2.b: void c()>
+    <m2.b: java.lang.String toString()>
+    <m2.b: java.lang.String toString()>
+    <m2.b: java.lang.String toString()>
+    <m2.b: java.lang.String toString()>
+    <m2.b: java.lang.String toString()>
+    <m2.b: void c()>
+    <m2.d: void h(java.lang.String,java.lang.String)>
+    <m2.d: void h(java.lang.String,java.lang.String)>
+
+Leak 9:
+  Source: $r8 = virtualinvoke $r6.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r7, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("AppsFlyer_6.12.1", $r2) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.appsflyer.internal.AFd1gSDK: void values(com.appsflyer.internal.AFa1qSDK)>
+    <com.appsflyer.internal.AFd1gSDK: void values(com.appsflyer.internal.AFa1qSDK)>
+    <com.appsflyer.internal.AFd1gSDK: void values(com.appsflyer.internal.AFa1qSDK)>
+    <com.appsflyer.internal.AFa1qSDK: com.appsflyer.internal.AFa1qSDK AFInAppEventParameterName(java.lang.String,java.lang.Object)>
+    <com.appsflyer.internal.AFa1qSDK: com.appsflyer.internal.AFa1qSDK AFInAppEventParameterName(java.lang.String,java.lang.Object)>
+    <com.appsflyer.internal.AFa1qSDK: com.appsflyer.internal.AFa1qSDK AFInAppEventParameterName(java.lang.String,java.lang.Object)>
+    <com.appsflyer.internal.AFd1gSDK: void values(com.appsflyer.internal.AFa1qSDK)>
+    <com.appsflyer.internal.AFa1qSDK: com.appsflyer.internal.AFa1qSDK AFInAppEventParameterName(java.lang.String,java.lang.Object)>
+    <com.appsflyer.internal.AFd1gSDK: void values(com.appsflyer.internal.AFa1qSDK)>
+    <com.appsflyer.internal.AFa1qSDK: com.appsflyer.internal.AFa1qSDK AFInAppEventParameterName(java.lang.String,java.lang.Object)>
+    <com.appsflyer.internal.AFa1qSDK: com.appsflyer.internal.AFa1qSDK AFInAppEventParameterName(java.lang.String,java.lang.Object)>
+    <com.appsflyer.internal.AFa1qSDK: com.appsflyer.internal.AFa1qSDK AFInAppEventParameterName(java.lang.String,java.lang.Object)>
+    <com.appsflyer.internal.AFd1gSDK: void values(com.appsflyer.internal.AFa1qSDK)>
+    <com.appsflyer.internal.AFd1gSDK: void values(com.appsflyer.internal.AFa1qSDK)>
+    <com.appsflyer.internal.AFd1eSDK: com.appsflyer.internal.AFc1nSDK AFKeystoreWrapper(java.lang.String)>
+    <com.appsflyer.internal.AFd1nSDK: void AFInAppEventParameterName()>
+    <com.appsflyer.internal.AFd1tSDK$5: void run()>
+    <com.appsflyer.internal.AFd1tSDK$5: void run()>
+    <com.appsflyer.internal.AFd1tSDK$5: void run()>
+    <com.appsflyer.internal.AFd1tSDK$5: void run()>
+    <com.appsflyer.internal.AFd1tSDK$5: void run()>
+    <com.appsflyer.AFLogger: void afDebugLog(java.lang.String)>
+    <com.appsflyer.AFLogger: java.lang.String AFKeystoreWrapper(java.lang.String,boolean)>
+    <com.appsflyer.AFLogger: void afDebugLog(java.lang.String)>
+
+Leak 10:
+  Source: $r7 = virtualinvoke $r5.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r6, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("AppsFlyer_6.12.1", $r2) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.appsflyer.internal.AFb1cSDK: java.lang.String valueOf(java.lang.String)>
+    <com.appsflyer.internal.AFb1cSDK: java.lang.String valueOf(java.lang.String)>
+    <com.appsflyer.internal.AFb1cSDK: java.lang.String valueOf(java.lang.String)>
+    <com.appsflyer.internal.AFb1cSDK: java.lang.String valueOf(java.lang.String)>
+    <com.appsflyer.internal.AFb1cSDK: java.lang.String valueOf(java.lang.String)>
+    <com.appsflyer.internal.AFb1cSDK: java.lang.String valueOf(java.lang.String)>
+    <com.appsflyer.internal.AFb1cSDK: java.lang.String valueOf(java.lang.String)>
+    <com.appsflyer.internal.AFe1uSDK: java.lang.String afDebugLog()>
+    <com.appsflyer.internal.AFe1uSDK: java.io.File AFInAppEventType(java.lang.String)>
+    <kotlin.text.o: java.lang.CharSequence u(java.lang.CharSequence)>
+    <kotlin.text.o: java.lang.CharSequence u(java.lang.CharSequence)>
+    <com.appsflyer.internal.AFe1uSDK: java.io.File AFInAppEventType(java.lang.String)>
+    <com.appsflyer.internal.AFe1uSDK: java.io.File AFInAppEventType(java.lang.String)>
+    <com.appsflyer.internal.AFe1uSDK: java.io.File AFInAppEventType(java.lang.String)>
+    <com.appsflyer.internal.AFe1uSDK: java.lang.String afDebugLog()>
+    <com.appsflyer.internal.AFe1uSDK: java.lang.String AFInAppEventType(java.io.File,java.lang.String)>
+    <com.appsflyer.internal.AFe1uSDK: java.lang.String AFInAppEventType(java.io.File,java.lang.String)>
+    <com.appsflyer.internal.AFe1uSDK: java.lang.String AFInAppEventType(java.io.File,java.lang.String)>
+    <com.appsflyer.internal.AFe1uSDK: java.lang.String AFInAppEventType(java.io.File,java.lang.String)>
+    <com.appsflyer.AFLogger: void afDebugLog(java.lang.String)>
+    <com.appsflyer.AFLogger: java.lang.String AFKeystoreWrapper(java.lang.String,boolean)>
+    <com.appsflyer.AFLogger: void afDebugLog(java.lang.String)>
+
+Leak 11:
+  Source: $r7 = virtualinvoke $r5.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r6, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: $r19 = virtualinvoke $r9.<java.net.URLConnection: java.io.OutputStream getOutputStream()>() (<java.net.HttpURLConnection: java.io.OutputStream getOutputStream()>)
+  Methods:
+    <com.appsflyer.internal.AFb1cSDK: java.lang.String valueOf(java.lang.String)>
+    <com.appsflyer.internal.AFb1cSDK: java.lang.String valueOf(java.lang.String)>
+    <com.appsflyer.internal.AFb1cSDK: java.lang.String valueOf(java.lang.String)>
+    <com.appsflyer.internal.AFb1cSDK: java.lang.String valueOf(java.lang.String)>
+    <com.appsflyer.internal.AFb1cSDK: java.lang.String valueOf(java.lang.String)>
+    <com.appsflyer.internal.AFb1cSDK: java.lang.String valueOf(java.lang.String)>
+    <com.appsflyer.internal.AFb1cSDK: java.lang.String valueOf(java.lang.String)>
+    <com.appsflyer.internal.AFb1cSDK: java.lang.String AFKeystoreWrapper()>
+    <com.appsflyer.internal.AFc1cSDK$2: java.lang.String valueOf()>
+    <com.appsflyer.internal.AFa1dSDK: java.lang.String values(com.appsflyer.internal.AFb1fSDK,java.lang.String)>
+    <com.appsflyer.internal.AFc1cSDK$2: java.lang.String valueOf()>
+    <com.appsflyer.internal.AFc1cSDK$2: java.lang.String valueOf()>
+    <com.appsflyer.internal.AFc1cSDK$2: java.lang.String valueOf()>
+    <kotlin.text.o: java.lang.CharSequence u(java.lang.CharSequence)>
+    <kotlin.text.o: java.lang.CharSequence u(java.lang.CharSequence)>
+    <com.appsflyer.internal.AFc1cSDK$2: java.lang.String valueOf()>
+    <com.appsflyer.internal.AFc1cSDK$2: java.lang.String valueOf()>
+    <com.appsflyer.internal.AFc1cSDK$2: java.lang.Object invoke()>
+    <c4.i: java.lang.Object getValue()>
+    <c4.i: java.lang.Object getValue()>
+    <com.appsflyer.internal.AFc1cSDK: java.lang.String valueOf()>
+    <com.appsflyer.internal.AFc1cSDK: java.lang.String valueOf()>
+    <com.appsflyer.internal.AFa1dSDK: java.lang.String getHostPrefix()>
+    <com.appsflyer.internal.AFc1rSDK: boolean AFInAppEventType()>
+    <com.appsflyer.internal.AFc1rSDK: boolean AFInAppEventType()>
+    <com.appsflyer.internal.AFc1rSDK: boolean AFInAppEventType()>
+    <com.appsflyer.internal.AFc1rSDK: boolean AFInAppEventType()>
+    <com.appsflyer.internal.AFc1rSDK: boolean AFInAppEventType()>
+    <com.appsflyer.internal.AFc1rSDK: boolean AFInAppEventType()>
+
+Leak 12:
+  Source: $r7 = virtualinvoke $r5.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r6, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r20.<java.io.OutputStream: void write(byte[])>($r12) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.appsflyer.internal.AFb1cSDK: java.lang.String valueOf(java.lang.String)>
+    <com.appsflyer.internal.AFb1cSDK: java.lang.String valueOf(java.lang.String)>
+    <com.appsflyer.internal.AFb1cSDK: java.lang.String valueOf(java.lang.String)>
+    <com.appsflyer.internal.AFb1cSDK: java.lang.String valueOf(java.lang.String)>
+    <com.appsflyer.internal.AFb1cSDK: java.lang.String valueOf(java.lang.String)>
+    <com.appsflyer.internal.AFb1cSDK: java.lang.String valueOf(java.lang.String)>
+    <com.appsflyer.internal.AFb1cSDK: java.lang.String valueOf(java.lang.String)>
+    <com.appsflyer.internal.AFb1cSDK: java.lang.String AFKeystoreWrapper()>
+    <com.appsflyer.internal.AFc1cSDK$2: java.lang.String valueOf()>
+    <com.appsflyer.internal.AFa1dSDK: java.lang.String values(com.appsflyer.internal.AFb1fSDK,java.lang.String)>
+    <com.appsflyer.internal.AFc1cSDK$2: java.lang.String valueOf()>
+    <com.appsflyer.internal.AFc1cSDK$2: java.lang.String valueOf()>
+    <com.appsflyer.internal.AFc1cSDK$2: java.lang.String valueOf()>
+    <kotlin.text.o: java.lang.CharSequence u(java.lang.CharSequence)>
+    <kotlin.text.o: java.lang.CharSequence u(java.lang.CharSequence)>
+    <com.appsflyer.internal.AFc1cSDK$2: java.lang.String valueOf()>
+    <com.appsflyer.internal.AFc1cSDK$2: java.lang.String valueOf()>
+    <com.appsflyer.internal.AFc1cSDK$2: java.lang.Object invoke()>
+    <c4.i: java.lang.Object getValue()>
+    <c4.i: java.lang.Object getValue()>
+    <com.appsflyer.internal.AFc1cSDK: java.lang.String valueOf()>
+    <com.appsflyer.internal.AFc1cSDK: java.lang.String valueOf()>
+    <com.appsflyer.internal.AFa1dSDK: java.lang.String getHostPrefix()>
+    <com.appsflyer.internal.AFc1rSDK: boolean AFInAppEventType()>
+    <com.appsflyer.internal.AFc1rSDK: boolean AFInAppEventType()>
+    <com.appsflyer.internal.AFc1rSDK: boolean AFInAppEventType()>
+    <com.appsflyer.internal.AFc1rSDK: boolean AFInAppEventType()>
+    <com.appsflyer.internal.AFc1rSDK: boolean AFInAppEventType()>
+    <com.appsflyer.internal.AFc1rSDK: boolean AFInAppEventType()>
+    <com.appsflyer.internal.AFc1rSDK: boolean AFInAppEventType()>
+    <com.appsflyer.internal.AFc1rSDK: boolean AFInAppEventType()>
+
+Leak 13:
+  Source: $r23 = virtualinvoke $r22.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r10, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("AppsFlyer_6.12.1", $r7) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.appsflyer.internal.AFa1dSDK: java.util.Map values(com.appsflyer.internal.AFa1qSDK)>
+    <com.appsflyer.internal.AFa1dSDK: java.util.Map values(com.appsflyer.internal.AFa1qSDK)>
+    <com.appsflyer.internal.AFa1dSDK: java.util.Map values(com.appsflyer.internal.AFa1qSDK)>
+    <com.appsflyer.internal.AFa1dSDK: java.util.Map values(com.appsflyer.internal.AFa1qSDK)>
+    <com.appsflyer.internal.AFa1dSDK: java.util.Map values(com.appsflyer.internal.AFa1qSDK)>
+    <com.appsflyer.internal.AFb1zSDK: java.lang.String values(java.util.Map)>
+    <com.appsflyer.internal.AFb1zSDK: java.lang.String values(java.util.Map)>
+    <com.appsflyer.internal.AFb1zSDK: java.lang.String values(java.util.Map)>
+    <com.appsflyer.internal.AFb1zSDK: java.lang.String values(java.util.Map)>
+    <com.appsflyer.internal.AFb1zSDK: java.lang.String values(java.util.Map)>
+    <com.appsflyer.internal.AFb1zSDK: java.lang.String values(java.util.Map)>
+    <com.appsflyer.internal.AFb1zSDK: java.lang.String values(java.lang.String)>
+    <com.appsflyer.internal.AFb1zSDK: java.lang.String values(java.lang.String)>
+    <com.appsflyer.internal.AFb1zSDK: java.lang.String values(java.lang.String)>
+    <com.appsflyer.internal.AFb1zSDK: java.lang.String values(java.lang.String)>
+    <com.appsflyer.AFLogger: void afErrorLog(java.lang.String,java.lang.Throwable)>
+    <com.appsflyer.AFLogger: void afErrorLog(java.lang.String,java.lang.Throwable,boolean,boolean,boolean)>
+    <com.appsflyer.AFLogger: java.lang.String AFKeystoreWrapper(java.lang.String,boolean)>
+    <com.appsflyer.AFLogger: void afErrorLog(java.lang.String,java.lang.Throwable,boolean,boolean,boolean)>
+
+Leak 14:
+  Source: $r3 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r1, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("AppsFlyer_6.12.1", $r7) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.appsflyer.internal.AFa1cSDK: java.lang.String AFInAppEventParameterName(android.content.Context,java.lang.String)>
+    <com.appsflyer.internal.AFa1cSDK: java.lang.String AFInAppEventParameterName(android.content.Context,java.lang.String)>
+    <com.appsflyer.internal.AFa1cSDK: java.lang.String AFInAppEventParameterName(android.content.Context,java.lang.String)>
+    <com.appsflyer.internal.AFa1dSDK: java.util.Map values(com.appsflyer.internal.AFa1qSDK)>
+    <com.appsflyer.internal.AFa1dSDK: java.util.Map values(com.appsflyer.internal.AFa1qSDK)>
+    <com.appsflyer.internal.AFb1zSDK: java.lang.String values(java.util.Map)>
+    <com.appsflyer.internal.AFb1zSDK: java.lang.String values(java.util.Map)>
+    <com.appsflyer.internal.AFb1zSDK: java.lang.String values(java.util.Map)>
+    <com.appsflyer.internal.AFb1zSDK: java.lang.String values(java.util.Map)>
+    <com.appsflyer.internal.AFb1zSDK: java.lang.String values(java.util.Map)>
+    <com.appsflyer.internal.AFb1zSDK: java.lang.String values(java.util.Map)>
+    <com.appsflyer.internal.AFb1zSDK: java.lang.String values(java.lang.String)>
+    <com.appsflyer.internal.AFb1zSDK: java.lang.String values(java.lang.String)>
+    <com.appsflyer.internal.AFb1zSDK: java.lang.String values(java.lang.String)>
+    <com.appsflyer.internal.AFb1zSDK: java.lang.String values(java.lang.String)>
+    <com.appsflyer.AFLogger: void afErrorLog(java.lang.String,java.lang.Throwable)>
+    <com.appsflyer.AFLogger: void afErrorLog(java.lang.String,java.lang.Throwable,boolean,boolean,boolean)>
+    <com.appsflyer.AFLogger: java.lang.String AFKeystoreWrapper(java.lang.String,boolean)>
+    <com.appsflyer.AFLogger: void afErrorLog(java.lang.String,java.lang.Throwable,boolean,boolean,boolean)>
+
+Leak 15:
+  Source: $r8 = virtualinvoke $r6.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r7, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("AppsFlyer_6.12.1", $r7) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.appsflyer.internal.AFd1gSDK: void values(com.appsflyer.internal.AFa1qSDK)>
+    <com.appsflyer.internal.AFd1gSDK: void values(com.appsflyer.internal.AFa1qSDK)>
+    <com.appsflyer.internal.AFd1gSDK: void values(com.appsflyer.internal.AFa1qSDK)>
+    <com.appsflyer.internal.AFd1gSDK: void values(com.appsflyer.internal.AFa1qSDK)>
+    <com.appsflyer.internal.AFa1qSDK: com.appsflyer.internal.AFa1qSDK AFInAppEventParameterName(java.lang.String,java.lang.Object)>
+    <com.appsflyer.internal.AFa1qSDK: com.appsflyer.internal.AFa1qSDK AFInAppEventParameterName(java.lang.String,java.lang.Object)>
+    <com.appsflyer.internal.AFa1qSDK: com.appsflyer.internal.AFa1qSDK AFInAppEventParameterName(java.lang.String,java.lang.Object)>
+    <com.appsflyer.internal.AFd1gSDK: void values(com.appsflyer.internal.AFa1qSDK)>
+    <com.appsflyer.internal.AFd1eSDK: void values(com.appsflyer.internal.AFa1qSDK)>
+    <com.appsflyer.internal.AFa1qSDK: com.appsflyer.internal.AFa1qSDK AFInAppEventParameterName(java.lang.String,java.lang.Object)>
+    <com.appsflyer.internal.AFd1eSDK: void values(com.appsflyer.internal.AFa1qSDK)>
+    <com.appsflyer.internal.AFa1qSDK: java.util.Map AFInAppEventType()>
+    <com.appsflyer.internal.AFd1eSDK: void values(com.appsflyer.internal.AFa1qSDK)>
+    <com.appsflyer.internal.AFa1qSDK: java.util.Map AFInAppEventType()>
+    <com.appsflyer.internal.AFa1qSDK: java.util.Map AFInAppEventType()>
+    <com.appsflyer.internal.AFd1eSDK: void values(com.appsflyer.internal.AFa1qSDK)>
+    <com.appsflyer.internal.AFb1zSDK: java.lang.String AFKeystoreWrapper(java.util.Map)>
+    <com.appsflyer.internal.AFb1zSDK: java.lang.String AFKeystoreWrapper(java.util.Map)>
+    <com.appsflyer.internal.AFb1zSDK: java.lang.String AFKeystoreWrapper(java.util.Map)>
+    <com.appsflyer.internal.AFb1zSDK: java.lang.String AFKeystoreWrapper(java.util.Map)>
+    <com.appsflyer.internal.AFb1zSDK: java.lang.String AFKeystoreWrapper(java.util.Map)>
+    <com.appsflyer.internal.AFb1zSDK: java.lang.String AFKeystoreWrapper(java.util.Map)>
+    <com.appsflyer.internal.AFb1zSDK: java.lang.String AFKeystoreWrapper(java.util.Map)>
+    <com.appsflyer.internal.AFb1zSDK: java.lang.String AFKeystoreWrapper(java.util.Map)>
+    <q.h: java.lang.StringBuilder a(java.lang.String)>
+    <q.h: java.lang.StringBuilder a(java.lang.String)>
+    <com.appsflyer.internal.AFb1zSDK: java.lang.String AFKeystoreWrapper(java.util.Map)>
+    <com.appsflyer.internal.AFb1zSDK: java.lang.String AFKeystoreWrapper(java.util.Map)>
+    <com.appsflyer.internal.AFb1zSDK: java.lang.String AFKeystoreWrapper(java.lang.String)>
+    <com.appsflyer.internal.AFb1zSDK: java.lang.String AFKeystoreWrapper(java.lang.String)>
+    <com.appsflyer.internal.AFb1zSDK: java.lang.String AFKeystoreWrapper(java.lang.String)>
+    <com.appsflyer.internal.AFb1zSDK: java.lang.String AFKeystoreWrapper(java.lang.String)>
+    <com.appsflyer.AFLogger: void afErrorLog(java.lang.String,java.lang.Throwable)>
+    <com.appsflyer.AFLogger: void afErrorLog(java.lang.String,java.lang.Throwable,boolean,boolean,boolean)>
+    <com.appsflyer.AFLogger: java.lang.String AFKeystoreWrapper(java.lang.String,boolean)>
+    <com.appsflyer.AFLogger: void afErrorLog(java.lang.String,java.lang.Throwable,boolean,boolean,boolean)>
+
+Leak 16:
+  Source: $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r2, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("AppsFlyer_6.12.1", $r7) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.appsflyer.internal.AFb1eSDK: java.lang.String AFInAppEventType(android.content.Context)>
+    <com.appsflyer.internal.AFb1eSDK: java.lang.String AFInAppEventType(android.content.Context)>
+    <com.appsflyer.internal.AFb1eSDK: java.lang.String AFInAppEventType(android.content.Context)>
+    <com.appsflyer.internal.AFb1eSDK: java.lang.String AFKeystoreWrapper(android.content.Context,java.lang.StringBuilder)>
+    <com.appsflyer.internal.AFb1eSDK: java.lang.String AFKeystoreWrapper(android.content.Context,java.lang.StringBuilder)>
+    <com.appsflyer.internal.AFb1eSDK: java.lang.String AFKeystoreWrapper(android.content.Context,java.lang.StringBuilder)>
+    <com.appsflyer.internal.AFb1eSDK: java.lang.String valueOf(android.content.Context,long)>
+    <com.appsflyer.internal.AFb1eSDK: java.lang.String valueOf(android.content.Context,long)>
+    <com.appsflyer.internal.AFb1eSDK: java.lang.String valueOf(android.content.Context,long)>
+    <com.appsflyer.internal.AFb1eSDK: java.lang.String AFInAppEventType(java.lang.String)>
+    <com.appsflyer.internal.AFb1zSDK: java.lang.String AFInAppEventParameterName(java.lang.String)>
+    <com.appsflyer.internal.AFb1zSDK: java.lang.String AFInAppEventParameterName(java.lang.String)>
+    <com.appsflyer.internal.AFb1zSDK: java.lang.String AFInAppEventParameterName(java.lang.String)>
+    <com.appsflyer.internal.AFb1zSDK: java.lang.String AFInAppEventParameterName(java.lang.String)>
+    <com.appsflyer.AFLogger: void afErrorLog(java.lang.String,java.lang.Throwable)>
+    <com.appsflyer.AFLogger: void afErrorLog(java.lang.String,java.lang.Throwable,boolean,boolean,boolean)>
+    <com.appsflyer.AFLogger: java.lang.String AFKeystoreWrapper(java.lang.String,boolean)>
+    <com.appsflyer.AFLogger: void afErrorLog(java.lang.String,java.lang.Throwable,boolean,boolean,boolean)>
+
+Leak 17:
+  Source: $r7 = virtualinvoke $r5.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r6, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("AppsFlyer_6.12.1", $r7) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.appsflyer.internal.AFb1cSDK: java.lang.String valueOf(java.lang.String)>
+    <com.appsflyer.internal.AFb1cSDK: java.lang.String valueOf(java.lang.String)>
+    <com.appsflyer.internal.AFb1cSDK: java.lang.String valueOf(java.lang.String)>
+    <com.appsflyer.internal.AFb1cSDK: java.lang.String valueOf(java.lang.String)>
+    <com.appsflyer.internal.AFb1cSDK: java.lang.String valueOf(java.lang.String)>
+    <com.appsflyer.internal.AFb1cSDK: java.lang.String valueOf(java.lang.String)>
+    <com.appsflyer.internal.AFb1cSDK: java.lang.String valueOf(java.lang.String)>
+    <com.appsflyer.internal.AFe1uSDK: java.lang.String AFInAppEventType()>
+    <com.appsflyer.internal.AFa1dSDK: java.util.Map values(com.appsflyer.internal.AFa1qSDK)>
+    <com.appsflyer.internal.AFa1dSDK: java.util.Map values(com.appsflyer.internal.AFa1qSDK)>
+    <com.appsflyer.internal.AFa1dSDK: java.util.Map values(com.appsflyer.internal.AFa1qSDK)>
+    <com.appsflyer.internal.AFa1dSDK: java.util.Map values(com.appsflyer.internal.AFa1qSDK)>
+    <com.appsflyer.internal.AFb1zSDK: java.lang.String values(java.util.Map)>
+    <com.appsflyer.internal.AFb1zSDK: java.lang.String values(java.util.Map)>
+    <com.appsflyer.internal.AFb1zSDK: java.lang.String values(java.util.Map)>
+    <com.appsflyer.internal.AFb1zSDK: java.lang.String values(java.util.Map)>
+    <com.appsflyer.internal.AFb1zSDK: java.lang.String values(java.util.Map)>
+    <com.appsflyer.internal.AFb1zSDK: java.lang.String values(java.util.Map)>
+    <com.appsflyer.internal.AFb1zSDK: java.lang.String values(java.lang.String)>
+    <com.appsflyer.internal.AFb1zSDK: java.lang.String values(java.lang.String)>
+    <com.appsflyer.internal.AFb1zSDK: java.lang.String values(java.lang.String)>
+    <com.appsflyer.internal.AFb1zSDK: java.lang.String values(java.lang.String)>
+    <com.appsflyer.AFLogger: void afErrorLog(java.lang.String,java.lang.Throwable)>
+    <com.appsflyer.AFLogger: void afErrorLog(java.lang.String,java.lang.Throwable,boolean,boolean,boolean)>
+    <com.appsflyer.AFLogger: java.lang.String AFKeystoreWrapper(java.lang.String,boolean)>
+    <com.appsflyer.AFLogger: void afErrorLog(java.lang.String,java.lang.Throwable,boolean,boolean,boolean)>
+
+Leak 18:
+  Source: $r7 = virtualinvoke $r5.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r6, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: $r8 = virtualinvoke $r7.<java.net.URL: java.net.URLConnection openConnection()>() (<java.net.URL: java.net.URLConnection openConnection()>)
+  Methods:
+    <com.appsflyer.internal.AFb1cSDK: java.lang.String valueOf(java.lang.String)>
+    <com.appsflyer.internal.AFb1cSDK: java.lang.String valueOf(java.lang.String)>
+    <com.appsflyer.internal.AFb1cSDK: java.lang.String valueOf(java.lang.String)>
+    <com.appsflyer.internal.AFb1cSDK: java.lang.String valueOf(java.lang.String)>
+    <com.appsflyer.internal.AFb1cSDK: java.lang.String valueOf(java.lang.String)>
+    <com.appsflyer.internal.AFb1cSDK: java.lang.String valueOf(java.lang.String)>
+    <com.appsflyer.internal.AFb1cSDK: java.lang.String valueOf(java.lang.String)>
+    <com.appsflyer.internal.AFb1cSDK: java.lang.String AFKeystoreWrapper()>
+    <com.appsflyer.internal.AFc1cSDK$2: java.lang.String valueOf()>
+    <com.appsflyer.internal.AFa1dSDK: java.lang.String values(com.appsflyer.internal.AFb1fSDK,java.lang.String)>
+    <com.appsflyer.internal.AFc1cSDK$2: java.lang.String valueOf()>
+    <com.appsflyer.internal.AFc1cSDK$2: java.lang.String valueOf()>
+    <com.appsflyer.internal.AFc1cSDK$2: java.lang.String valueOf()>
+    <kotlin.text.o: java.lang.CharSequence u(java.lang.CharSequence)>
+    <kotlin.text.o: java.lang.CharSequence u(java.lang.CharSequence)>
+    <com.appsflyer.internal.AFc1cSDK$2: java.lang.String valueOf()>
+    <com.appsflyer.internal.AFc1cSDK$2: java.lang.String valueOf()>
+    <com.appsflyer.internal.AFc1cSDK$2: java.lang.Object invoke()>
+    <c4.i: java.lang.Object getValue()>
+    <c4.i: java.lang.Object getValue()>
+    <com.appsflyer.internal.AFc1cSDK: java.lang.String valueOf()>
+    <com.appsflyer.internal.AFc1cSDK: java.lang.String valueOf()>
+    <com.appsflyer.internal.AFa1dSDK: java.lang.String getHostPrefix()>
+    <com.appsflyer.internal.AFc1rSDK: boolean AFInAppEventType()>
+    <com.appsflyer.internal.AFc1rSDK: boolean AFInAppEventType()>
+    <com.appsflyer.internal.AFc1rSDK: boolean AFInAppEventType()>
+    <com.appsflyer.internal.AFc1rSDK: boolean AFInAppEventType()>
+

@@ -1,0 +1,132 @@
+APK: Swift naira (NigeriaApproved)
+Leak 1:
+  Source: $r3 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r0, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r10.<java.io.BufferedWriter: void write(java.lang.String)>($r1) (<java.io.BufferedWriter: void write(java.lang.String)>)
+  Methods:
+    <com.blankj.utilcode.util.d: int b(java.lang.String)>
+    <com.blankj.utilcode.util.d: int b(java.lang.String)>
+    <com.blankj.utilcode.util.d: int b(java.lang.String)>
+    <com.blankj.utilcode.util.d: int a()>
+    <com.blankj.utilcode.util.f0$a: java.lang.String toString()>
+    <com.blankj.utilcode.util.f0$a: java.lang.String toString()>
+    <com.blankj.utilcode.util.f0$a: java.lang.String toString()>
+    <com.blankj.utilcode.util.n: void y(java.lang.String,java.lang.String)>
+    <com.blankj.utilcode.util.n: void r(java.lang.String,java.lang.String)>
+    <com.blankj.utilcode.util.f0: boolean L(java.lang.String,java.lang.String,boolean)>
+    <com.blankj.utilcode.util.g: boolean d(java.lang.String,java.lang.String,boolean)>
+    <com.blankj.utilcode.util.g: boolean c(java.io.File,java.lang.String,boolean)>
+
+Leak 2:
+  Source: $r3 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r0, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r10.<java.io.BufferedWriter: void write(java.lang.String)>($r1) (<java.io.BufferedWriter: void write(java.lang.String)>)
+  Methods:
+    <com.blankj.utilcode.util.d: java.lang.String d(java.lang.String)>
+    <com.blankj.utilcode.util.d: java.lang.String d(java.lang.String)>
+    <com.blankj.utilcode.util.d: java.lang.String d(java.lang.String)>
+    <com.blankj.utilcode.util.d: java.lang.String c()>
+    <com.blankj.utilcode.util.f0$a: java.lang.String toString()>
+    <com.blankj.utilcode.util.f0$a: java.lang.String toString()>
+    <com.blankj.utilcode.util.f0$a: java.lang.String toString()>
+    <com.blankj.utilcode.util.n: void y(java.lang.String,java.lang.String)>
+    <com.blankj.utilcode.util.n: void r(java.lang.String,java.lang.String)>
+    <com.blankj.utilcode.util.f0: boolean L(java.lang.String,java.lang.String,boolean)>
+    <com.blankj.utilcode.util.g: boolean d(java.lang.String,java.lang.String,boolean)>
+    <com.blankj.utilcode.util.g: boolean c(java.io.File,java.lang.String,boolean)>
+
+Leak 3:
+  Source: $r4 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r3, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r0, $r1) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <h4.b0: void K(android.content.Context)>
+    <h4.b0: void K(android.content.Context)>
+    <h4.b0: void K(android.content.Context)>
+    <h4.b0: void K(android.content.Context)>
+    <h4.b0: void K(android.content.Context)>
+    <h4.b0: void K(android.content.Context)>
+    <h4.b0: void P(android.content.Context,h4.b0$b)>
+    <h4.b0: void O(android.content.Context)>
+    <com.loan.sole.UseApp: void onCreate()>
+    <i4.o$a: void a(android.app.Application)>
+    <i4.r$a: void f(android.app.Application,java.lang.String)>
+    <h4.b0: java.lang.String n()>
+    <h4.b0: java.lang.String n()>
+    <i4.r$a: void f(android.app.Application,java.lang.String)>
+    <h4.b0: void M(android.content.Context,java.lang.String)>
+    <s4.c: void g(java.lang.String,java.lang.String)>
+    <s4.a: void <init>(android.content.Context,java.lang.String,java.lang.String)>
+    <s4.a: void <init>(android.content.Context,java.lang.String,java.lang.String)>
+    <s4.c: void g(java.lang.String,java.lang.String)>
+    <s4.a: void run()>
+    <s4.a: void run()>
+    <s4.c: void a(android.content.Context,java.lang.String,java.lang.String)>
+    <s4.c: void h(android.content.Context,java.lang.String,java.lang.String)>
+    <s4.e: s4.e$c e(java.lang.String)>
+    <s4.e: s4.e$c d(s4.e$a,java.lang.String,java.util.List)>
+    <s4.d: android.os.Bundle a(s4.e$a,java.lang.String,java.util.List)>
+    <s4.d: android.os.Bundle a(s4.e$a,java.lang.String,java.util.List)>
+    <s4.e: s4.e$c d(s4.e$a,java.lang.String,java.util.List)>
+    <kotlin.jvm.internal.Intrinsics: java.lang.String k(java.lang.String,java.lang.Object)>
+    <kotlin.jvm.internal.Intrinsics: java.lang.String k(java.lang.String,java.lang.Object)>
+    <kotlin.jvm.internal.Intrinsics: java.lang.String k(java.lang.String,java.lang.Object)>
+    <s4.e: s4.e$c d(s4.e$a,java.lang.String,java.util.List)>
+    <y4.a1: void f0(java.lang.String,java.lang.String)>
+
+Leak 4:
+  Source: $r5 = virtualinvoke $r4.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r3, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r5.<java.io.FileOutputStream: void write(byte[])>($r7) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <y4.a1: java.lang.String v()>
+    <y4.a1: java.lang.String v()>
+    <y4.a1: java.lang.String v()>
+    <a5.c: void <init>(java.lang.Throwable,a5.c$c)>
+    <a5.c: void <init>(java.lang.Throwable,a5.c$c)>
+    <a5.c: void <init>(java.lang.Throwable,a5.c$c,kotlin.jvm.internal.DefaultConstructorMarker)>
+    <a5.c$a: a5.c b(java.lang.Throwable,a5.c$c)>
+    <d5.a: void b(java.lang.Throwable,java.lang.Object)>
+    <a5.c: void g()>
+    <a5.c: java.lang.String toString()>
+    <a5.c: org.json.JSONObject e()>
+    <a5.c: org.json.JSONObject d()>
+    <a5.c: org.json.JSONObject d()>
+    <a5.c: org.json.JSONObject d()>
+    <a5.c: org.json.JSONObject e()>
+    <a5.c: java.lang.String toString()>
+    <a5.c: java.lang.String toString()>
+    <a5.c: void g()>
+    <a5.k: void s(java.lang.String,java.lang.String)>
+    <a5.k: void s(java.lang.String,java.lang.String)>
+
+Leak 5:
+  Source: $r3 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r0, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r10.<java.io.BufferedWriter: void write(java.lang.String)>($r1) (<java.io.OutputStreamWriter: void write(java.lang.String)>)
+  Methods:
+    <com.blankj.utilcode.util.d: int b(java.lang.String)>
+    <com.blankj.utilcode.util.d: int b(java.lang.String)>
+    <com.blankj.utilcode.util.d: int b(java.lang.String)>
+    <com.blankj.utilcode.util.d: int a()>
+    <com.blankj.utilcode.util.f0$a: java.lang.String toString()>
+    <com.blankj.utilcode.util.f0$a: java.lang.String toString()>
+    <com.blankj.utilcode.util.f0$a: java.lang.String toString()>
+    <com.blankj.utilcode.util.n: void y(java.lang.String,java.lang.String)>
+    <com.blankj.utilcode.util.n: void r(java.lang.String,java.lang.String)>
+    <com.blankj.utilcode.util.f0: boolean L(java.lang.String,java.lang.String,boolean)>
+    <com.blankj.utilcode.util.g: boolean d(java.lang.String,java.lang.String,boolean)>
+    <com.blankj.utilcode.util.g: boolean c(java.io.File,java.lang.String,boolean)>
+
+Leak 6:
+  Source: $r3 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r0, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r10.<java.io.BufferedWriter: void write(java.lang.String)>($r1) (<java.io.OutputStreamWriter: void write(java.lang.String)>)
+  Methods:
+    <com.blankj.utilcode.util.d: java.lang.String d(java.lang.String)>
+    <com.blankj.utilcode.util.d: java.lang.String d(java.lang.String)>
+    <com.blankj.utilcode.util.d: java.lang.String d(java.lang.String)>
+    <com.blankj.utilcode.util.d: java.lang.String c()>
+    <com.blankj.utilcode.util.f0$a: java.lang.String toString()>
+    <com.blankj.utilcode.util.f0$a: java.lang.String toString()>
+    <com.blankj.utilcode.util.f0$a: java.lang.String toString()>
+    <com.blankj.utilcode.util.n: void y(java.lang.String,java.lang.String)>
+    <com.blankj.utilcode.util.n: void r(java.lang.String,java.lang.String)>
+    <com.blankj.utilcode.util.f0: boolean L(java.lang.String,java.lang.String,boolean)>
+    <com.blankj.utilcode.util.g: boolean d(java.lang.String,java.lang.String,boolean)>
+    <com.blankj.utilcode.util.g: boolean c(java.io.File,java.lang.String,boolean)>
+

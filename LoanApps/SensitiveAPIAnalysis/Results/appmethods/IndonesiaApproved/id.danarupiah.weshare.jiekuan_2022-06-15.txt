@@ -1,0 +1,597 @@
+APK: id.danarupiah.weshare.jiekuan_2022-06-15 (IndonesiaApproved)
+Leak 1:
+  Source: $r15 = virtualinvoke $r8.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r7, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("AppsFlyer_6.2.3", $r2) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.appsflyer.internal.ap: void AFInAppEventType(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.internal.ap: void AFInAppEventType(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.internal.ap: void AFInAppEventType(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.internal.ap: void AFInAppEventType(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.internal.ap: void AFInAppEventParameterName(java.lang.String,java.lang.String,java.lang.String,java.lang.String)>
+    <com.appsflyer.internal.ap: void AFInAppEventParameterName(java.lang.String,java.lang.String,java.lang.String,java.lang.String)>
+    <com.appsflyer.internal.ap: void AFInAppEventParameterName(java.lang.String,java.lang.String,java.lang.String,java.lang.String)>
+    <com.appsflyer.internal.ap: void AFInAppEventType(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.internal.ap: void values(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.internal.ap: void values(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.internal.ap: void values(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.internal.ap: java.lang.String init()>
+    <com.appsflyer.internal.ap: java.lang.String init()>
+    <com.appsflyer.internal.ap: java.lang.String init()>
+    <com.appsflyer.internal.ap: void values(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.internal.ap: void values(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.internal.h: com.appsflyer.internal.h AFInAppEventParameterName(java.lang.String)>
+    <com.appsflyer.internal.ap: void values(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.internal.ap: void values(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.internal.m: void <init>(com.appsflyer.internal.bd)>
+    <com.appsflyer.internal.m: void <init>(com.appsflyer.internal.bd)>
+    <com.appsflyer.internal.ap: void values(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.internal.ap: void values(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.internal.m: void run()>
+    <com.appsflyer.internal.m: java.net.HttpURLConnection AFKeystoreWrapper()>
+    <com.appsflyer.internal.m: java.net.HttpURLConnection AFKeystoreWrapper()>
+    <com.appsflyer.internal.bi: java.lang.String getLevel()>
+    <com.appsflyer.internal.bi: java.lang.String getLevel()>
+    <com.appsflyer.internal.m: java.net.HttpURLConnection AFKeystoreWrapper()>
+    <com.appsflyer.internal.m: java.net.HttpURLConnection AFKeystoreWrapper()>
+    <com.appsflyer.internal.m: java.net.HttpURLConnection AFKeystoreWrapper()>
+    <com.appsflyer.internal.ak: void values(java.lang.String)>
+    <com.appsflyer.internal.ak: void values(java.lang.String)>
+    <com.appsflyer.AFLogger: void valueOf(java.lang.String)>
+    <com.appsflyer.AFLogger: void values(java.lang.String,boolean)>
+    <com.appsflyer.AFLogger: java.lang.String valueOf(java.lang.String,boolean)>
+    <com.appsflyer.AFLogger: void values(java.lang.String,boolean)>
+
+Leak 2:
+  Source: $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r2, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("AppsFlyer_6.2.3", $r2) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.appsflyer.internal.ah: java.lang.String AFInAppEventParameterName(java.lang.String,android.content.pm.PackageManager,java.lang.String)>
+    <com.appsflyer.internal.ah: java.lang.String AFInAppEventParameterName(java.lang.String,android.content.pm.PackageManager,java.lang.String)>
+    <com.appsflyer.internal.ah: java.lang.String AFInAppEventParameterName(java.lang.String,android.content.pm.PackageManager,java.lang.String)>
+    <com.appsflyer.internal.ah: java.lang.String AFInAppEventParameterName(java.lang.String,android.content.pm.PackageManager,java.lang.String)>
+    <com.appsflyer.internal.ah: java.lang.String AFInAppEventParameterName(java.lang.String,android.content.pm.PackageManager,java.lang.String)>
+    <com.appsflyer.internal.ah: java.lang.String AFInAppEventType(android.content.Context)>
+    <com.appsflyer.internal.ah: void valueOf(java.lang.ref.WeakReference)>
+    <com.appsflyer.internal.ah: void valueOf(java.lang.ref.WeakReference)>
+    <com.appsflyer.internal.h: com.appsflyer.internal.h values(java.util.Map)>
+    <com.appsflyer.internal.h: com.appsflyer.internal.h values(java.util.Map)>
+    <com.appsflyer.internal.h: com.appsflyer.internal.h values(java.util.Map)>
+    <com.appsflyer.internal.ah: void valueOf(java.lang.ref.WeakReference)>
+    <com.appsflyer.internal.ah: void valueOf(java.lang.ref.WeakReference)>
+    <com.appsflyer.internal.m: void <init>(com.appsflyer.internal.bd)>
+    <com.appsflyer.internal.m: void <init>(com.appsflyer.internal.bd)>
+    <com.appsflyer.internal.ah: void valueOf(java.lang.ref.WeakReference)>
+    <com.appsflyer.internal.ah: void valueOf(java.lang.ref.WeakReference)>
+    <com.appsflyer.internal.m: void run()>
+    <com.appsflyer.internal.m: java.net.HttpURLConnection AFKeystoreWrapper()>
+    <com.appsflyer.internal.m: java.net.HttpURLConnection AFKeystoreWrapper()>
+    <com.appsflyer.internal.bd: java.lang.String getLevel()>
+    <com.appsflyer.internal.h: java.util.Map AFInAppEventType()>
+    <com.appsflyer.internal.h: java.util.Map AFInAppEventType()>
+    <com.appsflyer.internal.bd: java.lang.String getLevel()>
+    <com.appsflyer.internal.m: org.json.JSONObject AFInAppEventParameterName(java.util.Map)>
+    <com.appsflyer.internal.m: org.json.JSONObject AFInAppEventParameterName(java.util.Map)>
+    <com.appsflyer.internal.m: org.json.JSONObject AFInAppEventParameterName(java.util.Map)>
+    <com.appsflyer.internal.m: org.json.JSONObject AFInAppEventParameterName(java.util.Map)>
+    <com.appsflyer.internal.m: org.json.JSONObject AFInAppEventParameterName(java.util.Map)>
+    <com.appsflyer.internal.m: org.json.JSONObject AFInAppEventParameterName(java.util.Map)>
+    <com.appsflyer.internal.m: org.json.JSONObject AFInAppEventParameterName(java.util.Map)>
+    <com.appsflyer.internal.bd: java.lang.String getLevel()>
+    <com.appsflyer.internal.bd: java.lang.String getLevel()>
+    <com.appsflyer.internal.m: java.net.HttpURLConnection AFKeystoreWrapper()>
+    <com.appsflyer.internal.m: java.net.HttpURLConnection AFKeystoreWrapper()>
+    <com.appsflyer.internal.m: java.net.HttpURLConnection AFKeystoreWrapper()>
+    <com.appsflyer.internal.ak: void values(java.lang.String)>
+    <com.appsflyer.internal.ak: void values(java.lang.String)>
+    <com.appsflyer.AFLogger: void valueOf(java.lang.String)>
+    <com.appsflyer.AFLogger: void values(java.lang.String,boolean)>
+    <com.appsflyer.AFLogger: java.lang.String valueOf(java.lang.String,boolean)>
+    <com.appsflyer.AFLogger: void values(java.lang.String,boolean)>
+
+Leak 3:
+  Source: $r5 = staticinvoke <android.os.Environment: java.io.File getExternalStorageDirectory()>() (<android.os.Environment: java.io.File getExternalStorageDirectory()>)
+  Sink: virtualinvoke $r6.<java.io.FileOutputStream: void write(byte[])>($r8) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <c5.i: java.lang.String e(android.content.Context,java.lang.String)>
+    <c5.i: java.lang.String e(android.content.Context,java.lang.String)>
+    <c5.i: java.lang.String e(android.content.Context,java.lang.String)>
+    <c5.i: java.lang.String e(android.content.Context,java.lang.String)>
+    <c5.i: java.lang.String e(android.content.Context,java.lang.String)>
+    <c5.k: void g(android.content.Context,int,java.lang.String)>
+    <c5.k: void g(android.content.Context,int,java.lang.String)>
+    <com.zz.framework.components.b: void f(android.app.Application)>
+    <com.zz.framework.components.b: void c(android.app.Application,com.zz.framework.components.b$b)>
+    <com.zz.framework.components.CommonApplication: void onCreate()>
+    <dummyMainClass: void dummyMainMethod(java.lang.String[])>
+    <com.zz.common.hybrid.jsbridge.JavaScriptBridge$JavaScriptInterface: void printLog(boolean)>
+    <c5.k: void j(java.lang.String)>
+    <c5.k: void j(java.lang.String)>
+    <c5.k$a: void <init>(java.lang.String,java.lang.String,java.lang.String)>
+    <c5.k$a: void <init>(java.lang.String,java.lang.String,java.lang.String)>
+    <c5.k$a: void <init>(java.lang.String,java.lang.String,java.lang.String)>
+    <c5.k$a: void <init>(java.lang.String,java.lang.String,java.lang.String)>
+    <c5.k: void j(java.lang.String)>
+    <c5.k$a: void run()>
+    <c5.k$a: void run()>
+
+Leak 4:
+  Source: $r1 = staticinvoke <android.os.Environment: java.io.File getExternalStorageDirectory()>() (<android.os.Environment: java.io.File getExternalStorageDirectory()>)
+  Sink: staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r1, $r0) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <q4.l: java.lang.String f()>
+    <q4.l: java.lang.String f()>
+    <q4.l: java.lang.String f()>
+    <q4.f: void <clinit>()>
+    <q4.f: void <clinit>()>
+    <q4.f: void <clinit>()>
+    <q4.f: void <clinit>()>
+    <com.id.main.frame.server.ServerAccessUtil$17: void run()>
+    <com.id.main.frame.server.ServerAccessUtil$17: void run()>
+    <com.id.main.frame.server.ServerAccessUtil$17: void run()>
+    <c5.c: java.io.File c(java.io.File,int,int,int)>
+    <c5.c: java.io.File e(java.io.File,int,int,int,java.lang.String)>
+    <c5.c: java.io.File d(java.io.File,int,int,int,java.io.File)>
+    <c5.c: java.io.File d(java.io.File,int,int,int,java.io.File)>
+    <c5.c: java.io.File d(java.io.File,int,int,int,java.io.File)>
+    <c5.k: void f(java.lang.String)>
+
+Leak 5:
+  Source: $r0 = staticinvoke <android.os.Environment: java.io.File getExternalStorageDirectory()>() (<android.os.Environment: java.io.File getExternalStorageDirectory()>)
+  Sink: virtualinvoke $r5.<java.io.FileOutputStream: void write(byte[])>($r6) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <q4.l: java.lang.String k()>
+    <q4.l: java.lang.String k()>
+    <q4.l: java.lang.String k()>
+    <q4.l: java.lang.String h()>
+    <com.id.main.activity.WebActivity: void <clinit>()>
+    <com.id.main.activity.WebActivity: void <clinit>()>
+    <com.id.main.activity.WebActivity: void <clinit>()>
+    <com.id.main.activity.WebActivity: void <clinit>()>
+    <com.id.main.activity.WebActivity: void onNewIntent(android.content.Intent)>
+    <dummyMainClass: com.id.main.activity.WebActivity dummyMainMethod_com_id_main_activity_WebActivity(android.content.Intent)>
+    <com.id.main.activity.WebActivity: void onActivityResult(int,int,android.content.Intent)>
+    <q4.a: void g(int,int,android.content.Intent,android.app.Activity)>
+    <q4.a: void b(int,android.content.Intent,android.app.Activity)>
+    <q4.a: void b(int,android.content.Intent,android.app.Activity)>
+    <c5.c: boolean b(java.lang.String,java.lang.String,int,int,int)>
+    <c5.c: boolean b(java.lang.String,java.lang.String,int,int,int)>
+    <c5.c: boolean b(java.lang.String,java.lang.String,int,int,int)>
+
+Leak 6:
+  Source: $r3 = virtualinvoke $r2.<android.telephony.TelephonyManager: java.lang.String getSimSerialNumber()>() (<android.telephony.TelephonyManager: java.lang.String getSimSerialNumber()>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r1, $r0) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <q4.k: java.lang.String l()>
+    <q4.k: java.lang.String l()>
+    <q4.k: java.lang.String d()>
+    <q4.k: java.lang.String d()>
+    <q4.k: java.lang.String d()>
+    <q4.k: java.lang.String d()>
+    <q4.k: java.lang.String d()>
+    <q4.k: java.lang.String d()>
+    <q4.k: java.lang.String d()>
+    <c5.k: void a(java.lang.String)>
+
+Leak 7:
+  Source: $r4 = staticinvoke <android.os.Environment: java.io.File getExternalStorageDirectory()>() (<android.os.Environment: java.io.File getExternalStorageDirectory()>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r1, $r0) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <q4.f: void <clinit>()>
+    <q4.f: void <clinit>()>
+    <q4.f: void <clinit>()>
+    <q4.f: void <clinit>()>
+    <q4.f: void <clinit>()>
+    <q4.f: void <clinit>()>
+    <q4.g: java.lang.String n(android.content.Context)>
+    <q4.g: java.lang.String n(android.content.Context)>
+    <q4.l: java.lang.String s(java.lang.String)>
+    <q4.l: java.lang.String s(java.lang.String)>
+    <q4.l: java.lang.String s(java.lang.String)>
+    <q4.l: java.lang.String s(java.lang.String)>
+    <q4.l: java.lang.String s(java.lang.String)>
+    <q4.l: java.lang.String s(java.lang.String)>
+    <q4.g: java.lang.String n(android.content.Context)>
+    <q4.g: java.lang.String n(android.content.Context)>
+    <q4.g: java.lang.String n(android.content.Context)>
+    <c5.k: void a(java.lang.String)>
+
+Leak 8:
+  Source: $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r2, 16384) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r1, $r0) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <w0.a: android.content.pm.PackageInfo b(android.content.Context)>
+    <w0.a: android.content.pm.PackageInfo b(android.content.Context)>
+    <w0.a: java.lang.String c(android.content.Context)>
+    <w0.a: java.lang.String c(android.content.Context)>
+    <com.altocumulus.statistics.c: void D(android.content.Context,com.altocumulus.statistics.a,com.altocumulus.statistics.b$b)>
+    <com.altocumulus.statistics.c: void D(android.content.Context,com.altocumulus.statistics.a,com.altocumulus.statistics.b$b)>
+    <p4.a: void f(android.content.Context,com.altocumulus.statistics.b$b)>
+    <com.id.main.service.LocationService: void q(j5.c)>
+    <com.id.main.service.LocationService: void o(j5.c)>
+    <com.id.main.service.LocationService: void k(com.id.main.service.LocationService,j5.c)>
+    <com.id.main.service.LocationService$a: void run()>
+    <com.id.main.service.LocationService: void p()>
+    <com.id.main.service.LocationService: int onStartCommand(android.content.Intent,int,int)>
+    <dummyMainClass: com.id.main.service.LocationService dummyMainMethod_com_id_main_service_LocationService(android.content.Intent)>
+    <com.id.main.service.LocationService: int onStartCommand(android.content.Intent,int,int)>
+    <com.id.main.service.LocationService: void p()>
+    <com.id.main.service.LocationService$a: void run()>
+    <p4.a: void y(java.lang.String)>
+    <com.altocumulus.statistics.models.BaseInfo: void <init>()>
+    <com.altocumulus.statistics.c: java.lang.String f()>
+    <com.altocumulus.statistics.c: java.lang.String f()>
+    <com.altocumulus.statistics.models.BaseInfo: void <init>()>
+    <com.altocumulus.statistics.models.BaseInfo: void setSwv(java.lang.String)>
+    <com.altocumulus.statistics.models.BaseInfo: void setSwv(java.lang.String)>
+    <com.altocumulus.statistics.models.BaseInfo: void <init>()>
+    <p4.a: void y(java.lang.String)>
+    <p4.a: void y(java.lang.String)>
+    <p4.a: void y(java.lang.String)>
+    <c5.k: void a(java.lang.String)>
+
+Leak 9:
+  Source: $r15 = virtualinvoke $r8.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r7, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r15.<java.io.OutputStream: void write(byte[])>($r6) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.appsflyer.internal.ap: void AFInAppEventType(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.internal.ap: void AFInAppEventType(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.internal.ap: void AFInAppEventType(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.internal.ap: void AFInAppEventType(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.internal.ap: void AFInAppEventParameterName(java.lang.String,java.lang.String,java.lang.String,java.lang.String)>
+    <com.appsflyer.internal.ap: void AFInAppEventParameterName(java.lang.String,java.lang.String,java.lang.String,java.lang.String)>
+    <com.appsflyer.internal.ap: void AFInAppEventParameterName(java.lang.String,java.lang.String,java.lang.String,java.lang.String)>
+    <com.appsflyer.internal.ap: void AFInAppEventType(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.internal.ap: void values(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.internal.ap: void values(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.internal.ap: void values(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.internal.ap: java.lang.String init()>
+    <com.appsflyer.internal.ap: java.lang.String init()>
+    <com.appsflyer.internal.ap: java.lang.String init()>
+    <com.appsflyer.internal.ap: void values(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.internal.ap: void values(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.internal.h: com.appsflyer.internal.h AFInAppEventParameterName(java.lang.String)>
+    <com.appsflyer.internal.ap: void values(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.internal.ap: void values(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.internal.m: void <init>(com.appsflyer.internal.bd)>
+    <com.appsflyer.internal.m: void <init>(com.appsflyer.internal.bd)>
+    <com.appsflyer.internal.ap: void values(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.internal.ap: void values(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.internal.m: void run()>
+    <com.appsflyer.internal.m: java.net.HttpURLConnection AFKeystoreWrapper()>
+    <com.appsflyer.internal.m: java.net.HttpURLConnection AFKeystoreWrapper()>
+    <com.appsflyer.internal.bi: java.lang.String getLevel()>
+    <com.appsflyer.internal.bi: java.lang.String getLevel()>
+    <com.appsflyer.internal.m: java.net.HttpURLConnection AFKeystoreWrapper()>
+    <com.appsflyer.internal.m: java.net.HttpURLConnection AFKeystoreWrapper()>
+    <com.appsflyer.internal.m: java.net.HttpURLConnection AFKeystoreWrapper()>
+
+Leak 10:
+  Source: $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r2, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r15.<java.io.OutputStream: void write(byte[])>($r6) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.appsflyer.internal.ah: java.lang.String AFInAppEventParameterName(java.lang.String,android.content.pm.PackageManager,java.lang.String)>
+    <com.appsflyer.internal.ah: java.lang.String AFInAppEventParameterName(java.lang.String,android.content.pm.PackageManager,java.lang.String)>
+    <com.appsflyer.internal.ah: java.lang.String AFInAppEventParameterName(java.lang.String,android.content.pm.PackageManager,java.lang.String)>
+    <com.appsflyer.internal.ah: java.lang.String AFInAppEventParameterName(java.lang.String,android.content.pm.PackageManager,java.lang.String)>
+    <com.appsflyer.internal.ah: java.lang.String AFInAppEventParameterName(java.lang.String,android.content.pm.PackageManager,java.lang.String)>
+    <com.appsflyer.internal.ah: java.lang.String AFInAppEventType(android.content.Context)>
+    <com.appsflyer.internal.ah: void valueOf(java.lang.ref.WeakReference)>
+    <com.appsflyer.internal.ah: void valueOf(java.lang.ref.WeakReference)>
+    <com.appsflyer.internal.h: com.appsflyer.internal.h values(java.util.Map)>
+    <com.appsflyer.internal.h: com.appsflyer.internal.h values(java.util.Map)>
+    <com.appsflyer.internal.h: com.appsflyer.internal.h values(java.util.Map)>
+    <com.appsflyer.internal.ah: void valueOf(java.lang.ref.WeakReference)>
+    <com.appsflyer.internal.ah: void valueOf(java.lang.ref.WeakReference)>
+    <com.appsflyer.internal.m: void <init>(com.appsflyer.internal.bd)>
+    <com.appsflyer.internal.m: void <init>(com.appsflyer.internal.bd)>
+    <com.appsflyer.internal.ah: void valueOf(java.lang.ref.WeakReference)>
+    <com.appsflyer.internal.ah: void valueOf(java.lang.ref.WeakReference)>
+    <com.appsflyer.internal.m: void run()>
+    <com.appsflyer.internal.m: java.net.HttpURLConnection AFKeystoreWrapper()>
+    <com.appsflyer.internal.m: java.net.HttpURLConnection AFKeystoreWrapper()>
+    <com.appsflyer.internal.bd: java.lang.String getLevel()>
+    <com.appsflyer.internal.h: java.util.Map AFInAppEventType()>
+    <com.appsflyer.internal.h: java.util.Map AFInAppEventType()>
+    <com.appsflyer.internal.bd: java.lang.String getLevel()>
+    <com.appsflyer.internal.m: org.json.JSONObject AFInAppEventParameterName(java.util.Map)>
+    <com.appsflyer.internal.m: org.json.JSONObject AFInAppEventParameterName(java.util.Map)>
+    <com.appsflyer.internal.m: org.json.JSONObject AFInAppEventParameterName(java.util.Map)>
+    <com.appsflyer.internal.m: org.json.JSONObject AFInAppEventParameterName(java.util.Map)>
+    <com.appsflyer.internal.m: org.json.JSONObject AFInAppEventParameterName(java.util.Map)>
+    <com.appsflyer.internal.m: org.json.JSONObject AFInAppEventParameterName(java.util.Map)>
+    <com.appsflyer.internal.m: org.json.JSONObject AFInAppEventParameterName(java.util.Map)>
+    <com.appsflyer.internal.bd: java.lang.String getLevel()>
+    <com.appsflyer.internal.bd: java.lang.String getLevel()>
+    <com.appsflyer.internal.m: java.net.HttpURLConnection AFKeystoreWrapper()>
+    <com.appsflyer.internal.m: java.net.HttpURLConnection AFKeystoreWrapper()>
+    <com.appsflyer.internal.m: java.net.HttpURLConnection AFKeystoreWrapper()>
+
+Leak 11:
+  Source: $r1 = staticinvoke <android.os.Environment: java.io.File getExternalStorageDirectory()>() (<android.os.Environment: java.io.File getExternalStorageDirectory()>)
+  Sink: virtualinvoke $r7.<java.io.FileOutputStream: void write(byte[])>($r4) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <q4.l: java.lang.String f()>
+    <q4.l: java.lang.String f()>
+    <q4.l: java.lang.String f()>
+    <q4.l: java.lang.String e()>
+    <q4.l: java.lang.String e()>
+    <q4.l: java.lang.String e()>
+    <q4.l: boolean a(java.lang.String,java.lang.String)>
+    <q4.l: boolean a(java.lang.String,java.lang.String)>
+
+Leak 12:
+  Source: $r0 = staticinvoke <android.os.Environment: java.io.File getExternalStorageDirectory()>() (<android.os.Environment: java.io.File getExternalStorageDirectory()>)
+  Sink: virtualinvoke $r7.<java.io.FileOutputStream: void write(byte[])>($r4) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <q4.l: java.lang.String k()>
+    <q4.l: java.lang.String k()>
+    <q4.l: java.lang.String k()>
+    <q4.l: java.lang.String e()>
+    <q4.l: java.lang.String e()>
+    <q4.l: java.lang.String e()>
+    <q4.l: java.lang.String e()>
+    <q4.l: java.lang.String e()>
+    <q4.l: boolean a(java.lang.String,java.lang.String)>
+    <q4.l: boolean a(java.lang.String,java.lang.String)>
+
+Leak 13:
+  Source: $r9 = virtualinvoke $r8.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r4, $r5, null, null, null) (<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>)
+  Sink: staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("zsxlog", $r12) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <q4.a: void d(int,android.content.Intent)>
+    <q4.a: void d(int,android.content.Intent)>
+    <q4.a: void d(int,android.content.Intent)>
+    <q4.a: void d(int,android.content.Intent)>
+    <q4.a: void d(int,android.content.Intent)>
+
+Leak 14:
+  Source: $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r2, 16384) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("Statistics SDK", $r2) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <w0.a: android.content.pm.PackageInfo b(android.content.Context)>
+    <w0.a: android.content.pm.PackageInfo b(android.content.Context)>
+    <w0.a: java.lang.String c(android.content.Context)>
+    <w0.a: java.lang.String c(android.content.Context)>
+    <com.altocumulus.statistics.c: void D(android.content.Context,com.altocumulus.statistics.a,com.altocumulus.statistics.b$b)>
+    <com.altocumulus.statistics.c: void D(android.content.Context,com.altocumulus.statistics.a,com.altocumulus.statistics.b$b)>
+    <w0.i: void f(java.lang.String)>
+    <w0.i: void g(java.lang.String,java.lang.String)>
+    <com.altocumulus.statistics.c: java.lang.String f()>
+    <com.altocumulus.statistics.c: java.lang.String f()>
+    <w0.i: void g(java.lang.String,java.lang.String)>
+    <w0.i: void g(java.lang.String,java.lang.String)>
+    <w0.i: void g(java.lang.String,java.lang.String)>
+    <w0.i: void a(java.lang.String)>
+    <w0.i: void b(java.lang.String,java.lang.String)>
+    <w0.i: void b(java.lang.String,java.lang.String)>
+
+Leak 15:
+  Source: $r4 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r3, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r0, $r1) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.facebook.FacebookSdk: void C(android.content.Context)>
+    <com.facebook.FacebookSdk: void C(android.content.Context)>
+    <com.facebook.FacebookSdk: void C(android.content.Context)>
+    <com.facebook.FacebookSdk: void C(android.content.Context)>
+    <com.facebook.FacebookSdk: void C(android.content.Context)>
+    <com.facebook.FacebookSdk: void C(android.content.Context)>
+    <com.facebook.FacebookSdk: void G(android.content.Context,com.facebook.FacebookSdk$b)>
+    <com.facebook.FacebookSdk: void F(android.content.Context)>
+    <com.id.main.BaseApplication: void q()>
+    <com.facebook.appevents.AppEventsLogger: void a(android.app.Application)>
+    <com.facebook.appevents.AppEventsLogger$a: void a(android.app.Application)>
+    <d1.d$a: void d(android.app.Application,java.lang.String)>
+    <com.facebook.FacebookSdk: java.lang.String g()>
+    <com.facebook.FacebookSdk: java.lang.String g()>
+    <d1.d$a: void d(android.app.Application,java.lang.String)>
+    <com.facebook.FacebookSdk: void E(android.content.Context,java.lang.String)>
+    <m1.a: void d(java.lang.String,java.lang.String)>
+    <m1.a$b: void <init>(android.content.Context,java.lang.String,java.lang.String)>
+    <m1.a$b: void <init>(android.content.Context,java.lang.String,java.lang.String)>
+    <m1.a: void d(java.lang.String,java.lang.String)>
+    <m1.a$b: void run()>
+    <m1.a$b: void run()>
+    <com.facebook.appevents.ondeviceprocessing.RemoteServiceWrapper: com.facebook.appevents.ondeviceprocessing.RemoteServiceWrapper$ServiceResult e(java.lang.String)>
+    <com.facebook.appevents.ondeviceprocessing.RemoteServiceWrapper: com.facebook.appevents.ondeviceprocessing.RemoteServiceWrapper$ServiceResult d(com.facebook.appevents.ondeviceprocessing.RemoteServiceWrapper$EventType,java.lang.String,java.util.List)>
+    <m1.b: android.os.Bundle a(com.facebook.appevents.ondeviceprocessing.RemoteServiceWrapper$EventType,java.lang.String,java.util.List)>
+    <m1.b: android.os.Bundle a(com.facebook.appevents.ondeviceprocessing.RemoteServiceWrapper$EventType,java.lang.String,java.util.List)>
+    <com.facebook.appevents.ondeviceprocessing.RemoteServiceWrapper: com.facebook.appevents.ondeviceprocessing.RemoteServiceWrapper$ServiceResult d(com.facebook.appevents.ondeviceprocessing.RemoteServiceWrapper$EventType,java.lang.String,java.util.List)>
+    <com.facebook.appevents.ondeviceprocessing.RemoteServiceWrapper: com.facebook.appevents.ondeviceprocessing.RemoteServiceWrapper$ServiceResult d(com.facebook.appevents.ondeviceprocessing.RemoteServiceWrapper$EventType,java.lang.String,java.util.List)>
+    <com.facebook.appevents.ondeviceprocessing.RemoteServiceWrapper: com.facebook.appevents.ondeviceprocessing.RemoteServiceWrapper$ServiceResult d(com.facebook.appevents.ondeviceprocessing.RemoteServiceWrapper$EventType,java.lang.String,java.util.List)>
+    <com.facebook.internal.h: void f0(java.lang.String,java.lang.String)>
+
+Leak 16:
+  Source: $r4 = virtualinvoke $r3.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r2, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r5.<java.io.FileOutputStream: void write(byte[])>($r7) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <com.facebook.internal.h: java.lang.String v()>
+    <com.facebook.internal.h: java.lang.String v()>
+    <com.facebook.internal.h: java.lang.String v()>
+    <com.facebook.internal.instrument.InstrumentData: void <init>(java.lang.Throwable,com.facebook.internal.instrument.InstrumentData$Type)>
+    <com.facebook.internal.instrument.InstrumentData: void <init>(java.lang.Throwable,com.facebook.internal.instrument.InstrumentData$Type)>
+    <com.facebook.internal.instrument.InstrumentData: void <init>(java.lang.Throwable,com.facebook.internal.instrument.InstrumentData$Type,kotlin.jvm.internal.f)>
+    <com.facebook.internal.instrument.InstrumentData$a: com.facebook.internal.instrument.InstrumentData b(java.lang.Throwable,com.facebook.internal.instrument.InstrumentData$Type)>
+    <x1.a: void b(java.lang.Throwable,java.lang.Object)>
+    <com.facebook.internal.instrument.InstrumentData: void g()>
+    <com.facebook.internal.instrument.InstrumentData: java.lang.String toString()>
+    <com.facebook.internal.instrument.InstrumentData: org.json.JSONObject e()>
+    <com.facebook.internal.instrument.InstrumentData: org.json.JSONObject d()>
+    <com.facebook.internal.instrument.InstrumentData: org.json.JSONObject d()>
+    <com.facebook.internal.instrument.InstrumentData: org.json.JSONObject d()>
+    <com.facebook.internal.instrument.InstrumentData: org.json.JSONObject e()>
+    <com.facebook.internal.instrument.InstrumentData: java.lang.String toString()>
+    <com.facebook.internal.instrument.InstrumentData: java.lang.String toString()>
+    <com.facebook.internal.instrument.InstrumentData: void g()>
+    <u1.e: void m(java.lang.String,java.lang.String)>
+    <u1.e: void m(java.lang.String,java.lang.String)>
+
+Leak 17:
+  Source: $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r2, 16384) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("Statistics SDK", $r2) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <w0.a: android.content.pm.PackageInfo b(android.content.Context)>
+    <w0.a: android.content.pm.PackageInfo b(android.content.Context)>
+    <w0.a: java.lang.String c(android.content.Context)>
+    <w0.a: java.lang.String c(android.content.Context)>
+    <com.altocumulus.statistics.c: void D(android.content.Context,com.altocumulus.statistics.a,com.altocumulus.statistics.b$b)>
+    <com.altocumulus.statistics.c: void D(android.content.Context,com.altocumulus.statistics.a,com.altocumulus.statistics.b$b)>
+    <p4.a: void f(android.content.Context,com.altocumulus.statistics.b$b)>
+    <com.id.main.service.LocationService: void q(j5.c)>
+    <com.id.main.service.LocationService: void o(j5.c)>
+    <com.id.main.service.LocationService: void k(com.id.main.service.LocationService,j5.c)>
+    <com.id.main.service.LocationService$a: void run()>
+    <android.os.Handler: boolean postDelayed(java.lang.Runnable,long)>
+    <c5.t: boolean l(java.lang.Runnable,long)>
+    <q4.u: void b(android.content.Context,com.id.main.model.IDCard02Info,java.lang.String)>
+    <com.id.main.model.IDCard02Info: void reportBehavior(android.content.Context,java.lang.String)>
+    <com.id.main.face.ObtainIDCardActivity: void onClick(android.view.View)>
+    <p4.a: void h(com.id.main.model.ACQ03Info,java.util.Map)>
+    <com.altocumulus.statistics.b: void m(com.altocumulus.statistics.models.ACQ03Info,com.altocumulus.statistics.b$b)>
+    <com.altocumulus.statistics.b: void h(java.lang.String,com.altocumulus.statistics.models.BaseInfo,com.altocumulus.statistics.b$b)>
+    <com.altocumulus.statistics.b: void i(java.lang.String,java.util.List,com.altocumulus.statistics.b$b)>
+    <w0.i: void f(java.lang.String)>
+    <w0.i: void g(java.lang.String,java.lang.String)>
+    <com.altocumulus.statistics.c: java.lang.String f()>
+    <com.altocumulus.statistics.c: java.lang.String f()>
+    <w0.i: void g(java.lang.String,java.lang.String)>
+    <w0.i: void g(java.lang.String,java.lang.String)>
+    <w0.i: void g(java.lang.String,java.lang.String)>
+    <w0.i: void a(java.lang.String)>
+    <w0.i: void b(java.lang.String,java.lang.String)>
+    <w0.i: void b(java.lang.String,java.lang.String)>
+
+Leak 18:
+  Source: $r1 = staticinvoke <android.os.Environment: java.io.File getExternalStorageDirectory()>() (<android.os.Environment: java.io.File getExternalStorageDirectory()>)
+  Sink: virtualinvoke $r10.<java.io.FileOutputStream: void write(byte[])>($r6) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <q4.l: java.lang.String f()>
+    <q4.l: java.lang.String f()>
+    <q4.l: java.lang.String f()>
+    <q4.l: java.lang.String i()>
+    <q4.l: java.lang.String i()>
+    <q4.l: java.lang.String i()>
+    <q4.l: java.lang.String i()>
+    <q4.l: java.lang.String i()>
+    <q4.a: void n(int,android.app.Activity)>
+    <com.id.main.activity.WebActivity: void C2(java.lang.String)>
+    <com.id.main.activity.WebActivity: void C2(java.lang.String)>
+    <com.id.main.frame.server.ServerAccessUtil: void uploadlicaiPhoto(java.io.File,java.lang.String,com.id.main.frame.server.ServerCallBack)>
+    <com.id.main.frame.server.ServerAccessUtil$15: void <init>(java.io.File,java.lang.String,com.id.main.frame.server.ServerCallBack)>
+    <com.id.main.frame.server.ServerAccessUtil$15: void <init>(java.io.File,java.lang.String,com.id.main.frame.server.ServerCallBack)>
+    <com.id.main.frame.server.ServerAccessUtil: void uploadlicaiPhoto(java.io.File,java.lang.String,com.id.main.frame.server.ServerCallBack)>
+    <com.id.main.frame.server.ServerAccessUtil$15: void run()>
+    <com.id.main.frame.server.ServerAccessUtil$15: void run()>
+    <c5.c: java.io.File c(java.io.File,int,int,int)>
+    <c5.c: java.io.File e(java.io.File,int,int,int,java.lang.String)>
+    <c5.c: java.io.File e(java.io.File,int,int,int,java.lang.String)>
+    <c5.c: java.io.File e(java.io.File,int,int,int,java.lang.String)>
+    <c5.c: java.io.File d(java.io.File,int,int,int,java.io.File)>
+    <c5.c: java.io.File d(java.io.File,int,int,int,java.io.File)>
+
+Leak 19:
+  Source: $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r2, 16384) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("LOG01", $r2) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <w0.a: android.content.pm.PackageInfo b(android.content.Context)>
+    <w0.a: android.content.pm.PackageInfo b(android.content.Context)>
+    <w0.a: java.lang.String c(android.content.Context)>
+    <w0.a: java.lang.String c(android.content.Context)>
+    <com.altocumulus.statistics.c: void D(android.content.Context,com.altocumulus.statistics.a,com.altocumulus.statistics.b$b)>
+    <com.altocumulus.statistics.c: void D(android.content.Context,com.altocumulus.statistics.a,com.altocumulus.statistics.b$b)>
+    <com.altocumulus.statistics.b: void e()>
+    <w0.i: void f(java.lang.String)>
+    <w0.i: void g(java.lang.String,java.lang.String)>
+    <com.altocumulus.statistics.c: java.lang.String f()>
+    <com.altocumulus.statistics.c: java.lang.String f()>
+    <w0.i: void g(java.lang.String,java.lang.String)>
+    <w0.i: void g(java.lang.String,java.lang.String)>
+    <w0.i: void g(java.lang.String,java.lang.String)>
+    <com.altocumulus.statistics.c: java.lang.String j()>
+    <com.altocumulus.statistics.a: java.lang.String A()>
+    <com.altocumulus.statistics.a: java.lang.String A()>
+    <com.altocumulus.statistics.c: java.lang.String j()>
+    <com.id.main.BaseApplication: void p()>
+    <q4.e: java.lang.String a(android.content.Context)>
+    <p4.a: void z(java.lang.String,java.lang.String)>
+    <com.altocumulus.statistics.models.BaseInfo: void <init>()>
+    <com.altocumulus.statistics.c: java.lang.String j()>
+    <com.altocumulus.statistics.c: java.lang.String j()>
+    <com.altocumulus.statistics.a: java.lang.String A()>
+    <com.altocumulus.statistics.a: java.lang.String A()>
+    <com.altocumulus.statistics.c: java.lang.String j()>
+    <com.altocumulus.statistics.models.BaseInfo: void <init>()>
+    <com.altocumulus.statistics.models.BaseInfo: void setChSub(java.lang.String)>
+    <com.altocumulus.statistics.models.BaseInfo: void setChSub(java.lang.String)>
+    <com.altocumulus.statistics.models.BaseInfo: void <init>()>
+    <p4.a: void z(java.lang.String,java.lang.String)>
+    <p4.a: void z(java.lang.String,java.lang.String)>
+    <p4.a: void z(java.lang.String,java.lang.String)>
+    <p4.a: void z(java.lang.String,java.lang.String)>
+
+Leak 20:
+  Source: $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r2, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("LOG01", $r2) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <c5.b: java.lang.String h(android.content.Context)>
+    <c5.b: java.lang.String h(android.content.Context)>
+    <c5.b: java.lang.String h(android.content.Context)>
+    <p4.a: void z(java.lang.String,java.lang.String)>
+    <p4.a: void z(java.lang.String,java.lang.String)>
+    <com.altocumulus.statistics.models.BaseInfo: void setExtras(java.util.Map)>
+    <com.altocumulus.statistics.models.BaseInfo: void setExtras(java.util.Map)>
+    <p4.a: void z(java.lang.String,java.lang.String)>
+    <p4.a: void z(java.lang.String,java.lang.String)>
+    <p4.a: void z(java.lang.String,java.lang.String)>
+    <p4.a: void z(java.lang.String,java.lang.String)>
+
+Leak 21:
+  Source: $r4 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r3, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: $r5 = virtualinvoke $r3.<javax.net.ssl.HttpsURLConnection: java.io.OutputStream getOutputStream()>() (<java.net.HttpURLConnection: java.io.OutputStream getOutputStream()>)
+  Methods:
+    <com.megvii.licensemanager.Manager: java.lang.String getPackageName()>
+    <com.megvii.licensemanager.Manager: java.lang.String getPackageName()>
+    <com.megvii.licensemanager.Manager: java.lang.String getPackageName()>
+    <com.megvii.licensemanager.Manager: java.lang.String getUserAgent()>
+    <com.megvii.licensemanager.Manager: java.lang.String getUserAgent()>
+    <com.megvii.licensemanager.Manager: java.lang.String getUserAgent()>
+    <com.megvii.licensemanager.Manager: java.lang.String doPost(java.lang.String)>
+    <com.megvii.licensemanager.Manager: java.lang.String doPost(java.lang.String)>
+
+Leak 22:
+  Source: $r4 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r3, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: $r5 = virtualinvoke $r3.<javax.net.ssl.HttpsURLConnection: java.io.OutputStream getOutputStream()>() (<java.net.HttpURLConnection: java.io.OutputStream getOutputStream()>)
+  Methods:
+    <com.megvii.licensemanager.Manager: java.lang.String getVersionName()>
+    <com.megvii.licensemanager.Manager: java.lang.String getVersionName()>
+    <com.megvii.licensemanager.Manager: java.lang.String getVersionName()>
+    <com.megvii.licensemanager.Manager: java.lang.String getUserAgent()>
+    <com.megvii.licensemanager.Manager: java.lang.String getUserAgent()>
+    <com.megvii.licensemanager.Manager: java.lang.String getUserAgent()>
+    <com.megvii.licensemanager.Manager: java.lang.String doPost(java.lang.String)>
+    <com.megvii.licensemanager.Manager: java.lang.String doPost(java.lang.String)>
+
+Leak 23:
+  Source: $r1 = staticinvoke <android.os.Environment: java.io.File getExternalStorageDirectory()>() (<android.os.Environment: java.io.File getExternalStorageDirectory()>)
+  Sink: virtualinvoke $r10.<java.io.FileOutputStream: void write(byte[])>($r6) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <q4.l: java.lang.String f()>
+    <q4.l: java.lang.String f()>
+    <q4.l: java.lang.String f()>
+    <q4.f: void <clinit>()>
+    <q4.f: void <clinit>()>
+    <q4.f: void <clinit>()>
+    <q4.f: void <clinit>()>
+    <com.id.main.face.ObtainIDCardActivity: void onClick(android.view.View)>
+    <com.id.main.face.ObtainIDCardActivity: void k1()>
+    <com.id.main.face.ObtainIDCardActivity: void a1()>
+    <com.id.main.frame.server.ServerAccessUtil: void uploadFacePic(int,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.io.File,java.lang.String,java.lang.String,com.id.main.frame.server.ServerCallBack)>
+    <com.id.main.frame.server.ServerAccessUtil$17: void run()>
+    <com.id.main.frame.server.ServerAccessUtil$17: void run()>
+    <com.id.main.frame.server.ServerAccessUtil$17: void run()>
+    <c5.c: java.io.File c(java.io.File,int,int,int)>
+    <c5.c: java.io.File e(java.io.File,int,int,int,java.lang.String)>
+    <c5.c: java.io.File e(java.io.File,int,int,int,java.lang.String)>
+    <c5.c: java.io.File e(java.io.File,int,int,int,java.lang.String)>
+    <c5.c: java.io.File d(java.io.File,int,int,int,java.io.File)>
+    <c5.c: java.io.File d(java.io.File,int,int,int,java.io.File)>
+

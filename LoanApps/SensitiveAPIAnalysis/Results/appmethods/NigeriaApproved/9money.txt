@@ -1,0 +1,82 @@
+APK: 9money (NigeriaApproved)
+Leak 1:
+  Source: $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r2, 1) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("EventManagerUtils", $r5) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <ŭ.¥: java.lang.String ¥(android.app.Application)>
+    <ŭ.¥: java.lang.String ¥(android.app.Application)>
+    <ŭ.¥: java.lang.String ¥(android.app.Application)>
+    <ŭ.ª: void ¤(android.app.Application,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)>
+    <ŭ.ª: void º(java.lang.String,java.lang.Object)>
+    <ŭ.ª: void º(java.lang.String,java.lang.Object)>
+    <ŭ.ª: void º(java.lang.String,java.lang.Object)>
+
+Leak 2:
+  Source: $r7 = virtualinvoke $r5.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r6, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("Interceptor", $r4) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.appsflyer.internal.AFd1pSDK: java.lang.String AFInAppEventParameterName(java.lang.String)>
+    <com.appsflyer.internal.AFd1pSDK: java.lang.String AFInAppEventParameterName(java.lang.String)>
+    <com.appsflyer.internal.AFd1pSDK: java.lang.String AFInAppEventParameterName(java.lang.String)>
+    <com.appsflyer.internal.AFd1pSDK: java.lang.String AFInAppEventParameterName(java.lang.String)>
+    <com.appsflyer.internal.AFd1pSDK: java.lang.String AFInAppEventParameterName(java.lang.String)>
+    <com.appsflyer.internal.AFd1pSDK: java.lang.String AFInAppEventParameterName(java.lang.String)>
+    <com.appsflyer.internal.AFd1pSDK: java.lang.String AFInAppEventParameterName(java.lang.String)>
+    <com.appsflyer.internal.AFd1pSDK: java.lang.String AFInAppEventParameterName()>
+    <com.appsflyer.internal.AFe1gSDK$1: java.lang.String valueOf()>
+    <com.appsflyer.internal.AFb1tSDK: java.lang.String AFInAppEventType(com.appsflyer.internal.AFd1xSDK,java.lang.String)>
+    <com.appsflyer.internal.AFe1gSDK$1: java.lang.String valueOf()>
+    <com.appsflyer.internal.AFe1gSDK$1: java.lang.String valueOf()>
+    <com.appsflyer.internal.AFe1gSDK$1: java.lang.String valueOf()>
+    <kotlin.text.StringsKt__StringsKt: java.lang.CharSequence ď(java.lang.CharSequence)>
+    <kotlin.text.StringsKt__StringsKt: java.lang.CharSequence ď(java.lang.CharSequence)>
+    <com.appsflyer.internal.AFe1gSDK$1: java.lang.String valueOf()>
+    <com.appsflyer.internal.AFe1gSDK$1: java.lang.String valueOf()>
+    <com.appsflyer.internal.AFe1gSDK$1: java.lang.Object invoke()>
+    <kotlin.SynchronizedLazyImpl: java.lang.Object getValue()>
+    <kotlin.SynchronizedLazyImpl: java.lang.Object getValue()>
+    <com.geecloud.lib.track.TrackKit: java.util.concurrent.ConcurrentHashMap Å()>
+    <com.geecloud.lib.track.TrackKit: java.util.concurrent.ConcurrentHashMap Å()>
+    <kotlin.SynchronizedLazyImpl: java.lang.Object getValue()>
+    <com.geecloud.lib.track.TrackKit: java.util.concurrent.ConcurrentHashMap Å()>
+    <com.geecloud.lib.track.upload.BodyInterceptor: java.util.TreeMap £()>
+    <com.geecloud.lib.track.TrackKit: java.util.concurrent.ConcurrentHashMap Å()>
+    <com.geecloud.lib.track.TrackKit: java.util.concurrent.ConcurrentHashMap Å()>
+    <kotlin.SynchronizedLazyImpl: java.lang.Object getValue()>
+    <kotlin.SynchronizedLazyImpl: java.lang.Object getValue()>
+    <com.geecloud.lib.track.TrackKit: java.util.concurrent.ConcurrentHashMap Å()>
+    <com.geecloud.lib.track.TrackKit: java.util.concurrent.ConcurrentHashMap Å()>
+    <com.geecloud.lib.track.upload.BodyInterceptor: java.util.TreeMap £()>
+    <com.geecloud.lib.track.upload.BodyInterceptor: java.util.TreeMap £()>
+    <com.geecloud.lib.track.upload.BodyInterceptor: java.util.TreeMap £()>
+    <com.geecloud.lib.track.upload.BodyInterceptor: java.util.TreeMap £()>
+    <com.geecloud.lib.track.upload.BodyInterceptor: okhttp3.Response intercept(okhttp3.Interceptor$Chain)>
+    <com.geecloud.lib.track.upload.BodyInterceptor: java.lang.String ¢(java.util.TreeMap)>
+    <com.geecloud.lib.track.upload.BodyInterceptor: java.lang.String ¢(java.util.TreeMap)>
+    <com.geecloud.lib.track.upload.BodyInterceptor: java.lang.String ¢(java.util.TreeMap)>
+
+Leak 3:
+  Source: $r4 = virtualinvoke $r3.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r2, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r5.<java.io.FileOutputStream: void write(byte[])>($r7) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <Ŝ.Þ: java.lang.String Ï()>
+    <Ŝ.Þ: java.lang.String Ï()>
+    <Ŝ.Þ: java.lang.String Ï()>
+    <com.facebook.internal.instrument.InstrumentData: void <init>(java.lang.Throwable,com.facebook.internal.instrument.InstrumentData$Type)>
+    <com.facebook.internal.instrument.InstrumentData: void <init>(java.lang.Throwable,com.facebook.internal.instrument.InstrumentData$Type)>
+    <com.facebook.internal.instrument.InstrumentData: void <init>(java.lang.Throwable,com.facebook.internal.instrument.InstrumentData$Type,kotlin.jvm.internal.DefaultConstructorMarker)>
+    <com.facebook.internal.instrument.InstrumentData$¢: com.facebook.internal.instrument.InstrumentData £(java.lang.Throwable,com.facebook.internal.instrument.InstrumentData$Type)>
+    <š.¥: void £(java.lang.Throwable,java.lang.Object)>
+    <com.facebook.internal.instrument.InstrumentData: void º()>
+    <com.facebook.internal.instrument.InstrumentData: java.lang.String toString()>
+    <com.facebook.internal.instrument.InstrumentData: org.json.JSONObject ª()>
+    <com.facebook.internal.instrument.InstrumentData: org.json.JSONObject ¥()>
+    <com.facebook.internal.instrument.InstrumentData: org.json.JSONObject ¥()>
+    <com.facebook.internal.instrument.InstrumentData: org.json.JSONObject ¥()>
+    <com.facebook.internal.instrument.InstrumentData: org.json.JSONObject ª()>
+    <com.facebook.internal.instrument.InstrumentData: java.lang.String toString()>
+    <com.facebook.internal.instrument.InstrumentData: java.lang.String toString()>
+    <com.facebook.internal.instrument.InstrumentData: void º()>
+    <Ş.Â: void Ì(java.lang.String,java.lang.String)>
+    <Ş.Â: void Ì(java.lang.String,java.lang.String)>
+

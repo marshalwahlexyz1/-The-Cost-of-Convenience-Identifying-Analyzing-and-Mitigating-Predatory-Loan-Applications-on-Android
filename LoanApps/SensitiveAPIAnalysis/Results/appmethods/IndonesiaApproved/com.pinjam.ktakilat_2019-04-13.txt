@@ -1,0 +1,188 @@
+APK: com.pinjam.ktakilat_2019-04-13 (IndonesiaApproved)
+Leak 1:
+  Source: $r6 = virtualinvoke $r4.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r5, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: $r6 = virtualinvoke $r21.<java.net.URL: java.net.URLConnection openConnection()>() (<java.net.URL: java.net.URLConnection openConnection()>)
+  Methods:
+    <com.onesignal.OneSignal: void init(com.onesignal.OneSignal$Builder)>
+    <com.onesignal.OneSignal: void init(com.onesignal.OneSignal$Builder)>
+    <com.onesignal.OneSignal: void init(com.onesignal.OneSignal$Builder)>
+    <com.onesignal.OneSignal: void init(com.onesignal.OneSignal$Builder)>
+    <com.onesignal.OneSignal: void init(android.content.Context,java.lang.String,java.lang.String,com.onesignal.OneSignal$NotificationOpenedHandler,com.onesignal.OneSignal$NotificationReceivedHandler)>
+    <com.onesignal.OneSignal: void init(android.content.Context,java.lang.String,java.lang.String,com.onesignal.OneSignal$NotificationOpenedHandler,com.onesignal.OneSignal$NotificationReceivedHandler)>
+    <com.onesignal.OneSignal: void startRegistrationOrOnSession()>
+    <com.onesignal.OneSignal: void makeAndroidParamsRequest()>
+    <com.onesignal.OneSignal: void makeAndroidParamsRequest()>
+    <com.onesignal.OneSignal: void makeAndroidParamsRequest()>
+    <com.onesignal.OneSignal: void makeAndroidParamsRequest()>
+    <com.onesignal.OneSignal: void makeAndroidParamsRequest()>
+    <com.onesignal.OneSignalRestClient: void get(java.lang.String,com.onesignal.OneSignalRestClient$ResponseHandler)>
+    <com.onesignal.OneSignalRestClient$3: void <init>(java.lang.String,com.onesignal.OneSignalRestClient$ResponseHandler)>
+    <com.onesignal.OneSignalRestClient$3: void <init>(java.lang.String,com.onesignal.OneSignalRestClient$ResponseHandler)>
+    <com.onesignal.OneSignalRestClient: void get(java.lang.String,com.onesignal.OneSignalRestClient$ResponseHandler)>
+    <com.onesignal.OneSignalRestClient: void get(java.lang.String,com.onesignal.OneSignalRestClient$ResponseHandler)>
+    <com.onesignal.OneSignalRestClient$3: void run()>
+    <com.onesignal.OneSignalRestClient$3: void run()>
+    <com.onesignal.OneSignalRestClient: void access$000(java.lang.String,java.lang.String,org.json.JSONObject,com.onesignal.OneSignalRestClient$ResponseHandler,int)>
+    <com.onesignal.OneSignalRestClient: void makeRequest(java.lang.String,java.lang.String,org.json.JSONObject,com.onesignal.OneSignalRestClient$ResponseHandler,int)>
+    <com.onesignal.OneSignalRestClient$4: void <init>(java.lang.Thread[],java.lang.String,java.lang.String,org.json.JSONObject,com.onesignal.OneSignalRestClient$ResponseHandler,int)>
+    <com.onesignal.OneSignalRestClient$4: void <init>(java.lang.Thread[],java.lang.String,java.lang.String,org.json.JSONObject,com.onesignal.OneSignalRestClient$ResponseHandler,int)>
+    <com.onesignal.OneSignalRestClient: void makeRequest(java.lang.String,java.lang.String,org.json.JSONObject,com.onesignal.OneSignalRestClient$ResponseHandler,int)>
+    <com.onesignal.OneSignalRestClient: void makeRequest(java.lang.String,java.lang.String,org.json.JSONObject,com.onesignal.OneSignalRestClient$ResponseHandler,int)>
+    <com.onesignal.OneSignalRestClient$4: void run()>
+    <com.onesignal.OneSignalRestClient$4: void run()>
+    <com.onesignal.OneSignalRestClient: java.lang.Thread access$100(java.lang.String,java.lang.String,org.json.JSONObject,com.onesignal.OneSignalRestClient$ResponseHandler,int)>
+    <com.onesignal.OneSignalRestClient: java.lang.Thread startHTTPConnection(java.lang.String,java.lang.String,org.json.JSONObject,com.onesignal.OneSignalRestClient$ResponseHandler,int)>
+    <com.onesignal.OneSignalRestClient: java.lang.Thread startHTTPConnection(java.lang.String,java.lang.String,org.json.JSONObject,com.onesignal.OneSignalRestClient$ResponseHandler,int)>
+    <com.onesignal.OneSignalRestClient: java.lang.Thread startHTTPConnection(java.lang.String,java.lang.String,org.json.JSONObject,com.onesignal.OneSignalRestClient$ResponseHandler,int)>
+    <com.onesignal.OneSignalRestClient: java.lang.Thread startHTTPConnection(java.lang.String,java.lang.String,org.json.JSONObject,com.onesignal.OneSignalRestClient$ResponseHandler,int)>
+
+Leak 2:
+  Source: $r8 = virtualinvoke $r4.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r3, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r10.<java.io.OutputStream: void write(byte[])>($r9) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.onesignal.OneSignal: void registerUserTask()>
+    <com.onesignal.OneSignal: void registerUserTask()>
+    <com.onesignal.OneSignal: void registerUserTask()>
+    <com.onesignal.OneSignal: void registerUserTask()>
+    <com.onesignal.OneSignalStateSynchronizer: void updateDeviceInfo(org.json.JSONObject)>
+    <com.onesignal.UserStateSynchronizer: void updateDeviceInfo(org.json.JSONObject)>
+    <com.onesignal.UserStateSynchronizer: org.json.JSONObject generateJsonDiff(org.json.JSONObject,org.json.JSONObject,org.json.JSONObject,java.util.Set)>
+    <com.onesignal.JSONUtils: org.json.JSONObject generateJsonDiff(org.json.JSONObject,org.json.JSONObject,org.json.JSONObject,java.util.Set)>
+    <com.onesignal.JSONUtils: org.json.JSONObject generateJsonDiff(org.json.JSONObject,org.json.JSONObject,org.json.JSONObject,java.util.Set)>
+    <com.onesignal.JSONUtils: org.json.JSONObject generateJsonDiff(org.json.JSONObject,org.json.JSONObject,org.json.JSONObject,java.util.Set)>
+    <com.onesignal.JSONUtils: org.json.JSONObject generateJsonDiff(org.json.JSONObject,org.json.JSONObject,org.json.JSONObject,java.util.Set)>
+    <com.onesignal.JSONUtils: org.json.JSONObject generateJsonDiff(org.json.JSONObject,org.json.JSONObject,org.json.JSONObject,java.util.Set)>
+    <com.onesignal.JSONUtils: org.json.JSONObject generateJsonDiff(org.json.JSONObject,org.json.JSONObject,org.json.JSONObject,java.util.Set)>
+    <com.onesignal.UserStateSynchronizer: org.json.JSONObject generateJsonDiff(org.json.JSONObject,org.json.JSONObject,org.json.JSONObject,java.util.Set)>
+    <com.onesignal.UserStateSynchronizer: void updateDeviceInfo(org.json.JSONObject)>
+    <com.onesignal.UserStateSynchronizer: void updateDeviceInfo(org.json.JSONObject)>
+    <com.onesignal.UserStateSynchronizer: com.onesignal.UserState getUserStateForModification()>
+    <com.onesignal.UserStateSynchronizer: com.onesignal.UserState getUserStateForModification()>
+    <com.onesignal.UserStateSynchronizer: void updateDeviceInfo(org.json.JSONObject)>
+    <com.onesignal.OneSignalStateSynchronizer: void updateDeviceInfo(org.json.JSONObject)>
+    <com.onesignal.OneSignalStateSynchronizer: com.onesignal.UserStatePushSynchronizer getPushStateSynchronizer()>
+    <com.onesignal.OneSignalStateSynchronizer: void syncUserState(boolean)>
+    <com.onesignal.OneSignalStateSynchronizer: com.onesignal.UserStatePushSynchronizer getPushStateSynchronizer()>
+    <com.onesignal.OneSignalStateSynchronizer: com.onesignal.UserStatePushSynchronizer getPushStateSynchronizer()>
+    <com.onesignal.OneSignalStateSynchronizer: void syncUserState(boolean)>
+    <com.onesignal.UserStateSynchronizer: void syncUserState(boolean)>
+    <com.onesignal.UserStateSynchronizer: void internalSyncUserState(boolean)>
+    <com.onesignal.UserStateSynchronizer: org.json.JSONObject generateJsonDiff(org.json.JSONObject,org.json.JSONObject,org.json.JSONObject,java.util.Set)>
+    <com.onesignal.UserStateSynchronizer: void internalSyncUserState(boolean)>
+    <com.onesignal.UserStateSynchronizer: com.onesignal.UserState getToSyncUserState()>
+    <com.onesignal.UserStatePushSynchronizer: com.onesignal.UserState newUserState(java.lang.String,boolean)>
+    <com.onesignal.UserStateSynchronizer: com.onesignal.UserState getToSyncUserState()>
+    <com.onesignal.UserStateSynchronizer: void internalSyncUserState(boolean)>
+    <com.onesignal.UserStateSynchronizer: com.onesignal.UserState getToSyncUserState()>
+    <com.onesignal.UserStateSynchronizer: com.onesignal.UserState getToSyncUserState()>
+    <com.onesignal.UserStateSynchronizer: void internalSyncUserState(boolean)>
+    <com.onesignal.UserState: org.json.JSONObject generateJsonDiff(com.onesignal.UserState,boolean)>
+    <com.onesignal.UserStateEmail: void addDependFields()>
+    <com.onesignal.UserState: org.json.JSONObject generateJsonDiff(com.onesignal.UserState,boolean)>
+    <com.onesignal.UserState: org.json.JSONObject generateJsonDiff(com.onesignal.UserState,boolean)>
+    <com.onesignal.UserState: org.json.JSONObject generateJsonDiff(org.json.JSONObject,org.json.JSONObject,org.json.JSONObject,java.util.Set)>
+    <com.onesignal.JSONUtils: org.json.JSONObject generateJsonDiff(org.json.JSONObject,org.json.JSONObject,org.json.JSONObject,java.util.Set)>
+    <com.onesignal.JSONUtils: org.json.JSONObject generateJsonDiff(org.json.JSONObject,org.json.JSONObject,org.json.JSONObject,java.util.Set)>
+    <com.onesignal.JSONUtils: org.json.JSONObject generateJsonDiff(org.json.JSONObject,org.json.JSONObject,org.json.JSONObject,java.util.Set)>
+    <com.onesignal.JSONUtils: org.json.JSONObject generateJsonDiff(org.json.JSONObject,org.json.JSONObject,org.json.JSONObject,java.util.Set)>
+    <com.onesignal.JSONUtils: org.json.JSONObject generateJsonDiff(org.json.JSONObject,org.json.JSONObject,org.json.JSONObject,java.util.Set)>
+    <com.onesignal.JSONUtils: void handleJsonArray(java.lang.String,org.json.JSONArray,org.json.JSONArray,org.json.JSONObject)>
+    <com.onesignal.JSONUtils: org.json.JSONObject generateJsonDiff(org.json.JSONObject,org.json.JSONObject,org.json.JSONObject,java.util.Set)>
+    <com.onesignal.JSONUtils: org.json.JSONObject generateJsonDiff(org.json.JSONObject,org.json.JSONObject,org.json.JSONObject,java.util.Set)>
+    <com.onesignal.JSONUtils: org.json.JSONObject generateJsonDiff(org.json.JSONObject,org.json.JSONObject,org.json.JSONObject,java.util.Set)>
+    <com.onesignal.UserState: org.json.JSONObject generateJsonDiff(org.json.JSONObject,org.json.JSONObject,org.json.JSONObject,java.util.Set)>
+    <com.onesignal.UserState: org.json.JSONObject generateJsonDiff(com.onesignal.UserState,boolean)>
+    <com.onesignal.UserStateSynchronizer: void internalSyncUserState(boolean)>
+    <com.onesignal.UserStateSynchronizer: void doPutSync(java.lang.String,org.json.JSONObject,org.json.JSONObject)>
+    <com.onesignal.OneSignalRestClient: void putSync(java.lang.String,org.json.JSONObject,com.onesignal.OneSignalRestClient$ResponseHandler)>
+    <com.onesignal.OneSignalRestClient: void makeRequest(java.lang.String,java.lang.String,org.json.JSONObject,com.onesignal.OneSignalRestClient$ResponseHandler,int)>
+    <com.onesignal.OneSignalRestClient$4: void <init>(java.lang.Thread[],java.lang.String,java.lang.String,org.json.JSONObject,com.onesignal.OneSignalRestClient$ResponseHandler,int)>
+    <com.onesignal.OneSignalRestClient$4: void <init>(java.lang.Thread[],java.lang.String,java.lang.String,org.json.JSONObject,com.onesignal.OneSignalRestClient$ResponseHandler,int)>
+    <com.onesignal.OneSignalRestClient: void makeRequest(java.lang.String,java.lang.String,org.json.JSONObject,com.onesignal.OneSignalRestClient$ResponseHandler,int)>
+    <com.onesignal.OneSignalRestClient: void makeRequest(java.lang.String,java.lang.String,org.json.JSONObject,com.onesignal.OneSignalRestClient$ResponseHandler,int)>
+    <com.onesignal.OneSignalRestClient$4: void run()>
+    <com.onesignal.OneSignalRestClient$4: void run()>
+    <com.onesignal.OneSignalRestClient: java.lang.Thread access$100(java.lang.String,java.lang.String,org.json.JSONObject,com.onesignal.OneSignalRestClient$ResponseHandler,int)>
+    <com.onesignal.OneSignalRestClient: java.lang.Thread startHTTPConnection(java.lang.String,java.lang.String,org.json.JSONObject,com.onesignal.OneSignalRestClient$ResponseHandler,int)>
+    <com.onesignal.OneSignalRestClient: java.lang.Thread startHTTPConnection(java.lang.String,java.lang.String,org.json.JSONObject,com.onesignal.OneSignalRestClient$ResponseHandler,int)>
+    <com.onesignal.OneSignalRestClient: java.lang.Thread startHTTPConnection(java.lang.String,java.lang.String,org.json.JSONObject,com.onesignal.OneSignalRestClient$ResponseHandler,int)>
+
+Leak 3:
+  Source: $r6 = virtualinvoke $r4.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r5, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r10.<java.io.OutputStream: void write(byte[])>($r9) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.onesignal.OneSignal: void init(com.onesignal.OneSignal$Builder)>
+    <com.onesignal.OneSignal: void init(com.onesignal.OneSignal$Builder)>
+    <com.onesignal.OneSignal: void init(com.onesignal.OneSignal$Builder)>
+    <com.onesignal.OneSignal: void init(com.onesignal.OneSignal$Builder)>
+    <com.onesignal.OneSignal: void init(android.content.Context,java.lang.String,java.lang.String,com.onesignal.OneSignal$NotificationOpenedHandler,com.onesignal.OneSignal$NotificationReceivedHandler)>
+    <com.onesignal.OneSignal: void init(android.content.Context,java.lang.String,java.lang.String,com.onesignal.OneSignal$NotificationOpenedHandler,com.onesignal.OneSignal$NotificationReceivedHandler)>
+    <com.onesignal.OneSignal: void startRegistrationOrOnSession()>
+    <com.onesignal.OneSignal: void makeAndroidParamsRequest()>
+    <com.onesignal.OneSignal: void makeAndroidParamsRequest()>
+    <com.onesignal.OneSignal: void makeAndroidParamsRequest()>
+    <com.onesignal.OneSignal: void makeAndroidParamsRequest()>
+    <com.onesignal.OneSignal: void makeAndroidParamsRequest()>
+    <com.onesignal.OneSignalRestClient: void get(java.lang.String,com.onesignal.OneSignalRestClient$ResponseHandler)>
+    <com.onesignal.OneSignalRestClient$3: void <init>(java.lang.String,com.onesignal.OneSignalRestClient$ResponseHandler)>
+    <com.onesignal.OneSignalRestClient$3: void <init>(java.lang.String,com.onesignal.OneSignalRestClient$ResponseHandler)>
+    <com.onesignal.OneSignalRestClient: void get(java.lang.String,com.onesignal.OneSignalRestClient$ResponseHandler)>
+    <com.onesignal.OneSignalRestClient: void get(java.lang.String,com.onesignal.OneSignalRestClient$ResponseHandler)>
+    <com.onesignal.OneSignalRestClient$3: void run()>
+    <com.onesignal.OneSignalRestClient$3: void run()>
+    <com.onesignal.OneSignalRestClient: void access$000(java.lang.String,java.lang.String,org.json.JSONObject,com.onesignal.OneSignalRestClient$ResponseHandler,int)>
+    <com.onesignal.OneSignalRestClient: void makeRequest(java.lang.String,java.lang.String,org.json.JSONObject,com.onesignal.OneSignalRestClient$ResponseHandler,int)>
+    <com.onesignal.OneSignalRestClient$4: void <init>(java.lang.Thread[],java.lang.String,java.lang.String,org.json.JSONObject,com.onesignal.OneSignalRestClient$ResponseHandler,int)>
+    <com.onesignal.OneSignalRestClient$4: void <init>(java.lang.Thread[],java.lang.String,java.lang.String,org.json.JSONObject,com.onesignal.OneSignalRestClient$ResponseHandler,int)>
+    <com.onesignal.OneSignalRestClient: void makeRequest(java.lang.String,java.lang.String,org.json.JSONObject,com.onesignal.OneSignalRestClient$ResponseHandler,int)>
+    <com.onesignal.OneSignalRestClient: void makeRequest(java.lang.String,java.lang.String,org.json.JSONObject,com.onesignal.OneSignalRestClient$ResponseHandler,int)>
+    <com.onesignal.OneSignalRestClient$4: void run()>
+    <com.onesignal.OneSignalRestClient$4: void run()>
+    <com.onesignal.OneSignalRestClient: java.lang.Thread access$100(java.lang.String,java.lang.String,org.json.JSONObject,com.onesignal.OneSignalRestClient$ResponseHandler,int)>
+    <com.onesignal.OneSignalRestClient: java.lang.Thread startHTTPConnection(java.lang.String,java.lang.String,org.json.JSONObject,com.onesignal.OneSignalRestClient$ResponseHandler,int)>
+    <com.onesignal.OneSignalRestClient: java.lang.Thread startHTTPConnection(java.lang.String,java.lang.String,org.json.JSONObject,com.onesignal.OneSignalRestClient$ResponseHandler,int)>
+    <com.onesignal.OneSignalRestClient: java.lang.Thread startHTTPConnection(java.lang.String,java.lang.String,org.json.JSONObject,com.onesignal.OneSignalRestClient$ResponseHandler,int)>
+    <com.onesignal.OneSignalRestClient: java.lang.Thread startHTTPConnection(java.lang.String,java.lang.String,org.json.JSONObject,com.onesignal.OneSignalRestClient$ResponseHandler,int)>
+    <com.onesignal.OneSignalRestClient: java.lang.Thread startHTTPConnection(java.lang.String,java.lang.String,org.json.JSONObject,com.onesignal.OneSignalRestClient$ResponseHandler,int)>
+    <com.onesignal.OneSignalRestClient: java.lang.Thread startHTTPConnection(java.lang.String,java.lang.String,org.json.JSONObject,com.onesignal.OneSignalRestClient$ResponseHandler,int)>
+    <com.onesignal.OneSignalRestClient: java.lang.Thread startHTTPConnection(java.lang.String,java.lang.String,org.json.JSONObject,com.onesignal.OneSignalRestClient$ResponseHandler,int)>
+
+Leak 4:
+  Source: $r6 = virtualinvoke $r4.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r5, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: $r10 = virtualinvoke $r7.<java.net.HttpURLConnection: java.io.OutputStream getOutputStream()>() (<java.net.HttpURLConnection: java.io.OutputStream getOutputStream()>)
+  Methods:
+    <com.onesignal.OneSignal: void init(com.onesignal.OneSignal$Builder)>
+    <com.onesignal.OneSignal: void init(com.onesignal.OneSignal$Builder)>
+    <com.onesignal.OneSignal: void init(com.onesignal.OneSignal$Builder)>
+    <com.onesignal.OneSignal: void init(com.onesignal.OneSignal$Builder)>
+    <com.onesignal.OneSignal: void init(android.content.Context,java.lang.String,java.lang.String,com.onesignal.OneSignal$NotificationOpenedHandler,com.onesignal.OneSignal$NotificationReceivedHandler)>
+    <com.onesignal.OneSignal: void init(android.content.Context,java.lang.String,java.lang.String,com.onesignal.OneSignal$NotificationOpenedHandler,com.onesignal.OneSignal$NotificationReceivedHandler)>
+    <com.onesignal.OneSignal: void startRegistrationOrOnSession()>
+    <com.onesignal.OneSignal: void makeAndroidParamsRequest()>
+    <com.onesignal.OneSignal: void makeAndroidParamsRequest()>
+    <com.onesignal.OneSignal: void makeAndroidParamsRequest()>
+    <com.onesignal.OneSignal: void makeAndroidParamsRequest()>
+    <com.onesignal.OneSignal: void makeAndroidParamsRequest()>
+    <com.onesignal.OneSignalRestClient: void get(java.lang.String,com.onesignal.OneSignalRestClient$ResponseHandler)>
+    <com.onesignal.OneSignalRestClient$3: void <init>(java.lang.String,com.onesignal.OneSignalRestClient$ResponseHandler)>
+    <com.onesignal.OneSignalRestClient$3: void <init>(java.lang.String,com.onesignal.OneSignalRestClient$ResponseHandler)>
+    <com.onesignal.OneSignalRestClient: void get(java.lang.String,com.onesignal.OneSignalRestClient$ResponseHandler)>
+    <com.onesignal.OneSignalRestClient: void get(java.lang.String,com.onesignal.OneSignalRestClient$ResponseHandler)>
+    <com.onesignal.OneSignalRestClient$3: void run()>
+    <com.onesignal.OneSignalRestClient$3: void run()>
+    <com.onesignal.OneSignalRestClient: void access$000(java.lang.String,java.lang.String,org.json.JSONObject,com.onesignal.OneSignalRestClient$ResponseHandler,int)>
+    <com.onesignal.OneSignalRestClient: void makeRequest(java.lang.String,java.lang.String,org.json.JSONObject,com.onesignal.OneSignalRestClient$ResponseHandler,int)>
+    <com.onesignal.OneSignalRestClient$4: void <init>(java.lang.Thread[],java.lang.String,java.lang.String,org.json.JSONObject,com.onesignal.OneSignalRestClient$ResponseHandler,int)>
+    <com.onesignal.OneSignalRestClient$4: void <init>(java.lang.Thread[],java.lang.String,java.lang.String,org.json.JSONObject,com.onesignal.OneSignalRestClient$ResponseHandler,int)>
+    <com.onesignal.OneSignalRestClient: void makeRequest(java.lang.String,java.lang.String,org.json.JSONObject,com.onesignal.OneSignalRestClient$ResponseHandler,int)>
+    <com.onesignal.OneSignalRestClient: void makeRequest(java.lang.String,java.lang.String,org.json.JSONObject,com.onesignal.OneSignalRestClient$ResponseHandler,int)>
+    <com.onesignal.OneSignalRestClient$4: void run()>
+    <com.onesignal.OneSignalRestClient$4: void run()>
+    <com.onesignal.OneSignalRestClient: java.lang.Thread access$100(java.lang.String,java.lang.String,org.json.JSONObject,com.onesignal.OneSignalRestClient$ResponseHandler,int)>
+    <com.onesignal.OneSignalRestClient: java.lang.Thread startHTTPConnection(java.lang.String,java.lang.String,org.json.JSONObject,com.onesignal.OneSignalRestClient$ResponseHandler,int)>
+    <com.onesignal.OneSignalRestClient: java.lang.Thread startHTTPConnection(java.lang.String,java.lang.String,org.json.JSONObject,com.onesignal.OneSignalRestClient$ResponseHandler,int)>
+    <com.onesignal.OneSignalRestClient: java.lang.Thread startHTTPConnection(java.lang.String,java.lang.String,org.json.JSONObject,com.onesignal.OneSignalRestClient$ResponseHandler,int)>
+    <com.onesignal.OneSignalRestClient: java.lang.Thread startHTTPConnection(java.lang.String,java.lang.String,org.json.JSONObject,com.onesignal.OneSignalRestClient$ResponseHandler,int)>
+    <com.onesignal.OneSignalRestClient: java.lang.Thread startHTTPConnection(java.lang.String,java.lang.String,org.json.JSONObject,com.onesignal.OneSignalRestClient$ResponseHandler,int)>
+    <com.onesignal.OneSignalRestClient: java.lang.Thread startHTTPConnection(java.lang.String,java.lang.String,org.json.JSONObject,com.onesignal.OneSignalRestClient$ResponseHandler,int)>
+

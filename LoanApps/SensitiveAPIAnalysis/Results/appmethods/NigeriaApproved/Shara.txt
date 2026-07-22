@@ -1,0 +1,147 @@
+APK: Shara (NigeriaApproved)
+Leak 1:
+  Source: $r2 = staticinvoke <android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>($r3) (<android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>)
+  Sink: virtualinvoke $r0.<java.io.OutputStream: void write(byte[])>($r4) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.uxcam.screenaction.utils.FilePath: java.io.File getAlbumStorageDir(java.lang.String)>
+    <com.uxcam.screenaction.utils.FilePath: java.io.File getAlbumStorageDir(java.lang.String)>
+    <com.uxcam.screenaction.utils.FilePath: java.io.File getAlbumStorageDir(java.lang.String)>
+    <com.uxcam.screenaction.utils.FilePath: java.lang.String getRootUrl(boolean)>
+    <com.uxcam.screenaction.utils.FilePath: java.lang.String getRootUrl(boolean)>
+    <com.uxcam.internals.gc: void b(java.io.File,java.lang.String)>
+    <com.uxcam.internals.gc: void b(java.io.File,java.lang.String)>
+    <com.uxcam.internals.gc: void b(java.io.File,java.lang.String)>
+    <com.uxcam.internals.br: java.io.File a(java.lang.String,com.uxcam.internals.gh,java.lang.String)>
+    <com.uxcam.internals.br: java.io.File a(java.lang.String,com.uxcam.internals.gh,java.lang.String)>
+    <com.uxcam.internals.br: void a(java.lang.String,java.lang.String)>
+    <com.uxcam.internals.br: void a(java.lang.String,java.lang.String)>
+    <com.uxcam.internals.br: void a(java.lang.String,java.lang.String)>
+    <com.uxcam.internals.br: void a(java.lang.String,java.lang.String)>
+    <com.uxcam.internals.br: void a(java.lang.String,java.lang.String)>
+    <com.uxcam.internals.br: void a(java.util.zip.ZipOutputStream,java.io.ByteArrayOutputStream,com.uxcam.internals.hw)>
+
+Leak 2:
+  Source: $r2 = staticinvoke <android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>($r3) (<android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>)
+  Sink: virtualinvoke $r0.<java.io.OutputStream: void write(byte[])>($r4) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.uxcam.screenaction.utils.FilePath: java.io.File getAlbumStorageDir(java.lang.String)>
+    <com.uxcam.screenaction.utils.FilePath: java.io.File getAlbumStorageDir(java.lang.String)>
+    <com.uxcam.screenaction.utils.FilePath: java.io.File getAlbumStorageDir(java.lang.String)>
+    <com.uxcam.screenaction.utils.FilePath: java.lang.String getRootUrl(boolean)>
+    <com.uxcam.screenaction.utils.FilePath: java.lang.String getRootUrl(boolean)>
+    <com.uxcam.screenaction.utils.FilePath: java.lang.String getSessionRootUrl(java.lang.String,java.lang.Boolean)>
+    <com.uxcam.screenaction.utils.FilePath: java.lang.String getSessionRootUrl(java.lang.String,java.lang.Boolean)>
+    <com.uxcam.screenaction.utils.FilePath: java.lang.String getSessionRootUrl(java.lang.String,java.lang.Boolean)>
+    <com.uxcam.internals.gf: void a(java.lang.String,boolean,java.io.File)>
+    <com.uxcam.internals.br: java.io.File a(java.lang.String,com.uxcam.internals.gh,java.lang.String)>
+    <com.uxcam.internals.br: java.io.File a(java.lang.String,com.uxcam.internals.gh,java.lang.String)>
+    <com.uxcam.internals.br: void a(java.lang.String,java.lang.String)>
+    <com.uxcam.internals.br: void a(java.lang.String,java.lang.String)>
+    <com.uxcam.internals.br: void a(java.lang.String,java.lang.String)>
+    <com.uxcam.internals.br: void a(java.lang.String,java.lang.String)>
+    <com.uxcam.internals.br: void a(java.lang.String,java.lang.String)>
+    <com.uxcam.internals.br: void a(java.util.zip.ZipOutputStream,java.io.ByteArrayOutputStream,com.uxcam.internals.hw)>
+
+Leak 3:
+  Source: $r4 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r3, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r0.<java.io.OutputStream: void write(byte[])>($r12) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.uxcam.screenaction.utils.Util: android.util.Pair getApplicationVersionName(android.content.Context)>
+    <com.uxcam.screenaction.utils.Util: android.util.Pair getApplicationVersionName(android.content.Context)>
+    <com.uxcam.screenaction.utils.Util: android.util.Pair getApplicationVersionName(android.content.Context)>
+    <com.uxcam.screenaction.utils.Util: android.util.Pair getApplicationVersionName(android.content.Context)>
+    <com.uxcam.screenaction.utils.Util: android.util.Pair getApplicationVersionName(android.content.Context)>
+    <com.uxcam.internals.br: java.io.File a(java.lang.String,com.uxcam.internals.gh,java.lang.String)>
+    <com.uxcam.internals.br: java.io.File a(java.lang.String,com.uxcam.internals.gh,java.lang.String)>
+    <com.uxcam.internals.br: java.io.File a(java.lang.String,com.uxcam.internals.gh,java.lang.String)>
+    <com.uxcam.internals.br: java.io.File a(java.lang.String,com.uxcam.internals.gh,java.lang.String)>
+    <com.uxcam.internals.br: void a(java.lang.String,java.lang.String)>
+    <com.uxcam.internals.br: void a(java.lang.String,java.lang.String)>
+
+Leak 4:
+  Source: $r4 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r3, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r5.<java.io.FileOutputStream: void write(byte[])>($r12) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <com.uxcam.screenaction.utils.Util: android.util.Pair getApplicationVersionName(android.content.Context)>
+    <com.uxcam.screenaction.utils.Util: android.util.Pair getApplicationVersionName(android.content.Context)>
+    <com.uxcam.screenaction.utils.Util: android.util.Pair getApplicationVersionName(android.content.Context)>
+    <com.uxcam.screenaction.utils.Util: android.util.Pair getApplicationVersionName(android.content.Context)>
+    <com.uxcam.screenaction.utils.Util: android.util.Pair getApplicationVersionName(android.content.Context)>
+    <com.uxcam.internals.br: java.io.File a(java.lang.String,com.uxcam.internals.gh,java.lang.String)>
+    <com.uxcam.internals.br: java.io.File a(java.lang.String,com.uxcam.internals.gh,java.lang.String)>
+    <com.uxcam.internals.br: java.io.File a(java.lang.String,com.uxcam.internals.gh,java.lang.String)>
+    <com.uxcam.internals.br: java.io.File a(java.lang.String,com.uxcam.internals.gh,java.lang.String)>
+    <com.uxcam.internals.br: void a(java.lang.String,java.lang.String)>
+    <com.uxcam.internals.br: void a(java.lang.String,java.lang.String)>
+
+Leak 5:
+  Source: $r2 = staticinvoke <android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>($r3) (<android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>)
+  Sink: virtualinvoke $r5.<java.io.FileOutputStream: void write(byte[])>($r12) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <com.uxcam.screenaction.utils.FilePath: java.io.File getAlbumStorageDir(java.lang.String)>
+    <com.uxcam.screenaction.utils.FilePath: java.io.File getAlbumStorageDir(java.lang.String)>
+    <com.uxcam.screenaction.utils.FilePath: java.io.File getAlbumStorageDir(java.lang.String)>
+    <com.uxcam.screenaction.utils.FilePath: java.lang.String getRootUrl(boolean)>
+    <com.uxcam.screenaction.utils.FilePath: java.lang.String getRootUrl(boolean)>
+    <com.uxcam.screenaction.utils.FilePath: java.lang.String getSessionRootUrl(java.lang.String,java.lang.Boolean)>
+    <com.uxcam.screenaction.utils.FilePath: java.lang.String getSessionRootUrl(java.lang.String,java.lang.Boolean)>
+    <com.uxcam.screenaction.utils.FilePath: java.lang.String getSessionRootUrl(java.lang.String,java.lang.Boolean)>
+    <com.uxcam.internals.gf: void a(java.lang.String,boolean,java.io.File)>
+    <com.uxcam.internals.br: java.io.File a(java.lang.String,com.uxcam.internals.gh,java.lang.String)>
+    <com.uxcam.internals.br: java.io.File a(java.lang.String,com.uxcam.internals.gh,java.lang.String)>
+    <com.uxcam.internals.br: void a(java.lang.String,java.lang.String)>
+    <com.uxcam.internals.br: void a(java.lang.String,java.lang.String)>
+    <com.uxcam.internals.br: void a(java.lang.String,java.lang.String)>
+    <com.uxcam.internals.br: void a(java.lang.String,java.lang.String)>
+
+Leak 6:
+  Source: $r4 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r3, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r4.<java.io.OutputStream: void write(byte[])>($r6) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.uxcam.screenaction.utils.Util: android.util.Pair getApplicationVersionName(android.content.Context)>
+    <com.uxcam.screenaction.utils.Util: android.util.Pair getApplicationVersionName(android.content.Context)>
+    <com.uxcam.screenaction.utils.Util: android.util.Pair getApplicationVersionName(android.content.Context)>
+    <com.uxcam.screenaction.utils.Util: android.util.Pair getApplicationVersionName(android.content.Context)>
+    <com.uxcam.screenaction.utils.Util: android.util.Pair getApplicationVersionName(android.content.Context)>
+    <com.uxcam.internals.br: java.io.File a(java.lang.String,com.uxcam.internals.gh,java.lang.String)>
+    <com.uxcam.internals.br: java.io.File a(java.lang.String,com.uxcam.internals.gh,java.lang.String)>
+    <com.uxcam.internals.br: java.io.File a(java.lang.String,com.uxcam.internals.gh,java.lang.String)>
+    <com.uxcam.internals.br: java.io.File a(java.lang.String,com.uxcam.internals.gh,java.lang.String)>
+    <com.uxcam.internals.gh: void a(java.lang.String)>
+    <com.uxcam.internals.gh: void a(java.lang.String)>
+    <com.uxcam.internals.gi: void a()>
+    <com.uxcam.internals.gi: void a()>
+    <com.uxcam.internals.gi: void a()>
+
+Leak 7:
+  Source: $r4 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r3, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("ManifestParser", $r5) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.bumptech.glide.module.ManifestParser: android.content.pm.ApplicationInfo getOurApplicationInfo()>
+    <com.bumptech.glide.module.ManifestParser: android.content.pm.ApplicationInfo getOurApplicationInfo()>
+    <com.bumptech.glide.module.ManifestParser: java.util.List parse()>
+    <com.bumptech.glide.module.ManifestParser: java.util.List parse()>
+    <com.bumptech.glide.module.ManifestParser: java.util.List parse()>
+    <com.bumptech.glide.module.ManifestParser: java.util.List parse()>
+    <com.bumptech.glide.module.ManifestParser: java.util.List parse()>
+    <com.bumptech.glide.module.ManifestParser: java.util.List parse()>
+    <com.bumptech.glide.module.ManifestParser: java.util.List parse()>
+    <com.bumptech.glide.module.ManifestParser: java.util.List parse()>
+
+Leak 8:
+  Source: $r2 = staticinvoke <android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>($r3) (<android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>)
+  Sink: virtualinvoke $r5.<java.io.FileOutputStream: void write(byte[])>($r6) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <com.uxcam.screenaction.utils.FilePath: java.io.File getAlbumStorageDir(java.lang.String)>
+    <com.uxcam.screenaction.utils.FilePath: java.io.File getAlbumStorageDir(java.lang.String)>
+    <com.uxcam.screenaction.utils.FilePath: java.io.File getAlbumStorageDir(java.lang.String)>
+    <com.uxcam.screenaction.utils.FilePath: java.lang.String getRootUrl(boolean)>
+    <com.uxcam.screenaction.utils.FilePath: java.lang.String getRootUrl(boolean)>
+    <com.uxcam.screenaction.utils.FilePath: java.lang.String getSessionRootUrl(java.lang.String,java.lang.Boolean)>
+    <com.uxcam.screenaction.utils.FilePath: java.lang.String getSessionRootUrl(java.lang.String,java.lang.Boolean)>
+    <com.uxcam.screenaction.utils.FilePath: java.lang.String getSessionRootUrl(java.lang.String,java.lang.Boolean)>
+    <com.uxcam.internals.br: void a(java.lang.String)>
+    <com.uxcam.internals.br: void a(java.lang.String)>
+    <com.uxcam.internals.br: void a(java.lang.String)>
+    <com.uxcam.internals.br: void a(java.lang.String)>
+

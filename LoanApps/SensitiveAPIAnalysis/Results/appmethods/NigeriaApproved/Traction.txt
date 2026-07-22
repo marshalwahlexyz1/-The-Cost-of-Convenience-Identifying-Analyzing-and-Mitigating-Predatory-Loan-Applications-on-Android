@@ -1,0 +1,64 @@
+APK: Traction (NigeriaApproved)
+Leak 1:
+  Source: $r3 = staticinvoke <android.os.Environment: java.io.File getExternalStorageDirectory()>() (<android.os.Environment: java.io.File getExternalStorageDirectory()>)
+  Sink: virtualinvoke $r5.<java.io.FileOutputStream: void write(byte[])>($r0) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <com.mf.mpos.audio.a: java.lang.String a(java.lang.String,java.lang.String)>
+    <com.mf.mpos.audio.a: java.lang.String a(java.lang.String,java.lang.String)>
+    <com.mf.mpos.audio.a: java.lang.String a(java.lang.String,java.lang.String)>
+    <com.mf.mpos.audio.a: java.lang.String a(java.lang.String,java.lang.String)>
+    <com.mf.mpos.audio.a: java.lang.String a(java.lang.String,java.lang.String)>
+    <com.mf.mpos.audio.b: void p()>
+    <com.mf.mpos.audio.a: void a(java.lang.String,byte[],int)>
+    <com.mf.mpos.audio.a: void a(java.lang.String,byte[],int)>
+    <com.mf.mpos.audio.a: void a(java.lang.String,byte[],int)>
+    <com.mf.mpos.audio.a: void a(java.lang.String,byte[],int)>
+
+Leak 2:
+  Source: $r5 = virtualinvoke $r4.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r3, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r5.<java.io.FileOutputStream: void write(byte[])>($r7) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <com.facebook.internal.Utility: java.lang.String getAppVersion()>
+    <com.facebook.internal.Utility: java.lang.String getAppVersion()>
+    <com.facebook.internal.Utility: java.lang.String getAppVersion()>
+    <com.facebook.internal.instrument.InstrumentData: void <init>(java.lang.Throwable,com.facebook.internal.instrument.InstrumentData$Type)>
+    <com.facebook.internal.instrument.InstrumentData: void <init>(java.lang.Throwable,com.facebook.internal.instrument.InstrumentData$Type)>
+    <com.facebook.internal.instrument.InstrumentData: void <init>(java.lang.Throwable,com.facebook.internal.instrument.InstrumentData$Type,kotlin.jvm.internal.DefaultConstructorMarker)>
+    <com.facebook.internal.instrument.InstrumentData$Builder: com.facebook.internal.instrument.InstrumentData build(java.lang.Throwable,com.facebook.internal.instrument.InstrumentData$Type)>
+    <com.facebook.internal.instrument.crashshield.CrashShieldHandler: void handleThrowable(java.lang.Throwable,java.lang.Object)>
+    <com.facebook.internal.instrument.InstrumentData: void save()>
+    <com.facebook.internal.instrument.InstrumentData: java.lang.String toString()>
+    <com.facebook.internal.instrument.InstrumentData: org.json.JSONObject getParameters()>
+    <com.facebook.internal.instrument.InstrumentData: org.json.JSONObject getExceptionReportParameters()>
+    <com.facebook.internal.instrument.InstrumentData: org.json.JSONObject getExceptionReportParameters()>
+    <com.facebook.internal.instrument.InstrumentData: org.json.JSONObject getExceptionReportParameters()>
+    <com.facebook.internal.instrument.InstrumentData: org.json.JSONObject getParameters()>
+    <com.facebook.internal.instrument.InstrumentData: java.lang.String toString()>
+    <com.facebook.internal.instrument.InstrumentData: java.lang.String toString()>
+    <com.facebook.internal.instrument.InstrumentData: void save()>
+    <com.facebook.internal.instrument.InstrumentUtility: void writeFile(java.lang.String,java.lang.String)>
+    <com.facebook.internal.instrument.InstrumentUtility: void writeFile(java.lang.String,java.lang.String)>
+
+Leak 3:
+  Source: $r5 = virtualinvoke $r3.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r4, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: interfaceinvoke $r9.<retrofit2.Call: void enqueue(retrofit2.Callback)>($r1) (<retrofit2.Call: void enqueue(retrofit2.Callback)>)
+  Methods:
+    <com.intercom.commons.utilities.DeviceUtils: java.lang.String getAppVersion(android.content.Context)>
+    <com.intercom.commons.utilities.DeviceUtils: java.lang.String getAppVersion(android.content.Context)>
+    <com.intercom.commons.utilities.DeviceUtils: java.lang.String getAppVersion(android.content.Context)>
+    <io.intercom.android.sdk.metrics.MetricTracker: void <init>(io.intercom.android.sdk.identity.UserIdentity,io.intercom.android.sdk.metrics.MetricsStore,com.intercom.commons.utilities.TimeProvider,android.content.Context)>
+    <io.intercom.android.sdk.metrics.MetricTracker: void <init>(io.intercom.android.sdk.identity.UserIdentity,io.intercom.android.sdk.metrics.MetricsStore,com.intercom.commons.utilities.TimeProvider,android.content.Context)>
+    <io.intercom.android.sdk.metrics.MetricTracker: void <init>(io.intercom.android.sdk.identity.UserIdentity,io.intercom.android.sdk.metrics.MetricsStore,android.content.Context)>
+    <io.intercom.android.sdk.Injector: io.intercom.android.sdk.metrics.MetricTracker getMetricTracker()>
+    <io.intercom.android.sdk.Injector: io.intercom.android.sdk.metrics.MetricTracker getMetricTracker()>
+    <io.intercom.android.sdk.activities.IntercomSheetActivity: void onCreate(android.os.Bundle)>
+    <io.intercom.android.sdk.sheets.SheetWebViewPresenter: void <init>(android.webkit.WebView,io.intercom.android.sdk.conversation.JavascriptRunner,java.lang.String,io.intercom.android.sdk.sheets.SheetListener,io.intercom.android.sdk.Injector)>
+    <io.intercom.android.sdk.sheets.SheetWebViewPresenter: void <init>(android.webkit.WebView,io.intercom.android.sdk.conversation.JavascriptRunner,java.lang.String,io.intercom.android.sdk.sheets.SheetListener,io.intercom.android.sdk.Injector)>
+    <io.intercom.android.sdk.activities.IntercomSheetActivity: void onCreate(android.os.Bundle)>
+    <io.intercom.android.sdk.activities.IntercomSheetActivity: void onCreate(android.os.Bundle)>
+    <io.intercom.android.sdk.activities.IntercomSheetActivity: void loadSheet(io.intercom.android.sdk.api.Api)>
+    <io.intercom.android.sdk.activities.IntercomSheetActivity$3: void <init>(io.intercom.android.sdk.activities.IntercomSheetActivity)>
+    <io.intercom.android.sdk.activities.IntercomSheetActivity$3: void <init>(io.intercom.android.sdk.activities.IntercomSheetActivity)>
+    <io.intercom.android.sdk.activities.IntercomSheetActivity: void loadSheet(io.intercom.android.sdk.api.Api)>
+    <io.intercom.android.sdk.api.Api: void fetchSheet(java.util.HashMap,retrofit2.Callback)>
+

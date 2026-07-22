@@ -1,0 +1,143 @@
+APK: Helacash (KenyaApproved)
+Leak 1:
+  Source: $r8 = virtualinvoke $r6.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r7, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("ManifestParser", $r7) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <ke.helacash.Bl: void w(android.content.Context,com.bumptech.glide.GeneratedAppGlideModule)>
+    <ke.helacash.Bl: void w(android.content.Context,com.bumptech.glide.GeneratedAppGlideModule)>
+    <ke.helacash.Bl: void w(android.content.Context,com.bumptech.glide.GeneratedAppGlideModule)>
+    <ke.helacash.Bl: void w(android.content.Context,com.bumptech.glide.GeneratedAppGlideModule)>
+    <ke.helacash.Bl: void w(android.content.Context,com.bumptech.glide.GeneratedAppGlideModule)>
+    <ke.helacash.Bl: void w(android.content.Context,com.bumptech.glide.GeneratedAppGlideModule)>
+    <ke.helacash.Bl: void w(android.content.Context,com.bumptech.glide.GeneratedAppGlideModule)>
+    <ke.helacash.Bl: void w(android.content.Context,com.bumptech.glide.GeneratedAppGlideModule)>
+    <ke.helacash.Bl: void w(android.content.Context,com.bumptech.glide.GeneratedAppGlideModule)>
+
+Leak 2:
+  Source: $r7 = virtualinvoke $r5.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r6, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r21.<java.io.OutputStream: void write(byte[])>($r13) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.appsflyer.internal.AFb1fSDK: java.lang.String AFKeystoreWrapper(java.lang.String)>
+    <com.appsflyer.internal.AFb1fSDK: java.lang.String AFKeystoreWrapper(java.lang.String)>
+    <com.appsflyer.internal.AFb1fSDK: java.lang.String AFKeystoreWrapper(java.lang.String)>
+    <com.appsflyer.internal.AFb1fSDK: java.lang.String AFKeystoreWrapper(java.lang.String)>
+    <com.appsflyer.internal.AFb1fSDK: java.lang.String AFKeystoreWrapper(java.lang.String)>
+    <com.appsflyer.internal.AFb1fSDK: java.lang.String AFKeystoreWrapper(java.lang.String)>
+    <com.appsflyer.internal.AFb1fSDK: java.lang.String AFKeystoreWrapper(java.lang.String)>
+    <com.appsflyer.internal.AFb1fSDK: java.lang.String values()>
+    <com.appsflyer.internal.AFc1cSDK$2: java.lang.String AFInAppEventParameterName()>
+    <com.appsflyer.internal.AFb1zSDK: java.lang.String AFKeystoreWrapper(com.appsflyer.internal.AFb1gSDK,java.lang.String)>
+    <com.appsflyer.internal.AFc1cSDK$2: java.lang.String AFInAppEventParameterName()>
+    <com.appsflyer.internal.AFc1cSDK$2: java.lang.String AFInAppEventParameterName()>
+    <com.appsflyer.internal.AFc1cSDK$2: java.lang.String AFInAppEventParameterName()>
+    <ke.helacash.UU0: java.lang.CharSequence h(java.lang.CharSequence)>
+    <ke.helacash.UU0: java.lang.CharSequence h(java.lang.CharSequence)>
+    <com.appsflyer.internal.AFc1cSDK$2: java.lang.String AFInAppEventParameterName()>
+    <com.appsflyer.internal.AFc1cSDK$2: java.lang.String AFInAppEventParameterName()>
+    <com.appsflyer.internal.AFc1cSDK$2: java.lang.Object invoke()>
+    <ke.helacash.dS0: java.lang.Object getValue()>
+    <ke.helacash.dS0: java.lang.Object getValue()>
+    <com.appsflyer.internal.AFc1cSDK: java.lang.String AFInAppEventParameterName()>
+    <com.appsflyer.internal.AFc1cSDK: java.lang.String AFInAppEventParameterName()>
+    <com.appsflyer.internal.AFb1zSDK: java.lang.String getHostPrefix()>
+    <com.appsflyer.internal.AFc1nSDK: boolean values()>
+    <com.appsflyer.internal.AFc1nSDK: boolean values()>
+    <com.appsflyer.internal.AFc1nSDK: boolean values()>
+    <com.appsflyer.internal.AFc1nSDK: boolean values()>
+    <com.appsflyer.internal.AFc1nSDK: boolean values()>
+    <com.appsflyer.internal.AFc1nSDK: boolean values()>
+    <com.appsflyer.internal.AFc1nSDK: boolean values()>
+    <com.appsflyer.internal.AFc1nSDK: boolean values()>
+
+Leak 3:
+  Source: $r5 = virtualinvoke $r3.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r4, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r1, $r2) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <ke.helacash.jl0: android.os.Bundle w(android.content.Context)>
+    <ke.helacash.jl0: android.os.Bundle w(android.content.Context)>
+    <ke.helacash.jl0: android.os.Bundle w(android.content.Context)>
+    <ke.helacash.jl0: android.os.Bundle w(android.content.Context)>
+    <ke.helacash.jl0: android.os.Bundle w(android.content.Context)>
+    <ke.helacash.Ss0: void z(java.lang.String)>
+    <ke.helacash.Ss0: void z(java.lang.String)>
+    <ke.helacash.Ss0: void z(java.lang.String)>
+    <ke.helacash.Ss0: void z(java.lang.String)>
+    <ke.helacash.Ss0: void z(java.lang.String)>
+    <ke.helacash.Ss0: void <init>(android.content.Context,ke.helacash.Ws0,ke.helacash.at0$y)>
+    <ke.helacash.Ss0: void <init>(android.content.Context,ke.helacash.Ws0,ke.helacash.at0$y)>
+    <ke.helacash.Ss0: void <init>(android.content.Context,ke.helacash.Ws0,ke.helacash.at0$y)>
+    <ke.helacash.Ss0: void <init>(android.content.Context,ke.helacash.Ws0,ke.helacash.at0$y)>
+    <ke.helacash.Ss0: void <init>(android.content.Context,ke.helacash.Ws0,ke.helacash.at0$y)>
+    <ke.helacash.Ss0: void <init>(android.content.Context,ke.helacash.Ws0,ke.helacash.at0$y)>
+    <ke.helacash.jl0: void z(java.lang.String,java.lang.String)>
+    <ke.helacash.jl0: void z(java.lang.String,java.lang.String,java.lang.Throwable)>
+    <com.tencent.mars.xlog.Log: void i(java.lang.String,java.lang.String)>
+    <com.tencent.mars.xlog.Log: void i(java.lang.String,java.lang.String,java.lang.Object[])>
+    <com.tencent.mars.xlog.Log$1: void logI(java.lang.String,java.lang.String,java.lang.String,int,int,long,long,java.lang.String)>
+
+Leak 4:
+  Source: $r7 = virtualinvoke $r5.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r6, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: $r20 = virtualinvoke $r10.<java.net.URLConnection: java.io.OutputStream getOutputStream()>() (<java.net.HttpURLConnection: java.io.OutputStream getOutputStream()>)
+  Methods:
+    <com.appsflyer.internal.AFb1fSDK: java.lang.String AFKeystoreWrapper(java.lang.String)>
+    <com.appsflyer.internal.AFb1fSDK: java.lang.String AFKeystoreWrapper(java.lang.String)>
+    <com.appsflyer.internal.AFb1fSDK: java.lang.String AFKeystoreWrapper(java.lang.String)>
+    <com.appsflyer.internal.AFb1fSDK: java.lang.String AFKeystoreWrapper(java.lang.String)>
+    <com.appsflyer.internal.AFb1fSDK: java.lang.String AFKeystoreWrapper(java.lang.String)>
+    <com.appsflyer.internal.AFb1fSDK: java.lang.String AFKeystoreWrapper(java.lang.String)>
+    <com.appsflyer.internal.AFb1fSDK: java.lang.String AFKeystoreWrapper(java.lang.String)>
+    <com.appsflyer.internal.AFb1fSDK: java.lang.String values()>
+    <com.appsflyer.internal.AFc1cSDK$2: java.lang.String AFInAppEventParameterName()>
+    <com.appsflyer.internal.AFb1zSDK: java.lang.String AFKeystoreWrapper(com.appsflyer.internal.AFb1gSDK,java.lang.String)>
+    <com.appsflyer.internal.AFc1cSDK$2: java.lang.String AFInAppEventParameterName()>
+    <com.appsflyer.internal.AFc1cSDK$2: java.lang.String AFInAppEventParameterName()>
+    <com.appsflyer.internal.AFc1cSDK$2: java.lang.String AFInAppEventParameterName()>
+    <ke.helacash.UU0: java.lang.CharSequence h(java.lang.CharSequence)>
+    <ke.helacash.UU0: java.lang.CharSequence h(java.lang.CharSequence)>
+    <com.appsflyer.internal.AFc1cSDK$2: java.lang.String AFInAppEventParameterName()>
+    <com.appsflyer.internal.AFc1cSDK$2: java.lang.String AFInAppEventParameterName()>
+    <com.appsflyer.internal.AFc1cSDK$2: java.lang.Object invoke()>
+    <ke.helacash.dS0: java.lang.Object getValue()>
+    <ke.helacash.dS0: java.lang.Object getValue()>
+    <com.appsflyer.internal.AFc1cSDK: java.lang.String AFInAppEventParameterName()>
+    <com.appsflyer.internal.AFc1cSDK: java.lang.String AFInAppEventParameterName()>
+    <com.appsflyer.internal.AFb1zSDK: java.lang.String getHostPrefix()>
+    <com.appsflyer.internal.AFc1nSDK: boolean values()>
+    <com.appsflyer.internal.AFc1nSDK: boolean values()>
+    <com.appsflyer.internal.AFc1nSDK: boolean values()>
+    <com.appsflyer.internal.AFc1nSDK: boolean values()>
+    <com.appsflyer.internal.AFc1nSDK: boolean values()>
+    <com.appsflyer.internal.AFc1nSDK: boolean values()>
+
+Leak 5:
+  Source: $r7 = virtualinvoke $r5.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r6, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: $r9 = virtualinvoke $r8.<java.net.URL: java.net.URLConnection openConnection()>() (<java.net.URL: java.net.URLConnection openConnection()>)
+  Methods:
+    <com.appsflyer.internal.AFb1fSDK: java.lang.String AFKeystoreWrapper(java.lang.String)>
+    <com.appsflyer.internal.AFb1fSDK: java.lang.String AFKeystoreWrapper(java.lang.String)>
+    <com.appsflyer.internal.AFb1fSDK: java.lang.String AFKeystoreWrapper(java.lang.String)>
+    <com.appsflyer.internal.AFb1fSDK: java.lang.String AFKeystoreWrapper(java.lang.String)>
+    <com.appsflyer.internal.AFb1fSDK: java.lang.String AFKeystoreWrapper(java.lang.String)>
+    <com.appsflyer.internal.AFb1fSDK: java.lang.String AFKeystoreWrapper(java.lang.String)>
+    <com.appsflyer.internal.AFb1fSDK: java.lang.String AFKeystoreWrapper(java.lang.String)>
+    <com.appsflyer.internal.AFb1fSDK: java.lang.String values()>
+    <com.appsflyer.internal.AFc1cSDK$2: java.lang.String AFInAppEventParameterName()>
+    <com.appsflyer.internal.AFb1zSDK: java.lang.String AFKeystoreWrapper(com.appsflyer.internal.AFb1gSDK,java.lang.String)>
+    <com.appsflyer.internal.AFc1cSDK$2: java.lang.String AFInAppEventParameterName()>
+    <com.appsflyer.internal.AFc1cSDK$2: java.lang.String AFInAppEventParameterName()>
+    <com.appsflyer.internal.AFc1cSDK$2: java.lang.String AFInAppEventParameterName()>
+    <ke.helacash.UU0: java.lang.CharSequence h(java.lang.CharSequence)>
+    <ke.helacash.UU0: java.lang.CharSequence h(java.lang.CharSequence)>
+    <com.appsflyer.internal.AFc1cSDK$2: java.lang.String AFInAppEventParameterName()>
+    <com.appsflyer.internal.AFc1cSDK$2: java.lang.String AFInAppEventParameterName()>
+    <com.appsflyer.internal.AFc1cSDK$2: java.lang.Object invoke()>
+    <ke.helacash.dS0: java.lang.Object getValue()>
+    <ke.helacash.dS0: java.lang.Object getValue()>
+    <com.appsflyer.internal.AFc1cSDK: java.lang.String AFInAppEventParameterName()>
+    <com.appsflyer.internal.AFc1cSDK: java.lang.String AFInAppEventParameterName()>
+    <com.appsflyer.internal.AFb1zSDK: java.lang.String getHostPrefix()>
+    <com.appsflyer.internal.AFc1nSDK: boolean values()>
+    <com.appsflyer.internal.AFc1nSDK: boolean values()>
+    <com.appsflyer.internal.AFc1nSDK: boolean values()>
+    <com.appsflyer.internal.AFc1nSDK: boolean values()>
+

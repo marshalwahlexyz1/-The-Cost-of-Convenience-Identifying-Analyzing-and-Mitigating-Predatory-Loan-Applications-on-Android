@@ -1,0 +1,13 @@
+APK: Vybecash (NigeriaApproved)
+Leak 1:
+  Source: $r5 = virtualinvoke $r3.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r4, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("ScankitSDK", $r27) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.huawei.hms.hmsscankit.j: int e(android.content.Context)>
+    <com.huawei.hms.hmsscankit.j: int e(android.content.Context)>
+    <com.huawei.hms.hmsscankit.j: int e(android.content.Context)>
+    <com.huawei.hms.hmsscankit.j: int e(android.content.Context)>
+    <com.huawei.hms.hmsscankit.j: android.content.Context d(android.content.Context)>
+    <com.huawei.hms.hmsscankit.j: android.content.Context d(android.content.Context)>
+    <com.huawei.hms.hmsscankit.j: android.content.Context d(android.content.Context)>
+

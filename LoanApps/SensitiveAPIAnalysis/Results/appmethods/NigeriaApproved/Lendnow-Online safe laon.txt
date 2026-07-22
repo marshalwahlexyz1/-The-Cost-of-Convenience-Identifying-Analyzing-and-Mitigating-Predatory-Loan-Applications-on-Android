@@ -1,0 +1,13 @@
+APK: Lendnow-Online safe laon (NigeriaApproved)
+Leak 1:
+  Source: $r4 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r3, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("\u7a33\u5b9a\u3001\u53ef\u9760\u83b7\u53d6App\u540d\u79f0", $r3) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <v1.q: java.lang.String c()>
+    <v1.q: java.lang.String c()>
+    <kotlin.jvm.internal.l: void e(java.lang.Object,java.lang.String)>
+    <v1.q: java.lang.String c()>
+    <v1.q: java.lang.String c()>
+    <v1.q: java.lang.String c()>
+    <v1.q: java.lang.String c()>
+

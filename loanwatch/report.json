@@ -1,0 +1,901 @@
+{
+  "stage1": {
+    "prohibited_data": [
+      "call_logs",
+      "contacts",
+      "photos",
+      "gallery"
+    ],
+    "permissions": [
+      "READ_CALL_LOG",
+      "READ_CONTACTS",
+      "READ_EXTERNAL_STORAGE",
+      "READ_MEDIA_IMAGES",
+      "READ_MEDIA_VIDEO"
+    ],
+    "clause_text": "15. Confirm that the Apps to be deployed are not designed to and will not have access \nto customers call logs, contacts and photos/gallery: \n \n________________________________________________________________ \n________________________________________________________________ \n________________________________________________________________"
+  },
+  "stage2": {
+    "package": "com.loancloud.nigeria.easycash",
+    "app_name": "EasyCash",
+    "violating": true,
+    "matched_permissions": [
+      "android.permission.READ_CONTACTS",
+      "android.permission.READ_EXTERNAL_STORAGE"
+    ],
+    "all_declared_permissions": [
+      "android.permission.ACCESS_COARSE_LOCATION",
+      "android.permission.ACCESS_FINE_LOCATION",
+      "android.permission.ACCESS_NETWORK_STATE",
+      "android.permission.ACCESS_WIFI_STATE",
+      "android.permission.CAMERA",
+      "android.permission.CHANGE_WIFI_STATE",
+      "android.permission.FOREGROUND_SERVICE",
+      "android.permission.INTERNET",
+      "android.permission.MOUNT_UNMOUNT_FILESYSTEMS",
+      "android.permission.QUERY_ALL_PACKAGES",
+      "android.permission.READ_CONTACTS",
+      "android.permission.READ_EXTERNAL_STORAGE",
+      "android.permission.READ_PHONE_STATE",
+      "android.permission.READ_PRIVILEGED_PHONE_STAT",
+      "android.permission.READ_SMS",
+      "android.permission.READ_SYNC_SETTINGS",
+      "android.permission.SYSTEM_ALERT_WINDOW",
+      "android.permission.WAKE_LOCK",
+      "android.permission.WRITE_EXTERNAL_STORAGE",
+      "com.google.android.c2dm.permission.RECEIVE",
+      "com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"
+    ]
+  },
+  "stage3": {
+    "api_targets": [
+      {
+        "permission": "READ_CONTACTS",
+        "data_type": "contacts",
+        "identifiers": [
+          "ContactsContract",
+          "Contacts/People",
+          "getContentResolver",
+          "query",
+          "Phone/CONTENT_URI",
+          "ContactsContract.Contacts.CONTENT_URI",
+          "ContactsContract.RawContacts.CONTENT_URI"
+        ]
+      },
+      {
+        "permission": "READ_EXTERNAL_STORAGE",
+        "data_type": "photos",
+        "identifiers": [
+          "MediaStore",
+          "Images/Media",
+          "DIRECTORY_PICTURES",
+          "DIRECTORY_DCIM",
+          "Environment.getExternalStoragePublicDirectory",
+          "getExternalStorageDirectory"
+        ]
+      },
+      {
+        "permission": "READ_EXTERNAL_STORAGE",
+        "data_type": "gallery",
+        "identifiers": [
+          "MediaStore",
+          "Images/Media",
+          "DIRECTORY_PICTURES",
+          "DIRECTORY_DCIM",
+          "Environment.getExternalStoragePublicDirectory",
+          "getExternalStorageDirectory"
+        ]
+      },
+      {
+        "permission": "READ_CONTACTS",
+        "data_type": "call_logs",
+        "identifiers": [
+          "CallLog",
+          "Calls/CONTENT_URI",
+          "getContentResolver",
+          "query",
+          "CallLog.Calls.CONTENT_URI"
+        ]
+      }
+    ]
+  },
+  "stage4": {
+    "sources": [
+      {
+        "source_class": "La4;",
+        "source_method": "sd",
+        "source_descriptor": "(Landroid/content/Context; Ljava/lang/String;)Z",
+        "matched_api": "query",
+        "permission": "READ_CONTACTS",
+        "data_type": "call_logs",
+        "call_type": "invocation",
+        "matched_value": "Landroid/content/pm/PackageManager;->queryIntentActivities(Landroid/content/Intent; I)Ljava/util/List;"
+      },
+      {
+        "source_class": "Lac;",
+        "source_method": "onConfigure",
+        "source_descriptor": "(Landroid/database/sqlite/SQLiteDatabase;)V",
+        "matched_api": "query",
+        "permission": "READ_CONTACTS",
+        "data_type": "call_logs",
+        "call_type": "invocation",
+        "matched_value": "Landroid/database/sqlite/SQLiteDatabase;->rawQuery(Ljava/lang/String; [Ljava/lang/String;)Landroid/database/Cursor;"
+      },
+      {
+        "source_class": "Lao;",
+        "source_method": "<clinit>",
+        "source_descriptor": "()V",
+        "matched_api": "query",
+        "permission": "READ_CONTACTS",
+        "data_type": "call_logs",
+        "call_type": "string_constant",
+        "matched_value": "v1/repay/repay_query?"
+      },
+      {
+        "source_class": "Lb4;",
+        "source_method": "sd",
+        "source_descriptor": "(Ljava/lang/String;)Landroid/os/Bundle;",
+        "matched_api": "query",
+        "permission": "READ_CONTACTS",
+        "data_type": "call_logs",
+        "call_type": "invocation",
+        "matched_value": "Landroid/net/Uri;->getQuery()Ljava/lang/String;"
+      },
+      {
+        "source_class": "Lbh;",
+        "source_method": "zO",
+        "source_descriptor": "(Landroid/app/Activity;)Z",
+        "matched_api": "getContentResolver",
+        "permission": "READ_CONTACTS",
+        "data_type": "call_logs",
+        "call_type": "invocation",
+        "matched_value": "Landroid/app/Activity;->getContentResolver()Landroid/content/ContentResolver;"
+      },
+      {
+        "source_class": "Lbr;",
+        "source_method": "<clinit>",
+        "source_descriptor": "()V",
+        "matched_api": "query",
+        "permission": "READ_CONTACTS",
+        "data_type": "call_logs",
+        "call_type": "string_constant",
+        "matched_value": "SearchQuery"
+      },
+      {
+        "source_class": "Lcom/glx/fenmiframe/getDuanXin/HuoQuDuanXin;",
+        "source_method": "getSmsFromPhone",
+        "source_descriptor": "()V",
+        "matched_api": "getContentResolver",
+        "permission": "READ_CONTACTS",
+        "data_type": "call_logs",
+        "call_type": "invocation",
+        "matched_value": "Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;"
+      },
+      {
+        "source_class": "Lcom/glx/fenmiframe/getTongHuaJiLu/ContactsMsgUtils;",
+        "source_method": "getCallLog",
+        "source_descriptor": "(Landroid/content/Context;)V",
+        "matched_api": "getContentResolver",
+        "permission": "READ_CONTACTS",
+        "data_type": "call_logs",
+        "call_type": "invocation",
+        "matched_value": "Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;"
+      },
+      {
+        "source_class": "Lcom/glx/fenmiframe/get_phonebook/GetPhoneBook;",
+        "source_method": "getPhoneContacts",
+        "source_descriptor": "()V",
+        "matched_api": "getContentResolver",
+        "permission": "READ_CONTACTS",
+        "data_type": "call_logs",
+        "call_type": "invocation",
+        "matched_value": "Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;"
+      },
+      {
+        "source_class": "Lcom/glx/fenmiframe/get_phonebook/GetPhoneBook;",
+        "source_method": "getSIMContacts",
+        "source_descriptor": "()V",
+        "matched_api": "getContentResolver",
+        "permission": "READ_CONTACTS",
+        "data_type": "call_logs",
+        "call_type": "invocation",
+        "matched_value": "Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;"
+      },
+      {
+        "source_class": "Lcom/glx/fenmiframe/get_phonebook/WritePhone;",
+        "source_method": "addContact",
+        "source_descriptor": "(Ljava/lang/String; Ljava/lang/String;)V",
+        "matched_api": "getContentResolver",
+        "permission": "READ_CONTACTS",
+        "data_type": "call_logs",
+        "call_type": "invocation",
+        "matched_value": "Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;"
+      },
+      {
+        "source_class": "Lcom/glx/fenmiframe/get_phonebook/WritePhone;",
+        "source_method": "writeContact",
+        "source_descriptor": "(Ljava/lang/String; Ljava/lang/String;)V",
+        "matched_api": "getContentResolver",
+        "permission": "READ_CONTACTS",
+        "data_type": "call_logs",
+        "call_type": "invocation",
+        "matched_value": "Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;"
+      },
+      {
+        "source_class": "Lcom/loan/loandatasdk/a/d$a;",
+        "source_method": "run",
+        "source_descriptor": "()V",
+        "matched_api": "query",
+        "permission": "READ_CONTACTS",
+        "data_type": "call_logs",
+        "call_type": "string_constant",
+        "matched_value": "https://api.nigeria.loandata.net/appForInformation/queryPushFlag"
+      },
+      {
+        "source_class": "Lcom/loan/loandatasdk/b/d;",
+        "source_method": "a",
+        "source_descriptor": "(Landroid/content/ContentResolver;)Ljava/util/ArrayList;",
+        "matched_api": "query",
+        "permission": "READ_CONTACTS",
+        "data_type": "call_logs",
+        "call_type": "invocation",
+        "matched_value": "Landroid/content/ContentResolver;->query(Landroid/net/Uri; [Ljava/lang/String; Ljava/lang/String; [Ljava/lang/String; Lj"
+      },
+      {
+        "source_class": "Lcom/loan/loandatasdk/b/d;",
+        "source_method": "c",
+        "source_descriptor": "(Landroid/content/Context;)Ljava/util/List;",
+        "matched_api": "getContentResolver",
+        "permission": "READ_CONTACTS",
+        "data_type": "call_logs",
+        "call_type": "invocation",
+        "matched_value": "Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;"
+      },
+      {
+        "source_class": "Lcom/loan/loandatasdk/b/d;",
+        "source_method": "d",
+        "source_descriptor": "(Landroid/content/Context;)Ljava/util/List;",
+        "matched_api": "getContentResolver",
+        "permission": "READ_CONTACTS",
+        "data_type": "call_logs",
+        "call_type": "invocation",
+        "matched_value": "Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;"
+      },
+      {
+        "source_class": "Lcom/loan/loandatasdk/b/d;",
+        "source_method": "f",
+        "source_descriptor": "(Landroid/content/Context;)Ljava/util/List;",
+        "matched_api": "getContentResolver",
+        "permission": "READ_CONTACTS",
+        "data_type": "call_logs",
+        "call_type": "invocation",
+        "matched_value": "Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;"
+      },
+      {
+        "source_class": "Lcom/loan/loandatasdk/b/i;",
+        "source_method": "a",
+        "source_descriptor": "(Landroid/content/Context;)Ljava/lang/String;",
+        "matched_api": "getContentResolver",
+        "permission": "READ_CONTACTS",
+        "data_type": "call_logs",
+        "call_type": "invocation",
+        "matched_value": "Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;"
+      },
+      {
+        "source_class": "Lcom/loan/loandatasdk/b/i;",
+        "source_method": "c",
+        "source_descriptor": "(Landroid/content/Context;)Ljava/lang/String;",
+        "matched_api": "getContentResolver",
+        "permission": "READ_CONTACTS",
+        "data_type": "call_logs",
+        "call_type": "invocation",
+        "matched_value": "Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;"
+      },
+      {
+        "source_class": "Lcom/loancloud/nigeria/easycash/myview/PermissionListDialog$4;",
+        "source_method": "onClick",
+        "source_descriptor": "(Landroid/view/View;)V",
+        "matched_api": "query",
+        "permission": "READ_CONTACTS",
+        "data_type": "call_logs",
+        "call_type": "invocation",
+        "matched_value": "Lcom/loancloud/nigeria/easycash/myview/PermissionListDialog$OnClick;->query()V"
+      },
+      {
+        "source_class": "Lei;",
+        "source_method": "<clinit>",
+        "source_descriptor": "()V",
+        "matched_api": "getExternalStorageDirectory",
+        "permission": "READ_EXTERNAL_STORAGE",
+        "data_type": "gallery",
+        "call_type": "invocation",
+        "matched_value": "Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;"
+      },
+      {
+        "source_class": "Lgh;",
+        "source_method": "onChange",
+        "source_descriptor": "(Z)V",
+        "matched_api": "getContentResolver",
+        "permission": "READ_CONTACTS",
+        "data_type": "call_logs",
+        "call_type": "invocation",
+        "matched_value": "Landroid/app/Application;->getContentResolver()Landroid/content/ContentResolver;"
+      },
+      {
+        "source_class": "Lgh;",
+        "source_method": "sd",
+        "source_descriptor": "(Landroid/app/Application;)V",
+        "matched_api": "getContentResolver",
+        "permission": "READ_CONTACTS",
+        "data_type": "call_logs",
+        "call_type": "invocation",
+        "matched_value": "Landroid/app/Application;->getContentResolver()Landroid/content/ContentResolver;"
+      },
+      {
+        "source_class": "Lgs;",
+        "source_method": "NC",
+        "source_descriptor": "(Ljava/lang/String;)V",
+        "matched_api": "query",
+        "permission": "READ_CONTACTS",
+        "data_type": "call_logs",
+        "call_type": "invocation",
+        "matched_value": "Landroid/net/Uri$Builder;->appendQueryParameter(Ljava/lang/String; Ljava/lang/String;)Landroid/net/Uri$Builder;"
+      },
+      {
+        "source_class": "Lii;",
+        "source_method": "NC",
+        "source_descriptor": "(Landroid/content/Context;)Ljava/util/List;",
+        "matched_api": "query",
+        "permission": "READ_CONTACTS",
+        "data_type": "call_logs",
+        "call_type": "invocation",
+        "matched_value": "Landroid/content/pm/PackageManager;->queryIntentActivities(Landroid/content/Intent; I)Ljava/util/List;"
+      },
+      {
+        "source_class": "Lji;",
+        "source_method": "sd",
+        "source_descriptor": "(Landroid/content/Context;)Ljava/util/List;",
+        "matched_api": "getContentResolver",
+        "permission": "READ_CONTACTS",
+        "data_type": "call_logs",
+        "call_type": "invocation",
+        "matched_value": "Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;"
+      },
+      {
+        "source_class": "Lk3;",
+        "source_method": "sd",
+        "source_descriptor": "(Ljava/lang/String; I I Ljava/lang/String;)Landroid/net/Uri;",
+        "matched_api": "query",
+        "permission": "READ_CONTACTS",
+        "data_type": "call_logs",
+        "call_type": "invocation",
+        "matched_value": "Landroid/net/Uri$Builder;->appendQueryParameter(Ljava/lang/String; Ljava/lang/String;)Landroid/net/Uri$Builder;"
+      },
+      {
+        "source_class": "Lki;",
+        "source_method": "sd",
+        "source_descriptor": "(Landroid/content/Context;)Ljava/lang/String;",
+        "matched_api": "getContentResolver",
+        "permission": "READ_CONTACTS",
+        "data_type": "call_logs",
+        "call_type": "invocation",
+        "matched_value": "Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;"
+      },
+      {
+        "source_class": "Llh;",
+        "source_method": "onChange",
+        "source_descriptor": "(Z)V",
+        "matched_api": "getContentResolver",
+        "permission": "READ_CONTACTS",
+        "data_type": "call_logs",
+        "call_type": "invocation",
+        "matched_value": "Landroid/app/Application;->getContentResolver()Landroid/content/ContentResolver;"
+      },
+      {
+        "source_class": "Llh;",
+        "source_method": "sd",
+        "source_descriptor": "(Landroid/app/Application;)V",
+        "matched_api": "getContentResolver",
+        "permission": "READ_CONTACTS",
+        "data_type": "call_logs",
+        "call_type": "invocation",
+        "matched_value": "Landroid/app/Application;->getContentResolver()Landroid/content/ContentResolver;"
+      },
+      {
+        "source_class": "Lmi;",
+        "source_method": "sd",
+        "source_descriptor": "(Landroid/content/ContentResolver;)Ljava/util/ArrayList;",
+        "matched_api": "query",
+        "permission": "READ_CONTACTS",
+        "data_type": "call_logs",
+        "call_type": "invocation",
+        "matched_value": "Landroid/content/ContentResolver;->query(Landroid/net/Uri; [Ljava/lang/String; Ljava/lang/String; [Ljava/lang/String; Lj"
+      },
+      {
+        "source_class": "Lno;",
+        "source_method": "h7",
+        "source_descriptor": "(Landroid/content/Context;)Ljava/lang/String;",
+        "matched_api": "getContentResolver",
+        "permission": "READ_CONTACTS",
+        "data_type": "call_logs",
+        "call_type": "invocation",
+        "matched_value": "Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;"
+      },
+      {
+        "source_class": "Lno;",
+        "source_method": "oE",
+        "source_descriptor": "(Landroid/content/Context;)Z",
+        "matched_api": "getContentResolver",
+        "permission": "READ_CONTACTS",
+        "data_type": "call_logs",
+        "call_type": "invocation",
+        "matched_value": "Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;"
+      },
+      {
+        "source_class": "Lno;",
+        "source_method": "sd",
+        "source_descriptor": "(Landroid/content/Context;)Ljava/lang/String;",
+        "matched_api": "getContentResolver",
+        "permission": "READ_CONTACTS",
+        "data_type": "call_logs",
+        "call_type": "invocation",
+        "matched_value": "Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;"
+      },
+      {
+        "source_class": "Loo;",
+        "source_method": "oE",
+        "source_descriptor": "(Landroid/content/Context;)Ljava/lang/String;",
+        "matched_api": "getContentResolver",
+        "permission": "READ_CONTACTS",
+        "data_type": "call_logs",
+        "call_type": "invocation",
+        "matched_value": "Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;"
+      },
+      {
+        "source_class": "Ls2;",
+        "source_method": "h7",
+        "source_descriptor": "(Landroid/content/Context;)Ls2;",
+        "matched_api": "getContentResolver",
+        "permission": "READ_CONTACTS",
+        "data_type": "call_logs",
+        "call_type": "invocation",
+        "matched_value": "Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;"
+      },
+      {
+        "source_class": "Ls3;",
+        "source_method": "sd",
+        "source_descriptor": "(Landroid/net/Uri; Z Ljava/io/File;)V",
+        "matched_api": "getContentResolver",
+        "permission": "READ_CONTACTS",
+        "data_type": "call_logs",
+        "call_type": "invocation",
+        "matched_value": "Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;"
+      },
+      {
+        "source_class": "Lt3;",
+        "source_method": "zO",
+        "source_descriptor": "(Lt3$K4;)Ljava/util/TreeSet;",
+        "matched_api": "getContentResolver",
+        "permission": "READ_CONTACTS",
+        "data_type": "call_logs",
+        "call_type": "invocation",
+        "matched_value": "Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;"
+      },
+      {
+        "source_class": "Lwr$NC;",
+        "source_method": "<init>",
+        "source_descriptor": "(Landroid/content/Context; Z)V",
+        "matched_api": "getContentResolver",
+        "permission": "READ_CONTACTS",
+        "data_type": "call_logs",
+        "call_type": "invocation",
+        "matched_value": "Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;"
+      },
+      {
+        "source_class": "Lwr;",
+        "source_method": "h4",
+        "source_descriptor": "(Landroid/content/Context;)Z",
+        "matched_api": "query",
+        "permission": "READ_CONTACTS",
+        "data_type": "call_logs",
+        "call_type": "invocation",
+        "matched_value": "Landroid/content/pm/PackageManager;->queryIntentActivities(Landroid/content/Intent; I)Ljava/util/List;"
+      },
+      {
+        "source_class": "Lwr;",
+        "source_method": "NC",
+        "source_descriptor": "(Landroid/content/Context; Lwr$sd;)V",
+        "matched_api": "getContentResolver",
+        "permission": "READ_CONTACTS",
+        "data_type": "call_logs",
+        "call_type": "invocation",
+        "matched_value": "Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;"
+      },
+      {
+        "source_class": "Lz3;",
+        "source_method": "K4",
+        "source_descriptor": "()V",
+        "matched_api": "getExternalStorageDirectory",
+        "permission": "READ_EXTERNAL_STORAGE",
+        "data_type": "gallery",
+        "call_type": "invocation",
+        "matched_value": "Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;"
+      },
+      {
+        "source_class": "Lz3;",
+        "source_method": "OI",
+        "source_descriptor": "()V",
+        "matched_api": "getExternalStorageDirectory",
+        "permission": "READ_EXTERNAL_STORAGE",
+        "data_type": "gallery",
+        "call_type": "invocation",
+        "matched_value": "Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;"
+      },
+      {
+        "source_class": "Lz3;",
+        "source_method": "oE",
+        "source_descriptor": "()Z",
+        "matched_api": "query",
+        "permission": "READ_CONTACTS",
+        "data_type": "call_logs",
+        "call_type": "invocation",
+        "matched_value": "Landroid/content/pm/PackageManager;->queryIntentActivities(Landroid/content/Intent; I)Ljava/util/List;"
+      },
+      {
+        "source_class": "Lz3;",
+        "source_method": "sd",
+        "source_descriptor": "(Landroid/net/Uri;)J",
+        "matched_api": "getContentResolver",
+        "permission": "READ_CONTACTS",
+        "data_type": "call_logs",
+        "call_type": "invocation",
+        "matched_value": "Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;"
+      },
+      {
+        "source_class": "LFD;",
+        "source_method": "NC",
+        "source_descriptor": "(Landroid/content/Context;)Ljava/lang/String;",
+        "matched_api": "getContentResolver",
+        "permission": "READ_CONTACTS",
+        "data_type": "call_logs",
+        "call_type": "invocation",
+        "matched_value": "Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;"
+      },
+      {
+        "source_class": "LJY;",
+        "source_method": "N",
+        "source_descriptor": "()Z",
+        "matched_api": "getContentResolver",
+        "permission": "READ_CONTACTS",
+        "data_type": "call_logs",
+        "call_type": "invocation",
+        "matched_value": "Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;"
+      },
+      {
+        "source_class": "LJY;",
+        "source_method": "NC",
+        "source_descriptor": "()Ljava/lang/String;",
+        "matched_api": "getContentResolver",
+        "permission": "READ_CONTACTS",
+        "data_type": "call_logs",
+        "call_type": "invocation",
+        "matched_value": "Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;"
+      },
+      {
+        "source_class": "LJY;",
+        "source_method": "p",
+        "source_descriptor": "()J",
+        "matched_api": "getExternalStorageDirectory",
+        "permission": "READ_EXTERNAL_STORAGE",
+        "data_type": "gallery",
+        "call_type": "invocation",
+        "matched_value": "Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;"
+      },
+      {
+        "source_class": "LJY;",
+        "source_method": "q",
+        "source_descriptor": "()J",
+        "matched_api": "getExternalStorageDirectory",
+        "permission": "READ_EXTERNAL_STORAGE",
+        "data_type": "gallery",
+        "call_type": "invocation",
+        "matched_value": "Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;"
+      },
+      {
+        "source_class": "LJY;",
+        "source_method": "r",
+        "source_descriptor": "()I",
+        "matched_api": "getContentResolver",
+        "permission": "READ_CONTACTS",
+        "data_type": "call_logs",
+        "call_type": "invocation",
+        "matched_value": "Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;"
+      },
+      {
+        "source_class": "LJY;",
+        "source_method": "t",
+        "source_descriptor": "()I",
+        "matched_api": "getContentResolver",
+        "permission": "READ_CONTACTS",
+        "data_type": "call_logs",
+        "call_type": "invocation",
+        "matched_value": "Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;"
+      },
+      {
+        "source_class": "LS;",
+        "source_method": "sd",
+        "source_descriptor": "(Lc;)V",
+        "matched_api": "query",
+        "permission": "READ_CONTACTS",
+        "data_type": "call_logs",
+        "call_type": "invocation",
+        "matched_value": "Landroid/content/pm/PackageManager;->queryIntentServices(Landroid/content/Intent; I)Ljava/util/List;"
+      },
+      {
+        "source_class": "Laa;",
+        "source_method": "sd",
+        "source_descriptor": "(Ls8; I)V",
+        "matched_api": "query",
+        "permission": "READ_CONTACTS",
+        "data_type": "call_logs",
+        "call_type": "invocation",
+        "matched_value": "Landroid/net/Uri$Builder;->appendQueryParameter(Ljava/lang/String; Ljava/lang/String;)Landroid/net/Uri$Builder;"
+      },
+      {
+        "source_class": "Lc3;",
+        "source_method": "sd",
+        "source_descriptor": "(Ljava/lang/String;)Landroid/os/Bundle;",
+        "matched_api": "query",
+        "permission": "READ_CONTACTS",
+        "data_type": "call_logs",
+        "call_type": "invocation",
+        "matched_value": "Landroid/net/Uri;->getQuery()Ljava/lang/String;"
+      },
+      {
+        "source_class": "Llq$NC;",
+        "source_method": "sd",
+        "source_descriptor": "(Ljava/lang/String;)V",
+        "matched_api": "query",
+        "permission": "READ_CONTACTS",
+        "data_type": "call_logs",
+        "call_type": "invocation",
+        "matched_value": "Landroid/net/Uri;->getQueryParameter(Ljava/lang/String;)Ljava/lang/String;"
+      },
+      {
+        "source_class": "Llq;",
+        "source_method": "NC",
+        "source_descriptor": "(Landroid/net/Uri; Landroid/app/Activity;)Z",
+        "matched_api": "query",
+        "permission": "READ_CONTACTS",
+        "data_type": "call_logs",
+        "call_type": "invocation",
+        "matched_value": "Landroid/net/Uri;->getQueryParameter(Ljava/lang/String;)Ljava/lang/String;"
+      },
+      {
+        "source_class": "Llq;",
+        "source_method": "h7",
+        "source_descriptor": "(Landroid/net/Uri; Landroid/app/Activity;)V",
+        "matched_api": "query",
+        "permission": "READ_CONTACTS",
+        "data_type": "call_logs",
+        "call_type": "invocation",
+        "matched_value": "Landroid/net/Uri;->getQueryParameter(Ljava/lang/String;)Ljava/lang/String;"
+      },
+      {
+        "source_class": "Lmc$sd;",
+        "source_method": "sd",
+        "source_descriptor": "(Landroid/os/IBinder;)Lmc;",
+        "matched_api": "query",
+        "permission": "READ_CONTACTS",
+        "data_type": "call_logs",
+        "call_type": "invocation",
+        "matched_value": "Landroid/os/IBinder;->queryLocalInterface(Ljava/lang/String;)Landroid/os/IInterface;"
+      },
+      {
+        "source_class": "Lmr;",
+        "source_method": "NC",
+        "source_descriptor": "(Ljava/lang/String;)Ljava/lang/String;",
+        "matched_api": "query",
+        "permission": "READ_CONTACTS",
+        "data_type": "call_logs",
+        "call_type": "invocation",
+        "matched_value": "Ljava/net/URL;->getQuery()Ljava/lang/String;"
+      },
+      {
+        "source_class": "Lub;",
+        "source_method": "sd",
+        "source_descriptor": "(Lub; Ls8; Landroid/database/sqlite/SQLiteDatabase;)Ljava/lang/Boolean;",
+        "matched_api": "query",
+        "permission": "READ_CONTACTS",
+        "data_type": "call_logs",
+        "call_type": "invocation",
+        "matched_value": "Landroid/database/sqlite/SQLiteDatabase;->rawQuery(Ljava/lang/String; [Ljava/lang/String;)Landroid/database/Cursor;"
+      },
+      {
+        "source_class": "Lub;",
+        "source_method": "zO",
+        "source_descriptor": "(Landroid/database/sqlite/SQLiteDatabase;)Ljava/util/List;",
+        "matched_api": "query",
+        "permission": "READ_CONTACTS",
+        "data_type": "call_logs",
+        "call_type": "invocation",
+        "matched_value": "Landroid/database/sqlite/SQLiteDatabase;->rawQuery(Ljava/lang/String; [Ljava/lang/String;)Landroid/database/Cursor;"
+      },
+      {
+        "source_class": "Lub;",
+        "source_method": "NC",
+        "source_descriptor": "(Ls8;)J",
+        "matched_api": "query",
+        "permission": "READ_CONTACTS",
+        "data_type": "call_logs",
+        "call_type": "invocation",
+        "matched_value": "Landroid/database/sqlite/SQLiteDatabase;->rawQuery(Ljava/lang/String; [Ljava/lang/String;)Landroid/database/Cursor;"
+      },
+      {
+        "source_class": "Lub;",
+        "source_method": "h7",
+        "source_descriptor": "()J",
+        "matched_api": "query",
+        "permission": "READ_CONTACTS",
+        "data_type": "call_logs",
+        "call_type": "invocation",
+        "matched_value": "Landroid/database/sqlite/SQLiteStatement;->simpleQueryForLong()J"
+      },
+      {
+        "source_class": "Lub;",
+        "source_method": "oE",
+        "source_descriptor": "()J",
+        "matched_api": "query",
+        "permission": "READ_CONTACTS",
+        "data_type": "call_logs",
+        "call_type": "invocation",
+        "matched_value": "Landroid/database/sqlite/SQLiteStatement;->simpleQueryForLong()J"
+      },
+      {
+        "source_class": "Lcom/loancloud/nigeria/easycash/myview/RefuseDialog$2;",
+        "source_method": "onSuccess",
+        "source_descriptor": "(Ljava/lang/String; Ljava/lang/String;)V",
+        "matched_api": "query",
+        "permission": "READ_CONTACTS",
+        "data_type": "call_logs",
+        "call_type": "invocation",
+        "matched_value": "Lcom/loancloud/nigeria/easycash/myview/RefuseDialog$OnClick;->query()V"
+      },
+      {
+        "source_class": "Lcom/loancloud/nigeria/easycash/fragment/HomeTab;",
+        "source_method": "a3",
+        "source_descriptor": "()V",
+        "matched_api": "query",
+        "permission": "READ_CONTACTS",
+        "data_type": "call_logs",
+        "call_type": "string_constant",
+        "matched_value": "bind_card_query"
+      },
+      {
+        "source_class": "Lcom/loancloud/nigeria/easycash/activity/ChoiceContacts_Activity;",
+        "source_method": "onActivityResult",
+        "source_descriptor": "(I I Landroid/content/Intent;)V",
+        "matched_api": "getContentResolver",
+        "permission": "READ_CONTACTS",
+        "data_type": "call_logs",
+        "call_type": "invocation",
+        "matched_value": "Landroid/app/Activity;->getContentResolver()Landroid/content/ContentResolver;"
+      },
+      {
+        "source_class": "Lcom/loancloud/nigeria/easycash/activity/ChoiceContacts_Activity;",
+        "source_method": "sd",
+        "source_descriptor": "(Landroid/database/Cursor;)Ljava/lang/String;",
+        "matched_api": "getContentResolver",
+        "permission": "READ_CONTACTS",
+        "data_type": "call_logs",
+        "call_type": "invocation",
+        "matched_value": "Landroid/app/Activity;->getContentResolver()Landroid/content/ContentResolver;"
+      },
+      {
+        "source_class": "Lcom/loancloud/nigeria/easycash/activity/UserWorkMsg_Activity;",
+        "source_method": "onActivityResult",
+        "source_descriptor": "(I I Landroid/content/Intent;)V",
+        "matched_api": "getContentResolver",
+        "permission": "READ_CONTACTS",
+        "data_type": "call_logs",
+        "call_type": "invocation",
+        "matched_value": "Landroid/app/Activity;->getContentResolver()Landroid/content/ContentResolver;"
+      }
+    ]
+  },
+  "stage5": {
+    "ran_flowdroid": true,
+    "confirmed_sources": [
+      {
+        "source_class": "ji",
+        "source_method": "sd",
+        "source_params": [
+          "android.content.Context"
+        ],
+        "dispatcher_class": "zn",
+        "dispatcher_method": "NC",
+        "dispatcher_params": [
+          "zn$oE"
+        ],
+        "sink_class": "com.lzy.okgo.request.base.Request",
+        "sink_method": "execute",
+        "statement": "virtualinvoke $r15.<com.lzy.okgo.request.base.Request: void execute(com.lzy.okgo.callback.Callback)>($r17)",
+        "permission": "READ_CONTACTS",
+        "data_type": "call_logs",
+        "matched_api": "getContentResolver"
+      },
+      {
+        "source_class": "ji",
+        "source_method": "sd",
+        "source_params": [
+          "android.content.Context"
+        ],
+        "dispatcher_class": "zn",
+        "dispatcher_method": "NC",
+        "dispatcher_params": [
+          "zn$oE"
+        ],
+        "sink_class": "com.lzy.okgo.request.base.Request",
+        "sink_method": "execute",
+        "statement": "virtualinvoke $r15.<com.lzy.okgo.request.base.Request: void execute(com.lzy.okgo.callback.Callback)>($r17)",
+        "permission": "READ_CONTACTS",
+        "data_type": "call_logs",
+        "matched_api": "getContentResolver"
+      },
+      {
+        "source_class": "ki",
+        "source_method": "sd",
+        "source_params": [
+          "android.content.Context"
+        ],
+        "dispatcher_class": "zn",
+        "dispatcher_method": "NC",
+        "dispatcher_params": [
+          "zn$oE"
+        ],
+        "sink_class": "com.lzy.okgo.request.base.Request",
+        "sink_method": "execute",
+        "statement": "virtualinvoke $r15.<com.lzy.okgo.request.base.Request: void execute(com.lzy.okgo.callback.Callback)>($r17)",
+        "permission": "READ_CONTACTS",
+        "data_type": "call_logs",
+        "matched_api": "getContentResolver"
+      }
+    ]
+  },
+  "stage6": {
+    "hooked_methods": [
+      {
+        "source_class": "ji",
+        "source_method": "sd",
+        "source_params": [
+          "android.content.Context"
+        ],
+        "dispatcher_class": "zn",
+        "dispatcher_method": "NC",
+        "dispatcher_params": [
+          "zn$oE"
+        ],
+        "sink_class": "com.lzy.okgo.request.base.Request",
+        "sink_method": "execute",
+        "data_type": "call_logs",
+        "permission": "READ_CONTACTS"
+      },
+      {
+        "source_class": "ki",
+        "source_method": "sd",
+        "source_params": [
+          "android.content.Context"
+        ],
+        "dispatcher_class": "zn",
+        "dispatcher_method": "NC",
+        "dispatcher_params": [
+          "zn$oE"
+        ],
+        "sink_class": "com.lzy.okgo.request.base.Request",
+        "sink_method": "execute",
+        "data_type": "call_logs",
+        "permission": "READ_CONTACTS"
+      }
+    ]
+  }
+}

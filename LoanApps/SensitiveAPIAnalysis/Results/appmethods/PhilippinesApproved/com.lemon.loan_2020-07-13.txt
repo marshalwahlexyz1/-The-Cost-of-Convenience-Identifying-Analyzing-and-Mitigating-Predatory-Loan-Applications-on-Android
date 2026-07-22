@@ -1,0 +1,398 @@
+APK: com.lemon.loan_2020-07-13 (PhilippinesApproved)
+Leak 1:
+  Source: $r6 = virtualinvoke $r4.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r5, $r1, null, null, "datetaken DESC LIMIT 10") (<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>)
+  Sink: $i0 = staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r2, $r1) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.oliveapp.camerasdk.ui.u: void run()>
+    <com.oliveapp.camerasdk.ui.u: void run()>
+    <com.oliveapp.camerasdk.ui.u: void run()>
+    <com.oliveapp.camerasdk.ui.u: void run()>
+    <com.oliveapp.camerasdk.ui.u: void run()>
+    <rg: int c(java.lang.Object,java.lang.String)>
+    <rg: int c(java.lang.Object,java.lang.String)>
+    <rg: int c(java.lang.Object,java.lang.String)>
+
+Leak 2:
+  Source: $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r2, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r3.<java.io.OutputStream: void write(byte[])>($r5) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.facebook.FacebookSdk: void c(android.content.Context)>
+    <com.facebook.FacebookSdk: void c(android.content.Context)>
+    <com.facebook.FacebookSdk: void c(android.content.Context)>
+    <com.facebook.FacebookSdk: void c(android.content.Context)>
+    <com.facebook.FacebookSdk: void c(android.content.Context)>
+    <com.facebook.FacebookSdk: void c(android.content.Context)>
+    <com.facebook.FacebookSdk: void a(android.content.Context,com.facebook.FacebookSdk$a)>
+    <com.facebook.internal.l: void a()>
+    <com.facebook.internal.l$1: void run()>
+    <com.facebook.internal.l: org.json.JSONObject b(java.lang.String)>
+    <com.facebook.internal.l: org.json.JSONObject c(java.lang.String)>
+    <com.facebook.GraphRequest: com.facebook.f i()>
+    <com.facebook.GraphRequest: com.facebook.f a(com.facebook.GraphRequest)>
+    <com.facebook.GraphRequest: java.util.List a(com.facebook.GraphRequest[])>
+    <com.facebook.GraphRequest: java.util.List a(java.util.Collection)>
+    <com.facebook.GraphRequest: java.util.List b(com.facebook.e)>
+    <com.facebook.GraphRequest: java.net.HttpURLConnection a(com.facebook.e)>
+    <com.facebook.GraphRequest: void a(com.facebook.e,java.net.HttpURLConnection)>
+    <com.facebook.GraphRequest: void a(com.facebook.e,com.facebook.internal.u,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.GraphRequest: java.lang.String g(com.facebook.e)>
+    <com.facebook.FacebookSdk: java.lang.String i()>
+    <com.facebook.FacebookSdk: java.lang.String i()>
+    <com.facebook.GraphRequest: java.lang.String g(com.facebook.e)>
+    <com.facebook.GraphRequest: void a(com.facebook.e,com.facebook.internal.u,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.GraphRequest$f: void a(java.lang.String,java.lang.String)>
+    <com.facebook.GraphRequest$f: void a(java.lang.String,java.lang.String)>
+    <com.facebook.GraphRequest$f: void b(java.lang.String,java.lang.Object[])>
+    <com.facebook.GraphRequest$f: void a(java.lang.String,java.lang.Object[])>
+    <com.facebook.GraphRequest$f: void a(java.lang.String,java.lang.Object[])>
+    <com.facebook.GraphRequest$f: void a(java.lang.String,java.lang.Object[])>
+    <com.facebook.GraphRequest$f: void a(java.lang.String,java.lang.Object[])>
+
+Leak 3:
+  Source: $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r2, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r3.<java.io.OutputStream: void write(byte[])>($r5) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.facebook.FacebookSdk: void c(android.content.Context)>
+    <com.facebook.FacebookSdk: void c(android.content.Context)>
+    <com.facebook.FacebookSdk: void c(android.content.Context)>
+    <com.facebook.FacebookSdk: void c(android.content.Context)>
+    <com.facebook.FacebookSdk: void c(android.content.Context)>
+    <com.facebook.FacebookSdk: void c(android.content.Context)>
+    <com.facebook.FacebookSdk: void a(android.content.Context,com.facebook.FacebookSdk$a)>
+    <com.facebook.internal.l: void a()>
+    <com.facebook.internal.l$1: void run()>
+    <com.facebook.internal.l: org.json.JSONObject b(java.lang.String)>
+    <com.facebook.internal.l: org.json.JSONObject c(java.lang.String)>
+    <com.facebook.GraphRequest: com.facebook.f i()>
+    <com.facebook.GraphRequest: com.facebook.f a(com.facebook.GraphRequest)>
+    <com.facebook.GraphRequest: java.util.List a(com.facebook.GraphRequest[])>
+    <com.facebook.GraphRequest: java.util.List a(java.util.Collection)>
+    <com.facebook.GraphRequest: java.util.List b(com.facebook.e)>
+    <com.facebook.GraphRequest: java.net.HttpURLConnection a(com.facebook.e)>
+    <com.facebook.GraphRequest: void a(com.facebook.e,java.net.HttpURLConnection)>
+    <com.facebook.GraphRequest: void a(com.facebook.e,com.facebook.internal.u,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.GraphRequest: java.lang.String g(com.facebook.e)>
+    <com.facebook.FacebookSdk: java.lang.String i()>
+    <com.facebook.FacebookSdk: java.lang.String i()>
+    <com.facebook.GraphRequest: java.lang.String g(com.facebook.e)>
+    <com.facebook.GraphRequest: void a(com.facebook.e,com.facebook.internal.u,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.GraphRequest$f: void a(java.lang.String,java.lang.String)>
+    <com.facebook.GraphRequest$f: void a(java.lang.String,java.lang.String)>
+    <com.facebook.GraphRequest$f: void b(java.lang.String,java.lang.Object[])>
+    <com.facebook.GraphRequest$f: void a(java.lang.String,java.lang.Object[])>
+    <com.facebook.GraphRequest$f: void a(java.lang.String,java.lang.Object[])>
+    <com.facebook.GraphRequest$f: void a(java.lang.String,java.lang.Object[])>
+    <com.facebook.GraphRequest$f: void a(java.lang.String,java.lang.Object[])>
+    <com.facebook.GraphRequest$f: void a(java.lang.String,java.lang.Object[])>
+    <com.facebook.GraphRequest$f: void b(java.lang.String,java.lang.Object[])>
+    <com.facebook.GraphRequest$f: void a(java.lang.String,java.lang.Object[])>
+    <com.facebook.GraphRequest$f: void a(java.lang.String,java.lang.Object[])>
+
+Leak 4:
+  Source: $r5 = virtualinvoke $r2.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r3, $r4, null, null, null) (<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>)
+  Sink: virtualinvoke $r6.<java.io.BufferedWriter: void write(java.lang.String)>($r2) (<java.io.OutputStreamWriter: void write(java.lang.String)>)
+  Methods:
+    <com.hello.filipino.view.certification.ContactInfoActivity: void onActivityResult(int,int,android.content.Intent)>
+    <com.hello.filipino.view.certification.ContactInfoActivity: void onActivityResult(int,int,android.content.Intent)>
+    <com.hello.filipino.view.certification.ContactInfoActivity: void onActivityResult(int,int,android.content.Intent)>
+    <com.hello.filipino.view.certification.ContactInfoActivity: void onActivityResult(int,int,android.content.Intent)>
+    <com.hello.filipino.view.certification.ContactInfoActivity: void onActivityResult(int,int,android.content.Intent)>
+    <dummyMainClass: com.hello.filipino.view.certification.ContactInfoActivity dummyMainMethod_com_hello_filipino_view_certification_ContactInfoActivity(android.content.Intent)>
+    <com.hello.filipino.view.certification.ContactInfoActivity: void onBackPressed()>
+    <com.hello.filipino.view.certification.ContactInfoActivity: void h()>
+    <com.hello.filipino.view.certification.ContactInfoActivity: void h()>
+    <com.hello.filipino.view.certification.ContactInfoActivity: void h()>
+    <com.hello.filipino.view.certification.ContactInfoActivity: void h()>
+    <com.hello.filipino.utils.b: void a(java.lang.String,java.lang.String)>
+
+Leak 5:
+  Source: $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r2, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r3.<java.io.OutputStream: void write(byte[])>($r5) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.facebook.FacebookSdk: void c(android.content.Context)>
+    <com.facebook.FacebookSdk: void c(android.content.Context)>
+    <com.facebook.FacebookSdk: void c(android.content.Context)>
+    <com.facebook.FacebookSdk: void c(android.content.Context)>
+    <com.facebook.FacebookSdk: void c(android.content.Context)>
+    <com.facebook.FacebookSdk: void c(android.content.Context)>
+    <com.facebook.FacebookSdk: void a(android.content.Context,com.facebook.FacebookSdk$a)>
+    <com.facebook.internal.l: void a()>
+    <com.facebook.internal.l$1: void run()>
+    <com.facebook.internal.l: org.json.JSONObject b(java.lang.String)>
+    <com.facebook.internal.l: org.json.JSONObject c(java.lang.String)>
+    <com.facebook.GraphRequest: com.facebook.f i()>
+    <com.facebook.GraphRequest: com.facebook.f a(com.facebook.GraphRequest)>
+    <com.facebook.GraphRequest: java.util.List a(com.facebook.GraphRequest[])>
+    <com.facebook.GraphRequest: java.util.List a(java.util.Collection)>
+    <com.facebook.GraphRequest: java.util.List b(com.facebook.e)>
+    <com.facebook.GraphRequest: java.net.HttpURLConnection a(com.facebook.e)>
+    <com.facebook.GraphRequest: void a(com.facebook.e,java.net.HttpURLConnection)>
+    <com.facebook.GraphRequest: void a(com.facebook.e,com.facebook.internal.u,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.GraphRequest: java.lang.String g(com.facebook.e)>
+    <com.facebook.FacebookSdk: java.lang.String i()>
+    <com.facebook.FacebookSdk: java.lang.String i()>
+    <com.facebook.GraphRequest: java.lang.String g(com.facebook.e)>
+    <com.facebook.GraphRequest: void a(com.facebook.e,com.facebook.internal.u,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.GraphRequest$f: void a(java.lang.String,java.lang.String)>
+    <com.facebook.GraphRequest$f: void a(java.lang.String,java.lang.String)>
+    <com.facebook.GraphRequest$f: void b(java.lang.String,java.lang.Object[])>
+    <com.facebook.GraphRequest$f: void a(java.lang.String,java.lang.Object[])>
+    <com.facebook.GraphRequest$f: void a(java.lang.String,java.lang.Object[])>
+    <com.facebook.GraphRequest$f: void a(java.lang.String,java.lang.Object[])>
+
+Leak 6:
+  Source: $r6 = virtualinvoke $r4.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r5, $r1, null, null, "datetaken DESC LIMIT 10") (<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>)
+  Sink: $i0 = staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r2, $r1) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.oliveapp.camerasdk.ui.u: void run()>
+    <com.oliveapp.camerasdk.ui.u: void run()>
+    <com.oliveapp.camerasdk.ui.u: void run()>
+    <pm: android.graphics.Bitmap a(java.lang.String,int,int)>
+    <pm: android.graphics.Bitmap a(java.lang.String,int,int)>
+    <pm: android.graphics.Bitmap a(java.lang.String,int,int)>
+    <pm: android.graphics.Bitmap a(java.lang.String,int,int)>
+    <pm: android.graphics.Bitmap a(java.lang.String,int,int)>
+    <pm: android.graphics.Bitmap a(java.lang.String,int,int)>
+    <pm: android.graphics.Bitmap a(java.lang.String,int,int)>
+    <rg: int a(java.lang.Object,java.lang.String)>
+    <rg: int a(java.lang.Object,java.lang.String)>
+    <rg: int a(java.lang.Object,java.lang.String)>
+    <rg: int a(java.lang.Object,java.lang.String)>
+    <rg: int a(java.lang.Object,java.lang.String)>
+    <rg: int a(java.lang.Object,java.lang.String)>
+    <rg: int a(java.lang.Object,java.lang.String)>
+    <rg: int a(java.lang.Object,java.lang.String)>
+    <rg: int a(java.lang.Object,java.lang.String)>
+
+Leak 7:
+  Source: $r0 = staticinvoke <android.os.Environment: java.io.File getExternalStorageDirectory()>() (<android.os.Environment: java.io.File getExternalStorageDirectory()>)
+  Sink: $i0 = staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r2, $r1) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <rd: void <clinit>()>
+    <rd: void <clinit>()>
+    <rd: void <clinit>()>
+    <rd: void <clinit>()>
+    <qw: void <init>()>
+    <qo: void a(android.app.Activity,android.os.Handler,qp,qu,qw)>
+    <qo: void g()>
+    <qo: void g()>
+    <qo: void g()>
+    <qo: void g()>
+    <qo: void g()>
+    <rk: void a(java.lang.String,java.lang.String)>
+    <rk: void a(java.lang.String,java.lang.String)>
+    <rk: void a(java.lang.String,java.lang.String)>
+    <rk: void a(java.lang.String,java.lang.String)>
+    <rk: void a(java.lang.String,java.lang.String)>
+    <rg: int a(java.lang.Object,java.lang.String)>
+    <rg: int a(java.lang.Object,java.lang.String)>
+    <rg: int a(java.lang.Object,java.lang.String)>
+    <rg: int a(java.lang.Object,java.lang.String)>
+    <rg: int a(java.lang.Object,java.lang.String)>
+    <rg: int a(java.lang.Object,java.lang.String)>
+    <rg: int a(java.lang.Object,java.lang.String)>
+    <rg: int a(java.lang.Object,java.lang.String)>
+    <rg: int a(java.lang.Object,java.lang.String)>
+
+Leak 8:
+  Source: $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r2, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r3.<java.io.OutputStream: void write(byte[])>($r5) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.facebook.FacebookSdk: void c(android.content.Context)>
+    <com.facebook.FacebookSdk: void c(android.content.Context)>
+    <com.facebook.FacebookSdk: void c(android.content.Context)>
+    <com.facebook.FacebookSdk: void c(android.content.Context)>
+    <com.facebook.FacebookSdk: void c(android.content.Context)>
+    <com.facebook.FacebookSdk: void c(android.content.Context)>
+    <com.facebook.FacebookSdk: void a(android.content.Context,com.facebook.FacebookSdk$a)>
+    <com.facebook.FacebookSdk: void a(android.content.Context)>
+    <com.facebook.internal.ab: java.lang.String a(android.content.Context)>
+    <com.facebook.applinks.a: void a(android.content.Context,java.lang.String,com.facebook.applinks.a$a)>
+    <com.facebook.applinks.a: void a(android.content.Context,com.facebook.applinks.a$a)>
+    <com.facebook.libfbref.DeepLinkActivity: void onCreate(android.os.Bundle)>
+    <dummyMainClass: com.hello.kotlin.activity.ChooseCouponActivity dummyMainMethod_com_hello_kotlin_activity_ChooseCouponActivity(android.content.Intent)>
+    <dummyMainClass: void dummyMainMethod(java.lang.String[])>
+    <dummyMainClass: com.facebook.libfbref.DeepLinkActivity dummyMainMethod_com_facebook_libfbref_DeepLinkActivity(android.content.Intent)>
+    <com.facebook.libfbref.DeepLinkActivity: void onCreate(android.os.Bundle)>
+    <com.facebook.applinks.a: void a(android.content.Context,com.facebook.applinks.a$a)>
+    <com.facebook.applinks.a: void a(android.content.Context,java.lang.String,com.facebook.applinks.a$a)>
+    <com.facebook.applinks.a$1: void run()>
+    <com.facebook.applinks.a: void b(android.content.Context,java.lang.String,com.facebook.applinks.a$a)>
+    <com.facebook.applinks.a: void c(android.content.Context,java.lang.String,com.facebook.applinks.a$a)>
+    <com.facebook.GraphRequest: com.facebook.f i()>
+    <com.facebook.GraphRequest: com.facebook.f a(com.facebook.GraphRequest)>
+    <com.facebook.GraphRequest: java.util.List a(com.facebook.GraphRequest[])>
+    <com.facebook.GraphRequest: java.util.List a(java.util.Collection)>
+    <com.facebook.GraphRequest: java.util.List b(com.facebook.e)>
+    <com.facebook.GraphRequest: java.net.HttpURLConnection a(com.facebook.e)>
+    <com.facebook.GraphRequest: void a(com.facebook.e,java.net.HttpURLConnection)>
+    <com.facebook.GraphRequest: void a(com.facebook.e,com.facebook.internal.u,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.GraphRequest: java.lang.String g(com.facebook.e)>
+    <com.facebook.FacebookSdk: java.lang.String i()>
+    <com.facebook.FacebookSdk: java.lang.String i()>
+    <com.facebook.GraphRequest: java.lang.String g(com.facebook.e)>
+    <com.facebook.GraphRequest: void a(com.facebook.e,com.facebook.internal.u,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.GraphRequest$f: void a(java.lang.String,java.lang.String)>
+    <com.facebook.GraphRequest$f: void a(java.lang.String,java.lang.String)>
+    <com.facebook.GraphRequest$f: void b(java.lang.String,java.lang.Object[])>
+    <com.facebook.GraphRequest$f: void a(java.lang.String,java.lang.Object[])>
+    <com.facebook.GraphRequest$f: void a(java.lang.String,java.lang.Object[])>
+    <com.facebook.GraphRequest$f: void a(java.lang.String,java.lang.Object[])>
+    <com.facebook.GraphRequest$f: void a(java.lang.String,java.lang.Object[])>
+    <com.facebook.GraphRequest$f: void a(java.lang.String,java.lang.Object[])>
+    <com.facebook.GraphRequest$f: void b(java.lang.String,java.lang.Object[])>
+    <com.facebook.GraphRequest$f: void a(java.lang.String,java.lang.Object[])>
+    <com.facebook.GraphRequest$f: void a(java.lang.String,java.lang.Object[])>
+
+Leak 9:
+  Source: $r5 = virtualinvoke $r2.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r3, $r4, null, null, null) (<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>)
+  Sink: virtualinvoke $r6.<java.io.BufferedWriter: void write(java.lang.String)>($r2) (<java.io.BufferedWriter: void write(java.lang.String)>)
+  Methods:
+    <com.hello.filipino.view.certification.ContactInfoActivity: void onActivityResult(int,int,android.content.Intent)>
+    <com.hello.filipino.view.certification.ContactInfoActivity: void onActivityResult(int,int,android.content.Intent)>
+    <com.hello.filipino.view.certification.ContactInfoActivity: void onActivityResult(int,int,android.content.Intent)>
+    <com.hello.filipino.view.certification.ContactInfoActivity: void onActivityResult(int,int,android.content.Intent)>
+    <com.hello.filipino.view.certification.ContactInfoActivity: void onActivityResult(int,int,android.content.Intent)>
+    <dummyMainClass: com.hello.filipino.view.certification.ContactInfoActivity dummyMainMethod_com_hello_filipino_view_certification_ContactInfoActivity(android.content.Intent)>
+    <com.hello.filipino.view.certification.ContactInfoActivity: void onBackPressed()>
+    <com.hello.filipino.view.certification.ContactInfoActivity: void h()>
+    <com.hello.filipino.view.certification.ContactInfoActivity: void h()>
+    <com.hello.filipino.view.certification.ContactInfoActivity: void h()>
+    <com.hello.filipino.view.certification.ContactInfoActivity: void h()>
+    <com.hello.filipino.utils.b: void a(java.lang.String,java.lang.String)>
+
+Leak 10:
+  Source: $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r2, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r5.<java.io.OutputStream: void write(byte[])>($r6) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.facebook.FacebookSdk: void c(android.content.Context)>
+    <com.facebook.FacebookSdk: void c(android.content.Context)>
+    <com.facebook.FacebookSdk: void c(android.content.Context)>
+    <com.facebook.FacebookSdk: void c(android.content.Context)>
+    <com.facebook.FacebookSdk: void c(android.content.Context)>
+    <com.facebook.FacebookSdk: void c(android.content.Context)>
+    <com.facebook.FacebookSdk: void a(android.content.Context,com.facebook.FacebookSdk$a)>
+    <com.facebook.internal.l: void a()>
+    <com.facebook.internal.l$1: void run()>
+    <com.facebook.internal.l: org.json.JSONObject b(java.lang.String)>
+    <com.facebook.internal.l: org.json.JSONObject c(java.lang.String)>
+    <com.facebook.GraphRequest: com.facebook.f i()>
+    <com.facebook.GraphRequest: com.facebook.f a(com.facebook.GraphRequest)>
+    <com.facebook.GraphRequest: java.util.List a(com.facebook.GraphRequest[])>
+    <com.facebook.GraphRequest: java.util.List a(java.util.Collection)>
+    <com.facebook.GraphRequest: java.util.List b(com.facebook.e)>
+    <com.facebook.GraphRequest: java.net.HttpURLConnection a(com.facebook.e)>
+    <com.facebook.GraphRequest: void a(com.facebook.e,java.net.HttpURLConnection)>
+    <com.facebook.GraphRequest: void a(com.facebook.e,com.facebook.internal.u,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.GraphRequest: java.lang.String g(com.facebook.e)>
+    <com.facebook.FacebookSdk: java.lang.String i()>
+    <com.facebook.FacebookSdk: java.lang.String i()>
+    <com.facebook.GraphRequest: java.lang.String g(com.facebook.e)>
+    <com.facebook.GraphRequest: void a(com.facebook.e,com.facebook.internal.u,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.GraphRequest$f: void a(java.lang.String,java.lang.String)>
+    <com.facebook.GraphRequest$f: void a(java.lang.String,java.lang.String)>
+    <com.facebook.GraphRequest$f: void b(java.lang.String,java.lang.Object[])>
+    <com.facebook.GraphRequest$f: void a(java.lang.String,java.lang.Object[])>
+    <com.facebook.GraphRequest$f: void a(java.lang.String,java.lang.Object[])>
+    <com.facebook.GraphRequest$f: void a(java.lang.String,java.lang.Object[])>
+    <com.facebook.GraphRequest$f: void a(java.lang.String,java.lang.Object[])>
+    <com.facebook.GraphRequest$f: void a(java.lang.String,java.lang.Object[])>
+    <com.facebook.GraphRequest$f: void b(java.lang.String,java.lang.Object[])>
+    <com.facebook.GraphRequest$f: void a(java.lang.String,java.lang.String)>
+    <com.facebook.GraphRequest: void a(com.facebook.e,com.facebook.internal.u,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.GraphRequest: void a(com.facebook.GraphRequest$f,java.util.Collection,java.util.Map)>
+    <com.facebook.GraphRequest$f: void a(java.lang.String,org.json.JSONArray,java.util.Collection)>
+    <com.facebook.GraphRequest$f: void a(java.lang.String,java.lang.String,java.lang.String)>
+    <com.facebook.GraphRequest$f: void a(java.lang.String,java.lang.String,java.lang.String)>
+
+Leak 11:
+  Source: $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r2, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r3.<java.io.OutputStream: void write(byte[])>($r5) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.facebook.FacebookSdk: void c(android.content.Context)>
+    <com.facebook.FacebookSdk: void c(android.content.Context)>
+    <com.facebook.FacebookSdk: void c(android.content.Context)>
+    <com.facebook.FacebookSdk: void c(android.content.Context)>
+    <com.facebook.FacebookSdk: void c(android.content.Context)>
+    <com.facebook.FacebookSdk: void c(android.content.Context)>
+    <com.facebook.FacebookSdk: void a(android.content.Context,com.facebook.FacebookSdk$a)>
+    <com.facebook.FacebookSdk: void a(android.content.Context)>
+    <com.facebook.internal.ab: java.lang.String a(android.content.Context)>
+    <com.facebook.appevents.AppEventsLogger: void <init>(java.lang.String,java.lang.String,com.facebook.AccessToken)>
+    <com.facebook.appevents.internal.e: void <init>(java.lang.String,java.lang.String,com.facebook.AccessToken)>
+    <com.facebook.appevents.internal.g: void a(android.content.Context,java.lang.String,com.facebook.appevents.internal.h,java.lang.String)>
+    <com.facebook.appevents.internal.a$3: void run()>
+    <com.facebook.appevents.internal.a: void b(android.app.Activity)>
+    <com.facebook.appevents.internal.a$1: void onActivityResumed(android.app.Activity)>
+    <dummyMainClass: com.facebook.libfbref.DeepLinkActivity dummyMainMethod_com_facebook_libfbref_DeepLinkActivity(android.content.Intent)>
+    <com.facebook.libfbref.DeepLinkActivity: void onCreate(android.os.Bundle)>
+    <com.facebook.applinks.a: void a(android.content.Context,com.facebook.applinks.a$a)>
+    <com.facebook.applinks.a: void a(android.content.Context,java.lang.String,com.facebook.applinks.a$a)>
+    <com.facebook.applinks.a$1: void run()>
+    <com.facebook.applinks.a: void b(android.content.Context,java.lang.String,com.facebook.applinks.a$a)>
+    <com.facebook.applinks.a: void c(android.content.Context,java.lang.String,com.facebook.applinks.a$a)>
+    <com.facebook.GraphRequest: com.facebook.f i()>
+    <com.facebook.GraphRequest: com.facebook.f a(com.facebook.GraphRequest)>
+    <com.facebook.GraphRequest: java.util.List a(com.facebook.GraphRequest[])>
+    <com.facebook.GraphRequest: java.util.List a(java.util.Collection)>
+    <com.facebook.GraphRequest: java.util.List b(com.facebook.e)>
+    <com.facebook.GraphRequest: java.net.HttpURLConnection a(com.facebook.e)>
+    <com.facebook.GraphRequest: void a(com.facebook.e,java.net.HttpURLConnection)>
+    <com.facebook.GraphRequest: void a(com.facebook.e,com.facebook.internal.u,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.GraphRequest: java.lang.String g(com.facebook.e)>
+    <com.facebook.FacebookSdk: java.lang.String i()>
+    <com.facebook.FacebookSdk: java.lang.String i()>
+    <com.facebook.GraphRequest: java.lang.String g(com.facebook.e)>
+    <com.facebook.GraphRequest: void a(com.facebook.e,com.facebook.internal.u,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.GraphRequest$f: void a(java.lang.String,java.lang.String)>
+    <com.facebook.GraphRequest$f: void a(java.lang.String,java.lang.String)>
+    <com.facebook.GraphRequest$f: void b(java.lang.String,java.lang.Object[])>
+    <com.facebook.GraphRequest$f: void a(java.lang.String,java.lang.Object[])>
+    <com.facebook.GraphRequest$f: void a(java.lang.String,java.lang.Object[])>
+    <com.facebook.GraphRequest$f: void a(java.lang.String,java.lang.Object[])>
+    <com.facebook.GraphRequest$f: void a(java.lang.String,java.lang.Object[])>
+    <com.facebook.GraphRequest$f: void a(java.lang.String,java.lang.Object[])>
+    <com.facebook.GraphRequest$f: void b(java.lang.String,java.lang.Object[])>
+    <com.facebook.GraphRequest$f: void a(java.lang.String,java.lang.Object[])>
+    <com.facebook.GraphRequest$f: void a(java.lang.String,java.lang.Object[])>
+
+Leak 12:
+  Source: $r6 = virtualinvoke $r4.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r5, $r1, null, null, "datetaken DESC LIMIT 10") (<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>)
+  Sink: $i0 = staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r2, $r1) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.oliveapp.camerasdk.ui.u: void run()>
+    <com.oliveapp.camerasdk.ui.u: void run()>
+    <com.oliveapp.camerasdk.ui.u: void run()>
+    <pm: android.graphics.Bitmap a(java.lang.String,int,int)>
+    <pm: android.graphics.Bitmap a(java.lang.String,int,int)>
+    <pm: android.graphics.Bitmap a(java.lang.String,int,int)>
+    <pm: android.graphics.Bitmap a(java.lang.String,int,int)>
+    <pm: android.graphics.Bitmap a(java.lang.String,int,int)>
+    <pm: android.graphics.Bitmap a(java.lang.String,int,int)>
+    <pm: android.graphics.Bitmap a(java.lang.String,int,int)>
+    <rg: int a(java.lang.Object,java.lang.String)>
+    <rg: int a(java.lang.Object,java.lang.String)>
+    <rg: int a(java.lang.Object,java.lang.String)>
+
+Leak 13:
+  Source: $r0 = staticinvoke <android.os.Environment: java.io.File getExternalStorageDirectory()>() (<android.os.Environment: java.io.File getExternalStorageDirectory()>)
+  Sink: $i0 = staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r2, $r1) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <rd: void <clinit>()>
+    <rd: void <clinit>()>
+    <rd: void <clinit>()>
+    <rd: void <clinit>()>
+    <rd: void <clinit>()>
+    <rd: void <clinit>()>
+    <rd: void <clinit>()>
+    <rd: void <clinit>()>
+    <rd: void <clinit>()>
+    <qo: void g()>
+    <qo: void g()>
+    <rk: void a(java.lang.String,java.lang.String)>
+    <rk: void a(java.lang.String,java.lang.String)>
+    <rk: void a(java.lang.String,java.lang.String)>
+    <rg: int a(java.lang.Object,java.lang.String)>
+    <rg: int a(java.lang.Object,java.lang.String)>
+    <rg: int a(java.lang.Object,java.lang.String)>
+

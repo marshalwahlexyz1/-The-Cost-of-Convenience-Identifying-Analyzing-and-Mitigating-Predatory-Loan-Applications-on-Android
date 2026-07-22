@@ -1,0 +1,43 @@
+APK: com.ayo.klikkami_2019-08-01 (IndonesiaApproved)
+Leak 1:
+  Source: $r11 = virtualinvoke $r10.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r7, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("AppsFlyer_4.10.2", $r3) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.appsflyer.AppsFlyerLibCore: void startTracking(android.app.Application,java.lang.String,com.appsflyer.AppsFlyerTrackingRequestListener)>
+    <com.appsflyer.AppsFlyerLibCore: void startTracking(android.app.Application,java.lang.String,com.appsflyer.AppsFlyerTrackingRequestListener)>
+    <com.appsflyer.AppsFlyerLibCore: void startTracking(android.app.Application,java.lang.String,com.appsflyer.AppsFlyerTrackingRequestListener)>
+    <com.appsflyer.AppsFlyerLibCore: void startTracking(android.app.Application,java.lang.String,com.appsflyer.AppsFlyerTrackingRequestListener)>
+    <com.appsflyer.AppsFlyerLibCore: void startTracking(android.app.Application,java.lang.String,com.appsflyer.AppsFlyerTrackingRequestListener)>
+    <com.appsflyer.AppsFlyerLibCore: void startTracking(android.app.Application,java.lang.String,com.appsflyer.AppsFlyerTrackingRequestListener)>
+    <com.appsflyer.AFLogger: void afInfoLog(java.lang.String,boolean)>
+
+Leak 2:
+  Source: $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r2, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: $r2 = virtualinvoke $r4.<okhttp3.OkHttpClient: okhttp3.Call newCall(okhttp3.Request)>($r3) (<okhttp3.OkHttpClient: okhttp3.Call newCall(okhttp3.Request)>)
+  Methods:
+    <com.ayo.tunai.utils.SystemUtils: java.lang.String getVersionName(android.content.Context)>
+    <com.ayo.tunai.utils.SystemUtils: java.lang.String getVersionName(android.content.Context)>
+    <com.ayo.tunai.utils.SystemUtils: java.lang.String getVersionName(android.content.Context)>
+    <com.ayo.tunai.activity.BridgeActivity: void checkUpgrade()>
+    <com.ayo.tunai.activity.BridgeActivity: void checkUpgrade()>
+    <com.ayo.tunai.net.OkHttpUtil: void get(java.lang.String,java.util.Map,com.ayo.tunai.net.OkHttpBaseCallBack)>
+    <com.ayo.tunai.net.OkHttpUtil: okhttp3.Request buildRequest(java.lang.String,java.util.Map)>
+    <com.ayo.tunai.net.OkHttpUtil: java.lang.String changeGetUrl(java.lang.String,java.util.Map)>
+    <com.ayo.tunai.net.OkHttpUtil: java.lang.String changeGetUrl(java.lang.String,java.util.Map)>
+    <com.ayo.tunai.net.OkHttpUtil: okhttp3.Request buildRequest(java.lang.String,java.util.Map)>
+    <okhttp3.Request$Builder: okhttp3.Request$Builder url(java.lang.String)>
+    <okhttp3.Request$Builder: okhttp3.Request$Builder url(java.lang.String)>
+    <okhttp3.Request$Builder: okhttp3.Request$Builder url(okhttp3.HttpUrl)>
+    <okhttp3.Request$Builder: okhttp3.Request$Builder url(okhttp3.HttpUrl)>
+    <okhttp3.Request$Builder: okhttp3.Request$Builder url(java.lang.String)>
+    <com.ayo.tunai.net.OkHttpUtil: okhttp3.Request buildRequest(java.lang.String,java.util.Map)>
+    <okhttp3.Request$Builder: okhttp3.Request build()>
+    <okhttp3.Request$Builder: okhttp3.Request build()>
+    <okhttp3.Request$Builder: okhttp3.Request build()>
+    <okhttp3.Request: void <init>(okhttp3.Request$Builder)>
+    <okhttp3.Request: void <init>(okhttp3.Request$Builder)>
+    <okhttp3.Request$Builder: okhttp3.Request build()>
+    <com.ayo.tunai.net.OkHttpUtil: okhttp3.Request buildRequest(java.lang.String,java.util.Map)>
+    <com.ayo.tunai.net.OkHttpUtil: void get(java.lang.String,java.util.Map,com.ayo.tunai.net.OkHttpBaseCallBack)>
+    <com.ayo.tunai.net.OkHttpUtil: void request(okhttp3.Request,com.ayo.tunai.net.OkHttpBaseCallBack)>
+

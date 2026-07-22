@@ -1,0 +1,988 @@
+APK: UCredit (NigeriaDelisted)
+Leak 1:
+  Source: $r6 = virtualinvoke $r5.<android.content.pm.PackageManager: java.util.List getInstalledPackages(int)>(0) (<android.content.pm.PackageManager: java.util.List getInstalledPackages(int)>)
+  Sink: virtualinvoke $r34.<java.util.zip.GZIPOutputStream: void write(byte[])>($r15) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <a.i.a.j.e: java.lang.Object b()>
+    <a.i.a.j.e: java.lang.Object b()>
+    <a.i.a.j.e: java.lang.Object b()>
+    <a.i.a.j.e: java.lang.Object b()>
+    <com.ucredit.app.user.bean.AppListBean: void <init>(java.lang.String,android.content.pm.PackageInfo)>
+    <com.ucredit.app.user.bean.AppListBean: void <init>(java.lang.String,android.content.pm.PackageInfo)>
+    <a.i.a.j.e: java.lang.Object b()>
+    <a.i.a.j.e: java.lang.Object b()>
+    <a.i.a.j.e: java.lang.Object b()>
+    <a.i.a.j.e: java.lang.Object b()>
+    <a.i.a.j.e: java.lang.Object b()>
+    <a.d.a.b.x$c: void run()>
+    <a.d.a.b.x$c$c: void <init>(a.d.a.b.x$c,java.lang.Object)>
+    <a.d.a.b.x$c: void run()>
+    <a.i.a.j.e: java.lang.Object b()>
+    <a.i.a.j.e: java.lang.Object b()>
+    <a.i.a.j.e: java.lang.Object b()>
+    <a.d.a.b.x$c: void run()>
+    <a.d.a.b.x$c$b: void <init>(a.d.a.b.x$c,java.lang.Object)>
+    <a.d.a.b.x$c: void run()>
+    <a.i.a.j.g: java.lang.Object b()>
+    <a.i.a.j.g: java.lang.Object b()>
+    <a.i.a.j.g: java.lang.Object b()>
+    <a.d.a.b.x$c: void run()>
+    <a.d.a.b.x$c$c: void <init>(a.d.a.b.x$c,java.lang.Object)>
+    <a.d.a.b.x$c$c: void <init>(a.d.a.b.x$c,java.lang.Object)>
+    <a.d.a.b.x$c: void run()>
+    <a.d.a.b.x$c$c: void run()>
+    <a.d.a.b.x$c: void run()>
+    <a.d.a.b.x$c$c: void <init>(a.d.a.b.x$c,java.lang.Object)>
+    <a.d.a.b.x$c$c: void <init>(a.d.a.b.x$c,java.lang.Object)>
+    <a.d.a.b.x$c: void run()>
+    <a.d.a.b.x$c: java.util.concurrent.Executor c()>
+    <a.d.a.b.x$c: void run()>
+    <a.i.a.j.g: java.lang.Object b()>
+    <a.i.a.j.g: java.lang.Object b()>
+    <a.i.a.j.g: java.lang.Object b()>
+    <a.d.a.b.x$c: void run()>
+    <a.d.a.b.x$c$c: void <init>(a.d.a.b.x$c,java.lang.Object)>
+    <a.d.a.b.x$c$c: void <init>(a.d.a.b.x$c,java.lang.Object)>
+    <a.d.a.b.x$c: void run()>
+    <a.d.a.b.x$c$c: void run()>
+    <a.d.a.b.x$c$c: void run()>
+    <a.i.a.j.c$a: void g(java.lang.Object)>
+    <a.i.a.j.j: void onLocationSuccess(java.lang.Object)>
+    <a.i.a.j.j$a: void <init>(a.i.a.j.j,java.lang.Object)>
+    <a.i.a.j.j$a: void <init>(a.i.a.j.j,java.lang.Object)>
+    <a.i.a.j.j: void onLocationSuccess(java.lang.Object)>
+    <a.i.a.j.j: void onLocationSuccess(java.lang.Object)>
+    <a.i.a.j.j: void onLocationSuccess(java.lang.Object)>
+    <a.i.a.j.c$a: void g(java.lang.Object)>
+    <a.i.a.j.c$a: void g(java.lang.Object)>
+    <a.i.a.j.c$a: void g(java.lang.Object)>
+    <a.d.a.b.x$c$c: void run()>
+    <a.d.a.b.x$c$c: void run()>
+    <a.d.a.b.x$c: void run()>
+    <a.d.a.b.x$c$c: void <init>(a.d.a.b.x$c,java.lang.Object)>
+    <a.d.a.b.x$c$c: void <init>(a.d.a.b.x$c,java.lang.Object)>
+    <a.d.a.b.x$c: void run()>
+    <a.d.a.b.x: void b(java.util.concurrent.ExecutorService,a.d.a.b.x$c)>
+    <a.d.a.b.x: void b(java.util.concurrent.ExecutorService,a.d.a.b.x$c)>
+    <a.d.a.b.x: void b(java.util.concurrent.ExecutorService,a.d.a.b.x$c)>
+    <a.d.a.b.x: void b(java.util.concurrent.ExecutorService,a.d.a.b.x$c)>
+    <a.d.a.b.x: void b(java.util.concurrent.ExecutorService,a.d.a.b.x$c)>
+    <a.d.a.b.x: void d(a.d.a.b.x$c,int)>
+    <a.i.a.j.i: void c()>
+    <a.i.a.j.i: void c()>
+    <a.i.a.j.i: void c()>
+    <a.d.a.b.x: void d(a.d.a.b.x$c,int)>
+    <a.d.a.b.x: void b(java.util.concurrent.ExecutorService,a.d.a.b.x$c)>
+    <a.d.a.b.x$c: void run()>
+    <com.ucredit.app.activity.ApplyUCreditLoanActivity$b: java.lang.Object b()>
+    <com.ucredit.app.activity.ApplyUCreditLoanActivity$b: java.lang.Object b()>
+    <com.ucredit.app.activity.ApplyUCreditLoanActivity$b: java.lang.Object b()>
+
+Leak 2:
+  Source: $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>() (<android.location.Location: double getLatitude()>)
+  Sink: virtualinvoke $r34.<java.util.zip.GZIPOutputStream: void write(byte[])>($r15) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <a.i.a.j.c$a: java.lang.Object b()>
+    <a.i.a.j.c$a: java.lang.Object b()>
+    <com.ucredit.app.user.bean.AddressBean: void setLatitude(double)>
+    <com.ucredit.app.user.bean.AddressBean: void setLatitude(double)>
+    <a.i.a.j.c$a: java.lang.Object b()>
+    <a.i.a.j.c$a: java.lang.Object b()>
+    <a.d.a.b.x$c: void run()>
+    <a.d.a.b.x$c$c: void <init>(a.d.a.b.x$c,java.lang.Object)>
+    <a.d.a.b.x$c$c: void <init>(a.d.a.b.x$c,java.lang.Object)>
+    <a.d.a.b.x$c: void run()>
+    <a.d.a.b.x$c$c: void run()>
+    <a.d.a.b.x$c$c: void run()>
+    <a.i.a.j.c$a: void g(java.lang.Object)>
+    <a.i.a.j.j: void onLocationSuccess(java.lang.Object)>
+    <a.i.a.j.j$a: void <init>(a.i.a.j.j,java.lang.Object)>
+    <a.i.a.j.j$a: void <init>(a.i.a.j.j,java.lang.Object)>
+    <a.i.a.j.j: void onLocationSuccess(java.lang.Object)>
+    <a.i.a.j.j: void onLocationSuccess(java.lang.Object)>
+    <a.i.a.j.j: void onLocationSuccess(java.lang.Object)>
+    <a.i.a.j.c$a: void g(java.lang.Object)>
+    <a.i.a.j.c$a: void g(java.lang.Object)>
+    <a.i.a.j.c$a: void g(java.lang.Object)>
+    <a.d.a.b.x$c$c: void run()>
+    <a.d.a.b.x$c$c: void run()>
+    <a.d.a.b.x$c: void run()>
+    <a.d.a.b.x$c$c: void <init>(a.d.a.b.x$c,java.lang.Object)>
+    <a.d.a.b.x$c$c: void <init>(a.d.a.b.x$c,java.lang.Object)>
+    <a.d.a.b.x$c: void run()>
+    <a.d.a.b.x: void b(java.util.concurrent.ExecutorService,a.d.a.b.x$c)>
+    <a.d.a.b.x: void b(java.util.concurrent.ExecutorService,a.d.a.b.x$c)>
+    <a.d.a.b.x: void b(java.util.concurrent.ExecutorService,a.d.a.b.x$c)>
+    <a.d.a.b.x: void b(java.util.concurrent.ExecutorService,a.d.a.b.x$c)>
+    <a.d.a.b.x: void b(java.util.concurrent.ExecutorService,a.d.a.b.x$c)>
+    <a.d.a.b.x: void d(a.d.a.b.x$c,int)>
+    <a.i.a.j.i: void c()>
+    <a.i.a.j.i: void c()>
+    <a.i.a.j.i: void c()>
+    <a.d.a.b.x: void d(a.d.a.b.x$c,int)>
+    <a.d.a.b.x: void b(java.util.concurrent.ExecutorService,a.d.a.b.x$c)>
+    <a.d.a.b.x$c: void run()>
+    <com.ucredit.app.activity.ApplyUCreditLoanActivity$b: java.lang.Object b()>
+    <com.ucredit.app.activity.ApplyUCreditLoanActivity$b: java.lang.Object b()>
+    <com.ucredit.app.activity.ApplyUCreditLoanActivity$b: java.lang.Object b()>
+
+Leak 3:
+  Source: $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>() (<android.location.Location: double getLongitude()>)
+  Sink: virtualinvoke $r34.<java.util.zip.GZIPOutputStream: void write(byte[])>($r15) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <a.i.a.j.c$a: java.lang.Object b()>
+    <a.i.a.j.c$a: java.lang.Object b()>
+    <com.ucredit.app.user.bean.AddressBean: void setLongitude(double)>
+    <com.ucredit.app.user.bean.AddressBean: void setLongitude(double)>
+    <a.i.a.j.c$a: java.lang.Object b()>
+    <a.i.a.j.c$a: java.lang.Object b()>
+    <a.d.a.b.x$c: void run()>
+    <a.d.a.b.x$c$c: void <init>(a.d.a.b.x$c,java.lang.Object)>
+    <a.d.a.b.x$c$c: void <init>(a.d.a.b.x$c,java.lang.Object)>
+    <a.d.a.b.x$c: void run()>
+    <a.d.a.b.x$c$c: void run()>
+    <a.d.a.b.x$c$c: void run()>
+    <a.i.a.j.c$a: void g(java.lang.Object)>
+    <a.i.a.j.j: void onLocationSuccess(java.lang.Object)>
+    <a.i.a.j.j$a: void <init>(a.i.a.j.j,java.lang.Object)>
+    <a.i.a.j.j$a: void <init>(a.i.a.j.j,java.lang.Object)>
+    <a.i.a.j.j: void onLocationSuccess(java.lang.Object)>
+    <a.i.a.j.j: void onLocationSuccess(java.lang.Object)>
+    <a.i.a.j.j: void onLocationSuccess(java.lang.Object)>
+    <a.i.a.j.c$a: void g(java.lang.Object)>
+    <a.i.a.j.c$a: void g(java.lang.Object)>
+    <a.i.a.j.c$a: void g(java.lang.Object)>
+    <a.d.a.b.x$c$c: void run()>
+    <a.d.a.b.x$c$c: void run()>
+    <a.d.a.b.x$c: void run()>
+    <a.d.a.b.x$c$c: void <init>(a.d.a.b.x$c,java.lang.Object)>
+    <a.d.a.b.x$c$c: void <init>(a.d.a.b.x$c,java.lang.Object)>
+    <a.d.a.b.x$c: void run()>
+    <a.d.a.b.x: void b(java.util.concurrent.ExecutorService,a.d.a.b.x$c)>
+    <a.d.a.b.x: void b(java.util.concurrent.ExecutorService,a.d.a.b.x$c)>
+    <a.d.a.b.x: void b(java.util.concurrent.ExecutorService,a.d.a.b.x$c)>
+    <a.d.a.b.x: void b(java.util.concurrent.ExecutorService,a.d.a.b.x$c)>
+    <a.d.a.b.x: void b(java.util.concurrent.ExecutorService,a.d.a.b.x$c)>
+    <a.d.a.b.x: void d(a.d.a.b.x$c,int)>
+    <a.i.a.j.i: void c()>
+    <a.i.a.j.i: void c()>
+    <a.i.a.j.i: void c()>
+    <a.d.a.b.x: void d(a.d.a.b.x$c,int)>
+    <a.d.a.b.x: void b(java.util.concurrent.ExecutorService,a.d.a.b.x$c)>
+    <a.d.a.b.x$c: void run()>
+    <com.ucredit.app.activity.ApplyUCreditLoanActivity$b: java.lang.Object b()>
+    <com.ucredit.app.activity.ApplyUCreditLoanActivity$b: java.lang.Object b()>
+    <com.ucredit.app.activity.ApplyUCreditLoanActivity$b: java.lang.Object b()>
+
+Leak 4:
+  Source: $d0 = virtualinvoke $r20.<android.location.Location: double getLongitude()>() (<android.location.Location: double getLongitude()>)
+  Sink: virtualinvoke $r34.<java.util.zip.GZIPOutputStream: void write(byte[])>($r15) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.ucredit.app.activity.ApplyUCreditLoanActivity$b: java.lang.Object b()>
+    <com.ucredit.app.activity.ApplyUCreditLoanActivity$b: java.lang.Object b()>
+    <com.ucredit.app.activity.ApplyUCreditLoanActivity$b: java.lang.Object b()>
+    <com.ucredit.app.activity.ApplyUCreditLoanActivity$b: java.lang.Object b()>
+    <com.ucredit.app.activity.ApplyUCreditLoanActivity$b: java.lang.Object b()>
+    <com.ucredit.app.activity.ApplyUCreditLoanActivity$b: java.lang.Object b()>
+    <a.d.a.b.x$c: void run()>
+    <a.d.a.b.x$c$b: void <init>(a.d.a.b.x$c,java.lang.Object)>
+    <a.d.a.b.x$c: void run()>
+    <a.d.a.b.x$c$c: void <init>(a.d.a.b.x$c,java.lang.Object)>
+    <a.d.a.b.x$c$c: void <init>(a.d.a.b.x$c,java.lang.Object)>
+    <a.d.a.b.x$c: void run()>
+    <a.d.a.b.x$c$c: void run()>
+    <a.d.a.b.x$c$c: void run()>
+    <a.i.a.j.c$a: void g(java.lang.Object)>
+    <a.i.a.j.j: void onLocationSuccess(java.lang.Object)>
+    <a.i.a.j.j$a: void <init>(a.i.a.j.j,java.lang.Object)>
+    <a.i.a.j.j$a: void <init>(a.i.a.j.j,java.lang.Object)>
+    <a.i.a.j.j: void onLocationSuccess(java.lang.Object)>
+    <a.i.a.j.j: void onLocationSuccess(java.lang.Object)>
+    <a.i.a.j.j: void onLocationSuccess(java.lang.Object)>
+    <a.i.a.j.c$a: void g(java.lang.Object)>
+    <a.i.a.j.c$a: void g(java.lang.Object)>
+    <a.i.a.j.c$a: void g(java.lang.Object)>
+    <a.d.a.b.x$c$c: void run()>
+    <a.d.a.b.x$c$c: void run()>
+    <a.d.a.b.x$c: void run()>
+    <a.d.a.b.x$c$c: void <init>(a.d.a.b.x$c,java.lang.Object)>
+    <a.d.a.b.x$c$c: void <init>(a.d.a.b.x$c,java.lang.Object)>
+    <a.d.a.b.x$c: void run()>
+    <a.d.a.b.x: void b(java.util.concurrent.ExecutorService,a.d.a.b.x$c)>
+    <a.d.a.b.x: void b(java.util.concurrent.ExecutorService,a.d.a.b.x$c)>
+    <a.d.a.b.x: void b(java.util.concurrent.ExecutorService,a.d.a.b.x$c)>
+    <a.d.a.b.x: void b(java.util.concurrent.ExecutorService,a.d.a.b.x$c)>
+    <a.d.a.b.x: void b(java.util.concurrent.ExecutorService,a.d.a.b.x$c)>
+    <a.d.a.b.x: void d(a.d.a.b.x$c,int)>
+    <a.i.a.j.i: void c()>
+    <a.i.a.j.i: void c()>
+    <a.i.a.j.i: void c()>
+    <a.d.a.b.x: void d(a.d.a.b.x$c,int)>
+    <a.d.a.b.x: void b(java.util.concurrent.ExecutorService,a.d.a.b.x$c)>
+    <a.d.a.b.x$c: void run()>
+    <com.ucredit.app.activity.ApplyUCreditLoanActivity$b: java.lang.Object b()>
+    <com.ucredit.app.activity.ApplyUCreditLoanActivity$b: java.lang.Object b()>
+    <com.ucredit.app.activity.ApplyUCreditLoanActivity$b: java.lang.Object b()>
+
+Leak 5:
+  Source: $r6 = virtualinvoke $r5.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r3, null, null, null, null) (<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>)
+  Sink: virtualinvoke $r34.<java.util.zip.GZIPOutputStream: void write(byte[])>($r15) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <a.i.a.j.i: java.util.Map d(android.net.Uri)>
+    <a.i.a.j.i: java.util.Map d(android.net.Uri)>
+    <a.i.a.j.i: java.util.Map d(android.net.Uri)>
+    <a.i.a.j.i: java.util.Map d(android.net.Uri)>
+    <a.i.a.j.i: java.util.Map d(android.net.Uri)>
+    <a.i.a.j.i: java.util.Map d(android.net.Uri)>
+    <a.i.a.j.h: java.lang.Object b()>
+    <a.i.a.j.h: java.lang.Object b()>
+    <a.i.a.j.h: java.lang.Object b()>
+    <a.i.a.j.h: java.lang.Object b()>
+    <a.i.a.j.h: java.lang.Object b()>
+    <a.i.a.j.h: java.lang.Object b()>
+    <a.d.a.b.x$c: void run()>
+    <a.d.a.b.x$c$c: void <init>(a.d.a.b.x$c,java.lang.Object)>
+    <a.d.a.b.x$c$c: void <init>(a.d.a.b.x$c,java.lang.Object)>
+    <a.d.a.b.x$c: void run()>
+    <a.d.a.b.x$c$c: void run()>
+    <a.d.a.b.x$c$c: void run()>
+    <a.i.a.j.c$a: void g(java.lang.Object)>
+    <a.i.a.j.j: void onLocationSuccess(java.lang.Object)>
+    <a.i.a.j.j$a: void <init>(a.i.a.j.j,java.lang.Object)>
+    <a.i.a.j.j$a: void <init>(a.i.a.j.j,java.lang.Object)>
+    <a.i.a.j.j: void onLocationSuccess(java.lang.Object)>
+    <a.i.a.j.j: void onLocationSuccess(java.lang.Object)>
+    <a.i.a.j.j: void onLocationSuccess(java.lang.Object)>
+    <a.i.a.j.c$a: void g(java.lang.Object)>
+    <a.i.a.j.c$a: void g(java.lang.Object)>
+    <a.i.a.j.c$a: void g(java.lang.Object)>
+    <a.d.a.b.x$c$c: void run()>
+    <a.d.a.b.x$c$c: void run()>
+    <a.d.a.b.x$c: void run()>
+    <a.d.a.b.x$c$c: void <init>(a.d.a.b.x$c,java.lang.Object)>
+    <a.d.a.b.x$c$c: void <init>(a.d.a.b.x$c,java.lang.Object)>
+    <a.d.a.b.x$c: void run()>
+    <a.d.a.b.x: void b(java.util.concurrent.ExecutorService,a.d.a.b.x$c)>
+    <a.d.a.b.x: void b(java.util.concurrent.ExecutorService,a.d.a.b.x$c)>
+    <a.i.a.i.f: void onInstallReferrerSetupFinished(int)>
+    <com.ucredit.app.service.TaskService: int onStartCommand(android.content.Intent,int,int)>
+    <a.d.a.b.x: void b(java.util.concurrent.ExecutorService,a.d.a.b.x$c)>
+    <a.d.a.b.x: void b(java.util.concurrent.ExecutorService,a.d.a.b.x$c)>
+    <a.d.a.b.x: void b(java.util.concurrent.ExecutorService,a.d.a.b.x$c)>
+    <a.d.a.b.x: void d(a.d.a.b.x$c,int)>
+    <a.i.a.j.i: void c()>
+    <a.i.a.j.i: void c()>
+    <a.i.a.j.i: void c()>
+    <a.d.a.b.x: void d(a.d.a.b.x$c,int)>
+    <a.d.a.b.x: void b(java.util.concurrent.ExecutorService,a.d.a.b.x$c)>
+    <a.d.a.b.x$c: void run()>
+    <com.ucredit.app.activity.ApplyUCreditLoanActivity$b: java.lang.Object b()>
+    <com.ucredit.app.activity.ApplyUCreditLoanActivity$b: java.lang.Object b()>
+    <com.ucredit.app.activity.ApplyUCreditLoanActivity$b: java.lang.Object b()>
+
+Leak 6:
+  Source: $r4 = staticinvoke <android.os.Environment: java.io.File getExternalStorageDirectory()>() (<android.os.Environment: java.io.File getExternalStorageDirectory()>)
+  Sink: virtualinvoke $r34.<java.util.zip.GZIPOutputStream: void write(byte[])>($r15) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <a.i.a.j.f: java.lang.Object b()>
+    <a.i.a.j.f: java.lang.Object b()>
+    <a.i.a.j.f: java.lang.Object b()>
+    <a.d.a.b.k: java.io.File d(java.lang.String)>
+    <a.d.a.b.k: java.io.File d(java.lang.String)>
+    <a.i.a.j.f: java.lang.Object b()>
+    <a.d.a.b.k: java.util.List k(java.io.File,java.io.FileFilter,boolean)>
+    <a.d.a.b.k: java.util.List k(java.io.File,java.io.FileFilter,boolean)>
+    <a.d.a.b.k: java.util.List k(java.io.File,java.io.FileFilter,boolean)>
+    <a.d.a.b.k: java.util.List k(java.io.File,java.io.FileFilter,boolean)>
+    <a.i.a.j.f: java.lang.Object b()>
+    <a.i.a.j.f: java.lang.Object b()>
+    <a.i.a.j.f: java.lang.Object b()>
+    <a.i.a.j.f: java.lang.Object b()>
+    <a.i.a.j.f: java.lang.Object b()>
+    <a.i.a.j.f: java.lang.Object b()>
+    <com.ucredit.app.user.bean.FileBean: void setName(java.lang.String)>
+    <com.ucredit.app.user.bean.FileBean: void setName(java.lang.String)>
+    <a.i.a.j.f: java.lang.Object b()>
+    <a.i.a.j.f: java.lang.Object b()>
+    <a.i.a.j.f: java.lang.Object b()>
+    <a.i.a.j.f: java.lang.Object b()>
+    <a.i.a.j.f: java.lang.Object b()>
+    <a.i.a.j.f: java.lang.Object b()>
+    <a.d.a.b.x$c: void run()>
+    <a.d.a.b.x$c$d: void <init>(a.d.a.b.x$c,java.lang.Throwable)>
+    <a.d.a.b.x$c$d: void <init>(a.d.a.b.x$c,java.lang.Throwable)>
+    <a.d.a.b.x$c: void run()>
+    <a.d.a.b.w: void execute(java.lang.Runnable)>
+    <a.d.a.b.x$c: void run()>
+    <a.d.a.b.x$c$d: void <init>(a.d.a.b.x$c,java.lang.Throwable)>
+    <a.d.a.b.x$c$d: void <init>(a.d.a.b.x$c,java.lang.Throwable)>
+    <a.d.a.b.x$c: void run()>
+    <a.i.a.j.f: java.lang.Object b()>
+    <a.i.a.j.f: java.lang.Object b()>
+    <a.i.a.j.f: java.lang.Object b()>
+    <a.d.a.b.x$c: void run()>
+    <a.d.a.b.x$c$c: void <init>(a.d.a.b.x$c,java.lang.Object)>
+    <a.d.a.b.x$c$c: void <init>(a.d.a.b.x$c,java.lang.Object)>
+    <a.d.a.b.x$c: void run()>
+    <a.d.a.b.x$c$c: void run()>
+    <a.d.a.b.x$c$c: void run()>
+    <a.i.a.j.c$a: void g(java.lang.Object)>
+    <a.i.a.j.j: void onLocationSuccess(java.lang.Object)>
+    <a.i.a.j.j$a: void <init>(a.i.a.j.j,java.lang.Object)>
+    <a.i.a.j.j$a: void <init>(a.i.a.j.j,java.lang.Object)>
+    <a.i.a.j.j: void onLocationSuccess(java.lang.Object)>
+    <a.i.a.j.j: void onLocationSuccess(java.lang.Object)>
+    <a.i.a.j.j: void onLocationSuccess(java.lang.Object)>
+    <a.i.a.j.c$a: void g(java.lang.Object)>
+    <a.i.a.j.c$a: void g(java.lang.Object)>
+    <a.i.a.j.c$a: void g(java.lang.Object)>
+    <a.d.a.b.x$c$c: void run()>
+    <a.d.a.b.x$c$c: void run()>
+    <a.d.a.b.x$c: void run()>
+    <a.d.a.b.x$c$c: void <init>(a.d.a.b.x$c,java.lang.Object)>
+    <a.d.a.b.x$c$c: void <init>(a.d.a.b.x$c,java.lang.Object)>
+    <a.d.a.b.x$c: void run()>
+    <a.d.a.b.x: void b(java.util.concurrent.ExecutorService,a.d.a.b.x$c)>
+    <a.d.a.b.x: void b(java.util.concurrent.ExecutorService,a.d.a.b.x$c)>
+    <a.d.a.b.x: void b(java.util.concurrent.ExecutorService,a.d.a.b.x$c)>
+    <a.d.a.b.x: void b(java.util.concurrent.ExecutorService,a.d.a.b.x$c)>
+    <a.d.a.b.x: void b(java.util.concurrent.ExecutorService,a.d.a.b.x$c)>
+    <a.d.a.b.x: void d(a.d.a.b.x$c,int)>
+    <a.i.a.j.i: void c()>
+    <a.i.a.j.i: void c()>
+    <a.i.a.j.i: void c()>
+    <a.d.a.b.x: void d(a.d.a.b.x$c,int)>
+    <a.d.a.b.x: void b(java.util.concurrent.ExecutorService,a.d.a.b.x$c)>
+    <a.d.a.b.x$c: void run()>
+    <com.ucredit.app.activity.ApplyUCreditLoanActivity$b: java.lang.Object b()>
+    <com.ucredit.app.activity.ApplyUCreditLoanActivity$b: java.lang.Object b()>
+    <com.ucredit.app.activity.ApplyUCreditLoanActivity$b: java.lang.Object b()>
+
+Leak 7:
+  Source: $d0 = virtualinvoke $r20.<android.location.Location: double getLatitude()>() (<android.location.Location: double getLatitude()>)
+  Sink: virtualinvoke $r34.<java.util.zip.GZIPOutputStream: void write(byte[])>($r15) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.ucredit.app.activity.ApplyUCreditLoanActivity$b: java.lang.Object b()>
+    <com.ucredit.app.activity.ApplyUCreditLoanActivity$b: java.lang.Object b()>
+    <com.ucredit.app.activity.ApplyUCreditLoanActivity$b: java.lang.Object b()>
+    <com.ucredit.app.activity.ApplyUCreditLoanActivity$b: java.lang.Object b()>
+    <com.ucredit.app.activity.ApplyUCreditLoanActivity$b: java.lang.Object b()>
+    <com.ucredit.app.activity.ApplyUCreditLoanActivity$b: java.lang.Object b()>
+    <a.d.a.b.x$c: void run()>
+    <a.d.a.b.x$c$b: void <init>(a.d.a.b.x$c,java.lang.Object)>
+    <a.d.a.b.x$c: void run()>
+    <a.d.a.b.x$c$c: void <init>(a.d.a.b.x$c,java.lang.Object)>
+    <a.d.a.b.x$c$c: void <init>(a.d.a.b.x$c,java.lang.Object)>
+    <a.d.a.b.x$c: void run()>
+    <a.d.a.b.x$c$c: void run()>
+    <a.d.a.b.x$c$c: void run()>
+    <a.i.a.j.c$a: void g(java.lang.Object)>
+    <a.i.a.j.j: void onLocationSuccess(java.lang.Object)>
+    <a.i.a.j.j$a: void <init>(a.i.a.j.j,java.lang.Object)>
+    <a.i.a.j.j$a: void <init>(a.i.a.j.j,java.lang.Object)>
+    <a.i.a.j.j: void onLocationSuccess(java.lang.Object)>
+    <a.i.a.j.j: void onLocationSuccess(java.lang.Object)>
+    <a.i.a.j.j: void onLocationSuccess(java.lang.Object)>
+    <a.i.a.j.c$a: void g(java.lang.Object)>
+    <a.i.a.j.c$a: void g(java.lang.Object)>
+    <a.i.a.j.c$a: void g(java.lang.Object)>
+    <a.d.a.b.x$c$c: void run()>
+    <a.d.a.b.x$c$c: void run()>
+    <a.d.a.b.x$c: void run()>
+    <a.d.a.b.x$c$c: void <init>(a.d.a.b.x$c,java.lang.Object)>
+    <a.d.a.b.x$c$c: void <init>(a.d.a.b.x$c,java.lang.Object)>
+    <a.d.a.b.x$c: void run()>
+    <a.d.a.b.x: void b(java.util.concurrent.ExecutorService,a.d.a.b.x$c)>
+    <a.d.a.b.x: void b(java.util.concurrent.ExecutorService,a.d.a.b.x$c)>
+    <a.d.a.b.x: void b(java.util.concurrent.ExecutorService,a.d.a.b.x$c)>
+    <a.d.a.b.x: void b(java.util.concurrent.ExecutorService,a.d.a.b.x$c)>
+    <a.d.a.b.x: void b(java.util.concurrent.ExecutorService,a.d.a.b.x$c)>
+    <a.d.a.b.x: void d(a.d.a.b.x$c,int)>
+    <a.i.a.j.i: void c()>
+    <a.i.a.j.i: void c()>
+    <a.i.a.j.i: void c()>
+    <a.d.a.b.x: void d(a.d.a.b.x$c,int)>
+    <a.d.a.b.x: void b(java.util.concurrent.ExecutorService,a.d.a.b.x$c)>
+    <a.d.a.b.x$c: void run()>
+    <com.ucredit.app.activity.ApplyUCreditLoanActivity$b: java.lang.Object b()>
+    <com.ucredit.app.activity.ApplyUCreditLoanActivity$b: java.lang.Object b()>
+    <com.ucredit.app.activity.ApplyUCreditLoanActivity$b: java.lang.Object b()>
+
+Leak 8:
+  Source: $r4 = staticinvoke <android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>($r6) (<android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>)
+  Sink: virtualinvoke $r34.<java.util.zip.GZIPOutputStream: void write(byte[])>($r15) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <a.i.a.j.f: java.lang.Object b()>
+    <a.i.a.j.f: java.lang.Object b()>
+    <a.i.a.j.f: java.lang.Object b()>
+    <a.i.a.j.f: java.lang.Object b()>
+    <a.i.a.j.f: java.lang.Object b()>
+    <a.i.a.e.b: java.util.List D(java.util.List)>
+    <a.i.a.e.b: java.util.List D(java.util.List)>
+    <a.i.a.e.b: java.util.List D(java.util.List)>
+    <a.i.a.e.b: java.util.List D(java.util.List)>
+    <a.d.a.b.k: java.lang.String e(java.io.File)>
+    <a.d.a.b.k: java.lang.String e(java.io.File)>
+    <a.d.a.b.k: java.lang.String e(java.io.File)>
+    <a.i.a.e.b: java.util.List D(java.util.List)>
+    <com.ucredit.app.user.bean.FileBean: void setName(java.lang.String)>
+    <com.ucredit.app.user.bean.FileBean: void setName(java.lang.String)>
+    <a.i.a.e.b: java.util.List D(java.util.List)>
+    <a.i.a.e.b: java.util.List D(java.util.List)>
+    <a.i.a.j.f: java.lang.Object b()>
+    <a.i.a.j.f: java.lang.Object b()>
+    <a.i.a.j.f: java.lang.Object b()>
+    <a.i.a.j.f: java.lang.Object b()>
+    <a.d.a.b.x$c: void run()>
+    <a.d.a.b.x$c$d: void <init>(a.d.a.b.x$c,java.lang.Throwable)>
+    <a.d.a.b.x$c$d: void <init>(a.d.a.b.x$c,java.lang.Throwable)>
+    <a.d.a.b.x$c: void run()>
+    <a.d.a.b.w: void execute(java.lang.Runnable)>
+    <a.d.a.b.x$c: void run()>
+    <a.d.a.b.x$c$d: void <init>(a.d.a.b.x$c,java.lang.Throwable)>
+    <a.d.a.b.x$c$d: void <init>(a.d.a.b.x$c,java.lang.Throwable)>
+    <a.d.a.b.x$c: void run()>
+    <a.i.a.j.f: java.lang.Object b()>
+    <a.i.a.j.f: java.lang.Object b()>
+    <a.i.a.j.f: java.lang.Object b()>
+    <a.d.a.b.x$c: void run()>
+    <a.d.a.b.x$c$c: void <init>(a.d.a.b.x$c,java.lang.Object)>
+    <a.d.a.b.x$c$c: void <init>(a.d.a.b.x$c,java.lang.Object)>
+    <a.d.a.b.x$c: void run()>
+    <a.d.a.b.x$c$c: void run()>
+    <a.d.a.b.x$c$c: void run()>
+    <a.i.a.j.c$a: void g(java.lang.Object)>
+    <a.i.a.j.j: void onLocationSuccess(java.lang.Object)>
+    <a.i.a.j.j$a: void <init>(a.i.a.j.j,java.lang.Object)>
+    <a.i.a.j.j$a: void <init>(a.i.a.j.j,java.lang.Object)>
+    <a.i.a.j.j: void onLocationSuccess(java.lang.Object)>
+    <a.i.a.j.j: void onLocationSuccess(java.lang.Object)>
+    <a.i.a.j.j: void onLocationSuccess(java.lang.Object)>
+    <a.i.a.j.c$a: void g(java.lang.Object)>
+    <a.i.a.j.c$a: void g(java.lang.Object)>
+    <a.i.a.j.c$a: void g(java.lang.Object)>
+    <a.d.a.b.x$c$c: void run()>
+    <a.d.a.b.x$c$c: void run()>
+    <a.d.a.b.x$c: void run()>
+    <a.d.a.b.x$c$c: void <init>(a.d.a.b.x$c,java.lang.Object)>
+    <a.d.a.b.x$c$c: void <init>(a.d.a.b.x$c,java.lang.Object)>
+    <a.d.a.b.x$c: void run()>
+    <a.d.a.b.x: void b(java.util.concurrent.ExecutorService,a.d.a.b.x$c)>
+    <a.d.a.b.x: void b(java.util.concurrent.ExecutorService,a.d.a.b.x$c)>
+    <a.d.a.b.x: void b(java.util.concurrent.ExecutorService,a.d.a.b.x$c)>
+    <a.d.a.b.x: void b(java.util.concurrent.ExecutorService,a.d.a.b.x$c)>
+    <a.d.a.b.x: void b(java.util.concurrent.ExecutorService,a.d.a.b.x$c)>
+    <a.d.a.b.x: void d(a.d.a.b.x$c,int)>
+    <a.i.a.j.i: void c()>
+    <a.i.a.j.i: void c()>
+    <a.i.a.j.i: void c()>
+    <a.d.a.b.x: void d(a.d.a.b.x$c,int)>
+    <a.d.a.b.x: void b(java.util.concurrent.ExecutorService,a.d.a.b.x$c)>
+    <a.d.a.b.x$c: void run()>
+    <com.ucredit.app.activity.ApplyUCreditLoanActivity$b: java.lang.Object b()>
+    <com.ucredit.app.activity.ApplyUCreditLoanActivity$b: java.lang.Object b()>
+    <com.ucredit.app.activity.ApplyUCreditLoanActivity$b: java.lang.Object b()>
+
+Leak 9:
+  Source: $r4 = staticinvoke <android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>("WhatsApp") (<android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>)
+  Sink: virtualinvoke $r34.<java.util.zip.GZIPOutputStream: void write(byte[])>($r15) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <a.i.a.j.f: java.lang.Object b()>
+    <a.i.a.j.f: java.lang.Object b()>
+    <a.i.a.j.f: java.lang.Object b()>
+    <a.i.a.j.f: java.lang.Object b()>
+    <a.i.a.j.f: java.lang.Object b()>
+    <a.i.a.e.b: java.util.List D(java.util.List)>
+    <a.i.a.e.b: java.util.List D(java.util.List)>
+    <a.i.a.e.b: java.util.List D(java.util.List)>
+    <a.i.a.e.b: java.util.List D(java.util.List)>
+    <a.d.a.b.k: java.lang.String e(java.io.File)>
+    <a.d.a.b.k: java.lang.String e(java.io.File)>
+    <a.d.a.b.k: java.lang.String e(java.io.File)>
+    <a.i.a.e.b: java.util.List D(java.util.List)>
+    <com.ucredit.app.user.bean.FileBean: void setName(java.lang.String)>
+    <com.ucredit.app.user.bean.FileBean: void setName(java.lang.String)>
+    <a.i.a.e.b: java.util.List D(java.util.List)>
+    <a.i.a.e.b: java.util.List D(java.util.List)>
+    <a.i.a.j.f: java.lang.Object b()>
+    <a.i.a.j.f: java.lang.Object b()>
+    <a.i.a.j.f: java.lang.Object b()>
+    <a.i.a.j.f: java.lang.Object b()>
+    <a.d.a.b.x$c: void run()>
+    <a.d.a.b.x$c$d: void <init>(a.d.a.b.x$c,java.lang.Throwable)>
+    <a.d.a.b.x$c$d: void <init>(a.d.a.b.x$c,java.lang.Throwable)>
+    <a.d.a.b.x$c: void run()>
+    <a.d.a.b.w: void execute(java.lang.Runnable)>
+    <a.d.a.b.x$c: void run()>
+    <a.d.a.b.x$c$d: void <init>(a.d.a.b.x$c,java.lang.Throwable)>
+    <a.d.a.b.x$c$d: void <init>(a.d.a.b.x$c,java.lang.Throwable)>
+    <a.d.a.b.x$c: void run()>
+    <a.i.a.j.f: java.lang.Object b()>
+    <a.i.a.j.f: java.lang.Object b()>
+    <a.i.a.j.f: java.lang.Object b()>
+    <a.d.a.b.x$c: void run()>
+    <a.d.a.b.x$c$c: void <init>(a.d.a.b.x$c,java.lang.Object)>
+    <a.d.a.b.x$c$c: void <init>(a.d.a.b.x$c,java.lang.Object)>
+    <a.d.a.b.x$c: void run()>
+    <a.d.a.b.x$c$c: void run()>
+    <a.d.a.b.x$c$c: void run()>
+    <a.i.a.j.c$a: void g(java.lang.Object)>
+    <a.i.a.j.j: void onLocationSuccess(java.lang.Object)>
+    <a.i.a.j.j$a: void <init>(a.i.a.j.j,java.lang.Object)>
+    <a.i.a.j.j$a: void <init>(a.i.a.j.j,java.lang.Object)>
+    <a.i.a.j.j: void onLocationSuccess(java.lang.Object)>
+    <a.i.a.j.j: void onLocationSuccess(java.lang.Object)>
+    <a.i.a.j.j: void onLocationSuccess(java.lang.Object)>
+    <a.i.a.j.c$a: void g(java.lang.Object)>
+    <a.i.a.j.c$a: void g(java.lang.Object)>
+    <a.i.a.j.c$a: void g(java.lang.Object)>
+    <a.d.a.b.x$c$c: void run()>
+    <a.d.a.b.x$c$c: void run()>
+    <a.d.a.b.x$c: void run()>
+    <a.d.a.b.x$c$c: void <init>(a.d.a.b.x$c,java.lang.Object)>
+    <a.d.a.b.x$c$c: void <init>(a.d.a.b.x$c,java.lang.Object)>
+    <a.d.a.b.x$c: void run()>
+    <a.d.a.b.x: void b(java.util.concurrent.ExecutorService,a.d.a.b.x$c)>
+    <a.d.a.b.x: void b(java.util.concurrent.ExecutorService,a.d.a.b.x$c)>
+    <a.d.a.b.x: void b(java.util.concurrent.ExecutorService,a.d.a.b.x$c)>
+    <a.d.a.b.x: void b(java.util.concurrent.ExecutorService,a.d.a.b.x$c)>
+    <a.d.a.b.x: void b(java.util.concurrent.ExecutorService,a.d.a.b.x$c)>
+    <a.d.a.b.x: void d(a.d.a.b.x$c,int)>
+    <a.i.a.j.i: void c()>
+    <a.i.a.j.i: void c()>
+    <a.i.a.j.i: void c()>
+    <a.d.a.b.x: void d(a.d.a.b.x$c,int)>
+    <a.d.a.b.x: void b(java.util.concurrent.ExecutorService,a.d.a.b.x$c)>
+    <a.d.a.b.x$c: void run()>
+    <com.ucredit.app.activity.ApplyUCreditLoanActivity$b: java.lang.Object b()>
+    <com.ucredit.app.activity.ApplyUCreditLoanActivity$b: java.lang.Object b()>
+    <com.ucredit.app.activity.ApplyUCreditLoanActivity$b: java.lang.Object b()>
+
+Leak 10:
+  Source: $r4 = staticinvoke <android.os.Environment: java.io.File getExternalStorageDirectory()>() (<android.os.Environment: java.io.File getExternalStorageDirectory()>)
+  Sink: virtualinvoke $r34.<java.util.zip.GZIPOutputStream: void write(byte[])>($r15) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <a.i.a.j.f: java.lang.Object b()>
+    <a.i.a.j.f: java.lang.Object b()>
+    <a.i.a.j.f: java.lang.Object b()>
+    <com.ucredit.app.user.bean.FileBean: void setName(java.lang.String)>
+    <com.ucredit.app.user.bean.FileBean: void setName(java.lang.String)>
+    <a.i.a.j.f: java.lang.Object b()>
+    <a.i.a.j.f: java.lang.Object b()>
+    <a.i.a.j.f: java.lang.Object b()>
+    <a.i.a.j.f: java.lang.Object b()>
+    <a.i.a.j.f: java.lang.Object b()>
+    <a.i.a.j.f: java.lang.Object b()>
+    <a.d.a.b.x$c: void run()>
+    <a.d.a.b.x$c$d: void <init>(a.d.a.b.x$c,java.lang.Throwable)>
+    <a.d.a.b.x$c$d: void <init>(a.d.a.b.x$c,java.lang.Throwable)>
+    <a.d.a.b.x$c: void run()>
+    <a.d.a.b.w: void execute(java.lang.Runnable)>
+    <a.d.a.b.x$c: void run()>
+    <a.d.a.b.x$c$d: void <init>(a.d.a.b.x$c,java.lang.Throwable)>
+    <a.d.a.b.x$c$d: void <init>(a.d.a.b.x$c,java.lang.Throwable)>
+    <a.d.a.b.x$c: void run()>
+    <a.i.a.j.f: java.lang.Object b()>
+    <a.i.a.j.f: java.lang.Object b()>
+    <a.i.a.j.f: java.lang.Object b()>
+    <a.d.a.b.x$c: void run()>
+    <a.d.a.b.x$c$c: void <init>(a.d.a.b.x$c,java.lang.Object)>
+    <a.d.a.b.x$c$c: void <init>(a.d.a.b.x$c,java.lang.Object)>
+    <a.d.a.b.x$c: void run()>
+    <a.d.a.b.x$c$c: void run()>
+    <a.d.a.b.x$c$c: void run()>
+    <a.i.a.j.c$a: void g(java.lang.Object)>
+    <a.i.a.j.j: void onLocationSuccess(java.lang.Object)>
+    <a.i.a.j.j$a: void <init>(a.i.a.j.j,java.lang.Object)>
+    <a.i.a.j.j$a: void <init>(a.i.a.j.j,java.lang.Object)>
+    <a.i.a.j.j: void onLocationSuccess(java.lang.Object)>
+    <a.i.a.j.j: void onLocationSuccess(java.lang.Object)>
+    <a.i.a.j.j: void onLocationSuccess(java.lang.Object)>
+    <a.i.a.j.c$a: void g(java.lang.Object)>
+    <a.i.a.j.c$a: void g(java.lang.Object)>
+    <a.i.a.j.c$a: void g(java.lang.Object)>
+    <a.d.a.b.x$c$c: void run()>
+    <a.d.a.b.x$c$c: void run()>
+    <a.d.a.b.x$c: void run()>
+    <a.d.a.b.x$c$c: void <init>(a.d.a.b.x$c,java.lang.Object)>
+    <a.d.a.b.x$c$c: void <init>(a.d.a.b.x$c,java.lang.Object)>
+    <a.d.a.b.x$c: void run()>
+    <a.d.a.b.x: void b(java.util.concurrent.ExecutorService,a.d.a.b.x$c)>
+    <a.d.a.b.x: void b(java.util.concurrent.ExecutorService,a.d.a.b.x$c)>
+    <a.d.a.b.x: void b(java.util.concurrent.ExecutorService,a.d.a.b.x$c)>
+    <a.d.a.b.x: void b(java.util.concurrent.ExecutorService,a.d.a.b.x$c)>
+    <a.d.a.b.x: void b(java.util.concurrent.ExecutorService,a.d.a.b.x$c)>
+    <a.d.a.b.x: void d(a.d.a.b.x$c,int)>
+    <a.i.a.j.i: void c()>
+    <a.i.a.j.i: void c()>
+    <a.i.a.j.i: void c()>
+    <a.d.a.b.x: void d(a.d.a.b.x$c,int)>
+    <a.d.a.b.x: void b(java.util.concurrent.ExecutorService,a.d.a.b.x$c)>
+    <a.d.a.b.x$c: void run()>
+    <com.ucredit.app.activity.ApplyUCreditLoanActivity$b: java.lang.Object b()>
+    <com.ucredit.app.activity.ApplyUCreditLoanActivity$b: java.lang.Object b()>
+    <com.ucredit.app.activity.ApplyUCreditLoanActivity$b: java.lang.Object b()>
+
+Leak 11:
+  Source: $r3 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r1, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r11.<java.io.BufferedWriter: void write(java.lang.String)>($r1) (<java.io.OutputStreamWriter: void write(java.lang.String)>)
+  Methods:
+    <a.d.a.b.c: java.lang.String d()>
+    <a.d.a.b.c: java.lang.String d()>
+    <a.d.a.b.c: java.lang.String d()>
+    <a.d.a.b.j0$a: java.lang.String toString()>
+    <a.d.a.b.j0$a: java.lang.String toString()>
+    <a.d.a.b.j0$a: java.lang.String toString()>
+    <a.d.a.b.o: void k(java.lang.String,java.lang.String)>
+    <a.d.a.b.o: void h(java.lang.String,java.lang.String)>
+    <a.d.a.b.i: boolean a(java.lang.String,java.lang.String,boolean)>
+
+Leak 12:
+  Source: $r3 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r1, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r11.<java.io.BufferedWriter: void write(java.lang.String)>($r1) (<java.io.OutputStreamWriter: void write(java.lang.String)>)
+  Methods:
+    <a.d.a.b.c: int c()>
+    <a.d.a.b.c: int c()>
+    <a.d.a.b.c: int c()>
+    <a.d.a.b.j0$a: java.lang.String toString()>
+    <a.d.a.b.j0$a: java.lang.String toString()>
+    <a.d.a.b.j0$a: java.lang.String toString()>
+    <a.d.a.b.o: void k(java.lang.String,java.lang.String)>
+    <a.d.a.b.o: void h(java.lang.String,java.lang.String)>
+    <a.d.a.b.i: boolean a(java.lang.String,java.lang.String,boolean)>
+
+Leak 13:
+  Source: $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r2, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r16.<java.io.OutputStream: void write(byte[])>($r7) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.appsflyer.AppsFlyerLibCore: java.lang.String ɩ(java.lang.String,android.content.pm.PackageManager,java.lang.String)>
+    <com.appsflyer.AppsFlyerLibCore: java.lang.String ɩ(java.lang.String,android.content.pm.PackageManager,java.lang.String)>
+    <com.appsflyer.AppsFlyerLibCore: java.lang.String ɩ(java.lang.String,android.content.pm.PackageManager,java.lang.String)>
+    <com.appsflyer.AppsFlyerLibCore: java.lang.String ɩ(java.lang.String,android.content.pm.PackageManager,java.lang.String)>
+    <com.appsflyer.AppsFlyerLibCore: java.lang.String ɩ(java.lang.String,android.content.pm.PackageManager,java.lang.String)>
+    <com.appsflyer.AppsFlyerLibCore: java.lang.String getConfiguredChannel(android.content.Context)>
+    <com.appsflyer.AppsFlyerLibCore: void ı(java.lang.ref.WeakReference)>
+    <com.appsflyer.AppsFlyerLibCore: void ı(java.lang.ref.WeakReference)>
+    <com.appsflyer.AFEvent: com.appsflyer.AFEvent params(java.util.Map)>
+    <com.appsflyer.AFEvent: com.appsflyer.AFEvent params(java.util.Map)>
+    <com.appsflyer.AppsFlyerLibCore: void ı(java.lang.ref.WeakReference)>
+    <com.appsflyer.AppsFlyerLibCore: void ı(java.lang.ref.WeakReference)>
+    <com.appsflyer.internal.w: void <init>(com.appsflyer.internal.model.event.BackgroundEvent)>
+    <com.appsflyer.AFEvent: com.appsflyer.AFEvent weakContext()>
+    <com.appsflyer.internal.w: void <init>(com.appsflyer.internal.model.event.BackgroundEvent)>
+    <com.appsflyer.internal.w: void <init>(com.appsflyer.internal.model.event.BackgroundEvent)>
+    <com.appsflyer.internal.w: void <init>(com.appsflyer.internal.model.event.BackgroundEvent)>
+    <com.appsflyer.AppsFlyerLibCore: void ı(java.lang.ref.WeakReference)>
+    <com.appsflyer.AppsFlyerLibCore: void ı(java.lang.ref.WeakReference)>
+    <com.appsflyer.internal.w: void run()>
+    <com.appsflyer.internal.w: java.net.HttpURLConnection ǃ()>
+    <com.appsflyer.internal.w: java.net.HttpURLConnection ǃ()>
+    <com.appsflyer.internal.model.event.BackgroundEvent: java.lang.String body()>
+    <com.appsflyer.AFEvent: java.util.Map params()>
+    <com.appsflyer.AFEvent: java.util.Map params()>
+    <com.appsflyer.internal.model.event.BackgroundEvent: java.lang.String body()>
+    <com.appsflyer.AFHelper: org.json.JSONObject toJsonObject(java.util.Map)>
+    <com.appsflyer.AFHelper: org.json.JSONObject toJsonObject(java.util.Map)>
+    <com.appsflyer.AFHelper: org.json.JSONObject toJsonObject(java.util.Map)>
+    <com.appsflyer.AFHelper: org.json.JSONObject toJsonObject(java.util.Map)>
+    <com.appsflyer.AFHelper: org.json.JSONObject toJsonObject(java.util.Map)>
+    <com.appsflyer.AFHelper: org.json.JSONObject toJsonObject(java.util.Map)>
+    <com.appsflyer.AFHelper: org.json.JSONObject toJsonObject(java.util.Map)>
+    <com.appsflyer.internal.model.event.BackgroundEvent: java.lang.String body()>
+    <com.appsflyer.internal.model.event.BackgroundEvent: java.lang.String body()>
+    <com.appsflyer.internal.w: java.net.HttpURLConnection ǃ()>
+    <com.appsflyer.internal.w: java.net.HttpURLConnection ǃ()>
+    <com.appsflyer.internal.w: java.net.HttpURLConnection ǃ()>
+
+Leak 14:
+  Source: $r24 = virtualinvoke $r23.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r9, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r16.<java.io.OutputStream: void write(byte[])>($r7) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: void ι(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: void ι(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: void ι(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: void Ι(com.appsflyer.AppsFlyerLibCore)>
+    <com.appsflyer.AppsFlyerLibCore$5: void run()>
+    <com.appsflyer.internal.referrer.GoogleReferrer$2: void onInstallReferrerSetupFinished(int)>
+    <com.android.installreferrer.api.InstallReferrerClientImpl: void startConnection(com.android.installreferrer.api.InstallReferrerStateListener)>
+    <com.ucredit.app.service.TaskService: int onStartCommand(android.content.Intent,int,int)>
+    <dummyMainClass: com.ucredit.app.service.TaskService dummyMainMethod_com_ucredit_app_service_TaskService(android.content.Intent)>
+    <dummyMainClass: void dummyMainMethod(java.lang.String[])>
+    <dummyMainClass: com.appsflyer.FirebaseMessagingServiceListener dummyMainMethod_com_appsflyer_FirebaseMessagingServiceListener(android.content.Intent)>
+    <com.appsflyer.FirebaseMessagingServiceListener: void onNewToken(java.lang.String)>
+    <com.appsflyer.internal.af: void ı(android.content.Context,java.lang.String)>
+    <com.appsflyer.AppsFlyerLibCore: void ι(android.content.Context,java.lang.String)>
+    <com.appsflyer.AppsFlyerLibCore: void ι(android.content.Context,java.lang.String)>
+    <com.appsflyer.AppsFlyerLibCore: void ι(android.content.Context,java.lang.String)>
+    <com.appsflyer.AFEvent: com.appsflyer.AFEvent params(java.util.Map)>
+    <com.appsflyer.AFEvent: com.appsflyer.AFEvent params(java.util.Map)>
+    <com.appsflyer.AppsFlyerLibCore: void ι(android.content.Context,java.lang.String)>
+    <com.appsflyer.AppsFlyerLibCore: void ι(android.content.Context,java.lang.String)>
+    <com.appsflyer.internal.w: void <init>(com.appsflyer.internal.model.event.BackgroundEvent)>
+    <com.appsflyer.AFEvent: com.appsflyer.AFEvent weakContext()>
+    <com.appsflyer.internal.w: void <init>(com.appsflyer.internal.model.event.BackgroundEvent)>
+    <com.appsflyer.internal.w: void <init>(com.appsflyer.internal.model.event.BackgroundEvent)>
+    <com.appsflyer.internal.w: void <init>(com.appsflyer.internal.model.event.BackgroundEvent)>
+    <com.appsflyer.AppsFlyerLibCore: void ι(android.content.Context,java.lang.String)>
+    <com.appsflyer.AppsFlyerLibCore: void ι(android.content.Context,java.lang.String)>
+    <com.appsflyer.internal.w: void run()>
+    <com.appsflyer.internal.w: java.net.HttpURLConnection ǃ()>
+    <com.appsflyer.internal.w: java.net.HttpURLConnection ǃ()>
+    <com.appsflyer.internal.model.event.BackgroundEvent: java.lang.String body()>
+    <com.appsflyer.AFEvent: java.util.Map params()>
+    <com.appsflyer.AFEvent: java.util.Map params()>
+    <com.appsflyer.internal.model.event.BackgroundEvent: java.lang.String body()>
+    <com.appsflyer.AFHelper: org.json.JSONObject toJsonObject(java.util.Map)>
+    <com.appsflyer.AFHelper: org.json.JSONObject toJsonObject(java.util.Map)>
+    <com.appsflyer.AFHelper: org.json.JSONObject toJsonObject(java.util.Map)>
+    <com.appsflyer.AFHelper: org.json.JSONObject toJsonObject(java.util.Map)>
+    <com.appsflyer.AFHelper: org.json.JSONObject toJsonObject(java.util.Map)>
+    <com.appsflyer.AFHelper: org.json.JSONObject toJsonObject(java.util.Map)>
+    <com.appsflyer.AFHelper: org.json.JSONObject toJsonObject(java.util.Map)>
+    <com.appsflyer.internal.model.event.BackgroundEvent: java.lang.String body()>
+    <com.appsflyer.internal.model.event.BackgroundEvent: java.lang.String body()>
+    <com.appsflyer.internal.w: java.net.HttpURLConnection ǃ()>
+    <com.appsflyer.internal.w: java.net.HttpURLConnection ǃ()>
+    <com.appsflyer.internal.w: java.net.HttpURLConnection ǃ()>
+
+Leak 15:
+  Source: $d0 = virtualinvoke $r74.<android.location.Location: double getLongitude()>() (<android.location.Location: double getLongitude()>)
+  Sink: virtualinvoke $r16.<java.io.OutputStream: void write(byte[])>($r7) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: void ι(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: void ι(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: void ι(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: void Ι(com.appsflyer.AppsFlyerLibCore)>
+    <com.appsflyer.AppsFlyerLibCore$5: void run()>
+    <com.appsflyer.internal.referrer.GoogleReferrer$2: void onInstallReferrerSetupFinished(int)>
+    <com.android.installreferrer.api.InstallReferrerClientImpl: void startConnection(com.android.installreferrer.api.InstallReferrerStateListener)>
+    <com.ucredit.app.service.TaskService: int onStartCommand(android.content.Intent,int,int)>
+    <dummyMainClass: com.ucredit.app.service.TaskService dummyMainMethod_com_ucredit_app_service_TaskService(android.content.Intent)>
+    <dummyMainClass: void dummyMainMethod(java.lang.String[])>
+    <dummyMainClass: com.appsflyer.FirebaseMessagingServiceListener dummyMainMethod_com_appsflyer_FirebaseMessagingServiceListener(android.content.Intent)>
+    <com.appsflyer.FirebaseMessagingServiceListener: void onNewToken(java.lang.String)>
+    <com.appsflyer.internal.af: void ı(android.content.Context,java.lang.String)>
+    <com.appsflyer.AppsFlyerLibCore: void ι(android.content.Context,java.lang.String)>
+    <com.appsflyer.AppsFlyerLibCore: void ι(android.content.Context,java.lang.String)>
+    <com.appsflyer.AppsFlyerLibCore: void ι(android.content.Context,java.lang.String)>
+    <com.appsflyer.AFEvent: com.appsflyer.AFEvent params(java.util.Map)>
+    <com.appsflyer.AFEvent: com.appsflyer.AFEvent params(java.util.Map)>
+    <com.appsflyer.AppsFlyerLibCore: void ι(android.content.Context,java.lang.String)>
+    <com.appsflyer.AppsFlyerLibCore: void ι(android.content.Context,java.lang.String)>
+    <com.appsflyer.internal.w: void <init>(com.appsflyer.internal.model.event.BackgroundEvent)>
+    <com.appsflyer.AFEvent: com.appsflyer.AFEvent weakContext()>
+    <com.appsflyer.internal.w: void <init>(com.appsflyer.internal.model.event.BackgroundEvent)>
+    <com.appsflyer.internal.w: void <init>(com.appsflyer.internal.model.event.BackgroundEvent)>
+    <com.appsflyer.internal.w: void <init>(com.appsflyer.internal.model.event.BackgroundEvent)>
+    <com.appsflyer.AppsFlyerLibCore: void ι(android.content.Context,java.lang.String)>
+    <com.appsflyer.AppsFlyerLibCore: void ι(android.content.Context,java.lang.String)>
+    <com.appsflyer.internal.w: void run()>
+    <com.appsflyer.internal.w: java.net.HttpURLConnection ǃ()>
+    <com.appsflyer.internal.w: java.net.HttpURLConnection ǃ()>
+    <com.appsflyer.internal.model.event.BackgroundEvent: java.lang.String body()>
+    <com.appsflyer.AFEvent: java.util.Map params()>
+    <com.appsflyer.AFEvent: java.util.Map params()>
+    <com.appsflyer.internal.model.event.BackgroundEvent: java.lang.String body()>
+    <com.appsflyer.AFHelper: org.json.JSONObject toJsonObject(java.util.Map)>
+    <com.appsflyer.AFHelper: org.json.JSONObject toJsonObject(java.util.Map)>
+    <com.appsflyer.AFHelper: org.json.JSONObject toJsonObject(java.util.Map)>
+    <com.appsflyer.AFHelper: org.json.JSONObject toJsonObject(java.util.Map)>
+    <com.appsflyer.AFHelper: org.json.JSONObject toJsonObject(java.util.Map)>
+    <com.appsflyer.AFHelper: org.json.JSONObject toJsonObject(java.util.Map)>
+    <com.appsflyer.AFHelper: org.json.JSONObject toJsonObject(java.util.Map)>
+    <com.appsflyer.internal.model.event.BackgroundEvent: java.lang.String body()>
+    <com.appsflyer.internal.model.event.BackgroundEvent: java.lang.String body()>
+    <com.appsflyer.internal.w: java.net.HttpURLConnection ǃ()>
+    <com.appsflyer.internal.w: java.net.HttpURLConnection ǃ()>
+    <com.appsflyer.internal.w: java.net.HttpURLConnection ǃ()>
+
+Leak 16:
+  Source: $r8 = virtualinvoke $r6.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r7, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r16.<java.io.OutputStream: void write(byte[])>($r7) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.appsflyer.AppsFlyerLibCore: void ι(android.content.Context,java.lang.String)>
+    <com.appsflyer.AppsFlyerLibCore: void ι(android.content.Context,java.lang.String)>
+    <com.appsflyer.AppsFlyerLibCore: void ι(android.content.Context,java.lang.String)>
+    <com.appsflyer.AppsFlyerLibCore: void ι(android.content.Context,java.lang.String)>
+    <com.appsflyer.AppsFlyerLibCore: void ι(android.content.Context,java.lang.String)>
+    <com.appsflyer.AFEvent: com.appsflyer.AFEvent params(java.util.Map)>
+    <com.appsflyer.AFEvent: com.appsflyer.AFEvent params(java.util.Map)>
+    <com.appsflyer.AppsFlyerLibCore: void ι(android.content.Context,java.lang.String)>
+    <com.appsflyer.AppsFlyerLibCore: void ι(android.content.Context,java.lang.String)>
+    <com.appsflyer.internal.w: void <init>(com.appsflyer.internal.model.event.BackgroundEvent)>
+    <com.appsflyer.AFEvent: com.appsflyer.AFEvent weakContext()>
+    <com.appsflyer.internal.w: void <init>(com.appsflyer.internal.model.event.BackgroundEvent)>
+    <com.appsflyer.internal.w: void <init>(com.appsflyer.internal.model.event.BackgroundEvent)>
+    <com.appsflyer.internal.w: void <init>(com.appsflyer.internal.model.event.BackgroundEvent)>
+    <com.appsflyer.AppsFlyerLibCore: void ι(android.content.Context,java.lang.String)>
+    <com.appsflyer.AppsFlyerLibCore: void ι(android.content.Context,java.lang.String)>
+    <com.appsflyer.internal.w: void run()>
+    <com.appsflyer.internal.w: java.net.HttpURLConnection ǃ()>
+    <com.appsflyer.internal.w: java.net.HttpURLConnection ǃ()>
+    <com.appsflyer.internal.model.event.BackgroundEvent: java.lang.String body()>
+    <com.appsflyer.AFEvent: java.util.Map params()>
+    <com.appsflyer.AFEvent: java.util.Map params()>
+    <com.appsflyer.internal.model.event.BackgroundEvent: java.lang.String body()>
+    <com.appsflyer.AFHelper: org.json.JSONObject toJsonObject(java.util.Map)>
+    <com.appsflyer.AFHelper: org.json.JSONObject toJsonObject(java.util.Map)>
+    <com.appsflyer.AFHelper: org.json.JSONObject toJsonObject(java.util.Map)>
+    <com.appsflyer.AFHelper: org.json.JSONObject toJsonObject(java.util.Map)>
+    <com.appsflyer.AFHelper: org.json.JSONObject toJsonObject(java.util.Map)>
+    <com.appsflyer.AFHelper: org.json.JSONObject toJsonObject(java.util.Map)>
+    <com.appsflyer.AFHelper: org.json.JSONObject toJsonObject(java.util.Map)>
+    <com.appsflyer.internal.model.event.BackgroundEvent: java.lang.String body()>
+    <com.appsflyer.internal.model.event.BackgroundEvent: java.lang.String body()>
+    <com.appsflyer.internal.w: java.net.HttpURLConnection ǃ()>
+    <com.appsflyer.internal.w: java.net.HttpURLConnection ǃ()>
+    <com.appsflyer.internal.w: java.net.HttpURLConnection ǃ()>
+
+Leak 17:
+  Source: $r15 = virtualinvoke $r8.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r7, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r16.<java.io.OutputStream: void write(byte[])>($r7) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.appsflyer.internal.ae: void Ι(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.internal.ae: void Ι(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.internal.ae: void Ι(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.internal.ae: void Ι(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.internal.ae: void ι(java.lang.String,java.lang.String,java.lang.String,java.lang.String)>
+    <com.appsflyer.internal.ae: void ι(java.lang.String,java.lang.String,java.lang.String,java.lang.String)>
+    <com.appsflyer.internal.ae: void ι(java.lang.String,java.lang.String,java.lang.String,java.lang.String)>
+    <com.appsflyer.internal.ae: void Ι(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.internal.ae: void ı(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.internal.ae: void ı(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.internal.ae: void Ι(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.internal.ae: void ı(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.internal.ae: void ı(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.internal.ae: java.lang.String Ɩ()>
+    <com.appsflyer.internal.ae: java.lang.String Ɩ()>
+    <com.appsflyer.internal.ae: java.lang.String Ɩ()>
+    <com.appsflyer.internal.ae: void ı(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.internal.model.event.ProxyEvent: com.appsflyer.internal.model.event.BackgroundEvent body(java.lang.String)>
+    <com.appsflyer.internal.model.event.ProxyEvent: com.appsflyer.internal.model.event.BackgroundEvent body(java.lang.String)>
+    <com.appsflyer.internal.ae: void ı(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.AFEvent: com.appsflyer.AFEvent urlString(java.lang.String)>
+    <com.appsflyer.internal.ae: void ı(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.internal.ae: void ı(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.internal.w: void <init>(com.appsflyer.internal.model.event.BackgroundEvent)>
+    <com.appsflyer.AFEvent: com.appsflyer.AFEvent weakContext()>
+    <com.appsflyer.internal.w: void <init>(com.appsflyer.internal.model.event.BackgroundEvent)>
+    <com.appsflyer.internal.w: void <init>(com.appsflyer.internal.model.event.BackgroundEvent)>
+    <com.appsflyer.internal.w: void <init>(com.appsflyer.internal.model.event.BackgroundEvent)>
+    <com.appsflyer.internal.ae: void ı(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.internal.ae: void ı(java.lang.String,android.content.pm.PackageManager)>
+    <com.appsflyer.internal.w: void run()>
+    <com.appsflyer.internal.w: java.net.HttpURLConnection ǃ()>
+    <com.appsflyer.internal.w: java.net.HttpURLConnection ǃ()>
+    <com.appsflyer.internal.model.event.ProxyEvent: java.lang.String body()>
+    <com.appsflyer.internal.model.event.ProxyEvent: java.lang.String body()>
+    <com.appsflyer.internal.w: java.net.HttpURLConnection ǃ()>
+    <com.appsflyer.internal.w: java.net.HttpURLConnection ǃ()>
+    <com.appsflyer.internal.w: java.net.HttpURLConnection ǃ()>
+
+Leak 18:
+  Source: $d0 = virtualinvoke $r74.<android.location.Location: double getLatitude()>() (<android.location.Location: double getLatitude()>)
+  Sink: virtualinvoke $r16.<java.io.OutputStream: void write(byte[])>($r7) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: void ι(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: void ι(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: java.util.Map ǃ(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: void ι(com.appsflyer.AFEvent)>
+    <com.appsflyer.AppsFlyerLibCore: void Ι(com.appsflyer.AppsFlyerLibCore)>
+    <com.appsflyer.AppsFlyerLibCore$5: void run()>
+    <com.appsflyer.internal.referrer.GoogleReferrer$2: void onInstallReferrerSetupFinished(int)>
+    <com.android.installreferrer.api.InstallReferrerClientImpl: void startConnection(com.android.installreferrer.api.InstallReferrerStateListener)>
+    <com.ucredit.app.service.TaskService: int onStartCommand(android.content.Intent,int,int)>
+    <dummyMainClass: com.ucredit.app.service.TaskService dummyMainMethod_com_ucredit_app_service_TaskService(android.content.Intent)>
+    <dummyMainClass: void dummyMainMethod(java.lang.String[])>
+    <dummyMainClass: com.appsflyer.FirebaseMessagingServiceListener dummyMainMethod_com_appsflyer_FirebaseMessagingServiceListener(android.content.Intent)>
+    <com.appsflyer.FirebaseMessagingServiceListener: void onNewToken(java.lang.String)>
+    <com.appsflyer.internal.af: void ı(android.content.Context,java.lang.String)>
+    <com.appsflyer.AppsFlyerLibCore: void ι(android.content.Context,java.lang.String)>
+    <com.appsflyer.AppsFlyerLibCore: void ι(android.content.Context,java.lang.String)>
+    <com.appsflyer.AppsFlyerLibCore: void ι(android.content.Context,java.lang.String)>
+    <com.appsflyer.AFEvent: com.appsflyer.AFEvent params(java.util.Map)>
+    <com.appsflyer.AFEvent: com.appsflyer.AFEvent params(java.util.Map)>
+    <com.appsflyer.AppsFlyerLibCore: void ι(android.content.Context,java.lang.String)>
+    <com.appsflyer.AppsFlyerLibCore: void ι(android.content.Context,java.lang.String)>
+    <com.appsflyer.internal.w: void <init>(com.appsflyer.internal.model.event.BackgroundEvent)>
+    <com.appsflyer.AFEvent: com.appsflyer.AFEvent weakContext()>
+    <com.appsflyer.internal.w: void <init>(com.appsflyer.internal.model.event.BackgroundEvent)>
+    <com.appsflyer.internal.w: void <init>(com.appsflyer.internal.model.event.BackgroundEvent)>
+    <com.appsflyer.internal.w: void <init>(com.appsflyer.internal.model.event.BackgroundEvent)>
+    <com.appsflyer.AppsFlyerLibCore: void ι(android.content.Context,java.lang.String)>
+    <com.appsflyer.AppsFlyerLibCore: void ι(android.content.Context,java.lang.String)>
+    <com.appsflyer.internal.w: void run()>
+    <com.appsflyer.internal.w: java.net.HttpURLConnection ǃ()>
+    <com.appsflyer.internal.w: java.net.HttpURLConnection ǃ()>
+    <com.appsflyer.internal.model.event.BackgroundEvent: java.lang.String body()>
+    <com.appsflyer.AFEvent: java.util.Map params()>
+    <com.appsflyer.AFEvent: java.util.Map params()>
+    <com.appsflyer.internal.model.event.BackgroundEvent: java.lang.String body()>
+    <com.appsflyer.AFHelper: org.json.JSONObject toJsonObject(java.util.Map)>
+    <com.appsflyer.AFHelper: org.json.JSONObject toJsonObject(java.util.Map)>
+    <com.appsflyer.AFHelper: org.json.JSONObject toJsonObject(java.util.Map)>
+    <com.appsflyer.AFHelper: org.json.JSONObject toJsonObject(java.util.Map)>
+    <com.appsflyer.AFHelper: org.json.JSONObject toJsonObject(java.util.Map)>
+    <com.appsflyer.AFHelper: org.json.JSONObject toJsonObject(java.util.Map)>
+    <com.appsflyer.AFHelper: org.json.JSONObject toJsonObject(java.util.Map)>
+    <com.appsflyer.internal.model.event.BackgroundEvent: java.lang.String body()>
+    <com.appsflyer.internal.model.event.BackgroundEvent: java.lang.String body()>
+    <com.appsflyer.internal.w: java.net.HttpURLConnection ǃ()>
+    <com.appsflyer.internal.w: java.net.HttpURLConnection ǃ()>
+    <com.appsflyer.internal.w: java.net.HttpURLConnection ǃ()>
+
+Leak 19:
+  Source: $r3 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r1, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r11.<java.io.BufferedWriter: void write(java.lang.String)>($r1) (<java.io.BufferedWriter: void write(java.lang.String)>)
+  Methods:
+    <a.d.a.b.c: java.lang.String d()>
+    <a.d.a.b.c: java.lang.String d()>
+    <a.d.a.b.c: java.lang.String d()>
+    <a.d.a.b.j0$a: java.lang.String toString()>
+    <a.d.a.b.j0$a: java.lang.String toString()>
+    <a.d.a.b.j0$a: java.lang.String toString()>
+    <a.d.a.b.o: void k(java.lang.String,java.lang.String)>
+    <a.d.a.b.o: void h(java.lang.String,java.lang.String)>
+    <a.d.a.b.i: boolean a(java.lang.String,java.lang.String,boolean)>
+
+Leak 20:
+  Source: $r3 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r1, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r11.<java.io.BufferedWriter: void write(java.lang.String)>($r1) (<java.io.BufferedWriter: void write(java.lang.String)>)
+  Methods:
+    <a.d.a.b.c: int c()>
+    <a.d.a.b.c: int c()>
+    <a.d.a.b.c: int c()>
+    <a.d.a.b.j0$a: java.lang.String toString()>
+    <a.d.a.b.j0$a: java.lang.String toString()>
+    <a.d.a.b.j0$a: java.lang.String toString()>
+    <a.d.a.b.o: void k(java.lang.String,java.lang.String)>
+    <a.d.a.b.o: void h(java.lang.String,java.lang.String)>
+    <a.d.a.b.i: boolean a(java.lang.String,java.lang.String,boolean)>
+

@@ -1,0 +1,371 @@
+APK: Payfimobile (NigeriaApproved)
+Leak 1:
+  Source: $r5 = virtualinvoke r0.<android.content.Context: java.io.File getExternalFilesDir(java.lang.String)>($r4) (<android.content.Context: java.io.File getExternalFilesDir(java.lang.String)>)
+  Sink: virtualinvoke $r2.<java.io.FileOutputStream: void write(byte[])>($r1) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <com.exlusoft.otoreport.Camera2Activity: java.io.File Q0(int)>
+    <com.exlusoft.otoreport.Camera2Activity: java.io.File Q0(int)>
+    <com.exlusoft.otoreport.Camera2Activity: java.io.File Q0(int)>
+    <com.exlusoft.otoreport.Camera2Activity: java.io.File Q0(int)>
+    <com.exlusoft.otoreport.Camera2Activity: java.io.File Q0(int)>
+    <com.exlusoft.otoreport.Camera2Activity: java.io.File Q0(int)>
+    <com.exlusoft.otoreport.Camera2Activity: java.io.File Q0(int)>
+    <com.exlusoft.otoreport.Camera2Activity: java.io.File Q0(int)>
+    <com.exlusoft.otoreport.Camera2Activity: java.io.File Q0(int)>
+    <com.exlusoft.otoreport.Camera2Activity: java.io.File Q0(int)>
+    <com.exlusoft.otoreport.Camera2Activity: java.io.File Q0(int)>
+    <com.exlusoft.otoreport.Camera2Activity: void X0()>
+    <com.exlusoft.otoreport.Camera2Activity: void X0()>
+    <com.exlusoft.otoreport.Camera2Activity: void R0(android.view.View)>
+    <com.exlusoft.otoreport.Camera2Activity: void D0(com.exlusoft.otoreport.Camera2Activity,android.view.View)>
+    <T0.r: void onClick(android.view.View)>
+    <T0.r: void onClick(android.view.View)>
+    <dummyMainClass: com.exlusoft.otoreport.Camera2Activity dummyMainMethod_com_exlusoft_otoreport_Camera2Activity(android.content.Intent)>
+    <T0.r: void <init>(com.exlusoft.otoreport.Camera2Activity)>
+    <T0.r: void <init>(com.exlusoft.otoreport.Camera2Activity)>
+    <dummyMainClass: com.exlusoft.otoreport.Camera2Activity dummyMainMethod_com_exlusoft_otoreport_Camera2Activity(android.content.Intent)>
+    <com.exlusoft.otoreport.Camera2Activity$d: void <init>(com.exlusoft.otoreport.Camera2Activity)>
+    <com.exlusoft.otoreport.Camera2Activity$d: void <init>(com.exlusoft.otoreport.Camera2Activity)>
+    <dummyMainClass: com.exlusoft.otoreport.Camera2Activity dummyMainMethod_com_exlusoft_otoreport_Camera2Activity(android.content.Intent)>
+    <com.exlusoft.otoreport.Camera2Activity$d: void onImageAvailable(android.media.ImageReader)>
+    <com.exlusoft.otoreport.Camera2Activity$d: void a(byte[])>
+    <com.exlusoft.otoreport.Camera2Activity$d: void a(byte[])>
+    <com.exlusoft.otoreport.Camera2Activity: java.io.File H0(com.exlusoft.otoreport.Camera2Activity)>
+    <com.exlusoft.otoreport.Camera2Activity: java.io.File H0(com.exlusoft.otoreport.Camera2Activity)>
+    <com.exlusoft.otoreport.Camera2Activity$d: void a(byte[])>
+    <com.exlusoft.otoreport.Camera2Activity$d: void a(byte[])>
+
+Leak 2:
+  Source: $r5 = virtualinvoke r0.<android.content.Context: java.io.File getExternalFilesDir(java.lang.String)>($r4) (<android.content.Context: java.io.File getExternalFilesDir(java.lang.String)>)
+  Sink: virtualinvoke $r2.<java.io.FileOutputStream: void write(byte[])>($r1) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <com.exlusoft.otoreport.Camera2Activity: java.io.File Q0(int)>
+    <com.exlusoft.otoreport.Camera2Activity: java.io.File Q0(int)>
+    <com.exlusoft.otoreport.Camera2Activity: java.io.File Q0(int)>
+    <com.exlusoft.otoreport.Camera2Activity: java.io.File Q0(int)>
+    <com.exlusoft.otoreport.Camera2Activity: java.io.File Q0(int)>
+    <com.exlusoft.otoreport.Camera2Activity: java.io.File Q0(int)>
+    <com.exlusoft.otoreport.Camera2Activity: java.io.File Q0(int)>
+    <com.exlusoft.otoreport.Camera2Activity: java.io.File Q0(int)>
+    <com.exlusoft.otoreport.Camera2Activity: java.io.File Q0(int)>
+    <com.exlusoft.otoreport.Camera2Activity: java.io.File Q0(int)>
+    <com.exlusoft.otoreport.Camera2Activity: java.io.File Q0(int)>
+    <com.exlusoft.otoreport.Camera2Activity: void X0()>
+    <com.exlusoft.otoreport.Camera2Activity: void X0()>
+    <com.exlusoft.otoreport.Camera2Activity: void R0(android.view.View)>
+    <com.exlusoft.otoreport.Camera2Activity: void D0(com.exlusoft.otoreport.Camera2Activity,android.view.View)>
+    <T0.r: void onClick(android.view.View)>
+    <T0.r: void onClick(android.view.View)>
+    <dummyMainClass: com.exlusoft.otoreport.Camera2Activity dummyMainMethod_com_exlusoft_otoreport_Camera2Activity(android.content.Intent)>
+    <T0.r: void <init>(com.exlusoft.otoreport.Camera2Activity)>
+    <T0.r: void <init>(com.exlusoft.otoreport.Camera2Activity)>
+    <dummyMainClass: com.exlusoft.otoreport.Camera2Activity dummyMainMethod_com_exlusoft_otoreport_Camera2Activity(android.content.Intent)>
+    <com.exlusoft.otoreport.Camera2Activity$d: void <init>(com.exlusoft.otoreport.Camera2Activity)>
+    <com.exlusoft.otoreport.Camera2Activity$d: void <init>(com.exlusoft.otoreport.Camera2Activity)>
+    <dummyMainClass: com.exlusoft.otoreport.Camera2Activity dummyMainMethod_com_exlusoft_otoreport_Camera2Activity(android.content.Intent)>
+    <com.exlusoft.otoreport.Camera2Activity$d: void onImageAvailable(android.media.ImageReader)>
+    <com.exlusoft.otoreport.Camera2Activity$d: void a(byte[])>
+    <com.exlusoft.otoreport.Camera2Activity$d: void a(byte[])>
+    <com.exlusoft.otoreport.Camera2Activity: java.io.File H0(com.exlusoft.otoreport.Camera2Activity)>
+    <com.exlusoft.otoreport.Camera2Activity: java.io.File H0(com.exlusoft.otoreport.Camera2Activity)>
+    <com.exlusoft.otoreport.Camera2Activity$d: void a(byte[])>
+    <com.exlusoft.otoreport.Camera2Activity$d: void a(byte[])>
+
+Leak 3:
+  Source: $r4 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r3, 4096) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("CameraXLivePreview", $r0) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.exlusoft.otoreport.LiveBarcodeScanningActivity: java.lang.String[] J0()>
+    <com.exlusoft.otoreport.LiveBarcodeScanningActivity: java.lang.String[] J0()>
+    <com.exlusoft.otoreport.LiveBarcodeScanningActivity: java.lang.String[] J0()>
+    <com.exlusoft.otoreport.LiveBarcodeScanningActivity: boolean F0()>
+    <com.exlusoft.otoreport.LiveBarcodeScanningActivity: boolean F0()>
+    <com.exlusoft.otoreport.LiveBarcodeScanningActivity: boolean L0(android.content.Context,java.lang.String)>
+    <com.exlusoft.otoreport.LiveBarcodeScanningActivity: boolean L0(android.content.Context,java.lang.String)>
+    <com.exlusoft.otoreport.LiveBarcodeScanningActivity: boolean L0(android.content.Context,java.lang.String)>
+
+Leak 4:
+  Source: $r5 = virtualinvoke r0.<android.content.Context: java.io.File getExternalFilesDir(java.lang.String)>($r4) (<android.content.Context: java.io.File getExternalFilesDir(java.lang.String)>)
+  Sink: virtualinvoke $r6.<java.io.FileOutputStream: void write(byte[])>($r3) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <com.exlusoft.otoreport.CameraActivity: java.io.File g(int)>
+    <com.exlusoft.otoreport.CameraActivity: java.io.File g(int)>
+    <com.exlusoft.otoreport.CameraActivity: java.io.File g(int)>
+    <com.exlusoft.otoreport.CameraActivity: java.io.File g(int)>
+    <com.exlusoft.otoreport.CameraActivity: java.io.File g(int)>
+    <com.exlusoft.otoreport.CameraActivity: java.io.File g(int)>
+    <com.exlusoft.otoreport.CameraActivity: java.io.File g(int)>
+    <com.exlusoft.otoreport.CameraActivity: java.io.File g(int)>
+    <com.exlusoft.otoreport.CameraActivity: java.io.File g(int)>
+    <com.exlusoft.otoreport.CameraActivity: java.io.File g(int)>
+    <com.exlusoft.otoreport.CameraActivity: java.io.File g(int)>
+    <com.exlusoft.otoreport.CameraActivity: void i(byte[],android.hardware.Camera)>
+    <com.exlusoft.otoreport.CameraActivity: void i(byte[],android.hardware.Camera)>
+
+Leak 5:
+  Source: $r5 = virtualinvoke r0.<android.content.Context: java.io.File getExternalFilesDir(java.lang.String)>($r4) (<android.content.Context: java.io.File getExternalFilesDir(java.lang.String)>)
+  Sink: virtualinvoke $r6.<java.io.FileOutputStream: void write(byte[])>($r3) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <com.exlusoft.otoreport.CameraActivity: java.io.File g(int)>
+    <com.exlusoft.otoreport.CameraActivity: java.io.File g(int)>
+    <com.exlusoft.otoreport.CameraActivity: java.io.File g(int)>
+    <com.exlusoft.otoreport.CameraActivity: java.io.File g(int)>
+    <com.exlusoft.otoreport.CameraActivity: java.io.File g(int)>
+    <com.exlusoft.otoreport.CameraActivity: java.io.File g(int)>
+    <com.exlusoft.otoreport.CameraActivity: java.io.File g(int)>
+    <com.exlusoft.otoreport.CameraActivity: java.io.File g(int)>
+    <com.exlusoft.otoreport.CameraActivity: java.io.File g(int)>
+    <com.exlusoft.otoreport.CameraActivity: java.io.File g(int)>
+    <com.exlusoft.otoreport.CameraActivity: java.io.File g(int)>
+    <com.exlusoft.otoreport.CameraActivity: void i(byte[],android.hardware.Camera)>
+    <com.exlusoft.otoreport.CameraActivity: void i(byte[],android.hardware.Camera)>
+
+Leak 6:
+  Source: $r4 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r3, 4096) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("CameraXLivePreview", $r0) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.exlusoft.otoreport.LiveBarcodeScanningActivity: java.lang.String[] J0()>
+    <com.exlusoft.otoreport.LiveBarcodeScanningActivity: java.lang.String[] J0()>
+    <com.exlusoft.otoreport.LiveBarcodeScanningActivity: java.lang.String[] J0()>
+    <com.exlusoft.otoreport.LiveBarcodeScanningActivity: void K0()>
+    <com.exlusoft.otoreport.LiveBarcodeScanningActivity: void K0()>
+    <com.exlusoft.otoreport.LiveBarcodeScanningActivity: boolean L0(android.content.Context,java.lang.String)>
+    <com.exlusoft.otoreport.LiveBarcodeScanningActivity: boolean L0(android.content.Context,java.lang.String)>
+    <com.exlusoft.otoreport.LiveBarcodeScanningActivity: boolean L0(android.content.Context,java.lang.String)>
+
+Leak 7:
+  Source: $r32 = virtualinvoke r0.<android.content.Context: java.io.File getExternalFilesDir(java.lang.String)>($r10) (<android.content.Context: java.io.File getExternalFilesDir(java.lang.String)>)
+  Sink: interfaceinvoke $r30.<retrofit2.Call: void enqueue(retrofit2.Callback)>($r31) (<retrofit2.Call: void enqueue(retrofit2.Callback)>)
+  Methods:
+    <com.exlusoft.otoreport.StrukMutasi: void onCreate(android.os.Bundle)>
+    <com.exlusoft.otoreport.StrukMutasi: void onCreate(android.os.Bundle)>
+    <com.exlusoft.otoreport.StrukMutasi: void onCreate(android.os.Bundle)>
+    <com.exlusoft.otoreport.StrukMutasi: void onCreate(android.os.Bundle)>
+    <com.exlusoft.otoreport.StrukMutasi: void onCreate(android.os.Bundle)>
+    <com.exlusoft.otoreport.StrukMutasi: void onCreate(android.os.Bundle)>
+    <dummyMainClass: com.exlusoft.otoreport.StrukMutasi dummyMainMethod_com_exlusoft_otoreport_StrukMutasi(android.content.Intent)>
+    <T0.ji: void <init>(com.exlusoft.otoreport.StrukMutasi)>
+    <T0.ji: void <init>(com.exlusoft.otoreport.StrukMutasi)>
+    <dummyMainClass: com.exlusoft.otoreport.StrukMutasi dummyMainMethod_com_exlusoft_otoreport_StrukMutasi(android.content.Intent)>
+    <T0.ji: boolean onMenuItemClick(android.view.MenuItem)>
+    <T0.ji: boolean onMenuItemClick(android.view.MenuItem)>
+    <com.exlusoft.otoreport.StrukMutasi: boolean d1(com.exlusoft.otoreport.StrukMutasi,android.view.MenuItem)>
+    <com.exlusoft.otoreport.StrukMutasi: boolean w2(android.view.MenuItem)>
+    <com.exlusoft.otoreport.StrukMutasi: void w1(java.lang.String,java.lang.String)>
+    <com.exlusoft.otoreport.StrukMutasi$e: void <init>(com.exlusoft.otoreport.StrukMutasi,android.app.AlertDialog,com.exlusoft.otoreport.library.h,java.lang.String,java.lang.String)>
+    <com.exlusoft.otoreport.StrukMutasi$e: void <init>(com.exlusoft.otoreport.StrukMutasi,android.app.AlertDialog,com.exlusoft.otoreport.library.h,java.lang.String,java.lang.String)>
+    <com.exlusoft.otoreport.StrukMutasi: void w1(java.lang.String,java.lang.String)>
+    <com.exlusoft.otoreport.library.f: void f(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.io.File[],com.exlusoft.otoreport.library.f$b)>
+    <com.exlusoft.otoreport.library.f: void f(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.io.File[],com.exlusoft.otoreport.library.f$b)>
+    <com.exlusoft.otoreport.library.f: void h(int)>
+    <com.exlusoft.otoreport.library.f$a: void <init>(com.exlusoft.otoreport.library.f,int)>
+    <com.exlusoft.otoreport.library.f$a: void <init>(com.exlusoft.otoreport.library.f,int)>
+    <com.exlusoft.otoreport.library.f: void h(int)>
+
+Leak 8:
+  Source: $r8 = virtualinvoke $r7.<android.content.Context: java.io.File getExternalFilesDir(java.lang.String)>($r1) (<android.content.Context: java.io.File getExternalFilesDir(java.lang.String)>)
+  Sink: interfaceinvoke $r30.<retrofit2.Call: void enqueue(retrofit2.Callback)>($r31) (<retrofit2.Call: void enqueue(retrofit2.Callback)>)
+  Methods:
+    <com.exlusoft.otoreport.StrukMutasi$g: java.lang.Void a()>
+    <com.exlusoft.otoreport.StrukMutasi$g: java.lang.Void a()>
+    <com.exlusoft.otoreport.StrukMutasi$g: java.lang.Void a()>
+    <com.exlusoft.otoreport.StrukMutasi$g: java.lang.Void a()>
+    <com.exlusoft.otoreport.StrukMutasi$g: java.lang.Void a()>
+    <com.exlusoft.otoreport.StrukMutasi$g: java.lang.Void a()>
+    <com.exlusoft.otoreport.StrukMutasi$g: java.lang.Void a()>
+    <com.exlusoft.otoreport.StrukMutasi$g: java.lang.Object call()>
+    <com.exlusoft.otoreport.library.n: void e(java.util.concurrent.Callable,com.exlusoft.otoreport.library.n$a)>
+    <com.exlusoft.otoreport.library.n: void a(com.exlusoft.otoreport.library.n,java.util.concurrent.Callable,com.exlusoft.otoreport.library.n$a)>
+    <com.exlusoft.otoreport.library.l: void run()>
+    <com.exlusoft.otoreport.library.l: void run()>
+    <com.exlusoft.otoreport.library.n: void c(java.util.concurrent.Callable,com.exlusoft.otoreport.library.n$a)>
+    <com.exlusoft.otoreport.library.l: void <init>(com.exlusoft.otoreport.library.n,java.util.concurrent.Callable,com.exlusoft.otoreport.library.n$a)>
+    <com.exlusoft.otoreport.library.l: void <init>(com.exlusoft.otoreport.library.n,java.util.concurrent.Callable,com.exlusoft.otoreport.library.n$a)>
+    <com.exlusoft.otoreport.library.n: void c(java.util.concurrent.Callable,com.exlusoft.otoreport.library.n$a)>
+    <com.exlusoft.otoreport.StrukMutasi: void v1(java.lang.String,java.lang.String,java.lang.String)>
+    <com.exlusoft.otoreport.StrukMutasi$g: void <init>(com.exlusoft.otoreport.StrukMutasi,java.lang.String,java.lang.String)>
+    <com.exlusoft.otoreport.StrukMutasi$g: void <init>(com.exlusoft.otoreport.StrukMutasi,java.lang.String,java.lang.String)>
+    <com.exlusoft.otoreport.StrukMutasi: void v1(java.lang.String,java.lang.String,java.lang.String)>
+    <com.exlusoft.otoreport.StrukMutasi: void E1(com.exlusoft.otoreport.StrukMutasi,java.lang.String,java.lang.String,java.lang.String)>
+    <com.exlusoft.otoreport.StrukMutasi$e: void h(java.lang.String,com.exlusoft.otoreport.library.h,java.lang.String,java.lang.String)>
+    <com.exlusoft.otoreport.StrukMutasi$e: void h(java.lang.String,com.exlusoft.otoreport.library.h,java.lang.String,java.lang.String)>
+    <com.exlusoft.otoreport.StrukMutasi$e: void c(com.exlusoft.otoreport.StrukMutasi$e,java.lang.String,com.exlusoft.otoreport.library.h,java.lang.String,java.lang.String)>
+    <com.exlusoft.otoreport.w2: void run()>
+    <com.exlusoft.otoreport.w2: void run()>
+    <com.exlusoft.otoreport.StrukMutasi$e: void a(java.lang.String[])>
+    <com.exlusoft.otoreport.w2: void <init>(com.exlusoft.otoreport.StrukMutasi$e,java.lang.String,com.exlusoft.otoreport.library.h,java.lang.String,java.lang.String)>
+    <com.exlusoft.otoreport.w2: void <init>(com.exlusoft.otoreport.StrukMutasi$e,java.lang.String,com.exlusoft.otoreport.library.h,java.lang.String,java.lang.String)>
+    <com.exlusoft.otoreport.StrukMutasi$e: void a(java.lang.String[])>
+    <com.exlusoft.otoreport.library.f: void g()>
+    <com.exlusoft.otoreport.library.f: void g()>
+    <com.exlusoft.otoreport.library.f: void h(int)>
+    <com.exlusoft.otoreport.library.f$a: void <init>(com.exlusoft.otoreport.library.f,int)>
+    <com.exlusoft.otoreport.library.f$a: void <init>(com.exlusoft.otoreport.library.f,int)>
+    <com.exlusoft.otoreport.library.f: void h(int)>
+
+Leak 9:
+  Source: $r32 = virtualinvoke r0.<android.content.Context: java.io.File getExternalFilesDir(java.lang.String)>($r10) (<android.content.Context: java.io.File getExternalFilesDir(java.lang.String)>)
+  Sink: interfaceinvoke $r30.<retrofit2.Call: void enqueue(retrofit2.Callback)>($r31) (<retrofit2.Call: void enqueue(retrofit2.Callback)>)
+  Methods:
+    <com.exlusoft.otoreport.StrukMutasi: void onCreate(android.os.Bundle)>
+    <com.exlusoft.otoreport.StrukMutasi: void onCreate(android.os.Bundle)>
+    <com.exlusoft.otoreport.StrukMutasi: void onCreate(android.os.Bundle)>
+    <com.exlusoft.otoreport.StrukMutasi: void onCreate(android.os.Bundle)>
+    <com.exlusoft.otoreport.StrukMutasi: void onCreate(android.os.Bundle)>
+    <com.exlusoft.otoreport.StrukMutasi: void onCreate(android.os.Bundle)>
+    <dummyMainClass: com.exlusoft.otoreport.StrukMutasi dummyMainMethod_com_exlusoft_otoreport_StrukMutasi(android.content.Intent)>
+    <T0.ji: void <init>(com.exlusoft.otoreport.StrukMutasi)>
+    <T0.ji: void <init>(com.exlusoft.otoreport.StrukMutasi)>
+    <dummyMainClass: com.exlusoft.otoreport.StrukMutasi dummyMainMethod_com_exlusoft_otoreport_StrukMutasi(android.content.Intent)>
+    <T0.ji: boolean onMenuItemClick(android.view.MenuItem)>
+    <T0.ji: boolean onMenuItemClick(android.view.MenuItem)>
+    <com.exlusoft.otoreport.StrukMutasi: boolean d1(com.exlusoft.otoreport.StrukMutasi,android.view.MenuItem)>
+    <com.exlusoft.otoreport.StrukMutasi: boolean w2(android.view.MenuItem)>
+    <com.exlusoft.otoreport.StrukMutasi: void w1(java.lang.String,java.lang.String)>
+    <com.exlusoft.otoreport.StrukMutasi$e: void <init>(com.exlusoft.otoreport.StrukMutasi,android.app.AlertDialog,com.exlusoft.otoreport.library.h,java.lang.String,java.lang.String)>
+    <com.exlusoft.otoreport.StrukMutasi$e: void <init>(com.exlusoft.otoreport.StrukMutasi,android.app.AlertDialog,com.exlusoft.otoreport.library.h,java.lang.String,java.lang.String)>
+    <com.exlusoft.otoreport.StrukMutasi: void w1(java.lang.String,java.lang.String)>
+    <com.exlusoft.otoreport.library.f: void f(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.io.File[],com.exlusoft.otoreport.library.f$b)>
+    <com.exlusoft.otoreport.library.f: void f(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.io.File[],com.exlusoft.otoreport.library.f$b)>
+    <com.exlusoft.otoreport.library.f: void h(int)>
+    <com.exlusoft.otoreport.library.f$a: void <init>(com.exlusoft.otoreport.library.f,int)>
+    <com.exlusoft.otoreport.library.f$a: void <init>(com.exlusoft.otoreport.library.f,int)>
+    <com.exlusoft.otoreport.library.f: void h(int)>
+
+Leak 10:
+  Source: $r8 = virtualinvoke $r7.<android.content.Context: java.io.File getExternalFilesDir(java.lang.String)>($r1) (<android.content.Context: java.io.File getExternalFilesDir(java.lang.String)>)
+  Sink: interfaceinvoke $r30.<retrofit2.Call: void enqueue(retrofit2.Callback)>($r31) (<retrofit2.Call: void enqueue(retrofit2.Callback)>)
+  Methods:
+    <com.exlusoft.otoreport.StrukMutasi$g: java.lang.Void a()>
+    <com.exlusoft.otoreport.StrukMutasi$g: java.lang.Void a()>
+    <com.exlusoft.otoreport.StrukMutasi$g: java.lang.Void a()>
+    <com.exlusoft.otoreport.StrukMutasi$g: java.lang.Void a()>
+    <com.exlusoft.otoreport.StrukMutasi$g: java.lang.Void a()>
+    <com.exlusoft.otoreport.StrukMutasi$g: java.lang.Void a()>
+    <com.exlusoft.otoreport.StrukMutasi$g: java.lang.Void a()>
+    <com.exlusoft.otoreport.StrukMutasi$g: java.lang.Object call()>
+    <com.exlusoft.otoreport.library.n: void e(java.util.concurrent.Callable,com.exlusoft.otoreport.library.n$a)>
+    <com.exlusoft.otoreport.library.n: void a(com.exlusoft.otoreport.library.n,java.util.concurrent.Callable,com.exlusoft.otoreport.library.n$a)>
+    <com.exlusoft.otoreport.library.l: void run()>
+    <com.exlusoft.otoreport.library.l: void run()>
+    <com.exlusoft.otoreport.library.n: void c(java.util.concurrent.Callable,com.exlusoft.otoreport.library.n$a)>
+    <com.exlusoft.otoreport.library.l: void <init>(com.exlusoft.otoreport.library.n,java.util.concurrent.Callable,com.exlusoft.otoreport.library.n$a)>
+    <com.exlusoft.otoreport.library.l: void <init>(com.exlusoft.otoreport.library.n,java.util.concurrent.Callable,com.exlusoft.otoreport.library.n$a)>
+    <com.exlusoft.otoreport.library.n: void c(java.util.concurrent.Callable,com.exlusoft.otoreport.library.n$a)>
+    <com.exlusoft.otoreport.StrukMutasi: void v1(java.lang.String,java.lang.String,java.lang.String)>
+    <com.exlusoft.otoreport.StrukMutasi$g: void <init>(com.exlusoft.otoreport.StrukMutasi,java.lang.String,java.lang.String)>
+    <com.exlusoft.otoreport.StrukMutasi$g: void <init>(com.exlusoft.otoreport.StrukMutasi,java.lang.String,java.lang.String)>
+    <com.exlusoft.otoreport.StrukMutasi: void v1(java.lang.String,java.lang.String,java.lang.String)>
+    <com.exlusoft.otoreport.StrukMutasi: void E1(com.exlusoft.otoreport.StrukMutasi,java.lang.String,java.lang.String,java.lang.String)>
+    <com.exlusoft.otoreport.StrukMutasi$e: void h(java.lang.String,com.exlusoft.otoreport.library.h,java.lang.String,java.lang.String)>
+    <com.exlusoft.otoreport.StrukMutasi$e: void h(java.lang.String,com.exlusoft.otoreport.library.h,java.lang.String,java.lang.String)>
+    <com.exlusoft.otoreport.StrukMutasi$e: void c(com.exlusoft.otoreport.StrukMutasi$e,java.lang.String,com.exlusoft.otoreport.library.h,java.lang.String,java.lang.String)>
+    <com.exlusoft.otoreport.w2: void run()>
+    <com.exlusoft.otoreport.w2: void run()>
+    <com.exlusoft.otoreport.StrukMutasi$e: void a(java.lang.String[])>
+    <com.exlusoft.otoreport.w2: void <init>(com.exlusoft.otoreport.StrukMutasi$e,java.lang.String,com.exlusoft.otoreport.library.h,java.lang.String,java.lang.String)>
+    <com.exlusoft.otoreport.w2: void <init>(com.exlusoft.otoreport.StrukMutasi$e,java.lang.String,com.exlusoft.otoreport.library.h,java.lang.String,java.lang.String)>
+    <com.exlusoft.otoreport.StrukMutasi$e: void a(java.lang.String[])>
+    <com.exlusoft.otoreport.library.f: void g()>
+    <com.exlusoft.otoreport.library.f: void g()>
+    <com.exlusoft.otoreport.library.f: void h(int)>
+    <com.exlusoft.otoreport.library.f$a: void <init>(com.exlusoft.otoreport.library.f,int)>
+    <com.exlusoft.otoreport.library.f$a: void <init>(com.exlusoft.otoreport.library.f,int)>
+    <com.exlusoft.otoreport.library.f: void h(int)>
+
+Leak 11:
+  Source: $r8 = virtualinvoke $r7.<android.content.Context: java.io.File getExternalFilesDir(java.lang.String)>($r1) (<android.content.Context: java.io.File getExternalFilesDir(java.lang.String)>)
+  Sink: interfaceinvoke $r30.<retrofit2.Call: void enqueue(retrofit2.Callback)>($r31) (<retrofit2.Call: void enqueue(retrofit2.Callback)>)
+  Methods:
+    <com.exlusoft.otoreport.StrukMutasi$g: java.lang.Void a()>
+    <com.exlusoft.otoreport.StrukMutasi$g: java.lang.Void a()>
+    <com.exlusoft.otoreport.StrukMutasi$g: java.lang.Void a()>
+    <com.exlusoft.otoreport.StrukMutasi$g: java.lang.Void a()>
+    <com.exlusoft.otoreport.StrukMutasi$g: java.lang.Void a()>
+    <com.exlusoft.otoreport.StrukMutasi$g: java.lang.Void a()>
+    <com.exlusoft.otoreport.StrukMutasi$g: java.lang.Void a()>
+    <com.exlusoft.otoreport.StrukMutasi$g: java.lang.Object call()>
+    <com.exlusoft.otoreport.library.n: void e(java.util.concurrent.Callable,com.exlusoft.otoreport.library.n$a)>
+    <com.exlusoft.otoreport.library.n: void a(com.exlusoft.otoreport.library.n,java.util.concurrent.Callable,com.exlusoft.otoreport.library.n$a)>
+    <com.exlusoft.otoreport.library.l: void run()>
+    <com.exlusoft.otoreport.library.l: void run()>
+    <com.exlusoft.otoreport.library.n: void c(java.util.concurrent.Callable,com.exlusoft.otoreport.library.n$a)>
+    <com.exlusoft.otoreport.library.l: void <init>(com.exlusoft.otoreport.library.n,java.util.concurrent.Callable,com.exlusoft.otoreport.library.n$a)>
+    <com.exlusoft.otoreport.library.l: void <init>(com.exlusoft.otoreport.library.n,java.util.concurrent.Callable,com.exlusoft.otoreport.library.n$a)>
+    <com.exlusoft.otoreport.library.n: void c(java.util.concurrent.Callable,com.exlusoft.otoreport.library.n$a)>
+    <com.exlusoft.otoreport.StrukMutasi: void v1(java.lang.String,java.lang.String,java.lang.String)>
+    <com.exlusoft.otoreport.StrukMutasi$g: void <init>(com.exlusoft.otoreport.StrukMutasi,java.lang.String,java.lang.String)>
+    <com.exlusoft.otoreport.StrukMutasi$g: void <init>(com.exlusoft.otoreport.StrukMutasi,java.lang.String,java.lang.String)>
+    <com.exlusoft.otoreport.StrukMutasi: void v1(java.lang.String,java.lang.String,java.lang.String)>
+    <com.exlusoft.otoreport.StrukMutasi: void E1(com.exlusoft.otoreport.StrukMutasi,java.lang.String,java.lang.String,java.lang.String)>
+    <com.exlusoft.otoreport.StrukMutasi$e: void h(java.lang.String,com.exlusoft.otoreport.library.h,java.lang.String,java.lang.String)>
+    <com.exlusoft.otoreport.StrukMutasi$e: void h(java.lang.String,com.exlusoft.otoreport.library.h,java.lang.String,java.lang.String)>
+    <com.exlusoft.otoreport.StrukMutasi$e: void c(com.exlusoft.otoreport.StrukMutasi$e,java.lang.String,com.exlusoft.otoreport.library.h,java.lang.String,java.lang.String)>
+    <com.exlusoft.otoreport.w2: void run()>
+    <com.exlusoft.otoreport.w2: void run()>
+    <com.exlusoft.otoreport.StrukMutasi$e: void a(java.lang.String[])>
+    <com.exlusoft.otoreport.w2: void <init>(com.exlusoft.otoreport.StrukMutasi$e,java.lang.String,com.exlusoft.otoreport.library.h,java.lang.String,java.lang.String)>
+    <com.exlusoft.otoreport.w2: void <init>(com.exlusoft.otoreport.StrukMutasi$e,java.lang.String,com.exlusoft.otoreport.library.h,java.lang.String,java.lang.String)>
+    <com.exlusoft.otoreport.StrukMutasi$e: void a(java.lang.String[])>
+    <com.exlusoft.otoreport.library.f: void g()>
+    <com.exlusoft.otoreport.library.f: void g()>
+    <com.exlusoft.otoreport.library.f: void h(int)>
+    <com.exlusoft.otoreport.library.f$a: void <init>(com.exlusoft.otoreport.library.f,int)>
+    <com.exlusoft.otoreport.library.f$a: void <init>(com.exlusoft.otoreport.library.f,int)>
+    <com.exlusoft.otoreport.library.f: void h(int)>
+
+Leak 12:
+  Source: $r8 = virtualinvoke $r7.<android.content.Context: java.io.File getExternalFilesDir(java.lang.String)>($r1) (<android.content.Context: java.io.File getExternalFilesDir(java.lang.String)>)
+  Sink: interfaceinvoke $r30.<retrofit2.Call: void enqueue(retrofit2.Callback)>($r31) (<retrofit2.Call: void enqueue(retrofit2.Callback)>)
+  Methods:
+    <com.exlusoft.otoreport.StrukMutasi$g: java.lang.Void a()>
+    <com.exlusoft.otoreport.StrukMutasi$g: java.lang.Void a()>
+    <com.exlusoft.otoreport.StrukMutasi$g: java.lang.Void a()>
+    <com.exlusoft.otoreport.StrukMutasi$g: java.lang.Void a()>
+    <com.exlusoft.otoreport.StrukMutasi$g: java.lang.Void a()>
+    <com.exlusoft.otoreport.StrukMutasi$g: java.lang.Void a()>
+    <com.exlusoft.otoreport.StrukMutasi$g: java.lang.Void a()>
+    <com.exlusoft.otoreport.StrukMutasi$g: java.lang.Object call()>
+    <com.exlusoft.otoreport.library.n: void e(java.util.concurrent.Callable,com.exlusoft.otoreport.library.n$a)>
+    <com.exlusoft.otoreport.library.n: void a(com.exlusoft.otoreport.library.n,java.util.concurrent.Callable,com.exlusoft.otoreport.library.n$a)>
+    <com.exlusoft.otoreport.library.l: void run()>
+    <com.exlusoft.otoreport.library.l: void run()>
+    <com.exlusoft.otoreport.library.n: void c(java.util.concurrent.Callable,com.exlusoft.otoreport.library.n$a)>
+    <com.exlusoft.otoreport.library.l: void <init>(com.exlusoft.otoreport.library.n,java.util.concurrent.Callable,com.exlusoft.otoreport.library.n$a)>
+    <com.exlusoft.otoreport.library.l: void <init>(com.exlusoft.otoreport.library.n,java.util.concurrent.Callable,com.exlusoft.otoreport.library.n$a)>
+    <com.exlusoft.otoreport.library.n: void c(java.util.concurrent.Callable,com.exlusoft.otoreport.library.n$a)>
+    <com.exlusoft.otoreport.StrukMutasi: void v1(java.lang.String,java.lang.String,java.lang.String)>
+    <com.exlusoft.otoreport.StrukMutasi$g: void <init>(com.exlusoft.otoreport.StrukMutasi,java.lang.String,java.lang.String)>
+    <com.exlusoft.otoreport.StrukMutasi$g: void <init>(com.exlusoft.otoreport.StrukMutasi,java.lang.String,java.lang.String)>
+    <com.exlusoft.otoreport.StrukMutasi: void v1(java.lang.String,java.lang.String,java.lang.String)>
+    <com.exlusoft.otoreport.StrukMutasi: void E1(com.exlusoft.otoreport.StrukMutasi,java.lang.String,java.lang.String,java.lang.String)>
+    <com.exlusoft.otoreport.StrukMutasi$e: void h(java.lang.String,com.exlusoft.otoreport.library.h,java.lang.String,java.lang.String)>
+    <com.exlusoft.otoreport.StrukMutasi$e: void h(java.lang.String,com.exlusoft.otoreport.library.h,java.lang.String,java.lang.String)>
+    <com.exlusoft.otoreport.StrukMutasi$e: void c(com.exlusoft.otoreport.StrukMutasi$e,java.lang.String,com.exlusoft.otoreport.library.h,java.lang.String,java.lang.String)>
+    <com.exlusoft.otoreport.w2: void run()>
+    <com.exlusoft.otoreport.w2: void run()>
+    <com.exlusoft.otoreport.StrukMutasi$e: void a(java.lang.String[])>
+    <com.exlusoft.otoreport.w2: void <init>(com.exlusoft.otoreport.StrukMutasi$e,java.lang.String,com.exlusoft.otoreport.library.h,java.lang.String,java.lang.String)>
+    <com.exlusoft.otoreport.w2: void <init>(com.exlusoft.otoreport.StrukMutasi$e,java.lang.String,com.exlusoft.otoreport.library.h,java.lang.String,java.lang.String)>
+    <com.exlusoft.otoreport.StrukMutasi$e: void a(java.lang.String[])>
+    <com.exlusoft.otoreport.library.f: void g()>
+    <com.exlusoft.otoreport.library.f: void g()>
+    <com.exlusoft.otoreport.library.f: void h(int)>
+    <com.exlusoft.otoreport.library.f$a: void <init>(com.exlusoft.otoreport.library.f,int)>
+    <com.exlusoft.otoreport.library.f$a: void <init>(com.exlusoft.otoreport.library.f,int)>
+    <com.exlusoft.otoreport.library.f: void h(int)>
+
+Leak 13:
+  Source: $r5 = virtualinvoke $r3.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r4, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("ManifestParser", $r4) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <L0.d: java.util.List a()>
+    <L0.d: java.util.List a()>
+    <L0.d: java.util.List a()>
+    <L0.d: java.util.List a()>
+    <L0.d: java.util.List a()>
+    <L0.d: java.util.List a()>
+    <L0.d: java.util.List a()>
+    <L0.d: java.util.List a()>
+    <L0.d: java.util.List a()>
+

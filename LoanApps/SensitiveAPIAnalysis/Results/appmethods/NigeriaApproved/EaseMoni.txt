@@ -1,0 +1,96 @@
+APK: EaseMoni (NigeriaApproved)
+Leak 1:
+  Source: $r4 = virtualinvoke $r3.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r2, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r5.<java.io.FileOutputStream: void write(byte[])>($r7) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <og3: java.lang.String w()>
+    <og3: java.lang.String w()>
+    <og3: java.lang.String w()>
+    <com.facebook.internal.instrument.InstrumentData: void <init>(java.lang.Throwable,com.facebook.internal.instrument.InstrumentData$Type)>
+    <com.facebook.internal.instrument.InstrumentData: void <init>(java.lang.Throwable,com.facebook.internal.instrument.InstrumentData$Type)>
+    <com.facebook.internal.instrument.InstrumentData: void <init>(java.lang.Throwable,com.facebook.internal.instrument.InstrumentData$Type,qy)>
+    <com.facebook.internal.instrument.InstrumentData$a: com.facebook.internal.instrument.InstrumentData b(java.lang.Throwable,com.facebook.internal.instrument.InstrumentData$Type)>
+    <qu: void b(java.lang.Throwable,java.lang.Object)>
+    <com.facebook.internal.instrument.InstrumentData: void g()>
+    <com.facebook.internal.instrument.InstrumentData: java.lang.String toString()>
+    <com.facebook.internal.instrument.InstrumentData: org.json.JSONObject e()>
+    <com.facebook.internal.instrument.InstrumentData: org.json.JSONObject d()>
+    <com.facebook.internal.instrument.InstrumentData: org.json.JSONObject d()>
+    <com.facebook.internal.instrument.InstrumentData: org.json.JSONObject d()>
+    <com.facebook.internal.instrument.InstrumentData: org.json.JSONObject e()>
+    <com.facebook.internal.instrument.InstrumentData: java.lang.String toString()>
+    <com.facebook.internal.instrument.InstrumentData: java.lang.String toString()>
+    <com.facebook.internal.instrument.InstrumentData: void g()>
+    <am1: void t(java.lang.String,java.lang.String)>
+    <am1: void t(java.lang.String,java.lang.String)>
+
+Leak 2:
+  Source: $r5 = virtualinvoke $r3.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r4, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: $r4 = staticinvoke <okhttp3.RequestBody: okhttp3.RequestBody create(okhttp3.MediaType,java.lang.String)>($r3, $r2) (<okhttp3.RequestBody: okhttp3.RequestBody create(okhttp3.MediaType,java.lang.String)>)
+  Methods:
+    <team.opay.easemoni.utils.OKashDeviceUtilKt: java.lang.String b(android.content.Context)>
+    <team.opay.easemoni.utils.OKashDeviceUtilKt: java.lang.String b(android.content.Context)>
+    <team.opay.easemoni.utils.OKashDeviceUtilKt: java.lang.String b(android.content.Context)>
+    <team.opay.easemoni.analytics.EMAnalytics: void c(java.lang.String,kotlin.Pair[],boolean,boolean)>
+    <kotlin.Pair: void <init>(java.lang.Object,java.lang.Object)>
+    <kotlin.Pair: void <init>(java.lang.Object,java.lang.Object)>
+    <team.opay.easemoni.analytics.EMAnalytics: void c(java.lang.String,kotlin.Pair[],boolean,boolean)>
+    <team.opay.easemoni.analytics.EMAnalytics: void c(java.lang.String,kotlin.Pair[],boolean,boolean)>
+    <ey: void b(java.lang.String,java.lang.Object)>
+    <team.opay.easemoni.analytics.EMAnalytics: void c(java.lang.String,kotlin.Pair[],boolean,boolean)>
+    <team.opay.easemoni.analytics.EMAnalytics: void c(java.lang.String,kotlin.Pair[],boolean,boolean)>
+    <kotlin.Pair: void <init>(java.lang.Object,java.lang.Object)>
+    <kotlin.Pair: void <init>(java.lang.Object,java.lang.Object)>
+    <team.opay.easemoni.analytics.EMAnalytics: void c(java.lang.String,kotlin.Pair[],boolean,boolean)>
+    <team.opay.easemoni.analytics.EMAnalytics: void c(java.lang.String,kotlin.Pair[],boolean,boolean)>
+    <com.appsflyer.internal.ah: java.lang.String getAppsFlyerUID(android.content.Context)>
+    <com.appsflyer.internal.al: java.lang.String AFInAppEventType(java.lang.ref.WeakReference)>
+    <com.appsflyer.internal.al: java.lang.String AFInAppEventType(java.lang.ref.WeakReference)>
+    <com.appsflyer.internal.ah: java.lang.String getAppsFlyerUID(android.content.Context)>
+    <team.opay.easemoni.analytics.EMAnalytics: void c(java.lang.String,kotlin.Pair[],boolean,boolean)>
+    <team.opay.easemoni.analytics.EMAnalytics: void d(team.opay.easemoni.analytics.EMAnalytics,java.lang.String,kotlin.Pair[],boolean,boolean,int,java.lang.Object)>
+    <com.loan.cash.credit.easemoni.nigeria.OKashApplication: android.content.SharedPreferences getSharedPreferences(java.lang.String,int)>
+    <com.appsflyer.internal.ah: android.content.SharedPreferences AFKeystoreWrapper(android.content.Context)>
+    <com.appsflyer.AFLogger: void valueOf(java.lang.String,java.lang.Throwable,boolean,boolean)>
+    <com.appsflyer.AFLogger: void AFKeystoreWrapper(java.lang.String,java.lang.Throwable)>
+    <com.appsflyer.internal.al: java.lang.String AFInAppEventType(java.lang.ref.WeakReference)>
+    <com.appsflyer.internal.al: java.lang.String AFInAppEventType(java.lang.ref.WeakReference)>
+    <com.appsflyer.internal.ah: java.lang.String getAppsFlyerUID(android.content.Context)>
+    <team.opay.easemoni.analytics.OPayAnalyticsData: java.lang.String appsFlyerId()>
+    <g72: boolean f(g72,java.util.List,org.json.JSONArray)>
+    <g72: boolean f(g72,java.util.List,org.json.JSONArray)>
+    <g72: boolean f(g72,java.util.List,org.json.JSONArray)>
+    <x93: retrofit2.Response b(android.content.Context,java.lang.String)>
+
+Leak 3:
+  Source: $r2 = virtualinvoke $r3.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r4, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: $r4 = staticinvoke <okhttp3.RequestBody: okhttp3.RequestBody create(okhttp3.MediaType,java.lang.String)>($r3, $r2) (<okhttp3.RequestBody: okhttp3.RequestBody create(okhttp3.MediaType,java.lang.String)>)
+  Methods:
+    <xg3: android.content.pm.PackageInfo a(android.content.Context)>
+    <xg3: android.content.pm.PackageInfo a(android.content.Context)>
+    <xg3: android.content.pm.PackageInfo a(android.content.Context)>
+    <g72: boolean f(g72,java.util.List,org.json.JSONArray)>
+    <g72: boolean c(g72,g72,java.util.List,org.json.JSONArray)>
+    <g72$c: void run()>
+    <g72: boolean c(g72,g72,java.util.List,org.json.JSONArray)>
+    <g72: boolean f(g72,java.util.List,org.json.JSONArray)>
+    <xg3: android.content.pm.PackageInfo a(android.content.Context)>
+    <xg3: android.content.pm.PackageInfo a(android.content.Context)>
+    <g72: boolean f(g72,java.util.List,org.json.JSONArray)>
+    <g72: boolean f(g72,java.util.List,org.json.JSONArray)>
+    <g72: boolean f(g72,java.util.List,org.json.JSONArray)>
+    <g72: boolean f(g72,java.util.List,org.json.JSONArray)>
+    <x93: retrofit2.Response b(android.content.Context,java.lang.String)>
+
+Leak 4:
+  Source: $r2 = virtualinvoke $r3.<android.content.Context: java.io.File getExternalFilesDir(java.lang.String)>($r4) (<android.content.Context: java.io.File getExternalFilesDir(java.lang.String)>)
+  Sink: virtualinvoke $r6.<java.io.FileOutputStream: void write(byte[])>($r8) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <team.opay.swarmfoundation.device.AuthUtil: java.io.File m()>
+    <team.opay.swarmfoundation.device.AuthUtil: java.io.File m()>
+    <team.opay.swarmfoundation.device.AuthUtil: java.io.File m()>
+    <team.opay.swarmfoundation.device.AuthUtil: java.io.File e(team.opay.swarmfoundation.device.AuthUtil)>
+    <team.opay.swarmfoundation.device.AuthUtil$a: void run()>
+    <team.opay.swarmfoundation.device.AuthUtil$a: void run()>
+    <team.opay.swarmfoundation.device.AuthUtil$a: void run()>
+

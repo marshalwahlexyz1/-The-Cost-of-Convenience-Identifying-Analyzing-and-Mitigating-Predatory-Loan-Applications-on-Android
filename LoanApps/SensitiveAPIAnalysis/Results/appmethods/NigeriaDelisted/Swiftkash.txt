@@ -1,0 +1,89 @@
+APK: Swiftkash (NigeriaDelisted)
+Leak 1:
+  Source: $r4 = virtualinvoke $r3.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r2, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r5.<java.io.FileOutputStream: void write(byte[])>($r7) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <com.facebook.internal.Utility: java.lang.String getAppVersion()>
+    <com.facebook.internal.Utility: java.lang.String getAppVersion()>
+    <com.facebook.internal.Utility: java.lang.String getAppVersion()>
+    <com.facebook.internal.instrument.InstrumentData: void <init>(java.lang.Throwable,com.facebook.internal.instrument.InstrumentData$Type)>
+    <com.facebook.internal.instrument.InstrumentData: void <init>(java.lang.Throwable,com.facebook.internal.instrument.InstrumentData$Type)>
+    <com.facebook.internal.instrument.InstrumentData: void <init>(java.lang.Throwable,com.facebook.internal.instrument.InstrumentData$Type,kotlin.jvm.internal.DefaultConstructorMarker)>
+    <com.facebook.internal.instrument.InstrumentData$Builder: com.facebook.internal.instrument.InstrumentData build(java.lang.Throwable,com.facebook.internal.instrument.InstrumentData$Type)>
+    <com.facebook.internal.instrument.crashshield.CrashShieldHandler: void handleThrowable(java.lang.Throwable,java.lang.Object)>
+    <com.facebook.internal.instrument.InstrumentData: void save()>
+    <com.facebook.internal.instrument.InstrumentData: java.lang.String toString()>
+    <com.facebook.internal.instrument.InstrumentData: org.json.JSONObject getParameters()>
+    <com.facebook.internal.instrument.InstrumentData: org.json.JSONObject getExceptionReportParameters()>
+    <com.facebook.internal.instrument.InstrumentData: org.json.JSONObject getExceptionReportParameters()>
+    <com.facebook.internal.instrument.InstrumentData: org.json.JSONObject getExceptionReportParameters()>
+    <com.facebook.internal.instrument.InstrumentData: org.json.JSONObject getParameters()>
+    <com.facebook.internal.instrument.InstrumentData: java.lang.String toString()>
+    <com.facebook.internal.instrument.InstrumentData: java.lang.String toString()>
+    <com.facebook.internal.instrument.InstrumentData: void save()>
+    <com.facebook.internal.instrument.InstrumentUtility: void writeFile(java.lang.String,java.lang.String)>
+    <com.facebook.internal.instrument.InstrumentUtility: void writeFile(java.lang.String,java.lang.String)>
+
+Leak 2:
+  Source: $r4 = virtualinvoke $r0.<android.content.Context: java.io.File getExternalFilesDir(java.lang.String)>($r3) (<android.content.Context: java.io.File getExternalFilesDir(java.lang.String)>)
+  Sink: virtualinvoke $r5.<java.io.FileWriter: void write(java.lang.String)>($r3) (<java.io.BufferedWriter: void write(java.lang.String)>)
+  Methods:
+    <com.huan.commonlib.utils.FileUtils: java.io.File createAndroidFile(android.content.Context,java.lang.String)>
+    <com.huan.commonlib.utils.FileUtils: java.io.File createAndroidFile(android.content.Context,java.lang.String)>
+    <com.huan.commonlib.utils.FileUtils: java.io.File createAndroidFile(android.content.Context,java.lang.String)>
+    <com.huan.commonlib.utils.FileUtils: java.io.File createAndroidFile(android.content.Context,java.lang.String)>
+    <com.huan.commonlib.utils.FileUtils: java.io.File createAndroidFile(android.content.Context,java.lang.String)>
+    <com.huan.commonlib.utils.FileUtils: java.io.File createAndroidFile(android.content.Context,java.lang.String)>
+    <com.huan.commonlib.utils.FileUtils: java.io.File createAndroidFile(android.content.Context,java.lang.String)>
+    <com.tiger.loanapp.splash.SplashActivity$4: void onGranted(java.util.List,boolean)>
+    <com.tiger.loanapp.splash.SplashActivity$4: void onGranted(java.util.List,boolean)>
+    <com.tiger.loanapp.splash.SplashActivity$4: void onGranted(java.util.List,boolean)>
+    <com.tiger.loanapp.splash.SplashActivity$4: void onGranted(java.util.List,boolean)>
+    <com.tiger.loanapp.splash.SplashActivity$4: void onGranted(java.util.List,boolean)>
+    <com.tiger.loanapp.splash.SplashActivity$4: void onGranted(java.util.List,boolean)>
+    <com.tiger.loanapp.splash.SplashActivity: java.lang.String access$402(com.tiger.loanapp.splash.SplashActivity,java.lang.String)>
+    <com.tiger.loanapp.splash.SplashActivity: java.lang.String access$402(com.tiger.loanapp.splash.SplashActivity,java.lang.String)>
+    <com.tiger.loanapp.splash.SplashActivity$4: void onGranted(java.util.List,boolean)>
+    <com.tiger.loanapp.splash.SplashActivity$4: void onGranted(java.util.List,boolean)>
+    <com.tiger.loanapp.splash.SplashActivity$4: void onGranted(java.util.List,boolean)>
+    <com.tiger.loanapp.splash.SplashActivity: void access$700(com.tiger.loanapp.splash.SplashActivity)>
+    <com.tiger.loanapp.splash.SplashActivity: void writeZuidToFile()>
+    <com.tiger.loanapp.splash.SplashActivity: void writeZuidToFile()>
+
+Leak 3:
+  Source: $r4 = virtualinvoke $r0.<android.content.Context: java.io.File getExternalFilesDir(java.lang.String)>($r3) (<android.content.Context: java.io.File getExternalFilesDir(java.lang.String)>)
+  Sink: virtualinvoke $r5.<java.io.FileWriter: void write(java.lang.String)>($r3) (<java.io.OutputStreamWriter: void write(java.lang.String)>)
+  Methods:
+    <com.huan.commonlib.utils.FileUtils: java.io.File createAndroidFile(android.content.Context,java.lang.String)>
+    <com.huan.commonlib.utils.FileUtils: java.io.File createAndroidFile(android.content.Context,java.lang.String)>
+    <com.huan.commonlib.utils.FileUtils: java.io.File createAndroidFile(android.content.Context,java.lang.String)>
+    <com.huan.commonlib.utils.FileUtils: java.io.File createAndroidFile(android.content.Context,java.lang.String)>
+    <com.huan.commonlib.utils.FileUtils: java.io.File createAndroidFile(android.content.Context,java.lang.String)>
+    <com.huan.commonlib.utils.FileUtils: java.io.File createAndroidFile(android.content.Context,java.lang.String)>
+    <com.huan.commonlib.utils.FileUtils: java.io.File createAndroidFile(android.content.Context,java.lang.String)>
+    <com.tiger.loanapp.splash.SplashActivity$4: void onGranted(java.util.List,boolean)>
+    <com.tiger.loanapp.splash.SplashActivity$4: void onGranted(java.util.List,boolean)>
+    <com.tiger.loanapp.splash.SplashActivity$4: void onGranted(java.util.List,boolean)>
+    <com.tiger.loanapp.splash.SplashActivity$4: void onGranted(java.util.List,boolean)>
+    <com.tiger.loanapp.splash.SplashActivity$4: void onGranted(java.util.List,boolean)>
+    <com.tiger.loanapp.splash.SplashActivity$4: void onGranted(java.util.List,boolean)>
+    <com.tiger.loanapp.splash.SplashActivity: java.lang.String access$402(com.tiger.loanapp.splash.SplashActivity,java.lang.String)>
+    <com.tiger.loanapp.splash.SplashActivity: java.lang.String access$402(com.tiger.loanapp.splash.SplashActivity,java.lang.String)>
+    <com.tiger.loanapp.splash.SplashActivity$4: void onGranted(java.util.List,boolean)>
+    <com.tiger.loanapp.splash.SplashActivity$4: void onGranted(java.util.List,boolean)>
+    <com.tiger.loanapp.splash.SplashActivity$4: void onGranted(java.util.List,boolean)>
+    <com.tiger.loanapp.splash.SplashActivity: void access$700(com.tiger.loanapp.splash.SplashActivity)>
+    <com.tiger.loanapp.splash.SplashActivity: void writeZuidToFile()>
+    <com.tiger.loanapp.splash.SplashActivity: void writeZuidToFile()>
+
+Leak 4:
+  Source: $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r2, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r1, $r0) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.tiger.loanapp.custom.utils.PhoneDeviceUtil: long getAppInstallTime()>
+    <com.tiger.loanapp.custom.utils.PhoneDeviceUtil: long getAppInstallTime()>
+    <com.tiger.loanapp.custom.utils.PhoneDeviceUtil: long getAppInstallTime()>
+    <com.tiger.loanapp.custom.utils.PhoneDeviceUtil: long getAppInstallTime()>
+    <com.tiger.loanapp.custom.utils.PhoneDeviceUtil: long getAppInstallTime()>
+    <com.tiger.loanapp.custom.utils.LogUtil: void d(java.lang.String)>
+

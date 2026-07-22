@@ -1,0 +1,216 @@
+APK: Nicenaira Plus (NigeriaApproved)
+Leak 1:
+  Source: $r7 = virtualinvoke $r5.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r6, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("Interceptor", $r4) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.appsflyer.internal.AFd1pSDK: java.lang.String AFInAppEventParameterName(java.lang.String)>
+    <com.appsflyer.internal.AFd1pSDK: java.lang.String AFInAppEventParameterName(java.lang.String)>
+    <com.appsflyer.internal.AFd1pSDK: java.lang.String AFInAppEventParameterName(java.lang.String)>
+    <com.appsflyer.internal.AFd1pSDK: java.lang.String AFInAppEventParameterName(java.lang.String)>
+    <com.appsflyer.internal.AFd1pSDK: java.lang.String AFInAppEventParameterName(java.lang.String)>
+    <com.appsflyer.internal.AFd1pSDK: java.lang.String AFInAppEventParameterName()>
+    <com.appsflyer.internal.AFe1gSDK$1: java.lang.String valueOf()>
+    <com.appsflyer.internal.AFb1tSDK: java.lang.String AFInAppEventType(com.appsflyer.internal.AFd1xSDK,java.lang.String)>
+    <com.appsflyer.internal.AFe1gSDK$1: java.lang.String valueOf()>
+    <com.appsflyer.internal.AFe1gSDK$1: java.lang.String valueOf()>
+    <com.appsflyer.internal.AFe1gSDK$1: java.lang.String valueOf()>
+    <kotlin.text.StringsKt__StringsKt: java.lang.CharSequence o00000(java.lang.CharSequence)>
+    <kotlin.text.StringsKt__StringsKt: java.lang.CharSequence o00000(java.lang.CharSequence)>
+    <com.appsflyer.internal.AFe1gSDK$1: java.lang.String valueOf()>
+    <com.appsflyer.internal.AFe1gSDK$1: java.lang.String valueOf()>
+    <com.appsflyer.internal.AFe1gSDK$1: java.lang.Object invoke()>
+    <kotlin.SynchronizedLazyImpl: java.lang.Object getValue()>
+    <kotlin.SynchronizedLazyImpl: java.lang.Object getValue()>
+    <com.geecloud.lib.track.TrackKit: java.util.concurrent.ConcurrentHashMap OooOOO0()>
+    <com.geecloud.lib.track.TrackKit: java.util.concurrent.ConcurrentHashMap OooOOO0()>
+    <kotlin.SynchronizedLazyImpl: java.lang.Object getValue()>
+    <com.geecloud.lib.track.TrackKit: java.util.concurrent.ConcurrentHashMap OooOOO0()>
+    <com.geecloud.lib.track.TrackKit: java.util.concurrent.ConcurrentHashMap OooOOO0()>
+    <kotlin.SynchronizedLazyImpl: java.lang.Object getValue()>
+    <kotlin.SynchronizedLazyImpl: java.lang.Object getValue()>
+    <com.geecloud.lib.track.TrackKit: java.util.concurrent.ConcurrentHashMap OooOOO0()>
+    <com.geecloud.lib.track.TrackKit: java.util.concurrent.ConcurrentHashMap OooOOO0()>
+    <com.geecloud.lib.track.upload.BodyInterceptor: java.util.TreeMap OooO0O0()>
+    <com.geecloud.lib.track.upload.BodyInterceptor: java.util.TreeMap OooO0O0()>
+    <com.geecloud.lib.track.upload.BodyInterceptor: java.util.TreeMap OooO0O0()>
+    <com.geecloud.lib.track.upload.BodyInterceptor: java.util.TreeMap OooO0O0()>
+    <com.geecloud.lib.track.upload.BodyInterceptor: java.util.TreeMap OooO0O0()>
+    <com.geecloud.lib.track.upload.BodyInterceptor: java.util.TreeMap OooO0O0()>
+    <com.geecloud.lib.track.upload.BodyInterceptor: java.util.TreeMap OooO0O0()>
+    <com.geecloud.lib.track.upload.BodyInterceptor: okhttp3.Response intercept(okhttp3.Interceptor$Chain)>
+    <com.geecloud.lib.track.upload.BodyInterceptor: java.lang.String OooO00o(java.util.TreeMap)>
+    <com.geecloud.lib.track.upload.BodyInterceptor: java.lang.String OooO00o(java.util.TreeMap)>
+    <com.geecloud.lib.track.upload.BodyInterceptor: java.lang.String OooO00o(java.util.TreeMap)>
+
+Leak 2:
+  Source: $r5 = virtualinvoke $r3.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r4, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r5.<java.io.FileOutputStream: void write(byte[])>($r4) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <OooO0o0.OooOOO: java.lang.String OooOO0O()>
+    <OooO0o0.OooOOO: java.lang.String OooOO0O()>
+    <OooO0o0.OooOOO: java.lang.String OooOO0O()>
+    <OooO0o.OooOO0: void OooOo0O()>
+    <OooO0o.OooOO0: void OooOO0O(java.lang.String,java.lang.Object)>
+    <ai.advance.event.OooO00o: void OooOO0O(java.lang.String,java.lang.Object)>
+    <ai.advance.event.OooO00o: void OooOO0O(java.lang.String,java.lang.Object)>
+    <ai.advance.event.OooO00o: void OooOO0O(java.lang.String,java.lang.Object)>
+    <OooO0o.OooOO0: void OooOO0O(java.lang.String,java.lang.Object)>
+    <OooO0o.OooOO0: void OooOo0O()>
+    <OooO0o.OooOO0: org.json.JSONObject OooOOO()>
+    <ai.advance.event.OooO00o: org.json.JSONObject OooOOO()>
+    <ai.advance.event.OooO00o: org.json.JSONObject OooOOO()>
+    <OooO0o.OooOO0: org.json.JSONObject OooOOO()>
+    <OooO0o0.OooOOOO: void OooOO0(java.lang.String)>
+    <OooO0o0.OooOOOO: void OooOO0(java.lang.String)>
+    <OooO0o0.OooO: void OooOO0(java.lang.String)>
+    <OooO0o0.OooO: void OooO0oo(java.lang.String)>
+    <OooO0o0.OooO: void OooO0oo(java.lang.String)>
+    <OooO0Oo.OooOO0: void OooO0o0(org.json.JSONObject,java.lang.String,java.lang.Object)>
+    <OooO0Oo.OooOO0: void OooO0o0(org.json.JSONObject,java.lang.String,java.lang.Object)>
+    <OooO0o0.OooO: void OooO0oo(java.lang.String)>
+    <OooO0o0.OooO: void OooO0oo(java.lang.String)>
+    <OooO0Oo.OooO0o: void OooO0OO(android.content.Context,java.lang.String,java.lang.String)>
+    <OooO0Oo.OooO0o: void OooO0OO(android.content.Context,java.lang.String,java.lang.String)>
+    <OooO0Oo.OooO0o: void OooO0OO(android.content.Context,java.lang.String,java.lang.String)>
+
+Leak 3:
+  Source: $r5 = virtualinvoke $r3.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r4, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r5.<java.io.FileOutputStream: void write(byte[])>($r4) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <OooO0o0.OooOOO: java.lang.String OooO0oO()>
+    <OooO0o0.OooOOO: java.lang.String OooO0oO()>
+    <OooO0o0.OooOOO: java.lang.String OooO0oO()>
+    <OooO0o.OooOO0: void OooOo0O()>
+    <OooO0o.OooOO0: void OooOO0O(java.lang.String,java.lang.Object)>
+    <ai.advance.event.OooO00o: void OooOO0O(java.lang.String,java.lang.Object)>
+    <ai.advance.event.OooO00o: void OooOO0O(java.lang.String,java.lang.Object)>
+    <ai.advance.event.OooO00o: void OooOO0O(java.lang.String,java.lang.Object)>
+    <OooO0o.OooOO0: void OooOO0O(java.lang.String,java.lang.Object)>
+    <OooO0o.OooOO0: void OooOo0O()>
+    <OooO0o.OooOO0: org.json.JSONObject OooOOO()>
+    <ai.advance.event.OooO00o: org.json.JSONObject OooOOO()>
+    <ai.advance.event.OooO00o: org.json.JSONObject OooOOO()>
+    <OooO0o.OooOO0: org.json.JSONObject OooOOO()>
+    <OooO0o0.OooOOOO: void OooOO0(java.lang.String)>
+    <OooO0o0.OooOOOO: void OooOO0(java.lang.String)>
+    <OooO0o0.OooO: void OooOO0(java.lang.String)>
+    <OooO0o0.OooO: void OooO0oo(java.lang.String)>
+    <OooO0o0.OooO: void OooO0oo(java.lang.String)>
+    <OooO0Oo.OooOO0: void OooO0o0(org.json.JSONObject,java.lang.String,java.lang.Object)>
+    <OooO0Oo.OooOO0: void OooO0o0(org.json.JSONObject,java.lang.String,java.lang.Object)>
+    <OooO0o0.OooO: void OooO0oo(java.lang.String)>
+    <OooO0o0.OooO: void OooO0oo(java.lang.String)>
+    <OooO0Oo.OooO0o: void OooO0OO(android.content.Context,java.lang.String,java.lang.String)>
+    <OooO0Oo.OooO0o: void OooO0OO(android.content.Context,java.lang.String,java.lang.String)>
+    <OooO0Oo.OooO0o: void OooO0OO(android.content.Context,java.lang.String,java.lang.String)>
+
+Leak 4:
+  Source: $r4 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r3, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r5.<java.io.FileOutputStream: void write(byte[])>($r4) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <ai.advance.event.OooO00o: java.lang.String OooOOOO(android.content.Context)>
+    <ai.advance.event.OooO00o: java.lang.String OooOOOO(android.content.Context)>
+    <ai.advance.event.OooO00o: java.lang.String OooOOOO(android.content.Context)>
+    <ai.advance.event.OooO00o: void <init>(android.content.Context,java.lang.String,java.lang.String)>
+    <OooO0o.OooOO0: void OooOO0O(java.lang.String,java.lang.Object)>
+    <ai.advance.event.OooO00o: void OooOO0O(java.lang.String,java.lang.Object)>
+    <ai.advance.event.OooO00o: void OooOO0O(java.lang.String,java.lang.Object)>
+    <ai.advance.event.OooO00o: void OooOO0O(java.lang.String,java.lang.Object)>
+    <OooO0o.OooOO0: void OooOO0O(java.lang.String,java.lang.Object)>
+    <ai.advance.event.OooO00o: void <init>(android.content.Context,java.lang.String,java.lang.String)>
+    <OooO0o.OooOO0: void <init>(android.content.Context,java.lang.String,java.lang.String)>
+    <OooO0o0.OooOOOO: void OooOO0(java.lang.String)>
+    <OooO0o.OooOO0: org.json.JSONObject OooOOO()>
+    <ai.advance.event.OooO00o: org.json.JSONObject OooOOO()>
+    <ai.advance.event.OooO00o: org.json.JSONObject OooOOO()>
+    <OooO0o.OooOO0: org.json.JSONObject OooOOO()>
+    <OooO0o0.OooOOOO: void OooOO0(java.lang.String)>
+    <OooO0o0.OooOOOO: void OooOO0(java.lang.String)>
+    <OooO0o0.OooO: void OooOO0(java.lang.String)>
+    <OooO0o0.OooO: void OooO0oo(java.lang.String)>
+    <OooO0o0.OooO: void OooO0oo(java.lang.String)>
+    <OooO0Oo.OooOO0: void OooO0o0(org.json.JSONObject,java.lang.String,java.lang.Object)>
+    <OooO0Oo.OooOO0: void OooO0o0(org.json.JSONObject,java.lang.String,java.lang.Object)>
+    <OooO0o0.OooO: void OooO0oo(java.lang.String)>
+    <OooO0o0.OooO: void OooO0oo(java.lang.String)>
+    <OooO0Oo.OooO0o: void OooO0OO(android.content.Context,java.lang.String,java.lang.String)>
+    <OooO0Oo.OooO0o: void OooO0OO(android.content.Context,java.lang.String,java.lang.String)>
+    <OooO0Oo.OooO0o: void OooO0OO(android.content.Context,java.lang.String,java.lang.String)>
+
+Leak 5:
+  Source: $r7 = virtualinvoke $r5.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r6, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("EventManagerUtils", $r5) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.appsflyer.internal.AFd1pSDK: java.lang.String AFInAppEventParameterName(java.lang.String)>
+    <com.appsflyer.internal.AFd1pSDK: java.lang.String AFInAppEventParameterName(java.lang.String)>
+    <com.appsflyer.internal.AFd1pSDK: java.lang.String AFInAppEventParameterName(java.lang.String)>
+    <com.appsflyer.internal.AFd1pSDK: java.lang.String AFInAppEventParameterName(java.lang.String)>
+    <com.appsflyer.internal.AFd1pSDK: java.lang.String AFInAppEventParameterName(java.lang.String)>
+    <com.appsflyer.internal.AFd1pSDK: java.lang.String AFInAppEventParameterName()>
+    <com.appsflyer.internal.AFe1gSDK$1: java.lang.String valueOf()>
+    <com.appsflyer.internal.AFb1tSDK: java.lang.String AFInAppEventType(com.appsflyer.internal.AFd1xSDK,java.lang.String)>
+    <com.appsflyer.internal.AFe1gSDK$1: java.lang.String valueOf()>
+    <com.appsflyer.internal.AFe1gSDK$1: java.lang.String valueOf()>
+    <com.appsflyer.internal.AFe1gSDK$1: java.lang.String valueOf()>
+    <kotlin.text.StringsKt__StringsKt: java.lang.CharSequence o00000(java.lang.CharSequence)>
+    <kotlin.text.StringsKt__StringsKt: java.lang.CharSequence o00000(java.lang.CharSequence)>
+    <com.appsflyer.internal.AFe1gSDK$1: java.lang.String valueOf()>
+    <com.appsflyer.internal.AFe1gSDK$1: java.lang.String valueOf()>
+    <com.appsflyer.internal.AFe1gSDK$1: java.lang.Object invoke()>
+    <kotlin.SynchronizedLazyImpl: java.lang.Object getValue()>
+    <kotlin.SynchronizedLazyImpl: java.lang.Object getValue()>
+    <com.geecloud.lib.track.TrackKit: java.util.concurrent.ConcurrentHashMap OooOOO0()>
+    <com.geecloud.lib.track.TrackKit: java.util.concurrent.ConcurrentHashMap OooOOO0()>
+    <kotlin.SynchronizedLazyImpl: java.lang.Object getValue()>
+    <com.geecloud.lib.track.TrackKit: java.util.concurrent.ConcurrentHashMap OooOOO0()>
+    <com.geecloud.lib.track.TrackKit: java.util.concurrent.ConcurrentHashMap OooOOO0()>
+    <kotlin.SynchronizedLazyImpl: java.lang.Object getValue()>
+    <kotlin.SynchronizedLazyImpl: java.lang.Object getValue()>
+    <com.geecloud.lib.track.TrackKit: java.util.concurrent.ConcurrentHashMap OooOOO0()>
+    <com.geecloud.lib.track.TrackKit: java.util.concurrent.ConcurrentHashMap OooOOO0()>
+    <com.geecloud.lib.track.TrackKit: void OooOo0o(java.lang.String,java.lang.Object)>
+    <com.geecloud.lib.track.TrackKit: void OooOo0o(java.lang.String,java.lang.Object)>
+    <o00O000.OooOO0O: void OooO0O0(java.lang.String,java.lang.Object)>
+    <o00O000.OooO0OO: void OooO0oO(java.lang.String,java.lang.Object)>
+    <o00O000.OooO0OO: void OooO0OO(android.app.Application,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)>
+    <o00O000.OooO0OO: void OooO0oO(java.lang.String,java.lang.Object)>
+    <o00O000.OooO0OO: void OooO0oO(java.lang.String,java.lang.Object)>
+    <o00O000.OooO0OO: void OooO0oO(java.lang.String,java.lang.Object)>
+
+Leak 6:
+  Source: $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r2, 1) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("EventManagerUtils", $r5) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <o00O000.OooO0O0: java.lang.String OooO0Oo(android.app.Application)>
+    <o00O000.OooO0O0: java.lang.String OooO0Oo(android.app.Application)>
+    <o00O000.OooO0O0: java.lang.String OooO0Oo(android.app.Application)>
+    <o00O000.OooO0OO: void OooO0OO(android.app.Application,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)>
+    <o00O000.OooO0OO: void OooO0oO(java.lang.String,java.lang.Object)>
+    <o00O000.OooO0OO: void OooO0oO(java.lang.String,java.lang.Object)>
+    <o00O000.OooO0OO: void OooO0oO(java.lang.String,java.lang.Object)>
+
+Leak 7:
+  Source: $r4 = virtualinvoke $r3.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r2, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r5.<java.io.FileOutputStream: void write(byte[])>($r7) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <o000oOoo.o0oOo0O0: java.lang.String OooOo0o()>
+    <o000oOoo.o0oOo0O0: java.lang.String OooOo0o()>
+    <o000oOoo.o0oOo0O0: java.lang.String OooOo0o()>
+    <com.facebook.internal.instrument.InstrumentData: void <init>(java.lang.Throwable,com.facebook.internal.instrument.InstrumentData$Type)>
+    <com.facebook.internal.instrument.InstrumentData: void <init>(java.lang.Throwable,com.facebook.internal.instrument.InstrumentData$Type)>
+    <com.facebook.internal.instrument.InstrumentData: void <init>(java.lang.Throwable,com.facebook.internal.instrument.InstrumentData$Type,kotlin.jvm.internal.DefaultConstructorMarker)>
+    <com.facebook.internal.instrument.InstrumentData$OooO00o: com.facebook.internal.instrument.InstrumentData OooO0O0(java.lang.Throwable,com.facebook.internal.instrument.InstrumentData$Type)>
+    <o000oo.OooO0o: void OooO0O0(java.lang.Throwable,java.lang.Object)>
+    <com.facebook.internal.instrument.InstrumentData: void OooO0oO()>
+    <com.facebook.internal.instrument.InstrumentData: java.lang.String toString()>
+    <com.facebook.internal.instrument.InstrumentData: org.json.JSONObject OooO0o0()>
+    <com.facebook.internal.instrument.InstrumentData: org.json.JSONObject OooO0Oo()>
+    <com.facebook.internal.instrument.InstrumentData: org.json.JSONObject OooO0Oo()>
+    <com.facebook.internal.instrument.InstrumentData: org.json.JSONObject OooO0Oo()>
+    <com.facebook.internal.instrument.InstrumentData: org.json.JSONObject OooO0o0()>
+    <com.facebook.internal.instrument.InstrumentData: java.lang.String toString()>
+    <com.facebook.internal.instrument.InstrumentData: java.lang.String toString()>
+    <com.facebook.internal.instrument.InstrumentData: void OooO0oO()>
+    <o000oo0.Oooo0: void OooOo00(java.lang.String,java.lang.String)>
+    <o000oo0.Oooo0: void OooOo00(java.lang.String,java.lang.String)>
+

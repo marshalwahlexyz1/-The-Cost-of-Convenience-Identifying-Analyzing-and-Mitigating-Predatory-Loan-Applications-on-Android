@@ -1,0 +1,359 @@
+APK: PayLater (NigeriaApproved)
+Leak 1:
+  Source: $r2 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r1) (<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>)
+  Sink: virtualinvoke $r1.<r2.a$c: void write(byte[])>($r18) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <q8.ia: java.lang.Object invoke(java.lang.Object)>
+    <q8.ia: java.lang.Object invoke(java.lang.Object)>
+    <wi.l$a: java.lang.Object next()>
+    <r2.a: int g0(r2.a$c)>
+    <r2.a: int g0(r2.a$c)>
+    <r2.a: int g0(r2.a$c)>
+    <r2.a: int g0(r2.a$c)>
+    <r2.a: int g0(r2.a$c)>
+
+Leak 2:
+  Source: $r1 = virtualinvoke $r5.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r6, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r1.<r2.a$c: void write(byte[])>($r18) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <q8.uh: java.lang.Object invoke(java.lang.Object)>
+    <q8.uh: java.lang.Object invoke(java.lang.Object)>
+    <q8.uh: java.lang.Object invoke(java.lang.Object)>
+    <q8.l2: void <init>(java.lang.String)>
+    <q8.l2: void <init>(java.lang.String)>
+    <q8.uh: java.lang.Object invoke(java.lang.Object)>
+    <wi.l$a: java.lang.Object next()>
+    <com.google.android.gms.measurement.internal.zzbj: java.lang.Object next()>
+    <com.google.android.gms.measurement.internal.zzbj: java.lang.Object next()>
+    <com.google.android.gms.internal.mlkit_vision_label_custom.zzai: java.lang.Object next()>
+    <com.google.android.gms.internal.mlkit_vision_face.zzal: java.lang.Object next()>
+    <com.google.common.collect.Iterators$ConcatenatedIterator: java.lang.Object next()>
+    <com.google.common.collect.AbstractMapBasedMultimap$WrappedCollection$WrappedIterator: java.lang.Object next()>
+    <com.google.common.collect.Iterators$ConcatenatedIterator: java.lang.Object next()>
+    <r2.a: int g0(r2.a$c)>
+    <r2.a: int g0(r2.a$c)>
+    <r2.a: int g0(r2.a$c)>
+    <r2.a: int g0(r2.a$c)>
+    <r2.a: int g0(r2.a$c)>
+
+Leak 3:
+  Source: $r2 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r1) (<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("startDynamicJourney", $r16) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <q8.ia: java.lang.Object invoke(java.lang.Object)>
+    <q8.ia: java.lang.Object invoke(java.lang.Object)>
+    <q8.n5: java.lang.Object invoke(java.lang.Object)>
+    <q8.n5: java.lang.Object invoke(java.lang.Object)>
+    <q8.e1: java.lang.Object invoke()>
+    <q8.y1: java.lang.Object invoke(java.lang.Object)>
+    <wi.l$a: java.lang.Object next()>
+    <com.google.common.collect.Iterators$1: java.lang.Object next()>
+    <com.google.common.collect.Iterators: boolean addAll(java.util.Collection,java.util.Iterator)>
+    <com.google.common.collect.Iterators: boolean addAll(java.util.Collection,java.util.Iterator)>
+    <com.google.common.collect.ConcurrentHashMultiset$EntrySet: java.util.List snapshot()>
+    <com.google.common.collect.ConcurrentHashMultiset$EntrySet: java.lang.Object[] toArray()>
+    <com.google.common.collect.ConcurrentHashMultiset$EntrySet: java.lang.Object[] toArray()>
+    <com.google.common.collect.ForwardingCollection: java.lang.Object[] toArray()>
+    <n7.t: java.lang.String toString()>
+    <n7.t: java.lang.String toString()>
+    <n7.t: java.lang.String toString()>
+    <n7.t: java.lang.String toString()>
+    <com.google.common.collect.ForwardingObject: java.lang.String toString()>
+    <com.google.common.collect.Synchronized$SynchronizedObject: java.lang.String toString()>
+    <com.google.common.base.Functions$ToStringFunction: java.lang.String apply(java.lang.Object)>
+    <m2.j1: java.lang.Object get(java.lang.Object)>
+    <m2.j1: java.lang.Object get(java.lang.Object)>
+    <com.google.android.gms.internal.mlkit_vision_barcode.zzcl: java.lang.Object get(java.lang.Object)>
+    <com.google.common.collect.Synchronized$SynchronizedMap: java.lang.Object get(java.lang.Object)>
+    <ab.g: java.lang.Object getOptAnyProperty(java.lang.String,ni.a)>
+    <ab.g: java.lang.Object getOptAnyProperty$default(ab.g,java.lang.String,ni.a,int,java.lang.Object)>
+    <ab.f: java.lang.Object get(java.lang.String)>
+    <vf.a: java.lang.String get(java.lang.String)>
+    <vf.a: java.lang.String get(java.lang.String)>
+    <ab.f: java.lang.Object get(java.lang.Object)>
+    <ih.j: java.lang.Object a(java.lang.String)>
+    <com.idwise.idwise_flutter.IdwiseFlutterPlugin: void onMethodCall(ih.j,ih.k$d)>
+    <com.idwise.idwise_flutter.IdwiseFlutterPlugin: void onMethodCall(ih.j,ih.k$d)>
+    <com.idwise.idwise_flutter.IdwiseFlutterPlugin: void onMethodCall(ih.j,ih.k$d)>
+    <com.idwise.idwise_flutter.IdwiseFlutterPlugin: void onMethodCall(ih.j,ih.k$d)>
+
+Leak 4:
+  Source: $r2 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r1) (<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("ExifInterface", $r4) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <q8.ia: java.lang.Object invoke(java.lang.Object)>
+    <q8.ia: java.lang.Object invoke(java.lang.Object)>
+    <wi.l$a: java.lang.Object next()>
+    <r2.a: void P()>
+    <r2.a: void P()>
+    <r2.a: void P()>
+    <r2.a: void P()>
+    <r2.a: void P()>
+    <r2.a: void P()>
+
+Leak 5:
+  Source: $r1 = virtualinvoke $r5.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r6, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("ExifInterface", $r4) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <q8.uh: java.lang.Object invoke(java.lang.Object)>
+    <q8.uh: java.lang.Object invoke(java.lang.Object)>
+    <q8.uh: java.lang.Object invoke(java.lang.Object)>
+    <q8.l2: void <init>(java.lang.String)>
+    <q8.l2: void <init>(java.lang.String)>
+    <q8.uh: java.lang.Object invoke(java.lang.Object)>
+    <wi.l$a: java.lang.Object next()>
+    <com.google.common.collect.Iterators$8: java.lang.Object next()>
+    <com.google.android.gms.internal.mlkit_vision_internal_vkp.zzath: java.lang.Object next()>
+    <com.google.android.gms.internal.mlkit_vision_internal_vkp.zzath: java.lang.Object next()>
+    <com.google.common.collect.Iterators$2: java.lang.Object next()>
+    <com.google.android.gms.internal.mlkit_vision_object_detection_bundled.zzr: java.lang.Object next()>
+    <com.google.common.collect.Iterators$8: java.lang.Object next()>
+    <com.google.common.collect.ImmutableMultimap$2: java.lang.Object next()>
+    <com.google.common.collect.Iterators$8: java.lang.Object next()>
+    <com.google.common.collect.Iterables$6$1: java.lang.Object next()>
+    <com.google.android.gms.internal.mlkit_vision_barcode.zzbq: java.lang.Object next()>
+    <r2.a: void P()>
+    <r2.a: void P()>
+    <r2.a: void P()>
+    <r2.a: void P()>
+    <r2.a: void P()>
+    <r2.a: void P()>
+
+Leak 6:
+  Source: $r2 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r1) (<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>)
+  Sink: virtualinvoke $r2.<java.io.Writer: void write(java.lang.String)>($r7) (<java.io.OutputStreamWriter: void write(java.lang.String)>)
+  Methods:
+    <q8.ia: java.lang.Object invoke(java.lang.Object)>
+    <q8.ia: java.lang.Object invoke(java.lang.Object)>
+    <wi.l$a: java.lang.Object next()>
+    <j7.b: void m0()>
+    <j7.b: void m0()>
+    <j7.b$d: java.lang.String b(j7.b$d)>
+    <j7.b$d: java.lang.String b(j7.b$d)>
+    <j7.b: void m0()>
+    <j7.b: void m0()>
+    <j7.b: void m0()>
+
+Leak 7:
+  Source: $r1 = virtualinvoke $r5.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r6, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r2.<java.io.Writer: void write(java.lang.String)>($r7) (<java.io.OutputStreamWriter: void write(java.lang.String)>)
+  Methods:
+    <q8.uh: java.lang.Object invoke(java.lang.Object)>
+    <q8.uh: java.lang.Object invoke(java.lang.Object)>
+    <q8.uh: java.lang.Object invoke(java.lang.Object)>
+    <q8.l2: void <init>(java.lang.String)>
+    <q8.l2: void <init>(java.lang.String)>
+    <q8.uh: java.lang.Object invoke(java.lang.Object)>
+    <wi.l$a: java.lang.Object next()>
+    <m2.q1$b: java.lang.String a()>
+    <m2.q1$b: java.lang.String a()>
+    <m2.q1$b: java.lang.Object next()>
+    <com.google.android.gms.internal.mlkit_vision_face.zzal: java.lang.Object next()>
+    <com.google.common.collect.Iterators$PeekingImpl: java.lang.Object next()>
+    <com.google.common.collect.Iterators$1: java.lang.Object next()>
+    <com.google.common.collect.Iterators$2: java.lang.Object next()>
+    <com.google.common.collect.Iterables$6$1: java.lang.Object next()>
+    <com.google.common.collect.Iterators$ConcatenatedIterator: java.lang.Object next()>
+    <com.google.android.gms.internal.mlkit_vision_barcode.zzbq: java.lang.Object next()>
+    <com.google.common.collect.ImmutableMultimap$2: java.lang.Object next()>
+    <wi.e: java.lang.Object next()>
+    <j7.b: void m0()>
+    <j7.b: void m0()>
+    <j7.b$d: java.lang.String b(j7.b$d)>
+    <j7.b$d: java.lang.String b(j7.b$d)>
+    <j7.b: void m0()>
+    <j7.b: void m0()>
+    <j7.b: void m0()>
+
+Leak 8:
+  Source: $r5 = virtualinvoke $r3.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r4, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("ScankitSDK", $r27) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.huawei.hms.hmsscankit.j: int e(android.content.Context)>
+    <com.huawei.hms.hmsscankit.j: int e(android.content.Context)>
+    <com.huawei.hms.hmsscankit.j: int e(android.content.Context)>
+    <com.huawei.hms.hmsscankit.j: int e(android.content.Context)>
+    <com.huawei.hms.hmsscankit.j: android.content.Context d(android.content.Context)>
+    <com.huawei.hms.hmsscankit.j: android.content.Context d(android.content.Context)>
+    <com.huawei.hms.hmsscankit.j: android.content.Context d(android.content.Context)>
+
+Leak 9:
+  Source: $r2 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r1) (<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>)
+  Sink: $r8 = virtualinvoke $r3.<java.net.URL: java.net.URLConnection openConnection()>() (<java.net.URL: java.net.URLConnection openConnection()>)
+  Methods:
+    <q8.ia: java.lang.Object invoke(java.lang.Object)>
+    <q8.ia: java.lang.Object invoke(java.lang.Object)>
+    <q8.n5: java.lang.Object invoke(java.lang.Object)>
+    <q8.n5: java.lang.Object invoke(java.lang.Object)>
+    <wi.l$a: java.lang.Object next()>
+    <com.google.common.collect.Iterators: boolean addAll(java.util.Collection,java.util.Iterator)>
+    <com.google.common.collect.Iterators: boolean addAll(java.util.Collection,java.util.Iterator)>
+    <com.google.common.collect.ConcurrentHashMultiset$EntrySet: java.util.List snapshot()>
+    <com.google.common.collect.ConcurrentHashMultiset$EntrySet: java.lang.Object[] toArray()>
+    <com.google.common.collect.ConcurrentHashMultiset$EntrySet: java.lang.Object[] toArray()>
+    <com.google.common.collect.ForwardingCollection: java.lang.Object[] toArray()>
+    <a5.a$a: java.lang.String toString()>
+    <a5.a$a: java.lang.String toString()>
+    <a5.a$a: java.lang.String toString()>
+    <a5.a$a: java.lang.String toString()>
+    <com.google.common.base.Functions$ToStringFunction: java.lang.String apply(java.lang.Object)>
+    <com.google.common.collect.Maps$AsMapView: java.lang.Object get(java.lang.Object)>
+    <ab.g: java.lang.Object getOptAnyProperty(java.lang.String,ni.a)>
+    <ab.g: java.lang.Object getOptAnyProperty$default(ab.g,java.lang.String,ni.a,int,java.lang.Object)>
+    <ab.f: java.lang.Object get(java.lang.String)>
+    <ab.f: java.lang.Object get(java.lang.Object)>
+    <ab.g: java.lang.Object getOptAnyProperty(java.lang.String,ni.a)>
+    <ab.g: java.lang.String getOptStringProperty(java.lang.String,ni.a)>
+    <ab.g: java.lang.String getOptStringProperty(java.lang.String,ni.a)>
+    <ab.g: java.lang.String getStringProperty(java.lang.String,ni.a)>
+    <mb.a: java.lang.String getApiUrl()>
+    <tb.b: java.net.HttpURLConnection newHttpURLConnection(java.lang.String)>
+    <tb.b: java.net.HttpURLConnection newHttpURLConnection(java.lang.String)>
+    <tb.b: java.net.HttpURLConnection newHttpURLConnection(java.lang.String)>
+    <tb.b: java.net.HttpURLConnection newHttpURLConnection(java.lang.String)>
+
+Leak 10:
+  Source: $r2 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r1) (<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>)
+  Sink: virtualinvoke $r2.<java.io.Writer: void write(java.lang.String)>($r7) (<java.io.BufferedWriter: void write(java.lang.String)>)
+  Methods:
+    <q8.ia: java.lang.Object invoke(java.lang.Object)>
+    <q8.ia: java.lang.Object invoke(java.lang.Object)>
+    <wi.l$a: java.lang.Object next()>
+    <j7.b: void m0()>
+    <j7.b: void m0()>
+    <j7.b$d: java.lang.String b(j7.b$d)>
+    <j7.b$d: java.lang.String b(j7.b$d)>
+    <j7.b: void m0()>
+    <j7.b: void m0()>
+    <j7.b: void m0()>
+
+Leak 11:
+  Source: $r1 = virtualinvoke $r5.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r6, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r2.<java.io.Writer: void write(java.lang.String)>($r7) (<java.io.BufferedWriter: void write(java.lang.String)>)
+  Methods:
+    <q8.uh: java.lang.Object invoke(java.lang.Object)>
+    <q8.uh: java.lang.Object invoke(java.lang.Object)>
+    <q8.uh: java.lang.Object invoke(java.lang.Object)>
+    <q8.l2: void <init>(java.lang.String)>
+    <q8.l2: void <init>(java.lang.String)>
+    <q8.uh: java.lang.Object invoke(java.lang.Object)>
+    <wi.l$a: java.lang.Object next()>
+    <m2.q1$b: java.lang.String a()>
+    <m2.q1$b: java.lang.String a()>
+    <m2.q1$b: java.lang.Object next()>
+    <com.google.android.gms.internal.mlkit_vision_face.zzal: java.lang.Object next()>
+    <com.google.common.collect.Iterators$PeekingImpl: java.lang.Object next()>
+    <com.google.common.collect.Iterators$1: java.lang.Object next()>
+    <com.google.common.collect.Iterators$2: java.lang.Object next()>
+    <com.google.common.collect.Iterables$6$1: java.lang.Object next()>
+    <com.google.common.collect.Iterators$ConcatenatedIterator: java.lang.Object next()>
+    <com.google.android.gms.internal.mlkit_vision_barcode.zzbq: java.lang.Object next()>
+    <com.google.common.collect.ImmutableMultimap$2: java.lang.Object next()>
+    <wi.e: java.lang.Object next()>
+    <j7.b: void m0()>
+    <j7.b: void m0()>
+    <j7.b$d: java.lang.String b(j7.b$d)>
+    <j7.b$d: java.lang.String b(j7.b$d)>
+    <j7.b: void m0()>
+    <j7.b: void m0()>
+    <j7.b: void m0()>
+
+Leak 12:
+  Source: $r2 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r1) (<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("startDynamicJourney", $r16) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <q8.ia: java.lang.Object invoke(java.lang.Object)>
+    <q8.ia: java.lang.Object invoke(java.lang.Object)>
+    <q8.n5: java.lang.Object invoke(java.lang.Object)>
+    <q8.n5: java.lang.Object invoke(java.lang.Object)>
+    <wi.l$a: java.lang.Object next()>
+    <com.google.common.collect.Iterators: boolean addAll(java.util.Collection,java.util.Iterator)>
+    <com.google.common.collect.Iterators: boolean addAll(java.util.Collection,java.util.Iterator)>
+    <com.google.common.collect.ConcurrentHashMultiset$EntrySet: java.util.List snapshot()>
+    <com.google.common.collect.ConcurrentHashMultiset$EntrySet: java.lang.Object[] toArray()>
+    <com.google.common.collect.ConcurrentHashMultiset$EntrySet: java.lang.Object[] toArray()>
+    <com.google.common.collect.ForwardingCollection: java.lang.Object[] toArray()>
+    <n7.t: java.lang.String toString()>
+    <n7.t: java.lang.String toString()>
+    <n7.t: java.lang.String toString()>
+    <n7.t: java.lang.String toString()>
+    <com.google.common.collect.ForwardingObject: java.lang.String toString()>
+    <com.google.common.base.Functions$ToStringFunction: java.lang.String apply(java.lang.Object)>
+    <com.google.common.collect.Maps$NavigableAsMapView: java.lang.Object get(java.lang.Object)>
+    <ih.j: java.lang.Object a(java.lang.String)>
+    <com.idwise.idwise_flutter.IdwiseFlutterPlugin: void onMethodCall(ih.j,ih.k$d)>
+    <com.idwise.idwise_flutter.IdwiseFlutterPlugin: void onMethodCall(ih.j,ih.k$d)>
+    <com.idwise.idwise_flutter.IdwiseFlutterPlugin: void onMethodCall(ih.j,ih.k$d)>
+    <com.idwise.idwise_flutter.IdwiseFlutterPlugin: void onMethodCall(ih.j,ih.k$d)>
+
+Leak 13:
+  Source: $r2 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r1) (<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>)
+  Sink: virtualinvoke $r7.<java.net.URLConnection: void connect()>() (<java.net.HttpURLConnection: void connect()>)
+  Methods:
+    <q8.ia: java.lang.Object invoke(java.lang.Object)>
+    <q8.ia: java.lang.Object invoke(java.lang.Object)>
+    <wi.l$a: java.lang.Object next()>
+    <com.bumptech.glide.load.data.j: java.net.HttpURLConnection c(java.net.URL,java.util.Map)>
+    <com.bumptech.glide.load.data.j: java.net.HttpURLConnection c(java.net.URL,java.util.Map)>
+    <com.bumptech.glide.load.data.j: java.net.HttpURLConnection c(java.net.URL,java.util.Map)>
+    <com.bumptech.glide.load.data.j: java.net.HttpURLConnection c(java.net.URL,java.util.Map)>
+    <com.bumptech.glide.load.data.j: java.net.HttpURLConnection c(java.net.URL,java.util.Map)>
+    <com.bumptech.glide.load.data.j: java.io.InputStream j(java.net.URL,int,java.net.URL,java.util.Map)>
+
+Leak 14:
+  Source: $r1 = virtualinvoke $r5.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r6, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r7.<java.net.URLConnection: void connect()>() (<java.net.HttpURLConnection: void connect()>)
+  Methods:
+    <q8.uh: java.lang.Object invoke(java.lang.Object)>
+    <q8.uh: java.lang.Object invoke(java.lang.Object)>
+    <q8.uh: java.lang.Object invoke(java.lang.Object)>
+    <q8.l2: void <init>(java.lang.String)>
+    <q8.l2: void <init>(java.lang.String)>
+    <q8.uh: java.lang.Object invoke(java.lang.Object)>
+    <v5.c: java.lang.Object g(ni.l)>
+    <v5.d$a: java.lang.String getPath()>
+    <v5.d$a: java.lang.String getPath()>
+    <v5.d$a$f: java.lang.String a(a6.i)>
+    <v5.d$a$f: java.lang.Object invoke(java.lang.Object)>
+    <q8.e1: java.lang.Object invoke()>
+    <wi.i$b: java.lang.Object invoke(java.lang.Object)>
+    <wi.l$a: java.lang.Object next()>
+    <com.google.common.collect.Iterators$PeekingImpl: java.lang.Object next()>
+    <com.bumptech.glide.load.data.j: java.net.HttpURLConnection c(java.net.URL,java.util.Map)>
+    <com.bumptech.glide.load.data.j: java.net.HttpURLConnection c(java.net.URL,java.util.Map)>
+    <com.bumptech.glide.load.data.j: java.net.HttpURLConnection c(java.net.URL,java.util.Map)>
+    <com.bumptech.glide.load.data.j: java.net.HttpURLConnection c(java.net.URL,java.util.Map)>
+    <com.bumptech.glide.load.data.j: java.net.HttpURLConnection c(java.net.URL,java.util.Map)>
+    <com.bumptech.glide.load.data.j: java.io.InputStream j(java.net.URL,int,java.net.URL,java.util.Map)>
+
+Leak 15:
+  Source: $r2 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r1) (<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("resumeJourney", $r8) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <q8.ia: java.lang.Object invoke(java.lang.Object)>
+    <q8.ia: java.lang.Object invoke(java.lang.Object)>
+    <q8.n5: java.lang.Object invoke(java.lang.Object)>
+    <q8.n5: java.lang.Object invoke(java.lang.Object)>
+    <wi.l$a: java.lang.Object next()>
+    <com.google.common.collect.Iterators: boolean addAll(java.util.Collection,java.util.Iterator)>
+    <com.google.common.collect.Iterators: boolean addAll(java.util.Collection,java.util.Iterator)>
+    <com.google.common.collect.ConcurrentHashMultiset$EntrySet: java.util.List snapshot()>
+    <com.google.common.collect.ConcurrentHashMultiset$EntrySet: java.lang.Object[] toArray()>
+    <com.google.common.collect.ConcurrentHashMultiset$EntrySet: java.lang.Object[] toArray()>
+    <com.google.common.collect.ForwardingCollection: java.lang.Object[] toArray()>
+    <com.google.common.collect.Synchronized$SynchronizedCollection: java.lang.Object[] toArray()>
+    <com.google.common.collect.ConcurrentHashMultiset: java.lang.Object[] toArray()>
+    <com.google.common.collect.Synchronized$SynchronizedCollection: java.lang.Object[] toArray()>
+    <a5.a$a: java.lang.String toString()>
+    <a5.a$a: java.lang.String toString()>
+    <a5.a$a: java.lang.String toString()>
+    <a5.a$a: java.lang.String toString()>
+    <com.google.common.base.Functions$ToStringFunction: java.lang.String apply(java.lang.Object)>
+    <com.google.common.base.Functions$FunctionComposition: java.lang.Object apply(java.lang.Object)>
+    <com.google.common.collect.Maps$AsMapView: java.lang.Object get(java.lang.Object)>
+    <ih.j: java.lang.Object a(java.lang.String)>
+    <com.idwise.idwise_flutter.IdwiseFlutterPlugin: void onMethodCall(ih.j,ih.k$d)>
+    <com.idwise.idwise_flutter.IdwiseFlutterPlugin: void onMethodCall(ih.j,ih.k$d)>
+    <com.idwise.idwise_flutter.IdwiseFlutterPlugin: void onMethodCall(ih.j,ih.k$d)>
+    <com.idwise.idwise_flutter.IdwiseFlutterPlugin: void onMethodCall(ih.j,ih.k$d)>
+

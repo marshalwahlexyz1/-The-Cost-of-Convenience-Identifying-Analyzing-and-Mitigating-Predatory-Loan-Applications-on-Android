@@ -1,0 +1,1411 @@
+APK: PesoGo (PhilippinesApproved)
+Leak 1:
+  Source: $r4 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r3, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r3.<java.io.OutputStream: void write(byte[])>($r5) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.facebook.FacebookSdk: void a(android.content.Context)>
+    <com.facebook.FacebookSdk: void a(android.content.Context)>
+    <com.facebook.FacebookSdk: void a(android.content.Context)>
+    <com.facebook.FacebookSdk: void a(android.content.Context)>
+    <com.facebook.FacebookSdk: void a(android.content.Context)>
+    <com.facebook.FacebookSdk: void a(android.content.Context)>
+    <com.facebook.FacebookSdk: void sdkInitialize(android.content.Context,com.facebook.FacebookSdk$a)>
+    <com.facebook.internal.m: void loadAppSettingsAsync()>
+    <com.facebook.internal.m$1: void run()>
+    <com.facebook.internal.m: org.json.JSONObject a(java.lang.String)>
+    <com.facebook.internal.m: org.json.JSONObject b(java.lang.String)>
+    <com.facebook.h: com.facebook.GraphResponse executeAndWait()>
+    <com.facebook.h: com.facebook.GraphResponse executeAndWait(com.facebook.h)>
+    <com.facebook.h: java.util.List executeBatchAndWait(com.facebook.h[])>
+    <com.facebook.h: java.util.List executeBatchAndWait(java.util.Collection)>
+    <com.facebook.h: java.util.List executeBatchAndWait(com.facebook.j)>
+    <com.facebook.h: java.net.HttpURLConnection toHttpConnection(com.facebook.j)>
+    <com.facebook.h: void a(com.facebook.j,java.net.HttpURLConnection)>
+    <com.facebook.h: void a(com.facebook.j,com.facebook.internal.v,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.h: java.lang.String d(com.facebook.j)>
+    <com.facebook.FacebookSdk: java.lang.String getApplicationId()>
+    <com.facebook.FacebookSdk: java.lang.String getApplicationId()>
+    <com.facebook.h: java.lang.String d(com.facebook.j)>
+    <com.facebook.h: void a(com.facebook.j,com.facebook.internal.v,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.h$h: void writeString(java.lang.String,java.lang.String)>
+    <com.facebook.h$h: void writeString(java.lang.String,java.lang.String)>
+    <com.facebook.h$h: void writeLine(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void writeLine(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void write(java.lang.String,java.lang.Object[])>
+
+Leak 2:
+  Source: $r4 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r3, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r3.<java.io.OutputStream: void write(byte[])>($r5) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.facebook.appevents.internal.b: java.lang.String getAppVersion()>
+    <com.facebook.appevents.internal.b: java.lang.String getAppVersion()>
+    <com.facebook.appevents.internal.b: java.lang.String getAppVersion()>
+    <com.facebook.appevents.codeless.d: com.facebook.h buildAppIndexingRequest(java.lang.String,com.facebook.a,java.lang.String,java.lang.String)>
+    <com.facebook.appevents.codeless.d: com.facebook.h buildAppIndexingRequest(java.lang.String,com.facebook.a,java.lang.String,java.lang.String)>
+    <com.facebook.h: void setParameters(android.os.Bundle)>
+    <com.facebook.h: void setParameters(android.os.Bundle)>
+    <com.facebook.appevents.codeless.d: com.facebook.h buildAppIndexingRequest(java.lang.String,com.facebook.a,java.lang.String,java.lang.String)>
+    <com.facebook.appevents.codeless.d$3: void run()>
+    <com.facebook.h: com.facebook.GraphResponse executeAndWait()>
+    <com.facebook.appevents.codeless.d$3: void run()>
+    <com.facebook.appevents.codeless.d: com.facebook.h buildAppIndexingRequest(java.lang.String,com.facebook.a,java.lang.String,java.lang.String)>
+    <com.facebook.h: void setCallback(com.facebook.h$b)>
+    <com.facebook.h$4: void <init>(com.facebook.h,com.facebook.h$b)>
+    <com.facebook.h$4: void <init>(com.facebook.h,com.facebook.h$b)>
+    <com.facebook.h: void setCallback(com.facebook.h$b)>
+    <com.facebook.h: void setCallback(com.facebook.h$b)>
+    <com.facebook.appevents.codeless.d: com.facebook.h buildAppIndexingRequest(java.lang.String,com.facebook.a,java.lang.String,java.lang.String)>
+    <com.facebook.appevents.codeless.d$3: void run()>
+    <com.facebook.h: com.facebook.GraphResponse executeAndWait()>
+    <com.facebook.appevents.codeless.d$3: void run()>
+    <com.facebook.h: com.facebook.GraphResponse executeAndWait()>
+    <com.facebook.h: com.facebook.GraphResponse executeAndWait(com.facebook.h)>
+    <com.facebook.h: com.facebook.GraphResponse executeAndWait(com.facebook.h)>
+    <com.facebook.h: java.util.List executeBatchAndWait(com.facebook.h[])>
+    <com.facebook.h: java.util.List executeBatchAndWait(com.facebook.h[])>
+    <com.facebook.h: java.util.List executeBatchAndWait(java.util.Collection)>
+    <com.facebook.j: void <init>(java.util.Collection)>
+    <com.facebook.j: void <init>(java.util.Collection)>
+    <com.facebook.j: void <init>(java.util.Collection)>
+    <com.facebook.h: java.util.List executeBatchAndWait(java.util.Collection)>
+    <com.facebook.h: java.util.List executeBatchAndWait(com.facebook.j)>
+    <com.facebook.h: java.net.HttpURLConnection toHttpConnection(com.facebook.j)>
+    <com.facebook.h: void a(com.facebook.j,java.net.HttpURLConnection)>
+    <com.facebook.h: void a(com.facebook.j,com.facebook.internal.v,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.j: com.facebook.h get(int)>
+    <com.facebook.j: com.facebook.h get(int)>
+    <com.facebook.j: com.facebook.h get(int)>
+    <com.facebook.j: com.facebook.h get(int)>
+    <com.facebook.h: void a(com.facebook.j,com.facebook.internal.v,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.h: void a(com.facebook.j,com.facebook.internal.v,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.h: void a(android.os.Bundle,com.facebook.h$h,com.facebook.h)>
+    <com.facebook.h: void a(android.os.Bundle,com.facebook.h$h,com.facebook.h)>
+    <com.facebook.h$h: void writeObject(java.lang.String,java.lang.Object,com.facebook.h)>
+    <com.facebook.h$h: void writeObject(java.lang.String,java.lang.Object,com.facebook.h)>
+    <com.facebook.h$h: void writeBytes(java.lang.String,byte[])>
+    <com.facebook.h$h: void writeBytes(java.lang.String,byte[])>
+    <com.facebook.h$h: void writeBytes(java.lang.String,byte[])>
+    <com.facebook.h$h: void writeLine(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void write(java.lang.String,java.lang.Object[])>
+
+Leak 3:
+  Source: $r11 = virtualinvoke $r10.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r9, $r6, null, null, null) (<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>)
+  Sink: virtualinvoke $r3.<java.io.OutputStream: void write(byte[])>($r5) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.facebook.internal.b: com.facebook.internal.b getAttributionIdentifiers(android.content.Context)>
+    <com.facebook.internal.b: com.facebook.internal.b getAttributionIdentifiers(android.content.Context)>
+    <com.facebook.internal.b: com.facebook.internal.b getAttributionIdentifiers(android.content.Context)>
+    <com.facebook.internal.b: com.facebook.internal.b getAttributionIdentifiers(android.content.Context)>
+    <com.facebook.u$1: void run()>
+    <com.facebook.internal.b: java.lang.String getAndroidAdvertiserId()>
+    <com.facebook.internal.b: java.lang.String getAndroidAdvertiserId()>
+    <com.facebook.u$1: void run()>
+    <com.facebook.u$1: void run()>
+    <com.facebook.h: void setParameters(android.os.Bundle)>
+    <com.facebook.h: void setParameters(android.os.Bundle)>
+    <com.facebook.u$1: void run()>
+    <com.facebook.h: com.facebook.GraphResponse executeAndWait()>
+    <com.facebook.h: com.facebook.GraphResponse executeAndWait(com.facebook.h)>
+    <com.facebook.h: com.facebook.GraphResponse executeAndWait(com.facebook.h)>
+    <com.facebook.h: java.util.List executeBatchAndWait(com.facebook.h[])>
+    <com.facebook.h: java.util.List executeBatchAndWait(com.facebook.h[])>
+    <com.facebook.h: java.util.List executeBatchAndWait(java.util.Collection)>
+    <com.facebook.j: void <init>(java.util.Collection)>
+    <com.facebook.j: void <init>(java.util.Collection)>
+    <com.facebook.j: void <init>(java.util.Collection)>
+    <com.facebook.h: java.util.List executeBatchAndWait(java.util.Collection)>
+    <com.facebook.h: java.util.List executeBatchAndWait(com.facebook.j)>
+    <com.facebook.h: java.util.List executeConnectionAndWait(java.net.HttpURLConnection,com.facebook.j)>
+    <com.facebook.h: void a(com.facebook.j,java.util.List)>
+    <com.facebook.j: android.os.Handler b()>
+    <com.facebook.h: void a(com.facebook.j,java.util.List)>
+    <com.facebook.j: com.facebook.h get(int)>
+    <com.facebook.j: com.facebook.h get(int)>
+    <com.facebook.j: com.facebook.h get(int)>
+    <com.facebook.j: com.facebook.h get(int)>
+    <com.facebook.h: void a(com.facebook.j,java.util.List)>
+    <com.facebook.h: void a(com.facebook.j,java.util.List)>
+    <com.facebook.h: void a(com.facebook.j,java.util.List)>
+    <com.facebook.h: void a(com.facebook.j,java.util.List)>
+    <com.facebook.h: void a(com.facebook.j,java.util.List)>
+    <com.facebook.h: void a(com.facebook.j,java.util.List)>
+    <com.facebook.h: void a(com.facebook.j,java.util.List)>
+    <com.facebook.j: com.facebook.h get(int)>
+    <com.facebook.j: com.facebook.h get(int)>
+    <com.facebook.j: com.facebook.h get(int)>
+    <com.facebook.j: com.facebook.h get(int)>
+    <com.facebook.h: void a(com.facebook.j,java.util.List)>
+    <com.facebook.h$5: void <init>(java.util.ArrayList,com.facebook.j)>
+    <com.facebook.h: void a(com.facebook.j,java.util.List)>
+    <com.facebook.h: java.util.List executeConnectionAndWait(java.net.HttpURLConnection,com.facebook.j)>
+    <com.facebook.h: java.util.List executeBatchAndWait(com.facebook.j)>
+    <com.facebook.h: java.net.HttpURLConnection toHttpConnection(com.facebook.j)>
+    <com.facebook.h: void a(com.facebook.j,java.net.HttpURLConnection)>
+    <com.facebook.h: void a(com.facebook.j,com.facebook.internal.v,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.j: com.facebook.h get(int)>
+    <com.facebook.j: com.facebook.h get(int)>
+    <com.facebook.j: com.facebook.h get(int)>
+    <com.facebook.j: com.facebook.h get(int)>
+    <com.facebook.h: void a(com.facebook.j,com.facebook.internal.v,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.h: void a(com.facebook.j,com.facebook.internal.v,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.h: void a(android.os.Bundle,com.facebook.h$h,com.facebook.h)>
+    <com.facebook.h: void a(android.os.Bundle,com.facebook.h$h,com.facebook.h)>
+    <com.facebook.h$h: void writeObject(java.lang.String,java.lang.Object,com.facebook.h)>
+    <com.facebook.h$h: void writeObject(java.lang.String,java.lang.Object,com.facebook.h)>
+    <com.facebook.h$h: void writeBytes(java.lang.String,byte[])>
+    <com.facebook.h$h: void writeBytes(java.lang.String,byte[])>
+    <com.facebook.h$h: void writeBytes(java.lang.String,byte[])>
+    <com.facebook.h$h: void writeLine(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void write(java.lang.String,java.lang.Object[])>
+
+Leak 4:
+  Source: $r6 = virtualinvoke $r4.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r5, $r1, null, null, "datetaken DESC LIMIT 10") (<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>)
+  Sink: $i0 = staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r3, $r2) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.oliveapp.camerasdk.ui.f$9: void run()>
+    <com.oliveapp.camerasdk.ui.f$9: void run()>
+    <com.oliveapp.camerasdk.ui.f$9: void run()>
+    <com.oliveapp.camerasdk.utils.CameraUtil: android.graphics.Bitmap getExifRotateBmp(java.lang.String,int,int)>
+    <com.oliveapp.camerasdk.utils.CameraUtil: android.graphics.Bitmap getExifRotateBmp(java.lang.String,int,int)>
+    <com.oliveapp.camerasdk.utils.CameraUtil: android.graphics.Bitmap getExifRotateBmp(java.lang.String,int,int)>
+    <com.oliveapp.libcommon.utility.c: int i(java.lang.Object,java.lang.String)>
+    <com.oliveapp.libcommon.utility.c: int i(java.lang.Object,java.lang.String)>
+    <com.oliveapp.libcommon.utility.c: int i(java.lang.Object,java.lang.String)>
+
+Leak 5:
+  Source: $r0 = staticinvoke <android.os.Environment: java.io.File getExternalStorageDirectory()>() (<android.os.Environment: java.io.File getExternalStorageDirectory()>)
+  Sink: $i0 = staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r3, $r2) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.oliveapp.liblivenesscommon.a.a: void <clinit>()>
+    <com.oliveapp.liblivenesscommon.a.a: void <clinit>()>
+    <com.oliveapp.liblivenesscommon.a.a: void <clinit>()>
+    <com.oliveapp.liblivenesscommon.a.a: void <clinit>()>
+    <com.oliveapp.face.livenessdetectorsdk.a.b.d: void <init>()>
+    <com.oliveapp.face.livenessdetectorsdk.a.b.d: void <init>()>
+    <com.oliveapp.face.livenessdetectorsdk.a.b.d: void <init>()>
+    <com.oliveapp.face.livenessdetectorsdk.a.b: void init(android.app.Activity,android.os.Handler,com.oliveapp.face.livenessdetectorsdk.a.c,com.oliveapp.face.livenessdetectorsdk.a.b.b,com.oliveapp.face.livenessdetectorsdk.a.b.d)>
+    <com.oliveapp.face.livenessdetectorsdk.a.b: void init(android.app.Activity,android.os.Handler,com.oliveapp.face.livenessdetectorsdk.a.c,com.oliveapp.face.livenessdetectorsdk.a.b.b,com.oliveapp.face.livenessdetectorsdk.a.b.d)>
+    <com.oliveapp.face.livenessdetectorsdk.b.b: void init(android.app.Activity,android.os.Handler,com.oliveapp.face.livenessdetectorsdk.b.a,com.oliveapp.face.livenessdetectorsdk.a.b.b,com.oliveapp.face.livenessdetectorsdk.a.b.d)>
+    <com.oliveapp.face.livenessdetectorsdk.b.b: void init(android.app.Activity,android.os.Handler,com.oliveapp.face.livenessdetectorsdk.b.a,com.oliveapp.face.livenessdetectorsdk.a.b.b,com.oliveapp.face.livenessdetectorsdk.a.b.d)>
+    <com.oliveapp.face.livenessdetectorsdk.a.b: void init(android.app.Activity,android.os.Handler,com.oliveapp.face.livenessdetectorsdk.a.c,com.oliveapp.face.livenessdetectorsdk.a.b.b,com.oliveapp.face.livenessdetectorsdk.a.b.d)>
+    <com.oliveapp.face.livenessdetectorsdk.a.b: void init(android.app.Activity,android.os.Handler,com.oliveapp.face.livenessdetectorsdk.a.c,com.oliveapp.face.livenessdetectorsdk.a.b.b,com.oliveapp.face.livenessdetectorsdk.a.b.d)>
+    <com.oliveapp.face.livenessdetectorsdk.a.b: void a()>
+    <com.oliveapp.face.livenessdetectorsdk.a.b: void init(android.app.Activity,android.os.Handler,com.oliveapp.face.livenessdetectorsdk.a.c,com.oliveapp.face.livenessdetectorsdk.a.b.b,com.oliveapp.face.livenessdetectorsdk.a.b.d)>
+    <com.oliveapp.face.livenessdetectorsdk.a.b: void init(android.app.Activity,android.os.Handler,com.oliveapp.face.livenessdetectorsdk.a.c,com.oliveapp.face.livenessdetectorsdk.a.b.b,com.oliveapp.face.livenessdetectorsdk.a.b.d)>
+    <com.oliveapp.face.livenessdetectorsdk.a.b.d: void <init>()>
+    <com.oliveapp.face.livenessdetectorsdk.a.b.d: void <init>()>
+    <com.oliveapp.face.livenessdetectorsdk.a.b.d: void <init>()>
+    <com.oliveapp.face.livenessdetectorsdk.a.b: void init(android.app.Activity,android.os.Handler,com.oliveapp.face.livenessdetectorsdk.a.c,com.oliveapp.face.livenessdetectorsdk.a.b.b,com.oliveapp.face.livenessdetectorsdk.a.b.d)>
+    <com.oliveapp.face.livenessdetectorsdk.a.b: void a()>
+    <com.oliveapp.face.livenessdetectorsdk.a.b: void a()>
+    <com.oliveapp.face.livenessdetectorsdk.a.b: void a()>
+    <com.oliveapp.face.livenessdetectorsdk.a.b: void a()>
+    <com.oliveapp.libcommon.utility.e: void forceExtractFolder(java.lang.String,java.lang.String)>
+    <com.oliveapp.libcommon.utility.e: void forceExtractFolder(java.lang.String,java.lang.String)>
+    <com.oliveapp.libcommon.utility.e: void forceExtractFolder(java.lang.String,java.lang.String)>
+    <com.oliveapp.libcommon.utility.c: int i(java.lang.Object,java.lang.String)>
+    <com.oliveapp.libcommon.utility.c: int i(java.lang.Object,java.lang.String)>
+    <com.oliveapp.libcommon.utility.c: int i(java.lang.Object,java.lang.String)>
+
+Leak 6:
+  Source: $r4 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r3, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r5.<java.io.OutputStream: void write(byte[])>($r6) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.facebook.FacebookSdk: void a(android.content.Context)>
+    <com.facebook.FacebookSdk: void a(android.content.Context)>
+    <com.facebook.FacebookSdk: void a(android.content.Context)>
+    <com.facebook.FacebookSdk: void a(android.content.Context)>
+    <com.facebook.FacebookSdk: void a(android.content.Context)>
+    <com.facebook.internal.m: void loadAppSettingsAsync()>
+    <com.facebook.FacebookSdk: void sdkInitialize(android.content.Context,com.facebook.FacebookSdk$a)>
+    <com.facebook.internal.m: void loadAppSettingsAsync()>
+    <com.facebook.internal.m$1: void run()>
+    <com.facebook.internal.m: org.json.JSONObject a(java.lang.String)>
+    <com.facebook.internal.m: org.json.JSONObject b(java.lang.String)>
+    <com.facebook.h: com.facebook.GraphResponse executeAndWait()>
+    <com.facebook.h: com.facebook.GraphResponse executeAndWait(com.facebook.h)>
+    <com.facebook.h: java.util.List executeBatchAndWait(com.facebook.h[])>
+    <com.facebook.h: java.util.List executeBatchAndWait(java.util.Collection)>
+    <com.facebook.h: java.util.List executeBatchAndWait(com.facebook.j)>
+    <com.facebook.h: java.net.HttpURLConnection toHttpConnection(com.facebook.j)>
+    <com.facebook.h: void a(com.facebook.j,java.net.HttpURLConnection)>
+    <com.facebook.h: void a(com.facebook.j,com.facebook.internal.v,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.h: java.lang.String d(com.facebook.j)>
+    <com.facebook.FacebookSdk: java.lang.String getApplicationId()>
+    <com.facebook.FacebookSdk: java.lang.String getApplicationId()>
+    <com.facebook.h: java.lang.String d(com.facebook.j)>
+    <com.facebook.h: void a(com.facebook.j,com.facebook.internal.v,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.h$h: void writeString(java.lang.String,java.lang.String)>
+    <com.facebook.h$h: void writeString(java.lang.String,java.lang.String)>
+    <com.facebook.h$h: void writeLine(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void writeLine(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void writeString(java.lang.String,java.lang.String)>
+    <com.facebook.h: void a(com.facebook.j,com.facebook.internal.v,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.h: void a(com.facebook.h$h,java.util.Collection,java.util.Map)>
+    <com.facebook.h$h: void writeRequestsAsJson(java.lang.String,org.json.JSONArray,java.util.Collection)>
+    <com.facebook.h$h: void writeContentDisposition(java.lang.String,java.lang.String,java.lang.String)>
+    <com.facebook.h$h: void writeContentDisposition(java.lang.String,java.lang.String,java.lang.String)>
+
+Leak 7:
+  Source: $r4 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r3, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r5.<java.io.OutputStream: void write(byte[])>($r6) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.facebook.appevents.internal.b: java.lang.String getAppVersion()>
+    <com.facebook.appevents.internal.b: java.lang.String getAppVersion()>
+    <com.facebook.appevents.internal.b: java.lang.String getAppVersion()>
+    <com.facebook.appevents.codeless.d: com.facebook.h buildAppIndexingRequest(java.lang.String,com.facebook.a,java.lang.String,java.lang.String)>
+    <com.facebook.appevents.codeless.d: com.facebook.h buildAppIndexingRequest(java.lang.String,com.facebook.a,java.lang.String,java.lang.String)>
+    <com.facebook.h: void setParameters(android.os.Bundle)>
+    <com.facebook.h: void setParameters(android.os.Bundle)>
+    <com.facebook.appevents.codeless.d: com.facebook.h buildAppIndexingRequest(java.lang.String,com.facebook.a,java.lang.String,java.lang.String)>
+    <com.facebook.appevents.codeless.d$3: void run()>
+    <com.facebook.h: com.facebook.GraphResponse executeAndWait()>
+    <com.facebook.h: com.facebook.GraphResponse executeAndWait(com.facebook.h)>
+    <com.facebook.h: com.facebook.GraphResponse executeAndWait(com.facebook.h)>
+    <com.facebook.h: java.util.List executeBatchAndWait(com.facebook.h[])>
+    <com.facebook.h: java.util.List executeBatchAndWait(com.facebook.h[])>
+    <com.facebook.h: java.util.List executeBatchAndWait(java.util.Collection)>
+    <com.facebook.j: void <init>(java.util.Collection)>
+    <com.facebook.j: void <init>(java.util.Collection)>
+    <com.facebook.j: void <init>(java.util.Collection)>
+    <com.facebook.h: java.util.List executeBatchAndWait(java.util.Collection)>
+    <com.facebook.h: java.util.List executeBatchAndWait(com.facebook.j)>
+    <com.facebook.h: java.net.HttpURLConnection toHttpConnection(com.facebook.j)>
+    <com.facebook.h: void a(com.facebook.j,java.net.HttpURLConnection)>
+    <com.facebook.h: void a(com.facebook.j,com.facebook.internal.v,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.j: com.facebook.h get(int)>
+    <com.facebook.j: com.facebook.h get(int)>
+    <com.facebook.j: com.facebook.h get(int)>
+    <com.facebook.j: com.facebook.h get(int)>
+    <com.facebook.h: void a(com.facebook.j,com.facebook.internal.v,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.h: void a(com.facebook.j,com.facebook.internal.v,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.h: void a(android.os.Bundle,com.facebook.h$h,com.facebook.h)>
+    <com.facebook.h: void a(android.os.Bundle,com.facebook.h$h,com.facebook.h)>
+    <com.facebook.h$h: void writeObject(java.lang.String,java.lang.Object,com.facebook.h)>
+    <com.facebook.h: java.lang.String b(java.lang.Object)>
+    <com.facebook.h: java.lang.String e(java.lang.Object)>
+    <com.facebook.h: java.lang.String e(java.lang.Object)>
+    <com.facebook.h: java.lang.String b(java.lang.Object)>
+    <com.facebook.h$h: void writeObject(java.lang.String,java.lang.Object,com.facebook.h)>
+    <com.facebook.h$h: void writeString(java.lang.String,java.lang.String)>
+    <com.facebook.h$h: void writeString(java.lang.String,java.lang.String)>
+    <com.facebook.h$h: void writeLine(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void writeLine(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void writeString(java.lang.String,java.lang.String)>
+    <com.facebook.h$h: void writeObject(java.lang.String,java.lang.Object,com.facebook.h)>
+    <com.facebook.h: void a(android.os.Bundle,com.facebook.h$h,com.facebook.h)>
+    <com.facebook.h$h: void writeObject(java.lang.String,java.lang.Object,com.facebook.h)>
+    <com.facebook.h$h: void writeFile(java.lang.String,android.os.ParcelFileDescriptor,java.lang.String)>
+    <com.facebook.h$h: void writeContentDisposition(java.lang.String,java.lang.String,java.lang.String)>
+    <com.facebook.h$h: void writeContentDisposition(java.lang.String,java.lang.String,java.lang.String)>
+
+Leak 8:
+  Source: $r11 = virtualinvoke $r10.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r9, $r6, null, null, null) (<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>)
+  Sink: virtualinvoke $r5.<java.io.OutputStream: void write(byte[])>($r6) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.facebook.internal.b: com.facebook.internal.b getAttributionIdentifiers(android.content.Context)>
+    <com.facebook.internal.b: com.facebook.internal.b getAttributionIdentifiers(android.content.Context)>
+    <com.facebook.internal.b: com.facebook.internal.b getAttributionIdentifiers(android.content.Context)>
+    <com.facebook.internal.b: com.facebook.internal.b getAttributionIdentifiers(android.content.Context)>
+    <com.facebook.u$1: void run()>
+    <com.facebook.internal.b: java.lang.String getAndroidAdvertiserId()>
+    <com.facebook.internal.b: java.lang.String getAndroidAdvertiserId()>
+    <com.facebook.u$1: void run()>
+    <com.facebook.u$1: void run()>
+    <com.facebook.h: void setParameters(android.os.Bundle)>
+    <com.facebook.h: void setParameters(android.os.Bundle)>
+    <com.facebook.u$1: void run()>
+    <com.facebook.h: com.facebook.GraphResponse executeAndWait()>
+    <com.facebook.h: com.facebook.GraphResponse executeAndWait(com.facebook.h)>
+    <com.facebook.h: com.facebook.GraphResponse executeAndWait(com.facebook.h)>
+    <com.facebook.h: java.util.List executeBatchAndWait(com.facebook.h[])>
+    <com.facebook.h: java.util.List executeBatchAndWait(com.facebook.h[])>
+    <com.facebook.h: java.util.List executeBatchAndWait(java.util.Collection)>
+    <com.facebook.j: void <init>(java.util.Collection)>
+    <com.facebook.j: void <init>(java.util.Collection)>
+    <com.facebook.j: void <init>(java.util.Collection)>
+    <com.facebook.h: java.util.List executeBatchAndWait(java.util.Collection)>
+    <com.facebook.h: java.util.List executeBatchAndWait(com.facebook.j)>
+    <com.facebook.h: java.net.HttpURLConnection toHttpConnection(com.facebook.j)>
+    <com.facebook.h: void a(com.facebook.j,java.net.HttpURLConnection)>
+    <com.facebook.h: void a(com.facebook.j,com.facebook.internal.v,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.j: com.facebook.h get(int)>
+    <com.facebook.j: com.facebook.h get(int)>
+    <com.facebook.j: com.facebook.h get(int)>
+    <com.facebook.j: com.facebook.h get(int)>
+    <com.facebook.h: void a(com.facebook.j,com.facebook.internal.v,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.h: void a(com.facebook.j,com.facebook.internal.v,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.h: void a(android.os.Bundle,com.facebook.h$h,com.facebook.h)>
+    <com.facebook.h: void a(android.os.Bundle,com.facebook.h$h,com.facebook.h)>
+    <com.facebook.h$h: void writeObject(java.lang.String,java.lang.Object,com.facebook.h)>
+    <com.facebook.h: java.lang.String b(java.lang.Object)>
+    <com.facebook.h: java.lang.String e(java.lang.Object)>
+    <com.facebook.h: java.lang.String e(java.lang.Object)>
+    <com.facebook.h: java.lang.String b(java.lang.Object)>
+    <com.facebook.h$h: void writeObject(java.lang.String,java.lang.Object,com.facebook.h)>
+    <com.facebook.h$h: void writeString(java.lang.String,java.lang.String)>
+    <com.facebook.h$h: void writeString(java.lang.String,java.lang.String)>
+    <com.facebook.h$h: void writeLine(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void writeLine(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void writeString(java.lang.String,java.lang.String)>
+    <com.facebook.h$h: void writeObject(java.lang.String,java.lang.Object,com.facebook.h)>
+    <com.facebook.h: void a(android.os.Bundle,com.facebook.h$h,com.facebook.h)>
+    <com.facebook.h$h: void writeObject(java.lang.String,java.lang.Object,com.facebook.h)>
+    <com.facebook.h$h: void writeFile(java.lang.String,android.os.ParcelFileDescriptor,java.lang.String)>
+    <com.facebook.h$h: void writeContentDisposition(java.lang.String,java.lang.String,java.lang.String)>
+    <com.facebook.h$h: void writeContentDisposition(java.lang.String,java.lang.String,java.lang.String)>
+
+Leak 9:
+  Source: $r4 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r3, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r3.<java.io.OutputStream: void write(byte[])>($r5) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.facebook.FacebookSdk: void a(android.content.Context)>
+    <com.facebook.FacebookSdk: void a(android.content.Context)>
+    <com.facebook.FacebookSdk: void a(android.content.Context)>
+    <com.facebook.FacebookSdk: void a(android.content.Context)>
+    <com.facebook.FacebookSdk: void a(android.content.Context)>
+    <com.facebook.FacebookSdk: void a(android.content.Context)>
+    <com.facebook.FacebookSdk: void sdkInitialize(android.content.Context,com.facebook.FacebookSdk$a)>
+    <com.facebook.internal.m: void loadAppSettingsAsync()>
+    <com.facebook.internal.m$1: void run()>
+    <com.facebook.internal.k: org.json.JSONObject queryAppGateKeepers(java.lang.String,boolean)>
+    <com.facebook.internal.k: org.json.JSONObject b(java.lang.String)>
+    <com.facebook.h: com.facebook.GraphResponse executeAndWait()>
+    <com.facebook.h: com.facebook.GraphResponse executeAndWait(com.facebook.h)>
+    <com.facebook.h: java.util.List executeBatchAndWait(com.facebook.h[])>
+    <com.facebook.h: java.util.List executeBatchAndWait(java.util.Collection)>
+    <com.facebook.h: java.util.List executeBatchAndWait(com.facebook.j)>
+    <com.facebook.h: java.net.HttpURLConnection toHttpConnection(com.facebook.j)>
+    <com.facebook.h: void a(com.facebook.j,java.net.HttpURLConnection)>
+    <com.facebook.h: void a(com.facebook.j,com.facebook.internal.v,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.h: java.lang.String d(com.facebook.j)>
+    <com.facebook.FacebookSdk: java.lang.String getApplicationId()>
+    <com.facebook.FacebookSdk: java.lang.String getApplicationId()>
+    <com.facebook.h: java.lang.String d(com.facebook.j)>
+    <com.facebook.h: void a(com.facebook.j,com.facebook.internal.v,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.h$h: void writeString(java.lang.String,java.lang.String)>
+    <com.facebook.h$h: void writeString(java.lang.String,java.lang.String)>
+    <com.facebook.h$h: void writeLine(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void writeLine(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void write(java.lang.String,java.lang.Object[])>
+
+Leak 10:
+  Source: $r4 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r3, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r3.<java.io.OutputStream: void write(byte[])>($r5) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.facebook.appevents.internal.b: java.lang.String getAppVersion()>
+    <com.facebook.appevents.internal.b: java.lang.String getAppVersion()>
+    <com.facebook.appevents.internal.b: java.lang.String getAppVersion()>
+    <com.facebook.appevents.codeless.d: com.facebook.h buildAppIndexingRequest(java.lang.String,com.facebook.a,java.lang.String,java.lang.String)>
+    <com.facebook.appevents.codeless.d: com.facebook.h buildAppIndexingRequest(java.lang.String,com.facebook.a,java.lang.String,java.lang.String)>
+    <com.facebook.h: void setParameters(android.os.Bundle)>
+    <com.facebook.h: void setParameters(android.os.Bundle)>
+    <com.facebook.appevents.codeless.d: com.facebook.h buildAppIndexingRequest(java.lang.String,com.facebook.a,java.lang.String,java.lang.String)>
+    <com.facebook.h: void setCallback(com.facebook.h$b)>
+    <com.facebook.h$4: void <init>(com.facebook.h,com.facebook.h$b)>
+    <com.facebook.h$4: void <init>(com.facebook.h,com.facebook.h$b)>
+    <com.facebook.h: void setCallback(com.facebook.h$b)>
+    <com.facebook.h: void setCallback(com.facebook.h$b)>
+    <com.facebook.h$4: void <init>(com.facebook.h,com.facebook.h$b)>
+    <com.facebook.h$4: void <init>(com.facebook.h,com.facebook.h$b)>
+    <com.facebook.h: void setCallback(com.facebook.h$b)>
+    <com.facebook.h: void setCallback(com.facebook.h$b)>
+    <com.facebook.appevents.codeless.d: com.facebook.h buildAppIndexingRequest(java.lang.String,com.facebook.a,java.lang.String,java.lang.String)>
+    <com.facebook.appevents.codeless.d$3: void run()>
+    <com.facebook.h: com.facebook.GraphResponse executeAndWait()>
+    <com.facebook.h: com.facebook.GraphResponse executeAndWait(com.facebook.h)>
+    <com.facebook.h: com.facebook.GraphResponse executeAndWait(com.facebook.h)>
+    <com.facebook.h: java.util.List executeBatchAndWait(com.facebook.h[])>
+    <com.facebook.h: java.util.List executeBatchAndWait(com.facebook.h[])>
+    <com.facebook.h: java.util.List executeBatchAndWait(java.util.Collection)>
+    <com.facebook.j: void <init>(java.util.Collection)>
+    <com.facebook.j: void <init>(java.util.Collection)>
+    <com.facebook.j: void <init>(java.util.Collection)>
+    <com.facebook.h: java.util.List executeBatchAndWait(java.util.Collection)>
+    <com.facebook.h: java.util.List executeBatchAndWait(com.facebook.j)>
+    <com.facebook.h: java.net.HttpURLConnection toHttpConnection(com.facebook.j)>
+    <com.facebook.h: void a(com.facebook.j,java.net.HttpURLConnection)>
+    <com.facebook.h: void a(com.facebook.j,com.facebook.internal.v,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.j: com.facebook.h get(int)>
+    <com.facebook.j: com.facebook.h get(int)>
+    <com.facebook.j: com.facebook.h get(int)>
+    <com.facebook.j: com.facebook.h get(int)>
+    <com.facebook.h: void a(com.facebook.j,com.facebook.internal.v,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.h: void a(com.facebook.j,com.facebook.internal.v,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.h: void a(android.os.Bundle,com.facebook.h$h,com.facebook.h)>
+    <com.facebook.h: void a(android.os.Bundle,com.facebook.h$h,com.facebook.h)>
+    <com.facebook.h$h: void writeObject(java.lang.String,java.lang.Object,com.facebook.h)>
+    <com.facebook.h$h: void writeObject(java.lang.String,java.lang.Object,com.facebook.h)>
+    <com.facebook.h$h: void writeBytes(java.lang.String,byte[])>
+    <com.facebook.h$h: void writeBytes(java.lang.String,byte[])>
+    <com.facebook.h$h: void writeBytes(java.lang.String,byte[])>
+    <com.facebook.h$h: void writeLine(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void write(java.lang.String,java.lang.Object[])>
+
+Leak 11:
+  Source: $r11 = virtualinvoke $r10.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r9, $r6, null, null, null) (<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>)
+  Sink: virtualinvoke $r3.<java.io.OutputStream: void write(byte[])>($r5) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.facebook.internal.b: com.facebook.internal.b getAttributionIdentifiers(android.content.Context)>
+    <com.facebook.internal.b: com.facebook.internal.b getAttributionIdentifiers(android.content.Context)>
+    <com.facebook.internal.b: com.facebook.internal.b getAttributionIdentifiers(android.content.Context)>
+    <com.facebook.internal.b: com.facebook.internal.b getAttributionIdentifiers(android.content.Context)>
+    <com.facebook.u$1: void run()>
+    <com.facebook.internal.b: java.lang.String getAndroidAdvertiserId()>
+    <com.facebook.internal.b: java.lang.String getAndroidAdvertiserId()>
+    <com.facebook.u$1: void run()>
+    <com.facebook.u$1: void run()>
+    <com.facebook.h: void setParameters(android.os.Bundle)>
+    <com.facebook.h: void setParameters(android.os.Bundle)>
+    <com.facebook.u$1: void run()>
+    <com.facebook.h: com.facebook.GraphResponse executeAndWait()>
+    <com.facebook.h: com.facebook.GraphResponse executeAndWait(com.facebook.h)>
+    <com.facebook.h: com.facebook.GraphResponse executeAndWait(com.facebook.h)>
+    <com.facebook.h: java.util.List executeBatchAndWait(com.facebook.h[])>
+    <com.facebook.h: java.util.List executeBatchAndWait(com.facebook.h[])>
+    <com.facebook.h: java.util.List executeBatchAndWait(java.util.Collection)>
+    <com.facebook.j: void <init>(java.util.Collection)>
+    <com.facebook.j: void <init>(java.util.Collection)>
+    <com.facebook.j: void <init>(java.util.Collection)>
+    <com.facebook.h: java.util.List executeBatchAndWait(java.util.Collection)>
+    <com.facebook.h: java.util.List executeBatchAndWait(com.facebook.j)>
+    <com.facebook.h: java.net.HttpURLConnection toHttpConnection(com.facebook.j)>
+    <com.facebook.h: void a(com.facebook.j,java.net.HttpURLConnection)>
+    <com.facebook.h: void a(com.facebook.j,com.facebook.internal.v,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.j: com.facebook.h get(int)>
+    <com.facebook.j: com.facebook.h get(int)>
+    <com.facebook.j: com.facebook.h get(int)>
+    <com.facebook.j: com.facebook.h get(int)>
+    <com.facebook.h: void a(com.facebook.j,com.facebook.internal.v,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.h: void a(com.facebook.j,com.facebook.internal.v,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.h: void a(android.os.Bundle,com.facebook.h$h,com.facebook.h)>
+    <com.facebook.h: void a(android.os.Bundle,com.facebook.h$h,com.facebook.h)>
+    <com.facebook.h$h: void writeObject(java.lang.String,java.lang.Object,com.facebook.h)>
+    <com.facebook.h: java.lang.String b(java.lang.Object)>
+    <com.facebook.h: java.lang.String e(java.lang.Object)>
+    <com.facebook.h: java.lang.String e(java.lang.Object)>
+    <com.facebook.h: java.lang.String b(java.lang.Object)>
+    <com.facebook.h$h: void writeObject(java.lang.String,java.lang.Object,com.facebook.h)>
+    <com.facebook.h$h: void writeString(java.lang.String,java.lang.String)>
+    <com.facebook.h$h: void writeString(java.lang.String,java.lang.String)>
+    <com.facebook.h$h: void writeLine(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void writeLine(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void writeString(java.lang.String,java.lang.String)>
+    <com.facebook.h$h: void writeObject(java.lang.String,java.lang.Object,com.facebook.h)>
+    <com.facebook.h: void a(android.os.Bundle,com.facebook.h$h,com.facebook.h)>
+    <com.facebook.h: void a(com.facebook.j,com.facebook.internal.v,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.h: void a(java.util.Map,com.facebook.h$h)>
+    <com.facebook.h$h: void writeObject(java.lang.String,java.lang.Object,com.facebook.h)>
+    <com.facebook.h$h: void writeContentUri(java.lang.String,android.net.Uri,java.lang.String)>
+    <com.facebook.h$h: void writeRecordBoundary()>
+    <com.facebook.h$h: void writeLine(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void write(java.lang.String,java.lang.Object[])>
+
+Leak 12:
+  Source: $r5 = virtualinvoke $r3.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r4, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("ManifestParser", $r4) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.bumptech.glide.c.e: java.util.List parse()>
+    <com.bumptech.glide.c.e: java.util.List parse()>
+    <com.bumptech.glide.c.e: java.util.List parse()>
+    <com.bumptech.glide.c.e: java.util.List parse()>
+    <com.bumptech.glide.c.e: java.util.List parse()>
+    <com.bumptech.glide.c.e: java.util.List parse()>
+    <com.bumptech.glide.c.e: java.util.List parse()>
+    <com.bumptech.glide.c.e: java.util.List parse()>
+    <com.bumptech.glide.c.e: java.util.List parse()>
+
+Leak 13:
+  Source: $r5 = virtualinvoke $r3.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r4, null, null, null, null) (<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>)
+  Sink: $i0 = staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r2, $r1) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.yigomob.philippine.pesogo.activity.ContactOptionActivity$2: void run()>
+    <com.yigomob.philippine.pesogo.activity.ContactOptionActivity$2: void run()>
+    <com.yigomob.philippine.pesogo.activity.ContactOptionActivity$2: void run()>
+    <com.yigomob.philippine.pesogo.bean.PhoneRelationBean: void setPhone(java.lang.String)>
+    <com.yigomob.philippine.pesogo.bean.PhoneRelationBean: void setPhone(java.lang.String)>
+    <com.yigomob.philippine.pesogo.activity.ContactOptionActivity$2: void run()>
+    <com.yigomob.philippine.pesogo.activity.ContactOptionActivity$2: void run()>
+    <com.yigomob.philippine.pesogo.activity.ContactOptionActivity: java.util.List b(com.yigomob.philippine.pesogo.activity.ContactOptionActivity)>
+    <com.yigomob.philippine.pesogo.activity.ContactOptionActivity: java.util.List b(com.yigomob.philippine.pesogo.activity.ContactOptionActivity)>
+    <com.yigomob.philippine.pesogo.activity.ContactOptionActivity$2: void run()>
+    <com.yigomob.philippine.pesogo.activity.ContactOptionActivity$2: void run()>
+    <java.lang.Thread: void run()>
+    <java.lang.Thread: void run()>
+    <com.oliveapp.camerasdk.mediarecord.MediaMuxerThread: void run()>
+    <com.oliveapp.camerasdk.mediarecord.MediaMuxerThread: void f()>
+    <com.oliveapp.camerasdk.mediarecord.MediaMuxerThread: void f()>
+    <com.oliveapp.camerasdk.mediarecord.a: void <init>(java.lang.ref.WeakReference)>
+    <com.oliveapp.camerasdk.mediarecord.a: void <init>(java.lang.ref.WeakReference)>
+    <com.oliveapp.camerasdk.mediarecord.MediaMuxerThread: void f()>
+    <com.oliveapp.camerasdk.mediarecord.MediaMuxerThread: void f()>
+    <com.oliveapp.camerasdk.mediarecord.MediaMuxerThread: void f()>
+    <com.oliveapp.camerasdk.mediarecord.c: void <init>(int,int,java.lang.ref.WeakReference)>
+    <com.oliveapp.camerasdk.mediarecord.c: void <init>(int,int,java.lang.ref.WeakReference)>
+    <com.oliveapp.camerasdk.mediarecord.c: void c()>
+    <com.oliveapp.camerasdk.mediarecord.c: void <init>(int,int,java.lang.ref.WeakReference)>
+    <com.oliveapp.camerasdk.mediarecord.c: void <init>(int,int,java.lang.ref.WeakReference)>
+    <com.oliveapp.camerasdk.mediarecord.MediaMuxerThread: void f()>
+    <com.oliveapp.camerasdk.mediarecord.MediaMuxerThread: void f()>
+    <com.oliveapp.camerasdk.mediarecord.MediaMuxerThread: void f()>
+    <com.oliveapp.camerasdk.mediarecord.a: void <init>(java.lang.ref.WeakReference)>
+    <com.oliveapp.camerasdk.mediarecord.a: void <init>(java.lang.ref.WeakReference)>
+    <com.oliveapp.camerasdk.mediarecord.MediaMuxerThread: void f()>
+    <com.oliveapp.camerasdk.mediarecord.MediaMuxerThread: void f()>
+    <com.oliveapp.camerasdk.mediarecord.MediaMuxerThread: void f()>
+    <com.oliveapp.camerasdk.mediarecord.MediaMuxerThread: void f()>
+    <com.oliveapp.camerasdk.mediarecord.a: void run()>
+    <com.oliveapp.camerasdk.mediarecord.a: void run()>
+    <com.oliveapp.camerasdk.mediarecord.a: void run()>
+    <com.oliveapp.camerasdk.mediarecord.a: void run()>
+    <com.oliveapp.libcommon.utility.c: int d(java.lang.Object,java.lang.String)>
+    <com.oliveapp.libcommon.utility.c: int d(java.lang.Object,java.lang.String)>
+    <com.oliveapp.libcommon.utility.c: int d(java.lang.Object,java.lang.String)>
+
+Leak 14:
+  Source: $r6 = virtualinvoke $r4.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r5, $r1, null, null, "datetaken DESC LIMIT 10") (<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>)
+  Sink: $i0 = staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r2, $r1) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.oliveapp.camerasdk.ui.f$9: void run()>
+    <com.oliveapp.camerasdk.ui.f$9: void run()>
+    <com.oliveapp.camerasdk.ui.f$9: void run()>
+    <com.oliveapp.camerasdk.ui.f$9: void run()>
+    <com.oliveapp.camerasdk.ui.f$9: void run()>
+    <com.oliveapp.libcommon.utility.c: int d(java.lang.Object,java.lang.String)>
+    <com.oliveapp.libcommon.utility.c: int d(java.lang.Object,java.lang.String)>
+    <com.oliveapp.libcommon.utility.c: int d(java.lang.Object,java.lang.String)>
+
+Leak 15:
+  Source: $r0 = staticinvoke <android.os.Environment: java.io.File getExternalStorageDirectory()>() (<android.os.Environment: java.io.File getExternalStorageDirectory()>)
+  Sink: $i0 = staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r2, $r1) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.oliveapp.liblivenesscommon.a.a: void <clinit>()>
+    <com.oliveapp.liblivenesscommon.a.a: void <clinit>()>
+    <com.oliveapp.liblivenesscommon.a.a: void <clinit>()>
+    <com.oliveapp.liblivenesscommon.a.a: void <clinit>()>
+    <com.oliveapp.face.livenessdetectorsdk.a.b.d: void <init>()>
+    <com.oliveapp.face.livenessdetectorsdk.a.b.d: void <init>()>
+    <com.oliveapp.face.livenessdetectorsdk.a.b.d: void <init>()>
+    <com.oliveapp.face.livenessdetectorsdk.a.b: void init(android.app.Activity,android.os.Handler,com.oliveapp.face.livenessdetectorsdk.a.c,com.oliveapp.face.livenessdetectorsdk.a.b.b,com.oliveapp.face.livenessdetectorsdk.a.b.d)>
+    <com.oliveapp.face.livenessdetectorsdk.a.b: void init(android.app.Activity,android.os.Handler,com.oliveapp.face.livenessdetectorsdk.a.c,com.oliveapp.face.livenessdetectorsdk.a.b.b,com.oliveapp.face.livenessdetectorsdk.a.b.d)>
+    <com.oliveapp.face.livenessdetectionviewsdk.verification_controller.a$1: void run()>
+    <com.oliveapp.face.livenessdetectionviewsdk.verification_controller.a: com.oliveapp.face.livenessdetectorsdk.a.b d(com.oliveapp.face.livenessdetectionviewsdk.verification_controller.a)>
+    <com.oliveapp.face.livenessdetectionviewsdk.verification_controller.a: com.oliveapp.face.livenessdetectorsdk.a.b d(com.oliveapp.face.livenessdetectionviewsdk.verification_controller.a)>
+    <com.oliveapp.face.livenessdetectionviewsdk.verification_controller.a$1: void run()>
+    <com.oliveapp.face.livenessdetectionviewsdk.verification_controller.a$1: void run()>
+    <java.lang.Thread: void run()>
+    <java.lang.Thread: void run()>
+    <com.oliveapp.camerasdk.mediarecord.MediaMuxerThread: void run()>
+    <com.oliveapp.camerasdk.mediarecord.MediaMuxerThread: void f()>
+    <com.oliveapp.camerasdk.mediarecord.MediaMuxerThread: void f()>
+    <com.oliveapp.camerasdk.mediarecord.a: void <init>(java.lang.ref.WeakReference)>
+    <com.oliveapp.camerasdk.mediarecord.a: void <init>(java.lang.ref.WeakReference)>
+    <com.oliveapp.camerasdk.mediarecord.MediaMuxerThread: void f()>
+    <com.oliveapp.camerasdk.mediarecord.MediaMuxerThread: void f()>
+    <com.oliveapp.camerasdk.mediarecord.MediaMuxerThread: void f()>
+    <com.oliveapp.camerasdk.mediarecord.a: void <init>(java.lang.ref.WeakReference)>
+    <com.oliveapp.camerasdk.mediarecord.a: void <init>(java.lang.ref.WeakReference)>
+    <com.oliveapp.camerasdk.mediarecord.a: void c()>
+    <com.oliveapp.camerasdk.mediarecord.a: void <init>(java.lang.ref.WeakReference)>
+    <com.oliveapp.camerasdk.mediarecord.a: void <init>(java.lang.ref.WeakReference)>
+    <com.oliveapp.camerasdk.mediarecord.MediaMuxerThread: void f()>
+    <com.oliveapp.camerasdk.mediarecord.MediaMuxerThread: void f()>
+    <com.oliveapp.camerasdk.mediarecord.MediaMuxerThread: void f()>
+    <com.oliveapp.camerasdk.mediarecord.MediaMuxerThread: void d()>
+    <com.oliveapp.camerasdk.mediarecord.MediaMuxerThread: void f()>
+    <com.oliveapp.camerasdk.mediarecord.MediaMuxerThread: void f()>
+    <com.oliveapp.camerasdk.mediarecord.a: void <init>(java.lang.ref.WeakReference)>
+    <com.oliveapp.camerasdk.mediarecord.a: void <init>(java.lang.ref.WeakReference)>
+    <com.oliveapp.camerasdk.mediarecord.MediaMuxerThread: void f()>
+    <com.oliveapp.camerasdk.mediarecord.MediaMuxerThread: void f()>
+    <com.oliveapp.camerasdk.mediarecord.MediaMuxerThread: void f()>
+    <com.oliveapp.camerasdk.mediarecord.c: void <init>(int,int,java.lang.ref.WeakReference)>
+    <com.oliveapp.camerasdk.mediarecord.MediaMuxerThread: void f()>
+    <com.oliveapp.camerasdk.mediarecord.MediaMuxerThread: void f()>
+    <com.oliveapp.camerasdk.mediarecord.MediaMuxerThread: void f()>
+    <com.oliveapp.camerasdk.mediarecord.a: void run()>
+    <com.oliveapp.camerasdk.mediarecord.a: void run()>
+    <com.oliveapp.camerasdk.mediarecord.a: void run()>
+    <com.oliveapp.camerasdk.mediarecord.a: void run()>
+    <com.oliveapp.libcommon.utility.c: int d(java.lang.Object,java.lang.String)>
+    <com.oliveapp.libcommon.utility.c: int d(java.lang.Object,java.lang.String)>
+    <com.oliveapp.libcommon.utility.c: int d(java.lang.Object,java.lang.String)>
+
+Leak 16:
+  Source: $r4 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r3, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r3.<java.io.OutputStream: void write(byte[])>($r5) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.facebook.FacebookSdk: void a(android.content.Context)>
+    <com.facebook.FacebookSdk: void a(android.content.Context)>
+    <com.facebook.FacebookSdk: void a(android.content.Context)>
+    <com.facebook.FacebookSdk: void a(android.content.Context)>
+    <com.facebook.FacebookSdk: void a(android.content.Context)>
+    <com.facebook.FacebookSdk: void a(android.content.Context)>
+    <com.facebook.FacebookSdk: void sdkInitialize(android.content.Context,com.facebook.FacebookSdk$a)>
+    <com.facebook.internal.m: void loadAppSettingsAsync()>
+    <com.facebook.internal.m$1: void run()>
+    <com.facebook.internal.m: org.json.JSONObject a(java.lang.String)>
+    <com.facebook.internal.m: org.json.JSONObject b(java.lang.String)>
+    <com.facebook.h: com.facebook.GraphResponse executeAndWait()>
+    <com.facebook.h: com.facebook.GraphResponse executeAndWait(com.facebook.h)>
+    <com.facebook.h: java.util.List executeBatchAndWait(com.facebook.h[])>
+    <com.facebook.h: java.util.List executeBatchAndWait(java.util.Collection)>
+    <com.facebook.h: java.util.List executeBatchAndWait(com.facebook.j)>
+    <com.facebook.h: java.net.HttpURLConnection toHttpConnection(com.facebook.j)>
+    <com.facebook.h: void a(com.facebook.j,java.net.HttpURLConnection)>
+    <com.facebook.h: void a(com.facebook.j,com.facebook.internal.v,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.h: java.lang.String d(com.facebook.j)>
+    <com.facebook.FacebookSdk: java.lang.String getApplicationId()>
+    <com.facebook.FacebookSdk: java.lang.String getApplicationId()>
+    <com.facebook.h: java.lang.String d(com.facebook.j)>
+    <com.facebook.h: void a(com.facebook.j,com.facebook.internal.v,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.h$h: void writeString(java.lang.String,java.lang.String)>
+    <com.facebook.h$h: void writeString(java.lang.String,java.lang.String)>
+    <com.facebook.h$h: void writeLine(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void writeLine(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void write(java.lang.String,java.lang.Object[])>
+
+Leak 17:
+  Source: $r4 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r3, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r3.<java.io.OutputStream: void write(byte[])>($r5) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.facebook.appevents.internal.b: java.lang.String getAppVersion()>
+    <com.facebook.appevents.internal.b: java.lang.String getAppVersion()>
+    <com.facebook.appevents.internal.b: java.lang.String getAppVersion()>
+    <com.facebook.appevents.codeless.d: com.facebook.h buildAppIndexingRequest(java.lang.String,com.facebook.a,java.lang.String,java.lang.String)>
+    <com.facebook.appevents.codeless.d: com.facebook.h buildAppIndexingRequest(java.lang.String,com.facebook.a,java.lang.String,java.lang.String)>
+    <com.facebook.h: void setParameters(android.os.Bundle)>
+    <com.facebook.h: void setParameters(android.os.Bundle)>
+    <com.facebook.appevents.codeless.d: com.facebook.h buildAppIndexingRequest(java.lang.String,com.facebook.a,java.lang.String,java.lang.String)>
+    <com.facebook.h: void setCallback(com.facebook.h$b)>
+    <com.facebook.h$4: void <init>(com.facebook.h,com.facebook.h$b)>
+    <com.facebook.h$4: void <init>(com.facebook.h,com.facebook.h$b)>
+    <com.facebook.h: void setCallback(com.facebook.h$b)>
+    <com.facebook.h: void setCallback(com.facebook.h$b)>
+    <com.facebook.h$4: void <init>(com.facebook.h,com.facebook.h$b)>
+    <com.facebook.h$4: void <init>(com.facebook.h,com.facebook.h$b)>
+    <com.facebook.h: void setCallback(com.facebook.h$b)>
+    <com.facebook.h: void setCallback(com.facebook.h$b)>
+    <com.facebook.appevents.codeless.d: com.facebook.h buildAppIndexingRequest(java.lang.String,com.facebook.a,java.lang.String,java.lang.String)>
+    <com.facebook.appevents.codeless.d$3: void run()>
+    <com.facebook.h: com.facebook.GraphResponse executeAndWait()>
+    <com.facebook.h: com.facebook.GraphResponse executeAndWait(com.facebook.h)>
+    <com.facebook.h: com.facebook.GraphResponse executeAndWait(com.facebook.h)>
+    <com.facebook.h: java.util.List executeBatchAndWait(com.facebook.h[])>
+    <com.facebook.h: java.util.List executeBatchAndWait(com.facebook.h[])>
+    <com.facebook.h: java.util.List executeBatchAndWait(java.util.Collection)>
+    <com.facebook.j: void <init>(java.util.Collection)>
+    <com.facebook.j: void <init>(java.util.Collection)>
+    <com.facebook.j: void <init>(java.util.Collection)>
+    <com.facebook.h: java.util.List executeBatchAndWait(java.util.Collection)>
+    <com.facebook.h: java.util.List executeBatchAndWait(com.facebook.j)>
+    <com.facebook.h: java.net.HttpURLConnection toHttpConnection(com.facebook.j)>
+    <com.facebook.h: void a(com.facebook.j,java.net.HttpURLConnection)>
+    <com.facebook.h: void a(com.facebook.j,com.facebook.internal.v,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.j: com.facebook.h get(int)>
+    <com.facebook.j: com.facebook.h get(int)>
+    <com.facebook.j: com.facebook.h get(int)>
+    <com.facebook.j: com.facebook.h get(int)>
+    <com.facebook.h: void a(com.facebook.j,com.facebook.internal.v,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.h: void a(com.facebook.j,com.facebook.internal.v,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.h: void a(android.os.Bundle,com.facebook.h$h,com.facebook.h)>
+    <com.facebook.h: void a(android.os.Bundle,com.facebook.h$h,com.facebook.h)>
+    <com.facebook.h$h: void writeObject(java.lang.String,java.lang.Object,com.facebook.h)>
+    <com.facebook.h$h: void writeObject(java.lang.String,java.lang.Object,com.facebook.h)>
+    <com.facebook.h$h: void writeBytes(java.lang.String,byte[])>
+    <com.facebook.h$h: void writeBytes(java.lang.String,byte[])>
+    <com.facebook.h$h: void writeBytes(java.lang.String,byte[])>
+    <com.facebook.h$h: void writeLine(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void write(java.lang.String,java.lang.Object[])>
+
+Leak 18:
+  Source: $r11 = virtualinvoke $r10.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r9, $r6, null, null, null) (<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>)
+  Sink: virtualinvoke $r3.<java.io.OutputStream: void write(byte[])>($r5) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.facebook.internal.b: com.facebook.internal.b getAttributionIdentifiers(android.content.Context)>
+    <com.facebook.internal.b: com.facebook.internal.b getAttributionIdentifiers(android.content.Context)>
+    <com.facebook.internal.b: com.facebook.internal.b getAttributionIdentifiers(android.content.Context)>
+    <com.facebook.internal.b: com.facebook.internal.b getAttributionIdentifiers(android.content.Context)>
+    <com.facebook.u$1: void run()>
+    <com.facebook.internal.b: java.lang.String getAndroidAdvertiserId()>
+    <com.facebook.u$1: void run()>
+    <com.facebook.internal.b: com.facebook.internal.b getAttributionIdentifiers(android.content.Context)>
+    <com.facebook.internal.b: com.facebook.internal.b getAttributionIdentifiers(android.content.Context)>
+    <com.facebook.internal.b: com.facebook.internal.b getAttributionIdentifiers(android.content.Context)>
+    <com.facebook.u$1: void run()>
+    <com.facebook.internal.b: java.lang.String getAndroidAdvertiserId()>
+    <com.facebook.u$1: void run()>
+    <com.facebook.u: void c()>
+    <com.facebook.u: void b(com.facebook.u$a)>
+    <com.facebook.u: void initializeIfNotInitialized()>
+    <com.facebook.u: void c()>
+    <com.facebook.u$1: void run()>
+    <com.facebook.internal.b: com.facebook.internal.b getAttributionIdentifiers(android.content.Context)>
+    <com.facebook.internal.b: com.facebook.internal.b getAttributionIdentifiers(android.content.Context)>
+    <com.facebook.u$1: void run()>
+    <com.facebook.internal.b: java.lang.String getAndroidAdvertiserId()>
+    <com.facebook.u$1: void run()>
+    <com.facebook.internal.b: java.lang.String getAndroidAdvertiserId()>
+    <com.facebook.u$1: void run()>
+    <com.facebook.internal.b: java.lang.String getAndroidAdvertiserId()>
+    <com.facebook.internal.b: java.lang.String getAndroidAdvertiserId()>
+    <com.facebook.u$1: void run()>
+    <com.facebook.u$1: void run()>
+    <com.facebook.h: void setParameters(android.os.Bundle)>
+    <com.facebook.h: void setParameters(android.os.Bundle)>
+    <com.facebook.u$1: void run()>
+    <com.facebook.h: com.facebook.GraphResponse executeAndWait()>
+    <com.facebook.h: com.facebook.GraphResponse executeAndWait(com.facebook.h)>
+    <com.facebook.h: com.facebook.GraphResponse executeAndWait(com.facebook.h)>
+    <com.facebook.h: java.util.List executeBatchAndWait(com.facebook.h[])>
+    <com.facebook.h: java.util.List executeBatchAndWait(com.facebook.h[])>
+    <com.facebook.h: java.util.List executeBatchAndWait(java.util.Collection)>
+    <com.facebook.j: void <init>(java.util.Collection)>
+    <com.facebook.j: void <init>(java.util.Collection)>
+    <com.facebook.j: void <init>(java.util.Collection)>
+    <com.facebook.h: java.util.List executeBatchAndWait(java.util.Collection)>
+    <com.facebook.h: java.util.List executeBatchAndWait(com.facebook.j)>
+    <com.facebook.h: void a(com.facebook.j,java.util.List)>
+    <com.facebook.j: com.facebook.h get(int)>
+    <com.facebook.j: com.facebook.h get(int)>
+    <com.facebook.j: com.facebook.h get(int)>
+    <com.facebook.j: com.facebook.h get(int)>
+    <com.facebook.h: void a(com.facebook.j,java.util.List)>
+    <com.facebook.h: void a(com.facebook.j,java.util.List)>
+    <com.facebook.h: void a(com.facebook.j,java.util.List)>
+    <com.facebook.h: void a(com.facebook.j,java.util.List)>
+    <com.facebook.h: void a(com.facebook.j,java.util.List)>
+    <com.facebook.h: void a(com.facebook.j,java.util.List)>
+    <com.facebook.h: void a(com.facebook.j,java.util.List)>
+    <com.facebook.j: com.facebook.h get(int)>
+    <com.facebook.j: com.facebook.h get(int)>
+    <com.facebook.j: com.facebook.h get(int)>
+    <com.facebook.j: com.facebook.h get(int)>
+    <com.facebook.h: void a(com.facebook.j,java.util.List)>
+    <com.facebook.j: com.facebook.h get(int)>
+    <com.facebook.h: void a(com.facebook.j,java.util.List)>
+    <com.facebook.h: java.util.List executeBatchAndWait(com.facebook.j)>
+    <com.facebook.h: java.net.HttpURLConnection toHttpConnection(com.facebook.j)>
+    <com.facebook.h: void a(com.facebook.j,java.net.HttpURLConnection)>
+    <com.facebook.h: void a(com.facebook.j,com.facebook.internal.v,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.j: com.facebook.h get(int)>
+    <com.facebook.j: com.facebook.h get(int)>
+    <com.facebook.j: com.facebook.h get(int)>
+    <com.facebook.j: com.facebook.h get(int)>
+    <com.facebook.h: void a(com.facebook.j,com.facebook.internal.v,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.h: void a(com.facebook.j,com.facebook.internal.v,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.h: void a(android.os.Bundle,com.facebook.h$h,com.facebook.h)>
+    <com.facebook.h: void a(android.os.Bundle,com.facebook.h$h,com.facebook.h)>
+    <com.facebook.h$h: void writeObject(java.lang.String,java.lang.Object,com.facebook.h)>
+    <com.facebook.h$h: void writeObject(java.lang.String,java.lang.Object,com.facebook.h)>
+    <com.facebook.h$h: void writeBytes(java.lang.String,byte[])>
+    <com.facebook.h$h: void writeBytes(java.lang.String,byte[])>
+    <com.facebook.h$h: void writeBytes(java.lang.String,byte[])>
+    <com.facebook.h$h: void writeLine(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void write(java.lang.String,java.lang.Object[])>
+
+Leak 19:
+  Source: $r4 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r3, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r3.<java.io.OutputStream: void write(byte[])>($r5) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.facebook.FacebookSdk: void a(android.content.Context)>
+    <com.facebook.FacebookSdk: void a(android.content.Context)>
+    <com.facebook.FacebookSdk: void a(android.content.Context)>
+    <com.facebook.FacebookSdk: void a(android.content.Context)>
+    <com.facebook.FacebookSdk: void a(android.content.Context)>
+    <com.facebook.FacebookSdk: void a(android.content.Context)>
+    <com.facebook.FacebookSdk: void sdkInitialize(android.content.Context,com.facebook.FacebookSdk$a)>
+    <com.facebook.internal.m: void loadAppSettingsAsync()>
+    <com.facebook.internal.m$1: void run()>
+    <com.facebook.internal.m: org.json.JSONObject a(java.lang.String)>
+    <com.facebook.internal.m: org.json.JSONObject b(java.lang.String)>
+    <com.facebook.h: com.facebook.GraphResponse executeAndWait()>
+    <com.facebook.h: com.facebook.GraphResponse executeAndWait(com.facebook.h)>
+    <com.facebook.h: java.util.List executeBatchAndWait(com.facebook.h[])>
+    <com.facebook.h: java.util.List executeBatchAndWait(java.util.Collection)>
+    <com.facebook.h: java.util.List executeBatchAndWait(com.facebook.j)>
+    <com.facebook.h: java.net.HttpURLConnection toHttpConnection(com.facebook.j)>
+    <com.facebook.h: void a(com.facebook.j,java.net.HttpURLConnection)>
+    <com.facebook.h: void a(com.facebook.j,com.facebook.internal.v,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.h: java.lang.String d(com.facebook.j)>
+    <com.facebook.FacebookSdk: java.lang.String getApplicationId()>
+    <com.facebook.FacebookSdk: java.lang.String getApplicationId()>
+    <com.facebook.h: java.lang.String d(com.facebook.j)>
+    <com.facebook.h: void a(com.facebook.j,com.facebook.internal.v,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.h$h: void writeString(java.lang.String,java.lang.String)>
+    <com.facebook.h$h: void writeString(java.lang.String,java.lang.String)>
+    <com.facebook.h$h: void writeLine(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void writeLine(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void writeString(java.lang.String,java.lang.String)>
+    <com.facebook.h$h: void writeContentDisposition(java.lang.String,java.lang.String,java.lang.String)>
+    <com.facebook.h$h: void writeLine(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void write(java.lang.String,java.lang.Object[])>
+
+Leak 20:
+  Source: $r4 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r3, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r3.<java.io.OutputStream: void write(byte[])>($r5) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.facebook.appevents.internal.b: java.lang.String getAppVersion()>
+    <com.facebook.appevents.internal.b: java.lang.String getAppVersion()>
+    <com.facebook.appevents.internal.b: java.lang.String getAppVersion()>
+    <com.facebook.appevents.codeless.d: com.facebook.h buildAppIndexingRequest(java.lang.String,com.facebook.a,java.lang.String,java.lang.String)>
+    <com.facebook.appevents.codeless.d: com.facebook.h buildAppIndexingRequest(java.lang.String,com.facebook.a,java.lang.String,java.lang.String)>
+    <com.facebook.h: void setParameters(android.os.Bundle)>
+    <com.facebook.h: void setParameters(android.os.Bundle)>
+    <com.facebook.appevents.codeless.d: com.facebook.h buildAppIndexingRequest(java.lang.String,com.facebook.a,java.lang.String,java.lang.String)>
+    <com.facebook.appevents.codeless.d$3: void run()>
+    <com.facebook.h: com.facebook.GraphResponse executeAndWait()>
+    <com.facebook.h: com.facebook.GraphResponse executeAndWait(com.facebook.h)>
+    <com.facebook.h: com.facebook.GraphResponse executeAndWait(com.facebook.h)>
+    <com.facebook.h: java.util.List executeBatchAndWait(com.facebook.h[])>
+    <com.facebook.h: java.util.List executeBatchAndWait(com.facebook.h[])>
+    <com.facebook.h: java.util.List executeBatchAndWait(java.util.Collection)>
+    <com.facebook.j: void <init>(java.util.Collection)>
+    <com.facebook.j: void <init>(java.util.Collection)>
+    <com.facebook.j: void <init>(java.util.Collection)>
+    <com.facebook.h: java.util.List executeBatchAndWait(java.util.Collection)>
+    <com.facebook.h: java.util.List executeBatchAndWait(com.facebook.j)>
+    <com.facebook.h: java.net.HttpURLConnection toHttpConnection(com.facebook.j)>
+    <com.facebook.h: void a(com.facebook.j,java.net.HttpURLConnection)>
+    <com.facebook.h: void a(com.facebook.j,com.facebook.internal.v,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.j: com.facebook.h get(int)>
+    <com.facebook.j: com.facebook.h get(int)>
+    <com.facebook.j: com.facebook.h get(int)>
+    <com.facebook.j: com.facebook.h get(int)>
+    <com.facebook.h: void a(com.facebook.j,com.facebook.internal.v,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.h: void a(com.facebook.j,com.facebook.internal.v,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.h: void a(android.os.Bundle,com.facebook.h$h,com.facebook.h)>
+    <com.facebook.h: void a(android.os.Bundle,com.facebook.h$h,com.facebook.h)>
+    <com.facebook.h$h: void writeObject(java.lang.String,java.lang.Object,com.facebook.h)>
+    <com.facebook.h: java.lang.String b(java.lang.Object)>
+    <com.facebook.h: java.lang.String e(java.lang.Object)>
+    <com.facebook.h: java.lang.String e(java.lang.Object)>
+    <com.facebook.h: java.lang.String b(java.lang.Object)>
+    <com.facebook.h$h: void writeObject(java.lang.String,java.lang.Object,com.facebook.h)>
+    <com.facebook.h$h: void writeString(java.lang.String,java.lang.String)>
+    <com.facebook.h$h: void writeString(java.lang.String,java.lang.String)>
+    <com.facebook.h$h: void writeLine(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void writeLine(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void writeString(java.lang.String,java.lang.String)>
+    <com.facebook.h$h: void writeContentDisposition(java.lang.String,java.lang.String,java.lang.String)>
+    <com.facebook.h$h: void writeLine(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void write(java.lang.String,java.lang.Object[])>
+
+Leak 21:
+  Source: $r11 = virtualinvoke $r10.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r9, $r6, null, null, null) (<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>)
+  Sink: virtualinvoke $r3.<java.io.OutputStream: void write(byte[])>($r5) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.facebook.internal.b: com.facebook.internal.b getAttributionIdentifiers(android.content.Context)>
+    <com.facebook.internal.b: com.facebook.internal.b getAttributionIdentifiers(android.content.Context)>
+    <com.facebook.internal.b: com.facebook.internal.b getAttributionIdentifiers(android.content.Context)>
+    <com.facebook.internal.b: com.facebook.internal.b getAttributionIdentifiers(android.content.Context)>
+    <com.facebook.u$1: void run()>
+    <com.facebook.internal.b: java.lang.String getAndroidAdvertiserId()>
+    <com.facebook.internal.b: java.lang.String getAndroidAdvertiserId()>
+    <com.facebook.u$1: void run()>
+    <com.facebook.u$1: void run()>
+    <com.facebook.h: void setParameters(android.os.Bundle)>
+    <com.facebook.h: void setParameters(android.os.Bundle)>
+    <com.facebook.u$1: void run()>
+    <com.facebook.h: com.facebook.GraphResponse executeAndWait()>
+    <com.facebook.h: com.facebook.GraphResponse executeAndWait(com.facebook.h)>
+    <com.facebook.h: com.facebook.GraphResponse executeAndWait(com.facebook.h)>
+    <com.facebook.h: java.util.List executeBatchAndWait(com.facebook.h[])>
+    <com.facebook.h: java.util.List executeBatchAndWait(com.facebook.h[])>
+    <com.facebook.h: java.util.List executeBatchAndWait(java.util.Collection)>
+    <com.facebook.j: void <init>(java.util.Collection)>
+    <com.facebook.j: void <init>(java.util.Collection)>
+    <com.facebook.j: void <init>(java.util.Collection)>
+    <com.facebook.h: java.util.List executeBatchAndWait(java.util.Collection)>
+    <com.facebook.h: java.util.List executeBatchAndWait(com.facebook.j)>
+    <com.facebook.h: java.net.HttpURLConnection toHttpConnection(com.facebook.j)>
+    <com.facebook.h: void a(com.facebook.j,java.net.HttpURLConnection)>
+    <com.facebook.h: void a(com.facebook.j,com.facebook.internal.v,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.j: com.facebook.h get(int)>
+    <com.facebook.j: com.facebook.h get(int)>
+    <com.facebook.j: com.facebook.h get(int)>
+    <com.facebook.j: com.facebook.h get(int)>
+    <com.facebook.h: void a(com.facebook.j,com.facebook.internal.v,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.h: void a(com.facebook.j,com.facebook.internal.v,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.h: void a(android.os.Bundle,com.facebook.h$h,com.facebook.h)>
+    <com.facebook.h: void a(android.os.Bundle,com.facebook.h$h,com.facebook.h)>
+    <com.facebook.h$h: void writeObject(java.lang.String,java.lang.Object,com.facebook.h)>
+    <com.facebook.h: java.lang.String b(java.lang.Object)>
+    <com.facebook.h: java.lang.String e(java.lang.Object)>
+    <com.facebook.h: java.lang.String e(java.lang.Object)>
+    <com.facebook.h: java.lang.String b(java.lang.Object)>
+    <com.facebook.h$h: void writeObject(java.lang.String,java.lang.Object,com.facebook.h)>
+    <com.facebook.h$h: void writeString(java.lang.String,java.lang.String)>
+    <com.facebook.h$h: void writeString(java.lang.String,java.lang.String)>
+    <com.facebook.h$h: void writeLine(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void writeLine(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void writeString(java.lang.String,java.lang.String)>
+    <com.facebook.h$h: void writeContentDisposition(java.lang.String,java.lang.String,java.lang.String)>
+    <com.facebook.h$h: void writeLine(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void write(java.lang.String,java.lang.Object[])>
+
+Leak 22:
+  Source: $r4 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r3, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r3.<java.io.OutputStream: void write(byte[])>($r2) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.facebook.FacebookSdk: void a(android.content.Context)>
+    <com.facebook.FacebookSdk: void a(android.content.Context)>
+    <com.facebook.FacebookSdk: void a(android.content.Context)>
+    <com.facebook.FacebookSdk: void a(android.content.Context)>
+    <com.facebook.FacebookSdk: void a(android.content.Context)>
+    <com.facebook.FacebookSdk: void a(android.content.Context)>
+    <com.facebook.FacebookSdk: void sdkInitialize(android.content.Context,com.facebook.FacebookSdk$a)>
+    <com.facebook.FacebookSdk: void sdkInitialize(android.content.Context)>
+    <com.facebook.internal.ac: java.lang.String getMetadataApplicationId(android.content.Context)>
+    <com.facebook.appevents.AppEventsLogger: void <init>(java.lang.String,java.lang.String,com.facebook.a)>
+    <com.facebook.appevents.internal.g: void <init>(java.lang.String,java.lang.String,com.facebook.a)>
+    <com.facebook.appevents.internal.g: void <init>(android.content.Context)>
+    <com.facebook.appevents.internal.c: void <clinit>()>
+    <com.facebook.internal.m$1: void run()>
+    <com.facebook.internal.m: void loadAppSettingsAsync()>
+    <com.facebook.FacebookSdk: void sdkInitialize(android.content.Context,com.facebook.FacebookSdk$a)>
+    <com.facebook.appevents.AppEventsLogger: void activateApp(android.content.Context,java.lang.String)>
+    <com.facebook.appevents.AppEventsLogger: void activateApp(android.content.Context)>
+    <com.yigomob.philippine.pesogo.manager.MyApplication: void a()>
+    <com.facebook.appevents.AppEventsLogger: void activateApp(android.content.Context)>
+    <com.facebook.appevents.AppEventsLogger: void activateApp(android.content.Context,java.lang.String)>
+    <com.facebook.FacebookSdk: void publishInstallAsync(android.content.Context,java.lang.String)>
+    <com.facebook.FacebookSdk$4: void run()>
+    <com.facebook.FacebookSdk: void a(android.content.Context,java.lang.String)>
+    <com.facebook.h: com.facebook.GraphResponse executeAndWait()>
+    <com.facebook.h: com.facebook.GraphResponse executeAndWait(com.facebook.h)>
+    <com.facebook.h: java.util.List executeBatchAndWait(com.facebook.h[])>
+    <com.facebook.h: java.util.List executeBatchAndWait(java.util.Collection)>
+    <com.facebook.h: java.util.List executeBatchAndWait(com.facebook.j)>
+    <com.facebook.h: java.net.HttpURLConnection toHttpConnection(com.facebook.j)>
+    <com.facebook.h: void a(com.facebook.j,java.net.HttpURLConnection)>
+    <com.facebook.h: void a(com.facebook.j,com.facebook.internal.v,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.h: java.lang.String d(com.facebook.j)>
+    <com.facebook.FacebookSdk: java.lang.String getApplicationId()>
+    <com.facebook.FacebookSdk: java.lang.String getApplicationId()>
+    <com.facebook.h: java.lang.String d(com.facebook.j)>
+    <com.facebook.h: void a(com.facebook.j,com.facebook.internal.v,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.h$h: void writeString(java.lang.String,java.lang.String)>
+    <com.facebook.h$h: void writeString(java.lang.String,java.lang.String)>
+    <com.facebook.h$h: void writeLine(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void writeLine(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void writeString(java.lang.String,java.lang.String)>
+    <com.facebook.h: void a(com.facebook.j,com.facebook.internal.v,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.h: void a(java.util.Map,com.facebook.h$h)>
+    <com.facebook.h$h: void writeObject(java.lang.String,java.lang.Object,com.facebook.h)>
+    <com.facebook.h$h: void writeBytes(java.lang.String,byte[])>
+    <com.facebook.h$h: void writeBytes(java.lang.String,byte[])>
+
+Leak 23:
+  Source: $r4 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r3, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r3.<java.io.OutputStream: void write(byte[])>($r2) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.facebook.appevents.internal.b: java.lang.String getAppVersion()>
+    <com.facebook.appevents.internal.b: java.lang.String getAppVersion()>
+    <com.facebook.appevents.internal.b: java.lang.String getAppVersion()>
+    <com.facebook.appevents.codeless.d: com.facebook.h buildAppIndexingRequest(java.lang.String,com.facebook.a,java.lang.String,java.lang.String)>
+    <com.facebook.appevents.codeless.d: com.facebook.h buildAppIndexingRequest(java.lang.String,com.facebook.a,java.lang.String,java.lang.String)>
+    <com.facebook.h: void setParameters(android.os.Bundle)>
+    <com.facebook.h: void setParameters(android.os.Bundle)>
+    <com.facebook.appevents.codeless.d: com.facebook.h buildAppIndexingRequest(java.lang.String,com.facebook.a,java.lang.String,java.lang.String)>
+    <com.facebook.h: void setCallback(com.facebook.h$b)>
+    <com.facebook.h$4: void <init>(com.facebook.h,com.facebook.h$b)>
+    <com.facebook.h$4: void <init>(com.facebook.h,com.facebook.h$b)>
+    <com.facebook.h: void setCallback(com.facebook.h$b)>
+    <com.facebook.h: void setCallback(com.facebook.h$b)>
+    <com.facebook.h$4: void <init>(com.facebook.h,com.facebook.h$b)>
+    <com.facebook.h$4: void <init>(com.facebook.h,com.facebook.h$b)>
+    <com.facebook.h: void setCallback(com.facebook.h$b)>
+    <com.facebook.h: void setCallback(com.facebook.h$b)>
+    <com.facebook.appevents.codeless.d: com.facebook.h buildAppIndexingRequest(java.lang.String,com.facebook.a,java.lang.String,java.lang.String)>
+    <com.facebook.appevents.codeless.d$3: void run()>
+    <com.facebook.h: com.facebook.GraphResponse executeAndWait()>
+    <com.facebook.h: com.facebook.GraphResponse executeAndWait(com.facebook.h)>
+    <com.facebook.h: com.facebook.GraphResponse executeAndWait(com.facebook.h)>
+    <com.facebook.h: java.util.List executeBatchAndWait(com.facebook.h[])>
+    <com.facebook.h: java.util.List executeBatchAndWait(com.facebook.h[])>
+    <com.facebook.h: java.util.List executeBatchAndWait(java.util.Collection)>
+    <com.facebook.j: void <init>(java.util.Collection)>
+    <com.facebook.j: void <init>(java.util.Collection)>
+    <com.facebook.j: void <init>(java.util.Collection)>
+    <com.facebook.h: java.util.List executeBatchAndWait(java.util.Collection)>
+    <com.facebook.h: java.util.List executeBatchAndWait(com.facebook.j)>
+    <com.facebook.h: java.net.HttpURLConnection toHttpConnection(com.facebook.j)>
+    <com.facebook.h: void a(com.facebook.j,java.net.HttpURLConnection)>
+    <com.facebook.h: void a(com.facebook.j,com.facebook.internal.v,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.j: com.facebook.h get(int)>
+    <com.facebook.j: com.facebook.h get(int)>
+    <com.facebook.j: com.facebook.h get(int)>
+    <com.facebook.j: com.facebook.h get(int)>
+    <com.facebook.h: void a(com.facebook.j,com.facebook.internal.v,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.h: void a(com.facebook.j,com.facebook.internal.v,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.h: void a(android.os.Bundle,com.facebook.h$h,com.facebook.h)>
+    <com.facebook.h: void a(android.os.Bundle,com.facebook.h$h,com.facebook.h)>
+    <com.facebook.h$h: void writeObject(java.lang.String,java.lang.Object,com.facebook.h)>
+    <com.facebook.h$h: void writeObject(java.lang.String,java.lang.Object,com.facebook.h)>
+    <com.facebook.h$h: void writeBytes(java.lang.String,byte[])>
+
+Leak 24:
+  Source: $r11 = virtualinvoke $r10.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r9, $r6, null, null, null) (<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>)
+  Sink: virtualinvoke $r3.<java.io.OutputStream: void write(byte[])>($r2) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.facebook.internal.b: com.facebook.internal.b getAttributionIdentifiers(android.content.Context)>
+    <com.facebook.internal.b: com.facebook.internal.b getAttributionIdentifiers(android.content.Context)>
+    <com.facebook.internal.b: com.facebook.internal.b getAttributionIdentifiers(android.content.Context)>
+    <com.facebook.internal.b: com.facebook.internal.b getAttributionIdentifiers(android.content.Context)>
+    <com.facebook.internal.b: com.facebook.internal.b a(com.facebook.internal.b)>
+    <com.facebook.internal.b: com.facebook.internal.b a(com.facebook.internal.b)>
+    <com.facebook.internal.b: com.facebook.internal.b getAttributionIdentifiers(android.content.Context)>
+    <com.facebook.appevents.d: com.facebook.appevents.l a(com.facebook.appevents.a)>
+    <com.facebook.appevents.d: void addPersistedEvents(com.facebook.appevents.k)>
+    <com.facebook.appevents.d: com.facebook.appevents.l a(com.facebook.appevents.a)>
+    <com.facebook.internal.b: com.facebook.internal.b getAttributionIdentifiers(android.content.Context)>
+    <com.facebook.internal.b: java.lang.String getAndroidAdvertiserId()>
+    <com.facebook.FacebookSdk: boolean getAdvertiserIDCollectionEnabled()>
+    <com.facebook.u: boolean getAdvertiserIDCollectionEnabled()>
+    <com.facebook.u: void initializeIfNotInitialized()>
+    <com.facebook.u: void c()>
+    <com.facebook.u$1: void run()>
+    <com.facebook.internal.b: com.facebook.internal.b getAttributionIdentifiers(android.content.Context)>
+    <com.facebook.internal.b: com.facebook.internal.b getAttributionIdentifiers(android.content.Context)>
+    <com.facebook.u$1: void run()>
+    <com.facebook.internal.b: java.lang.String getAndroidAdvertiserId()>
+    <com.facebook.internal.b: java.lang.String getAndroidAdvertiserId()>
+    <com.facebook.u$1: void run()>
+    <com.facebook.u$1: void run()>
+    <com.facebook.h: void setParameters(android.os.Bundle)>
+    <com.facebook.h: void setParameters(android.os.Bundle)>
+    <com.facebook.u$1: void run()>
+    <com.facebook.h: com.facebook.GraphResponse executeAndWait()>
+    <com.facebook.h: com.facebook.GraphResponse executeAndWait(com.facebook.h)>
+    <com.facebook.h: com.facebook.GraphResponse executeAndWait(com.facebook.h)>
+    <com.facebook.h: java.util.List executeBatchAndWait(com.facebook.h[])>
+    <com.facebook.h: java.util.List executeBatchAndWait(com.facebook.h[])>
+    <com.facebook.h: java.util.List executeBatchAndWait(java.util.Collection)>
+    <com.facebook.j: void <init>(java.util.Collection)>
+    <com.facebook.j: void <init>(java.util.Collection)>
+    <com.facebook.j: void <init>(java.util.Collection)>
+    <com.facebook.h: java.util.List executeBatchAndWait(java.util.Collection)>
+    <com.facebook.h: java.util.List executeBatchAndWait(com.facebook.j)>
+    <com.facebook.h: java.net.HttpURLConnection toHttpConnection(com.facebook.j)>
+    <com.facebook.h: void a(com.facebook.j,java.net.HttpURLConnection)>
+    <com.facebook.h: void a(com.facebook.j,com.facebook.internal.v,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.j: com.facebook.h get(int)>
+    <com.facebook.j: com.facebook.h get(int)>
+    <com.facebook.j: com.facebook.h get(int)>
+    <com.facebook.j: com.facebook.h get(int)>
+    <com.facebook.h: void a(com.facebook.j,com.facebook.internal.v,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.h: void a(com.facebook.j,com.facebook.internal.v,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.h: void a(android.os.Bundle,com.facebook.h$h,com.facebook.h)>
+    <com.facebook.h: void a(android.os.Bundle,com.facebook.h$h,com.facebook.h)>
+    <com.facebook.h$h: void writeObject(java.lang.String,java.lang.Object,com.facebook.h)>
+    <com.facebook.h: java.lang.String b(java.lang.Object)>
+    <com.facebook.h: java.lang.String e(java.lang.Object)>
+    <com.facebook.h: java.lang.String e(java.lang.Object)>
+    <com.facebook.h: java.lang.String b(java.lang.Object)>
+    <com.facebook.h$h: void writeObject(java.lang.String,java.lang.Object,com.facebook.h)>
+    <com.facebook.h$h: void writeString(java.lang.String,java.lang.String)>
+    <com.facebook.h$h: void writeString(java.lang.String,java.lang.String)>
+    <com.facebook.h$h: void writeLine(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void writeLine(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void writeString(java.lang.String,java.lang.String)>
+    <com.facebook.h$h: void writeObject(java.lang.String,java.lang.Object,com.facebook.h)>
+    <com.facebook.h: void a(android.os.Bundle,com.facebook.h$h,com.facebook.h)>
+    <com.facebook.h: void a(com.facebook.j,com.facebook.internal.v,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.h: void a(java.util.Map,com.facebook.h$h)>
+    <com.facebook.h$h: void writeObject(java.lang.String,java.lang.Object,com.facebook.h)>
+    <com.facebook.h$h: void writeBytes(java.lang.String,byte[])>
+    <com.facebook.h$h: void writeBytes(java.lang.String,byte[])>
+
+Leak 25:
+  Source: $r4 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r3, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r3.<java.io.OutputStream: void write(byte[])>($r4) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.facebook.FacebookSdk: void a(android.content.Context)>
+    <com.facebook.FacebookSdk: void a(android.content.Context)>
+    <com.facebook.FacebookSdk: void a(android.content.Context)>
+    <com.facebook.FacebookSdk: void a(android.content.Context)>
+    <com.facebook.FacebookSdk: void a(android.content.Context)>
+    <com.facebook.FacebookSdk: void a(android.content.Context)>
+    <com.facebook.FacebookSdk: void sdkInitialize(android.content.Context,com.facebook.FacebookSdk$a)>
+    <com.facebook.internal.m: void loadAppSettingsAsync()>
+    <com.facebook.internal.m$1: void run()>
+    <com.facebook.internal.m: org.json.JSONObject a(java.lang.String)>
+    <com.facebook.internal.m: org.json.JSONObject b(java.lang.String)>
+    <com.facebook.h: com.facebook.GraphResponse executeAndWait()>
+    <com.facebook.h: com.facebook.GraphResponse executeAndWait(com.facebook.h)>
+    <com.facebook.h: java.util.List executeBatchAndWait(com.facebook.h[])>
+    <com.facebook.h: java.util.List executeBatchAndWait(java.util.Collection)>
+    <com.facebook.h: java.util.List executeBatchAndWait(com.facebook.j)>
+    <com.facebook.h: java.net.HttpURLConnection toHttpConnection(com.facebook.j)>
+    <com.facebook.h: void a(com.facebook.j,java.net.HttpURLConnection)>
+    <com.facebook.h: void a(com.facebook.j,com.facebook.internal.v,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.h: java.lang.String d(com.facebook.j)>
+    <com.facebook.FacebookSdk: java.lang.String getApplicationId()>
+    <com.facebook.FacebookSdk: java.lang.String getApplicationId()>
+    <com.facebook.h: java.lang.String d(com.facebook.j)>
+    <com.facebook.h: void a(com.facebook.j,com.facebook.internal.v,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.h$h: void writeString(java.lang.String,java.lang.String)>
+    <com.facebook.h$h: void writeString(java.lang.String,java.lang.String)>
+    <com.facebook.h$h: void writeLine(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void writeLine(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void writeString(java.lang.String,java.lang.String)>
+    <com.facebook.h$h: void writeRecordBoundary()>
+    <com.facebook.h$h: void writeRecordBoundary()>
+
+Leak 26:
+  Source: $r4 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r3, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r3.<java.io.OutputStream: void write(byte[])>($r4) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.facebook.appevents.internal.b: java.lang.String getAppVersion()>
+    <com.facebook.appevents.internal.b: java.lang.String getAppVersion()>
+    <com.facebook.appevents.internal.b: java.lang.String getAppVersion()>
+    <com.facebook.appevents.codeless.d: com.facebook.h buildAppIndexingRequest(java.lang.String,com.facebook.a,java.lang.String,java.lang.String)>
+    <com.facebook.appevents.codeless.d: com.facebook.h buildAppIndexingRequest(java.lang.String,com.facebook.a,java.lang.String,java.lang.String)>
+    <com.facebook.h: void setParameters(android.os.Bundle)>
+    <com.facebook.h: void setParameters(android.os.Bundle)>
+    <com.facebook.appevents.codeless.d: com.facebook.h buildAppIndexingRequest(java.lang.String,com.facebook.a,java.lang.String,java.lang.String)>
+    <com.facebook.appevents.codeless.d$3: void run()>
+    <com.facebook.h: com.facebook.GraphResponse executeAndWait()>
+    <com.facebook.h: com.facebook.GraphResponse executeAndWait(com.facebook.h)>
+    <com.facebook.h: com.facebook.GraphResponse executeAndWait(com.facebook.h)>
+    <com.facebook.h: java.util.List executeBatchAndWait(com.facebook.h[])>
+    <com.facebook.h: java.util.List executeBatchAndWait(com.facebook.h[])>
+    <com.facebook.h: java.util.List executeBatchAndWait(java.util.Collection)>
+    <com.facebook.j: void <init>(java.util.Collection)>
+    <com.facebook.j: void <init>(java.util.Collection)>
+    <com.facebook.j: void <init>(java.util.Collection)>
+    <com.facebook.h: java.util.List executeBatchAndWait(java.util.Collection)>
+    <com.facebook.h: java.util.List executeBatchAndWait(com.facebook.j)>
+    <com.facebook.h: java.net.HttpURLConnection toHttpConnection(com.facebook.j)>
+    <com.facebook.h: void a(com.facebook.j,java.net.HttpURLConnection)>
+    <com.facebook.h: void a(com.facebook.j,com.facebook.internal.v,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.j: com.facebook.h get(int)>
+    <com.facebook.j: com.facebook.h get(int)>
+    <com.facebook.j: com.facebook.h get(int)>
+    <com.facebook.j: com.facebook.h get(int)>
+    <com.facebook.h: void a(com.facebook.j,com.facebook.internal.v,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.h: void a(com.facebook.j,com.facebook.internal.v,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.h: void a(android.os.Bundle,com.facebook.h$h,com.facebook.h)>
+    <com.facebook.h: void a(android.os.Bundle,com.facebook.h$h,com.facebook.h)>
+    <com.facebook.h$h: void writeObject(java.lang.String,java.lang.Object,com.facebook.h)>
+    <com.facebook.h: java.lang.String b(java.lang.Object)>
+    <com.facebook.h: java.lang.String e(java.lang.Object)>
+    <com.facebook.h: java.lang.String e(java.lang.Object)>
+    <com.facebook.h: java.lang.String b(java.lang.Object)>
+    <com.facebook.h$h: void writeObject(java.lang.String,java.lang.Object,com.facebook.h)>
+    <com.facebook.h$h: void writeString(java.lang.String,java.lang.String)>
+    <com.facebook.h$h: void writeString(java.lang.String,java.lang.String)>
+    <com.facebook.h$h: void writeLine(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void writeLine(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void writeString(java.lang.String,java.lang.String)>
+    <com.facebook.h$h: void writeObject(java.lang.String,java.lang.Object,com.facebook.h)>
+    <com.facebook.h: void a(android.os.Bundle,com.facebook.h$h,com.facebook.h)>
+    <com.facebook.h$h: void writeObject(java.lang.String,java.lang.Object,com.facebook.h)>
+    <com.facebook.h$h: void writeString(java.lang.String,java.lang.String)>
+    <com.facebook.h$h: void writeRecordBoundary()>
+    <com.facebook.h$h: void writeRecordBoundary()>
+
+Leak 27:
+  Source: $r11 = virtualinvoke $r10.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r9, $r6, null, null, null) (<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>)
+  Sink: virtualinvoke $r3.<java.io.OutputStream: void write(byte[])>($r4) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.facebook.internal.b: com.facebook.internal.b getAttributionIdentifiers(android.content.Context)>
+    <com.facebook.internal.b: com.facebook.internal.b getAttributionIdentifiers(android.content.Context)>
+    <com.facebook.internal.b: com.facebook.internal.b getAttributionIdentifiers(android.content.Context)>
+    <com.facebook.internal.b: com.facebook.internal.b getAttributionIdentifiers(android.content.Context)>
+    <com.facebook.internal.b: com.facebook.internal.b a(com.facebook.internal.b)>
+    <com.facebook.internal.b: com.facebook.internal.b a(com.facebook.internal.b)>
+    <com.facebook.internal.b: com.facebook.internal.b getAttributionIdentifiers(android.content.Context)>
+    <com.facebook.appevents.d: com.facebook.appevents.l a(com.facebook.appevents.a)>
+    <com.facebook.appevents.d: void addPersistedEvents(com.facebook.appevents.k)>
+    <com.facebook.appevents.d: com.facebook.appevents.l a(com.facebook.appevents.a)>
+    <com.facebook.internal.b: com.facebook.internal.b getAttributionIdentifiers(android.content.Context)>
+    <com.facebook.internal.b: java.lang.String getAndroidAdvertiserId()>
+    <com.facebook.FacebookSdk: boolean getAdvertiserIDCollectionEnabled()>
+    <com.facebook.u: boolean getAdvertiserIDCollectionEnabled()>
+    <com.facebook.u: void initializeIfNotInitialized()>
+    <com.facebook.u: void c()>
+    <com.facebook.u$1: void run()>
+    <com.facebook.internal.b: com.facebook.internal.b getAttributionIdentifiers(android.content.Context)>
+    <com.facebook.internal.b: com.facebook.internal.b getAttributionIdentifiers(android.content.Context)>
+    <com.facebook.u$1: void run()>
+    <com.facebook.internal.b: java.lang.String getAndroidAdvertiserId()>
+    <com.facebook.internal.b: java.lang.String getAndroidAdvertiserId()>
+    <com.facebook.u$1: void run()>
+    <com.facebook.u$1: void run()>
+    <com.facebook.h: void setParameters(android.os.Bundle)>
+    <com.facebook.h: void setParameters(android.os.Bundle)>
+    <com.facebook.u$1: void run()>
+    <com.facebook.h: com.facebook.GraphResponse executeAndWait()>
+    <com.facebook.h: com.facebook.GraphResponse executeAndWait(com.facebook.h)>
+    <com.facebook.h: com.facebook.GraphResponse executeAndWait(com.facebook.h)>
+    <com.facebook.h: java.util.List executeBatchAndWait(com.facebook.h[])>
+    <com.facebook.h: java.util.List executeBatchAndWait(com.facebook.h[])>
+    <com.facebook.h: java.util.List executeBatchAndWait(java.util.Collection)>
+    <com.facebook.j: void <init>(java.util.Collection)>
+    <com.facebook.j: void <init>(java.util.Collection)>
+    <com.facebook.j: void <init>(java.util.Collection)>
+    <com.facebook.h: java.util.List executeBatchAndWait(java.util.Collection)>
+    <com.facebook.h: java.util.List executeBatchAndWait(com.facebook.j)>
+    <com.facebook.h: java.net.HttpURLConnection toHttpConnection(com.facebook.j)>
+    <com.facebook.h: void a(com.facebook.j,java.net.HttpURLConnection)>
+    <com.facebook.h: void a(com.facebook.j,com.facebook.internal.v,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.j: com.facebook.h get(int)>
+    <com.facebook.j: com.facebook.h get(int)>
+    <com.facebook.j: com.facebook.h get(int)>
+    <com.facebook.j: com.facebook.h get(int)>
+    <com.facebook.h: void a(com.facebook.j,com.facebook.internal.v,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.h: void a(com.facebook.j,com.facebook.internal.v,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.h: void a(android.os.Bundle,com.facebook.h$h,com.facebook.h)>
+    <com.facebook.h: void a(android.os.Bundle,com.facebook.h$h,com.facebook.h)>
+    <com.facebook.h$h: void writeObject(java.lang.String,java.lang.Object,com.facebook.h)>
+    <com.facebook.h: java.lang.String b(java.lang.Object)>
+    <com.facebook.h: java.lang.String e(java.lang.Object)>
+    <com.facebook.h: java.lang.String e(java.lang.Object)>
+    <com.facebook.h: java.lang.String b(java.lang.Object)>
+    <com.facebook.h$h: void writeObject(java.lang.String,java.lang.Object,com.facebook.h)>
+    <com.facebook.h$h: void writeString(java.lang.String,java.lang.String)>
+    <com.facebook.h$h: void writeString(java.lang.String,java.lang.String)>
+    <com.facebook.h$h: void writeLine(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void writeLine(java.lang.String,java.lang.Object[])>
+    <com.facebook.h$h: void writeString(java.lang.String,java.lang.String)>
+    <com.facebook.h: void a(com.facebook.j,com.facebook.internal.v,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.h: void a(com.facebook.h$h,java.util.Collection,java.util.Map)>
+    <com.facebook.h$h: void writeRequestsAsJson(java.lang.String,org.json.JSONArray,java.util.Collection)>
+    <com.facebook.h$h: void writeString(java.lang.String,java.lang.String)>
+    <com.facebook.h$h: void writeRecordBoundary()>
+    <com.facebook.h$h: void writeRecordBoundary()>
+
+Leak 28:
+  Source: $r0 = staticinvoke <android.os.Environment: java.io.File getExternalStorageDirectory()>() (<android.os.Environment: java.io.File getExternalStorageDirectory()>)
+  Sink: virtualinvoke $r9.<java.io.FileOutputStream: void write(byte[])>($r11) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <com.yigomob.lib.utils.m: java.lang.String getSDPath()>
+    <com.yigomob.lib.utils.m: java.lang.String getSDPath()>
+    <com.yigomob.lib.utils.m: java.lang.String getSDPath()>
+    <com.yigomob.philippine.pesogo.manager.c: void compressPhoto(android.content.Context,java.io.File,com.yigomob.philippine.pesogo.e.c)>
+    <top.zibin.luban.e$a: top.zibin.luban.e$a setTargetDir(java.lang.String)>
+    <top.zibin.luban.e$a: top.zibin.luban.e$a setTargetDir(java.lang.String)>
+    <com.yigomob.philippine.pesogo.manager.c: void compressPhoto(android.content.Context,java.io.File,com.yigomob.philippine.pesogo.e.c)>
+    <top.zibin.luban.e$a: void launch()>
+    <top.zibin.luban.e$a: top.zibin.luban.e a()>
+    <top.zibin.luban.e: void <init>(top.zibin.luban.e$a,top.zibin.luban.e$1)>
+    <top.zibin.luban.e: void <init>(top.zibin.luban.e$a)>
+    <top.zibin.luban.e$a: java.lang.String a(top.zibin.luban.e$a)>
+    <top.zibin.luban.e$a: java.lang.String a(top.zibin.luban.e$a)>
+    <top.zibin.luban.e: void <init>(top.zibin.luban.e$a)>
+    <top.zibin.luban.e: void <init>(top.zibin.luban.e$a)>
+    <top.zibin.luban.e: void <init>(top.zibin.luban.e$a,top.zibin.luban.e$1)>
+    <top.zibin.luban.e$a: top.zibin.luban.e a()>
+    <top.zibin.luban.e$a: void launch()>
+    <top.zibin.luban.e: void a(top.zibin.luban.e,android.content.Context)>
+    <top.zibin.luban.e: void b(android.content.Context)>
+    <top.zibin.luban.e$1: void <init>(top.zibin.luban.e,android.content.Context,top.zibin.luban.d)>
+    <top.zibin.luban.e$1: void <init>(top.zibin.luban.e,android.content.Context,top.zibin.luban.d)>
+    <top.zibin.luban.e: void b(android.content.Context)>
+    <top.zibin.luban.e$1: void run()>
+    <top.zibin.luban.e$1: void run()>
+    <top.zibin.luban.e: java.io.File a(top.zibin.luban.e,android.content.Context,top.zibin.luban.d)>
+    <top.zibin.luban.e: java.io.File a(android.content.Context,top.zibin.luban.d)>
+    <top.zibin.luban.e: java.io.File b(android.content.Context,java.lang.String)>
+    <top.zibin.luban.e: java.io.File b(android.content.Context,java.lang.String)>
+    <top.zibin.luban.e: java.io.File b(android.content.Context,java.lang.String)>
+    <top.zibin.luban.e: java.io.File b(android.content.Context,java.lang.String)>
+    <top.zibin.luban.e: java.io.File b(android.content.Context,java.lang.String)>
+    <top.zibin.luban.e: java.io.File a(android.content.Context,top.zibin.luban.d)>
+    <top.zibin.luban.c: void <init>(top.zibin.luban.d,java.io.File,boolean)>
+    <top.zibin.luban.c: void <init>(top.zibin.luban.d,java.io.File,boolean)>
+    <top.zibin.luban.e: java.io.File a(android.content.Context,top.zibin.luban.d)>
+    <top.zibin.luban.c: java.io.File a()>
+    <top.zibin.luban.c: java.io.File a()>
+    <top.zibin.luban.c: java.io.File a()>
+

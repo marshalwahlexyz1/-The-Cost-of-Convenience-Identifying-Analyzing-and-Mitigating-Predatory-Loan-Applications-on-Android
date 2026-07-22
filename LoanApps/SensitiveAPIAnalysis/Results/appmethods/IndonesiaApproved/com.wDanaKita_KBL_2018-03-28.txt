@@ -1,0 +1,147 @@
+APK: com.wDanaKita_KBL_2018-03-28 (IndonesiaApproved)
+Leak 1:
+  Source: $r6 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5) (<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r0, $r2) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.inmobi.signals.LocationInfo: android.location.Location m()>
+    <com.inmobi.signals.LocationInfo: android.location.Location m()>
+    <com.inmobi.signals.LocationInfo: android.location.Location m()>
+    <com.inmobi.signals.LocationInfo: android.location.Location l()>
+    <com.inmobi.signals.LocationInfo: android.location.Location l()>
+    <com.inmobi.signals.LocationInfo: android.location.Location a(android.location.Location,android.location.Location)>
+    <com.inmobi.signals.LocationInfo: android.location.Location b(android.location.Location,android.location.Location)>
+    <com.inmobi.signals.LocationInfo: android.location.Location b(android.location.Location,android.location.Location)>
+    <com.inmobi.signals.LocationInfo: android.location.Location b(android.location.Location,android.location.Location)>
+    <com.inmobi.signals.LocationInfo: android.location.Location b(android.location.Location,android.location.Location)>
+    <com.inmobi.signals.LocationInfo: android.location.Location b(android.location.Location,android.location.Location)>
+    <com.inmobi.commons.core.utilities.Logger: void a(com.inmobi.commons.core.utilities.Logger$InternalLogLevel,java.lang.String,java.lang.String)>
+    <com.inmobi.commons.core.utilities.Logger: void a(java.lang.String,java.lang.String)>
+    <com.inmobi.commons.core.utilities.Logger: void a(java.lang.String,java.lang.String)>
+
+Leak 2:
+  Source: $r6 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5) (<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r0, $r2) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.inmobi.signals.LocationInfo: android.location.Location o()>
+    <com.inmobi.signals.LocationInfo: android.location.Location o()>
+    <com.inmobi.signals.LocationInfo: android.location.Location o()>
+    <com.inmobi.signals.LocationInfo: android.location.Location m()>
+    <com.inmobi.signals.LocationInfo: android.location.Location l()>
+    <com.inmobi.signals.LocationInfo: android.location.Location l()>
+    <com.inmobi.signals.LocationInfo: android.location.Location a(android.location.Location,android.location.Location)>
+    <com.inmobi.signals.LocationInfo: android.location.Location b(android.location.Location,android.location.Location)>
+    <com.inmobi.signals.LocationInfo: android.location.Location b(android.location.Location,android.location.Location)>
+    <com.inmobi.signals.LocationInfo: android.location.Location b(android.location.Location,android.location.Location)>
+    <com.inmobi.signals.LocationInfo: android.location.Location b(android.location.Location,android.location.Location)>
+    <com.inmobi.signals.LocationInfo: android.location.Location b(android.location.Location,android.location.Location)>
+    <com.inmobi.commons.core.utilities.Logger: void a(com.inmobi.commons.core.utilities.Logger$InternalLogLevel,java.lang.String,java.lang.String)>
+    <com.inmobi.commons.core.utilities.Logger: void a(java.lang.String,java.lang.String)>
+    <com.inmobi.commons.core.utilities.Logger: void a(java.lang.String,java.lang.String)>
+
+Leak 3:
+  Source: $r6 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5) (<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r1, $r2) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.inmobi.signals.LocationInfo: android.location.Location m()>
+    <com.inmobi.signals.LocationInfo: android.location.Location m()>
+    <com.inmobi.signals.LocationInfo: android.location.Location m()>
+    <com.inmobi.signals.LocationInfo: android.location.Location l()>
+    <com.inmobi.signals.LocationInfo: android.location.Location l()>
+    <com.inmobi.signals.LocationInfo: android.location.Location a(android.location.Location,android.location.Location)>
+    <com.inmobi.signals.LocationInfo: android.location.Location b(android.location.Location,android.location.Location)>
+    <com.inmobi.signals.LocationInfo: android.location.Location b(android.location.Location,android.location.Location)>
+    <com.inmobi.signals.LocationInfo: android.location.Location b(android.location.Location,android.location.Location)>
+    <com.inmobi.signals.LocationInfo: android.location.Location b(android.location.Location,android.location.Location)>
+    <com.inmobi.signals.LocationInfo: android.location.Location b(android.location.Location,android.location.Location)>
+    <com.inmobi.commons.core.utilities.Logger: void a(com.inmobi.commons.core.utilities.Logger$InternalLogLevel,java.lang.String,java.lang.String)>
+
+Leak 4:
+  Source: $r6 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5) (<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r1, $r2) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.inmobi.signals.LocationInfo: android.location.Location o()>
+    <com.inmobi.signals.LocationInfo: android.location.Location o()>
+    <com.inmobi.signals.LocationInfo: android.location.Location o()>
+    <com.inmobi.signals.LocationInfo: android.location.Location m()>
+    <com.inmobi.signals.LocationInfo: android.location.Location l()>
+    <com.inmobi.signals.LocationInfo: android.location.Location l()>
+    <com.inmobi.signals.LocationInfo: android.location.Location a(android.location.Location,android.location.Location)>
+    <com.inmobi.signals.LocationInfo: android.location.Location b(android.location.Location,android.location.Location)>
+    <com.inmobi.signals.LocationInfo: android.location.Location b(android.location.Location,android.location.Location)>
+    <com.inmobi.signals.LocationInfo: android.location.Location b(android.location.Location,android.location.Location)>
+    <com.inmobi.signals.LocationInfo: android.location.Location b(android.location.Location,android.location.Location)>
+    <com.inmobi.signals.LocationInfo: android.location.Location b(android.location.Location,android.location.Location)>
+    <com.inmobi.commons.core.utilities.Logger: void a(com.inmobi.commons.core.utilities.Logger$InternalLogLevel,java.lang.String,java.lang.String)>
+
+Leak 5:
+  Source: $r6 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5) (<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r0, $r1) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.inmobi.signals.LocationInfo: android.location.Location m()>
+    <com.inmobi.signals.LocationInfo: android.location.Location m()>
+    <com.inmobi.signals.LocationInfo: android.location.Location m()>
+    <com.inmobi.signals.LocationInfo: android.location.Location l()>
+    <com.inmobi.signals.LocationInfo: android.location.Location l()>
+    <com.inmobi.signals.LocationInfo: android.location.Location a(android.location.Location,android.location.Location)>
+    <com.inmobi.signals.LocationInfo: android.location.Location b(android.location.Location,android.location.Location)>
+    <com.inmobi.signals.LocationInfo: android.location.Location b(android.location.Location,android.location.Location)>
+    <com.inmobi.signals.LocationInfo: android.location.Location b(android.location.Location,android.location.Location)>
+    <com.inmobi.signals.LocationInfo: android.location.Location b(android.location.Location,android.location.Location)>
+    <com.inmobi.signals.LocationInfo: android.location.Location b(android.location.Location,android.location.Location)>
+    <com.inmobi.commons.core.utilities.Logger: void a(com.inmobi.commons.core.utilities.Logger$InternalLogLevel,java.lang.String,java.lang.String)>
+    <com.inmobi.commons.core.utilities.Logger: void a(java.lang.String,java.lang.String)>
+
+Leak 6:
+  Source: $r6 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5) (<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r0, $r1) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.inmobi.signals.LocationInfo: android.location.Location o()>
+    <com.inmobi.signals.LocationInfo: android.location.Location o()>
+    <com.inmobi.signals.LocationInfo: android.location.Location o()>
+    <com.inmobi.signals.LocationInfo: android.location.Location m()>
+    <com.inmobi.signals.LocationInfo: android.location.Location l()>
+    <com.inmobi.signals.LocationInfo: android.location.Location l()>
+    <com.inmobi.signals.LocationInfo: android.location.Location a(android.location.Location,android.location.Location)>
+    <com.inmobi.signals.LocationInfo: android.location.Location b(android.location.Location,android.location.Location)>
+    <com.inmobi.signals.LocationInfo: android.location.Location b(android.location.Location,android.location.Location)>
+    <com.inmobi.signals.LocationInfo: android.location.Location b(android.location.Location,android.location.Location)>
+    <com.inmobi.signals.LocationInfo: android.location.Location b(android.location.Location,android.location.Location)>
+    <com.inmobi.signals.LocationInfo: android.location.Location b(android.location.Location,android.location.Location)>
+    <com.inmobi.commons.core.utilities.Logger: void a(com.inmobi.commons.core.utilities.Logger$InternalLogLevel,java.lang.String,java.lang.String)>
+    <com.inmobi.commons.core.utilities.Logger: void a(java.lang.String,java.lang.String)>
+
+Leak 7:
+  Source: $r6 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5) (<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("[InMobi]", $r2) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.inmobi.signals.LocationInfo: android.location.Location m()>
+    <com.inmobi.signals.LocationInfo: android.location.Location m()>
+    <com.inmobi.signals.LocationInfo: android.location.Location m()>
+    <com.inmobi.signals.LocationInfo: android.location.Location l()>
+    <com.inmobi.signals.LocationInfo: android.location.Location l()>
+    <com.inmobi.signals.LocationInfo: android.location.Location a(android.location.Location,android.location.Location)>
+    <com.inmobi.signals.LocationInfo: android.location.Location b(android.location.Location,android.location.Location)>
+    <com.inmobi.signals.LocationInfo: android.location.Location b(android.location.Location,android.location.Location)>
+    <com.inmobi.signals.LocationInfo: android.location.Location b(android.location.Location,android.location.Location)>
+    <com.inmobi.signals.LocationInfo: android.location.Location b(android.location.Location,android.location.Location)>
+    <com.inmobi.signals.LocationInfo: android.location.Location b(android.location.Location,android.location.Location)>
+    <com.inmobi.commons.core.utilities.Logger: void a(com.inmobi.commons.core.utilities.Logger$InternalLogLevel,java.lang.String,java.lang.String)>
+
+Leak 8:
+  Source: $r6 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5) (<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("[InMobi]", $r2) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.inmobi.signals.LocationInfo: android.location.Location o()>
+    <com.inmobi.signals.LocationInfo: android.location.Location o()>
+    <com.inmobi.signals.LocationInfo: android.location.Location o()>
+    <com.inmobi.signals.LocationInfo: android.location.Location m()>
+    <com.inmobi.signals.LocationInfo: android.location.Location l()>
+    <com.inmobi.signals.LocationInfo: android.location.Location l()>
+    <com.inmobi.signals.LocationInfo: android.location.Location a(android.location.Location,android.location.Location)>
+    <com.inmobi.signals.LocationInfo: android.location.Location b(android.location.Location,android.location.Location)>
+    <com.inmobi.signals.LocationInfo: android.location.Location b(android.location.Location,android.location.Location)>
+    <com.inmobi.signals.LocationInfo: android.location.Location b(android.location.Location,android.location.Location)>
+    <com.inmobi.signals.LocationInfo: android.location.Location b(android.location.Location,android.location.Location)>
+    <com.inmobi.signals.LocationInfo: android.location.Location b(android.location.Location,android.location.Location)>
+    <com.inmobi.commons.core.utilities.Logger: void a(com.inmobi.commons.core.utilities.Logger$InternalLogLevel,java.lang.String,java.lang.String)>
+

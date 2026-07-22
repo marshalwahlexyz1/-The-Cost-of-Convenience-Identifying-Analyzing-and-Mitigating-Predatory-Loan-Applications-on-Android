@@ -1,0 +1,837 @@
+APK: com.loanmarket (PakistanDelisted)
+Leak 1:
+  Source: $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getSimSerialNumber()>() (<android.telephony.TelephonyManager: java.lang.String getSimSerialNumber()>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r3, $r0) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.tencent.bugly.crashreport.common.info.b: java.lang.String e(android.content.Context)>
+    <com.tencent.bugly.crashreport.common.info.b: java.lang.String e(android.content.Context)>
+    <com.tencent.bugly.crashreport.common.info.a: java.lang.String z()>
+    <com.tencent.bugly.crashreport.common.info.a: java.lang.String z()>
+    <com.tencent.bugly.crashreport.common.info.a: java.lang.String z()>
+    <com.tencent.bugly.crashreport.common.info.a: java.lang.String z()>
+    <com.tencent.bugly.crashreport.common.info.a: java.lang.String z()>
+    <com.tencent.bugly.crashreport.common.info.a: java.lang.String z()>
+    <com.tencent.bugly.proguard.x: boolean a(java.lang.String,java.lang.Object[])>
+    <com.tencent.bugly.proguard.x: boolean a(int,java.lang.String,java.lang.Object[])>
+    <com.tencent.bugly.proguard.x: boolean a(int,java.lang.String,java.lang.Object[])>
+
+Leak 2:
+  Source: $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getSimSerialNumber()>() (<android.telephony.TelephonyManager: java.lang.String getSimSerialNumber()>)
+  Sink: staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r3, $r0) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.tencent.bugly.crashreport.common.info.b: java.lang.String e(android.content.Context)>
+    <com.tencent.bugly.crashreport.common.info.b: java.lang.String e(android.content.Context)>
+    <com.tencent.bugly.crashreport.common.info.a: java.lang.String z()>
+    <com.tencent.bugly.crashreport.common.info.a: java.lang.String z()>
+    <com.tencent.bugly.crashreport.common.info.a: java.lang.String z()>
+    <com.tencent.bugly.crashreport.common.info.a: java.lang.String z()>
+    <com.tencent.bugly.crashreport.common.info.a: java.lang.String z()>
+    <com.tencent.bugly.crashreport.common.info.a: java.lang.String z()>
+    <com.tencent.bugly.proguard.x: boolean a(java.lang.String,java.lang.Object[])>
+    <com.tencent.bugly.proguard.x: boolean a(int,java.lang.String,java.lang.Object[])>
+    <com.tencent.bugly.proguard.x: boolean a(int,java.lang.String,java.lang.Object[])>
+
+Leak 3:
+  Source: $r7 = virtualinvoke $r6.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() (<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>)
+  Sink: virtualinvoke $r2.<java.util.zip.ZipOutputStream: void write(byte[])>($r4) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.tencent.bugly.crashreport.common.info.b: java.lang.String b(android.content.Context)>
+    <com.tencent.bugly.crashreport.common.info.b: java.lang.String b(android.content.Context)>
+    <com.tencent.bugly.crashreport.common.info.a: java.lang.String m()>
+    <com.tencent.bugly.crashreport.common.info.a: java.lang.String m()>
+    <com.tencent.bugly.crashreport.common.info.a: java.lang.String m()>
+    <com.tencent.bugly.crashreport.common.info.a: java.lang.String h()>
+    <com.tencent.bugly.crashreport.common.info.a: java.lang.String h()>
+    <com.tencent.bugly.crashreport.common.info.a: java.lang.String h()>
+    <com.tencent.bugly.crashreport.common.info.a: java.lang.String h()>
+    <com.tencent.bugly.crashreport.common.info.a: java.lang.String h()>
+    <com.tencent.bugly.proguard.a: com.tencent.bugly.proguard.ar a(java.util.List,int)>
+    <com.tencent.bugly.proguard.a: com.tencent.bugly.proguard.ar a(java.util.List,int)>
+    <com.tencent.bugly.crashreport.biz.a: void c()>
+    <com.tencent.bugly.proguard.a: byte[] a(com.tencent.bugly.proguard.k)>
+    <com.tencent.bugly.proguard.ar: void a(com.tencent.bugly.proguard.j)>
+    <com.tencent.bugly.proguard.ar: void a(com.tencent.bugly.proguard.j)>
+    <com.tencent.bugly.proguard.j: void a(java.lang.String,int)>
+    <com.tencent.bugly.proguard.j: void a(java.lang.String,int)>
+    <com.tencent.bugly.proguard.j: void a(java.lang.String,int)>
+    <com.tencent.bugly.proguard.j: void a(java.lang.String,int)>
+    <com.tencent.bugly.proguard.ar: void a(com.tencent.bugly.proguard.j)>
+    <com.tencent.bugly.proguard.a: byte[] a(com.tencent.bugly.proguard.k)>
+    <com.tencent.bugly.proguard.j: byte[] b()>
+    <com.tencent.bugly.proguard.j: byte[] b()>
+    <com.tencent.bugly.proguard.j: byte[] b()>
+    <com.tencent.bugly.proguard.j: byte[] b()>
+    <com.tencent.bugly.proguard.a: byte[] a(com.tencent.bugly.proguard.k)>
+    <com.tencent.bugly.crashreport.biz.a: void c()>
+    <com.tencent.bugly.proguard.a: com.tencent.bugly.proguard.am a(android.content.Context,int,byte[])>
+    <com.tencent.bugly.proguard.a: com.tencent.bugly.proguard.am a(android.content.Context,int,byte[])>
+    <com.tencent.bugly.proguard.a: com.tencent.bugly.proguard.am a(android.content.Context,int,byte[])>
+    <com.tencent.bugly.proguard.a: com.tencent.bugly.proguard.am a(android.content.Context,int,byte[])>
+    <com.tencent.bugly.proguard.z: byte[] a(byte[],int,int,java.lang.String)>
+    <com.tencent.bugly.proguard.z: byte[] a(byte[],int)>
+    <com.tencent.bugly.proguard.ad: byte[] a(byte[])>
+
+Leak 4:
+  Source: $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r2, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r1, $r2) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.umeng.commonsdk.utils.UMUtils: java.lang.String getChannelByXML(android.content.Context)>
+    <com.umeng.commonsdk.utils.UMUtils: java.lang.String getChannelByXML(android.content.Context)>
+    <com.umeng.commonsdk.utils.UMUtils: java.lang.String getChannelByXML(android.content.Context)>
+    <com.umeng.commonsdk.utils.UMUtils: java.lang.String getChannelByXML(android.content.Context)>
+    <com.umeng.commonsdk.utils.UMUtils: java.lang.String getChannelByXML(android.content.Context)>
+    <com.umeng.commonsdk.utils.UMUtils: java.lang.String getChannelByXML(android.content.Context)>
+    <com.umeng.commonsdk.UMConfigure: void init(android.content.Context,java.lang.String,java.lang.String,int,java.lang.String)>
+    <com.umeng.commonsdk.UMConfigure: void init(android.content.Context,java.lang.String,java.lang.String,int,java.lang.String)>
+    <com.umeng.commonsdk.UMConfigure: void init(android.content.Context,java.lang.String,java.lang.String,int,java.lang.String)>
+    <com.umeng.commonsdk.UMConfigure: void init(android.content.Context,java.lang.String,java.lang.String,int,java.lang.String)>
+    <com.umeng.commonsdk.debug.UMLog: void mutlInfo(java.lang.String,int,java.lang.String,java.lang.String[],java.lang.String[])>
+    <com.umeng.commonsdk.debug.UMLog: void mutlInfo(java.lang.String,java.lang.String,int,java.lang.String,java.lang.String[],java.lang.String[])>
+    <com.umeng.commonsdk.debug.UMLog: void mutlInfo(java.lang.String,java.lang.String,int,java.lang.String,java.lang.String[],java.lang.String[])>
+    <com.umeng.commonsdk.debug.UMLog: void mutlInfo(java.lang.String,java.lang.String,int,java.lang.String,java.lang.String[],java.lang.String[])>
+    <com.umeng.commonsdk.debug.UMLog: void mutlInfo(java.lang.String,java.lang.String,int,java.lang.String,java.lang.String[],java.lang.String[])>
+    <com.umeng.commonsdk.debug.UMLog: void mutlInfo(java.lang.String,java.lang.String,int,java.lang.String,java.lang.String[],java.lang.String[])>
+    <com.umeng.commonsdk.debug.I: void log(java.lang.String,java.lang.String)>
+
+Leak 5:
+  Source: $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r2, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r1, $r2) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.umeng.commonsdk.utils.UMUtils: java.lang.String getAppkeyByXML(android.content.Context)>
+    <com.umeng.commonsdk.utils.UMUtils: java.lang.String getAppkeyByXML(android.content.Context)>
+    <com.umeng.commonsdk.utils.UMUtils: java.lang.String getAppkeyByXML(android.content.Context)>
+    <com.umeng.commonsdk.utils.UMUtils: java.lang.String getAppkeyByXML(android.content.Context)>
+    <com.umeng.commonsdk.utils.UMUtils: java.lang.String getAppkeyByXML(android.content.Context)>
+    <com.umeng.commonsdk.UMConfigure: void init(android.content.Context,java.lang.String,java.lang.String,int,java.lang.String)>
+    <com.umeng.commonsdk.UMConfigure: void init(android.content.Context,java.lang.String,java.lang.String,int,java.lang.String)>
+    <com.umeng.commonsdk.debug.UMLog: void mutlInfo(java.lang.String,int,java.lang.String,java.lang.String[],java.lang.String[])>
+    <com.umeng.commonsdk.debug.UMLog: void mutlInfo(java.lang.String,java.lang.String,int,java.lang.String,java.lang.String[],java.lang.String[])>
+    <com.umeng.commonsdk.debug.UMLog: void mutlInfo(java.lang.String,java.lang.String,int,java.lang.String,java.lang.String[],java.lang.String[])>
+    <com.umeng.commonsdk.debug.UMLog: void mutlInfo(java.lang.String,java.lang.String,int,java.lang.String,java.lang.String[],java.lang.String[])>
+    <com.umeng.commonsdk.debug.UMLog: void mutlInfo(java.lang.String,java.lang.String,int,java.lang.String,java.lang.String[],java.lang.String[])>
+    <com.umeng.commonsdk.debug.UMLog: void mutlInfo(java.lang.String,java.lang.String,int,java.lang.String,java.lang.String[],java.lang.String[])>
+    <com.umeng.commonsdk.debug.I: void log(java.lang.String,java.lang.String)>
+
+Leak 6:
+  Source: $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r2, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r0, $r1) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.umeng.commonsdk.statistics.common.DeviceConfig: java.lang.String getAppName(android.content.Context)>
+    <com.umeng.commonsdk.statistics.common.DeviceConfig: java.lang.String getAppName(android.content.Context)>
+    <com.umeng.commonsdk.statistics.common.DeviceConfig: java.lang.String getAppName(android.content.Context)>
+    <com.umeng.commonsdk.statistics.common.DeviceConfig: java.lang.String getAppName(android.content.Context)>
+    <com.umeng.commonsdk.statistics.common.DeviceConfig: java.lang.String getAppName(android.content.Context)>
+    <com.umeng.commonsdk.stateless.UMSLEnvelopeBuild: org.json.JSONObject buildSLBaseHeader(android.content.Context)>
+    <com.umeng.commonsdk.stateless.UMSLEnvelopeBuild: org.json.JSONObject buildSLBaseHeader(android.content.Context)>
+    <com.umeng.commonsdk.stateless.UMSLEnvelopeBuild: org.json.JSONObject buildSLBaseHeader(android.content.Context)>
+    <com.umeng.commonsdk.stateless.UMSLEnvelopeBuild: org.json.JSONObject buildSLBaseHeader(android.content.Context)>
+    <com.umeng.commonsdk.stateless.UMSLEnvelopeBuild: org.json.JSONObject buildSLBaseHeader(android.content.Context)>
+    <com.umeng.commonsdk.stateless.UMSLEnvelopeBuild: org.json.JSONObject buildSLBaseHeader(android.content.Context)>
+    <com.umeng.commonsdk.statistics.common.e: void a(java.lang.String,java.lang.Object[])>
+    <com.umeng.commonsdk.statistics.common.e: void a(java.lang.String,java.lang.Object[])>
+    <com.umeng.commonsdk.statistics.common.e: void a(java.lang.String,java.lang.Object[])>
+    <com.umeng.commonsdk.statistics.common.e: void c(java.lang.String,java.lang.String,java.lang.Throwable)>
+    <com.umeng.commonsdk.statistics.common.e: void a(int,java.lang.String,java.lang.String,java.lang.Throwable)>
+    <com.umeng.commonsdk.statistics.common.e: void a(int,java.lang.String,java.lang.String,java.lang.Throwable)>
+
+Leak 7:
+  Source: $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r2, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r0, $r1) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.umeng.commonsdk.utils.UMUtils: java.lang.String getAppVersionName(android.content.Context)>
+    <com.umeng.commonsdk.utils.UMUtils: java.lang.String getAppVersionName(android.content.Context)>
+    <com.umeng.commonsdk.utils.UMUtils: java.lang.String getAppVersionName(android.content.Context)>
+    <com.umeng.commonsdk.statistics.common.DeviceConfig: java.lang.String getAppVersionName(android.content.Context)>
+    <com.umeng.commonsdk.stateless.UMSLEnvelopeBuild: org.json.JSONObject buildSLBaseHeader(android.content.Context)>
+    <com.umeng.commonsdk.stateless.UMSLEnvelopeBuild: org.json.JSONObject buildSLBaseHeader(android.content.Context)>
+    <com.umeng.commonsdk.stateless.UMSLEnvelopeBuild: org.json.JSONObject buildSLBaseHeader(android.content.Context)>
+    <com.umeng.commonsdk.stateless.UMSLEnvelopeBuild: org.json.JSONObject buildSLBaseHeader(android.content.Context)>
+    <com.umeng.commonsdk.stateless.UMSLEnvelopeBuild: org.json.JSONObject buildSLBaseHeader(android.content.Context)>
+    <com.umeng.commonsdk.stateless.UMSLEnvelopeBuild: org.json.JSONObject buildSLBaseHeader(android.content.Context)>
+    <com.umeng.commonsdk.statistics.common.e: void a(java.lang.String,java.lang.Object[])>
+    <com.umeng.commonsdk.statistics.common.e: void a(java.lang.String,java.lang.Object[])>
+    <com.umeng.commonsdk.statistics.common.e: void a(java.lang.String,java.lang.Object[])>
+    <com.umeng.commonsdk.statistics.common.e: void c(java.lang.String,java.lang.String,java.lang.Throwable)>
+    <com.umeng.commonsdk.statistics.common.e: void a(int,java.lang.String,java.lang.String,java.lang.Throwable)>
+    <com.umeng.commonsdk.statistics.common.e: void a(int,java.lang.String,java.lang.String,java.lang.Throwable)>
+
+Leak 8:
+  Source: $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getSimSerialNumber()>() (<android.telephony.TelephonyManager: java.lang.String getSimSerialNumber()>)
+  Sink: staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r3, $r0) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.tencent.bugly.crashreport.common.info.b: java.lang.String e(android.content.Context)>
+    <com.tencent.bugly.crashreport.common.info.b: java.lang.String e(android.content.Context)>
+    <com.tencent.bugly.crashreport.common.info.a: java.lang.String z()>
+    <com.tencent.bugly.crashreport.common.info.a: java.lang.String z()>
+    <com.tencent.bugly.crashreport.common.info.a: java.lang.String z()>
+    <com.tencent.bugly.crashreport.common.info.a: java.lang.String z()>
+    <com.tencent.bugly.crashreport.common.info.a: java.lang.String z()>
+    <com.tencent.bugly.crashreport.common.info.a: java.lang.String z()>
+    <com.tencent.bugly.proguard.x: boolean a(java.lang.String,java.lang.Object[])>
+    <com.tencent.bugly.proguard.x: boolean a(int,java.lang.String,java.lang.Object[])>
+    <com.tencent.bugly.proguard.x: boolean a(int,java.lang.String,java.lang.Object[])>
+
+Leak 9:
+  Source: $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r2, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("UMConfigure", $r12) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.umeng.commonsdk.utils.UMUtils: java.lang.String getChannelByXML(android.content.Context)>
+    <com.umeng.commonsdk.utils.UMUtils: java.lang.String getChannelByXML(android.content.Context)>
+    <com.umeng.commonsdk.utils.UMUtils: java.lang.String getChannelByXML(android.content.Context)>
+    <com.umeng.commonsdk.utils.UMUtils: java.lang.String getChannelByXML(android.content.Context)>
+    <com.umeng.commonsdk.utils.UMUtils: java.lang.String getChannelByXML(android.content.Context)>
+    <com.umeng.commonsdk.utils.UMUtils: java.lang.String getChannelByXML(android.content.Context)>
+    <com.umeng.commonsdk.UMConfigure: void init(android.content.Context,java.lang.String,java.lang.String,int,java.lang.String)>
+    <com.umeng.commonsdk.UMConfigure: void init(android.content.Context,java.lang.String,java.lang.String,int,java.lang.String)>
+    <com.umeng.commonsdk.UMConfigure: void init(android.content.Context,java.lang.String,java.lang.String,int,java.lang.String)>
+
+Leak 10:
+  Source: $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r2, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("UMConfigure", $r12) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.umeng.commonsdk.utils.UMUtils: java.lang.String getAppkeyByXML(android.content.Context)>
+    <com.umeng.commonsdk.utils.UMUtils: java.lang.String getAppkeyByXML(android.content.Context)>
+    <com.umeng.commonsdk.utils.UMUtils: java.lang.String getAppkeyByXML(android.content.Context)>
+    <com.umeng.commonsdk.utils.UMUtils: java.lang.String getAppkeyByXML(android.content.Context)>
+    <com.umeng.commonsdk.utils.UMUtils: java.lang.String getAppkeyByXML(android.content.Context)>
+    <com.umeng.commonsdk.UMConfigure: void init(android.content.Context,java.lang.String,java.lang.String,int,java.lang.String)>
+    <com.umeng.commonsdk.UMConfigure: void init(android.content.Context,java.lang.String,java.lang.String,int,java.lang.String)>
+    <com.umeng.commonsdk.UMConfigure: void init(android.content.Context,java.lang.String,java.lang.String,int,java.lang.String)>
+
+Leak 11:
+  Source: $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r2, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r0, $r3) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.umeng.commonsdk.statistics.common.DeviceConfig: java.lang.String getAppName(android.content.Context)>
+    <com.umeng.commonsdk.statistics.common.DeviceConfig: java.lang.String getAppName(android.content.Context)>
+    <com.umeng.commonsdk.statistics.common.DeviceConfig: java.lang.String getAppName(android.content.Context)>
+    <com.umeng.commonsdk.statistics.common.DeviceConfig: java.lang.String getAppName(android.content.Context)>
+    <com.umeng.commonsdk.statistics.common.DeviceConfig: java.lang.String getAppName(android.content.Context)>
+    <com.umeng.commonsdk.stateless.UMSLEnvelopeBuild: org.json.JSONObject buildSLBaseHeader(android.content.Context)>
+    <com.umeng.commonsdk.stateless.UMSLEnvelopeBuild: org.json.JSONObject buildSLBaseHeader(android.content.Context)>
+    <com.umeng.commonsdk.proguard.b$1: void run()>
+    <com.umeng.commonsdk.stateless.UMSLEnvelopeBuild: org.json.JSONObject buildSLEnvelope(android.content.Context,org.json.JSONObject,org.json.JSONObject,java.lang.String)>
+    <com.umeng.commonsdk.stateless.UMSLEnvelopeBuild: org.json.JSONObject buildSLEnvelope(android.content.Context,org.json.JSONObject,org.json.JSONObject,java.lang.String)>
+    <com.umeng.commonsdk.stateless.UMSLEnvelopeBuild: org.json.JSONObject buildSLEnvelope(android.content.Context,org.json.JSONObject,org.json.JSONObject,java.lang.String)>
+    <com.umeng.commonsdk.stateless.UMSLEnvelopeBuild: org.json.JSONObject buildSLEnvelope(android.content.Context,org.json.JSONObject,org.json.JSONObject,java.lang.String)>
+    <com.umeng.commonsdk.stateless.UMSLEnvelopeBuild: org.json.JSONObject buildSLEnvelope(android.content.Context,org.json.JSONObject,org.json.JSONObject,java.lang.String)>
+    <com.umeng.commonsdk.statistics.common.e: void a(java.lang.String,java.lang.Object[])>
+    <com.umeng.commonsdk.statistics.common.e: void a(java.lang.String,java.lang.Object[])>
+    <com.umeng.commonsdk.statistics.common.e: void a(java.lang.String,java.lang.Object[])>
+    <com.umeng.commonsdk.statistics.common.e: void c(java.lang.String,java.lang.String,java.lang.Throwable)>
+    <com.umeng.commonsdk.statistics.common.e: void a(int,java.lang.String,java.lang.String,java.lang.Throwable)>
+    <com.umeng.commonsdk.statistics.common.e: void a(int,java.lang.String,java.lang.String,java.lang.Throwable)>
+
+Leak 12:
+  Source: $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r2, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r0, $r3) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.umeng.commonsdk.utils.UMUtils: java.lang.String getAppVersionName(android.content.Context)>
+    <com.umeng.commonsdk.utils.UMUtils: java.lang.String getAppVersionName(android.content.Context)>
+    <com.umeng.commonsdk.utils.UMUtils: java.lang.String getAppVersionName(android.content.Context)>
+    <com.umeng.commonsdk.statistics.common.DeviceConfig: java.lang.String getAppVersionName(android.content.Context)>
+    <com.umeng.commonsdk.stateless.UMSLEnvelopeBuild: org.json.JSONObject buildSLBaseHeader(android.content.Context)>
+    <com.umeng.commonsdk.stateless.UMSLEnvelopeBuild: org.json.JSONObject buildSLBaseHeader(android.content.Context)>
+    <com.umeng.commonsdk.proguard.b$1: void run()>
+    <com.umeng.commonsdk.stateless.UMSLEnvelopeBuild: org.json.JSONObject buildSLEnvelope(android.content.Context,org.json.JSONObject,org.json.JSONObject,java.lang.String)>
+    <com.umeng.commonsdk.stateless.UMSLEnvelopeBuild: org.json.JSONObject buildSLEnvelope(android.content.Context,org.json.JSONObject,org.json.JSONObject,java.lang.String)>
+    <com.umeng.commonsdk.stateless.UMSLEnvelopeBuild: org.json.JSONObject buildSLEnvelope(android.content.Context,org.json.JSONObject,org.json.JSONObject,java.lang.String)>
+    <com.umeng.commonsdk.stateless.UMSLEnvelopeBuild: org.json.JSONObject buildSLEnvelope(android.content.Context,org.json.JSONObject,org.json.JSONObject,java.lang.String)>
+    <com.umeng.commonsdk.stateless.UMSLEnvelopeBuild: org.json.JSONObject buildSLEnvelope(android.content.Context,org.json.JSONObject,org.json.JSONObject,java.lang.String)>
+    <com.umeng.commonsdk.statistics.common.e: void a(java.lang.String,java.lang.Object[])>
+    <com.umeng.commonsdk.statistics.common.e: void a(java.lang.String,java.lang.Object[])>
+    <com.umeng.commonsdk.statistics.common.e: void a(java.lang.String,java.lang.Object[])>
+    <com.umeng.commonsdk.statistics.common.e: void c(java.lang.String,java.lang.String,java.lang.Throwable)>
+    <com.umeng.commonsdk.statistics.common.e: void a(int,java.lang.String,java.lang.String,java.lang.Throwable)>
+    <com.umeng.commonsdk.statistics.common.e: void a(int,java.lang.String,java.lang.String,java.lang.Throwable)>
+
+Leak 13:
+  Source: $r2 = virtualinvoke $r1.<android.content.Context: java.io.File getExternalFilesDir(java.lang.String)>($r0) (<android.content.Context: java.io.File getExternalFilesDir(java.lang.String)>)
+  Sink: virtualinvoke $r7.<java.io.OutputStream: void write(byte[])>($r2) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.tencent.smtt.utils.k: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.k: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.k: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.k: java.lang.String a(android.content.Context,java.lang.String,int,boolean)>
+    <com.tencent.smtt.utils.k: java.lang.String a(android.content.Context,int)>
+    <com.tencent.smtt.utils.x: java.io.File h()>
+    <com.tencent.smtt.utils.x: java.io.File h()>
+    <com.tencent.smtt.utils.x: java.io.File h()>
+    <com.tencent.smtt.utils.x: java.io.File h()>
+    <com.tencent.smtt.utils.x: java.io.File h()>
+    <com.tencent.smtt.utils.x: java.io.File h()>
+    <com.tencent.smtt.utils.x: java.io.File h()>
+    <com.tencent.smtt.utils.x: java.io.File h()>
+    <com.tencent.smtt.utils.TbsLog: void e(java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.TbsLog: void e(java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.TbsLog: void e(java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLog(java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLog(java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLog(java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLog(java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLogToDisk()>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLogToDisk()>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+
+Leak 14:
+  Source: $r4 = virtualinvoke $r3.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r2, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r7.<java.io.OutputStream: void write(byte[])>($r2) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.tencent.smtt.utils.b: int b(android.content.Context)>
+    <com.tencent.smtt.utils.b: int b(android.content.Context)>
+    <com.tencent.smtt.utils.b: int b(android.content.Context)>
+    <com.tencent.smtt.sdk.TbsDownloader: boolean a(android.content.Context,boolean,boolean)>
+    <com.tencent.smtt.sdk.TbsDownloader: boolean a(android.content.Context,boolean,boolean)>
+    <com.tencent.smtt.sdk.TbsDownloader: boolean a(android.content.Context,boolean,boolean)>
+    <com.tencent.smtt.utils.TbsLog: void i(java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.TbsLog: void i(java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.TbsLog: void i(java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLog(java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLog(java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLog(java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLog(java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLogToDisk()>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLogToDisk()>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+
+Leak 15:
+  Source: $r6 = virtualinvoke $r5.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r4, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r7.<java.io.OutputStream: void write(byte[])>($r2) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.tencent.smtt.utils.b: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.b: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.b: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.b: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.b: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.sdk.TbsDownloader: boolean a(android.content.Context,boolean,boolean)>
+    <com.tencent.smtt.sdk.TbsDownloader: boolean a(android.content.Context,boolean,boolean)>
+    <com.tencent.smtt.sdk.TbsDownloader: boolean a(android.content.Context,boolean,boolean)>
+    <com.tencent.smtt.utils.TbsLog: void i(java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.TbsLog: void i(java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.TbsLog: void i(java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLog(java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLog(java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLog(java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLog(java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLogToDisk()>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLogToDisk()>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+
+Leak 16:
+  Source: $r2 = staticinvoke <android.os.Environment: java.io.File getExternalStorageDirectory()>() (<android.os.Environment: java.io.File getExternalStorageDirectory()>)
+  Sink: virtualinvoke $r7.<java.io.OutputStream: void write(byte[])>($r2) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.tencent.smtt.utils.k: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.k: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.k: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.k: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.k: java.lang.String a(android.content.Context,java.lang.String,int,boolean)>
+    <com.tencent.smtt.utils.k: java.lang.String a(android.content.Context,int)>
+    <com.tencent.smtt.utils.x: java.io.File h()>
+    <com.tencent.smtt.utils.x: java.io.File h()>
+    <com.tencent.smtt.utils.x: java.io.File h()>
+    <com.tencent.smtt.utils.x: java.io.File h()>
+    <com.tencent.smtt.utils.x: java.io.File h()>
+    <com.tencent.smtt.utils.x: java.io.File h()>
+    <com.tencent.smtt.utils.x: java.io.File h()>
+    <com.tencent.smtt.utils.x: java.io.File h()>
+    <com.tencent.smtt.utils.TbsLog: void e(java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.TbsLog: void e(java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.TbsLog: void e(java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLog(java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLog(java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLog(java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLog(java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLogToDisk()>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLogToDisk()>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+
+Leak 17:
+  Source: $r4 = staticinvoke <android.os.Environment: java.io.File getExternalStorageDirectory()>() (<android.os.Environment: java.io.File getExternalStorageDirectory()>)
+  Sink: virtualinvoke $r7.<java.io.OutputStream: void write(byte[])>($r2) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.tencent.smtt.utils.k: java.lang.String a(android.content.Context,java.lang.String,int,boolean)>
+    <com.tencent.smtt.utils.k: java.lang.String a(android.content.Context,java.lang.String,int,boolean)>
+    <com.tencent.smtt.utils.k: java.lang.String a(android.content.Context,java.lang.String,int,boolean)>
+    <com.tencent.smtt.utils.k: java.lang.String a(android.content.Context,java.lang.String,int,boolean)>
+    <com.tencent.smtt.utils.k: java.lang.String a(android.content.Context,java.lang.String,int,boolean)>
+    <com.tencent.smtt.utils.k: java.lang.String a(android.content.Context,int)>
+    <com.tencent.smtt.utils.x: java.io.File h()>
+    <com.tencent.smtt.utils.x: java.io.File h()>
+    <com.tencent.smtt.utils.x: java.io.File h()>
+    <com.tencent.smtt.utils.x: java.io.File h()>
+    <com.tencent.smtt.utils.x: java.io.File h()>
+    <com.tencent.smtt.utils.x: java.io.File h()>
+    <com.tencent.smtt.utils.x: java.io.File h()>
+    <com.tencent.smtt.utils.x: java.io.File h()>
+    <com.tencent.smtt.utils.TbsLog: void e(java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.TbsLog: void e(java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.TbsLog: void e(java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLog(java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLog(java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLog(java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLog(java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLogToDisk()>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLogToDisk()>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+
+Leak 18:
+  Source: $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r2, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("UMConfigure", $r15) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.umeng.commonsdk.utils.UMUtils: java.lang.String getChannelByXML(android.content.Context)>
+    <com.umeng.commonsdk.utils.UMUtils: java.lang.String getChannelByXML(android.content.Context)>
+    <com.umeng.commonsdk.utils.UMUtils: java.lang.String getChannelByXML(android.content.Context)>
+    <com.umeng.commonsdk.utils.UMUtils: java.lang.String getChannelByXML(android.content.Context)>
+    <com.umeng.commonsdk.utils.UMUtils: java.lang.String getChannelByXML(android.content.Context)>
+    <com.umeng.commonsdk.utils.UMUtils: java.lang.String getChannelByXML(android.content.Context)>
+    <com.umeng.commonsdk.UMConfigure: void init(android.content.Context,java.lang.String,java.lang.String,int,java.lang.String)>
+    <com.umeng.commonsdk.UMConfigure: void init(android.content.Context,java.lang.String,java.lang.String,int,java.lang.String)>
+    <com.umeng.commonsdk.UMConfigure: void init(android.content.Context,java.lang.String,java.lang.String,int,java.lang.String)>
+
+Leak 19:
+  Source: $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r2, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("UMConfigure", $r15) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.umeng.commonsdk.utils.UMUtils: java.lang.String getAppkeyByXML(android.content.Context)>
+    <com.umeng.commonsdk.utils.UMUtils: java.lang.String getAppkeyByXML(android.content.Context)>
+    <com.umeng.commonsdk.utils.UMUtils: java.lang.String getAppkeyByXML(android.content.Context)>
+    <com.umeng.commonsdk.utils.UMUtils: java.lang.String getAppkeyByXML(android.content.Context)>
+    <com.umeng.commonsdk.utils.UMUtils: java.lang.String getAppkeyByXML(android.content.Context)>
+    <com.umeng.commonsdk.UMConfigure: void init(android.content.Context,java.lang.String,java.lang.String,int,java.lang.String)>
+    <com.umeng.commonsdk.UMConfigure: void init(android.content.Context,java.lang.String,java.lang.String,int,java.lang.String)>
+    <com.umeng.commonsdk.UMConfigure: void init(android.content.Context,java.lang.String,java.lang.String,int,java.lang.String)>
+    <com.umeng.commonsdk.UMConfigure: void init(android.content.Context,java.lang.String,java.lang.String,int,java.lang.String)>
+    <com.umeng.commonsdk.UMConfigure: void init(android.content.Context,java.lang.String,java.lang.String,int,java.lang.String)>
+
+Leak 20:
+  Source: $r2 = virtualinvoke $r1.<android.content.Context: java.io.File getExternalFilesDir(java.lang.String)>($r0) (<android.content.Context: java.io.File getExternalFilesDir(java.lang.String)>)
+  Sink: virtualinvoke $r7.<java.io.OutputStream: void write(byte[])>($r5) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.tencent.smtt.utils.k: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.k: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.k: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.k: java.lang.String a(android.content.Context,java.lang.String,int,boolean)>
+    <com.tencent.smtt.utils.k: java.lang.String a(android.content.Context,int)>
+    <com.tencent.smtt.utils.x: java.io.File h()>
+    <com.tencent.smtt.utils.x: java.io.File h()>
+    <com.tencent.smtt.utils.x: java.io.File h()>
+    <com.tencent.smtt.utils.x: java.io.File h()>
+    <com.tencent.smtt.utils.x: java.io.File h()>
+    <com.tencent.smtt.utils.x: java.io.File h()>
+    <com.tencent.smtt.utils.x: java.io.File h()>
+    <com.tencent.smtt.utils.x: java.io.File h()>
+    <com.tencent.smtt.utils.TbsLog: void e(java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.TbsLog: void e(java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.TbsLog: void e(java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLog(java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLog(java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLog(java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLog(java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLogToDisk()>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLogToDisk()>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+    <com.tencent.smtt.utils.LogFileUtils: byte[] encrypt(java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.LogFileUtils: byte[] encrypt(java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.LogFileUtils: byte[] encrypt(java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+
+Leak 21:
+  Source: $r4 = virtualinvoke $r3.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r2, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r7.<java.io.OutputStream: void write(byte[])>($r5) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.tencent.smtt.utils.b: int b(android.content.Context)>
+    <com.tencent.smtt.utils.b: int b(android.content.Context)>
+    <com.tencent.smtt.utils.b: int b(android.content.Context)>
+    <com.tencent.smtt.sdk.TbsDownloader: boolean a(android.content.Context,boolean,boolean)>
+    <com.tencent.smtt.sdk.TbsDownloader: boolean a(android.content.Context,boolean,boolean)>
+    <com.tencent.smtt.sdk.TbsDownloader: boolean a(android.content.Context,boolean,boolean)>
+    <com.tencent.smtt.utils.TbsLog: void i(java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.TbsLog: void i(java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.TbsLog: void i(java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLog(java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLog(java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLog(java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLog(java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLogToDisk()>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLogToDisk()>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+    <com.tencent.smtt.utils.LogFileUtils: byte[] encrypt(java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.LogFileUtils: byte[] encrypt(java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.LogFileUtils: byte[] encrypt(java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+
+Leak 22:
+  Source: $r6 = virtualinvoke $r5.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r4, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r7.<java.io.OutputStream: void write(byte[])>($r5) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.tencent.smtt.utils.b: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.b: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.b: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.b: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.b: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.sdk.TbsDownloader: boolean a(android.content.Context,boolean,boolean)>
+    <com.tencent.smtt.sdk.TbsDownloader: boolean a(android.content.Context,boolean,boolean)>
+    <com.tencent.smtt.sdk.TbsDownloader: boolean a(android.content.Context,boolean,boolean)>
+    <com.tencent.smtt.utils.TbsLog: void i(java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.TbsLog: void i(java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.TbsLog: void i(java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLog(java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLog(java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLog(java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLog(java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLogToDisk()>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLogToDisk()>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLogToDisk()>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLog(java.lang.String)>
+    <com.tencent.smtt.utils.TbsLog: void i(java.lang.String,java.lang.String)>
+    <com.tencent.smtt.sdk.TbsDownloader: boolean a(android.content.Context,boolean,boolean)>
+    <com.tencent.smtt.utils.TbsLog: void i(java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLog(java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLogToDisk()>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+
+Leak 23:
+  Source: $r2 = staticinvoke <android.os.Environment: java.io.File getExternalStorageDirectory()>() (<android.os.Environment: java.io.File getExternalStorageDirectory()>)
+  Sink: virtualinvoke $r7.<java.io.OutputStream: void write(byte[])>($r5) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.tencent.smtt.utils.k: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.k: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.k: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.k: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.k: java.lang.String a(android.content.Context,java.lang.String,int,boolean)>
+    <com.tencent.smtt.utils.k: java.lang.String a(android.content.Context,int)>
+    <com.tencent.smtt.utils.x: java.io.File h()>
+    <com.tencent.smtt.utils.x: java.io.File h()>
+    <com.tencent.smtt.utils.x: java.io.File h()>
+    <com.tencent.smtt.utils.x: java.io.File h()>
+    <com.tencent.smtt.utils.x: java.io.File h()>
+    <com.tencent.smtt.utils.x: java.io.File h()>
+    <com.tencent.smtt.utils.x: java.io.File h()>
+    <com.tencent.smtt.utils.x: java.io.File h()>
+    <com.tencent.smtt.utils.TbsLog: void e(java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.TbsLog: void e(java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.TbsLog: void e(java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLog(java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLog(java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLog(java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLog(java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLogToDisk()>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLogToDisk()>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+    <com.tencent.smtt.utils.LogFileUtils: byte[] encrypt(java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.LogFileUtils: byte[] encrypt(java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.LogFileUtils: byte[] encrypt(java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+
+Leak 24:
+  Source: $r4 = staticinvoke <android.os.Environment: java.io.File getExternalStorageDirectory()>() (<android.os.Environment: java.io.File getExternalStorageDirectory()>)
+  Sink: virtualinvoke $r7.<java.io.OutputStream: void write(byte[])>($r5) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.tencent.smtt.utils.k: java.lang.String a(android.content.Context,java.lang.String,int,boolean)>
+    <com.tencent.smtt.utils.k: java.lang.String a(android.content.Context,java.lang.String,int,boolean)>
+    <com.tencent.smtt.utils.k: java.lang.String a(android.content.Context,java.lang.String,int,boolean)>
+    <com.tencent.smtt.utils.k: java.lang.String a(android.content.Context,java.lang.String,int,boolean)>
+    <com.tencent.smtt.utils.k: java.lang.String a(android.content.Context,java.lang.String,int,boolean)>
+    <com.tencent.smtt.utils.k: java.lang.String a(android.content.Context,int)>
+    <com.tencent.smtt.utils.x: java.io.File h()>
+    <com.tencent.smtt.utils.x: java.io.File h()>
+    <com.tencent.smtt.utils.x: java.io.File h()>
+    <com.tencent.smtt.utils.x: java.io.File h()>
+    <com.tencent.smtt.utils.x: java.io.File h()>
+    <com.tencent.smtt.utils.x: java.io.File h()>
+    <com.tencent.smtt.utils.x: java.io.File h()>
+    <com.tencent.smtt.utils.x: java.io.File h()>
+    <com.tencent.smtt.utils.TbsLog: void e(java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.TbsLog: void e(java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.TbsLog: void e(java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLog(java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLog(java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLog(java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLog(java.lang.String)>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLogToDisk()>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLogToDisk()>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+    <com.tencent.smtt.utils.LogFileUtils: byte[] encrypt(java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.LogFileUtils: byte[] encrypt(java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.LogFileUtils: byte[] encrypt(java.lang.String,java.lang.String)>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+
+Leak 25:
+  Source: $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r2, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r0, $r3) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.umeng.commonsdk.statistics.common.DeviceConfig: java.lang.String getAppName(android.content.Context)>
+    <com.umeng.commonsdk.statistics.common.DeviceConfig: java.lang.String getAppName(android.content.Context)>
+    <com.umeng.commonsdk.statistics.common.DeviceConfig: java.lang.String getAppName(android.content.Context)>
+    <com.umeng.commonsdk.statistics.common.DeviceConfig: java.lang.String getAppName(android.content.Context)>
+    <com.umeng.commonsdk.statistics.common.DeviceConfig: java.lang.String getAppName(android.content.Context)>
+    <com.umeng.commonsdk.stateless.UMSLEnvelopeBuild: org.json.JSONObject buildSLBaseHeader(android.content.Context)>
+    <com.umeng.commonsdk.stateless.UMSLEnvelopeBuild: org.json.JSONObject buildSLBaseHeader(android.content.Context)>
+    <com.umeng.commonsdk.stateless.UMSLEnvelopeBuild: org.json.JSONObject buildSLBaseHeader(android.content.Context)>
+    <com.umeng.commonsdk.stateless.UMSLEnvelopeBuild: org.json.JSONObject buildSLBaseHeader(android.content.Context)>
+    <com.umeng.commonsdk.stateless.UMSLEnvelopeBuild: org.json.JSONObject buildSLBaseHeader(android.content.Context)>
+    <com.umeng.commonsdk.stateless.UMSLEnvelopeBuild: org.json.JSONObject buildSLBaseHeader(android.content.Context)>
+    <com.umeng.commonsdk.statistics.common.e: void a(java.lang.String,java.lang.Object[])>
+    <com.umeng.commonsdk.statistics.common.e: void a(java.lang.String,java.lang.Object[])>
+    <com.umeng.commonsdk.statistics.common.e: void a(java.lang.String,java.lang.Object[])>
+    <com.umeng.commonsdk.statistics.common.e: void c(java.lang.String,java.lang.String,java.lang.Throwable)>
+    <com.umeng.commonsdk.statistics.common.e: void a(int,java.lang.String,java.lang.String,java.lang.Throwable)>
+    <com.umeng.commonsdk.statistics.common.e: void a(int,java.lang.String,java.lang.String,java.lang.Throwable)>
+
+Leak 26:
+  Source: $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r2, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r0, $r3) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.umeng.commonsdk.utils.UMUtils: java.lang.String getAppVersionName(android.content.Context)>
+    <com.umeng.commonsdk.utils.UMUtils: java.lang.String getAppVersionName(android.content.Context)>
+    <com.umeng.commonsdk.utils.UMUtils: java.lang.String getAppVersionName(android.content.Context)>
+    <com.umeng.commonsdk.statistics.common.DeviceConfig: java.lang.String getAppVersionName(android.content.Context)>
+    <com.umeng.commonsdk.stateless.UMSLEnvelopeBuild: org.json.JSONObject buildSLBaseHeader(android.content.Context)>
+    <com.umeng.commonsdk.stateless.UMSLEnvelopeBuild: org.json.JSONObject buildSLBaseHeader(android.content.Context)>
+    <com.umeng.commonsdk.stateless.UMSLEnvelopeBuild: org.json.JSONObject buildSLBaseHeader(android.content.Context)>
+    <com.umeng.commonsdk.stateless.UMSLEnvelopeBuild: org.json.JSONObject buildSLBaseHeader(android.content.Context)>
+    <com.umeng.commonsdk.stateless.UMSLEnvelopeBuild: org.json.JSONObject buildSLBaseHeader(android.content.Context)>
+    <com.umeng.commonsdk.stateless.UMSLEnvelopeBuild: org.json.JSONObject buildSLBaseHeader(android.content.Context)>
+    <com.umeng.commonsdk.statistics.common.e: void a(java.lang.String,java.lang.Object[])>
+    <com.umeng.commonsdk.statistics.common.e: void a(java.lang.String,java.lang.Object[])>
+    <com.umeng.commonsdk.statistics.common.e: void a(java.lang.String,java.lang.Object[])>
+    <com.umeng.commonsdk.statistics.common.e: void c(java.lang.String,java.lang.String,java.lang.Throwable)>
+    <com.umeng.commonsdk.statistics.common.e: void a(int,java.lang.String,java.lang.String,java.lang.Throwable)>
+    <com.umeng.commonsdk.statistics.common.e: void a(int,java.lang.String,java.lang.String,java.lang.Throwable)>
+
+Leak 27:
+  Source: $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r2, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r0, $r1) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.umeng.commonsdk.statistics.common.DeviceConfig: java.lang.String getAppName(android.content.Context)>
+    <com.umeng.commonsdk.statistics.common.DeviceConfig: java.lang.String getAppName(android.content.Context)>
+    <com.umeng.commonsdk.statistics.common.DeviceConfig: java.lang.String getAppName(android.content.Context)>
+    <com.umeng.commonsdk.statistics.common.DeviceConfig: java.lang.String getAppName(android.content.Context)>
+    <com.umeng.commonsdk.statistics.common.DeviceConfig: java.lang.String getAppName(android.content.Context)>
+    <com.umeng.commonsdk.stateless.UMSLEnvelopeBuild: org.json.JSONObject buildSLBaseHeader(android.content.Context)>
+    <com.umeng.commonsdk.stateless.UMSLEnvelopeBuild: org.json.JSONObject buildSLBaseHeader(android.content.Context)>
+    <com.umeng.commonsdk.stateless.UMSLEnvelopeBuild: org.json.JSONObject buildSLBaseHeader(android.content.Context)>
+    <com.umeng.commonsdk.stateless.UMSLEnvelopeBuild: org.json.JSONObject buildSLBaseHeader(android.content.Context)>
+    <com.umeng.commonsdk.proguard.b$1: void run()>
+    <java.lang.Thread: void run()>
+    <com.umeng.commonsdk.proguard.b: void a(android.content.Context,java.lang.Throwable)>
+    <com.umeng.commonsdk.utils.UMUtils: java.lang.String getAppkey(android.content.Context)>
+    <com.umeng.commonsdk.stateless.UMSLEnvelopeBuild: org.json.JSONObject buildSLBaseHeader(android.content.Context)>
+    <com.umeng.commonsdk.proguard.b$1: void run()>
+    <com.umeng.commonsdk.proguard.b: void a(android.content.Context,java.lang.Throwable)>
+    <com.umeng.commonsdk.stateless.f: void a(android.content.Context,java.lang.String,int)>
+    <com.umeng.commonsdk.proguard.b$1: void run()>
+    <com.umeng.commonsdk.stateless.UMSLEnvelopeBuild: org.json.JSONObject buildSLBaseHeader(android.content.Context)>
+    <com.umeng.commonsdk.stateless.UMSLEnvelopeBuild: org.json.JSONObject buildSLBaseHeader(android.content.Context)>
+    <com.umeng.commonsdk.stateless.UMSLEnvelopeBuild: org.json.JSONObject buildSLBaseHeader(android.content.Context)>
+    <com.umeng.commonsdk.proguard.b$1: void run()>
+    <com.umeng.commonsdk.stateless.UMSLEnvelopeBuild: org.json.JSONObject buildSLEnvelope(android.content.Context,org.json.JSONObject,org.json.JSONObject,java.lang.String)>
+    <com.umeng.commonsdk.stateless.UMSLEnvelopeBuild: org.json.JSONObject buildSLEnvelope(android.content.Context,org.json.JSONObject,org.json.JSONObject,java.lang.String)>
+    <com.umeng.commonsdk.stateless.UMSLEnvelopeBuild: org.json.JSONObject buildSLEnvelope(android.content.Context,org.json.JSONObject,org.json.JSONObject,java.lang.String)>
+    <com.umeng.commonsdk.stateless.UMSLEnvelopeBuild: org.json.JSONObject buildSLEnvelope(android.content.Context,org.json.JSONObject,org.json.JSONObject,java.lang.String)>
+    <com.umeng.commonsdk.stateless.UMSLEnvelopeBuild: org.json.JSONObject buildSLEnvelope(android.content.Context,org.json.JSONObject,org.json.JSONObject,java.lang.String)>
+    <com.umeng.commonsdk.statistics.common.e: void a(java.lang.String,java.lang.Object[])>
+    <com.umeng.commonsdk.statistics.common.e: void a(java.lang.String,java.lang.Object[])>
+    <com.umeng.commonsdk.statistics.common.e: void a(java.lang.String,java.lang.Object[])>
+    <com.umeng.commonsdk.statistics.common.e: void c(java.lang.String,java.lang.String,java.lang.Throwable)>
+    <com.umeng.commonsdk.statistics.common.e: void a(int,java.lang.String,java.lang.String,java.lang.Throwable)>
+    <com.umeng.commonsdk.statistics.common.e: void a(int,java.lang.String,java.lang.String,java.lang.Throwable)>
+
+Leak 28:
+  Source: $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r2, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r0, $r1) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.umeng.commonsdk.utils.UMUtils: java.lang.String getAppVersionName(android.content.Context)>
+    <com.umeng.commonsdk.utils.UMUtils: java.lang.String getAppVersionName(android.content.Context)>
+    <com.umeng.commonsdk.utils.UMUtils: java.lang.String getAppVersionName(android.content.Context)>
+    <com.umeng.commonsdk.statistics.common.DeviceConfig: java.lang.String getAppVersionName(android.content.Context)>
+    <com.umeng.commonsdk.stateless.UMSLEnvelopeBuild: org.json.JSONObject buildSLBaseHeader(android.content.Context)>
+    <com.umeng.commonsdk.stateless.UMSLEnvelopeBuild: org.json.JSONObject buildSLBaseHeader(android.content.Context)>
+    <com.umeng.commonsdk.stateless.UMSLEnvelopeBuild: org.json.JSONObject buildSLBaseHeader(android.content.Context)>
+    <com.umeng.commonsdk.stateless.UMSLEnvelopeBuild: org.json.JSONObject buildSLBaseHeader(android.content.Context)>
+    <com.umeng.commonsdk.proguard.b$1: void run()>
+    <java.lang.Thread: void run()>
+    <com.umeng.commonsdk.proguard.b: void a(android.content.Context,java.lang.Throwable)>
+    <com.umeng.commonsdk.stateless.UMSLEnvelopeBuild: org.json.JSONObject buildSLEnvelope(android.content.Context,org.json.JSONObject,org.json.JSONObject,java.lang.String)>
+    <com.umeng.commonsdk.proguard.b$1: void run()>
+    <com.umeng.commonsdk.proguard.b: void a(android.content.Context,java.lang.Throwable)>
+    <com.umeng.commonsdk.utils.UMUtils: java.lang.String getAppkey(android.content.Context)>
+    <com.umeng.commonsdk.stateless.UMSLEnvelopeBuild: org.json.JSONObject buildSLBaseHeader(android.content.Context)>
+    <com.umeng.commonsdk.proguard.b$1: void run()>
+    <com.umeng.commonsdk.proguard.b: void a(android.content.Context,java.lang.Throwable)>
+    <com.umeng.commonsdk.stateless.f: void a(android.content.Context,java.lang.String,int)>
+    <com.umeng.commonsdk.proguard.b$1: void run()>
+    <com.umeng.commonsdk.stateless.UMSLEnvelopeBuild: org.json.JSONObject buildSLBaseHeader(android.content.Context)>
+    <com.umeng.commonsdk.stateless.UMSLEnvelopeBuild: org.json.JSONObject buildSLBaseHeader(android.content.Context)>
+    <com.umeng.commonsdk.stateless.UMSLEnvelopeBuild: org.json.JSONObject buildSLBaseHeader(android.content.Context)>
+    <com.umeng.commonsdk.proguard.b$1: void run()>
+    <com.umeng.commonsdk.stateless.UMSLEnvelopeBuild: org.json.JSONObject buildSLEnvelope(android.content.Context,org.json.JSONObject,org.json.JSONObject,java.lang.String)>
+    <com.umeng.commonsdk.stateless.UMSLEnvelopeBuild: org.json.JSONObject buildSLEnvelope(android.content.Context,org.json.JSONObject,org.json.JSONObject,java.lang.String)>
+    <com.umeng.commonsdk.stateless.UMSLEnvelopeBuild: org.json.JSONObject buildSLEnvelope(android.content.Context,org.json.JSONObject,org.json.JSONObject,java.lang.String)>
+    <com.umeng.commonsdk.stateless.UMSLEnvelopeBuild: org.json.JSONObject buildSLEnvelope(android.content.Context,org.json.JSONObject,org.json.JSONObject,java.lang.String)>
+    <com.umeng.commonsdk.stateless.UMSLEnvelopeBuild: org.json.JSONObject buildSLEnvelope(android.content.Context,org.json.JSONObject,org.json.JSONObject,java.lang.String)>
+    <com.umeng.commonsdk.statistics.common.e: void a(java.lang.String,java.lang.Object[])>
+    <com.umeng.commonsdk.statistics.common.e: void a(java.lang.String,java.lang.Object[])>
+    <com.umeng.commonsdk.statistics.common.e: void a(java.lang.String,java.lang.Object[])>
+    <com.umeng.commonsdk.statistics.common.e: void c(java.lang.String,java.lang.String,java.lang.Throwable)>
+    <com.umeng.commonsdk.statistics.common.e: void a(int,java.lang.String,java.lang.String,java.lang.Throwable)>
+    <com.umeng.commonsdk.statistics.common.e: void a(int,java.lang.String,java.lang.String,java.lang.Throwable)>
+
+Leak 29:
+  Source: $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r2, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r1, $r2) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.umeng.commonsdk.utils.UMUtils: java.lang.String getChannelByXML(android.content.Context)>
+    <com.umeng.commonsdk.utils.UMUtils: java.lang.String getChannelByXML(android.content.Context)>
+    <com.umeng.commonsdk.utils.UMUtils: java.lang.String getChannelByXML(android.content.Context)>
+    <com.umeng.commonsdk.utils.UMUtils: java.lang.String getChannelByXML(android.content.Context)>
+    <com.umeng.commonsdk.utils.UMUtils: java.lang.String getChannelByXML(android.content.Context)>
+    <com.umeng.commonsdk.utils.UMUtils: java.lang.String getChannelByXML(android.content.Context)>
+    <com.umeng.commonsdk.UMConfigure: void init(android.content.Context,java.lang.String,java.lang.String,int,java.lang.String)>
+    <com.umeng.commonsdk.UMConfigure: void init(android.content.Context,java.lang.String,java.lang.String,int,java.lang.String)>
+    <com.umeng.commonsdk.UMConfigure: void init(android.content.Context,java.lang.String,java.lang.String,int,java.lang.String)>
+    <com.umeng.commonsdk.UMConfigure: void init(android.content.Context,java.lang.String,java.lang.String,int,java.lang.String)>
+    <com.umeng.commonsdk.debug.UMLog: void mutlInfo(java.lang.String,int,java.lang.String,java.lang.String[],java.lang.String[])>
+    <com.umeng.commonsdk.debug.UMLog: void mutlInfo(java.lang.String,java.lang.String,int,java.lang.String,java.lang.String[],java.lang.String[])>
+    <com.umeng.commonsdk.debug.UMLog: void mutlInfo(java.lang.String,java.lang.String,int,java.lang.String,java.lang.String[],java.lang.String[])>
+    <com.umeng.commonsdk.debug.UMLog: void mutlInfo(java.lang.String,java.lang.String,int,java.lang.String,java.lang.String[],java.lang.String[])>
+    <com.umeng.commonsdk.debug.UMLog: void mutlInfo(java.lang.String,java.lang.String,int,java.lang.String,java.lang.String[],java.lang.String[])>
+    <com.umeng.commonsdk.debug.UMLog: void mutlInfo(java.lang.String,java.lang.String,int,java.lang.String,java.lang.String[],java.lang.String[])>
+    <com.umeng.commonsdk.debug.D: void log(java.lang.String,java.lang.String)>
+
+Leak 30:
+  Source: $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r2, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r1, $r2) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.umeng.commonsdk.utils.UMUtils: java.lang.String getAppkeyByXML(android.content.Context)>
+    <com.umeng.commonsdk.utils.UMUtils: java.lang.String getAppkeyByXML(android.content.Context)>
+    <com.umeng.commonsdk.utils.UMUtils: java.lang.String getAppkeyByXML(android.content.Context)>
+    <com.umeng.commonsdk.utils.UMUtils: java.lang.String getAppkeyByXML(android.content.Context)>
+    <com.umeng.commonsdk.utils.UMUtils: java.lang.String getAppkeyByXML(android.content.Context)>
+    <com.umeng.commonsdk.UMConfigure: void init(android.content.Context,java.lang.String,java.lang.String,int,java.lang.String)>
+    <com.umeng.commonsdk.UMConfigure: void init(android.content.Context,java.lang.String,java.lang.String,int,java.lang.String)>
+    <com.umeng.commonsdk.debug.UMLog: void mutlInfo(java.lang.String,int,java.lang.String,java.lang.String[],java.lang.String[])>
+    <com.umeng.commonsdk.debug.UMLog: void mutlInfo(java.lang.String,java.lang.String,int,java.lang.String,java.lang.String[],java.lang.String[])>
+    <com.umeng.commonsdk.debug.UMLog: void mutlInfo(java.lang.String,java.lang.String,int,java.lang.String,java.lang.String[],java.lang.String[])>
+    <com.umeng.commonsdk.debug.UMLog: void mutlInfo(java.lang.String,java.lang.String,int,java.lang.String,java.lang.String[],java.lang.String[])>
+    <com.umeng.commonsdk.debug.UMLog: void mutlInfo(java.lang.String,java.lang.String,int,java.lang.String,java.lang.String[],java.lang.String[])>
+    <com.umeng.commonsdk.debug.UMLog: void mutlInfo(java.lang.String,java.lang.String,int,java.lang.String,java.lang.String[],java.lang.String[])>
+    <com.umeng.commonsdk.debug.D: void log(java.lang.String,java.lang.String)>
+
+Leak 31:
+  Source: $r2 = virtualinvoke $r1.<android.content.Context: java.io.File getExternalFilesDir(java.lang.String)>($r0) (<android.content.Context: java.io.File getExternalFilesDir(java.lang.String)>)
+  Sink: virtualinvoke $r7.<java.io.OutputStream: void write(byte[])>($r2) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.tencent.smtt.utils.k: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.k: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.k: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.k: java.lang.String a(android.content.Context,java.lang.String,int,boolean)>
+    <com.tencent.smtt.utils.k: java.lang.String a(android.content.Context,int)>
+    <com.tencent.smtt.utils.TbsLogClient: void a()>
+    <com.tencent.smtt.utils.TbsLogClient: void a()>
+    <com.tencent.smtt.utils.TbsLogClient: void a()>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLogToDisk()>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLogToDisk()>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+
+Leak 32:
+  Source: $r2 = staticinvoke <android.os.Environment: java.io.File getExternalStorageDirectory()>() (<android.os.Environment: java.io.File getExternalStorageDirectory()>)
+  Sink: virtualinvoke $r7.<java.io.OutputStream: void write(byte[])>($r2) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.tencent.smtt.utils.k: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.k: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.k: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.k: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.k: java.lang.String a(android.content.Context,java.lang.String,int,boolean)>
+    <com.tencent.smtt.utils.k: java.lang.String a(android.content.Context,int)>
+    <com.tencent.smtt.utils.TbsLogClient: void a()>
+    <com.tencent.smtt.utils.TbsLogClient: void a()>
+    <com.tencent.smtt.utils.TbsLogClient: void a()>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLogToDisk()>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLogToDisk()>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+
+Leak 33:
+  Source: $r4 = staticinvoke <android.os.Environment: java.io.File getExternalStorageDirectory()>() (<android.os.Environment: java.io.File getExternalStorageDirectory()>)
+  Sink: virtualinvoke $r7.<java.io.OutputStream: void write(byte[])>($r2) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.tencent.smtt.utils.k: java.lang.String a(android.content.Context,java.lang.String,int,boolean)>
+    <com.tencent.smtt.utils.k: java.lang.String a(android.content.Context,java.lang.String,int,boolean)>
+    <com.tencent.smtt.utils.k: java.lang.String a(android.content.Context,java.lang.String,int,boolean)>
+    <com.tencent.smtt.utils.k: java.lang.String a(android.content.Context,java.lang.String,int,boolean)>
+    <com.tencent.smtt.utils.k: java.lang.String a(android.content.Context,java.lang.String,int,boolean)>
+    <com.tencent.smtt.utils.k: java.lang.String a(android.content.Context,int)>
+    <com.tencent.smtt.utils.TbsLogClient: void a()>
+    <com.tencent.smtt.utils.TbsLogClient: void a()>
+    <com.tencent.smtt.utils.TbsLogClient: void a()>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLogToDisk()>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLogToDisk()>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+
+Leak 34:
+  Source: $r7 = virtualinvoke $r6.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() (<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>)
+  Sink: virtualinvoke $r2.<java.util.zip.GZIPOutputStream: void write(byte[])>($r3) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.tencent.bugly.crashreport.common.info.b: java.lang.String b(android.content.Context)>
+    <com.tencent.bugly.crashreport.common.info.b: java.lang.String b(android.content.Context)>
+    <com.tencent.bugly.crashreport.common.info.a: java.lang.String m()>
+    <com.tencent.bugly.crashreport.common.info.a: java.lang.String m()>
+    <com.tencent.bugly.crashreport.common.info.a: java.lang.String m()>
+    <com.tencent.bugly.crashreport.common.info.a: java.lang.String h()>
+    <com.tencent.bugly.crashreport.common.info.a: java.lang.String h()>
+    <com.tencent.bugly.crashreport.common.info.a: java.lang.String h()>
+    <com.tencent.bugly.crashreport.common.info.a: java.lang.String h()>
+    <com.tencent.bugly.crashreport.common.info.a: java.lang.String h()>
+    <com.tencent.bugly.proguard.a: com.tencent.bugly.proguard.ar a(java.util.List,int)>
+    <com.tencent.bugly.proguard.a: com.tencent.bugly.proguard.ar a(java.util.List,int)>
+    <com.tencent.bugly.crashreport.biz.a: void c()>
+    <com.tencent.bugly.proguard.a: byte[] a(com.tencent.bugly.proguard.k)>
+    <com.tencent.bugly.proguard.ar: void a(com.tencent.bugly.proguard.j)>
+    <com.tencent.bugly.proguard.ar: void a(com.tencent.bugly.proguard.j)>
+    <com.tencent.bugly.proguard.j: void a(java.lang.String,int)>
+    <com.tencent.bugly.proguard.j: void a(java.lang.String,int)>
+    <com.tencent.bugly.proguard.j: void a(java.lang.String,int)>
+    <com.tencent.bugly.proguard.j: void a(java.lang.String,int)>
+    <com.tencent.bugly.proguard.ar: void a(com.tencent.bugly.proguard.j)>
+    <com.tencent.bugly.proguard.a: byte[] a(com.tencent.bugly.proguard.k)>
+    <com.tencent.bugly.proguard.j: byte[] b()>
+    <com.tencent.bugly.proguard.j: byte[] b()>
+    <com.tencent.bugly.proguard.j: byte[] b()>
+    <com.tencent.bugly.proguard.j: byte[] b()>
+    <com.tencent.bugly.proguard.a: byte[] a(com.tencent.bugly.proguard.k)>
+    <com.tencent.bugly.crashreport.biz.a: void c()>
+    <com.tencent.bugly.proguard.a: com.tencent.bugly.proguard.am a(android.content.Context,int,byte[])>
+    <com.tencent.bugly.proguard.a: com.tencent.bugly.proguard.am a(android.content.Context,int,byte[])>
+    <com.tencent.bugly.proguard.a: com.tencent.bugly.proguard.am a(android.content.Context,int,byte[])>
+    <com.tencent.bugly.proguard.a: com.tencent.bugly.proguard.am a(android.content.Context,int,byte[])>
+    <com.tencent.bugly.proguard.z: byte[] a(byte[],int,int,java.lang.String)>
+    <com.tencent.bugly.proguard.z: byte[] a(byte[],int)>
+    <com.tencent.bugly.proguard.ac: byte[] a(byte[])>
+

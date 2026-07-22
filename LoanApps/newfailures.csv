@@ -1,0 +1,2 @@
+File,Country,Classification,Stage,ErrorType,ErrorMessage,Hint,TracebackTail
+/data/olawalea/LoanApps/NigeriaApproved/MyHives.apk,Nigeria,Approved,ANALYZE,RuntimeError,Install Android SDK build-tools (aapt/aapt2/apkanalyzer) or set AAPT_PATH/AAPT2_PATH/APKANALYZER_PATH.,,"Traceback (most recent call last): |   File ""rerunanalyzeapk.py"", line 348, in analyze_file |     raise RuntimeError(hint or ""All parsers failed"") | RuntimeError: Install Android SDK build-tools (aapt/aapt2/apkanalyzer) or set AAPT_PATH/AAPT2_PATH/APKANALYZER_PATH."

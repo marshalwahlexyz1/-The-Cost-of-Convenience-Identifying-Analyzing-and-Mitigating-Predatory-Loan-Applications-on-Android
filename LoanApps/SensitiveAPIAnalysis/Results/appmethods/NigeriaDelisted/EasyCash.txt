@@ -1,0 +1,90 @@
+APK: EasyCash (NigeriaDelisted)
+Leak 1:
+  Source: $r5 = virtualinvoke $r2.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r3, $r4, null, null, null) (<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>)
+  Sink: virtualinvoke $r15.<com.lzy.okgo.request.base.Request: void execute(com.lzy.okgo.callback.Callback)>($r17) (<com.lzy.okgo.request.base.Request: void execute(com.lzy.okgo.callback.Callback)>)
+  Methods:
+    <ji: java.util.List sd(android.content.Context)>
+    <ji: java.util.List sd(android.content.Context)>
+    <ji: java.util.List sd(android.content.Context)>
+    <com.glx.fenmiframe.get_phonebook.LianXiRenClass: void <init>(java.lang.String,java.lang.String)>
+    <com.glx.fenmiframe.get_phonebook.LianXiRenClass: void <init>(java.lang.String,java.lang.String)>
+    <ji: java.util.List sd(android.content.Context)>
+    <ji: java.util.List sd(android.content.Context)>
+    <ji: java.util.List sd(android.content.Context)>
+    <com.loancloud.nigeria.easycash.activity.Signing_Activity$k6: void run()>
+    <ji: ji NC()>
+    <ji: ji NC()>
+    <com.loancloud.nigeria.easycash.activity.Signing_Activity$k6: void run()>
+    <ji: ji NC()>
+    <ji: ji NC()>
+    <com.loancloud.nigeria.easycash.activity.Signing_Activity$k6: void run()>
+    <ji: void sd(android.content.Context,java.lang.String)>
+    <ji$NC: void <init>(ji)>
+    <ji$NC: void <init>(ji)>
+    <ji: void sd(android.content.Context,java.lang.String)>
+    <ji: void sd(android.content.Context,java.lang.String)>
+    <zn: void NC(zn$oE)>
+    <zn$sd: void <init>(java.lang.String,zn$oE)>
+    <zn$sd: void <init>(java.lang.String,zn$oE)>
+    <zn: void NC(zn$oE)>
+
+Leak 2:
+  Source: $r5 = virtualinvoke $r2.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r3, $r4, null, null, null) (<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>)
+  Sink: virtualinvoke $r15.<com.lzy.okgo.request.base.Request: void execute(com.lzy.okgo.callback.Callback)>($r17) (<com.lzy.okgo.request.base.Request: void execute(com.lzy.okgo.callback.Callback)>)
+  Methods:
+    <ji: java.util.List sd(android.content.Context)>
+    <ji: java.util.List sd(android.content.Context)>
+    <ji: java.util.List sd(android.content.Context)>
+    <com.glx.fenmiframe.get_phonebook.LianXiRenClass: void <init>(java.lang.String,java.lang.String)>
+    <com.glx.fenmiframe.get_phonebook.LianXiRenClass: void <init>(java.lang.String,java.lang.String)>
+    <ji: java.util.List sd(android.content.Context)>
+    <ji: java.util.List sd(android.content.Context)>
+    <ji: java.util.List sd(android.content.Context)>
+    <com.loancloud.nigeria.easycash.activity.Signing_Activity$k6: void run()>
+    <ji: ji NC()>
+    <ji: ji NC()>
+    <com.loancloud.nigeria.easycash.activity.Signing_Activity$k6: void run()>
+    <ji: ji NC()>
+    <ji: ji NC()>
+    <com.loancloud.nigeria.easycash.activity.Signing_Activity$k6: void run()>
+    <ji: void sd(android.content.Context,java.lang.String)>
+    <ji$NC: void <init>(ji)>
+    <ji$NC: void <init>(ji)>
+    <ji: void sd(android.content.Context,java.lang.String)>
+    <ji: void sd(android.content.Context,java.lang.String)>
+    <zn: void NC(zn$oE)>
+    <zn$sd: void <init>(java.lang.String,zn$oE)>
+    <zn$sd: void <init>(java.lang.String,zn$oE)>
+    <zn: void NC(zn$oE)>
+
+Leak 3:
+  Source: $r5 = virtualinvoke $r2.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r4, $r3, null, null, "date desc") (<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>)
+  Sink: virtualinvoke $r15.<com.lzy.okgo.request.base.Request: void execute(com.lzy.okgo.callback.Callback)>($r17) (<com.lzy.okgo.request.base.Request: void execute(com.lzy.okgo.callback.Callback)>)
+  Methods:
+    <ki: java.lang.String sd(android.content.Context)>
+    <ki: java.lang.String sd(android.content.Context)>
+    <ki: java.lang.String sd(android.content.Context)>
+    <com.glx.fenmiframe.getDuanXin.DuanXinUtils$SmslogBean: void setName(java.lang.String)>
+    <com.glx.fenmiframe.getDuanXin.DuanXinUtils$SmslogBean: void setName(java.lang.String)>
+    <ki: java.lang.String sd(android.content.Context)>
+    <ki: java.lang.String sd(android.content.Context)>
+    <ki: java.lang.String sd(android.content.Context)>
+    <com.loancloud.nigeria.easycash.activity.Signing_Activity$k6: void run()>
+    <ki: ki NC()>
+    <ki: ki NC()>
+    <com.loancloud.nigeria.easycash.activity.Signing_Activity$k6: void run()>
+    <ki: java.lang.String sd(android.content.Context)>
+    <com.loancloud.nigeria.easycash.activity.Signing_Activity$k6: void run()>
+    <ki: ki NC()>
+    <ki: ki NC()>
+    <com.loancloud.nigeria.easycash.activity.Signing_Activity$k6: void run()>
+    <ki: void sd(android.content.Context,java.lang.String)>
+    <ki$NC: void <init>(ki)>
+    <ki$NC: void <init>(ki)>
+    <ki: void sd(android.content.Context,java.lang.String)>
+    <ki: void sd(android.content.Context,java.lang.String)>
+    <zn: void NC(zn$oE)>
+    <zn$sd: void <init>(java.lang.String,zn$oE)>
+    <zn$sd: void <init>(java.lang.String,zn$oE)>
+    <zn: void NC(zn$oE)>
+

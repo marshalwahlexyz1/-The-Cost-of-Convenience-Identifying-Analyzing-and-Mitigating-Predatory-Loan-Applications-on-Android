@@ -1,0 +1,238 @@
+APK: MoneyTap (PakistanApproved)
+Leak 1:
+  Source: $r5 = virtualinvoke $r4.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r3, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r5.<java.io.FileOutputStream: void write(byte[])>($r7) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <com.facebook.internal.d: java.lang.String v()>
+    <com.facebook.internal.d: java.lang.String v()>
+    <com.facebook.internal.d: java.lang.String v()>
+    <p8.c: void <init>(java.lang.Throwable,p8.c$c)>
+    <p8.c: void <init>(java.lang.Throwable,p8.c$c)>
+    <p8.c: void <init>(java.lang.Throwable,p8.c$c,tu.j)>
+    <p8.c$a: p8.c b(java.lang.Throwable,p8.c$c)>
+    <s8.a: void b(java.lang.Throwable,java.lang.Object)>
+    <p8.c: void g()>
+    <p8.c: java.lang.String toString()>
+    <p8.c: org.json.JSONObject e()>
+    <p8.c: org.json.JSONObject d()>
+    <p8.c: org.json.JSONObject d()>
+    <p8.c: org.json.JSONObject d()>
+    <p8.c: org.json.JSONObject e()>
+    <p8.c: java.lang.String toString()>
+    <p8.c: java.lang.String toString()>
+    <p8.c: void g()>
+    <p8.k: void s(java.lang.String,java.lang.String)>
+    <p8.k: void s(java.lang.String,java.lang.String)>
+
+Leak 2:
+  Source: $r6 = staticinvoke <android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>($r5) (<android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>)
+  Sink: virtualinvoke $r14.<java.io.Writer: void write(java.lang.String)>($r1) (<java.io.BufferedWriter: void write(java.lang.String)>)
+  Methods:
+    <com.rblbank.utils.utils.Logger: void writeToLog(java.lang.String)>
+    <com.rblbank.utils.utils.Logger: void writeToLog(java.lang.String)>
+    <com.rblbank.utils.utils.Logger: void writeToLog(java.lang.String)>
+    <com.rblbank.utils.utils.Logger: void writeToLog(java.lang.String)>
+    <com.rblbank.utils.utils.Logger: void writeToLog(java.lang.String)>
+    <com.rblbank.utils.utils.Logger: void writeToLog(java.lang.String)>
+    <com.rblbank.utils.utils.Logger: void writeToLog(java.lang.String)>
+    <com.rblbank.utils.utils.Logger: void writeToLog(java.lang.String)>
+    <com.rblbank.utils.utils.Logger: void writeToLog(java.lang.String)>
+    <com.rblbank.utils.utils.Logger: void writeToLog(java.lang.String)>
+    <com.rblbank.utils.utils.Logger: void writeToLog(java.lang.String)>
+
+Leak 3:
+  Source: $r6 = staticinvoke <android.os.Environment: java.io.File getExternalStorageDirectory()>() (<android.os.Environment: java.io.File getExternalStorageDirectory()>)
+  Sink: virtualinvoke $r14.<java.io.Writer: void write(java.lang.String)>($r1) (<java.io.BufferedWriter: void write(java.lang.String)>)
+  Methods:
+    <com.rblbank.utils.utils.Logger: void writeToLog(java.lang.String)>
+    <com.rblbank.utils.utils.Logger: void writeToLog(java.lang.String)>
+    <com.rblbank.utils.utils.Logger: void writeToLog(java.lang.String)>
+    <com.rblbank.utils.utils.Logger: void writeToLog(java.lang.String)>
+    <com.rblbank.utils.utils.Logger: void writeToLog(java.lang.String)>
+    <com.rblbank.utils.utils.Logger: void writeToLog(java.lang.String)>
+    <com.rblbank.utils.utils.Logger: void writeToLog(java.lang.String)>
+    <com.rblbank.utils.utils.Logger: void writeToLog(java.lang.String)>
+    <com.rblbank.utils.utils.Logger: void writeToLog(java.lang.String)>
+    <com.rblbank.utils.utils.Logger: void writeToLog(java.lang.String)>
+    <com.rblbank.utils.utils.Logger: void writeToLog(java.lang.String)>
+    <com.rblbank.utils.utils.Logger: void writeToLog(java.lang.String)>
+
+Leak 4:
+  Source: $r10 = virtualinvoke $r9.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r7, null, null, null, "updated ASC") (<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>)
+  Sink: virtualinvoke $r17.<java.io.OutputStreamWriter: void write(java.lang.String)>($r0) (<java.io.OutputStreamWriter: void write(java.lang.String)>)
+  Methods:
+    <com.rudderstack.android.sdk.core.DBPersistentManager: void getEventsFromDB(java.util.List,java.util.List,java.lang.Integer)>
+    <com.rudderstack.android.sdk.core.DBPersistentManager: void getEventsFromDB(java.util.List,java.util.List,java.lang.Integer)>
+    <com.rudderstack.android.sdk.core.DBPersistentManager: void getEventsFromDB(java.util.List,java.util.List,java.lang.Integer)>
+    <com.rudderstack.android.sdk.core.DBPersistentManager: void getEventsFromDB(java.util.List,java.util.List,java.lang.Integer)>
+    <com.rudderstack.android.sdk.core.DBPersistentManager: void fetchEventsFromDB(java.util.ArrayList,java.util.ArrayList,int)>
+    <com.rudderstack.android.sdk.core.EventRepository$2: void run()>
+    <com.rudderstack.android.sdk.core.EventRepository: java.util.ArrayList access$1300(com.rudderstack.android.sdk.core.EventRepository)>
+    <com.rudderstack.android.sdk.core.EventRepository: java.util.ArrayList access$1300(com.rudderstack.android.sdk.core.EventRepository)>
+    <com.rudderstack.android.sdk.core.EventRepository$2: void run()>
+    <com.rudderstack.android.sdk.core.EventRepository$2: void run()>
+    <com.rudderstack.android.sdk.core.EventRepository$2: void run()>
+    <com.rudderstack.android.sdk.core.EventRepository: com.rudderstack.android.sdk.core.DBPersistentManager access$1100(com.rudderstack.android.sdk.core.EventRepository)>
+    <com.rudderstack.android.sdk.core.EventRepository$2: void run()>
+    <com.rudderstack.android.sdk.core.EventRepository$2: void run()>
+    <com.rudderstack.android.sdk.core.EventRepository$2: void run()>
+    <com.rudderstack.android.sdk.core.EventRepository: java.util.ArrayList access$1300(com.rudderstack.android.sdk.core.EventRepository)>
+    <com.rudderstack.android.sdk.core.EventRepository: java.util.ArrayList access$1300(com.rudderstack.android.sdk.core.EventRepository)>
+    <com.rudderstack.android.sdk.core.EventRepository$2: void run()>
+    <com.rudderstack.android.sdk.core.FlushUtils: java.lang.String getPayloadFromMessages(java.util.List,java.util.List)>
+    <com.rudderstack.android.sdk.core.FlushUtils: java.lang.String getPayloadFromMessages(java.util.List,java.util.List)>
+    <com.rudderstack.android.sdk.core.FlushUtils: java.lang.String getPayloadFromMessages(java.util.List,java.util.List)>
+    <com.rudderstack.android.sdk.core.FlushUtils: java.lang.String getPayloadFromMessages(java.util.List,java.util.List)>
+    <com.rudderstack.android.sdk.core.FlushUtils: java.lang.String getPayloadFromMessages(java.util.List,java.util.List)>
+    <com.rudderstack.android.sdk.core.FlushUtils: java.lang.String getPayloadFromMessages(java.util.List,java.util.List)>
+    <com.rudderstack.android.sdk.core.FlushUtils: java.lang.String getPayloadFromMessages(java.util.List,java.util.List)>
+    <com.rudderstack.android.sdk.core.FlushUtils: java.lang.String getPayloadFromMessages(java.util.List,java.util.List)>
+    <com.rudderstack.android.sdk.core.EventRepository$2: void run()>
+    <com.rudderstack.android.sdk.core.FlushUtils: com.rudderstack.android.sdk.core.util.Utils$NetworkResponses flushEventsToServer(java.lang.String,java.lang.String,java.lang.String,java.lang.String)>
+
+Leak 5:
+  Source: $r10 = virtualinvoke $r9.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r7, null, null, null, "updated ASC") (<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>)
+  Sink: virtualinvoke $r17.<java.io.OutputStreamWriter: void write(java.lang.String)>($r0) (<java.io.BufferedWriter: void write(java.lang.String)>)
+  Methods:
+    <com.rudderstack.android.sdk.core.DBPersistentManager: void getEventsFromDB(java.util.List,java.util.List,java.lang.Integer)>
+    <com.rudderstack.android.sdk.core.DBPersistentManager: void getEventsFromDB(java.util.List,java.util.List,java.lang.Integer)>
+    <com.rudderstack.android.sdk.core.DBPersistentManager: void getEventsFromDB(java.util.List,java.util.List,java.lang.Integer)>
+    <com.rudderstack.android.sdk.core.DBPersistentManager: void getEventsFromDB(java.util.List,java.util.List,java.lang.Integer)>
+    <com.rudderstack.android.sdk.core.DBPersistentManager: void fetchEventsFromDB(java.util.ArrayList,java.util.ArrayList,int)>
+    <com.rudderstack.android.sdk.core.EventRepository$2: void run()>
+    <com.rudderstack.android.sdk.core.EventRepository: java.util.ArrayList access$1300(com.rudderstack.android.sdk.core.EventRepository)>
+    <com.rudderstack.android.sdk.core.EventRepository: java.util.ArrayList access$1300(com.rudderstack.android.sdk.core.EventRepository)>
+    <com.rudderstack.android.sdk.core.EventRepository$2: void run()>
+    <com.rudderstack.android.sdk.core.EventRepository$2: void run()>
+    <com.rudderstack.android.sdk.core.EventRepository$2: void run()>
+    <com.rudderstack.android.sdk.core.EventRepository: com.rudderstack.android.sdk.core.DBPersistentManager access$1100(com.rudderstack.android.sdk.core.EventRepository)>
+    <com.rudderstack.android.sdk.core.EventRepository$2: void run()>
+    <com.rudderstack.android.sdk.core.EventRepository$2: void run()>
+    <com.rudderstack.android.sdk.core.EventRepository$2: void run()>
+    <com.rudderstack.android.sdk.core.EventRepository: java.util.ArrayList access$1300(com.rudderstack.android.sdk.core.EventRepository)>
+    <com.rudderstack.android.sdk.core.EventRepository: java.util.ArrayList access$1300(com.rudderstack.android.sdk.core.EventRepository)>
+    <com.rudderstack.android.sdk.core.EventRepository$2: void run()>
+    <com.rudderstack.android.sdk.core.FlushUtils: java.lang.String getPayloadFromMessages(java.util.List,java.util.List)>
+    <com.rudderstack.android.sdk.core.FlushUtils: java.lang.String getPayloadFromMessages(java.util.List,java.util.List)>
+    <com.rudderstack.android.sdk.core.FlushUtils: java.lang.String getPayloadFromMessages(java.util.List,java.util.List)>
+    <com.rudderstack.android.sdk.core.FlushUtils: java.lang.String getPayloadFromMessages(java.util.List,java.util.List)>
+    <com.rudderstack.android.sdk.core.FlushUtils: java.lang.String getPayloadFromMessages(java.util.List,java.util.List)>
+    <com.rudderstack.android.sdk.core.FlushUtils: java.lang.String getPayloadFromMessages(java.util.List,java.util.List)>
+    <com.rudderstack.android.sdk.core.FlushUtils: java.lang.String getPayloadFromMessages(java.util.List,java.util.List)>
+    <com.rudderstack.android.sdk.core.FlushUtils: java.lang.String getPayloadFromMessages(java.util.List,java.util.List)>
+    <com.rudderstack.android.sdk.core.EventRepository$2: void run()>
+    <com.rudderstack.android.sdk.core.FlushUtils: com.rudderstack.android.sdk.core.util.Utils$NetworkResponses flushEventsToServer(java.lang.String,java.lang.String,java.lang.String,java.lang.String)>
+
+Leak 6:
+  Source: $r6 = virtualinvoke $r4.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r5, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r15.<java.io.OutputStream: void write(byte[])>($r7) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.appsflyer.internal.x: java.lang.String valueOf(java.lang.String)>
+    <com.appsflyer.internal.x: java.lang.String valueOf(java.lang.String)>
+    <com.appsflyer.internal.x: java.lang.String valueOf(java.lang.String)>
+    <com.appsflyer.internal.x: java.lang.String valueOf(java.lang.String)>
+    <com.appsflyer.internal.x: java.lang.String valueOf(java.lang.String)>
+    <com.appsflyer.internal.ah: java.lang.String AFKeystoreWrapper(android.content.Context,java.lang.String)>
+    <com.appsflyer.internal.ah: java.lang.String values(android.content.Context)>
+    <com.appsflyer.internal.bt: void AFInAppEventParameterName(java.lang.String)>
+    <com.appsflyer.internal.bt: void AFInAppEventParameterName(java.lang.String)>
+    <com.appsflyer.internal.bt: void AFInAppEventParameterName(java.lang.String)>
+    <com.appsflyer.internal.bt$4: void <init>(com.appsflyer.internal.bt,com.appsflyer.internal.ah)>
+    <com.appsflyer.internal.bt$4: void <init>(com.appsflyer.internal.bt,com.appsflyer.internal.ah)>
+    <com.appsflyer.internal.bt: void AFInAppEventParameterName(java.lang.String)>
+    <com.appsflyer.internal.bt: void AFInAppEventParameterName(java.lang.String)>
+    <com.appsflyer.internal.bt$4: void run()>
+    <com.appsflyer.internal.bt$4: void run()>
+    <com.appsflyer.internal.aj$a: void <init>(com.appsflyer.internal.ce)>
+    <com.appsflyer.internal.aj$a: void <init>(com.appsflyer.internal.ce)>
+    <com.appsflyer.internal.bt$4: void run()>
+    <com.appsflyer.internal.aj$a: java.net.HttpURLConnection AFInAppEventParameterName()>
+    <com.appsflyer.internal.aj$a: java.net.HttpURLConnection AFInAppEventParameterName()>
+    <com.appsflyer.internal.ce: java.lang.String AppsFlyer2dXConversionCallback()>
+    <com.appsflyer.internal.g: java.util.Map AFKeystoreWrapper()>
+    <com.appsflyer.internal.g: java.util.Map AFKeystoreWrapper()>
+    <com.appsflyer.internal.ce: java.lang.String AppsFlyer2dXConversionCallback()>
+    <com.appsflyer.internal.k: org.json.JSONObject AFKeystoreWrapper(java.util.Map)>
+    <com.appsflyer.internal.k: org.json.JSONObject AFKeystoreWrapper(java.util.Map)>
+    <com.appsflyer.internal.k: org.json.JSONObject AFKeystoreWrapper(java.util.Map)>
+    <com.appsflyer.internal.k: org.json.JSONObject AFKeystoreWrapper(java.util.Map)>
+    <com.appsflyer.internal.k: org.json.JSONObject AFKeystoreWrapper(java.util.Map)>
+    <com.appsflyer.internal.k: org.json.JSONObject AFKeystoreWrapper(java.util.Map)>
+    <com.appsflyer.internal.k: org.json.JSONObject AFKeystoreWrapper(java.util.Map)>
+    <com.appsflyer.internal.ce: java.lang.String AppsFlyer2dXConversionCallback()>
+    <com.appsflyer.internal.ce: java.lang.String AppsFlyer2dXConversionCallback()>
+    <com.appsflyer.internal.aj$a: java.net.HttpURLConnection AFInAppEventParameterName()>
+    <com.appsflyer.internal.aj$a: java.net.HttpURLConnection AFInAppEventParameterName()>
+    <com.appsflyer.internal.aj$a: java.net.HttpURLConnection AFInAppEventParameterName()>
+
+Leak 7:
+  Source: $r8 = virtualinvoke $r6.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r7, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r15.<java.io.OutputStream: void write(byte[])>($r7) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.appsflyer.internal.bt: void AFInAppEventParameterName(java.lang.String)>
+    <com.appsflyer.internal.bt: void AFInAppEventParameterName(java.lang.String)>
+    <com.appsflyer.internal.bt: void AFInAppEventParameterName(java.lang.String)>
+    <com.appsflyer.internal.bt: void AFInAppEventParameterName(java.lang.String)>
+    <com.appsflyer.internal.bt: void AFInAppEventParameterName(java.lang.String)>
+    <com.appsflyer.internal.bt: void AFInAppEventParameterName(java.lang.String)>
+    <com.appsflyer.internal.bt$4: void <init>(com.appsflyer.internal.bt,com.appsflyer.internal.ah)>
+    <com.appsflyer.internal.bt$4: void <init>(com.appsflyer.internal.bt,com.appsflyer.internal.ah)>
+    <com.appsflyer.internal.bt: void AFInAppEventParameterName(java.lang.String)>
+    <com.appsflyer.internal.bt: void AFInAppEventParameterName(java.lang.String)>
+    <com.appsflyer.internal.bt$4: void run()>
+    <com.appsflyer.internal.bt$4: void run()>
+    <com.appsflyer.internal.aj$a: void <init>(com.appsflyer.internal.ce)>
+    <com.appsflyer.internal.aj$a: void <init>(com.appsflyer.internal.ce)>
+    <com.appsflyer.internal.bt$4: void run()>
+    <com.appsflyer.internal.aj$a: java.net.HttpURLConnection AFInAppEventParameterName()>
+    <com.appsflyer.internal.aj$a: java.net.HttpURLConnection AFInAppEventParameterName()>
+    <com.appsflyer.internal.ce: java.lang.String AppsFlyer2dXConversionCallback()>
+    <com.appsflyer.internal.g: java.util.Map AFKeystoreWrapper()>
+    <com.appsflyer.internal.g: java.util.Map AFKeystoreWrapper()>
+    <com.appsflyer.internal.ce: java.lang.String AppsFlyer2dXConversionCallback()>
+    <com.appsflyer.internal.k: org.json.JSONObject AFKeystoreWrapper(java.util.Map)>
+    <com.appsflyer.internal.k: org.json.JSONObject AFKeystoreWrapper(java.util.Map)>
+    <com.appsflyer.internal.k: org.json.JSONObject AFKeystoreWrapper(java.util.Map)>
+    <com.appsflyer.internal.k: org.json.JSONObject AFKeystoreWrapper(java.util.Map)>
+    <com.appsflyer.internal.k: org.json.JSONObject AFKeystoreWrapper(java.util.Map)>
+    <com.appsflyer.internal.k: org.json.JSONObject AFKeystoreWrapper(java.util.Map)>
+    <com.appsflyer.internal.k: org.json.JSONObject AFKeystoreWrapper(java.util.Map)>
+    <com.appsflyer.internal.ce: java.lang.String AppsFlyer2dXConversionCallback()>
+    <com.appsflyer.internal.ce: java.lang.String AppsFlyer2dXConversionCallback()>
+    <com.appsflyer.internal.aj$a: java.net.HttpURLConnection AFInAppEventParameterName()>
+    <com.appsflyer.internal.aj$a: java.net.HttpURLConnection AFInAppEventParameterName()>
+    <com.appsflyer.internal.aj$a: java.net.HttpURLConnection AFInAppEventParameterName()>
+
+Leak 8:
+  Source: $r6 = staticinvoke <android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>($r5) (<android.os.Environment: java.io.File getExternalStoragePublicDirectory(java.lang.String)>)
+  Sink: virtualinvoke $r14.<java.io.Writer: void write(java.lang.String)>($r1) (<java.io.OutputStreamWriter: void write(java.lang.String)>)
+  Methods:
+    <com.rblbank.utils.utils.Logger: void writeToLog(java.lang.String)>
+    <com.rblbank.utils.utils.Logger: void writeToLog(java.lang.String)>
+    <com.rblbank.utils.utils.Logger: void writeToLog(java.lang.String)>
+    <com.rblbank.utils.utils.Logger: void writeToLog(java.lang.String)>
+    <com.rblbank.utils.utils.Logger: void writeToLog(java.lang.String)>
+    <com.rblbank.utils.utils.Logger: void writeToLog(java.lang.String)>
+    <com.rblbank.utils.utils.Logger: void writeToLog(java.lang.String)>
+    <com.rblbank.utils.utils.Logger: void writeToLog(java.lang.String)>
+    <com.rblbank.utils.utils.Logger: void writeToLog(java.lang.String)>
+    <com.rblbank.utils.utils.Logger: void writeToLog(java.lang.String)>
+    <com.rblbank.utils.utils.Logger: void writeToLog(java.lang.String)>
+
+Leak 9:
+  Source: $r6 = staticinvoke <android.os.Environment: java.io.File getExternalStorageDirectory()>() (<android.os.Environment: java.io.File getExternalStorageDirectory()>)
+  Sink: virtualinvoke $r14.<java.io.Writer: void write(java.lang.String)>($r1) (<java.io.OutputStreamWriter: void write(java.lang.String)>)
+  Methods:
+    <com.rblbank.utils.utils.Logger: void writeToLog(java.lang.String)>
+    <com.rblbank.utils.utils.Logger: void writeToLog(java.lang.String)>
+    <com.rblbank.utils.utils.Logger: void writeToLog(java.lang.String)>
+    <com.rblbank.utils.utils.Logger: void writeToLog(java.lang.String)>
+    <com.rblbank.utils.utils.Logger: void writeToLog(java.lang.String)>
+    <com.rblbank.utils.utils.Logger: void writeToLog(java.lang.String)>
+    <com.rblbank.utils.utils.Logger: void writeToLog(java.lang.String)>
+    <com.rblbank.utils.utils.Logger: void writeToLog(java.lang.String)>
+    <com.rblbank.utils.utils.Logger: void writeToLog(java.lang.String)>
+    <com.rblbank.utils.utils.Logger: void writeToLog(java.lang.String)>
+    <com.rblbank.utils.utils.Logger: void writeToLog(java.lang.String)>
+    <com.rblbank.utils.utils.Logger: void writeToLog(java.lang.String)>
+

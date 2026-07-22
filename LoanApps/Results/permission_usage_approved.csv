@@ -1,0 +1,16 @@
+Permission,Count
+android.permission.WRITE_CALL_LOG,0
+android.permission.MANAGE_EXTERNAL_STORAGE,0
+android.permission.MANAGE_MEDIA,0
+android.permission.MANAGE_ONGOING_CALLS,0
+android.permission.QUERY_ALL_PACKAGES,4
+android.permission.READ_PHONE_NUMBERS,7
+android.permission.READ_MEDIA_VIDEO,9
+android.permission.READ_MEDIA_AUDIO,10
+android.permission.READ_MEDIA_IMAGES,14
+android.permission.READ_CALL_LOG,34
+android.permission.READ_CONTACTS,64
+android.permission.ACCESS_FINE_LOCATION,92
+android.permission.READ_EXTERNAL_STORAGE,112
+android.permission.WRITE_EXTERNAL_STORAGE,112
+android.permission.READ_SMS,118

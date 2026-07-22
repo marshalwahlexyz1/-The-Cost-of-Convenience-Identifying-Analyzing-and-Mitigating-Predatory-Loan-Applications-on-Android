@@ -1,0 +1,75 @@
+APK: HiFund (NigeriaApproved)
+Leak 1:
+  Source: $r4 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r3, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r3.<java.io.OutputStream: void write(byte[])>($r5) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.facebook.FacebookSdk: void loadDefaultsFromMetadata(android.content.Context)>
+    <com.facebook.FacebookSdk: void loadDefaultsFromMetadata(android.content.Context)>
+    <com.facebook.FacebookSdk: void loadDefaultsFromMetadata(android.content.Context)>
+    <com.facebook.FacebookSdk: void loadDefaultsFromMetadata(android.content.Context)>
+    <com.facebook.FacebookSdk: void loadDefaultsFromMetadata(android.content.Context)>
+    <com.facebook.FacebookSdk: void loadDefaultsFromMetadata(android.content.Context)>
+    <com.facebook.FacebookSdk: void sdkInitialize(android.content.Context,com.facebook.FacebookSdk$InitializeCallback)>
+    <com.facebook.FacebookSdk: void sdkInitialize(android.content.Context)>
+    <com.hifund.money.kash.loan.App: void onCreate()>
+    <com.facebook.appevents.AppEventsLogger: void activateApp(android.app.Application)>
+    <com.facebook.appevents.AppEventsLogger: void activateApp(android.app.Application,java.lang.String)>
+    <com.facebook.FacebookSdk: void publishInstallAsync(android.content.Context,java.lang.String)>
+    <com.facebook.FacebookSdk$4: void run()>
+    <com.facebook.FacebookSdk: void publishInstallAndWaitForResponse(android.content.Context,java.lang.String)>
+    <com.facebook.GraphRequest: com.facebook.GraphResponse executeAndWait()>
+    <com.facebook.GraphRequest: com.facebook.GraphResponse executeAndWait(com.facebook.GraphRequest)>
+    <com.facebook.GraphRequest: java.util.List executeBatchAndWait(com.facebook.GraphRequest[])>
+    <com.facebook.GraphRequest: java.util.List executeBatchAndWait(java.util.Collection)>
+    <com.facebook.GraphRequest: java.util.List executeBatchAndWait(com.facebook.GraphRequestBatch)>
+    <com.facebook.GraphRequest: java.net.HttpURLConnection toHttpConnection(com.facebook.GraphRequestBatch)>
+    <com.facebook.GraphRequest: void serializeToUrlConnection(com.facebook.GraphRequestBatch,java.net.HttpURLConnection)>
+    <com.facebook.GraphRequest: void processRequest(com.facebook.GraphRequestBatch,com.facebook.internal.Logger,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.GraphRequest: java.lang.String getBatchAppId(com.facebook.GraphRequestBatch)>
+    <com.facebook.FacebookSdk: java.lang.String getApplicationId()>
+    <com.facebook.FacebookSdk: java.lang.String getApplicationId()>
+    <com.facebook.GraphRequest: java.lang.String getBatchAppId(com.facebook.GraphRequestBatch)>
+    <com.facebook.GraphRequest: void processRequest(com.facebook.GraphRequestBatch,com.facebook.internal.Logger,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.GraphRequest$Serializer: void writeString(java.lang.String,java.lang.String)>
+    <com.facebook.GraphRequest$Serializer: void writeString(java.lang.String,java.lang.String)>
+    <com.facebook.GraphRequest$Serializer: void writeLine(java.lang.String,java.lang.Object[])>
+    <com.facebook.GraphRequest$Serializer: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.GraphRequest$Serializer: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.GraphRequest$Serializer: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.GraphRequest$Serializer: void write(java.lang.String,java.lang.Object[])>
+
+Leak 2:
+  Source: $r4 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r3, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r3.<java.io.OutputStream: void write(byte[])>($r5) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.facebook.FacebookSdk: void loadDefaultsFromMetadata(android.content.Context)>
+    <com.facebook.FacebookSdk: void loadDefaultsFromMetadata(android.content.Context)>
+    <com.facebook.FacebookSdk: void loadDefaultsFromMetadata(android.content.Context)>
+    <com.facebook.FacebookSdk: void loadDefaultsFromMetadata(android.content.Context)>
+    <com.facebook.FacebookSdk: void loadDefaultsFromMetadata(android.content.Context)>
+    <com.facebook.FacebookSdk: void loadDefaultsFromMetadata(android.content.Context)>
+    <com.facebook.FacebookSdk: void sdkInitialize(android.content.Context,com.facebook.FacebookSdk$InitializeCallback)>
+    <com.facebook.internal.FetchedAppSettingsManager: void loadAppSettingsAsync()>
+    <com.facebook.internal.FetchedAppSettingsManager$1: void run()>
+    <com.facebook.internal.FetchedAppSettingsManager: org.json.JSONObject access$100(java.lang.String)>
+    <com.facebook.internal.FetchedAppSettingsManager: org.json.JSONObject getAppSettingsQueryResponse(java.lang.String)>
+    <com.facebook.GraphRequest: com.facebook.GraphResponse executeAndWait()>
+    <com.facebook.GraphRequest: com.facebook.GraphResponse executeAndWait(com.facebook.GraphRequest)>
+    <com.facebook.GraphRequest: java.util.List executeBatchAndWait(com.facebook.GraphRequest[])>
+    <com.facebook.GraphRequest: java.util.List executeBatchAndWait(java.util.Collection)>
+    <com.facebook.GraphRequest: java.util.List executeBatchAndWait(com.facebook.GraphRequestBatch)>
+    <com.facebook.GraphRequest: java.net.HttpURLConnection toHttpConnection(com.facebook.GraphRequestBatch)>
+    <com.facebook.GraphRequest: void serializeToUrlConnection(com.facebook.GraphRequestBatch,java.net.HttpURLConnection)>
+    <com.facebook.GraphRequest: void processRequest(com.facebook.GraphRequestBatch,com.facebook.internal.Logger,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.GraphRequest: java.lang.String getBatchAppId(com.facebook.GraphRequestBatch)>
+    <com.facebook.FacebookSdk: java.lang.String getApplicationId()>
+    <com.facebook.FacebookSdk: java.lang.String getApplicationId()>
+    <com.facebook.GraphRequest: java.lang.String getBatchAppId(com.facebook.GraphRequestBatch)>
+    <com.facebook.GraphRequest: void processRequest(com.facebook.GraphRequestBatch,com.facebook.internal.Logger,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.GraphRequest$Serializer: void writeString(java.lang.String,java.lang.String)>
+    <com.facebook.GraphRequest$Serializer: void writeString(java.lang.String,java.lang.String)>
+    <com.facebook.GraphRequest$Serializer: void writeLine(java.lang.String,java.lang.Object[])>
+    <com.facebook.GraphRequest$Serializer: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.GraphRequest$Serializer: void write(java.lang.String,java.lang.Object[])>
+    <com.facebook.GraphRequest$Serializer: void write(java.lang.String,java.lang.Object[])>
+

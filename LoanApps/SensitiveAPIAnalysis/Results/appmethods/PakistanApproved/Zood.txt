@@ -1,0 +1,122 @@
+APK: Zood (PakistanApproved)
+Leak 1:
+  Source: $r5 = virtualinvoke $r3.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r4, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("ManifestParser", $r4) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.bumptech.glide.module.ManifestParser: java.util.List parse()>
+    <com.bumptech.glide.module.ManifestParser: java.util.List parse()>
+    <com.bumptech.glide.module.ManifestParser: java.util.List parse()>
+    <com.bumptech.glide.module.ManifestParser: java.util.List parse()>
+    <com.bumptech.glide.module.ManifestParser: java.util.List parse()>
+    <com.bumptech.glide.module.ManifestParser: java.util.List parse()>
+    <com.bumptech.glide.module.ManifestParser: java.util.List parse()>
+    <com.bumptech.glide.module.ManifestParser: java.util.List parse()>
+    <com.bumptech.glide.module.ManifestParser: java.util.List parse()>
+
+Leak 2:
+  Source: $r6 = virtualinvoke $r5.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r4, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("newrelic", $r1) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.newrelic.agent.android.AndroidAgentImpl: void initApplicationInformation()>
+    <com.newrelic.agent.android.AndroidAgentImpl: void initApplicationInformation()>
+    <com.newrelic.agent.android.AndroidAgentImpl: void initApplicationInformation()>
+    <com.newrelic.agent.android.AndroidAgentImpl: void initApplicationInformation()>
+    <com.newrelic.agent.android.AndroidAgentImpl: void initApplicationInformation()>
+    <com.newrelic.agent.android.logging.DefaultAgentLog: void debug(java.lang.String)>
+    <com.newrelic.agent.android.logging.AndroidAgentLog: void debug(java.lang.String)>
+
+Leak 3:
+  Source: $r4 = virtualinvoke $r3.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r2, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r5.<java.io.FileOutputStream: void write(byte[])>($r7) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <com.facebook.internal.Utility: java.lang.String getAppVersion()>
+    <com.facebook.internal.Utility: java.lang.String getAppVersion()>
+    <com.facebook.internal.Utility: java.lang.String getAppVersion()>
+    <com.facebook.internal.instrument.InstrumentData: void <init>(java.lang.String,java.lang.String,kotlin.jvm.internal.DefaultConstructorMarker)>
+    <com.facebook.internal.instrument.InstrumentData: void <init>(java.lang.String,java.lang.String,kotlin.jvm.internal.DefaultConstructorMarker)>
+    <com.facebook.internal.instrument.InstrumentData$Builder: com.facebook.internal.instrument.InstrumentData build(java.lang.String,java.lang.String)>
+    <com.facebook.internal.instrument.anrreport.ANRDetector: void checkProcessError(android.app.ActivityManager)>
+    <com.facebook.internal.instrument.InstrumentData: void save()>
+    <com.facebook.internal.instrument.InstrumentData: java.lang.String toString()>
+    <com.facebook.internal.instrument.InstrumentData: java.lang.String toString()>
+    <com.facebook.internal.instrument.InstrumentData: java.lang.String toString()>
+    <com.facebook.internal.instrument.InstrumentData: java.lang.String toString()>
+    <com.facebook.internal.instrument.InstrumentData: java.lang.String toString()>
+    <com.newrelic.agent.android.instrumentation.JSONObjectInstrumentation: java.lang.String toString(org.json.JSONObject)>
+    <com.newrelic.agent.android.instrumentation.JSONObjectInstrumentation: java.lang.String toString(org.json.JSONObject)>
+    <com.facebook.internal.instrument.InstrumentData: java.lang.String toString()>
+    <com.facebook.internal.instrument.InstrumentData: void save()>
+    <com.facebook.internal.instrument.InstrumentUtility: void writeFile(java.lang.String,java.lang.String)>
+    <com.facebook.internal.instrument.InstrumentUtility: void writeFile(java.lang.String,java.lang.String)>
+
+Leak 4:
+  Source: $r7 = virtualinvoke $r6.<android.location.Location: android.os.Bundle getExtras()>() (<android.location.Location: android.os.Bundle getExtras()>)
+  Sink: staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r0, $r1) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.useinsider.insider.w0: java.util.ArrayList c(java.util.ArrayList)>
+    <com.useinsider.insider.w0: java.util.ArrayList c(java.util.ArrayList)>
+    <com.useinsider.insider.w0: java.util.ArrayList c(java.util.ArrayList)>
+    <com.useinsider.insider.w0: java.util.ArrayList c(java.util.ArrayList)>
+    <com.useinsider.insider.w0: java.util.ArrayList c(java.util.ArrayList)>
+    <y9.o: void c(com.useinsider.insider.t0,int,java.lang.Object[])>
+    <y9.o: void c(com.useinsider.insider.t0,int,java.lang.Object[])>
+    <y9.o: void a(int,java.lang.String,java.lang.String)>
+
+Leak 5:
+  Source: $r8 = virtualinvoke $r7.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r2, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r0, $r1) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.useinsider.insider.c: void f(android.content.Context)>
+    <com.useinsider.insider.c: void f(android.content.Context)>
+    <com.useinsider.insider.c: void f(android.content.Context)>
+    <com.useinsider.insider.c: void f(android.content.Context)>
+    <com.newrelic.agent.android.instrumentation.JSONObjectInstrumentation: java.lang.String toString(org.json.JSONObject)>
+    <com.newrelic.agent.android.instrumentation.JSONObjectInstrumentation: java.lang.String toString(org.json.JSONObject)>
+    <com.useinsider.insider.c: void f(android.content.Context)>
+    <com.useinsider.insider.c: void f(android.content.Context)>
+    <com.useinsider.insider.c: void e(java.lang.String,java.lang.String,org.json.JSONObject,java.lang.String,java.lang.String)>
+    <com.useinsider.insider.c: void e(java.lang.String,java.lang.String,org.json.JSONObject,java.lang.String,java.lang.String)>
+    <com.useinsider.insider.c: void e(java.lang.String,java.lang.String,org.json.JSONObject,java.lang.String,java.lang.String)>
+    <com.useinsider.insider.c: void e(java.lang.String,java.lang.String,org.json.JSONObject,java.lang.String,java.lang.String)>
+    <com.useinsider.insider.c: void e(java.lang.String,java.lang.String,org.json.JSONObject,java.lang.String,java.lang.String)>
+    <com.useinsider.insider.c: void e(java.lang.String,java.lang.String,org.json.JSONObject,java.lang.String,java.lang.String)>
+    <com.useinsider.insider.c: void e(java.lang.String,java.lang.String,org.json.JSONObject,java.lang.String,java.lang.String)>
+    <com.useinsider.insider.c: void e(java.lang.String,java.lang.String,org.json.JSONObject,java.lang.String,java.lang.String)>
+    <com.useinsider.insider.c: void e(java.lang.String,java.lang.String,org.json.JSONObject,java.lang.String,java.lang.String)>
+    <com.useinsider.insider.c: void e(java.lang.String,java.lang.String,org.json.JSONObject,java.lang.String,java.lang.String)>
+    <com.useinsider.insider.c: void e(java.lang.String,java.lang.String,org.json.JSONObject,java.lang.String,java.lang.String)>
+    <y9.o: void c(com.useinsider.insider.t0,int,java.lang.Object[])>
+    <y9.o: void c(com.useinsider.insider.t0,int,java.lang.Object[])>
+    <y9.o: void a(int,java.lang.String,java.lang.String)>
+
+Leak 6:
+  Source: $r6 = virtualinvoke $r5.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r4, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("newrelic", $r1) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.newrelic.agent.android.AndroidAgentImpl: void initApplicationInformation()>
+    <com.newrelic.agent.android.AndroidAgentImpl: void initApplicationInformation()>
+    <com.newrelic.agent.android.AndroidAgentImpl: void initApplicationInformation()>
+    <com.newrelic.agent.android.AndroidAgentImpl: void initApplicationInformation()>
+    <com.newrelic.agent.android.harvest.ApplicationInformation: void <init>(java.lang.String,java.lang.String,java.lang.String,java.lang.String)>
+    <com.newrelic.agent.android.harvest.ApplicationInformation: void <init>(java.lang.String,java.lang.String,java.lang.String,java.lang.String)>
+    <com.newrelic.agent.android.AndroidAgentImpl: void initApplicationInformation()>
+    <com.newrelic.agent.android.AndroidAgentImpl: void initApplicationInformation()>
+    <com.newrelic.agent.android.AndroidAgentImpl: void <init>(android.content.Context,com.newrelic.agent.android.AgentConfiguration)>
+    <com.newrelic.agent.android.AndroidAgentImpl: void init(android.content.Context,com.newrelic.agent.android.AgentConfiguration)>
+    <com.newrelic.agent.android.Agent: void setImpl(com.newrelic.agent.android.AgentImpl)>
+    <com.newrelic.agent.android.Agent: void setImpl(com.newrelic.agent.android.AgentImpl)>
+    <com.newrelic.agent.android.AndroidAgentImpl: void init(android.content.Context,com.newrelic.agent.android.AgentConfiguration)>
+    <com.newrelic.agent.android.Agent: void start()>
+    <com.newrelic.agent.android.Agent: com.newrelic.agent.android.AgentImpl getImpl()>
+    <com.newrelic.agent.android.Agent: com.newrelic.agent.android.AgentImpl getImpl()>
+    <com.newrelic.agent.android.Agent: void start()>
+    <com.newrelic.agent.android.AndroidAgentImpl: void start()>
+    <com.newrelic.agent.android.AndroidAgentImpl: void initialize()>
+    <com.newrelic.agent.android.analytics.AnalyticsControllerImpl: void initialize(com.newrelic.agent.android.AgentConfiguration,com.newrelic.agent.android.AgentImpl)>
+    <com.newrelic.agent.android.analytics.AnalyticsControllerImpl: void reinitialize(com.newrelic.agent.android.AgentConfiguration,com.newrelic.agent.android.AgentImpl)>
+    <com.newrelic.agent.android.analytics.AnalyticsControllerImpl: void reinitialize(com.newrelic.agent.android.AgentConfiguration,com.newrelic.agent.android.AgentImpl)>
+    <com.newrelic.agent.android.analytics.AnalyticsControllerImpl: void reinitialize(com.newrelic.agent.android.AgentConfiguration,com.newrelic.agent.android.AgentImpl)>
+    <com.newrelic.agent.android.analytics.AnalyticsControllerImpl: void reinitialize(com.newrelic.agent.android.AgentConfiguration,com.newrelic.agent.android.AgentImpl)>
+    <com.newrelic.agent.android.logging.DefaultAgentLog: void audit(java.lang.String)>
+    <com.newrelic.agent.android.logging.AndroidAgentLog: void audit(java.lang.String)>
+

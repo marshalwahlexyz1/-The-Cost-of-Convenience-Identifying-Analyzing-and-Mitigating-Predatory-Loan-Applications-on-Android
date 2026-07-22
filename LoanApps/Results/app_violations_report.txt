@@ -1,0 +1,1362 @@
+Debug Info:
+- Indonesia/Approved: 53 apps
+  Sample permissions: android.permission.access_adservices_attribution, android.permission.access_coarse_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.camera, android.permission.change_wifi_state, android.permission.flashlight, android.permission.foreground_service, android.permission.internet, android.permission.post_notifications, android.permission.receive_boot_completed, android.permission.wake_lock, com.google.android.c2dm.permission.receive, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id, com.huawei.appmarket.service.commondata.permission.get_common_data
+- Kenya/Approved: 32 apps
+  Sample permissions: android.permission.access_network_state, android.permission.call_phone, android.permission.internet
+- Nigeria/Approved: 191 apps
+  Sample permissions: android.permission.access_adservices_ad_id, android.permission.access_adservices_attribution, android.permission.access_adservices_custom_audience, android.permission.access_coarse_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.bluetooth, android.permission.internet, android.permission.package_usage_stats, android.permission.read_calendar, android.permission.read_phone_state, android.permission.read_sms, android.permission.wake_lock, android.permission.write_calendar, com.android.vending.check_license, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id, com.google.android.providers.gsf.permission.read_gservices, team.trueloan.loan.dynamic_receiver_not_exported_permission
+- Nigeria/Delisted: 54 apps
+  Sample permissions: android.permission.access_coarse_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.change_network_state, android.permission.change_wifi_state, android.permission.internet, android.permission.read_phone_state, android.permission.read_privileged_phone_state, android.permission.read_sms, android.permission.receive_sms, android.permission.system_alert_window, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id
+- Pakistan/Approved: 11 apps
+  Sample permissions: android.permission.access_network_state, android.permission.access_wifi_state, android.permission.camera, android.permission.internet, android.permission.read_contacts, android.permission.read_external_storage, android.permission.read_profile, android.permission.wake_lock, android.permission.write_external_storage, com.google.android.c2dm.permission.receive, com.google.android.finsky.permission.bind_get_install_referrer_service
+- Pakistan/Delisted: 28 apps
+  Sample permissions: android.permission.access_network_state, android.permission.foreground_service, android.permission.internet, android.permission.post_notifications, android.permission.receive_boot_completed, android.permission.wake_lock, com.darm.personaloans.permission.c2d_message, com.google.android.c2dm.permission.receive, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id
+- Philippines/Approved: 55 apps
+  Sample permissions: android.permission.access_coarse_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.call_phone, android.permission.camera, android.permission.change_wifi_state, android.permission.flashlight, android.permission.foreground_service, android.permission.internet, android.permission.post_notifications, android.permission.read_phone_state, android.permission.read_sms, android.permission.receive_boot_completed, android.permission.vibrate, android.permission.wake_lock, com.google.android.c2dm.permission.receive, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id, com.google.android.providers.gsf.permission.read_gservices, com.wow.pera.dynamic_receiver_not_exported_permission
+- Philippines/Delisted: 11 apps
+  Sample permissions: android.permission.access_coarse_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.camera, android.permission.change_network_state, android.permission.change_wifi_state, android.permission.flashlight, android.permission.high_sampling_rate_sensors, android.permission.internet, android.permission.post_notifications, android.permission.read_sms, android.permission.vibrate, android.permission.wake_lock, com.google.android.c2dm.permission.receive, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id, ph.lhl.pautangpeso.dynamic_receiver_not_exported_permission
+
+
+Country/Classification: Indonesia/Approved
+
+No country-specific prohibited permissions defined.
+
+
+Apps Violating LoanWatch but Not Country Policy:
+
+Total: 27
+
+- App Name: Pinja Modal
+  Package Name: com.pinjammodal
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_fine_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.camera, android.permission.internet, android.permission.post_notifications, android.permission.read_app_badge, android.permission.receive_boot_completed, android.permission.vibrate, android.permission.wake_lock, com.anddoes.launcher.permission.update_count, com.google.android.c2dm.permission.receive, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id, com.htc.launcher.permission.read_settings, com.htc.launcher.permission.update_shortcut, com.huawei.android.launcher.permission.change_badge, com.huawei.android.launcher.permission.read_settings, com.huawei.android.launcher.permission.write_settings, com.majeur.launcher.permission.update_badge, com.oppo.launcher.permission.read_settings, com.oppo.launcher.permission.write_settings, com.sec.android.provider.badge.permission.read, com.sec.android.provider.badge.permission.write, com.sonyericsson.home.permission.broadcast_badge, com.sonymobile.home.permission.provider_insert_badge, me.everything.badger.permission.badge_count_read, me.everything.badger.permission.badge_count_write
+  Violating Permissions: android.permission.access_fine_location
+
+- App Name: DanaBagus
+  Package Name: mobile.danabagus.android
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_fine_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.camera, android.permission.foreground_service, android.permission.internet, android.permission.post_notifications, android.permission.wake_lock, com.google.android.c2dm.permission.receive, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id
+  Violating Permissions: android.permission.access_fine_location
+
+- App Name: Danakini
+  Package Name: com.pyeuiioa.zaxfrccf
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_fine_location, android.permission.access_network_state, android.permission.camera, android.permission.internet, android.permission.read_contacts, android.permission.read_external_storage, android.permission.read_phone_state, android.permission.record_audio, android.permission.vibrate, android.permission.wake_lock, android.permission.write_external_storage, com.google.android.c2dm.permission.receive, com.google.android.finsky.permission.bind_get_install_referrer_service
+  Violating Permissions: android.permission.access_fine_location, android.permission.read_contacts, android.permission.read_external_storage, android.permission.write_external_storage
+
+- App Name: KTA Kilat
+  Package Name: com.pinjam.ktakilat
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_network_state, android.permission.get_tasks, android.permission.internet, android.permission.read_app_badge, android.permission.read_external_storage, android.permission.receive_boot_completed, android.permission.vibrate, android.permission.wake_lock, android.permission.write_external_storage, com.anddoes.launcher.permission.update_count, com.google.android.c2dm.permission.receive, com.google.android.finsky.permission.bind_get_install_referrer_service, com.htc.launcher.permission.read_settings, com.htc.launcher.permission.update_shortcut, com.huawei.android.launcher.permission.change_badge, com.huawei.android.launcher.permission.read_settings, com.huawei.android.launcher.permission.write_settings, com.majeur.launcher.permission.update_badge, com.oppo.launcher.permission.read_settings, com.oppo.launcher.permission.write_settings, com.pinjam.ktakilat.permission.c2d_message, com.sec.android.provider.badge.permission.read, com.sec.android.provider.badge.permission.write, com.sonyericsson.home.permission.broadcast_badge, com.sonymobile.home.permission.provider_insert_badge, me.everything.badger.permission.badge_count_read, me.everything.badger.permission.badge_count_write
+  Violating Permissions: android.permission.read_external_storage, android.permission.write_external_storage
+
+- App Name: Duha Syariah
+  Package Name: com.duhasyariah.app
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_fine_location, android.permission.access_network_state, android.permission.camera, android.permission.internet, android.permission.write_external_storage
+  Violating Permissions: android.permission.access_fine_location, android.permission.write_external_storage
+
+- App Name: Avantee
+  Package Name: com.id.avantee
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_network_state, android.permission.access_wifi_state, android.permission.internet, android.permission.mount_unmount_filesystems, android.permission.read_external_storage, android.permission.read_phone_state, android.permission.write_external_storage
+  Violating Permissions: android.permission.read_external_storage, android.permission.write_external_storage
+
+- App Name: Kredito
+  Package Name: com.kredito.fintek
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_fine_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.camera, android.permission.change_wifi_state, android.permission.flashlight, android.permission.internet, android.permission.post_notifications, android.permission.system_alert_window, android.permission.vibrate, android.permission.wake_lock, com.google.android.c2dm.permission.receive, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id, com.kredito.fintek.dynamic_receiver_not_exported_permission
+  Violating Permissions: android.permission.access_fine_location
+
+- App Name: DanaRupiah
+  Package Name: id.danarupiah.weshare.jiekuan
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_fine_location, android.permission.access_location_extra_commands, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.bluetooth, android.permission.camera, android.permission.change_configuration, android.permission.change_network_state, android.permission.change_wifi_state, android.permission.foreground_service, android.permission.get_tasks, android.permission.internet, android.permission.query_all_packages, android.permission.read_app_badge, android.permission.receive_user_present, android.permission.vibrate, android.permission.wake_lock, android.permission.write_settings, com.anddoes.launcher.permission.update_count, com.google.android.c2dm.permission.receive, com.google.android.finsky.permission.bind_get_install_referrer_service, com.htc.launcher.permission.read_settings, com.htc.launcher.permission.update_shortcut, com.huawei.android.launcher.permission.change_badge, com.huawei.android.launcher.permission.read_settings, com.huawei.android.launcher.permission.write_settings, com.majeur.launcher.permission.update_badge, com.oppo.launcher.permission.read_settings, com.oppo.launcher.permission.write_settings, com.sec.android.provider.badge.permission.read, com.sec.android.provider.badge.permission.write, com.sonyericsson.home.permission.broadcast_badge, com.sonymobile.home.permission.provider_insert_badge, me.everything.badger.permission.badge_count_read, me.everything.badger.permission.badge_count_write
+  Violating Permissions: android.permission.access_fine_location, android.permission.query_all_packages
+
+- App Name: @7F0F001E
+  Package Name: com.klikcairapp
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_fine_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.camera, android.permission.download_without_notification, android.permission.internet, android.permission.system_alert_window, android.permission.wake_lock, com.android.vending.check_license, com.google.android.c2dm.permission.receive, com.google.android.finsky.permission.bind_get_install_referrer_service, com.klikcairapp.dynamic_receiver_not_exported_permission
+  Violating Permissions: android.permission.access_fine_location
+
+- App Name: Danabijak
+  Package Name: com.danabijak.mobile
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_fine_location, android.permission.access_network_state, android.permission.camera, android.permission.internet, android.permission.read_external_storage, android.permission.write_external_storage
+  Violating Permissions: android.permission.access_fine_location, android.permission.read_external_storage, android.permission.write_external_storage
+
+- App Name: Solusiku
+  Package Name: com.mysolusiku.solusiku
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_fine_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.get_tasks, android.permission.internet, android.permission.read_external_storage, android.permission.read_phone_state, android.permission.wake_lock, android.permission.write_external_storage, com.google.android.c2dm.permission.receive, com.google.android.finsky.permission.bind_get_install_referrer_service
+  Violating Permissions: android.permission.access_fine_location, android.permission.read_external_storage, android.permission.write_external_storage
+
+- App Name: Invoila
+  Package Name: com.solmitrafintec.solmitramobile
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.hardware.camera.autofocus, android.permission.access_coarse_location, android.permission.access_fine_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.camera, android.permission.get_accounts, android.permission.internet, android.permission.package_usage_stats, android.permission.use_fingerprint, android.permission.vibrate, android.permission.wake_lock, com.android.browser.permission.read_history_bookmarks, com.energeek.sengketadev.permission.c2d_message, com.energeek.sengketadev.permission.maps_receive, com.google.android.c2dm.permission.receive, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.providers.gsf.permission.read_gservices
+  Violating Permissions: android.permission.access_fine_location
+
+- App Name: KTA KILAT
+  Package Name: com.ktakilat.loan
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_fine_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.call_phone, android.permission.camera, android.permission.change_network_state, android.permission.change_wifi_state, android.permission.internet, android.permission.read_call_log, android.permission.read_external_storage, android.permission.read_sms, android.permission.receive_boot_completed, android.permission.system_alert_window, android.permission.vibrate, android.permission.wake_lock, android.permission.write_external_storage, com.google.android.c2dm.permission.receive, com.google.android.finsky.permission.bind_get_install_referrer_service, com.ktakilat.loan.permission.c2d_message
+  Violating Permissions: android.permission.access_fine_location, android.permission.read_call_log, android.permission.read_external_storage, android.permission.read_sms, android.permission.write_external_storage
+
+- App Name: @7F0F001E
+  Package Name: com.danasyariah.mobiledanasyariah
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_fine_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.bluetooth, android.permission.camera, android.permission.foreground_service, android.permission.internet, android.permission.microphone, android.permission.modify_audio_settings, android.permission.receive_boot_completed, android.permission.record_audio, android.permission.use_biometric, android.permission.wake_lock, com.google.android.c2dm.permission.receive, com.google.android.finsky.permission.bind_get_install_referrer_service
+  Violating Permissions: android.permission.access_fine_location
+
+- App Name: Danamas Borrower (Peminjam)
+  Package Name: id.co.danamasbor
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_fine_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.camera, android.permission.foreground_service, android.permission.internet, android.permission.read_app_badge, android.permission.receive_boot_completed, android.permission.wake_lock, com.anddoes.launcher.permission.update_count, com.android.vending.check_license, com.google.android.c2dm.permission.receive, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.providers.gsf.permission.read_gservices, com.htc.launcher.permission.read_settings, com.htc.launcher.permission.update_shortcut, com.huawei.android.launcher.permission.change_badge, com.huawei.android.launcher.permission.read_settings, com.huawei.android.launcher.permission.write_settings, com.majeur.launcher.permission.update_badge, com.oppo.launcher.permission.read_settings, com.oppo.launcher.permission.write_settings, com.sec.android.provider.badge.permission.read, com.sec.android.provider.badge.permission.write, com.sonyericsson.home.permission.broadcast_badge, com.sonymobile.home.permission.provider_insert_badge
+  Violating Permissions: android.permission.access_fine_location
+
+- App Name: @7F0E001D
+  Package Name: id.co.tokomodal.mobile
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_network_state, android.permission.bluetooth, android.permission.camera, android.permission.internet, android.permission.post_notifications, android.permission.record_audio, android.permission.wake_lock, android.permission.write_external_storage, com.google.android.c2dm.permission.receive, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id, id.co.tokomodal.mobile.dynamic_receiver_not_exported_permission
+  Violating Permissions: android.permission.write_external_storage
+
+- App Name: Fintek Syariah
+  Package Name: id.co.finteksyariah.app.pembiayaan
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_fine_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.camera, android.permission.change_wifi_state, android.permission.internet, android.permission.record_audio, android.permission.vibrate, android.permission.wake_lock, com.google.android.finsky.permission.bind_get_install_referrer_service, org.apache.http.legacy
+  Violating Permissions: android.permission.access_fine_location
+
+- App Name: PinjamanGo
+  Package Name: com.pinjamango
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_fine_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.bluetooth, android.permission.call_phone, android.permission.camera, android.permission.change_wifi_state, android.permission.flashlight, android.permission.get_accounts, android.permission.get_accounts_privileged, android.permission.get_tasks, android.permission.install_shortcut, android.permission.internet, android.permission.mount_unmount_filesystems, android.permission.package_usage_stats, android.permission.read_call_log, android.permission.read_contacts, android.permission.read_external_storage, android.permission.read_logs, android.permission.read_phone_numbers, android.permission.read_phone_state, android.permission.read_sms, android.permission.receive_sms, android.permission.record_audio, android.permission.request_install_packages, android.permission.send_sms, android.permission.use_credentials, android.permission.wake_lock, android.permission.write_external_storage, com.google.android.c2dm.permission.receive, com.google.android.finsky.permission.bind_get_install_referrer_service, com.pinjamango.permission.c2d_message
+  Violating Permissions: android.permission.access_fine_location, android.permission.read_call_log, android.permission.read_contacts, android.permission.read_external_storage, android.permission.read_sms, android.permission.write_external_storage
+
+- App Name: Crowde
+  Package Name: com.crowde.investor
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_network_state, android.permission.foreground_service, android.permission.internet, android.permission.read_external_storage, android.permission.system_alert_window, android.permission.write_external_storage
+  Violating Permissions: android.permission.read_external_storage, android.permission.write_external_storage
+
+- App Name: Finmas
+  Package Name: com.oriente.finmas
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_fine_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.bluetooth, android.permission.camera, android.permission.flashlight, android.permission.internet, android.permission.receive_boot_completed, android.permission.reorder_tasks, android.permission.use_fingerprint, android.permission.vibrate, android.permission.wake_lock, com.google.android.c2dm.permission.receive, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.providers.gsf.permission.read_gservices
+  Violating Permissions: android.permission.access_fine_location
+
+- App Name: MEKAR PINJAM
+  Package Name: id.mekartigasampurna.mekarpinjam.app
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_fine_location, android.permission.access_location_extra_commands, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.call_phone, android.permission.camera, android.permission.internet, android.permission.mount_unmount_filesystems, android.permission.read_contacts, android.permission.read_external_storage, android.permission.read_phone_state, android.permission.record_audio, android.permission.reorder_tasks, android.permission.system_alert_window, android.permission.vibrate, android.permission.wake_lock, android.permission.write_external_storage, com.google.android.c2dm.permission.receive, id.mekartigasampurna.mekarpinjam.app.permission.c2d_message
+  Violating Permissions: android.permission.access_fine_location, android.permission.read_contacts, android.permission.read_external_storage, android.permission.write_external_storage
+
+- App Name: Klik Kami
+  Package Name: com.ayo.klikkami
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_fine_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.camera, android.permission.foreground_service, android.permission.internet, com.google.android.finsky.permission.bind_get_install_referrer_service
+  Violating Permissions: android.permission.access_fine_location
+
+- App Name: Dana Cepat
+  Package Name: biro.pinjamuang.ngreditmurahki
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_network_state, android.permission.access_wifi_state, android.permission.internet, android.permission.read_external_storage, android.permission.wake_lock, android.permission.write_external_storage
+  Violating Permissions: android.permission.read_external_storage, android.permission.write_external_storage
+
+- App Name: DompetKilat
+  Package Name: com.dompetkilat.pinjaman
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_fine_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.bluetooth, android.permission.camera, android.permission.change_wifi_state, android.permission.internet, android.permission.read_app_badge, android.permission.wake_lock, com.anddoes.launcher.permission.update_count, com.dompetkilat.pinjaman.permission.c2d_message, com.google.android.c2dm.permission.receive, com.htc.launcher.permission.read_settings, com.htc.launcher.permission.update_shortcut, com.huawei.android.launcher.permission.change_badge, com.huawei.android.launcher.permission.read_settings, com.huawei.android.launcher.permission.write_settings, com.majeur.launcher.permission.update_badge, com.oppo.launcher.permission.read_settings, com.oppo.launcher.permission.write_settings, com.sec.android.provider.badge.permission.read, com.sec.android.provider.badge.permission.write, com.sonyericsson.home.permission.broadcast_badge, com.sonymobile.home.permission.provider_insert_badge, me.everything.badger.permission.badge_count_read, me.everything.badger.permission.badge_count_write
+  Violating Permissions: android.permission.access_fine_location
+
+- App Name: DanaKita
+  Package Name: com.wDanaKita_KBL
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_fine_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.bluetooth, android.permission.bluetooth_admin, android.permission.change_wifi_state, android.permission.get_accounts, android.permission.internet, android.permission.read_external_storage, android.permission.read_phone_state, android.permission.receive_boot_completed, android.permission.system_alert_window, android.permission.wake_lock, android.permission.write_external_storage, android.webkit.permission.plugin, com.anddoes.launcher.permission.update_count, com.android.alarm.permission.set_alarm, com.android.browser.permission.read_history_bookmarks, com.android.launcher.permission.install_shortcut, com.google.android.c2dm.permission.receive, com.google.android.gms.permission.activity_recognition, com.htc.launcher.permission.read_settings, com.htc.launcher.permission.update_shortcut, com.huawei.android.launcher.permission.change_badge, com.huawei.android.launcher.permission.read_settings, com.huawei.android.launcher.permission.write_settings, com.majeur.launcher.permission.update_badge, com.sec.android.provider.badge.permission.read, com.sec.android.provider.badge.permission.write, com.sonyericsson.home.permission.broadcast_badge, com.sonymobile.home.permission.provider_insert_badge
+  Violating Permissions: android.permission.access_fine_location, android.permission.read_external_storage, android.permission.write_external_storage
+
+- App Name: Danakini
+  Package Name: com.pbejydgb.ygzxmzcg
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_fine_location, android.permission.access_network_state, android.permission.camera, android.permission.internet, android.permission.read_contacts, android.permission.read_external_storage, android.permission.read_phone_state, android.permission.record_audio, android.permission.vibrate, android.permission.wake_lock, android.permission.write_external_storage, com.google.android.c2dm.permission.receive, com.google.android.finsky.permission.bind_get_install_referrer_service
+  Violating Permissions: android.permission.access_fine_location, android.permission.read_contacts, android.permission.read_external_storage, android.permission.write_external_storage
+
+- App Name: nan
+  Package Name: com.oriente.finmas
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_fine_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.bluetooth, android.permission.camera, android.permission.internet, android.permission.receive_boot_completed, android.permission.use_fingerprint, android.permission.vibrate
+  Violating Permissions: android.permission.access_fine_location
+
+Country/Classification: Kenya/Approved
+
+Apps Violating Country Policy but Not Google's Policy:
+
+Total: 5
+
+- App Name: MetaLoan
+  Package Name: com.metaloan
+  ViolateCountryPolicy: True
+  ViolateGoogle: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.camera, android.permission.foreground_service, android.permission.get_accounts (maxsdkversion="22"), android.permission.get_package_size, android.permission.internet, android.permission.package_usage_stats, android.permission.post_notifications, android.permission.read_calendar, android.permission.read_call_log, android.permission.read_phone_state, android.permission.read_sms, android.permission.receive_boot_completed, android.permission.receive_sms, android.permission.wake_lock, android.permission.write_calendar, com.android.browser.permission.read_history_bookmarks, com.google.android.c2dm.permission.receive, com.google.android.gms.permission.ad_id
+  Violating Permissions: android.permission.read_call_log
+
+- App Name: KopaKash
+  Package Name: com.kopakash
+  ViolateCountryPolicy: True
+  ViolateGoogle: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.camera, android.permission.foreground_service, android.permission.get_accounts, android.permission.get_package_size, android.permission.internet, android.permission.package_usage_stats, android.permission.post_notifications, android.permission.read_calendar, android.permission.read_call_log, android.permission.read_phone_state, android.permission.read_sms, android.permission.receive_boot_completed, android.permission.receive_sms, android.permission.use_biometric, android.permission.use_fingerprint, android.permission.wake_lock, android.permission.write_calendar, com.google.android.c2dm.permission.receive, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id
+  Violating Permissions: android.permission.read_call_log
+
+- App Name: Mojacredit
+  Package Name: ke.mojacredit
+  ViolateCountryPolicy: True
+  ViolateGoogle: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_location_extra_commands, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.camera, android.permission.change_wifi_state, android.permission.foreground_service, android.permission.get_tasks, android.permission.high_sampling_rate_sensors, android.permission.internet, android.permission.package_usage_stats, android.permission.post_notifications, android.permission.read_calendar, android.permission.read_call_log, android.permission.read_phone_state, android.permission.read_sms, android.permission.receive_boot_completed, android.permission.reorder_tasks, android.permission.system_alert_window, android.permission.use_biometric, android.permission.use_fingerprint, android.permission.vibrate, android.permission.wake_lock, android.permission.write_calendar, com.android.vending.setup.play_setup_service, com.google.android.c2dm.permission.receive, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id, com.google.android.providers.gsf.permission.read_gservices, ke.mojacredit.dynamic_receiver_not_exported_permission
+  Violating Permissions: android.permission.read_call_log
+
+- App Name: Kashbean
+  Package Name: com.kashbean
+  ViolateCountryPolicy: True
+  ViolateGoogle: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.camera, android.permission.foreground_service, android.permission.get_package_size, android.permission.internet, android.permission.package_usage_stats, android.permission.post_notifications, android.permission.read_calendar, android.permission.read_call_log, android.permission.read_phone_state, android.permission.read_sms, android.permission.receive_boot_completed, android.permission.receive_sms, android.permission.use_biometric, android.permission.use_fingerprint, android.permission.wake_lock, android.permission.write_calendar, com.android.browser.permission.read_history_bookmarks, com.google.android.c2dm.permission.receive, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id
+  Violating Permissions: android.permission.read_call_log
+
+- App Name: Creditmoja
+  Package Name: com.kenya.credit.app.loan.cash.money.pesa
+  ViolateCountryPolicy: True
+  ViolateGoogle: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.change_wifi_state, android.permission.foreground_service, android.permission.internet, android.permission.post_notifications, android.permission.read_calendar, android.permission.read_call_log, android.permission.read_phone_state, android.permission.read_sms, android.permission.receive_boot_completed, android.permission.wake_lock, com.google.android.c2dm.permission.receive, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id, com.kenya.credit.app.loan.cash.money.pesa.dynamic_receiver_not_exported_permission
+  Violating Permissions: android.permission.read_call_log
+
+
+Apps Violating LoanWatch but Not Country Policy:
+
+Total: 16
+
+- App Name: Ngao Credit
+  Package Name: com.extrainch.ngaocredit
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_fine_location, android.permission.access_network_state, android.permission.bluetooth, android.permission.camera, android.permission.foreground_service, android.permission.internet, android.permission.post_notifications, android.permission.read_external_storage, android.permission.read_phone_state, android.permission.receive_boot_completed, android.permission.record_audio, android.permission.wake_lock, android.permission.write_external_storage, com.google.android.c2dm.permission.receive
+  Violating Permissions: android.permission.access_fine_location, android.permission.read_external_storage, android.permission.write_external_storage
+
+- App Name: L-Pesa
+  Package Name: com.app.l_pesa
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_fine_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.call_phone, android.permission.camera, android.permission.internet, android.permission.read_external_storage, android.permission.read_phone_state, android.permission.wake_lock, android.permission.write_external_storage
+  Violating Permissions: android.permission.access_fine_location, android.permission.read_external_storage, android.permission.write_external_storage
+
+- App Name: Lipa Later
+  Package Name: com.lipalater.androidapp
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_fine_location, android.permission.access_network_state, android.permission.call_phone, android.permission.camera, android.permission.internet, android.permission.read_external_storage, android.permission.read_phone_numbers, android.permission.read_phone_state, android.permission.receive_boot_completed, android.permission.wake_lock, android.permission.write_external_storage, com.google.android.c2dm.permission.receive, com.google.android.finsky.permission.bind_get_install_referrer_service
+  Violating Permissions: android.permission.access_fine_location, android.permission.read_external_storage, android.permission.write_external_storage
+
+- App Name: HelaCash
+  Package Name: ke.helacash.cash
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_location_extra_commands, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.camera, android.permission.change_wifi_state, android.permission.foreground_service, android.permission.get_tasks, android.permission.high_sampling_rate_sensors, android.permission.internet, android.permission.package_usage_stats, android.permission.post_notifications, android.permission.read_calendar, android.permission.read_phone_state, android.permission.read_sms, android.permission.receive_boot_completed, android.permission.reorder_tasks, android.permission.system_alert_window, android.permission.use_biometric, android.permission.use_fingerprint, android.permission.vibrate, android.permission.wake_lock, android.permission.write_calendar, com.android.vending.setup.play_setup_service, com.google.android.c2dm.permission.receive, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id, com.google.android.providers.gsf.permission.read_gservices, ke.helacash.cash.dynamic_receiver_not_exported_permission
+  Violating Permissions: android.permission.read_sms
+
+- App Name: MaxLend
+  Package Name: com.max.lend.kencash
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_adservices_attribution, android.permission.access_coarse_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.camera, android.permission.change_wifi_state, android.permission.flashlight, android.permission.internet, android.permission.read_calendar, android.permission.read_sms, android.permission.write_calendar, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id, com.huawei.appmarket.service.commondata.permission.get_common_data, com.max.lend.kencash.dynamic_receiver_not_exported_permission, com.samsung.android.mapsagent.permission.read_app_info
+  Violating Permissions: android.permission.read_sms
+
+- App Name: TruePesa
+  Package Name: com.credit.truepesa.loan.kenya
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.bluetooth, android.permission.bluetooth_connect, android.permission.change_network_state, android.permission.change_wifi_state, android.permission.internet, android.permission.read_phone_state, android.permission.read_sms, android.permission.wake_lock, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id
+  Violating Permissions: android.permission.read_sms
+
+- App Name: FairKash
+  Package Name: com.fair.kash.money.finance.loan
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_location_extra_commands, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.bluetooth, android.permission.bluetooth_admin, android.permission.change_network_state, android.permission.change_wifi_state, android.permission.internet, android.permission.read_phone_state, android.permission.read_sms, android.permission.wake_lock, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id
+  Violating Permissions: android.permission.read_sms
+
+- App Name: Bayes
+  Package Name: bank.com.bank
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_network_state, android.permission.camera, android.permission.internet, android.permission.read_external_storage, android.permission.read_phone_state, android.permission.receive_boot_completed, android.permission.wake_lock, android.permission.write_external_storage, bank.com.bank.broadcastreceiverpermission, bank.com.bank.permission.c2d_message, com.google.android.c2dm.permission.receive, com.google.android.finsky.permission.bind_get_install_referrer_service
+  Violating Permissions: android.permission.read_external_storage, android.permission.write_external_storage
+
+- App Name: DirectLoan
+  Package Name: direct.loans.dirloan.kecredit
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_location_extra_commands, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.camera, android.permission.change_wifi_state, android.permission.foreground_service, android.permission.get_tasks, android.permission.high_sampling_rate_sensors, android.permission.internet, android.permission.package_usage_stats, android.permission.post_notifications, android.permission.read_calendar, android.permission.read_phone_state, android.permission.read_sms, android.permission.receive_boot_completed, android.permission.reorder_tasks, android.permission.system_alert_window, android.permission.use_biometric, android.permission.use_fingerprint, android.permission.vibrate, android.permission.wake_lock, android.permission.write_calendar, com.android.vending.setup.play_setup_service, com.google.android.c2dm.permission.receive, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id, com.google.android.providers.gsf.permission.read_gservices, direct.loans.dirloan.kecredit.dynamic_receiver_not_exported_permission
+  Violating Permissions: android.permission.read_sms
+
+- App Name: Okolea
+  Package Name: com.astronpank.TENK_LOAN
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_network_state, android.permission.access_wifi_state, android.permission.internet, android.permission.read_external_storage
+  Violating Permissions: android.permission.read_external_storage
+
+- App Name: UbaPesa
+  Package Name: com.ubapesa.app
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_network_state, android.permission.access_wifi_state, android.permission.foreground_service, android.permission.get_accounts, android.permission.internet, android.permission.post_notifications, android.permission.read_phone_state, android.permission.read_sms, android.permission.receive_boot_completed, android.permission.receive_sms, android.permission.vibrate, android.permission.wake_lock, com.google.android.c2dm.permission.receive, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id, com.ubapesa.app.dynamic_receiver_not_exported_permission
+  Violating Permissions: android.permission.read_sms
+
+- App Name: Jijenge Credit Limited
+  Package Name: com.mobincube.jijenge_credit_limited.sc_5S1N1N
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_fine_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.bluetooth, android.permission.bluetooth_admin, android.permission.call_phone, android.permission.camera, android.permission.get_accounts, android.permission.internet, android.permission.read_phone_state, android.permission.receive_boot_completed, android.permission.wake_lock, android.permission.write_external_storage, com.google.android.c2dm.permission.receive, com.mobincube.jijenge_credit_limited.sc_5s1n1n.permission.c2d_message
+  Violating Permissions: android.permission.access_fine_location, android.permission.write_external_storage
+
+- App Name: Rewot Ciro Credit
+  Package Name: com.rewot.app
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_fine_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.camera, android.permission.foreground_service, android.permission.internet, android.permission.post_notifications, android.permission.read_external_storage, android.permission.receive_boot_completed, android.permission.vibrate, android.permission.wake_lock, android.permission.write_external_storage, com.google.android.c2dm.permission.receive, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id, com.rewot.app.dynamic_receiver_not_exported_permission
+  Violating Permissions: android.permission.access_fine_location, android.permission.read_external_storage, android.permission.write_external_storage
+
+- App Name: Soko Hela
+  Package Name: com.sokohela.lending
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_fine_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.bluetooth, android.permission.bluetooth_admin, android.permission.camera, android.permission.get_accounts, android.permission.internet, android.permission.read_external_storage, android.permission.read_profile, android.permission.receive_boot_completed, android.permission.wake_lock, android.permission.write_external_storage, com.google.android.c2dm.permission.receive, com.google.android.finsky.permission.bind_get_install_referrer_service
+  Violating Permissions: android.permission.access_fine_location, android.permission.read_external_storage, android.permission.write_external_storage
+
+- App Name: Zenka Loan App Kenya
+  Package Name: com.zenkafinance.microloans
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.bluetooth, android.permission.call_phone, android.permission.camera, android.permission.change_wifi_state, android.permission.get_accounts, android.permission.internet, android.permission.post_notifications, android.permission.read_phone_state, android.permission.read_sms, android.permission.wake_lock, com.google.android.c2dm.permission.receive, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id, com.zenkafinance.microloans.dynamic_receiver_not_exported_permission
+  Violating Permissions: android.permission.read_sms
+
+- App Name: Autochek
+  Package Name: com.autochek.buysalefixcars
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_adservices_ad_id, android.permission.access_adservices_attribution, android.permission.access_network_state, android.permission.internet, android.permission.post_notifications, android.permission.read_external_storage, android.permission.read_media_audio, android.permission.receive_boot_completed, android.permission.schedule_exact_alarm, android.permission.vibrate, android.permission.wake_lock, com.autochek.buysalefixcars.dynamic_receiver_not_exported_permission, com.google.android.c2dm.permission.receive, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.providers.gsf.permission.read_gservices
+  Violating Permissions: android.permission.read_external_storage, android.permission.read_media_audio
+
+Country/Classification: Nigeria/Approved
+
+Apps Violating Country Policy but Not Google's Policy:
+
+Total: 23
+
+- App Name: EasyKash
+  Package Name: easykash.creditapp.loan
+  ViolateCountryPolicy: True
+  ViolateGoogle: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.camera, android.permission.change_wifi_state, android.permission.foreground_service, android.permission.internet, android.permission.read_call_log, android.permission.read_phone_state, android.permission.read_sms, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id, com.google.android.providers.gsf.permission.read_gservices, easykash.creditapp.loan.dynamic_receiver_not_exported_permission
+  Violating Permissions: android.permission.read_call_log
+
+- App Name: IntsWallet
+  Package Name: com.ng.flexfund
+  ViolateCountryPolicy: True
+  ViolateGoogle: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.camera, android.permission.change_network_state, android.permission.change_wifi_state, android.permission.internet, android.permission.read_calendar, android.permission.read_call_log, android.permission.read_phone_state, android.permission.wake_lock, android.permission.write_calendar, com.google.android.gms.permission.ad_id
+  Violating Permissions: android.permission.read_call_log
+
+- App Name: MintBag
+  Package Name: com.finles.mintbag
+  ViolateCountryPolicy: True
+  ViolateGoogle: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.bluetooth_connect, android.permission.camera, android.permission.change_network_state, android.permission.change_wifi_state, android.permission.get_accounts, android.permission.internet, android.permission.local_mac_address, android.permission.read_calendar, android.permission.read_call_log, android.permission.read_phone_state, android.permission.read_privileged_phone_state, android.permission.read_profile, android.permission.read_sms
+  Violating Permissions: android.permission.read_call_log
+
+- App Name: Lilycash
+  Package Name: ng.personal.loan.lily.cash
+  ViolateCountryPolicy: True
+  ViolateGoogle: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.bluetooth, android.permission.bluetooth_connect, android.permission.camera, android.permission.internet, android.permission.post_notifications, android.permission.read_calendar, android.permission.read_call_log, android.permission.read_phone_state, android.permission.read_sms, android.permission.wake_lock, android.permission.write_calendar, com.google.android.c2dm.permission.receive, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.activity_recognition, com.google.android.gms.permission.ad_id, ng.personal.loan.lily.cash.dynamic_receiver_not_exported_permission
+  Violating Permissions: android.permission.read_call_log
+
+- App Name: Palmcredit
+  Package Name: com.transsnetfinancial.palmcredit
+  ViolateCountryPolicy: True
+  ViolateGoogle: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_location_extra_commands, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.camera, android.permission.change_wifi_state, android.permission.foreground_service, android.permission.get_tasks, android.permission.high_sampling_rate_sensors, android.permission.internet, android.permission.post_notifications, android.permission.read_calendar, android.permission.read_call_log, android.permission.read_phone_state, android.permission.read_sms, android.permission.receive_boot_completed, android.permission.reorder_tasks, android.permission.system_alert_window, android.permission.use_biometric, android.permission.use_fingerprint, android.permission.vibrate, android.permission.wake_lock, android.permission.write_calendar, com.android.vending.setup.play_setup_service, com.google.android.c2dm.permission.receive, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id, com.google.android.providers.gsf.permission.read_gservices
+  Violating Permissions: android.permission.read_call_log
+
+- App Name: Newcredit
+  Package Name: com.pbank.newcredit
+  ViolateCountryPolicy: True
+  ViolateGoogle: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_location_extra_commands, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.camera, android.permission.change_wifi_state, android.permission.foreground_service, android.permission.get_tasks, android.permission.high_sampling_rate_sensors, android.permission.internet, android.permission.post_notifications, android.permission.read_calendar, android.permission.read_call_log, android.permission.read_phone_state, android.permission.read_sms, android.permission.receive_boot_completed, android.permission.reorder_tasks, android.permission.system_alert_window, android.permission.use_biometric, android.permission.use_fingerprint, android.permission.vibrate, android.permission.wake_lock, android.permission.write_calendar, com.android.vending.setup.play_setup_service, com.google.android.c2dm.permission.receive, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id, com.google.android.providers.gsf.permission.read_gservices
+  Violating Permissions: android.permission.read_call_log
+
+- App Name: FastCent
+  Package Name: com.ng.FastCent
+  ViolateCountryPolicy: True
+  ViolateGoogle: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_location_extra_commands, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.camera, android.permission.change_network_state, android.permission.change_wifi_state, android.permission.internet, android.permission.read_calendar, android.permission.read_call_log, android.permission.read_phone_state, android.permission.record_audio, android.permission.wake_lock, android.permission.write_calendar, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id
+  Violating Permissions: android.permission.read_call_log
+
+- App Name: Xcrosscash
+  Package Name: com.xcash.xcrosscash
+  ViolateCountryPolicy: True
+  ViolateGoogle: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_location_extra_commands, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.camera, android.permission.change_wifi_state, android.permission.foreground_service, android.permission.get_tasks, android.permission.high_sampling_rate_sensors, android.permission.internet, android.permission.post_notifications, android.permission.read_calendar, android.permission.read_call_log, android.permission.read_phone_state, android.permission.read_sms, android.permission.receive_boot_completed, android.permission.reorder_tasks, android.permission.system_alert_window, android.permission.use_biometric, android.permission.use_fingerprint, android.permission.vibrate, android.permission.wake_lock, android.permission.write_calendar, com.android.vending.setup.play_setup_service, com.google.android.c2dm.permission.receive, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id, com.google.android.providers.gsf.permission.read_gservices
+  Violating Permissions: android.permission.read_call_log
+
+- App Name: VoiceMoney
+  Package Name: com.voicemoney.vmey
+  ViolateCountryPolicy: True
+  ViolateGoogle: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.camera, android.permission.change_wifi_state, android.permission.foreground_service, android.permission.high_sampling_rate_sensors, android.permission.internet, android.permission.read_call_log, android.permission.read_phone_state, android.permission.read_sms, android.permission.receive_boot_completed, android.permission.require_secure_env, android.permission.vibrate, android.permission.wake_lock, com.android.vending.check_license, com.google.android.c2dm.permission.receive, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id, com.google.android.providers.gsf.permission.read_gservices, com.voicemoney.vmey.dynamic_receiver_not_exported_permission
+  Violating Permissions: android.permission.read_call_log
+
+- App Name: OmniKash
+  Package Name: com.omnikash.xxko
+  ViolateCountryPolicy: True
+  ViolateGoogle: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.camera, android.permission.internet, android.permission.read_calendar, android.permission.read_call_log, android.permission.read_phone_state, android.permission.read_privileged_phone_state, android.permission.read_sms, android.permission.wake_lock, com.coloros.permission.read_coloros_calendar, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id, com.omnikash.xxko.dynamic_receiver_not_exported_permission
+  Violating Permissions: android.permission.read_call_log
+
+- App Name: TrustLaon
+  Package Name: com.trustloan.finserve.nigeria.creditline.xpress
+  ViolateCountryPolicy: True
+  ViolateGoogle: False
+  Permissions: android.permission.access_adservices_ad_id, android.permission.access_adservices_attribution, android.permission.access_network_state, android.permission.camera, android.permission.internet, android.permission.post_notifications, android.permission.read_calendar, android.permission.read_call_log, android.permission.read_phone_state, android.permission.read_profile, android.permission.read_sms, android.permission.wake_lock, com.android.vending.check_license, com.google.android.c2dm.permission.receive, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id, com.trustloan.finserve.nigeria.creditline.xpress.dynamic_receiver_not_exported_permission
+  Violating Permissions: android.permission.read_call_log
+
+- App Name: TradeCredit
+  Package Name: com.trade.ca.credit
+  ViolateCountryPolicy: True
+  ViolateGoogle: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.camera, android.permission.change_wifi_state, android.permission.foreground_service, android.permission.high_sampling_rate_sensors, android.permission.internet, android.permission.read_call_log, android.permission.read_phone_state, android.permission.read_sms, android.permission.receive_boot_completed, android.permission.require_secure_env, android.permission.vibrate, android.permission.wake_lock, com.google.android.c2dm.permission.receive, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id, com.google.android.providers.gsf.permission.read_gservices, com.trade.ca.credit.dynamic_receiver_not_exported_permission
+  Violating Permissions: android.permission.read_call_log
+
+- App Name: @7F0F002C
+  Package Name: com.nigeria.android.mooncard
+  ViolateCountryPolicy: True
+  ViolateGoogle: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.bluetooth, android.permission.bluetooth_connect, android.permission.internet, android.permission.package_usage_stats, android.permission.read_calendar, android.permission.read_call_log, android.permission.read_phone_state, android.permission.read_precise_phone_state, android.permission.read_sms, android.permission.write_calendar, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id
+  Violating Permissions: android.permission.read_call_log
+
+- App Name: 9Credit Go
+  Package Name: com.ted.ng.ninecreditgo.credit.loans
+  ViolateCountryPolicy: True
+  ViolateGoogle: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_coarse_updates, android.permission.access_location_extra_commands, android.permission.access_network_state, android.permission.access_orientation, android.permission.access_wifi_state, android.permission.battery_stats, android.permission.bluetooth, android.permission.bluetooth_connect, android.permission.broadcast_sticky, android.permission.camera, android.permission.change_wifi_state, android.permission.foreground_service, android.permission.get_accounts, android.permission.internet, android.permission.kill_background_processes, android.permission.local_mac_address, android.permission.package_usage_stats, android.permission.read_calendar, android.permission.read_call_log, android.permission.read_phone_state, android.permission.read_privileged_phone_state, android.permission.read_sms, android.permission.receive_boot_completed, android.permission.record_audio, android.permission.replace_existing_package, android.permission.vibrate, android.permission.wake_lock, android.permission.write_calendar, android.permission.write_settings, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id
+  Violating Permissions: android.permission.read_call_log
+
+- App Name: Primepay
+  Package Name: com.client.primepay
+  ViolateCountryPolicy: True
+  ViolateGoogle: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.camera, android.permission.change_network_state, android.permission.change_wifi_state, android.permission.internet, android.permission.read_calendar, android.permission.read_call_log, android.permission.read_phone_state, android.permission.wake_lock, android.permission.write_calendar, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id
+  Violating Permissions: android.permission.read_call_log
+
+- App Name: Xcash
+  Package Name: com.loanx.cashloan
+  ViolateCountryPolicy: True
+  ViolateGoogle: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_location_extra_commands, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.camera, android.permission.change_wifi_state, android.permission.foreground_service, android.permission.get_tasks, android.permission.high_sampling_rate_sensors, android.permission.internet, android.permission.post_notifications, android.permission.read_calendar, android.permission.read_call_log, android.permission.read_phone_state, android.permission.read_sms, android.permission.receive_boot_completed, android.permission.reorder_tasks, android.permission.system_alert_window, android.permission.use_biometric, android.permission.use_fingerprint, android.permission.vibrate, android.permission.wake_lock, android.permission.write_calendar, com.android.vending.setup.play_setup_service, com.google.android.c2dm.permission.receive, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id, com.google.android.providers.gsf.permission.read_gservices
+  Violating Permissions: android.permission.read_call_log
+
+- App Name: ZoomCash
+  Package Name: com.zoomcash.app.financial.services.mobilepay
+  ViolateCountryPolicy: True
+  ViolateGoogle: False
+  Permissions: android.permission.access_adservices_ad_id, android.permission.access_adservices_attribution, android.permission.access_network_state, android.permission.camera, android.permission.internet, android.permission.post_notifications, android.permission.read_calendar, android.permission.read_call_log, android.permission.read_phone_state, android.permission.read_profile, android.permission.read_sms, android.permission.wake_lock, com.google.android.c2dm.permission.receive, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id, com.zoomcash.app.financial.services.mobilepay.dynamic_receiver_not_exported_permission
+  Violating Permissions: android.permission.read_call_log
+
+- App Name: Hi Wallet
+  Package Name: nigeria.cash.loan.hiwallet
+  ViolateCountryPolicy: True
+  ViolateGoogle: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_location_extra_commands, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.camera, android.permission.change_network_state, android.permission.change_wifi_state, android.permission.internet, android.permission.read_calendar, android.permission.read_call_log, android.permission.read_phone_state, android.permission.record_audio, android.permission.wake_lock, android.permission.write_calendar, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id
+  Violating Permissions: android.permission.read_call_log
+
+- App Name: UltraCash
+  Package Name: ultracash.fast.loan
+  ViolateCountryPolicy: True
+  ViolateGoogle: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.camera, android.permission.change_wifi_state, android.permission.internet, android.permission.local_mac_address, android.permission.read_call_log, android.permission.read_phone_state, android.permission.read_sms, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id, com.google.android.providers.gsf.permission.read_gservices, com.google.android.providers.gsf.permission.write_gservices, ultracash.fast.loan.dynamic_receiver_not_exported_permission
+  Violating Permissions: android.permission.read_call_log
+
+- App Name: WayaCredit
+  Package Name: com.mycrat.wayacreditng
+  ViolateCountryPolicy: True
+  ViolateGoogle: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.camera, android.permission.change_wifi_state, android.permission.foreground_service, android.permission.high_sampling_rate_sensors, android.permission.internet, android.permission.read_call_log, android.permission.read_phone_state, android.permission.read_sms, android.permission.receive_boot_completed, android.permission.require_secure_env, android.permission.vibrate, android.permission.wake_lock, com.google.android.c2dm.permission.receive, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id, com.google.android.providers.gsf.permission.read_gservices, com.mycrat.wayacreditng.dynamic_receiver_not_exported_permission
+  Violating Permissions: android.permission.read_call_log
+
+- App Name: Hcwallet
+  Package Name: com.ng.haloocredit
+  ViolateCountryPolicy: True
+  ViolateGoogle: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_location_extra_commands, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.camera, android.permission.change_network_state, android.permission.change_wifi_state, android.permission.internet, android.permission.read_calendar, android.permission.read_call_log, android.permission.read_phone_state, android.permission.record_audio, android.permission.wake_lock, android.permission.write_calendar, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id
+  Violating Permissions: android.permission.read_call_log
+
+- App Name: @7F10002D
+  Package Name: com.ng.swifund
+  ViolateCountryPolicy: True
+  ViolateGoogle: False
+  Permissions: android.permission.access_background_location, android.permission.access_coarse_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.camera, android.permission.change_network_state, android.permission.change_wifi_state, android.permission.internet, android.permission.read_calendar, android.permission.read_call_log, android.permission.read_phone_state, android.permission.wake_lock, android.permission.write_calendar, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id
+  Violating Permissions: android.permission.read_call_log
+
+- App Name: PonyCash
+  Package Name: com.ponycash.poca.nysh
+  ViolateCountryPolicy: True
+  ViolateGoogle: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.camera, android.permission.change_wifi_state, android.permission.foreground_service, android.permission.high_sampling_rate_sensors, android.permission.internet, android.permission.read_call_log, android.permission.read_phone_state, android.permission.read_sms, android.permission.receive_boot_completed, android.permission.require_secure_env, android.permission.vibrate, android.permission.wake_lock, com.google.android.c2dm.permission.receive, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id, com.google.android.providers.gsf.permission.read_gservices, com.ponycash.poca.nysh.dynamic_receiver_not_exported_permission
+  Violating Permissions: android.permission.read_call_log
+
+
+Apps Violating LoanWatch but Not Country Policy:
+
+Total: 60
+
+- App Name: True Loan
+  Package Name: team.trueloan.loan
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_adservices_ad_id, android.permission.access_adservices_attribution, android.permission.access_adservices_custom_audience, android.permission.access_coarse_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.bluetooth, android.permission.internet, android.permission.package_usage_stats, android.permission.read_calendar, android.permission.read_phone_state, android.permission.read_sms, android.permission.wake_lock, android.permission.write_calendar, com.android.vending.check_license, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id, com.google.android.providers.gsf.permission.read_gservices, team.trueloan.loan.dynamic_receiver_not_exported_permission
+  Violating Permissions: android.permission.read_sms
+
+- App Name: Future Cash
+  Package Name: com.futurecash.nl.re
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.internet, android.permission.package_usage_stats, android.permission.read_calendar, android.permission.read_phone_state, android.permission.read_sms, android.permission.wake_lock, android.permission.write_calendar, com.futurecash.nl.re.dynamic_receiver_not_exported_permission, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id
+  Violating Permissions: android.permission.read_sms
+
+- App Name: 9money
+  Package Name: com.credit.ninemoney
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.camera, android.permission.download_without_notification, android.permission.internet, android.permission.post_notifications, android.permission.read_calendar, android.permission.read_phone_state, android.permission.read_sms, android.permission.wake_lock, android.permission.write_calendar, com.google.android.c2dm.permission.receive, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id
+  Violating Permissions: android.permission.read_sms
+
+- App Name: Aella
+  Package Name: com.aella.comportal
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_adservices_ad_id, android.permission.access_adservices_attribution, android.permission.access_background_location, android.permission.access_coarse_location, android.permission.access_fine_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.camera, android.permission.foreground_service, android.permission.foreground_service_location, android.permission.internet, android.permission.post_notifications, android.permission.read_phone_state, android.permission.receive_boot_completed, android.permission.record_audio, android.permission.use_biometric, android.permission.use_fingerprint, android.permission.vibrate, android.permission.wake_lock, com.aella.comportal.dynamic_receiver_not_exported_permission, com.google.android.c2dm.permission.receive, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id
+  Violating Permissions: android.permission.access_fine_location
+
+- App Name: Tcredit
+  Package Name: com.nigeria.tcredit
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.camera, android.permission.download_without_notification, android.permission.internet, android.permission.post_notifications, android.permission.read_calendar, android.permission.read_phone_state, android.permission.read_sms, android.permission.wake_lock, com.google.android.c2dm.permission.receive, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id
+  Violating Permissions: android.permission.read_sms
+
+- App Name: Gogetcredit
+  Package Name: go.get.credit
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_adservices_attribution, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.bluetooth, android.permission.bluetooth_connect, android.permission.internet, android.permission.post_notifications, android.permission.read_phone_state, android.permission.read_sms, android.permission.wake_lock, com.google.android.c2dm.permission.receive, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id, com.google.android.providers.gsf.permission.read_gservices, com.huawei.appmarket.service.commondata.permission.get_common_data, go.get.credit.dynamic_receiver_not_exported_permission
+  Violating Permissions: android.permission.read_sms
+
+- App Name: GoLoan
+  Package Name: com.wegoloan.app.nigeria
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.camera, android.permission.change_wifi_multicast_state, android.permission.change_wifi_state, android.permission.internet, android.permission.local_mac_address, android.permission.post_notifications, android.permission.read_calendar, android.permission.read_phone_state, android.permission.read_privileged_phone_state, android.permission.read_sms, android.permission.wake_lock, com.google.android.c2dm.permission.receive, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id
+  Violating Permissions: android.permission.read_sms
+
+- App Name: SilkLoan
+  Package Name: silkloan.nigeria.credit.cash.loan
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_adservices_attribution, android.permission.access_coarse_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.camera, android.permission.internet, android.permission.post_notifications, android.permission.read_sms, android.permission.wake_lock, com.android.vending.check_license, com.google.android.c2dm.permission.receive, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id, com.huawei.appmarket.service.commondata.permission.get_common_data, silkloan.nigeria.credit.cash.loan.dynamic_receiver_not_exported_permission
+  Violating Permissions: android.permission.read_sms
+
+- App Name: EaseMoni
+  Package Name: com.loan.cash.credit.easemoni.nigeria
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.authenticate_accounts, android.permission.camera, android.permission.change_wifi_state, android.permission.internet, android.permission.post_notifications, android.permission.read_calendar, android.permission.read_phone_state, android.permission.read_sms, android.permission.receive_sms, android.permission.wake_lock, android.permission.write_calendar, com.asus.msa.supplementarydid.access, com.google.android.c2dm.permission.receive, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id, com.huawei.android.launcher.permission.change_badge, com.loan.cash.credit.easemoni.nigeria.dynamic_receiver_not_exported_permission
+  Violating Permissions: android.permission.read_sms
+
+- App Name: Gocash
+  Package Name: com.go.cash.cash.gocash
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.camera, android.permission.internet, android.permission.mount_unmount_filesystems, android.permission.post_notifications, android.permission.read_calendar, android.permission.read_phone_state, android.permission.read_precise_phone_state, android.permission.read_privileged_phone_state, android.permission.read_sms, android.permission.wake_lock, android.permission.write_calendar, com.google.android.c2dm.permission.receive, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id
+  Violating Permissions: android.permission.read_sms
+
+- App Name: monee
+  Package Name: com.nidcomsolutions.monee
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_fine_location, android.permission.access_network_state, android.permission.foreground_service, android.permission.internet, android.permission.post_notifications, android.permission.read_app_badge, android.permission.receive_boot_completed, android.permission.use_biometric, android.permission.use_fingerprint, android.permission.vibrate, android.permission.wake_lock, com.anddoes.launcher.permission.update_count, com.google.android.c2dm.permission.receive, com.htc.launcher.permission.read_settings, com.htc.launcher.permission.update_shortcut, com.huawei.android.launcher.permission.change_badge, com.huawei.android.launcher.permission.read_settings, com.huawei.android.launcher.permission.write_settings, com.majeur.launcher.permission.update_badge, com.nidcomsolutions.monee.dynamic_receiver_not_exported_permission, com.nidcomsolutions.monee.permission.c2d_message, com.oppo.launcher.permission.read_settings, com.oppo.launcher.permission.write_settings, com.sec.android.provider.badge.permission.read, com.sec.android.provider.badge.permission.write, com.sonyericsson.home.permission.broadcast_badge, com.sonymobile.home.permission.provider_insert_badge, me.everything.badger.permission.badge_count_read, me.everything.badger.permission.badge_count_write
+  Violating Permissions: android.permission.access_fine_location
+
+- App Name: AllCredit
+  Package Name: com.allcredit.ls
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_location_extra_commands, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.bluetooth, android.permission.bluetooth_admin, android.permission.camera, android.permission.change_network_state, android.permission.change_wifi_state, android.permission.foreground_service, android.permission.high_sampling_rate_sensors, android.permission.internet, android.permission.read_calendar, android.permission.read_phone_state, android.permission.read_sms, android.permission.receive_boot_completed, android.permission.receive_sms, android.permission.reorder_tasks, android.permission.vibrate, android.permission.wake_lock, android.permission.write_calendar, com.android.vending.setup.play_setup_service, com.google.android.c2dm.permission.receive, com.google.android.finsky.permission.bind_get_install_referrer_service
+  Violating Permissions: android.permission.read_sms
+
+- App Name: NaijaEase
+  Package Name: com.summit.naijaease
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.camera, android.permission.internet, android.permission.read_phone_state, android.permission.read_sms, com.android.vending.check_license, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id, com.summit.naijaease.dynamic_receiver_not_exported_permission
+  Violating Permissions: android.permission.read_sms
+
+- App Name: nan
+  Package Name: com.loan.naira.cash.ng9
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_location_extra_commands, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.bluetooth, android.permission.camera, android.permission.change_network_state, android.permission.change_wifi_state, android.permission.foreground_service, android.permission.internet, android.permission.mount_unmount_filesystems, android.permission.read_phone_state, android.permission.read_sms, android.permission.receive_user_present, android.permission.system_alert_window, android.permission.vibrate, android.permission.wake_lock, com.google.android.c2dm.permission.receive, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id
+  Violating Permissions: android.permission.read_sms
+
+- App Name: Irorun
+  Package Name: com.irorun
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_adservices_ad_id, android.permission.access_adservices_attribution, android.permission.access_coarse_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.camera, android.permission.download_without_notification, android.permission.foreground_service, android.permission.internet, android.permission.manage_documents, android.permission.modify_audio_settings, android.permission.post_notifications, android.permission.read_calendar, android.permission.read_internal_storage, android.permission.read_phone_state, android.permission.read_sms, android.permission.receive_boot_completed, android.permission.record_audio, android.permission.system_alert_window, android.permission.use_biometric, android.permission.use_fingerprint, android.permission.vibrate, android.permission.wake_lock, android.permission.write_calendar, android.permission.write_external_storage, android.permission.write_settings, com.google.android.c2dm.permission.receive, com.google.android.finsky.permission.bind_get_install_referrer_service, com.irorun.dynamic_receiver_not_exported_permission
+  Violating Permissions: android.permission.read_sms, android.permission.write_external_storage
+
+- App Name: Apex Loan
+  Package Name: com.apex.loan.ng.app
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_adservices_ad_id, android.permission.access_adservices_attribution, android.permission.access_coarse_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.camera, android.permission.internet, android.permission.local_mac_address, android.permission.read_phone_state, android.permission.read_sms, com.android.vending.check_license, com.apex.loan.ng.app.dynamic_receiver_not_exported_permission, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id, com.huawei.appmarket.service.commondata.permission.get_common_data, com.samsung.android.mapsagent.permission.read_app_info
+  Violating Permissions: android.permission.read_sms
+
+- App Name: Hi Fund
+  Package Name: com.hifund.money.kash.loan
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.camera, android.permission.change_wifi_state, android.permission.internet, android.permission.read_calendar, android.permission.read_phone_state, android.permission.read_privileged_phone_state, android.permission.read_sms, android.permission.wake_lock, android.permission.write_calendar, com.google.android.c2dm.permission.receive, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id
+  Violating Permissions: android.permission.read_sms
+
+- App Name: Easy Money Loan
+  Package Name: com.cash.loan.personal.kash.cash9ja.xcredit.payday.credit9.money
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_coarse_updates, android.permission.access_location_extra_commands, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.battery_stats, android.permission.bluetooth, android.permission.broadcast_sticky, android.permission.camera, android.permission.change_wifi_state, android.permission.foreground_service, android.permission.get_accounts, android.permission.internet, android.permission.package_usage_stats, android.permission.read_calendar, android.permission.read_phone_state, android.permission.read_privileged_phone_state, android.permission.read_sms, android.permission.receive_boot_completed, android.permission.record_audio, android.permission.replace_existing_package, android.permission.vibrate, android.permission.wake_lock, android.permission.write_calendar, android.permission.write_settings, com.cash.loan.personal.kash.cash9ja.xcredit.payday.credit9.money.dynamic_receiver_not_exported_permission, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id
+  Violating Permissions: android.permission.read_sms
+
+- App Name: KashLoan
+  Package Name: com.principal.loan.cash.principalloan
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_adservices_ad_id, android.permission.access_coarse_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.camera, android.permission.internet, android.permission.read_calendar, android.permission.read_phone_state, android.permission.read_sms, android.permission.wake_lock, android.permission.write_calendar, android.permission.write_settings, com.google.android.c2dm.permission.receive, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id
+  Violating Permissions: android.permission.read_sms
+
+- App Name: Airmoni
+  Package Name: com.commercemen.airmoni
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.bluetooth, android.permission.bluetooth_connect, android.permission.camera, android.permission.internet, android.permission.read_calendar, android.permission.read_phone_state, android.permission.read_privileged_phone_state, android.permission.read_sms, android.permission.wake_lock, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id
+  Violating Permissions: android.permission.read_sms
+
+- App Name: NairaGo
+  Package Name: com.muska.tech.nairago
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.bluetooth, android.permission.bluetooth_admin, android.permission.bluetooth_advertise, android.permission.bluetooth_connect, android.permission.bluetooth_scan, android.permission.camera, android.permission.internet, android.permission.local_mac_address, android.permission.read_phone_state, android.permission.read_sms, com.google.android.gms.permission.ad_id
+  Violating Permissions: android.permission.read_sms
+
+- App Name: KashCash
+  Package Name: ng.kashcash.kash
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_location_extra_commands, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.bluetooth, android.permission.bluetooth_admin, android.permission.camera, android.permission.change_wifi_state, android.permission.foreground_service, android.permission.get_tasks, android.permission.high_sampling_rate_sensors, android.permission.internet, android.permission.read_calendar, android.permission.read_phone_state, android.permission.read_sms, android.permission.receive_boot_completed, android.permission.receive_sms, android.permission.reorder_tasks, android.permission.system_alert_window, android.permission.use_biometric, android.permission.use_fingerprint, android.permission.vibrate, android.permission.wake_lock, android.permission.write_calendar, com.android.browser.permission.read_history_bookmarks, com.android.vending.setup.play_setup_service, com.google.android.c2dm.permission.receive, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id, com.google.android.providers.gsf.permission.read_gservices
+  Violating Permissions: android.permission.read_sms
+
+- App Name: Easyfund
+  Package Name: com.loan.easyfund
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.bluetooth, android.permission.bluetooth_connect, android.permission.camera, android.permission.change_network_state, android.permission.change_wifi_state, android.permission.internet, android.permission.local_mac_address, android.permission.read_phone_state, android.permission.read_privileged_phone_state, android.permission.read_sms, android.permission.wake_lock, com.google.android.c2dm.permission.receive, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id
+  Violating Permissions: android.permission.read_sms
+
+- App Name: Care Finance
+  Package Name: care.finance
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.bluetooth, android.permission.bluetooth_connect, android.permission.camera, android.permission.internet, android.permission.package_usage_stats, android.permission.read_calendar, android.permission.read_phone_state, android.permission.read_sms, android.permission.write_calendar, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.activity_recognition, com.google.android.gms.permission.ad_id, com.google.android.providers.gsf.permission.read_gservices
+  Violating Permissions: android.permission.read_sms
+
+- App Name: CashRun
+  Package Name: cash.run.credit.easy.loan
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_adservices_ad_id, android.permission.access_adservices_attribution, android.permission.access_coarse_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.camera, android.permission.internet, android.permission.local_mac_address, android.permission.read_phone_state, android.permission.read_sms, cash.run.credit.easy.loan.dynamic_receiver_not_exported_permission, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id, com.samsung.android.mapsagent.permission.read_app_info
+  Violating Permissions: android.permission.read_sms
+
+- App Name: Lendigo
+  Package Name: com.lendigo.app
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.camera, android.permission.foreground_service, android.permission.internet, android.permission.read_internal_storage, android.permission.vibrate, android.permission.wake_lock, android.permission.write_external_storage, com.google.android.c2dm.permission.receive, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id
+  Violating Permissions: android.permission.write_external_storage
+
+- App Name: OyesCredit
+  Package Name: com.end.wall.week
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.call_phone, android.permission.camera, android.permission.change_network_state, android.permission.change_wifi_state, android.permission.foreground_service, android.permission.internet, android.permission.read_phone_state, android.permission.read_sms, android.permission.wake_lock, com.google.android.finsky.permission.bind_get_install_referrer_service
+  Violating Permissions: android.permission.read_sms
+
+- App Name: OKCash
+  Package Name: com.falcon.teer.baro.cash
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.camera, android.permission.change_network_state, android.permission.change_wifi_state, android.permission.high_sampling_rate_sensors, android.permission.internet, android.permission.read_sms, android.permission.vibrate, android.permission.wake_lock, com.falcon.teer.baro.cash.dynamic_receiver_not_exported_permission, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id
+  Violating Permissions: android.permission.read_sms
+
+- App Name: Cash9ja
+  Package Name: com.samued.cashnaija
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_adservices_ad_id, android.permission.access_adservices_attribution, android.permission.access_coarse_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.bluetooth, android.permission.internet, android.permission.package_usage_stats, android.permission.read_calendar, android.permission.read_phone_state, android.permission.read_sms, android.permission.wake_lock, android.permission.write_calendar, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id, com.google.android.providers.gsf.permission.read_gservices, com.samued.cashnaija.dynamic_receiver_not_exported_permission
+  Violating Permissions: android.permission.read_sms
+
+- App Name: Okloan
+  Package Name: com.oxloanpro.cash.credit.nigeria
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.bluetooth, android.permission.bluetooth_admin, android.permission.camera, android.permission.change_wifi_state, android.permission.internet, android.permission.post_notifications, android.permission.read_phone_state, android.permission.read_sms, android.permission.wake_lock, com.google.android.c2dm.permission.receive, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id, com.oxloanpro.cash.credit.nigeria.dynamic_receiver_not_exported_permission
+  Violating Permissions: android.permission.read_sms
+
+- App Name: Cashpaddie
+  Package Name: com.lucky.cashpaddie
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.camera, android.permission.download_without_notification, android.permission.internet, android.permission.post_notifications, android.permission.read_calendar, android.permission.read_phone_state, android.permission.read_sms, android.permission.wake_lock, com.google.android.c2dm.permission.receive, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id
+  Violating Permissions: android.permission.read_sms
+
+- App Name: SwiftNaira
+  Package Name: swift.loan.naira.app
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_adservices_attribution, android.permission.access_location_extra_commands, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.call_phone, android.permission.camera, android.permission.change_network_state, android.permission.change_wifi_state, android.permission.foreground_service, android.permission.internet, android.permission.post_notifications, android.permission.read_phone_state, android.permission.read_privileged_phone_state, android.permission.read_sms, android.permission.real_get_tasks, android.permission.receive_boot_completed, android.permission.receive_user_present, android.permission.system_alert_window, android.permission.vibrate, android.permission.wake_lock, android.permission.write_settings, com.google.android.c2dm.permission.receive, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id, com.google.android.providers.gsf.permission.read_gservices, com.huawei.appmarket.service.commondata.permission.get_common_data
+  Violating Permissions: android.permission.read_sms
+
+- App Name: Morecash
+  Package Name: com.loan.credit.new.morecash
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.broadcast_sticky, android.permission.camera, android.permission.internet, android.permission.mount_unmount_filesystems, android.permission.read_phone_state, android.permission.read_privileged_phone_state, android.permission.read_sms, android.permission.wake_lock, com.android.vending.check_license, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id
+  Violating Permissions: android.permission.read_sms
+
+- App Name: GetNaira
+  Package Name: com.getnaira.online.loan.instant.credit
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_coarse_updates, android.permission.access_location_extra_commands, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.battery_stats, android.permission.bluetooth, android.permission.broadcast_sticky, android.permission.camera, android.permission.change_wifi_state, android.permission.foreground_service, android.permission.get_accounts, android.permission.internet, android.permission.package_usage_stats, android.permission.read_calendar, android.permission.read_phone_state, android.permission.read_privileged_phone_state, android.permission.read_sms, android.permission.receive_boot_completed, android.permission.record_audio, android.permission.replace_existing_package, android.permission.vibrate, android.permission.wake_lock, android.permission.write_calendar, android.permission.write_settings, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id
+  Violating Permissions: android.permission.read_sms
+
+- App Name: Vkash
+  Package Name: safe.vkashpro.loan
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.bluetooth, android.permission.bluetooth_connect, android.permission.change_network_state, android.permission.change_wifi_state, android.permission.foreground_service, android.permission.internet, android.permission.post_notifications, android.permission.read_calendar, android.permission.read_phone_state, android.permission.read_sms, android.permission.write_calendar, android.permission.write_settings, com.asus.msa.supplementarydid.access, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id, freemme.permission.msa
+  Violating Permissions: android.permission.read_sms
+
+- App Name: Plenty Cash
+  Package Name: ng.com.plentycash
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_location_extra_commands, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.call_phone, android.permission.camera, android.permission.change_network_state, android.permission.change_wifi_state, android.permission.foreground_service, android.permission.internet, android.permission.post_notifications, android.permission.read_phone_state, android.permission.read_sms, android.permission.receive_boot_completed, android.permission.wake_lock, com.google.android.c2dm.permission.receive, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id, com.google.android.providers.gsf.permission.read_gservices
+  Violating Permissions: android.permission.read_sms
+
+- App Name: com.kash.money.palm.minicredit.new.naira.loan
+  Package Name: com.kash.money.palm.minicredit.new.naira.loan
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.broadcast_sticky, android.permission.camera, android.permission.internet, android.permission.mount_unmount_filesystems, android.permission.read_phone_state, android.permission.read_privileged_phone_state, android.permission.read_sms, android.permission.wake_lock, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id
+  Violating Permissions: android.permission.read_sms
+
+- App Name: Pasa
+  Package Name: com.pride.pasa
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.bluetooth_connect, android.permission.camera, android.permission.change_wifi_state, android.permission.internet, android.permission.local_mac_address, android.permission.read_phone_state, android.permission.read_sms, android.permission.wake_lock, com.google.android.c2dm.permission.receive, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id
+  Violating Permissions: android.permission.read_sms
+
+- App Name: Nicenaira Plus
+  Package Name: com.credit.nicenaira
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.camera, android.permission.internet, android.permission.post_notifications, android.permission.read_sms, android.permission.wake_lock, android.permission.write_calendar, com.credit.nicenaira.dynamic_receiver_not_exported_permission, com.credit.nicenaira.other_temp5, com.google.android.c2dm.permission.receive, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id
+  Violating Permissions: android.permission.read_sms
+
+- App Name: Vibecredit
+  Package Name: com.vibecredit
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.camera, android.permission.change_wifi_state, android.permission.internet, android.permission.local_mac_address, android.permission.post_notifications, android.permission.read_calendar, android.permission.read_phone_state, android.permission.read_sms, android.permission.vibrate, android.permission.wake_lock, com.google.android.c2dm.permission.receive, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id
+  Violating Permissions: android.permission.read_sms
+
+- App Name: @7F10001C
+  Package Name: com.cash.lnonline
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_adservices_ad_id, android.permission.access_adservices_attribution, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.battery_stats, android.permission.camera, android.permission.change_network_state, android.permission.internet, android.permission.kill_background_processes, android.permission.package_usage_stats, android.permission.post_notifications, android.permission.read_phone_state, android.permission.read_privileged_phone_state, android.permission.read_sms, android.permission.wake_lock, com.cash.lnonline.dynamic_receiver_not_exported_permission, com.google.android.c2dm.permission.receive, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id
+  Violating Permissions: android.permission.read_sms
+
+- App Name: PhastMoney
+  Package Name: com.phastmoney
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_network_state, android.permission.access_wifi_state, android.permission.camera, android.permission.internet, android.permission.vibrate, android.permission.wake_lock, android.permission.write_external_storage, com.android.vending.check_license, com.google.android.c2dm.permission.receive, com.google.android.finsky.permission.bind_get_install_referrer_service
+  Violating Permissions: android.permission.write_external_storage
+
+- App Name: Loanmate
+  Package Name: com.bwfoxlending.nigeria
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.bluetooth, android.permission.camera, android.permission.change_wifi_state, android.permission.internet, android.permission.post_notification, android.permission.post_notifications, android.permission.read_phone_state, android.permission.read_sms, android.permission.receive_boot_completed, android.permission.schedule_exact_alarm, android.permission.use_full_screen_intent, android.permission.vibrate, android.permission.wake_lock, com.bwfoxlending.nigeria.dynamic_receiver_not_exported_permission, com.google.android.c2dm.permission.receive, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id
+  Violating Permissions: android.permission.read_sms
+
+- App Name: Rocket Loan Plus
+  Package Name: com.silver.gooseplus.wallet.goosewallet
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_adservices_ad_id, android.permission.access_adservices_attribution, android.permission.access_coarse_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.camera, android.permission.change_wifi_state, android.permission.internet, android.permission.post_notifications, android.permission.read_calendar, android.permission.read_phone_state, android.permission.read_precise_phone_state, android.permission.read_privileged_phone_state, android.permission.read_sms, android.permission.wake_lock, android.permission.write_calendar, com.google.android.c2dm.permission.receive, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id, com.silver.gooseplus.wallet.goosewallet.dynamic_receiver_not_exported_permission
+  Violating Permissions: android.permission.read_sms
+
+- App Name: LCredit Max
+  Package Name: cashigo.loan.lcreditmax
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.bluetooth, android.permission.bluetooth_connect, android.permission.change_network_state, android.permission.change_wifi_state, android.permission.foreground_service, android.permission.internet, android.permission.post_notifications, android.permission.read_calendar, android.permission.read_phone_state, android.permission.read_sms, android.permission.wake_lock, android.permission.write_calendar, android.permission.write_settings, cashigo.loan.lcreditmax.dynamic_receiver_not_exported_permission, com.asus.msa.supplementarydid.access, com.google.android.c2dm.permission.receive, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id, freemme.permission.msa
+  Violating Permissions: android.permission.read_sms
+
+- App Name: @7F10001C
+  Package Name: com.smart.loan.money.smartloan
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_adservices_ad_id, android.permission.access_coarse_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.camera, android.permission.internet, android.permission.read_calendar, android.permission.read_phone_state, android.permission.read_sms, android.permission.wake_lock, android.permission.write_calendar, com.google.android.c2dm.permission.receive, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id
+  Violating Permissions: android.permission.read_sms
+
+- App Name: PearlCash
+  Package Name: com.nigeria.app.vsnaira
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.camera, android.permission.change_network_state, android.permission.change_wifi_state, android.permission.high_sampling_rate_sensors, android.permission.internet, android.permission.post_notifications, android.permission.read_sms, android.permission.vibrate, android.permission.wake_lock, com.google.android.c2dm.permission.receive, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id, com.nigeria.app.vsnaira.dynamic_receiver_not_exported_permission
+  Violating Permissions: android.permission.read_sms
+
+- App Name: LairaPlus
+  Package Name: com.lairaplus.naira.loan.nigeria
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_adservices_attribution, android.permission.access_coarse_location, android.permission.access_network_state, android.permission.bluetooth, android.permission.camera, android.permission.internet, android.permission.read_sms, android.permission.wake_lock, com.android.vending.check_license, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id, com.huawei.appmarket.service.commondata.permission.get_common_data, com.lairaplus.naira.loan.nigeria.dynamic_receiver_not_exported_permission, com.samsung.android.mapsagent.permission.read_app_info
+  Violating Permissions: android.permission.read_sms
+
+- App Name: NCASH
+  Package Name: com.ng.product.ncash
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.authenticate_accounts, android.permission.battery_stats, android.permission.camera, android.permission.change_wifi_state, android.permission.get_accounts, android.permission.get_package_size, android.permission.get_tasks, android.permission.internet, android.permission.package_usage_stats, android.permission.post_notifications, android.permission.read_calendar, android.permission.read_phone_state, android.permission.read_sms, android.permission.restart_packages, android.permission.vibrate, android.permission.wake_lock, android.permission.write_settings, com.google.android.c2dm.permission.receive, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id
+  Violating Permissions: android.permission.read_sms
+
+- App Name: AjeLoan
+  Package Name: ng.com.ajeloan
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.bluetooth, android.permission.bluetooth_connect, android.permission.camera, android.permission.change_wifi_state, android.permission.internet, android.permission.local_mac_address, android.permission.mount_unmount_filesystems, android.permission.read_phone_state, android.permission.read_sms, android.permission.wake_lock, com.google.android.c2dm.permission.receive, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id, ng.com.ajeloan.permission.jpush_message, ng.com.ajeloan.permission.receive_user_present
+  Violating Permissions: android.permission.read_sms
+
+- App Name: Nicekash
+  Package Name: com.loan.nicekash
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.broadcast_sticky, android.permission.camera, android.permission.internet, android.permission.mount_unmount_filesystems, android.permission.read_phone_state, android.permission.read_privileged_phone_state, android.permission.read_sms, android.permission.wake_lock, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id
+  Violating Permissions: android.permission.read_sms
+
+- App Name: Max Moni
+  Package Name: com.loan.new.maxmoni
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.broadcast_sticky, android.permission.camera, android.permission.internet, android.permission.mount_unmount_filesystems, android.permission.read_phone_state, android.permission.read_privileged_phone_state, android.permission.read_sms, android.permission.wake_lock, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id
+  Violating Permissions: android.permission.read_sms
+
+- App Name: LoanNaira
+  Package Name: com.loan.naira.now
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.broadcast_sticky, android.permission.camera, android.permission.internet, android.permission.mount_unmount_filesystems, android.permission.read_phone_state, android.permission.read_privileged_phone_state, android.permission.read_sms, android.permission.wake_lock, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id
+  Violating Permissions: android.permission.read_sms
+
+- App Name: CayCredit
+  Package Name: credit.caycredit.finance.loan.money
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.gms.permission.ad_id, android.permission.access_coarse_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.bluetooth, android.permission.bluetooth_admin, android.permission.camera, android.permission.change_network_state, android.permission.change_wifi_state, android.permission.internet, android.permission.read_phone_state, android.permission.read_sms, android.permission.wake_lock, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id, credit.caycredit.finance.loan.money.dynamic_receiver_not_exported_permission
+  Violating Permissions: android.permission.read_sms
+
+- App Name: iCredit
+  Package Name: com.loan.icredit.creditng
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_adservices_ad_id, android.permission.access_adservices_attribution, android.permission.access_coarse_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.camera, android.permission.change_wifi_state, android.permission.expand_status_bar, android.permission.flashlight, android.permission.internet, android.permission.post_notifications, android.permission.read_sms, android.permission.vibrate, android.permission.wake_lock, com.android.launcher.permission.install_shortcut, com.android.launcher.permission.uninstall_shortcut, com.google.android.c2dm.permission.receive, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id, com.loan.icredit.creditng.dynamic_receiver_not_exported_permission
+  Violating Permissions: android.permission.read_sms
+
+- App Name: UnlockCash
+  Package Name: com.boyu.luans
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.bluetooth, android.permission.bluetooth_admin, android.permission.bluetooth_connect, android.permission.call_phone, android.permission.change_wifi_state, android.permission.foreground_service, android.permission.internet, android.permission.read_phone_state, android.permission.read_sms, android.permission.receive_boot_completed, android.permission.wake_lock, com.boyu.luans.dynamic_receiver_not_exported_permission, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id
+  Violating Permissions: android.permission.read_sms
+
+- App Name: Hi Credit
+  Package Name: com.may.android.hicredit
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_adservices_ad_id, android.permission.access_adservices_attribution, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.bluetooth, android.permission.bluetooth_connect, android.permission.internet, android.permission.post_notifications, android.permission.read_phone_state, android.permission.read_sms, android.permission.wake_lock, com.google.android.c2dm.permission.receive, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id, com.may.android.hicredit.dynamic_receiver_not_exported_permission
+  Violating Permissions: android.permission.read_sms
+
+- App Name: Growly
+  Package Name: com.tpdn.growly.mobile
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.internet, android.permission.write_external_storage
+  Violating Permissions: android.permission.write_external_storage
+
+- App Name: CreditWise
+  Package Name: ng.wise.creditwise
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_location_extra_commands, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.bluetooth, android.permission.bluetooth_admin, android.permission.camera, android.permission.change_wifi_state, android.permission.foreground_service, android.permission.get_tasks, android.permission.high_sampling_rate_sensors, android.permission.internet, android.permission.read_calendar, android.permission.read_phone_state, android.permission.read_sms, android.permission.receive_boot_completed, android.permission.receive_sms, android.permission.reorder_tasks, android.permission.system_alert_window, android.permission.use_biometric, android.permission.use_fingerprint, android.permission.vibrate, android.permission.wake_lock, android.permission.write_calendar, com.android.browser.permission.read_history_bookmarks, com.android.vending.setup.play_setup_service, com.google.android.c2dm.permission.receive, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id, com.google.android.providers.gsf.permission.read_gservices
+  Violating Permissions: android.permission.read_sms
+
+- App Name: ClanPay
+  Package Name: com.repay.com
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_fine_location, android.permission.access_network_state, android.permission.access_notification_policy, android.permission.foreground_service, android.permission.get_tasks, android.permission.internet, android.permission.post_notifications, android.permission.read_app_badge, android.permission.receive_boot_completed, android.permission.schedule_exact_alarm, android.permission.wake_lock, com.anddoes.launcher.permission.update_count, com.google.android.c2dm.permission.receive, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id, com.htc.launcher.permission.read_settings, com.htc.launcher.permission.update_shortcut, com.huawei.android.launcher.permission.change_badge, com.huawei.android.launcher.permission.read_settings, com.huawei.android.launcher.permission.write_settings, com.majeur.launcher.permission.update_badge, com.oppo.launcher.permission.read_settings, com.oppo.launcher.permission.write_settings, com.sec.android.provider.badge.permission.read, com.sec.android.provider.badge.permission.write, com.sonyericsson.home.permission.broadcast_badge, com.sonymobile.home.permission.provider_insert_badge, me.everything.badger.permission.badge_count_read, me.everything.badger.permission.badge_count_write
+  Violating Permissions: android.permission.access_fine_location
+
+Country/Classification: Nigeria/Delisted
+
+Apps Violating Country Policy but Not Google's Policy:
+
+Total: 5
+
+- App Name: JoyCash
+  Package Name: joycash.mobile.online.quick.loan.money.cash.app
+  ViolateCountryPolicy: True
+  ViolateGoogle: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.camera, android.permission.change_wifi_state, android.permission.foreground_service, android.permission.internet, android.permission.post_notifications, android.permission.read_call_log, android.permission.read_phone_state, android.permission.read_sms, android.permission.receive_boot_completed, android.permission.system_alert_window, android.permission.vibrate, android.permission.wake_lock, com.google.android.c2dm.permission.receive, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id, joycash.mobile.online.quick.loan.money.cash.app.dynamic_receiver_not_exported_permission
+  Violating Permissions: android.permission.read_call_log
+
+- App Name: Naira9ja
+  Package Name: com.naira9ja.loan.credit.cash.borrow
+  ViolateCountryPolicy: True
+  ViolateGoogle: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.camera, android.permission.change_wifi_state, android.permission.foreground_service, android.permission.internet, android.permission.post_notifications, android.permission.read_call_log, android.permission.read_phone_state, android.permission.read_sms, android.permission.receive_boot_completed, android.permission.system_alert_window, android.permission.vibrate, android.permission.wake_lock, com.google.android.c2dm.permission.receive, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id, com.naira9ja.loan.credit.cash.borrow.dynamic_receiver_not_exported_permission
+  Violating Permissions: android.permission.read_call_log
+
+- App Name: Camelloan
+  Package Name: com.cashniriql.camelloan
+  ViolateCountryPolicy: True
+  ViolateGoogle: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.bluetooth_connect, android.permission.camera, android.permission.change_wifi_state, android.permission.internet, android.permission.local_mac_address, android.permission.read_calendar, android.permission.read_call_log, android.permission.read_phone_state, android.permission.read_privileged_phone_state, android.permission.read_profile, android.permission.read_sms
+  Violating Permissions: android.permission.read_call_log
+
+- App Name: Apex Lending
+  Package Name: al.cash.easy.creditapp
+  ViolateCountryPolicy: True
+  ViolateGoogle: False
+  Permissions: al.cash.easy.creditapp.dynamic_receiver_not_exported_permission, android.permission.access_coarse_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.camera, android.permission.change_network_state, android.permission.change_wifi_state, android.permission.foreground_service, android.permission.internet, android.permission.local_mac_address, android.permission.read_call_log, android.permission.read_phone_state, android.permission.read_sms, android.permission.record_audio, com.google.android.finsky.permission.bind_get_install_referrer_service
+  Violating Permissions: android.permission.read_call_log
+
+- App Name: Secucash
+  Package Name: com.ng.secucash
+  ViolateCountryPolicy: True
+  ViolateGoogle: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.battery_stats, android.permission.camera, android.permission.change_wifi_state, android.permission.get_package_size, android.permission.internet, android.permission.local_mac_address, android.permission.package_usage_stats, android.permission.post_notifications, android.permission.read_calendar, android.permission.read_call_log, android.permission.read_phone_state, android.permission.read_sms, android.permission.restart_packages, android.permission.vibrate, android.permission.wake_lock, android.permission.write_settings, com.google.android.c2dm.permission.receive, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id
+  Violating Permissions: android.permission.read_call_log
+
+
+Apps Violating LoanWatch but Not Country Policy:
+
+Total: 15
+
+- App Name: YoYi
+  Package Name: com.sxsydai.yoyi
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.change_network_state, android.permission.change_wifi_state, android.permission.internet, android.permission.read_phone_state, android.permission.read_privileged_phone_state, android.permission.read_sms, android.permission.receive_sms, android.permission.system_alert_window, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id
+  Violating Permissions: android.permission.read_sms
+
+- App Name: ThankUCash
+  Package Name: com.hm.thankucard
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_fine_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.call_phone, android.permission.camera, android.permission.internet, android.permission.read_phone_state, android.permission.use_fingerprint, android.permission.write_external_storage
+  Violating Permissions: android.permission.access_fine_location, android.permission.write_external_storage
+
+- App Name: Gomoni
+  Package Name: ng.moni.gomoni
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_location_extra_commands, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.bluetooth, android.permission.bluetooth_admin, android.permission.camera, android.permission.change_network_state, android.permission.change_wifi_state, android.permission.foreground_service, android.permission.get_tasks, android.permission.high_sampling_rate_sensors, android.permission.internet, android.permission.read_calendar, android.permission.read_phone_state, android.permission.read_sms, android.permission.receive_boot_completed, android.permission.receive_sms, android.permission.reorder_tasks, android.permission.system_alert_window, android.permission.vibrate, android.permission.wake_lock, android.permission.write_calendar, com.android.browser.permission.read_history_bookmarks, com.android.vending.setup.play_setup_service, com.google.android.c2dm.permission.receive, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id
+  Violating Permissions: android.permission.read_sms
+
+- App Name: Hcash
+  Package Name: com.nigeria.cashkj.hcash
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.camera, android.permission.change_wifi_state, android.permission.internet, android.permission.local_mac_address, android.permission.read_phone_state, android.permission.read_privileged_phone_state, android.permission.read_sms, android.permission.read_sync_settings, android.permission.record_audio, android.permission.wake_lock, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id
+  Violating Permissions: android.permission.read_sms
+
+- App Name: CashDey
+  Package Name: ng.dey.cashdey
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_location_extra_commands, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.bluetooth, android.permission.bluetooth_admin, android.permission.camera, android.permission.change_network_state, android.permission.change_wifi_state, android.permission.foreground_service, android.permission.get_tasks, android.permission.high_sampling_rate_sensors, android.permission.internet, android.permission.read_calendar, android.permission.read_phone_state, android.permission.read_sms, android.permission.receive_boot_completed, android.permission.receive_sms, android.permission.reorder_tasks, android.permission.system_alert_window, android.permission.vibrate, android.permission.wake_lock, android.permission.write_calendar, com.android.browser.permission.read_history_bookmarks, com.android.vending.setup.play_setup_service, com.google.android.c2dm.permission.receive, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id
+  Violating Permissions: android.permission.read_sms
+
+- App Name: Lucky Loan
+  Package Name: com.sx.luckyloan
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_media_location, android.permission.access_network_state, android.permission.access_notification_policy, android.permission.access_wifi_state, android.permission.camera, android.permission.foreground_service, android.permission.internet, android.permission.mount_unmount_filesystems, android.permission.post_notifications, android.permission.read_calendar, android.permission.read_phone_state, android.permission.read_privileged_phone_state, android.permission.read_sms, android.permission.wake_lock, com.google.android.c2dm.permission.receive, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id
+  Violating Permissions: android.permission.read_sms
+
+- App Name: Xcash
+  Package Name: com.loanx.cashloan
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_location_extra_commands, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.bluetooth, android.permission.bluetooth_admin, android.permission.camera, android.permission.change_network_state, android.permission.change_wifi_state, android.permission.foreground_service, android.permission.get_tasks, android.permission.high_sampling_rate_sensors, android.permission.internet, android.permission.post_notifications, android.permission.read_calendar, android.permission.read_phone_state, android.permission.read_sms, android.permission.receive_boot_completed, android.permission.receive_sms, android.permission.reorder_tasks, android.permission.system_alert_window, android.permission.vibrate, android.permission.wake_lock, android.permission.write_calendar, com.android.browser.permission.read_history_bookmarks, com.android.vending.setup.play_setup_service, com.google.android.c2dm.permission.receive, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id
+  Violating Permissions: android.permission.read_sms
+
+- App Name: Crancash
+  Package Name: com.loan.crancash.cash
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_adservices_attribution, android.permission.access_coarse_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.bluetooth, android.permission.bluetooth_admin, android.permission.camera, android.permission.change_network_state, android.permission.change_wifi_state, android.permission.internet, android.permission.read_sms, android.permission.wake_lock, com.android.vending.check_license, com.google.android.c2dm.permission.receive, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id, com.huawei.appmarket.service.commondata.permission.get_common_data, com.samsung.android.mapsagent.permission.read_app_info
+  Violating Permissions: android.permission.read_sms
+
+- App Name: nutLoan
+  Package Name: xyz.niki.loan.nut
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.call_phone, android.permission.camera, android.permission.change_wifi_state, android.permission.foreground_service, android.permission.internet, android.permission.read_phone_state, android.permission.read_privileged_phone_state, android.permission.read_sms, android.permission.wake_lock
+  Violating Permissions: android.permission.read_sms
+
+- App Name: Ease Cash
+  Package Name: com.ng.easecash
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_network_state, android.permission.access_wifi_state, android.permission.camera, android.permission.change_wifi_state, android.permission.internet, android.permission.post_notifications, android.permission.read_phone_state, android.permission.read_sms, android.permission.restart_packages, android.permission.vibrate, com.google.android.c2dm.permission.receive, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id
+  Violating Permissions: android.permission.read_sms
+
+- App Name: Flypay Pro
+  Package Name: loan.flypaypro.ydysx
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_location_extra_commands, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.bluetooth, android.permission.bluetooth_connect, android.permission.change_network_state, android.permission.change_wifi_state, android.permission.foreground_service, android.permission.internet, android.permission.read_calendar, android.permission.read_phone_state, android.permission.read_sms, android.permission.write_calendar, android.permission.write_settings, com.asus.msa.supplementarydid.access, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id, freemme.permission.msa
+  Violating Permissions: android.permission.read_sms
+
+- App Name: Nigeria Loan
+  Package Name: com.nigeria.loan.credit.nigerialoan
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.camera, android.permission.internet, android.permission.post_notifications, android.permission.read_calendar, android.permission.read_phone_state, android.permission.read_privileged_phone_state, android.permission.read_sms, android.permission.wake_lock, com.google.android.c2dm.permission.receive, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id, com.nigeria.loan.credit.nigerialoan.dynamic_receiver_not_exported_permission
+  Violating Permissions: android.permission.read_sms
+
+- App Name: Get Loan
+  Package Name: com.qc.getloan
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.camera, android.permission.internet, android.permission.read_phone_state, android.permission.read_privileged_phone_state, android.permission.read_sms, com.google.android.finsky.permission.bind_get_install_referrer_service
+  Violating Permissions: android.permission.read_sms
+
+- App Name: WeCredit
+  Package Name: com.we.ng.credit
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_location_extra_commands, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.call_phone, android.permission.camera, android.permission.change_network_state, android.permission.change_wifi_state, android.permission.foreground_service, android.permission.get_tasks, android.permission.internet, android.permission.post_notifications, android.permission.read_logs, android.permission.read_phone_state, android.permission.read_sms, android.permission.receive_boot_completed, android.permission.system_alert_window, android.permission.vibrate, android.permission.wake_lock, com.coloros.mcs.permission.recieve_mcs_message, com.google.android.c2dm.permission.receive, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id, com.google.android.providers.gsf.permission.read_gservices, com.heytap.mcs.permission.recieve_mcs_message, com.we.ng.credit.permission.mipush_receive
+  Violating Permissions: android.permission.read_sms
+
+- App Name: FINE KUDI
+  Package Name: cn.fk.fine.kudi
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_location_extra_commands, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.call_phone, android.permission.camera, android.permission.change_network_state, android.permission.change_wifi_state, android.permission.foreground_service, android.permission.internet, android.permission.post_notifications, android.permission.read_phone_state, android.permission.read_sms, android.permission.receive_boot_completed, android.permission.wake_lock, com.google.android.c2dm.permission.receive, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id, com.google.android.providers.gsf.permission.read_gservices
+  Violating Permissions: android.permission.read_sms
+
+Country/Classification: Pakistan/Approved
+
+Apps Violating Country Policy but Not Google's Policy:
+
+Total: 0
+
+  None
+
+
+Apps Violating LoanWatch but Not Country Policy:
+
+Total: 1
+
+- App Name: Edufi
+  Package Name: com.edufi.parent
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_fine_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.change_network_state, android.permission.change_wifi_state, android.permission.internet, android.permission.post_notifications, android.permission.receive_boot_completed, android.permission.vibrate, android.permission.wake_lock, android.permission.write_external_storage, com.google.android.c2dm.permission.receive
+  Violating Permissions: android.permission.access_fine_location, android.permission.write_external_storage
+
+Country/Classification: Pakistan/Delisted
+
+Apps Violating Country Policy but Not Google's Policy:
+
+Total: 0
+
+  None
+
+
+Apps Violating LoanWatch but Not Country Policy:
+
+Total: 1
+
+- App Name: Cash Dana
+  Package Name: com.jalurlaba.app
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_network_state, android.permission.access_wifi_state, android.permission.internet, android.permission.read_phone_state, android.permission.request_install_packages, android.permission.use_fingerprint, android.permission.wake_lock, android.permission.write_external_storage, com.google.android.c2dm.permission.receive, com.google.android.finsky.permission.bind_get_install_referrer_service
+  Violating Permissions: android.permission.write_external_storage
+
+Country/Classification: Philippines/Approved
+
+Apps Violating Country Policy but Not Google's Policy:
+
+Total: 0
+
+  None
+
+
+Apps Violating LoanWatch but Not Country Policy:
+
+Total: 19
+
+- App Name: WowPera
+  Package Name: com.wow.pera
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.call_phone, android.permission.camera, android.permission.change_wifi_state, android.permission.flashlight, android.permission.foreground_service, android.permission.internet, android.permission.post_notifications, android.permission.read_phone_state, android.permission.read_sms, android.permission.receive_boot_completed, android.permission.vibrate, android.permission.wake_lock, com.google.android.c2dm.permission.receive, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id, com.google.android.providers.gsf.permission.read_gservices, com.wow.pera.dynamic_receiver_not_exported_permission
+  Violating Permissions: android.permission.read_sms
+
+- App Name: Valley loan
+  Package Name: com.valley.loan
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.call_phone, android.permission.camera, android.permission.change_network_state, android.permission.change_wifi_state, android.permission.flashlight, android.permission.foreground_service, android.permission.internet, android.permission.post_notifications, android.permission.read_phone_state, android.permission.read_sms, android.permission.receive_boot_completed, android.permission.vibrate, android.permission.wake_lock, com.google.android.c2dm.permission.receive, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id, com.google.android.providers.gsf.permission.read_gservices
+  Violating Permissions: android.permission.read_sms
+
+- App Name: PesoCash
+  Package Name: com.myloan.pesocash
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_adservices_attribution, android.permission.access_coarse_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.camera, android.permission.change_network_state, android.permission.change_wifi_state, android.permission.high_sampling_rate_sensors, android.permission.internet, android.permission.post_notifications, android.permission.read_sms, android.permission.vibrate, android.permission.wake_lock, com.google.android.c2dm.permission.receive, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id, com.huawei.appmarket.service.commondata.permission.get_common_data
+  Violating Permissions: android.permission.read_sms
+
+- App Name: Zippeso - Online Cash Loan
+  Package Name: ph.zippeso.online.cash.loan
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_location_extra_commands, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.call_phone, android.permission.camera, android.permission.change_network_state, android.permission.change_wifi_state, android.permission.flashlight, android.permission.foreground_service, android.permission.internet, android.permission.post_notifications, android.permission.read_phone_state, android.permission.read_sms, android.permission.receive_boot_completed, android.permission.system_alert_window, android.permission.vibrate, android.permission.wake_lock, com.google.android.c2dm.permission.receive, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id, com.google.android.providers.gsf.permission.read_gservices
+  Violating Permissions: android.permission.read_sms
+
+- App Name: Vplus
+  Package Name: com.v.plus.vplus
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_adservices_ad_id, android.permission.access_adservices_attribution, android.permission.access_coarse_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.camera, android.permission.change_wifi_state, android.permission.internet, android.permission.post_notifications, android.permission.read_calendar, android.permission.read_phone_state, android.permission.read_privileged_phone_state, android.permission.read_sms, android.permission.vibrate, android.permission.wake_lock, com.google.android.c2dm.permission.receive, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id, com.huawei.appmarket.service.commondata.permission.get_common_data, com.v.plus.vplus.dynamic_receiver_not_exported_permission
+  Violating Permissions: android.permission.read_sms
+
+- App Name: Pesokwento
+  Package Name: com.philipin.pesokwento.loan
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.camera, android.permission.internet, android.permission.post_notifications, android.permission.read_phone_state, android.permission.read_sms, android.permission.wake_lock, com.google.android.c2dm.permission.receive, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id, com.philipin.pesokwento.loan.dynamic_receiver_not_exported_permission
+  Violating Permissions: android.permission.read_sms
+
+- App Name: @7F100022
+  Package Name: com.liang.chan
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_network_state, android.permission.access_wifi_state, android.permission.call_phone, android.permission.camera, android.permission.change_network_state, android.permission.change_wifi_state, android.permission.flashlight, android.permission.foreground_service, android.permission.internet, android.permission.package_usage_stats, android.permission.post_notifications, android.permission.read_phone_state, android.permission.read_sms, android.permission.receive_boot_completed, android.permission.system_alert_window, android.permission.wake_lock, com.google.android.c2dm.permission.receive, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id, com.liang.chan.dynamic_receiver_not_exported_permission
+  Violating Permissions: android.permission.read_sms
+
+- App Name: Pesolaon
+  Package Name: com.pesoloan
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.camera, android.permission.change_network_state, android.permission.change_wifi_state, android.permission.get_package_size, android.permission.internet, android.permission.package_usage_stats, android.permission.post_notifications, android.permission.read_calendar, android.permission.read_call_log, android.permission.read_phone_state, android.permission.read_sms, android.permission.receive_sms, android.permission.use_biometric, android.permission.use_fingerprint, android.permission.wake_lock, android.permission.write_calendar, com.google.android.c2dm.permission.receive, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id
+  Violating Permissions: android.permission.read_call_log, android.permission.read_sms
+
+- App Name: Pesohere
+  Package Name: com.pesohere.android
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.camera, android.permission.foreground_service, android.permission.internet, android.permission.post_notifications, android.permission.read_phone_state, android.permission.read_pri, android.permission.read_sms, android.permission.receive_boot_completed, android.permission.system_alert_window, android.permission.use_fingerprint, android.permission.wake_lock, com.google.android.c2dm.permission.receive, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id
+  Violating Permissions: android.permission.read_sms
+
+- App Name: JuanHand
+  Package Name: com.juanhand.fast.cash.peso.loan.app
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_adservices_attribution, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.camera, android.permission.foreground_service, android.permission.internet, android.permission.package_usage_stats, android.permission.post_notifications, android.permission.read_phone_state, android.permission.read_sms, android.permission.wake_lock, com.google.android.c2dm.permission.receive, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id, com.huawei.appmarket.service.commondata.permission.get_common_data, com.juanhand.fast.cash.peso.loan.app.dynamic_receiver_not_exported_permission
+  Violating Permissions: android.permission.read_sms
+
+- App Name: Pera
+  Package Name: com.vip.pera
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.camera, android.permission.foreground_service, android.permission.get_tasks, android.permission.internet, android.permission.mount_unmount_filesystems, android.permission.post_notifications, android.permission.read_clipboard, android.permission.read_media_visual_user_selected, android.permission.read_settings, android.permission.read_sms, android.permission.receive_sms, android.permission.wake_lock, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id, com.vip.pera.dynamic_receiver_not_exported_permission
+  Violating Permissions: android.permission.read_sms
+
+- App Name: PesoQ
+  Package Name: com.tmart.pesoq
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_background_location, android.permission.access_coarse_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.camera, android.permission.change_network_state, android.permission.change_wifi_state, android.permission.flashlight, android.permission.high_sampling_rate_sensors, android.permission.internet, android.permission.post_notifications, android.permission.read_calendar, android.permission.read_sms, android.permission.vibrate, android.permission.wake_lock, android.permission.write_calendar, com.google.android.c2dm.permission.receive, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id
+  Violating Permissions: android.permission.read_sms
+
+- App Name: LendPeso Market
+  Package Name: com.jrweid.pilipinas.loanmarket
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_network_state, android.permission.internet, android.permission.read_external_storage, android.permission.read_phone_state, android.permission.request_install_packages, android.permission.wake_lock, android.permission.write_external_storage, com.google.android.c2dm.permission.receive, com.google.android.finsky.permission.bind_get_install_referrer_service
+  Violating Permissions: android.permission.read_external_storage, android.permission.write_external_storage
+
+- App Name: QuickLa
+  Package Name: com.luck.duck.quickla
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.bluetooth, android.permission.camera, android.permission.change_wifi_state, android.permission.internet, android.permission.local_mac_address, android.permission.package_usage_stats, android.permission.read_calendar, android.permission.read_call_log, android.permission.read_phone_state, android.permission.read_privileged_phone_state, android.permission.read_sms, android.permission.receive_sms, android.permission.wake_lock, android.permission.write_calendar, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id, com.luck.duck.quickla.dynamic_receiver_not_exported_permission
+  Violating Permissions: android.permission.read_call_log, android.permission.read_sms
+
+- App Name: OkPeso
+  Package Name: tech.codeblock.okpeso
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.camera, android.permission.camera2, android.permission.foreground_service, android.permission.internet, android.permission.post_notifications, android.permission.read_calendar, android.permission.read_phone_state, android.permission.read_privileged_phone_state, android.permission.read_sms, android.permission.receive_boot_completed, android.permission.schedule_exact_alarm, android.permission.wake_lock, com.google.android.c2dm.permission.receive, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id, tech.codeblock.okpeso.dynamic_receiver_not_exported_permission
+  Violating Permissions: android.permission.read_sms
+
+- App Name: PesoBuffet
+  Package Name: com.abs.pesobuffet.android
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.bluetooth, android.permission.camera, android.permission.change_wifi_state, android.permission.internet, android.permission.local_mac_address, android.permission.package_usage_stats, android.permission.read_calendar, android.permission.read_call_log, android.permission.read_phone_state, android.permission.read_privileged_phone_state, android.permission.read_sms, android.permission.receive_sms, android.permission.wake_lock, android.permission.write_calendar, com.abs.pesobuffet.android.dynamic_receiver_not_exported_permission, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id
+  Violating Permissions: android.permission.read_call_log, android.permission.read_sms
+
+- App Name: Akulaku Finance
+  Package Name: io.silvrr.finance
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_fine_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.bluetooth, android.permission.bluetooth_admin, android.permission.camera, android.permission.change_wifi_state, android.permission.flashlight, android.permission.foreground_service, android.permission.get_tasks, android.permission.internet, android.permission.mount_unmount_filesystems, android.permission.permission_granted, android.permission.receive_boot_completed, android.permission.record_audio, android.permission.request_install_packages, android.permission.system_alert_window, android.permission.vibrate, android.permission.wake_lock, com.android.alarm.permission.set_alarm, com.google.android.c2dm.permission.receive, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.providers.gsf.permission.read_gservices
+  Violating Permissions: android.permission.access_fine_location
+
+- App Name: MayPera
+  Package Name: com.maypera.peso
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.camera, android.permission.foreground_service, android.permission.internet, android.permission.post_notifications, android.permission.read_sms, android.permission.receive_boot_completed, android.permission.wake_lock, com.google.android.c2dm.permission.receive, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id, com.maypera.peso.dynamic_receiver_not_exported_permission
+  Violating Permissions: android.permission.read_sms
+
+- App Name: Cashme
+  Package Name: ph.cashme666.android
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.hardware.camera.autofocus, android.permission.access_coarse_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.bluetooth, android.permission.bluetooth_connect, android.permission.camera, android.permission.foreground_service, android.permission.internet, android.permission.post_notifications, android.permission.read_sms, android.permission.vibrate, android.permission.wake_lock, com.google.android.c2dm.permission.receive, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id
+  Violating Permissions: android.permission.read_sms
+
+Country/Classification: Philippines/Delisted
+
+Apps Violating Country Policy but Not Google's Policy:
+
+Total: 0
+
+  None
+
+
+Apps Violating LoanWatch but Not Country Policy:
+
+Total: 6
+
+- App Name: Pautang Peso
+  Package Name: ph.lhl.pautangpeso
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.camera, android.permission.change_network_state, android.permission.change_wifi_state, android.permission.flashlight, android.permission.high_sampling_rate_sensors, android.permission.internet, android.permission.post_notifications, android.permission.read_sms, android.permission.vibrate, android.permission.wake_lock, com.google.android.c2dm.permission.receive, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id, ph.lhl.pautangpeso.dynamic_receiver_not_exported_permission
+  Violating Permissions: android.permission.read_sms
+
+- App Name: Start Loan
+  Package Name: ph.fk.startloan
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_fine_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.camera, android.permission.foreground_service, android.permission.internet, android.permission.read_external_storage, android.permission.write_external_storage, com.google.android.finsky.permission.bind_get_install_referrer_service
+  Violating Permissions: android.permission.access_fine_location, android.permission.read_external_storage, android.permission.write_external_storage
+
+- App Name: First Cash
+  Package Name: com.vincocopeso.propitious
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_network_state, android.permission.access_wifi_state, android.permission.camera, android.permission.internet, android.permission.read_phone_state, android.permission.read_sms, android.permission.wake_lock, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id
+  Violating Permissions: android.permission.read_sms
+
+- App Name: upeso
+  Package Name: com.lanhai.upesocash
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_adservices_ad_id, android.permission.access_adservices_attribution, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.camera, android.permission.get_package_size, android.permission.internet, android.permission.post_notifications, android.permission.read_call_log, android.permission.read_phone_state, android.permission.read_privileged_phone_state, android.permission.read_sms, android.permission.wake_lock, com.google.android.c2dm.permission.receive, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id, com.huawei.appmarket.service.commondata.permission.get_common_data, com.lanhai.upesocash.dynamic_receiver_not_exported_permission
+  Violating Permissions: android.permission.read_call_log, android.permission.read_sms
+
+- App Name: Pondo Loan
+  Package Name: ph.fk.pondoloan
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_network_state, android.permission.access_wifi_state, android.permission.camera, android.permission.foreground_service, android.permission.internet, android.permission.read_external_storage, android.permission.write_external_storage, com.google.android.finsky.permission.bind_get_install_referrer_service
+  Violating Permissions: android.permission.read_external_storage, android.permission.write_external_storage
+
+- App Name: NewCash
+  Package Name: com.perabag.app
+  ViolateLoanWatch: True
+  ViolateCountryPolicy: False
+  Permissions: android.permission.access_coarse_location, android.permission.access_network_state, android.permission.access_wifi_state, android.permission.bluetooth, android.permission.camera, android.permission.get_accounts, android.permission.internet, android.permission.read_phone_state, android.permission.read_sms, android.permission.wake_lock, android.permission.write_external_storage, com.google.android.c2dm.permission.receive, com.google.android.finsky.permission.bind_get_install_referrer_service, com.google.android.gms.permission.ad_id
+  Violating Permissions: android.permission.read_sms, android.permission.write_external_storage
+
+
+Discrepancies (Violate* vs. Permissions):
+- None

@@ -1,0 +1,1627 @@
+APK: com.id.avantee_2019-01-18 (IndonesiaApproved)
+Leak 1:
+  Source: $r3 = virtualinvoke $r2.<android.content.pm.PackageManager: java.util.List getInstalledPackages(int)>(8192) (<android.content.pm.PackageManager: java.util.List getInstalledPackages(int)>)
+  Sink: staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("xzLog", $r0) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.id.avantee.utils.DeviceHelper: java.util.List getAppPackageNames(android.content.Context)>
+    <com.id.avantee.utils.DeviceHelper: java.util.List getAppPackageNames(android.content.Context)>
+    <com.id.avantee.utils.DeviceHelper: java.util.List getAppPackageNames(android.content.Context)>
+    <com.id.avantee.utils.DeviceHelper: java.util.List getAppPackageNames(android.content.Context)>
+    <com.id.avantee.utils.DeviceHelper: java.util.List getAppPackageNames(android.content.Context)>
+    <com.id.avantee.utils.DeviceHelper: java.util.List getAppPackageNames(android.content.Context)>
+    <com.id.avantee.utils.DeviceHelper: java.util.List getAppPackageNames(android.content.Context)>
+    <com.id.avantee.models.device.AppListInfo: void <init>(java.lang.String,java.lang.String)>
+    <com.id.avantee.models.device.AppListInfo: void <init>(java.lang.String,java.lang.String)>
+    <com.id.avantee.utils.DeviceHelper: java.util.List getAppPackageNames(android.content.Context)>
+    <com.id.avantee.utils.DeviceHelper: java.util.List getAppPackageNames(android.content.Context)>
+    <com.id.avantee.utils.DeviceHelper: java.util.List getAppPackageNames(android.content.Context)>
+    <com.id.avantee.utils.DeviceHelper: java.util.List getAppPackageNames(android.content.Context)>
+    <com.id.avantee.utils.DeviceHelper: java.util.List getAppPackageNames(android.content.Context)>
+    <com.id.avantee.utils.LogsUtil: void d(java.lang.String)>
+    <com.id.avantee.utils.LogsUtil: void showLog(com.id.avantee.utils.LogsUtil$LogType,java.lang.String)>
+
+Leak 2:
+  Source: $r3 = staticinvoke <android.os.Environment: java.io.File getExternalStorageDirectory()>() (<android.os.Environment: java.io.File getExternalStorageDirectory()>)
+  Sink: staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("xzLog", $r0) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.id.avantee.utils.Configuration: java.lang.String parsePath(java.lang.String)>
+    <com.id.avantee.utils.Configuration: java.lang.String parsePath(java.lang.String)>
+    <com.id.avantee.utils.Configuration: java.lang.String parsePath(java.lang.String)>
+    <com.id.avantee.utils.Configuration: java.lang.String parsePath(java.lang.String)>
+    <com.id.avantee.utils.Configuration: com.id.avantee.utils.Configuration buildConfig(android.content.Context)>
+    <com.id.avantee.utils.Configuration: com.id.avantee.utils.Configuration buildConfig(android.content.Context)>
+    <com.id.avantee.IDApplication: void coreInit()>
+    <com.id.avantee.utils.Configuration: java.lang.String getPublicBasePath()>
+    <com.id.avantee.utils.Configuration: java.lang.String getPublicBasePath()>
+    <com.id.avantee.IDApplication: void coreInit()>
+    <com.id.avantee.IDApplication: void coreInit()>
+    <com.id.avantee.IDApplication: void coreInit()>
+    <com.id.avantee.IDApplication: void coreInit()>
+    <com.id.avantee.IDApplication: void coreInit()>
+    <com.id.avantee.IDApplication: void coreInit()>
+    <com.id.avantee.IDApplication: void coreInit()>
+    <com.id.avantee.IDApplication: void coreInit()>
+    <com.id.avantee.IDApplication: void coreInit()>
+    <com.id.avantee.IDApplication: void coreInit()>
+    <com.id.avantee.IDApplication: void coreInit()>
+    <com.id.avantee.IDApplication: void coreInit()>
+    <com.id.avantee.IDApplication: void coreInit()>
+    <com.id.avantee.utils.LogsUtil: void d(java.lang.String)>
+    <com.id.avantee.utils.LogsUtil: void showLog(com.id.avantee.utils.LogsUtil$LogType,java.lang.String)>
+
+Leak 3:
+  Source: $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r2, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("UMConfigure", $r1) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.umeng.commonsdk.utils.UMUtils: java.lang.String getChannelByXML(android.content.Context)>
+    <com.umeng.commonsdk.utils.UMUtils: java.lang.String getChannelByXML(android.content.Context)>
+    <com.umeng.commonsdk.utils.UMUtils: java.lang.String getChannelByXML(android.content.Context)>
+    <com.umeng.commonsdk.utils.UMUtils: java.lang.String getChannelByXML(android.content.Context)>
+    <com.umeng.commonsdk.utils.UMUtils: java.lang.String getChannelByXML(android.content.Context)>
+    <com.umeng.commonsdk.utils.UMUtils: java.lang.String getChannelByXML(android.content.Context)>
+    <com.umeng.commonsdk.UMConfigure: void init(android.content.Context,java.lang.String,java.lang.String,int,java.lang.String)>
+    <com.umeng.commonsdk.UMConfigure: void init(android.content.Context,java.lang.String,java.lang.String,int,java.lang.String)>
+    <com.umeng.commonsdk.UMConfigure: void init(android.content.Context,java.lang.String,java.lang.String,int,java.lang.String)>
+    <com.umeng.commonsdk.UMConfigure: void init(android.content.Context,java.lang.String,java.lang.String,int,java.lang.String)>
+
+Leak 4:
+  Source: $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r2, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("UMConfigure", $r1) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.umeng.commonsdk.utils.UMUtils: java.lang.String getAppkeyByXML(android.content.Context)>
+    <com.umeng.commonsdk.utils.UMUtils: java.lang.String getAppkeyByXML(android.content.Context)>
+    <com.umeng.commonsdk.utils.UMUtils: java.lang.String getAppkeyByXML(android.content.Context)>
+    <com.umeng.commonsdk.utils.UMUtils: java.lang.String getAppkeyByXML(android.content.Context)>
+    <com.umeng.commonsdk.utils.UMUtils: java.lang.String getAppkeyByXML(android.content.Context)>
+    <com.umeng.commonsdk.UMConfigure: void init(android.content.Context,java.lang.String,java.lang.String,int,java.lang.String)>
+    <com.umeng.commonsdk.UMConfigure: void init(android.content.Context,java.lang.String,java.lang.String,int,java.lang.String)>
+    <com.umeng.commonsdk.UMConfigure: void init(android.content.Context,java.lang.String,java.lang.String,int,java.lang.String)>
+    <com.umeng.commonsdk.UMConfigure: void init(android.content.Context,java.lang.String,java.lang.String,int,java.lang.String)>
+
+Leak 5:
+  Source: $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r2, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r0, $r3) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.umeng.commonsdk.statistics.common.DeviceConfig: java.lang.String getAppName(android.content.Context)>
+    <com.umeng.commonsdk.statistics.common.DeviceConfig: java.lang.String getAppName(android.content.Context)>
+    <com.umeng.commonsdk.statistics.common.DeviceConfig: java.lang.String getAppName(android.content.Context)>
+    <com.umeng.commonsdk.statistics.common.DeviceConfig: java.lang.String getAppName(android.content.Context)>
+    <com.umeng.commonsdk.statistics.common.DeviceConfig: java.lang.String getAppName(android.content.Context)>
+    <com.umeng.commonsdk.stateless.UMSLEnvelopeBuild: org.json.JSONObject buildSLBaseHeader(android.content.Context)>
+    <com.umeng.commonsdk.stateless.UMSLEnvelopeBuild: org.json.JSONObject buildSLBaseHeader(android.content.Context)>
+    <com.umeng.commonsdk.stateless.UMSLEnvelopeBuild: org.json.JSONObject buildSLBaseHeader(android.content.Context)>
+    <com.umeng.commonsdk.stateless.UMSLEnvelopeBuild: org.json.JSONObject buildSLBaseHeader(android.content.Context)>
+    <com.umeng.commonsdk.stateless.UMSLEnvelopeBuild: org.json.JSONObject buildSLBaseHeader(android.content.Context)>
+    <com.umeng.commonsdk.stateless.UMSLEnvelopeBuild: org.json.JSONObject buildSLBaseHeader(android.content.Context)>
+    <com.umeng.commonsdk.statistics.common.e: void a(java.lang.String,java.lang.Object[])>
+    <com.umeng.commonsdk.statistics.common.e: void a(java.lang.String,java.lang.Object[])>
+    <com.umeng.commonsdk.statistics.common.e: void a(java.lang.String,java.lang.Object[])>
+    <com.umeng.commonsdk.statistics.common.e: void c(java.lang.String,java.lang.String,java.lang.Throwable)>
+    <com.umeng.commonsdk.statistics.common.e: void a(int,java.lang.String,java.lang.String,java.lang.Throwable)>
+    <com.umeng.commonsdk.statistics.common.e: void a(int,java.lang.String,java.lang.String,java.lang.Throwable)>
+
+Leak 6:
+  Source: $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r2, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r0, $r3) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.umeng.commonsdk.utils.UMUtils: java.lang.String getAppVersionName(android.content.Context)>
+    <com.umeng.commonsdk.utils.UMUtils: java.lang.String getAppVersionName(android.content.Context)>
+    <com.umeng.commonsdk.utils.UMUtils: java.lang.String getAppVersionName(android.content.Context)>
+    <com.umeng.commonsdk.statistics.common.DeviceConfig: java.lang.String getAppVersionName(android.content.Context)>
+    <com.umeng.commonsdk.stateless.UMSLEnvelopeBuild: org.json.JSONObject buildSLBaseHeader(android.content.Context)>
+    <com.umeng.commonsdk.stateless.UMSLEnvelopeBuild: org.json.JSONObject buildSLBaseHeader(android.content.Context)>
+    <com.umeng.commonsdk.stateless.UMSLEnvelopeBuild: org.json.JSONObject buildSLBaseHeader(android.content.Context)>
+    <com.umeng.commonsdk.stateless.UMSLEnvelopeBuild: org.json.JSONObject buildSLBaseHeader(android.content.Context)>
+    <com.umeng.commonsdk.stateless.UMSLEnvelopeBuild: org.json.JSONObject buildSLBaseHeader(android.content.Context)>
+    <com.umeng.commonsdk.stateless.UMSLEnvelopeBuild: org.json.JSONObject buildSLBaseHeader(android.content.Context)>
+    <com.umeng.commonsdk.statistics.common.e: void a(java.lang.String,java.lang.Object[])>
+    <com.umeng.commonsdk.statistics.common.e: void a(java.lang.String,java.lang.Object[])>
+    <com.umeng.commonsdk.statistics.common.e: void a(java.lang.String,java.lang.Object[])>
+    <com.umeng.commonsdk.statistics.common.e: void c(java.lang.String,java.lang.String,java.lang.Throwable)>
+    <com.umeng.commonsdk.statistics.common.e: void a(int,java.lang.String,java.lang.String,java.lang.Throwable)>
+    <com.umeng.commonsdk.statistics.common.e: void a(int,java.lang.String,java.lang.String,java.lang.Throwable)>
+
+Leak 7:
+  Source: $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r2, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r0, $r1) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.umeng.commonsdk.statistics.common.DeviceConfig: java.lang.String getAppName(android.content.Context)>
+    <com.umeng.commonsdk.statistics.common.DeviceConfig: java.lang.String getAppName(android.content.Context)>
+    <com.umeng.commonsdk.statistics.common.DeviceConfig: java.lang.String getAppName(android.content.Context)>
+    <com.umeng.commonsdk.statistics.common.DeviceConfig: java.lang.String getAppName(android.content.Context)>
+    <com.umeng.commonsdk.statistics.common.DeviceConfig: java.lang.String getAppName(android.content.Context)>
+    <com.umeng.commonsdk.stateless.UMSLEnvelopeBuild: org.json.JSONObject buildSLBaseHeader(android.content.Context)>
+    <com.umeng.commonsdk.stateless.UMSLEnvelopeBuild: org.json.JSONObject buildSLBaseHeader(android.content.Context)>
+    <com.umeng.commonsdk.proguard.b$1: void run()>
+    <com.umeng.commonsdk.stateless.UMSLEnvelopeBuild: org.json.JSONObject buildSLEnvelope(android.content.Context,org.json.JSONObject,org.json.JSONObject,java.lang.String)>
+    <com.umeng.commonsdk.stateless.UMSLEnvelopeBuild: org.json.JSONObject buildSLEnvelope(android.content.Context,org.json.JSONObject,org.json.JSONObject,java.lang.String)>
+    <com.umeng.commonsdk.stateless.UMSLEnvelopeBuild: org.json.JSONObject buildSLEnvelope(android.content.Context,org.json.JSONObject,org.json.JSONObject,java.lang.String)>
+    <com.umeng.commonsdk.stateless.UMSLEnvelopeBuild: org.json.JSONObject buildSLEnvelope(android.content.Context,org.json.JSONObject,org.json.JSONObject,java.lang.String)>
+    <com.umeng.commonsdk.stateless.UMSLEnvelopeBuild: org.json.JSONObject buildSLEnvelope(android.content.Context,org.json.JSONObject,org.json.JSONObject,java.lang.String)>
+    <com.umeng.commonsdk.statistics.common.e: void a(java.lang.String,java.lang.Object[])>
+    <com.umeng.commonsdk.statistics.common.e: void a(java.lang.String,java.lang.Object[])>
+    <com.umeng.commonsdk.statistics.common.e: void a(java.lang.String,java.lang.Object[])>
+    <com.umeng.commonsdk.statistics.common.e: void c(java.lang.String,java.lang.String,java.lang.Throwable)>
+    <com.umeng.commonsdk.statistics.common.e: void a(int,java.lang.String,java.lang.String,java.lang.Throwable)>
+    <com.umeng.commonsdk.statistics.common.e: void a(int,java.lang.String,java.lang.String,java.lang.Throwable)>
+
+Leak 8:
+  Source: $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r2, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r0, $r1) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.umeng.commonsdk.utils.UMUtils: java.lang.String getAppVersionName(android.content.Context)>
+    <com.umeng.commonsdk.utils.UMUtils: java.lang.String getAppVersionName(android.content.Context)>
+    <com.umeng.commonsdk.utils.UMUtils: java.lang.String getAppVersionName(android.content.Context)>
+    <com.umeng.commonsdk.statistics.common.DeviceConfig: java.lang.String getAppVersionName(android.content.Context)>
+    <com.umeng.commonsdk.stateless.UMSLEnvelopeBuild: org.json.JSONObject buildSLBaseHeader(android.content.Context)>
+    <com.umeng.commonsdk.stateless.UMSLEnvelopeBuild: org.json.JSONObject buildSLBaseHeader(android.content.Context)>
+    <com.umeng.commonsdk.proguard.b$1: void run()>
+    <com.umeng.commonsdk.stateless.UMSLEnvelopeBuild: org.json.JSONObject buildSLEnvelope(android.content.Context,org.json.JSONObject,org.json.JSONObject,java.lang.String)>
+    <com.umeng.commonsdk.stateless.UMSLEnvelopeBuild: org.json.JSONObject buildSLEnvelope(android.content.Context,org.json.JSONObject,org.json.JSONObject,java.lang.String)>
+    <com.umeng.commonsdk.stateless.UMSLEnvelopeBuild: org.json.JSONObject buildSLEnvelope(android.content.Context,org.json.JSONObject,org.json.JSONObject,java.lang.String)>
+    <com.umeng.commonsdk.stateless.UMSLEnvelopeBuild: org.json.JSONObject buildSLEnvelope(android.content.Context,org.json.JSONObject,org.json.JSONObject,java.lang.String)>
+    <com.umeng.commonsdk.stateless.UMSLEnvelopeBuild: org.json.JSONObject buildSLEnvelope(android.content.Context,org.json.JSONObject,org.json.JSONObject,java.lang.String)>
+    <com.umeng.commonsdk.statistics.common.e: void a(java.lang.String,java.lang.Object[])>
+    <com.umeng.commonsdk.statistics.common.e: void a(java.lang.String,java.lang.Object[])>
+    <com.umeng.commonsdk.statistics.common.e: void a(java.lang.String,java.lang.Object[])>
+    <com.umeng.commonsdk.statistics.common.e: void c(java.lang.String,java.lang.String,java.lang.Throwable)>
+    <com.umeng.commonsdk.statistics.common.e: void a(int,java.lang.String,java.lang.String,java.lang.Throwable)>
+    <com.umeng.commonsdk.statistics.common.e: void a(int,java.lang.String,java.lang.String,java.lang.Throwable)>
+
+Leak 9:
+  Source: $r1 = virtualinvoke r0.<com.id.avantee.views.login.AddPwdActivity: android.view.View findViewById(int)>(2131689668) (None)
+  Sink: $r7 = virtualinvoke $r6.<okhttp3.OkHttpClient: okhttp3.Call newCall(okhttp3.Request)>($r2) (<okhttp3.OkHttpClient: okhttp3.Call newCall(okhttp3.Request)>)
+  Methods:
+    <com.id.avantee.views.login.AddPwdActivity: void initView()>
+    <com.id.avantee.views.login.AddPwdActivity: void initView()>
+    <com.id.avantee.views.login.AddPwdActivity: void initView()>
+    <com.id.avantee.views.login.AddPwdActivity: void initView()>
+    <com.id.avantee.base.BaseActivity: void onCreate(android.os.Bundle)>
+    <com.id.avantee.views.login.AddPwdActivity: void onCreate(android.os.Bundle)>
+    <dummyMainClass: com.id.avantee.views.login.AddPwdActivity dummyMainMethod_com_id_avantee_views_login_AddPwdActivity(android.content.Intent)>
+    <com.id.avantee.views.login.AddPwdActivity$$Lambda$0: void <init>(com.id.avantee.views.login.AddPwdActivity)>
+    <com.id.avantee.views.login.AddPwdActivity$$Lambda$0: void <init>(com.id.avantee.views.login.AddPwdActivity)>
+    <dummyMainClass: com.id.avantee.views.login.AddPwdActivity dummyMainMethod_com_id_avantee_views_login_AddPwdActivity(android.content.Intent)>
+    <com.id.avantee.views.login.AddPwdActivity$$Lambda$0: void onClick(android.view.View)>
+    <com.id.avantee.views.login.AddPwdActivity$$Lambda$0: void onClick(android.view.View)>
+    <com.id.avantee.views.login.AddPwdActivity: void lambda$setListener$0$AddPwdActivity(android.view.View)>
+    <com.id.avantee.views.login.AddPwdActivity: void lambda$setListener$0$AddPwdActivity(android.view.View)>
+    <com.id.avantee.views.login.AddPwdActivity: void lambda$setListener$0$AddPwdActivity(android.view.View)>
+    <com.id.avantee.views.login.AddPwdActivity: void lambda$setListener$0$AddPwdActivity(android.view.View)>
+    <com.id.avantee.views.login.AddPwdActivity: void lambda$setListener$0$AddPwdActivity(android.view.View)>
+    <com.id.avantee.presenters.AddPwdPresenter: void addPwdData(java.lang.String)>
+    <com.id.avantee.netservice.AddPwdHelper: void addPwdData(java.lang.String,com.id.avantee.interfaces.IRequestLisenter)>
+    <com.id.avantee.request.OkGoUtil: void params(java.lang.String,java.lang.String)>
+    <com.lzy.okhttputils.model.HttpParams: void put(java.lang.String,java.lang.String,boolean[])>
+    <com.lzy.okhttputils.model.HttpParams: void put(java.lang.String,java.lang.String,boolean[])>
+    <com.lzy.okhttputils.model.HttpParams: void put(java.lang.String,java.lang.String,boolean)>
+    <com.lzy.okhttputils.model.HttpParams: void put(java.lang.String,java.lang.String,boolean)>
+    <com.lzy.okhttputils.model.HttpParams: void put(java.lang.String,java.lang.String,boolean)>
+    <com.lzy.okhttputils.model.HttpParams: void put(java.lang.String,java.lang.String,boolean)>
+    <com.lzy.okhttputils.model.HttpParams: void put(java.lang.String,java.lang.String,boolean)>
+    <com.lzy.okhttputils.model.HttpParams: void put(java.lang.String,java.lang.String,boolean)>
+    <com.lzy.okhttputils.model.HttpParams: void put(java.lang.String,java.lang.String,boolean[])>
+    <com.id.avantee.request.OkGoUtil: void params(java.lang.String,java.lang.String)>
+    <com.id.avantee.request.OkGoUtil: void params(java.lang.String,java.lang.String)>
+    <com.id.avantee.netservice.AddPwdHelper: void addPwdData(java.lang.String,com.id.avantee.interfaces.IRequestLisenter)>
+    <com.id.avantee.request.OkGoUtil: void requestPost(java.lang.String)>
+    <com.id.avantee.request.OkGoUtil$2: void <init>(com.id.avantee.request.OkGoUtil)>
+    <com.id.avantee.request.OkGoUtil: void requestPost(java.lang.String)>
+    <com.id.avantee.request.OkGoUtil: void requestPost(java.lang.String)>
+    <com.lzy.okhttputils.request.BaseRequest: com.lzy.okhttputils.request.BaseRequest params(com.lzy.okhttputils.model.HttpParams)>
+    <com.lzy.okhttputils.model.HttpParams: void put(com.lzy.okhttputils.model.HttpParams)>
+    <com.lzy.okhttputils.model.HttpParams: void put(com.lzy.okhttputils.model.HttpParams)>
+    <com.lzy.okhttputils.model.HttpParams: void put(com.lzy.okhttputils.model.HttpParams)>
+    <com.lzy.okhttputils.model.HttpParams: void put(com.lzy.okhttputils.model.HttpParams)>
+    <com.lzy.okhttputils.request.BaseRequest: com.lzy.okhttputils.request.BaseRequest params(com.lzy.okhttputils.model.HttpParams)>
+    <com.lzy.okhttputils.request.BaseRequest: com.lzy.okhttputils.request.BaseRequest params(com.lzy.okhttputils.model.HttpParams)>
+    <com.id.avantee.request.OkGoUtil: void requestPost(java.lang.String)>
+    <com.id.avantee.request.OkGoUtil: void requestPost(java.lang.String)>
+    <com.lzy.okhttputils.request.BaseBodyRequest: com.lzy.okhttputils.request.BaseBodyRequest addFileParams(java.lang.String,java.util.List)>
+    <com.id.avantee.request.OkGoUtil: void requestPost(java.lang.String)>
+    <com.id.avantee.request.OkGoUtil: void requestPost(java.lang.String)>
+    <com.lzy.okhttputils.request.BaseRequest: void execute(com.lzy.okhttputils.callback.AbsCallback)>
+    <com.lzy.okhttputils.request.BaseRequest: void execute(com.lzy.okhttputils.callback.AbsCallback)>
+    <com.lzy.okhttputils.request.BaseRequest: void execute(com.lzy.okhttputils.callback.AbsCallback)>
+    <com.lzy.okhttputils.utils.HttpUtils: java.lang.String createUrlFromParams(java.lang.String,java.util.Map)>
+    <com.lzy.okhttputils.utils.HttpUtils: java.lang.String createUrlFromParams(java.lang.String,java.util.Map)>
+    <com.lzy.okhttputils.utils.HttpUtils: java.lang.String createUrlFromParams(java.lang.String,java.util.Map)>
+    <com.lzy.okhttputils.utils.HttpUtils: java.lang.String createUrlFromParams(java.lang.String,java.util.Map)>
+    <com.lzy.okhttputils.utils.HttpUtils: java.lang.String createUrlFromParams(java.lang.String,java.util.Map)>
+    <com.lzy.okhttputils.utils.HttpUtils: java.lang.String createUrlFromParams(java.lang.String,java.util.Map)>
+    <com.lzy.okhttputils.utils.HttpUtils: java.lang.String createUrlFromParams(java.lang.String,java.util.Map)>
+    <com.lzy.okhttputils.utils.HttpUtils: java.lang.String createUrlFromParams(java.lang.String,java.util.Map)>
+    <com.lzy.okhttputils.utils.HttpUtils: java.lang.String createUrlFromParams(java.lang.String,java.util.Map)>
+    <com.lzy.okhttputils.utils.HttpUtils: java.lang.String createUrlFromParams(java.lang.String,java.util.Map)>
+    <com.lzy.okhttputils.utils.HttpUtils: java.lang.String createUrlFromParams(java.lang.String,java.util.Map)>
+    <com.lzy.okhttputils.utils.HttpUtils: java.lang.String createUrlFromParams(java.lang.String,java.util.Map)>
+    <com.lzy.okhttputils.utils.HttpUtils: java.lang.String createUrlFromParams(java.lang.String,java.util.Map)>
+    <com.lzy.okhttputils.request.BaseRequest: void execute(com.lzy.okhttputils.callback.AbsCallback)>
+    <com.lzy.okhttputils.request.BaseRequest: void execute(com.lzy.okhttputils.callback.AbsCallback)>
+    <com.lzy.okhttputils.request.BaseBodyRequest: okhttp3.RequestBody generateRequestBody()>
+    <com.lzy.okhttputils.request.BaseRequest: void execute(com.lzy.okhttputils.callback.AbsCallback)>
+    <com.lzy.okhttputils.request.BaseRequest: okhttp3.RequestBody wrapRequestBody(okhttp3.RequestBody)>
+    <com.lzy.okhttputils.request.BaseRequest$1: void <init>(com.lzy.okhttputils.request.BaseRequest)>
+    <com.lzy.okhttputils.request.BaseRequest$1: void <init>(com.lzy.okhttputils.request.BaseRequest)>
+    <com.lzy.okhttputils.request.BaseRequest: okhttp3.RequestBody wrapRequestBody(okhttp3.RequestBody)>
+    <com.lzy.okhttputils.request.ProgressRequestBody: void setListener(com.lzy.okhttputils.request.ProgressRequestBody$Listener)>
+    <com.lzy.okhttputils.request.ProgressRequestBody: void setListener(com.lzy.okhttputils.request.ProgressRequestBody$Listener)>
+    <com.lzy.okhttputils.request.BaseRequest: okhttp3.RequestBody wrapRequestBody(okhttp3.RequestBody)>
+    <com.lzy.okhttputils.request.BaseRequest: void execute(com.lzy.okhttputils.callback.AbsCallback)>
+    <com.lzy.okhttputils.request.PostRequest: okhttp3.Request generateRequest(okhttp3.RequestBody)>
+    <okhttp3.Request$Builder: okhttp3.Request$Builder post(okhttp3.RequestBody)>
+    <okhttp3.Request$Builder: okhttp3.Request$Builder method(java.lang.String,okhttp3.RequestBody)>
+    <okhttp3.Request$Builder: okhttp3.Request$Builder method(java.lang.String,okhttp3.RequestBody)>
+    <okhttp3.Request$Builder: okhttp3.Request$Builder post(okhttp3.RequestBody)>
+    <com.lzy.okhttputils.request.PostRequest: okhttp3.Request generateRequest(okhttp3.RequestBody)>
+    <okhttp3.Request$Builder: okhttp3.Request build()>
+    <okhttp3.Request: void <init>(okhttp3.Request$Builder,okhttp3.Request$1)>
+    <okhttp3.Request: void <init>(okhttp3.Request$Builder)>
+    <okhttp3.Request$Builder: okhttp3.RequestBody access$300(okhttp3.Request$Builder)>
+    <okhttp3.Request$Builder: okhttp3.RequestBody access$300(okhttp3.Request$Builder)>
+    <okhttp3.Request: void <init>(okhttp3.Request$Builder)>
+    <okhttp3.Request: void <init>(okhttp3.Request$Builder)>
+    <okhttp3.Request: void <init>(okhttp3.Request$Builder)>
+    <okhttp3.Request: void <init>(okhttp3.Request$Builder)>
+    <okhttp3.Request: void <init>(okhttp3.Request$Builder)>
+    <okhttp3.Request: void <init>(okhttp3.Request$Builder)>
+    <okhttp3.Request: void <init>(okhttp3.Request$Builder,okhttp3.Request$1)>
+    <okhttp3.Request$Builder: okhttp3.Request build()>
+    <com.lzy.okhttputils.request.PostRequest: okhttp3.Request generateRequest(okhttp3.RequestBody)>
+    <com.lzy.okhttputils.request.BaseRequest: void execute(com.lzy.okhttputils.callback.AbsCallback)>
+    <com.lzy.okhttputils.request.BaseRequest: okhttp3.Call generateCall(okhttp3.Request)>
+
+Leak 10:
+  Source: $r1 = virtualinvoke r0.<com.id.avantee.views.login.ChangePwdActivity: android.view.View findViewById(int)>(2131689679) (None)
+  Sink: $r7 = virtualinvoke $r6.<okhttp3.OkHttpClient: okhttp3.Call newCall(okhttp3.Request)>($r2) (<okhttp3.OkHttpClient: okhttp3.Call newCall(okhttp3.Request)>)
+  Methods:
+    <com.id.avantee.views.login.ChangePwdActivity: void initView()>
+    <com.id.avantee.views.login.ChangePwdActivity: void initView()>
+    <com.id.avantee.views.login.ChangePwdActivity: void initView()>
+    <com.id.avantee.views.login.ChangePwdActivity: void initView()>
+    <com.id.avantee.base.BaseActivity: void onCreate(android.os.Bundle)>
+    <com.id.avantee.views.login.ChangePwdActivity: void onCreate(android.os.Bundle)>
+    <dummyMainClass: com.id.avantee.views.login.ChangePwdActivity dummyMainMethod_com_id_avantee_views_login_ChangePwdActivity(android.content.Intent)>
+    <com.id.avantee.views.login.ChangePwdActivity: void onClick(android.view.View)>
+    <com.id.avantee.views.login.ChangePwdActivity: void toChangePwd()>
+    <com.id.avantee.views.login.ChangePwdActivity: void toChangePwd()>
+    <com.id.avantee.views.login.ChangePwdActivity: void toChangePwd()>
+    <com.id.avantee.views.login.ChangePwdActivity: void toChangePwd()>
+    <com.id.avantee.views.login.ChangePwdActivity: void toChangePwd()>
+    <com.id.avantee.presenters.ChangePwdPresenter: void toChangePwd(java.lang.String,java.lang.String,java.lang.String,java.lang.String,com.id.avantee.interfaces.IRequestLisenter)>
+    <com.id.avantee.netservice.ChangePwdHelper: void toChangePwd(java.lang.String,java.lang.String,java.lang.String,java.lang.String,com.id.avantee.interfaces.IRequestLisenter)>
+    <com.id.avantee.request.OkGoUtil: void params(java.lang.String,java.lang.String)>
+    <com.lzy.okhttputils.model.HttpParams: void put(java.lang.String,java.lang.String,boolean[])>
+    <com.lzy.okhttputils.model.HttpParams: void put(java.lang.String,java.lang.String,boolean[])>
+    <com.lzy.okhttputils.model.HttpParams: void put(java.lang.String,java.lang.String,boolean)>
+    <com.lzy.okhttputils.model.HttpParams: void put(java.lang.String,java.lang.String,boolean)>
+    <com.lzy.okhttputils.model.HttpParams: void put(java.lang.String,java.lang.String,boolean)>
+    <com.lzy.okhttputils.model.HttpParams: void put(java.lang.String,java.lang.String,boolean)>
+    <com.lzy.okhttputils.model.HttpParams: void put(java.lang.String,java.lang.String,boolean)>
+    <com.lzy.okhttputils.model.HttpParams: void put(java.lang.String,java.lang.String,boolean)>
+    <com.lzy.okhttputils.model.HttpParams: void put(java.lang.String,java.lang.String,boolean[])>
+    <com.id.avantee.request.OkGoUtil: void params(java.lang.String,java.lang.String)>
+    <com.id.avantee.request.OkGoUtil: void params(java.lang.String,java.lang.String)>
+    <com.id.avantee.netservice.ChangePwdHelper: void toChangePwd(java.lang.String,java.lang.String,java.lang.String,java.lang.String,com.id.avantee.interfaces.IRequestLisenter)>
+    <com.id.avantee.request.OkGoUtil: void requestPost(java.lang.String)>
+    <com.id.avantee.request.OkGoUtil$2: void <init>(com.id.avantee.request.OkGoUtil)>
+    <com.id.avantee.request.OkGoUtil: void requestPost(java.lang.String)>
+    <com.id.avantee.request.OkGoUtil: void requestPost(java.lang.String)>
+    <com.lzy.okhttputils.request.BaseRequest: com.lzy.okhttputils.request.BaseRequest params(com.lzy.okhttputils.model.HttpParams)>
+    <com.lzy.okhttputils.model.HttpParams: void put(com.lzy.okhttputils.model.HttpParams)>
+    <com.lzy.okhttputils.model.HttpParams: void put(com.lzy.okhttputils.model.HttpParams)>
+    <com.lzy.okhttputils.model.HttpParams: void put(com.lzy.okhttputils.model.HttpParams)>
+    <com.lzy.okhttputils.model.HttpParams: void put(com.lzy.okhttputils.model.HttpParams)>
+    <com.lzy.okhttputils.request.BaseRequest: com.lzy.okhttputils.request.BaseRequest params(com.lzy.okhttputils.model.HttpParams)>
+    <com.lzy.okhttputils.request.BaseRequest: com.lzy.okhttputils.request.BaseRequest params(com.lzy.okhttputils.model.HttpParams)>
+    <com.id.avantee.request.OkGoUtil: void requestPost(java.lang.String)>
+    <com.id.avantee.request.OkGoUtil: void requestPost(java.lang.String)>
+    <com.lzy.okhttputils.request.BaseBodyRequest: com.lzy.okhttputils.request.BaseBodyRequest addFileParams(java.lang.String,java.util.List)>
+    <com.id.avantee.request.OkGoUtil: void requestPost(java.lang.String)>
+    <com.id.avantee.request.OkGoUtil: void requestPost(java.lang.String)>
+    <com.lzy.okhttputils.request.BaseRequest: void execute(com.lzy.okhttputils.callback.AbsCallback)>
+    <com.lzy.okhttputils.request.BaseRequest: void execute(com.lzy.okhttputils.callback.AbsCallback)>
+    <com.lzy.okhttputils.request.BaseRequest: void execute(com.lzy.okhttputils.callback.AbsCallback)>
+    <com.lzy.okhttputils.utils.HttpUtils: java.lang.String createUrlFromParams(java.lang.String,java.util.Map)>
+    <com.lzy.okhttputils.utils.HttpUtils: java.lang.String createUrlFromParams(java.lang.String,java.util.Map)>
+    <com.lzy.okhttputils.utils.HttpUtils: java.lang.String createUrlFromParams(java.lang.String,java.util.Map)>
+    <com.lzy.okhttputils.utils.HttpUtils: java.lang.String createUrlFromParams(java.lang.String,java.util.Map)>
+    <com.lzy.okhttputils.utils.HttpUtils: java.lang.String createUrlFromParams(java.lang.String,java.util.Map)>
+    <com.lzy.okhttputils.utils.HttpUtils: java.lang.String createUrlFromParams(java.lang.String,java.util.Map)>
+    <com.lzy.okhttputils.utils.HttpUtils: java.lang.String createUrlFromParams(java.lang.String,java.util.Map)>
+    <com.lzy.okhttputils.utils.HttpUtils: java.lang.String createUrlFromParams(java.lang.String,java.util.Map)>
+    <com.lzy.okhttputils.utils.HttpUtils: java.lang.String createUrlFromParams(java.lang.String,java.util.Map)>
+    <com.lzy.okhttputils.utils.HttpUtils: java.lang.String createUrlFromParams(java.lang.String,java.util.Map)>
+    <com.lzy.okhttputils.utils.HttpUtils: java.lang.String createUrlFromParams(java.lang.String,java.util.Map)>
+    <com.lzy.okhttputils.utils.HttpUtils: java.lang.String createUrlFromParams(java.lang.String,java.util.Map)>
+    <com.lzy.okhttputils.utils.HttpUtils: java.lang.String createUrlFromParams(java.lang.String,java.util.Map)>
+    <com.lzy.okhttputils.request.BaseRequest: void execute(com.lzy.okhttputils.callback.AbsCallback)>
+    <com.lzy.okhttputils.request.BaseRequest: void execute(com.lzy.okhttputils.callback.AbsCallback)>
+    <com.lzy.okhttputils.request.BaseBodyRequest: okhttp3.RequestBody generateRequestBody()>
+    <com.lzy.okhttputils.request.BaseRequest: void execute(com.lzy.okhttputils.callback.AbsCallback)>
+    <com.lzy.okhttputils.request.BaseRequest: okhttp3.RequestBody wrapRequestBody(okhttp3.RequestBody)>
+    <com.lzy.okhttputils.request.BaseRequest$1: void <init>(com.lzy.okhttputils.request.BaseRequest)>
+    <com.lzy.okhttputils.request.BaseRequest$1: void <init>(com.lzy.okhttputils.request.BaseRequest)>
+    <com.lzy.okhttputils.request.BaseRequest: okhttp3.RequestBody wrapRequestBody(okhttp3.RequestBody)>
+    <com.lzy.okhttputils.request.ProgressRequestBody: void setListener(com.lzy.okhttputils.request.ProgressRequestBody$Listener)>
+    <com.lzy.okhttputils.request.ProgressRequestBody: void setListener(com.lzy.okhttputils.request.ProgressRequestBody$Listener)>
+    <com.lzy.okhttputils.request.BaseRequest: okhttp3.RequestBody wrapRequestBody(okhttp3.RequestBody)>
+    <com.lzy.okhttputils.request.BaseRequest: void execute(com.lzy.okhttputils.callback.AbsCallback)>
+    <com.lzy.okhttputils.request.PostRequest: okhttp3.Request generateRequest(okhttp3.RequestBody)>
+    <okhttp3.Request$Builder: okhttp3.Request$Builder post(okhttp3.RequestBody)>
+    <okhttp3.Request$Builder: okhttp3.Request$Builder method(java.lang.String,okhttp3.RequestBody)>
+    <okhttp3.Request$Builder: okhttp3.Request$Builder method(java.lang.String,okhttp3.RequestBody)>
+    <okhttp3.Request$Builder: okhttp3.Request$Builder post(okhttp3.RequestBody)>
+    <com.lzy.okhttputils.request.PostRequest: okhttp3.Request generateRequest(okhttp3.RequestBody)>
+    <okhttp3.Request$Builder: okhttp3.Request build()>
+    <okhttp3.Request: void <init>(okhttp3.Request$Builder,okhttp3.Request$1)>
+    <okhttp3.Request: void <init>(okhttp3.Request$Builder)>
+    <okhttp3.Request$Builder: okhttp3.RequestBody access$300(okhttp3.Request$Builder)>
+    <okhttp3.Request$Builder: okhttp3.RequestBody access$300(okhttp3.Request$Builder)>
+    <okhttp3.Request: void <init>(okhttp3.Request$Builder)>
+    <okhttp3.Request: void <init>(okhttp3.Request$Builder)>
+    <okhttp3.Request: void <init>(okhttp3.Request$Builder)>
+    <okhttp3.Request: void <init>(okhttp3.Request$Builder)>
+    <okhttp3.Request: void <init>(okhttp3.Request$Builder)>
+    <okhttp3.Request: void <init>(okhttp3.Request$Builder)>
+    <okhttp3.Request: void <init>(okhttp3.Request$Builder,okhttp3.Request$1)>
+    <okhttp3.Request$Builder: okhttp3.Request build()>
+    <com.lzy.okhttputils.request.PostRequest: okhttp3.Request generateRequest(okhttp3.RequestBody)>
+    <com.lzy.okhttputils.request.BaseRequest: void execute(com.lzy.okhttputils.callback.AbsCallback)>
+    <com.lzy.okhttputils.request.BaseRequest: okhttp3.Call generateCall(okhttp3.Request)>
+
+Leak 11:
+  Source: $r1 = virtualinvoke r0.<com.id.avantee.views.login.RegisterActivity: android.view.View findViewById(int)>(2131689681) (None)
+  Sink: $r7 = virtualinvoke $r6.<okhttp3.OkHttpClient: okhttp3.Call newCall(okhttp3.Request)>($r2) (<okhttp3.OkHttpClient: okhttp3.Call newCall(okhttp3.Request)>)
+  Methods:
+    <com.id.avantee.views.login.RegisterActivity: void initView()>
+    <com.id.avantee.views.login.RegisterActivity: void initView()>
+    <com.id.avantee.views.login.RegisterActivity: void initView()>
+    <com.id.avantee.views.login.RegisterActivity: void initView()>
+    <com.id.avantee.base.BaseActivity: void onCreate(android.os.Bundle)>
+    <com.id.avantee.views.login.RegisterActivity: void loadData()>
+    <com.id.avantee.views.login.RegisterActivity$2: void <init>(com.id.avantee.views.login.RegisterActivity)>
+    <com.id.avantee.views.login.RegisterActivity$2: void <init>(com.id.avantee.views.login.RegisterActivity)>
+    <com.id.avantee.views.login.RegisterActivity: void loadData()>
+    <com.id.avantee.presenters.RegisterPresenter: void getAuthCodeImage(java.lang.String,com.id.avantee.interfaces.IRequestLisenter)>
+    <com.id.avantee.netservice.RegisterHelper: void getAuthCodeImage(java.lang.String,com.id.avantee.interfaces.IRequestLisenter)>
+    <com.id.avantee.request.OkGoUtil: void <init>(java.lang.Class,int,com.id.avantee.interfaces.IRequestLisenter)>
+    <com.id.avantee.request.OkGoUtil: void <init>(java.lang.Class,int,com.id.avantee.interfaces.IRequestLisenter)>
+    <com.id.avantee.netservice.RegisterHelper: void getAuthCodeImage(java.lang.String,com.id.avantee.interfaces.IRequestLisenter)>
+    <com.id.avantee.request.OkGoUtil: void requestPost(java.lang.String)>
+    <com.id.avantee.request.OkGoUtil$2: void <init>(com.id.avantee.request.OkGoUtil)>
+    <com.id.avantee.request.OkGoUtil$2: void <init>(com.id.avantee.request.OkGoUtil)>
+    <com.id.avantee.request.OkGoUtil: void requestPost(java.lang.String)>
+    <com.lzy.okhttputils.request.BaseRequest: void execute(com.lzy.okhttputils.callback.AbsCallback)>
+    <com.lzy.okhttputils.request.BaseRequest: void execute(com.lzy.okhttputils.callback.AbsCallback)>
+    <com.lzy.okhttputils.request.BaseBodyRequest: okhttp3.RequestBody generateRequestBody()>
+    <com.lzy.okhttputils.request.BaseRequest: void execute(com.lzy.okhttputils.callback.AbsCallback)>
+    <com.lzy.okhttputils.request.BaseRequest: okhttp3.RequestBody wrapRequestBody(okhttp3.RequestBody)>
+    <com.lzy.okhttputils.request.BaseRequest$1: void <init>(com.lzy.okhttputils.request.BaseRequest)>
+    <com.lzy.okhttputils.request.BaseRequest$1: void <init>(com.lzy.okhttputils.request.BaseRequest)>
+    <com.lzy.okhttputils.request.BaseRequest: okhttp3.RequestBody wrapRequestBody(okhttp3.RequestBody)>
+    <com.lzy.okhttputils.request.ProgressRequestBody: void setListener(com.lzy.okhttputils.request.ProgressRequestBody$Listener)>
+    <com.lzy.okhttputils.request.ProgressRequestBody: void setListener(com.lzy.okhttputils.request.ProgressRequestBody$Listener)>
+    <com.lzy.okhttputils.request.BaseRequest: okhttp3.RequestBody wrapRequestBody(okhttp3.RequestBody)>
+    <com.lzy.okhttputils.request.BaseRequest: void execute(com.lzy.okhttputils.callback.AbsCallback)>
+    <com.lzy.okhttputils.request.PostRequest: okhttp3.Request generateRequest(okhttp3.RequestBody)>
+    <okhttp3.Request$Builder: okhttp3.Request$Builder post(okhttp3.RequestBody)>
+    <okhttp3.Request$Builder: okhttp3.Request$Builder method(java.lang.String,okhttp3.RequestBody)>
+    <okhttp3.Request$Builder: okhttp3.Request$Builder method(java.lang.String,okhttp3.RequestBody)>
+    <okhttp3.Request$Builder: okhttp3.Request$Builder post(okhttp3.RequestBody)>
+    <com.lzy.okhttputils.request.PostRequest: okhttp3.Request generateRequest(okhttp3.RequestBody)>
+    <okhttp3.Request$Builder: okhttp3.Request build()>
+    <okhttp3.Request: void <init>(okhttp3.Request$Builder,okhttp3.Request$1)>
+    <okhttp3.Request: void <init>(okhttp3.Request$Builder)>
+    <okhttp3.Request$Builder: okhttp3.RequestBody access$300(okhttp3.Request$Builder)>
+    <okhttp3.Request$Builder: okhttp3.RequestBody access$300(okhttp3.Request$Builder)>
+    <okhttp3.Request: void <init>(okhttp3.Request$Builder)>
+    <okhttp3.Request: void <init>(okhttp3.Request$Builder)>
+    <okhttp3.Request: void <init>(okhttp3.Request$Builder,okhttp3.Request$1)>
+    <okhttp3.Request$Builder: okhttp3.Request build()>
+    <com.lzy.okhttputils.request.PostRequest: okhttp3.Request generateRequest(okhttp3.RequestBody)>
+    <com.lzy.okhttputils.request.BaseRequest: void execute(com.lzy.okhttputils.callback.AbsCallback)>
+    <com.lzy.okhttputils.request.BaseRequest: okhttp3.Call generateCall(okhttp3.Request)>
+
+Leak 12:
+  Source: $r1 = virtualinvoke r0.<com.id.avantee.views.login.UpdatePwdActivity: android.view.View findViewById(int)>(2131689769) (None)
+  Sink: $r7 = virtualinvoke $r6.<okhttp3.OkHttpClient: okhttp3.Call newCall(okhttp3.Request)>($r2) (<okhttp3.OkHttpClient: okhttp3.Call newCall(okhttp3.Request)>)
+  Methods:
+    <com.id.avantee.views.login.UpdatePwdActivity: void initView()>
+    <com.id.avantee.views.login.UpdatePwdActivity: void initView()>
+    <com.id.avantee.views.login.UpdatePwdActivity: void initView()>
+    <com.id.avantee.views.login.UpdatePwdActivity: void initView()>
+    <com.id.avantee.base.BaseActivity: void onCreate(android.os.Bundle)>
+    <com.id.avantee.views.login.UpdatePwdActivity: void onCreate(android.os.Bundle)>
+    <dummyMainClass: com.id.avantee.views.login.UpdatePwdActivity dummyMainMethod_com_id_avantee_views_login_UpdatePwdActivity(android.content.Intent)>
+    <com.id.avantee.views.login.UpdatePwdActivity$4: void <init>(com.id.avantee.views.login.UpdatePwdActivity)>
+    <dummyMainClass: com.id.avantee.views.login.UpdatePwdActivity dummyMainMethod_com_id_avantee_views_login_UpdatePwdActivity(android.content.Intent)>
+    <com.id.avantee.views.login.UpdatePwdActivity$2: void <init>(com.id.avantee.views.login.UpdatePwdActivity)>
+    <com.id.avantee.views.login.UpdatePwdActivity$2: void <init>(com.id.avantee.views.login.UpdatePwdActivity)>
+    <dummyMainClass: com.id.avantee.views.login.UpdatePwdActivity dummyMainMethod_com_id_avantee_views_login_UpdatePwdActivity(android.content.Intent)>
+    <com.id.avantee.views.login.UpdatePwdActivity$2: void onClick(android.view.View)>
+    <com.id.avantee.views.login.UpdatePwdActivity$2: void onClick(android.view.View)>
+    <com.id.avantee.views.login.UpdatePwdActivity: android.widget.EditText access$000(com.id.avantee.views.login.UpdatePwdActivity)>
+    <com.id.avantee.views.login.UpdatePwdActivity: android.widget.EditText access$000(com.id.avantee.views.login.UpdatePwdActivity)>
+    <com.id.avantee.views.login.UpdatePwdActivity$2: void onClick(android.view.View)>
+    <com.id.avantee.views.login.UpdatePwdActivity$2: void onClick(android.view.View)>
+    <com.id.avantee.views.login.UpdatePwdActivity$2: void onClick(android.view.View)>
+    <com.id.avantee.views.login.UpdatePwdActivity$2: void onClick(android.view.View)>
+    <com.id.avantee.presenters.UpdatePwdPresenter: void getUpdatePwdData(java.lang.String,java.lang.String,com.id.avantee.interfaces.IRequestLisenter)>
+    <com.id.avantee.netservice.UpdatePwdHelper: void getUpdatePwdData(java.lang.String,java.lang.String,com.id.avantee.interfaces.IRequestLisenter)>
+    <com.id.avantee.request.OkGoUtil: void params(java.lang.String,java.lang.String)>
+    <com.lzy.okhttputils.model.HttpParams: void put(java.lang.String,java.lang.String,boolean[])>
+    <com.lzy.okhttputils.model.HttpParams: void put(java.lang.String,java.lang.String,boolean[])>
+    <com.lzy.okhttputils.model.HttpParams: void put(java.lang.String,java.lang.String,boolean)>
+    <com.lzy.okhttputils.model.HttpParams: void put(java.lang.String,java.lang.String,boolean)>
+    <com.lzy.okhttputils.model.HttpParams: void put(java.lang.String,java.lang.String,boolean)>
+    <com.lzy.okhttputils.model.HttpParams: void put(java.lang.String,java.lang.String,boolean)>
+    <com.lzy.okhttputils.model.HttpParams: void put(java.lang.String,java.lang.String,boolean)>
+    <com.lzy.okhttputils.model.HttpParams: void put(java.lang.String,java.lang.String,boolean)>
+    <com.lzy.okhttputils.model.HttpParams: void put(java.lang.String,java.lang.String,boolean[])>
+    <com.id.avantee.request.OkGoUtil: void params(java.lang.String,java.lang.String)>
+    <com.id.avantee.request.OkGoUtil: void params(java.lang.String,java.lang.String)>
+    <com.id.avantee.netservice.UpdatePwdHelper: void getUpdatePwdData(java.lang.String,java.lang.String,com.id.avantee.interfaces.IRequestLisenter)>
+    <com.id.avantee.request.OkGoUtil: void requestPost(java.lang.String)>
+    <com.id.avantee.request.OkGoUtil$2: void <init>(com.id.avantee.request.OkGoUtil)>
+    <com.id.avantee.request.OkGoUtil$2: void <init>(com.id.avantee.request.OkGoUtil)>
+    <com.id.avantee.request.OkGoUtil: void requestPost(java.lang.String)>
+    <com.lzy.okhttputils.request.BaseRequest: void execute(com.lzy.okhttputils.callback.AbsCallback)>
+    <com.lzy.okhttputils.request.BaseRequest: void execute(com.lzy.okhttputils.callback.AbsCallback)>
+    <com.lzy.okhttputils.request.BaseBodyRequest: okhttp3.RequestBody generateRequestBody()>
+    <com.lzy.okhttputils.request.BaseRequest: void execute(com.lzy.okhttputils.callback.AbsCallback)>
+    <com.lzy.okhttputils.request.BaseRequest: okhttp3.RequestBody wrapRequestBody(okhttp3.RequestBody)>
+    <com.lzy.okhttputils.request.BaseRequest$1: void <init>(com.lzy.okhttputils.request.BaseRequest)>
+    <com.lzy.okhttputils.request.BaseRequest$1: void <init>(com.lzy.okhttputils.request.BaseRequest)>
+    <com.lzy.okhttputils.request.BaseRequest: okhttp3.RequestBody wrapRequestBody(okhttp3.RequestBody)>
+    <com.lzy.okhttputils.request.ProgressRequestBody: void setListener(com.lzy.okhttputils.request.ProgressRequestBody$Listener)>
+    <com.lzy.okhttputils.request.ProgressRequestBody: void setListener(com.lzy.okhttputils.request.ProgressRequestBody$Listener)>
+    <com.lzy.okhttputils.request.BaseRequest: okhttp3.RequestBody wrapRequestBody(okhttp3.RequestBody)>
+    <com.lzy.okhttputils.request.BaseRequest: void execute(com.lzy.okhttputils.callback.AbsCallback)>
+    <com.lzy.okhttputils.request.PostRequest: okhttp3.Request generateRequest(okhttp3.RequestBody)>
+    <okhttp3.Request$Builder: okhttp3.Request$Builder post(okhttp3.RequestBody)>
+    <okhttp3.Request$Builder: okhttp3.Request$Builder method(java.lang.String,okhttp3.RequestBody)>
+    <okhttp3.Request$Builder: okhttp3.Request$Builder method(java.lang.String,okhttp3.RequestBody)>
+    <okhttp3.Request$Builder: okhttp3.Request$Builder post(okhttp3.RequestBody)>
+    <com.lzy.okhttputils.request.PostRequest: okhttp3.Request generateRequest(okhttp3.RequestBody)>
+    <okhttp3.Request$Builder: okhttp3.Request build()>
+    <okhttp3.Request: void <init>(okhttp3.Request$Builder,okhttp3.Request$1)>
+    <okhttp3.Request: void <init>(okhttp3.Request$Builder)>
+    <okhttp3.Request$Builder: okhttp3.RequestBody access$300(okhttp3.Request$Builder)>
+    <okhttp3.Request$Builder: okhttp3.RequestBody access$300(okhttp3.Request$Builder)>
+    <okhttp3.Request: void <init>(okhttp3.Request$Builder)>
+    <okhttp3.Request: void <init>(okhttp3.Request$Builder)>
+    <okhttp3.Request: void <init>(okhttp3.Request$Builder,okhttp3.Request$1)>
+    <okhttp3.Request$Builder: okhttp3.Request build()>
+    <com.lzy.okhttputils.request.PostRequest: okhttp3.Request generateRequest(okhttp3.RequestBody)>
+    <com.lzy.okhttputils.request.BaseRequest: void execute(com.lzy.okhttputils.callback.AbsCallback)>
+    <com.lzy.okhttputils.request.BaseRequest: okhttp3.Call generateCall(okhttp3.Request)>
+
+Leak 13:
+  Source: $r1 = virtualinvoke r0.<com.id.avantee.views.login.RegisterActivity: android.view.View findViewById(int)>(2131689679) (None)
+  Sink: $r7 = virtualinvoke $r6.<okhttp3.OkHttpClient: okhttp3.Call newCall(okhttp3.Request)>($r2) (<okhttp3.OkHttpClient: okhttp3.Call newCall(okhttp3.Request)>)
+  Methods:
+    <com.id.avantee.views.login.RegisterActivity: void initView()>
+    <com.id.avantee.views.login.RegisterActivity: void initView()>
+    <com.id.avantee.views.login.RegisterActivity: void initView()>
+    <com.id.avantee.views.login.RegisterActivity: void initView()>
+    <com.id.avantee.base.BaseActivity: void onCreate(android.os.Bundle)>
+    <com.id.avantee.views.login.RegisterActivity: void onCreate(android.os.Bundle)>
+    <dummyMainClass: com.id.avantee.views.login.RegisterActivity dummyMainMethod_com_id_avantee_views_login_RegisterActivity(android.content.Intent)>
+    <com.id.avantee.views.login.RegisterActivity: void onClick(android.view.View)>
+    <com.id.avantee.views.login.RegisterActivity: void toRegister()>
+    <com.id.avantee.views.login.RegisterActivity: void toRegister()>
+    <com.id.avantee.views.login.RegisterActivity: void toRegister()>
+    <com.id.avantee.views.login.RegisterActivity: void toRegister()>
+    <com.id.avantee.views.login.RegisterActivity: void toRegister()>
+    <com.id.avantee.presenters.RegisterPresenter: void toRegister(java.lang.String,java.lang.String,java.lang.String,com.id.avantee.interfaces.IRequestLisenter)>
+    <com.id.avantee.netservice.RegisterHelper: void toRegister(java.lang.String,java.lang.String,java.lang.String,com.id.avantee.interfaces.IRequestLisenter)>
+    <com.id.avantee.request.OkGoUtil: void params(java.lang.String,java.lang.String)>
+    <com.lzy.okhttputils.model.HttpParams: void put(java.lang.String,java.lang.String,boolean[])>
+    <com.lzy.okhttputils.model.HttpParams: void put(java.lang.String,java.lang.String,boolean[])>
+    <com.lzy.okhttputils.model.HttpParams: void put(java.lang.String,java.lang.String,boolean)>
+    <com.lzy.okhttputils.model.HttpParams: void put(java.lang.String,java.lang.String,boolean)>
+    <com.lzy.okhttputils.model.HttpParams: void put(java.lang.String,java.lang.String,boolean)>
+    <com.lzy.okhttputils.model.HttpParams: void put(java.lang.String,java.lang.String,boolean)>
+    <com.lzy.okhttputils.model.HttpParams: void put(java.lang.String,java.lang.String,boolean)>
+    <com.lzy.okhttputils.model.HttpParams: void put(java.lang.String,java.lang.String,boolean)>
+    <com.lzy.okhttputils.model.HttpParams: void put(java.lang.String,java.lang.String,boolean[])>
+    <com.id.avantee.request.OkGoUtil: void params(java.lang.String,java.lang.String)>
+    <com.id.avantee.request.OkGoUtil: void params(java.lang.String,java.lang.String)>
+    <com.id.avantee.netservice.RegisterHelper: void toRegister(java.lang.String,java.lang.String,java.lang.String,com.id.avantee.interfaces.IRequestLisenter)>
+    <com.id.avantee.request.OkGoUtil: void requestPost(java.lang.String)>
+    <com.id.avantee.request.OkGoUtil$2: void <init>(com.id.avantee.request.OkGoUtil)>
+    <com.id.avantee.request.OkGoUtil: void requestPost(java.lang.String)>
+    <com.id.avantee.request.OkGoUtil: void requestPost(java.lang.String)>
+    <com.lzy.okhttputils.request.BaseRequest: com.lzy.okhttputils.request.BaseRequest params(com.lzy.okhttputils.model.HttpParams)>
+    <com.lzy.okhttputils.model.HttpParams: void put(com.lzy.okhttputils.model.HttpParams)>
+    <com.lzy.okhttputils.model.HttpParams: void put(com.lzy.okhttputils.model.HttpParams)>
+    <com.lzy.okhttputils.model.HttpParams: void put(com.lzy.okhttputils.model.HttpParams)>
+    <com.lzy.okhttputils.model.HttpParams: void put(com.lzy.okhttputils.model.HttpParams)>
+    <com.lzy.okhttputils.request.BaseRequest: com.lzy.okhttputils.request.BaseRequest params(com.lzy.okhttputils.model.HttpParams)>
+    <com.lzy.okhttputils.request.BaseRequest: com.lzy.okhttputils.request.BaseRequest params(com.lzy.okhttputils.model.HttpParams)>
+    <com.id.avantee.request.OkGoUtil: void requestPost(java.lang.String)>
+    <com.id.avantee.request.OkGoUtil: void requestPost(java.lang.String)>
+    <com.lzy.okhttputils.request.BaseBodyRequest: com.lzy.okhttputils.request.BaseBodyRequest addFileParams(java.lang.String,java.util.List)>
+    <com.id.avantee.request.OkGoUtil: void requestPost(java.lang.String)>
+    <com.id.avantee.request.OkGoUtil: void requestPost(java.lang.String)>
+    <com.lzy.okhttputils.request.BaseRequest: void execute(com.lzy.okhttputils.callback.AbsCallback)>
+    <com.lzy.okhttputils.request.BaseRequest: void execute(com.lzy.okhttputils.callback.AbsCallback)>
+    <com.lzy.okhttputils.request.BaseRequest: void execute(com.lzy.okhttputils.callback.AbsCallback)>
+    <com.lzy.okhttputils.utils.HttpUtils: java.lang.String createUrlFromParams(java.lang.String,java.util.Map)>
+    <com.lzy.okhttputils.utils.HttpUtils: java.lang.String createUrlFromParams(java.lang.String,java.util.Map)>
+    <com.lzy.okhttputils.utils.HttpUtils: java.lang.String createUrlFromParams(java.lang.String,java.util.Map)>
+    <com.lzy.okhttputils.utils.HttpUtils: java.lang.String createUrlFromParams(java.lang.String,java.util.Map)>
+    <com.lzy.okhttputils.utils.HttpUtils: java.lang.String createUrlFromParams(java.lang.String,java.util.Map)>
+    <com.lzy.okhttputils.utils.HttpUtils: java.lang.String createUrlFromParams(java.lang.String,java.util.Map)>
+    <com.lzy.okhttputils.utils.HttpUtils: java.lang.String createUrlFromParams(java.lang.String,java.util.Map)>
+    <com.lzy.okhttputils.utils.HttpUtils: java.lang.String createUrlFromParams(java.lang.String,java.util.Map)>
+    <com.lzy.okhttputils.utils.HttpUtils: java.lang.String createUrlFromParams(java.lang.String,java.util.Map)>
+    <com.lzy.okhttputils.utils.HttpUtils: java.lang.String createUrlFromParams(java.lang.String,java.util.Map)>
+    <com.lzy.okhttputils.utils.HttpUtils: java.lang.String createUrlFromParams(java.lang.String,java.util.Map)>
+    <com.lzy.okhttputils.utils.HttpUtils: java.lang.String createUrlFromParams(java.lang.String,java.util.Map)>
+    <com.lzy.okhttputils.utils.HttpUtils: java.lang.String createUrlFromParams(java.lang.String,java.util.Map)>
+    <com.lzy.okhttputils.request.BaseRequest: void execute(com.lzy.okhttputils.callback.AbsCallback)>
+    <com.lzy.okhttputils.request.BaseRequest: void execute(com.lzy.okhttputils.callback.AbsCallback)>
+    <com.lzy.okhttputils.request.BaseBodyRequest: okhttp3.RequestBody generateRequestBody()>
+    <com.lzy.okhttputils.request.BaseRequest: void execute(com.lzy.okhttputils.callback.AbsCallback)>
+    <com.lzy.okhttputils.request.BaseRequest: okhttp3.RequestBody wrapRequestBody(okhttp3.RequestBody)>
+    <com.lzy.okhttputils.request.BaseRequest$1: void <init>(com.lzy.okhttputils.request.BaseRequest)>
+    <com.lzy.okhttputils.request.BaseRequest$1: void <init>(com.lzy.okhttputils.request.BaseRequest)>
+    <com.lzy.okhttputils.request.BaseRequest: okhttp3.RequestBody wrapRequestBody(okhttp3.RequestBody)>
+    <com.lzy.okhttputils.request.ProgressRequestBody: void setListener(com.lzy.okhttputils.request.ProgressRequestBody$Listener)>
+    <com.lzy.okhttputils.request.ProgressRequestBody: void setListener(com.lzy.okhttputils.request.ProgressRequestBody$Listener)>
+    <com.lzy.okhttputils.request.BaseRequest: okhttp3.RequestBody wrapRequestBody(okhttp3.RequestBody)>
+    <com.lzy.okhttputils.request.BaseRequest: void execute(com.lzy.okhttputils.callback.AbsCallback)>
+    <com.lzy.okhttputils.request.PostRequest: okhttp3.Request generateRequest(okhttp3.RequestBody)>
+    <okhttp3.Request$Builder: okhttp3.Request$Builder post(okhttp3.RequestBody)>
+    <okhttp3.Request$Builder: okhttp3.Request$Builder method(java.lang.String,okhttp3.RequestBody)>
+    <okhttp3.Request$Builder: okhttp3.Request$Builder method(java.lang.String,okhttp3.RequestBody)>
+    <okhttp3.Request$Builder: okhttp3.Request$Builder post(okhttp3.RequestBody)>
+    <com.lzy.okhttputils.request.PostRequest: okhttp3.Request generateRequest(okhttp3.RequestBody)>
+    <okhttp3.Request$Builder: okhttp3.Request build()>
+    <okhttp3.Request: void <init>(okhttp3.Request$Builder,okhttp3.Request$1)>
+    <okhttp3.Request: void <init>(okhttp3.Request$Builder)>
+    <okhttp3.Request$Builder: okhttp3.RequestBody access$300(okhttp3.Request$Builder)>
+    <okhttp3.Request$Builder: okhttp3.RequestBody access$300(okhttp3.Request$Builder)>
+    <okhttp3.Request: void <init>(okhttp3.Request$Builder)>
+    <okhttp3.Request: void <init>(okhttp3.Request$Builder)>
+    <okhttp3.Request: void <init>(okhttp3.Request$Builder)>
+    <okhttp3.Request: void <init>(okhttp3.Request$Builder)>
+    <okhttp3.Request: void <init>(okhttp3.Request$Builder)>
+    <okhttp3.Request: void <init>(okhttp3.Request$Builder)>
+    <okhttp3.Request: void <init>(okhttp3.Request$Builder,okhttp3.Request$1)>
+    <okhttp3.Request$Builder: okhttp3.Request build()>
+    <com.lzy.okhttputils.request.PostRequest: okhttp3.Request generateRequest(okhttp3.RequestBody)>
+    <com.lzy.okhttputils.request.BaseRequest: void execute(com.lzy.okhttputils.callback.AbsCallback)>
+    <com.lzy.okhttputils.request.BaseRequest: okhttp3.Call generateCall(okhttp3.Request)>
+
+Leak 14:
+  Source: $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r2, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: $r7 = virtualinvoke $r6.<okhttp3.OkHttpClient: okhttp3.Call newCall(okhttp3.Request)>($r2) (<okhttp3.OkHttpClient: okhttp3.Call newCall(okhttp3.Request)>)
+  Methods:
+    <com.id.avantee.utils.CommonUtil: java.lang.String getVersionName(android.content.Context)>
+    <com.id.avantee.utils.CommonUtil: java.lang.String getVersionName(android.content.Context)>
+    <com.id.avantee.utils.CommonUtil: java.lang.String getVersionName(android.content.Context)>
+    <com.id.avantee.presenters.HomePagePresenter: void getVersionData()>
+    <com.id.avantee.presenters.HomePagePresenter: void getVersionData()>
+    <com.id.avantee.netservice.AnyTimePayHelper: void getVersionData(java.lang.String,java.lang.String,com.id.avantee.interfaces.IRequestLisenter)>
+    <com.id.avantee.request.OkGoUtil: void params(java.lang.String,java.lang.String)>
+    <com.lzy.okhttputils.model.HttpParams: void put(java.lang.String,java.lang.String,boolean[])>
+    <com.lzy.okhttputils.model.HttpParams: void put(java.lang.String,java.lang.String,boolean[])>
+    <com.lzy.okhttputils.model.HttpParams: void put(java.lang.String,java.lang.String,boolean)>
+    <com.lzy.okhttputils.model.HttpParams: void put(java.lang.String,java.lang.String,boolean)>
+    <com.lzy.okhttputils.model.HttpParams: void put(java.lang.String,java.lang.String,boolean)>
+    <com.lzy.okhttputils.model.HttpParams: void put(java.lang.String,java.lang.String,boolean)>
+    <com.lzy.okhttputils.model.HttpParams: void put(java.lang.String,java.lang.String,boolean)>
+    <com.lzy.okhttputils.model.HttpParams: void put(java.lang.String,java.lang.String,boolean)>
+    <com.lzy.okhttputils.model.HttpParams: void put(java.lang.String,java.lang.String,boolean[])>
+    <com.id.avantee.request.OkGoUtil: void params(java.lang.String,java.lang.String)>
+    <com.id.avantee.request.OkGoUtil: void params(java.lang.String,java.lang.String)>
+    <com.id.avantee.netservice.AnyTimePayHelper: void getVersionData(java.lang.String,java.lang.String,com.id.avantee.interfaces.IRequestLisenter)>
+    <com.id.avantee.request.OkGoUtil: void requestPost(java.lang.String)>
+    <com.id.avantee.request.OkGoUtil$2: void <init>(com.id.avantee.request.OkGoUtil)>
+    <com.id.avantee.request.OkGoUtil: void requestPost(java.lang.String)>
+    <com.id.avantee.request.OkGoUtil: void requestPost(java.lang.String)>
+    <com.lzy.okhttputils.request.BaseRequest: com.lzy.okhttputils.request.BaseRequest params(com.lzy.okhttputils.model.HttpParams)>
+    <com.lzy.okhttputils.model.HttpParams: void put(com.lzy.okhttputils.model.HttpParams)>
+    <com.lzy.okhttputils.model.HttpParams: void put(com.lzy.okhttputils.model.HttpParams)>
+    <com.lzy.okhttputils.model.HttpParams: void put(com.lzy.okhttputils.model.HttpParams)>
+    <com.lzy.okhttputils.model.HttpParams: void put(com.lzy.okhttputils.model.HttpParams)>
+    <com.lzy.okhttputils.request.BaseRequest: com.lzy.okhttputils.request.BaseRequest params(com.lzy.okhttputils.model.HttpParams)>
+    <com.lzy.okhttputils.request.BaseRequest: com.lzy.okhttputils.request.BaseRequest params(com.lzy.okhttputils.model.HttpParams)>
+    <com.id.avantee.request.OkGoUtil: void requestPost(java.lang.String)>
+    <com.id.avantee.request.OkGoUtil: void requestPost(java.lang.String)>
+    <com.lzy.okhttputils.request.BaseBodyRequest: com.lzy.okhttputils.request.BaseBodyRequest addFileParams(java.lang.String,java.util.List)>
+    <com.id.avantee.request.OkGoUtil: void requestPost(java.lang.String)>
+    <com.id.avantee.request.OkGoUtil: void requestPost(java.lang.String)>
+    <com.lzy.okhttputils.request.BaseRequest: void execute(com.lzy.okhttputils.callback.AbsCallback)>
+    <com.lzy.okhttputils.request.BaseRequest: okhttp3.Call generateCall(okhttp3.Request)>
+    <com.lzy.okhttputils.request.BaseRequest: void execute(com.lzy.okhttputils.callback.AbsCallback)>
+    <com.lzy.okhttputils.request.BaseRequest: okhttp3.RequestBody wrapRequestBody(okhttp3.RequestBody)>
+    <com.lzy.okhttputils.request.BaseRequest$1: void <init>(com.lzy.okhttputils.request.BaseRequest)>
+    <com.lzy.okhttputils.request.BaseRequest$1: void <init>(com.lzy.okhttputils.request.BaseRequest)>
+    <com.lzy.okhttputils.request.BaseRequest: okhttp3.RequestBody wrapRequestBody(okhttp3.RequestBody)>
+    <com.lzy.okhttputils.request.ProgressRequestBody: void setListener(com.lzy.okhttputils.request.ProgressRequestBody$Listener)>
+    <com.lzy.okhttputils.request.ProgressRequestBody: void setListener(com.lzy.okhttputils.request.ProgressRequestBody$Listener)>
+    <com.lzy.okhttputils.request.BaseRequest: okhttp3.RequestBody wrapRequestBody(okhttp3.RequestBody)>
+    <com.lzy.okhttputils.request.BaseRequest: void execute(com.lzy.okhttputils.callback.AbsCallback)>
+    <com.lzy.okhttputils.request.PostRequest: okhttp3.Request generateRequest(okhttp3.RequestBody)>
+    <com.lzy.okhttputils.request.ProgressRequestBody: long contentLength()>
+    <com.lzy.okhttputils.request.ProgressRequestBody: long contentLength()>
+    <com.lzy.okhttputils.request.ProgressRequestBody: long contentLength()>
+    <com.lzy.okhttputils.request.ProgressRequestBody: long contentLength()>
+    <com.lzy.okhttputils.request.ProgressRequestBody: long contentLength()>
+    <com.lzy.okhttputils.request.PostRequest: okhttp3.Request generateRequest(okhttp3.RequestBody)>
+    <okhttp3.Request$Builder: okhttp3.Request$Builder post(okhttp3.RequestBody)>
+    <okhttp3.Request$Builder: okhttp3.Request$Builder method(java.lang.String,okhttp3.RequestBody)>
+    <okhttp3.Request$Builder: okhttp3.Request$Builder method(java.lang.String,okhttp3.RequestBody)>
+    <okhttp3.Request$Builder: okhttp3.Request$Builder post(okhttp3.RequestBody)>
+    <com.lzy.okhttputils.request.PostRequest: okhttp3.Request generateRequest(okhttp3.RequestBody)>
+    <okhttp3.Request$Builder: okhttp3.Request build()>
+    <okhttp3.Request: void <init>(okhttp3.Request$Builder,okhttp3.Request$1)>
+    <okhttp3.Request: void <init>(okhttp3.Request$Builder)>
+    <okhttp3.Request$Builder: okhttp3.RequestBody access$300(okhttp3.Request$Builder)>
+    <okhttp3.Request$Builder: okhttp3.RequestBody access$300(okhttp3.Request$Builder)>
+    <okhttp3.Request: void <init>(okhttp3.Request$Builder)>
+    <okhttp3.Request: void <init>(okhttp3.Request$Builder)>
+    <okhttp3.Request: void <init>(okhttp3.Request$Builder,okhttp3.Request$1)>
+    <okhttp3.Request$Builder: okhttp3.Request build()>
+    <com.lzy.okhttputils.request.PostRequest: okhttp3.Request generateRequest(okhttp3.RequestBody)>
+    <com.lzy.okhttputils.request.BaseRequest: void execute(com.lzy.okhttputils.callback.AbsCallback)>
+    <com.lzy.okhttputils.request.BaseRequest: okhttp3.Call generateCall(okhttp3.Request)>
+
+Leak 15:
+  Source: $r1 = virtualinvoke r0.<com.id.avantee.views.login.ChangePwdActivity: android.view.View findViewById(int)>(2131689681) (None)
+  Sink: $r7 = virtualinvoke $r6.<okhttp3.OkHttpClient: okhttp3.Call newCall(okhttp3.Request)>($r2) (<okhttp3.OkHttpClient: okhttp3.Call newCall(okhttp3.Request)>)
+  Methods:
+    <com.id.avantee.views.login.ChangePwdActivity: void initView()>
+    <com.id.avantee.views.login.ChangePwdActivity: void initView()>
+    <com.id.avantee.views.login.ChangePwdActivity: void initView()>
+    <com.id.avantee.views.login.ChangePwdActivity: void initView()>
+    <com.id.avantee.base.BaseActivity: void onCreate(android.os.Bundle)>
+    <com.id.avantee.views.login.ChangePwdActivity: void loadData()>
+    <com.id.avantee.views.login.ChangePwdActivity$5: void <init>(com.id.avantee.views.login.ChangePwdActivity)>
+    <com.id.avantee.views.login.ChangePwdActivity$5: void <init>(com.id.avantee.views.login.ChangePwdActivity)>
+    <com.id.avantee.views.login.ChangePwdActivity: void loadData()>
+    <com.id.avantee.presenters.ChangePwdPresenter: void getAuthCodeImage(java.lang.String,com.id.avantee.interfaces.IRequestLisenter)>
+    <com.id.avantee.netservice.ChangePwdHelper: void getAuthCodeImage(java.lang.String,com.id.avantee.interfaces.IRequestLisenter)>
+    <com.id.avantee.request.OkGoUtil: void <init>(java.lang.Class,int,com.id.avantee.interfaces.IRequestLisenter)>
+    <com.id.avantee.request.OkGoUtil: void <init>(java.lang.Class,int,com.id.avantee.interfaces.IRequestLisenter)>
+    <com.id.avantee.netservice.ChangePwdHelper: void getAuthCodeImage(java.lang.String,com.id.avantee.interfaces.IRequestLisenter)>
+    <com.id.avantee.request.OkGoUtil: void requestPost(java.lang.String)>
+    <com.id.avantee.request.OkGoUtil$2: void <init>(com.id.avantee.request.OkGoUtil)>
+    <com.id.avantee.request.OkGoUtil$2: void <init>(com.id.avantee.request.OkGoUtil)>
+    <com.id.avantee.request.OkGoUtil: void requestPost(java.lang.String)>
+    <com.lzy.okhttputils.request.BaseRequest: void execute(com.lzy.okhttputils.callback.AbsCallback)>
+    <com.lzy.okhttputils.request.BaseRequest: void execute(com.lzy.okhttputils.callback.AbsCallback)>
+    <com.lzy.okhttputils.request.BaseBodyRequest: okhttp3.RequestBody generateRequestBody()>
+    <com.lzy.okhttputils.request.BaseRequest: void execute(com.lzy.okhttputils.callback.AbsCallback)>
+    <com.lzy.okhttputils.request.BaseRequest: okhttp3.RequestBody wrapRequestBody(okhttp3.RequestBody)>
+    <com.lzy.okhttputils.request.BaseRequest$1: void <init>(com.lzy.okhttputils.request.BaseRequest)>
+    <com.lzy.okhttputils.request.BaseRequest$1: void <init>(com.lzy.okhttputils.request.BaseRequest)>
+    <com.lzy.okhttputils.request.BaseRequest: okhttp3.RequestBody wrapRequestBody(okhttp3.RequestBody)>
+    <com.lzy.okhttputils.request.ProgressRequestBody: void setListener(com.lzy.okhttputils.request.ProgressRequestBody$Listener)>
+    <com.lzy.okhttputils.request.ProgressRequestBody: void setListener(com.lzy.okhttputils.request.ProgressRequestBody$Listener)>
+    <com.lzy.okhttputils.request.BaseRequest: okhttp3.RequestBody wrapRequestBody(okhttp3.RequestBody)>
+    <com.lzy.okhttputils.request.BaseRequest: void execute(com.lzy.okhttputils.callback.AbsCallback)>
+    <com.lzy.okhttputils.request.PostRequest: okhttp3.Request generateRequest(okhttp3.RequestBody)>
+    <okhttp3.Request$Builder: okhttp3.Request$Builder post(okhttp3.RequestBody)>
+    <okhttp3.Request$Builder: okhttp3.Request$Builder method(java.lang.String,okhttp3.RequestBody)>
+    <okhttp3.Request$Builder: okhttp3.Request$Builder method(java.lang.String,okhttp3.RequestBody)>
+    <okhttp3.Request$Builder: okhttp3.Request$Builder post(okhttp3.RequestBody)>
+    <com.lzy.okhttputils.request.PostRequest: okhttp3.Request generateRequest(okhttp3.RequestBody)>
+    <okhttp3.Request$Builder: okhttp3.Request build()>
+    <okhttp3.Request: void <init>(okhttp3.Request$Builder,okhttp3.Request$1)>
+    <okhttp3.Request: void <init>(okhttp3.Request$Builder)>
+    <okhttp3.Request$Builder: okhttp3.RequestBody access$300(okhttp3.Request$Builder)>
+    <okhttp3.Request$Builder: okhttp3.RequestBody access$300(okhttp3.Request$Builder)>
+    <okhttp3.Request: void <init>(okhttp3.Request$Builder)>
+    <okhttp3.Request: void <init>(okhttp3.Request$Builder)>
+    <okhttp3.Request: void <init>(okhttp3.Request$Builder,okhttp3.Request$1)>
+    <okhttp3.Request$Builder: okhttp3.Request build()>
+    <com.lzy.okhttputils.request.PostRequest: okhttp3.Request generateRequest(okhttp3.RequestBody)>
+    <com.lzy.okhttputils.request.BaseRequest: void execute(com.lzy.okhttputils.callback.AbsCallback)>
+    <com.lzy.okhttputils.request.BaseRequest: okhttp3.Call generateCall(okhttp3.Request)>
+
+Leak 16:
+  Source: $r1 = virtualinvoke r0.<com.id.avantee.views.login.UpdatePwdActivity: android.view.View findViewById(int)>(2131689772) (None)
+  Sink: $r7 = virtualinvoke $r6.<okhttp3.OkHttpClient: okhttp3.Call newCall(okhttp3.Request)>($r2) (<okhttp3.OkHttpClient: okhttp3.Call newCall(okhttp3.Request)>)
+  Methods:
+    <com.id.avantee.views.login.UpdatePwdActivity: void initView()>
+    <com.id.avantee.views.login.UpdatePwdActivity: void initView()>
+    <com.id.avantee.views.login.UpdatePwdActivity: void initView()>
+    <com.id.avantee.views.login.UpdatePwdActivity: void initView()>
+    <com.id.avantee.base.BaseActivity: void onCreate(android.os.Bundle)>
+    <com.id.avantee.views.login.UpdatePwdActivity: void onCreate(android.os.Bundle)>
+    <dummyMainClass: com.id.avantee.views.login.UpdatePwdActivity dummyMainMethod_com_id_avantee_views_login_UpdatePwdActivity(android.content.Intent)>
+    <com.id.avantee.views.login.UpdatePwdActivity$2: void <init>(com.id.avantee.views.login.UpdatePwdActivity)>
+    <com.id.avantee.views.login.UpdatePwdActivity$2: void <init>(com.id.avantee.views.login.UpdatePwdActivity)>
+    <dummyMainClass: com.id.avantee.views.login.UpdatePwdActivity dummyMainMethod_com_id_avantee_views_login_UpdatePwdActivity(android.content.Intent)>
+    <com.id.avantee.views.login.UpdatePwdActivity$2: void onClick(android.view.View)>
+    <com.id.avantee.views.login.UpdatePwdActivity$2: void onClick(android.view.View)>
+    <com.id.avantee.views.login.UpdatePwdActivity: android.widget.EditText access$100(com.id.avantee.views.login.UpdatePwdActivity)>
+    <com.id.avantee.views.login.UpdatePwdActivity: android.widget.EditText access$100(com.id.avantee.views.login.UpdatePwdActivity)>
+    <com.id.avantee.views.login.UpdatePwdActivity$2: void onClick(android.view.View)>
+    <com.id.avantee.views.login.UpdatePwdActivity$2: void onClick(android.view.View)>
+    <com.id.avantee.views.login.UpdatePwdActivity$2: void onClick(android.view.View)>
+    <com.id.avantee.views.login.UpdatePwdActivity$2: void onClick(android.view.View)>
+    <com.id.avantee.presenters.UpdatePwdPresenter: void getUpdatePwdData(java.lang.String,java.lang.String,com.id.avantee.interfaces.IRequestLisenter)>
+    <com.id.avantee.netservice.UpdatePwdHelper: void getUpdatePwdData(java.lang.String,java.lang.String,com.id.avantee.interfaces.IRequestLisenter)>
+    <com.id.avantee.request.OkGoUtil: void params(java.lang.String,java.lang.String)>
+    <com.lzy.okhttputils.model.HttpParams: void put(java.lang.String,java.lang.String,boolean[])>
+    <com.lzy.okhttputils.model.HttpParams: void put(java.lang.String,java.lang.String,boolean[])>
+    <com.lzy.okhttputils.model.HttpParams: void put(java.lang.String,java.lang.String,boolean)>
+    <com.lzy.okhttputils.model.HttpParams: void put(java.lang.String,java.lang.String,boolean)>
+    <com.lzy.okhttputils.model.HttpParams: void put(java.lang.String,java.lang.String,boolean)>
+    <com.lzy.okhttputils.model.HttpParams: void put(java.lang.String,java.lang.String,boolean)>
+    <com.lzy.okhttputils.model.HttpParams: void put(java.lang.String,java.lang.String,boolean)>
+    <com.lzy.okhttputils.model.HttpParams: void put(java.lang.String,java.lang.String,boolean)>
+    <com.lzy.okhttputils.model.HttpParams: void put(java.lang.String,java.lang.String,boolean[])>
+    <com.id.avantee.request.OkGoUtil: void params(java.lang.String,java.lang.String)>
+    <com.id.avantee.request.OkGoUtil: void params(java.lang.String,java.lang.String)>
+    <com.id.avantee.netservice.UpdatePwdHelper: void getUpdatePwdData(java.lang.String,java.lang.String,com.id.avantee.interfaces.IRequestLisenter)>
+    <com.id.avantee.request.OkGoUtil: void requestPost(java.lang.String)>
+    <com.id.avantee.request.OkGoUtil$2: void <init>(com.id.avantee.request.OkGoUtil)>
+    <com.id.avantee.request.OkGoUtil$2: void <init>(com.id.avantee.request.OkGoUtil)>
+    <com.id.avantee.request.OkGoUtil: void requestPost(java.lang.String)>
+    <com.lzy.okhttputils.request.BaseRequest: void execute(com.lzy.okhttputils.callback.AbsCallback)>
+    <com.lzy.okhttputils.request.BaseRequest: void execute(com.lzy.okhttputils.callback.AbsCallback)>
+    <com.lzy.okhttputils.request.BaseBodyRequest: okhttp3.RequestBody generateRequestBody()>
+    <com.lzy.okhttputils.request.BaseRequest: void execute(com.lzy.okhttputils.callback.AbsCallback)>
+    <com.lzy.okhttputils.request.BaseRequest: okhttp3.RequestBody wrapRequestBody(okhttp3.RequestBody)>
+    <com.lzy.okhttputils.request.BaseRequest$1: void <init>(com.lzy.okhttputils.request.BaseRequest)>
+    <com.lzy.okhttputils.request.BaseRequest$1: void <init>(com.lzy.okhttputils.request.BaseRequest)>
+    <com.lzy.okhttputils.request.BaseRequest: okhttp3.RequestBody wrapRequestBody(okhttp3.RequestBody)>
+    <com.lzy.okhttputils.request.ProgressRequestBody: void setListener(com.lzy.okhttputils.request.ProgressRequestBody$Listener)>
+    <com.lzy.okhttputils.request.ProgressRequestBody: void setListener(com.lzy.okhttputils.request.ProgressRequestBody$Listener)>
+    <com.lzy.okhttputils.request.BaseRequest: okhttp3.RequestBody wrapRequestBody(okhttp3.RequestBody)>
+    <com.lzy.okhttputils.request.BaseRequest: void execute(com.lzy.okhttputils.callback.AbsCallback)>
+    <com.lzy.okhttputils.request.PostRequest: okhttp3.Request generateRequest(okhttp3.RequestBody)>
+    <okhttp3.Request$Builder: okhttp3.Request$Builder post(okhttp3.RequestBody)>
+    <okhttp3.Request$Builder: okhttp3.Request$Builder method(java.lang.String,okhttp3.RequestBody)>
+    <okhttp3.Request$Builder: okhttp3.Request$Builder method(java.lang.String,okhttp3.RequestBody)>
+    <okhttp3.Request$Builder: okhttp3.Request$Builder post(okhttp3.RequestBody)>
+    <com.lzy.okhttputils.request.PostRequest: okhttp3.Request generateRequest(okhttp3.RequestBody)>
+    <okhttp3.Request$Builder: okhttp3.Request build()>
+    <okhttp3.Request: void <init>(okhttp3.Request$Builder,okhttp3.Request$1)>
+    <okhttp3.Request: void <init>(okhttp3.Request$Builder)>
+    <okhttp3.Request$Builder: okhttp3.RequestBody access$300(okhttp3.Request$Builder)>
+    <okhttp3.Request$Builder: okhttp3.RequestBody access$300(okhttp3.Request$Builder)>
+    <okhttp3.Request: void <init>(okhttp3.Request$Builder)>
+    <okhttp3.Request: void <init>(okhttp3.Request$Builder)>
+    <okhttp3.Request: void <init>(okhttp3.Request$Builder,okhttp3.Request$1)>
+    <okhttp3.Request$Builder: okhttp3.Request build()>
+    <com.lzy.okhttputils.request.PostRequest: okhttp3.Request generateRequest(okhttp3.RequestBody)>
+    <com.lzy.okhttputils.request.BaseRequest: void execute(com.lzy.okhttputils.callback.AbsCallback)>
+    <com.lzy.okhttputils.request.BaseRequest: okhttp3.Call generateCall(okhttp3.Request)>
+
+Leak 17:
+  Source: $r1 = virtualinvoke r0.<com.id.avantee.views.login.LoginActivity: android.view.View findViewById(int)>(2131689727) (None)
+  Sink: $r7 = virtualinvoke $r6.<okhttp3.OkHttpClient: okhttp3.Call newCall(okhttp3.Request)>($r2) (<okhttp3.OkHttpClient: okhttp3.Call newCall(okhttp3.Request)>)
+  Methods:
+    <com.id.avantee.views.login.LoginActivity: void initView()>
+    <com.id.avantee.views.login.LoginActivity: void initView()>
+    <com.id.avantee.views.login.LoginActivity: void initView()>
+    <com.id.avantee.views.login.LoginActivity: void initView()>
+    <com.id.avantee.base.BaseActivity: void onCreate(android.os.Bundle)>
+    <com.id.avantee.views.login.LoginActivity: void onCreate(android.os.Bundle)>
+    <dummyMainClass: com.id.avantee.views.login.LoginActivity dummyMainMethod_com_id_avantee_views_login_LoginActivity(android.content.Intent)>
+    <com.id.avantee.views.login.LoginActivity: void onClick(android.view.View)>
+    <com.id.avantee.views.login.LoginActivity: void toLogin()>
+    <com.id.avantee.views.login.LoginActivity: void toLogin()>
+    <com.id.avantee.views.login.LoginActivity: void toLogin()>
+    <com.id.avantee.views.login.LoginActivity: void toLogin()>
+    <com.id.avantee.views.login.LoginActivity: void toLogin()>
+    <com.id.avantee.presenters.LoginPresenter: void getLoginData(java.lang.String,java.lang.String)>
+    <com.id.avantee.netservice.LoginHelper: void getLoginData(java.lang.String,java.lang.String,com.id.avantee.interfaces.IRequestLisenter)>
+    <com.id.avantee.request.OkGoUtil: void params(java.lang.String,java.lang.String)>
+    <com.lzy.okhttputils.model.HttpParams: void put(java.lang.String,java.lang.String,boolean[])>
+    <com.lzy.okhttputils.model.HttpParams: void put(java.lang.String,java.lang.String,boolean[])>
+    <com.lzy.okhttputils.model.HttpParams: void put(java.lang.String,java.lang.String,boolean)>
+    <com.lzy.okhttputils.model.HttpParams: void put(java.lang.String,java.lang.String,boolean)>
+    <com.lzy.okhttputils.model.HttpParams: void put(java.lang.String,java.lang.String,boolean)>
+    <com.lzy.okhttputils.model.HttpParams: void put(java.lang.String,java.lang.String,boolean)>
+    <com.lzy.okhttputils.model.HttpParams: void put(java.lang.String,java.lang.String,boolean)>
+    <com.lzy.okhttputils.model.HttpParams: void put(java.lang.String,java.lang.String,boolean)>
+    <com.lzy.okhttputils.model.HttpParams: void put(java.lang.String,java.lang.String,boolean[])>
+    <com.id.avantee.request.OkGoUtil: void params(java.lang.String,java.lang.String)>
+    <com.id.avantee.request.OkGoUtil: void params(java.lang.String,java.lang.String)>
+    <com.id.avantee.netservice.LoginHelper: void getLoginData(java.lang.String,java.lang.String,com.id.avantee.interfaces.IRequestLisenter)>
+    <com.id.avantee.request.OkGoUtil: void requestPost(java.lang.String)>
+    <com.id.avantee.request.OkGoUtil$2: void <init>(com.id.avantee.request.OkGoUtil)>
+    <com.id.avantee.request.OkGoUtil: void requestPost(java.lang.String)>
+    <com.id.avantee.request.OkGoUtil: void requestPost(java.lang.String)>
+    <com.lzy.okhttputils.request.BaseRequest: com.lzy.okhttputils.request.BaseRequest params(com.lzy.okhttputils.model.HttpParams)>
+    <com.lzy.okhttputils.model.HttpParams: void put(com.lzy.okhttputils.model.HttpParams)>
+    <com.lzy.okhttputils.model.HttpParams: void put(com.lzy.okhttputils.model.HttpParams)>
+    <com.lzy.okhttputils.model.HttpParams: void put(com.lzy.okhttputils.model.HttpParams)>
+    <com.lzy.okhttputils.model.HttpParams: void put(com.lzy.okhttputils.model.HttpParams)>
+    <com.lzy.okhttputils.request.BaseRequest: com.lzy.okhttputils.request.BaseRequest params(com.lzy.okhttputils.model.HttpParams)>
+    <com.lzy.okhttputils.request.BaseRequest: com.lzy.okhttputils.request.BaseRequest params(com.lzy.okhttputils.model.HttpParams)>
+    <com.id.avantee.request.OkGoUtil: void requestPost(java.lang.String)>
+    <com.id.avantee.request.OkGoUtil: void requestPost(java.lang.String)>
+    <com.lzy.okhttputils.request.BaseBodyRequest: com.lzy.okhttputils.request.BaseBodyRequest addFileParams(java.lang.String,java.util.List)>
+    <com.id.avantee.request.OkGoUtil: void requestPost(java.lang.String)>
+    <com.id.avantee.request.OkGoUtil: void requestPost(java.lang.String)>
+    <com.lzy.okhttputils.request.BaseRequest: void execute(com.lzy.okhttputils.callback.AbsCallback)>
+    <com.lzy.okhttputils.request.BaseRequest: void execute(com.lzy.okhttputils.callback.AbsCallback)>
+    <com.lzy.okhttputils.request.BaseRequest: void execute(com.lzy.okhttputils.callback.AbsCallback)>
+    <com.lzy.okhttputils.utils.HttpUtils: java.lang.String createUrlFromParams(java.lang.String,java.util.Map)>
+    <com.lzy.okhttputils.utils.HttpUtils: java.lang.String createUrlFromParams(java.lang.String,java.util.Map)>
+    <com.lzy.okhttputils.utils.HttpUtils: java.lang.String createUrlFromParams(java.lang.String,java.util.Map)>
+    <com.lzy.okhttputils.utils.HttpUtils: java.lang.String createUrlFromParams(java.lang.String,java.util.Map)>
+    <com.lzy.okhttputils.utils.HttpUtils: java.lang.String createUrlFromParams(java.lang.String,java.util.Map)>
+    <com.lzy.okhttputils.utils.HttpUtils: java.lang.String createUrlFromParams(java.lang.String,java.util.Map)>
+    <com.lzy.okhttputils.utils.HttpUtils: java.lang.String createUrlFromParams(java.lang.String,java.util.Map)>
+    <com.lzy.okhttputils.utils.HttpUtils: java.lang.String createUrlFromParams(java.lang.String,java.util.Map)>
+    <com.lzy.okhttputils.utils.HttpUtils: java.lang.String createUrlFromParams(java.lang.String,java.util.Map)>
+    <com.lzy.okhttputils.utils.HttpUtils: java.lang.String createUrlFromParams(java.lang.String,java.util.Map)>
+    <com.lzy.okhttputils.utils.HttpUtils: java.lang.String createUrlFromParams(java.lang.String,java.util.Map)>
+    <com.lzy.okhttputils.utils.HttpUtils: java.lang.String createUrlFromParams(java.lang.String,java.util.Map)>
+    <com.lzy.okhttputils.utils.HttpUtils: java.lang.String createUrlFromParams(java.lang.String,java.util.Map)>
+    <com.lzy.okhttputils.request.BaseRequest: void execute(com.lzy.okhttputils.callback.AbsCallback)>
+    <com.lzy.okhttputils.request.BaseRequest: void execute(com.lzy.okhttputils.callback.AbsCallback)>
+    <com.lzy.okhttputils.request.BaseBodyRequest: okhttp3.RequestBody generateRequestBody()>
+    <com.lzy.okhttputils.request.BaseRequest: void execute(com.lzy.okhttputils.callback.AbsCallback)>
+    <com.lzy.okhttputils.request.BaseRequest: okhttp3.RequestBody wrapRequestBody(okhttp3.RequestBody)>
+    <com.lzy.okhttputils.request.BaseRequest$1: void <init>(com.lzy.okhttputils.request.BaseRequest)>
+    <com.lzy.okhttputils.request.BaseRequest$1: void <init>(com.lzy.okhttputils.request.BaseRequest)>
+    <com.lzy.okhttputils.request.BaseRequest: okhttp3.RequestBody wrapRequestBody(okhttp3.RequestBody)>
+    <com.lzy.okhttputils.request.ProgressRequestBody: void setListener(com.lzy.okhttputils.request.ProgressRequestBody$Listener)>
+    <com.lzy.okhttputils.request.ProgressRequestBody: void setListener(com.lzy.okhttputils.request.ProgressRequestBody$Listener)>
+    <com.lzy.okhttputils.request.BaseRequest: okhttp3.RequestBody wrapRequestBody(okhttp3.RequestBody)>
+    <com.lzy.okhttputils.request.BaseRequest: void execute(com.lzy.okhttputils.callback.AbsCallback)>
+    <com.lzy.okhttputils.request.PostRequest: okhttp3.Request generateRequest(okhttp3.RequestBody)>
+    <okhttp3.Request$Builder: okhttp3.Request$Builder post(okhttp3.RequestBody)>
+    <okhttp3.Request$Builder: okhttp3.Request$Builder method(java.lang.String,okhttp3.RequestBody)>
+    <okhttp3.Request$Builder: okhttp3.Request$Builder method(java.lang.String,okhttp3.RequestBody)>
+    <okhttp3.Request$Builder: okhttp3.Request$Builder post(okhttp3.RequestBody)>
+    <com.lzy.okhttputils.request.PostRequest: okhttp3.Request generateRequest(okhttp3.RequestBody)>
+    <okhttp3.Request$Builder: okhttp3.Request build()>
+    <okhttp3.Request: void <init>(okhttp3.Request$Builder,okhttp3.Request$1)>
+    <okhttp3.Request: void <init>(okhttp3.Request$Builder)>
+    <okhttp3.Request$Builder: okhttp3.RequestBody access$300(okhttp3.Request$Builder)>
+    <okhttp3.Request$Builder: okhttp3.RequestBody access$300(okhttp3.Request$Builder)>
+    <okhttp3.Request: void <init>(okhttp3.Request$Builder)>
+    <okhttp3.Request: void <init>(okhttp3.Request$Builder)>
+    <okhttp3.Request: void <init>(okhttp3.Request$Builder)>
+    <okhttp3.Request: void <init>(okhttp3.Request$Builder)>
+    <okhttp3.Request: void <init>(okhttp3.Request$Builder)>
+    <okhttp3.Request: void <init>(okhttp3.Request$Builder)>
+    <okhttp3.Request: void <init>(okhttp3.Request$Builder,okhttp3.Request$1)>
+    <okhttp3.Request$Builder: okhttp3.Request build()>
+    <com.lzy.okhttputils.request.PostRequest: okhttp3.Request generateRequest(okhttp3.RequestBody)>
+    <com.lzy.okhttputils.request.BaseRequest: void execute(com.lzy.okhttputils.callback.AbsCallback)>
+    <com.lzy.okhttputils.request.BaseRequest: okhttp3.Call generateCall(okhttp3.Request)>
+
+Leak 18:
+  Source: $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r2, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("UMConfigure", $r2) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.umeng.commonsdk.utils.UMUtils: java.lang.String getChannelByXML(android.content.Context)>
+    <com.umeng.commonsdk.utils.UMUtils: java.lang.String getChannelByXML(android.content.Context)>
+    <com.umeng.commonsdk.utils.UMUtils: java.lang.String getChannelByXML(android.content.Context)>
+    <com.umeng.commonsdk.utils.UMUtils: java.lang.String getChannelByXML(android.content.Context)>
+    <com.umeng.commonsdk.utils.UMUtils: java.lang.String getChannelByXML(android.content.Context)>
+    <com.umeng.commonsdk.utils.UMUtils: java.lang.String getChannelByXML(android.content.Context)>
+    <com.umeng.commonsdk.UMConfigure: void init(android.content.Context,java.lang.String,java.lang.String,int,java.lang.String)>
+    <com.umeng.commonsdk.UMConfigure: void init(android.content.Context,java.lang.String,java.lang.String,int,java.lang.String)>
+    <com.umeng.commonsdk.UMConfigure: void init(android.content.Context,java.lang.String,java.lang.String,int,java.lang.String)>
+
+Leak 19:
+  Source: $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r2, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("UMConfigure", $r2) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.umeng.commonsdk.utils.UMUtils: java.lang.String getAppkeyByXML(android.content.Context)>
+    <com.umeng.commonsdk.utils.UMUtils: java.lang.String getAppkeyByXML(android.content.Context)>
+    <com.umeng.commonsdk.utils.UMUtils: java.lang.String getAppkeyByXML(android.content.Context)>
+    <com.umeng.commonsdk.utils.UMUtils: java.lang.String getAppkeyByXML(android.content.Context)>
+    <com.umeng.commonsdk.utils.UMUtils: java.lang.String getAppkeyByXML(android.content.Context)>
+    <com.umeng.commonsdk.UMConfigure: void init(android.content.Context,java.lang.String,java.lang.String,int,java.lang.String)>
+    <com.umeng.commonsdk.UMConfigure: void init(android.content.Context,java.lang.String,java.lang.String,int,java.lang.String)>
+    <com.umeng.commonsdk.UMConfigure: void init(android.content.Context,java.lang.String,java.lang.String,int,java.lang.String)>
+    <com.umeng.commonsdk.UMConfigure: void init(android.content.Context,java.lang.String,java.lang.String,int,java.lang.String)>
+    <com.umeng.commonsdk.UMConfigure: void init(android.content.Context,java.lang.String,java.lang.String,int,java.lang.String)>
+    <com.umeng.commonsdk.UMConfigure: void init(android.content.Context,java.lang.String,java.lang.String,int,java.lang.String)>
+
+Leak 20:
+  Source: $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r2, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r0, $r3) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.umeng.commonsdk.statistics.common.DeviceConfig: java.lang.String getAppName(android.content.Context)>
+    <com.umeng.commonsdk.statistics.common.DeviceConfig: java.lang.String getAppName(android.content.Context)>
+    <com.umeng.commonsdk.statistics.common.DeviceConfig: java.lang.String getAppName(android.content.Context)>
+    <com.umeng.commonsdk.statistics.common.DeviceConfig: java.lang.String getAppName(android.content.Context)>
+    <com.umeng.commonsdk.statistics.common.DeviceConfig: java.lang.String getAppName(android.content.Context)>
+    <com.umeng.commonsdk.stateless.UMSLEnvelopeBuild: org.json.JSONObject buildSLBaseHeader(android.content.Context)>
+    <com.umeng.commonsdk.stateless.UMSLEnvelopeBuild: org.json.JSONObject buildSLBaseHeader(android.content.Context)>
+    <com.umeng.commonsdk.stateless.UMSLEnvelopeBuild: org.json.JSONObject buildSLBaseHeader(android.content.Context)>
+    <com.umeng.commonsdk.stateless.UMSLEnvelopeBuild: org.json.JSONObject buildSLBaseHeader(android.content.Context)>
+    <com.umeng.commonsdk.stateless.UMSLEnvelopeBuild: org.json.JSONObject buildSLBaseHeader(android.content.Context)>
+    <com.umeng.commonsdk.stateless.UMSLEnvelopeBuild: org.json.JSONObject buildSLBaseHeader(android.content.Context)>
+    <com.umeng.commonsdk.statistics.common.e: void a(java.lang.String,java.lang.Object[])>
+    <com.umeng.commonsdk.statistics.common.e: void a(java.lang.String,java.lang.Object[])>
+    <com.umeng.commonsdk.statistics.common.e: void a(java.lang.String,java.lang.Object[])>
+    <com.umeng.commonsdk.statistics.common.e: void c(java.lang.String,java.lang.String,java.lang.Throwable)>
+    <com.umeng.commonsdk.statistics.common.e: void a(int,java.lang.String,java.lang.String,java.lang.Throwable)>
+    <com.umeng.commonsdk.statistics.common.e: void a(int,java.lang.String,java.lang.String,java.lang.Throwable)>
+
+Leak 21:
+  Source: $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r2, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r0, $r3) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.umeng.commonsdk.utils.UMUtils: java.lang.String getAppVersionName(android.content.Context)>
+    <com.umeng.commonsdk.utils.UMUtils: java.lang.String getAppVersionName(android.content.Context)>
+    <com.umeng.commonsdk.utils.UMUtils: java.lang.String getAppVersionName(android.content.Context)>
+    <com.umeng.commonsdk.statistics.common.DeviceConfig: java.lang.String getAppVersionName(android.content.Context)>
+    <com.umeng.commonsdk.stateless.UMSLEnvelopeBuild: org.json.JSONObject buildSLBaseHeader(android.content.Context)>
+    <com.umeng.commonsdk.stateless.UMSLEnvelopeBuild: org.json.JSONObject buildSLBaseHeader(android.content.Context)>
+    <com.umeng.commonsdk.stateless.UMSLEnvelopeBuild: org.json.JSONObject buildSLBaseHeader(android.content.Context)>
+    <com.umeng.commonsdk.stateless.UMSLEnvelopeBuild: org.json.JSONObject buildSLBaseHeader(android.content.Context)>
+    <com.umeng.commonsdk.stateless.UMSLEnvelopeBuild: org.json.JSONObject buildSLBaseHeader(android.content.Context)>
+    <com.umeng.commonsdk.stateless.UMSLEnvelopeBuild: org.json.JSONObject buildSLBaseHeader(android.content.Context)>
+    <com.umeng.commonsdk.statistics.common.e: void a(java.lang.String,java.lang.Object[])>
+    <com.umeng.commonsdk.statistics.common.e: void a(java.lang.String,java.lang.Object[])>
+    <com.umeng.commonsdk.statistics.common.e: void a(java.lang.String,java.lang.Object[])>
+    <com.umeng.commonsdk.statistics.common.e: void c(java.lang.String,java.lang.String,java.lang.Throwable)>
+    <com.umeng.commonsdk.statistics.common.e: void a(int,java.lang.String,java.lang.String,java.lang.Throwable)>
+    <com.umeng.commonsdk.statistics.common.e: void a(int,java.lang.String,java.lang.String,java.lang.Throwable)>
+
+Leak 22:
+  Source: $r5 = virtualinvoke $r3.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r4, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("ManifestParser", $r4) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.bumptech.glide.module.ManifestParser: java.util.List parse()>
+    <com.bumptech.glide.module.ManifestParser: java.util.List parse()>
+    <com.bumptech.glide.module.ManifestParser: java.util.List parse()>
+    <com.bumptech.glide.module.ManifestParser: java.util.List parse()>
+    <com.bumptech.glide.module.ManifestParser: java.util.List parse()>
+    <com.bumptech.glide.module.ManifestParser: java.util.List parse()>
+    <com.bumptech.glide.module.ManifestParser: java.util.List parse()>
+    <com.bumptech.glide.module.ManifestParser: java.util.List parse()>
+    <com.bumptech.glide.module.ManifestParser: java.util.List parse()>
+
+Leak 23:
+  Source: $r1 = virtualinvoke r0.<com.id.avantee.views.login.AddPwdActivity: android.view.View findViewById(int)>(2131689668) (None)
+  Sink: $r7 = virtualinvoke $r6.<okhttp3.OkHttpClient: okhttp3.Call newCall(okhttp3.Request)>($r2) (<okhttp3.OkHttpClient: okhttp3.Call newCall(okhttp3.Request)>)
+  Methods:
+    <com.id.avantee.views.login.AddPwdActivity: void initView()>
+    <com.id.avantee.views.login.AddPwdActivity: void initView()>
+    <com.id.avantee.views.login.AddPwdActivity: void initView()>
+    <com.id.avantee.views.login.AddPwdActivity: void initView()>
+    <com.id.avantee.base.BaseActivity: void onCreate(android.os.Bundle)>
+    <com.id.avantee.views.login.AddPwdActivity: void onCreate(android.os.Bundle)>
+    <dummyMainClass: com.id.avantee.views.login.AddPwdActivity dummyMainMethod_com_id_avantee_views_login_AddPwdActivity(android.content.Intent)>
+    <com.id.avantee.views.login.AddPwdActivity$$Lambda$0: void <init>(com.id.avantee.views.login.AddPwdActivity)>
+    <com.id.avantee.views.login.AddPwdActivity$$Lambda$0: void <init>(com.id.avantee.views.login.AddPwdActivity)>
+    <dummyMainClass: com.id.avantee.views.login.AddPwdActivity dummyMainMethod_com_id_avantee_views_login_AddPwdActivity(android.content.Intent)>
+    <com.id.avantee.views.login.AddPwdActivity$$Lambda$0: void onClick(android.view.View)>
+    <com.id.avantee.views.login.AddPwdActivity$$Lambda$0: void onClick(android.view.View)>
+    <com.id.avantee.views.login.AddPwdActivity: void lambda$setListener$0$AddPwdActivity(android.view.View)>
+    <com.id.avantee.views.login.AddPwdActivity: void lambda$setListener$0$AddPwdActivity(android.view.View)>
+    <com.id.avantee.views.login.AddPwdActivity: void lambda$setListener$0$AddPwdActivity(android.view.View)>
+    <com.id.avantee.views.login.AddPwdActivity: void lambda$setListener$0$AddPwdActivity(android.view.View)>
+    <com.id.avantee.views.login.AddPwdActivity: void lambda$setListener$0$AddPwdActivity(android.view.View)>
+    <com.id.avantee.presenters.AddPwdPresenter: void addPwdData(java.lang.String)>
+    <com.id.avantee.netservice.AddPwdHelper: void addPwdData(java.lang.String,com.id.avantee.interfaces.IRequestLisenter)>
+    <com.id.avantee.request.OkGoUtil: void params(java.lang.String,java.lang.String)>
+    <com.lzy.okhttputils.model.HttpParams: void put(java.lang.String,java.lang.String,boolean[])>
+    <com.lzy.okhttputils.model.HttpParams: void put(java.lang.String,java.lang.String,boolean[])>
+    <com.lzy.okhttputils.model.HttpParams: void put(java.lang.String,java.lang.String,boolean)>
+    <com.lzy.okhttputils.model.HttpParams: void put(java.lang.String,java.lang.String,boolean)>
+    <com.lzy.okhttputils.model.HttpParams: void put(java.lang.String,java.lang.String,boolean)>
+    <com.lzy.okhttputils.model.HttpParams: void put(java.lang.String,java.lang.String,boolean)>
+    <com.lzy.okhttputils.model.HttpParams: void put(java.lang.String,java.lang.String,boolean)>
+    <com.lzy.okhttputils.model.HttpParams: void put(java.lang.String,java.lang.String,boolean)>
+    <com.lzy.okhttputils.model.HttpParams: void put(java.lang.String,java.lang.String,boolean[])>
+    <com.id.avantee.request.OkGoUtil: void params(java.lang.String,java.lang.String)>
+    <com.id.avantee.request.OkGoUtil: void params(java.lang.String,java.lang.String)>
+    <com.id.avantee.netservice.AddPwdHelper: void addPwdData(java.lang.String,com.id.avantee.interfaces.IRequestLisenter)>
+    <com.id.avantee.request.OkGoUtil: void requestPost(java.lang.String)>
+    <com.id.avantee.request.OkGoUtil$2: void <init>(com.id.avantee.request.OkGoUtil)>
+    <com.id.avantee.request.OkGoUtil$2: void <init>(com.id.avantee.request.OkGoUtil)>
+    <com.id.avantee.request.OkGoUtil: void requestPost(java.lang.String)>
+    <com.lzy.okhttputils.request.BaseRequest: void execute(com.lzy.okhttputils.callback.AbsCallback)>
+    <com.lzy.okhttputils.request.BaseRequest: void execute(com.lzy.okhttputils.callback.AbsCallback)>
+    <com.lzy.okhttputils.request.BaseBodyRequest: okhttp3.RequestBody generateRequestBody()>
+    <com.lzy.okhttputils.request.BaseRequest: void execute(com.lzy.okhttputils.callback.AbsCallback)>
+    <com.lzy.okhttputils.request.BaseRequest: okhttp3.RequestBody wrapRequestBody(okhttp3.RequestBody)>
+    <com.lzy.okhttputils.request.BaseRequest$1: void <init>(com.lzy.okhttputils.request.BaseRequest)>
+    <com.lzy.okhttputils.request.BaseRequest$1: void <init>(com.lzy.okhttputils.request.BaseRequest)>
+    <com.lzy.okhttputils.request.BaseRequest: okhttp3.RequestBody wrapRequestBody(okhttp3.RequestBody)>
+    <com.lzy.okhttputils.request.ProgressRequestBody: void setListener(com.lzy.okhttputils.request.ProgressRequestBody$Listener)>
+    <com.lzy.okhttputils.request.ProgressRequestBody: void setListener(com.lzy.okhttputils.request.ProgressRequestBody$Listener)>
+    <com.lzy.okhttputils.request.BaseRequest: okhttp3.RequestBody wrapRequestBody(okhttp3.RequestBody)>
+    <com.lzy.okhttputils.request.BaseRequest: void execute(com.lzy.okhttputils.callback.AbsCallback)>
+    <com.lzy.okhttputils.request.PostRequest: okhttp3.Request generateRequest(okhttp3.RequestBody)>
+    <okhttp3.Request$Builder: okhttp3.Request$Builder post(okhttp3.RequestBody)>
+    <okhttp3.Request$Builder: okhttp3.Request$Builder method(java.lang.String,okhttp3.RequestBody)>
+    <okhttp3.Request$Builder: okhttp3.Request$Builder method(java.lang.String,okhttp3.RequestBody)>
+    <okhttp3.Request$Builder: okhttp3.Request$Builder post(okhttp3.RequestBody)>
+    <com.lzy.okhttputils.request.PostRequest: okhttp3.Request generateRequest(okhttp3.RequestBody)>
+    <okhttp3.Request$Builder: okhttp3.Request build()>
+    <okhttp3.Request: void <init>(okhttp3.Request$Builder,okhttp3.Request$1)>
+    <okhttp3.Request: void <init>(okhttp3.Request$Builder)>
+    <okhttp3.Request$Builder: okhttp3.RequestBody access$300(okhttp3.Request$Builder)>
+    <okhttp3.Request$Builder: okhttp3.RequestBody access$300(okhttp3.Request$Builder)>
+    <okhttp3.Request: void <init>(okhttp3.Request$Builder)>
+    <okhttp3.Request: void <init>(okhttp3.Request$Builder)>
+    <okhttp3.Request: void <init>(okhttp3.Request$Builder,okhttp3.Request$1)>
+    <okhttp3.Request$Builder: okhttp3.Request build()>
+    <com.lzy.okhttputils.request.PostRequest: okhttp3.Request generateRequest(okhttp3.RequestBody)>
+    <com.lzy.okhttputils.request.BaseRequest: void execute(com.lzy.okhttputils.callback.AbsCallback)>
+    <com.lzy.okhttputils.request.BaseRequest: okhttp3.Call generateCall(okhttp3.Request)>
+
+Leak 24:
+  Source: $r1 = virtualinvoke r0.<com.id.avantee.views.login.ChangePwdActivity: android.view.View findViewById(int)>(2131689679) (None)
+  Sink: $r7 = virtualinvoke $r6.<okhttp3.OkHttpClient: okhttp3.Call newCall(okhttp3.Request)>($r2) (<okhttp3.OkHttpClient: okhttp3.Call newCall(okhttp3.Request)>)
+  Methods:
+    <com.id.avantee.views.login.ChangePwdActivity: void initView()>
+    <com.id.avantee.views.login.ChangePwdActivity: void initView()>
+    <com.id.avantee.views.login.ChangePwdActivity: void initView()>
+    <com.id.avantee.views.login.ChangePwdActivity: void initView()>
+    <com.id.avantee.base.BaseActivity: void onCreate(android.os.Bundle)>
+    <com.id.avantee.views.login.ChangePwdActivity: void loadData()>
+    <com.id.avantee.views.login.ChangePwdActivity$5: void <init>(com.id.avantee.views.login.ChangePwdActivity)>
+    <com.id.avantee.views.login.ChangePwdActivity$5: void <init>(com.id.avantee.views.login.ChangePwdActivity)>
+    <com.id.avantee.views.login.ChangePwdActivity: void loadData()>
+    <com.id.avantee.presenters.ChangePwdPresenter: void getAuthCodeImage(java.lang.String,com.id.avantee.interfaces.IRequestLisenter)>
+    <com.id.avantee.netservice.ChangePwdHelper: void getAuthCodeImage(java.lang.String,com.id.avantee.interfaces.IRequestLisenter)>
+    <com.id.avantee.request.OkGoUtil: void <init>(java.lang.Class,int,com.id.avantee.interfaces.IRequestLisenter)>
+    <com.id.avantee.request.OkGoUtil: void <init>(java.lang.Class,int,com.id.avantee.interfaces.IRequestLisenter)>
+    <com.id.avantee.netservice.ChangePwdHelper: void getAuthCodeImage(java.lang.String,com.id.avantee.interfaces.IRequestLisenter)>
+    <com.id.avantee.request.OkGoUtil: void requestPost(java.lang.String)>
+    <com.id.avantee.request.OkGoUtil$2: void <init>(com.id.avantee.request.OkGoUtil)>
+    <com.id.avantee.request.OkGoUtil$2: void <init>(com.id.avantee.request.OkGoUtil)>
+    <com.id.avantee.request.OkGoUtil: void requestPost(java.lang.String)>
+    <com.lzy.okhttputils.request.BaseRequest: void execute(com.lzy.okhttputils.callback.AbsCallback)>
+    <com.lzy.okhttputils.request.BaseRequest: void execute(com.lzy.okhttputils.callback.AbsCallback)>
+    <com.lzy.okhttputils.request.BaseBodyRequest: okhttp3.RequestBody generateRequestBody()>
+    <com.lzy.okhttputils.request.BaseRequest: void execute(com.lzy.okhttputils.callback.AbsCallback)>
+    <com.lzy.okhttputils.request.BaseRequest: okhttp3.RequestBody wrapRequestBody(okhttp3.RequestBody)>
+    <com.lzy.okhttputils.request.BaseRequest$1: void <init>(com.lzy.okhttputils.request.BaseRequest)>
+    <com.lzy.okhttputils.request.BaseRequest$1: void <init>(com.lzy.okhttputils.request.BaseRequest)>
+    <com.lzy.okhttputils.request.BaseRequest: okhttp3.RequestBody wrapRequestBody(okhttp3.RequestBody)>
+    <com.lzy.okhttputils.request.ProgressRequestBody: void setListener(com.lzy.okhttputils.request.ProgressRequestBody$Listener)>
+    <com.lzy.okhttputils.request.ProgressRequestBody: void setListener(com.lzy.okhttputils.request.ProgressRequestBody$Listener)>
+    <com.lzy.okhttputils.request.BaseRequest: okhttp3.RequestBody wrapRequestBody(okhttp3.RequestBody)>
+    <com.lzy.okhttputils.request.BaseRequest: void execute(com.lzy.okhttputils.callback.AbsCallback)>
+    <com.lzy.okhttputils.request.PostRequest: okhttp3.Request generateRequest(okhttp3.RequestBody)>
+    <okhttp3.Request$Builder: okhttp3.Request$Builder post(okhttp3.RequestBody)>
+    <okhttp3.Request$Builder: okhttp3.Request$Builder method(java.lang.String,okhttp3.RequestBody)>
+    <okhttp3.Request$Builder: okhttp3.Request$Builder method(java.lang.String,okhttp3.RequestBody)>
+    <okhttp3.Request$Builder: okhttp3.Request$Builder post(okhttp3.RequestBody)>
+    <com.lzy.okhttputils.request.PostRequest: okhttp3.Request generateRequest(okhttp3.RequestBody)>
+    <okhttp3.Request$Builder: okhttp3.Request build()>
+    <okhttp3.Request: void <init>(okhttp3.Request$Builder,okhttp3.Request$1)>
+    <okhttp3.Request: void <init>(okhttp3.Request$Builder)>
+    <okhttp3.Request$Builder: okhttp3.RequestBody access$300(okhttp3.Request$Builder)>
+    <okhttp3.Request$Builder: okhttp3.RequestBody access$300(okhttp3.Request$Builder)>
+    <okhttp3.Request: void <init>(okhttp3.Request$Builder)>
+    <okhttp3.Request: void <init>(okhttp3.Request$Builder)>
+    <okhttp3.Request: void <init>(okhttp3.Request$Builder,okhttp3.Request$1)>
+    <okhttp3.Request$Builder: okhttp3.Request build()>
+    <com.lzy.okhttputils.request.PostRequest: okhttp3.Request generateRequest(okhttp3.RequestBody)>
+    <com.lzy.okhttputils.request.BaseRequest: void execute(com.lzy.okhttputils.callback.AbsCallback)>
+    <com.lzy.okhttputils.request.BaseRequest: okhttp3.Call generateCall(okhttp3.Request)>
+
+Leak 25:
+  Source: $r1 = virtualinvoke r0.<com.id.avantee.views.login.RegisterActivity: android.view.View findViewById(int)>(2131689681) (None)
+  Sink: $r7 = virtualinvoke $r6.<okhttp3.OkHttpClient: okhttp3.Call newCall(okhttp3.Request)>($r2) (<okhttp3.OkHttpClient: okhttp3.Call newCall(okhttp3.Request)>)
+  Methods:
+    <com.id.avantee.views.login.RegisterActivity: void initView()>
+    <com.id.avantee.views.login.RegisterActivity: void initView()>
+    <com.id.avantee.views.login.RegisterActivity: void initView()>
+    <com.id.avantee.views.login.RegisterActivity: void initView()>
+    <com.id.avantee.base.BaseActivity: void onCreate(android.os.Bundle)>
+    <com.id.avantee.views.login.RegisterActivity: void loadData()>
+    <com.id.avantee.views.login.RegisterActivity$2: void <init>(com.id.avantee.views.login.RegisterActivity)>
+    <com.id.avantee.views.login.RegisterActivity$2: void <init>(com.id.avantee.views.login.RegisterActivity)>
+    <com.id.avantee.views.login.RegisterActivity: void loadData()>
+    <com.id.avantee.presenters.RegisterPresenter: void getAuthCodeImage(java.lang.String,com.id.avantee.interfaces.IRequestLisenter)>
+    <com.id.avantee.netservice.RegisterHelper: void getAuthCodeImage(java.lang.String,com.id.avantee.interfaces.IRequestLisenter)>
+    <com.id.avantee.request.OkGoUtil: void <init>(java.lang.Class,int,com.id.avantee.interfaces.IRequestLisenter)>
+    <com.id.avantee.request.OkGoUtil: void <init>(java.lang.Class,int,com.id.avantee.interfaces.IRequestLisenter)>
+    <com.id.avantee.netservice.RegisterHelper: void getAuthCodeImage(java.lang.String,com.id.avantee.interfaces.IRequestLisenter)>
+    <com.id.avantee.request.OkGoUtil: void requestPost(java.lang.String)>
+    <com.id.avantee.request.OkGoUtil$2: void <init>(com.id.avantee.request.OkGoUtil)>
+    <com.id.avantee.request.OkGoUtil$2: void <init>(com.id.avantee.request.OkGoUtil)>
+    <com.id.avantee.request.OkGoUtil: void requestPost(java.lang.String)>
+    <com.lzy.okhttputils.request.BaseRequest: void execute(com.lzy.okhttputils.callback.AbsCallback)>
+    <com.lzy.okhttputils.request.BaseRequest: void execute(com.lzy.okhttputils.callback.AbsCallback)>
+    <com.lzy.okhttputils.request.BaseBodyRequest: okhttp3.RequestBody generateRequestBody()>
+    <com.lzy.okhttputils.request.BaseRequest: void execute(com.lzy.okhttputils.callback.AbsCallback)>
+    <com.lzy.okhttputils.request.BaseRequest: okhttp3.RequestBody wrapRequestBody(okhttp3.RequestBody)>
+    <com.lzy.okhttputils.request.BaseRequest$1: void <init>(com.lzy.okhttputils.request.BaseRequest)>
+    <com.lzy.okhttputils.request.BaseRequest$1: void <init>(com.lzy.okhttputils.request.BaseRequest)>
+    <com.lzy.okhttputils.request.BaseRequest: okhttp3.RequestBody wrapRequestBody(okhttp3.RequestBody)>
+    <com.lzy.okhttputils.request.ProgressRequestBody: void setListener(com.lzy.okhttputils.request.ProgressRequestBody$Listener)>
+    <com.lzy.okhttputils.request.ProgressRequestBody: void setListener(com.lzy.okhttputils.request.ProgressRequestBody$Listener)>
+    <com.lzy.okhttputils.request.BaseRequest: okhttp3.RequestBody wrapRequestBody(okhttp3.RequestBody)>
+    <com.lzy.okhttputils.request.BaseRequest: void execute(com.lzy.okhttputils.callback.AbsCallback)>
+    <com.lzy.okhttputils.request.PostRequest: okhttp3.Request generateRequest(okhttp3.RequestBody)>
+    <okhttp3.Request$Builder: okhttp3.Request$Builder post(okhttp3.RequestBody)>
+    <okhttp3.Request$Builder: okhttp3.Request$Builder method(java.lang.String,okhttp3.RequestBody)>
+    <okhttp3.Request$Builder: okhttp3.Request$Builder method(java.lang.String,okhttp3.RequestBody)>
+    <okhttp3.Request$Builder: okhttp3.Request$Builder post(okhttp3.RequestBody)>
+    <com.lzy.okhttputils.request.PostRequest: okhttp3.Request generateRequest(okhttp3.RequestBody)>
+    <okhttp3.Request$Builder: okhttp3.Request build()>
+    <okhttp3.Request: void <init>(okhttp3.Request$Builder,okhttp3.Request$1)>
+    <okhttp3.Request: void <init>(okhttp3.Request$Builder)>
+    <okhttp3.Request$Builder: okhttp3.RequestBody access$300(okhttp3.Request$Builder)>
+    <okhttp3.Request$Builder: okhttp3.RequestBody access$300(okhttp3.Request$Builder)>
+    <okhttp3.Request: void <init>(okhttp3.Request$Builder)>
+    <okhttp3.Request: void <init>(okhttp3.Request$Builder)>
+    <okhttp3.Request: void <init>(okhttp3.Request$Builder,okhttp3.Request$1)>
+    <okhttp3.Request$Builder: okhttp3.Request build()>
+    <com.lzy.okhttputils.request.PostRequest: okhttp3.Request generateRequest(okhttp3.RequestBody)>
+    <com.lzy.okhttputils.request.BaseRequest: void execute(com.lzy.okhttputils.callback.AbsCallback)>
+    <com.lzy.okhttputils.request.BaseRequest: okhttp3.Call generateCall(okhttp3.Request)>
+
+Leak 26:
+  Source: $r1 = virtualinvoke r0.<com.id.avantee.views.login.UpdatePwdActivity: android.view.View findViewById(int)>(2131689769) (None)
+  Sink: $r7 = virtualinvoke $r6.<okhttp3.OkHttpClient: okhttp3.Call newCall(okhttp3.Request)>($r2) (<okhttp3.OkHttpClient: okhttp3.Call newCall(okhttp3.Request)>)
+  Methods:
+    <com.id.avantee.views.login.UpdatePwdActivity: void initView()>
+    <com.id.avantee.views.login.UpdatePwdActivity: void initView()>
+    <com.id.avantee.views.login.UpdatePwdActivity: void initView()>
+    <com.id.avantee.views.login.UpdatePwdActivity: void initView()>
+    <com.id.avantee.base.BaseActivity: void onCreate(android.os.Bundle)>
+    <com.id.avantee.views.login.UpdatePwdActivity: void onCreate(android.os.Bundle)>
+    <dummyMainClass: com.id.avantee.views.login.UpdatePwdActivity dummyMainMethod_com_id_avantee_views_login_UpdatePwdActivity(android.content.Intent)>
+    <com.id.avantee.views.login.UpdatePwdActivity$2: void <init>(com.id.avantee.views.login.UpdatePwdActivity)>
+    <com.id.avantee.views.login.UpdatePwdActivity$2: void <init>(com.id.avantee.views.login.UpdatePwdActivity)>
+    <dummyMainClass: com.id.avantee.views.login.UpdatePwdActivity dummyMainMethod_com_id_avantee_views_login_UpdatePwdActivity(android.content.Intent)>
+    <com.id.avantee.views.login.UpdatePwdActivity$2: void onClick(android.view.View)>
+    <com.id.avantee.views.login.UpdatePwdActivity$2: void onClick(android.view.View)>
+    <com.id.avantee.views.login.UpdatePwdActivity: android.widget.EditText access$000(com.id.avantee.views.login.UpdatePwdActivity)>
+    <com.id.avantee.views.login.UpdatePwdActivity: android.widget.EditText access$000(com.id.avantee.views.login.UpdatePwdActivity)>
+    <com.id.avantee.views.login.UpdatePwdActivity$2: void onClick(android.view.View)>
+    <com.id.avantee.views.login.UpdatePwdActivity$2: void onClick(android.view.View)>
+    <com.id.avantee.views.login.UpdatePwdActivity$2: void onClick(android.view.View)>
+    <com.id.avantee.views.login.UpdatePwdActivity$2: void onClick(android.view.View)>
+    <com.id.avantee.presenters.UpdatePwdPresenter: void getUpdatePwdData(java.lang.String,java.lang.String,com.id.avantee.interfaces.IRequestLisenter)>
+    <com.id.avantee.netservice.UpdatePwdHelper: void getUpdatePwdData(java.lang.String,java.lang.String,com.id.avantee.interfaces.IRequestLisenter)>
+    <com.id.avantee.request.OkGoUtil: void params(java.lang.String,java.lang.String)>
+    <com.lzy.okhttputils.model.HttpParams: void put(java.lang.String,java.lang.String,boolean[])>
+    <com.lzy.okhttputils.model.HttpParams: void put(java.lang.String,java.lang.String,boolean[])>
+    <com.lzy.okhttputils.model.HttpParams: void put(java.lang.String,java.lang.String,boolean)>
+    <com.lzy.okhttputils.model.HttpParams: void put(java.lang.String,java.lang.String,boolean)>
+    <com.lzy.okhttputils.model.HttpParams: void put(java.lang.String,java.lang.String,boolean)>
+    <com.lzy.okhttputils.model.HttpParams: void put(java.lang.String,java.lang.String,boolean)>
+    <com.lzy.okhttputils.model.HttpParams: void put(java.lang.String,java.lang.String,boolean)>
+    <com.lzy.okhttputils.model.HttpParams: void put(java.lang.String,java.lang.String,boolean)>
+    <com.lzy.okhttputils.model.HttpParams: void put(java.lang.String,java.lang.String,boolean[])>
+    <com.id.avantee.request.OkGoUtil: void params(java.lang.String,java.lang.String)>
+    <com.id.avantee.request.OkGoUtil: void params(java.lang.String,java.lang.String)>
+    <com.id.avantee.netservice.UpdatePwdHelper: void getUpdatePwdData(java.lang.String,java.lang.String,com.id.avantee.interfaces.IRequestLisenter)>
+    <com.id.avantee.request.OkGoUtil: void requestPost(java.lang.String)>
+    <com.id.avantee.request.OkGoUtil$2: void <init>(com.id.avantee.request.OkGoUtil)>
+    <com.id.avantee.request.OkGoUtil$2: void <init>(com.id.avantee.request.OkGoUtil)>
+    <com.id.avantee.request.OkGoUtil: void requestPost(java.lang.String)>
+    <com.lzy.okhttputils.request.BaseRequest: void execute(com.lzy.okhttputils.callback.AbsCallback)>
+    <com.lzy.okhttputils.request.BaseRequest: void execute(com.lzy.okhttputils.callback.AbsCallback)>
+    <com.lzy.okhttputils.request.BaseBodyRequest: okhttp3.RequestBody generateRequestBody()>
+    <com.lzy.okhttputils.request.BaseRequest: void execute(com.lzy.okhttputils.callback.AbsCallback)>
+    <com.lzy.okhttputils.request.BaseRequest: okhttp3.RequestBody wrapRequestBody(okhttp3.RequestBody)>
+    <com.lzy.okhttputils.request.BaseRequest$1: void <init>(com.lzy.okhttputils.request.BaseRequest)>
+    <com.lzy.okhttputils.request.BaseRequest$1: void <init>(com.lzy.okhttputils.request.BaseRequest)>
+    <com.lzy.okhttputils.request.BaseRequest: okhttp3.RequestBody wrapRequestBody(okhttp3.RequestBody)>
+    <com.lzy.okhttputils.request.ProgressRequestBody: void setListener(com.lzy.okhttputils.request.ProgressRequestBody$Listener)>
+    <com.lzy.okhttputils.request.ProgressRequestBody: void setListener(com.lzy.okhttputils.request.ProgressRequestBody$Listener)>
+    <com.lzy.okhttputils.request.BaseRequest: okhttp3.RequestBody wrapRequestBody(okhttp3.RequestBody)>
+    <com.lzy.okhttputils.request.BaseRequest: void execute(com.lzy.okhttputils.callback.AbsCallback)>
+    <com.lzy.okhttputils.request.PostRequest: okhttp3.Request generateRequest(okhttp3.RequestBody)>
+    <okhttp3.Request$Builder: okhttp3.Request$Builder post(okhttp3.RequestBody)>
+    <okhttp3.Request$Builder: okhttp3.Request$Builder method(java.lang.String,okhttp3.RequestBody)>
+    <okhttp3.Request$Builder: okhttp3.Request$Builder method(java.lang.String,okhttp3.RequestBody)>
+    <okhttp3.Request$Builder: okhttp3.Request$Builder post(okhttp3.RequestBody)>
+    <com.lzy.okhttputils.request.PostRequest: okhttp3.Request generateRequest(okhttp3.RequestBody)>
+    <okhttp3.Request$Builder: okhttp3.Request build()>
+    <okhttp3.Request: void <init>(okhttp3.Request$Builder,okhttp3.Request$1)>
+    <okhttp3.Request: void <init>(okhttp3.Request$Builder)>
+    <okhttp3.Request$Builder: okhttp3.RequestBody access$300(okhttp3.Request$Builder)>
+    <okhttp3.Request$Builder: okhttp3.RequestBody access$300(okhttp3.Request$Builder)>
+    <okhttp3.Request: void <init>(okhttp3.Request$Builder)>
+    <okhttp3.Request: void <init>(okhttp3.Request$Builder)>
+    <okhttp3.Request: void <init>(okhttp3.Request$Builder,okhttp3.Request$1)>
+    <okhttp3.Request$Builder: okhttp3.Request build()>
+    <com.lzy.okhttputils.request.PostRequest: okhttp3.Request generateRequest(okhttp3.RequestBody)>
+    <com.lzy.okhttputils.request.BaseRequest: void execute(com.lzy.okhttputils.callback.AbsCallback)>
+    <com.lzy.okhttputils.request.BaseRequest: okhttp3.Call generateCall(okhttp3.Request)>
+
+Leak 27:
+  Source: $r1 = virtualinvoke r0.<com.id.avantee.views.login.RegisterActivity: android.view.View findViewById(int)>(2131689679) (None)
+  Sink: $r7 = virtualinvoke $r6.<okhttp3.OkHttpClient: okhttp3.Call newCall(okhttp3.Request)>($r2) (<okhttp3.OkHttpClient: okhttp3.Call newCall(okhttp3.Request)>)
+  Methods:
+    <com.id.avantee.views.login.RegisterActivity: void initView()>
+    <com.id.avantee.views.login.RegisterActivity: void initView()>
+    <com.id.avantee.views.login.RegisterActivity: void initView()>
+    <com.id.avantee.views.login.RegisterActivity: void initView()>
+    <com.id.avantee.base.BaseActivity: void onCreate(android.os.Bundle)>
+    <com.id.avantee.views.login.RegisterActivity: void loadData()>
+    <com.id.avantee.views.login.RegisterActivity$2: void <init>(com.id.avantee.views.login.RegisterActivity)>
+    <com.id.avantee.views.login.RegisterActivity$2: void <init>(com.id.avantee.views.login.RegisterActivity)>
+    <com.id.avantee.views.login.RegisterActivity: void loadData()>
+    <com.id.avantee.presenters.RegisterPresenter: void getAuthCodeImage(java.lang.String,com.id.avantee.interfaces.IRequestLisenter)>
+    <com.id.avantee.netservice.RegisterHelper: void getAuthCodeImage(java.lang.String,com.id.avantee.interfaces.IRequestLisenter)>
+    <com.id.avantee.request.OkGoUtil: void <init>(java.lang.Class,int,com.id.avantee.interfaces.IRequestLisenter)>
+    <com.id.avantee.request.OkGoUtil: void <init>(java.lang.Class,int,com.id.avantee.interfaces.IRequestLisenter)>
+    <com.id.avantee.netservice.RegisterHelper: void getAuthCodeImage(java.lang.String,com.id.avantee.interfaces.IRequestLisenter)>
+    <com.id.avantee.request.OkGoUtil: void requestPost(java.lang.String)>
+    <com.id.avantee.request.OkGoUtil$2: void <init>(com.id.avantee.request.OkGoUtil)>
+    <com.id.avantee.request.OkGoUtil$2: void <init>(com.id.avantee.request.OkGoUtil)>
+    <com.id.avantee.request.OkGoUtil: void requestPost(java.lang.String)>
+    <com.lzy.okhttputils.request.BaseRequest: void execute(com.lzy.okhttputils.callback.AbsCallback)>
+    <com.lzy.okhttputils.request.BaseRequest: void execute(com.lzy.okhttputils.callback.AbsCallback)>
+    <com.lzy.okhttputils.request.BaseBodyRequest: okhttp3.RequestBody generateRequestBody()>
+    <com.lzy.okhttputils.request.BaseRequest: void execute(com.lzy.okhttputils.callback.AbsCallback)>
+    <com.lzy.okhttputils.request.BaseRequest: okhttp3.RequestBody wrapRequestBody(okhttp3.RequestBody)>
+    <com.lzy.okhttputils.request.BaseRequest$1: void <init>(com.lzy.okhttputils.request.BaseRequest)>
+    <com.lzy.okhttputils.request.BaseRequest$1: void <init>(com.lzy.okhttputils.request.BaseRequest)>
+    <com.lzy.okhttputils.request.BaseRequest: okhttp3.RequestBody wrapRequestBody(okhttp3.RequestBody)>
+    <com.lzy.okhttputils.request.ProgressRequestBody: void setListener(com.lzy.okhttputils.request.ProgressRequestBody$Listener)>
+    <com.lzy.okhttputils.request.ProgressRequestBody: void setListener(com.lzy.okhttputils.request.ProgressRequestBody$Listener)>
+    <com.lzy.okhttputils.request.BaseRequest: okhttp3.RequestBody wrapRequestBody(okhttp3.RequestBody)>
+    <com.lzy.okhttputils.request.BaseRequest: void execute(com.lzy.okhttputils.callback.AbsCallback)>
+    <com.lzy.okhttputils.request.PostRequest: okhttp3.Request generateRequest(okhttp3.RequestBody)>
+    <okhttp3.Request$Builder: okhttp3.Request$Builder post(okhttp3.RequestBody)>
+    <okhttp3.Request$Builder: okhttp3.Request$Builder method(java.lang.String,okhttp3.RequestBody)>
+    <okhttp3.Request$Builder: okhttp3.Request$Builder method(java.lang.String,okhttp3.RequestBody)>
+    <okhttp3.Request$Builder: okhttp3.Request$Builder post(okhttp3.RequestBody)>
+    <com.lzy.okhttputils.request.PostRequest: okhttp3.Request generateRequest(okhttp3.RequestBody)>
+    <okhttp3.Request$Builder: okhttp3.Request build()>
+    <okhttp3.Request: void <init>(okhttp3.Request$Builder,okhttp3.Request$1)>
+    <okhttp3.Request: void <init>(okhttp3.Request$Builder)>
+    <okhttp3.Request$Builder: okhttp3.RequestBody access$300(okhttp3.Request$Builder)>
+    <okhttp3.Request$Builder: okhttp3.RequestBody access$300(okhttp3.Request$Builder)>
+    <okhttp3.Request: void <init>(okhttp3.Request$Builder)>
+    <okhttp3.Request: void <init>(okhttp3.Request$Builder)>
+    <okhttp3.Request: void <init>(okhttp3.Request$Builder,okhttp3.Request$1)>
+    <okhttp3.Request$Builder: okhttp3.Request build()>
+    <com.lzy.okhttputils.request.PostRequest: okhttp3.Request generateRequest(okhttp3.RequestBody)>
+    <com.lzy.okhttputils.request.BaseRequest: void execute(com.lzy.okhttputils.callback.AbsCallback)>
+    <com.lzy.okhttputils.request.BaseRequest: okhttp3.Call generateCall(okhttp3.Request)>
+
+Leak 28:
+  Source: $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r2, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: $r7 = virtualinvoke $r6.<okhttp3.OkHttpClient: okhttp3.Call newCall(okhttp3.Request)>($r2) (<okhttp3.OkHttpClient: okhttp3.Call newCall(okhttp3.Request)>)
+  Methods:
+    <com.id.avantee.utils.CommonUtil: java.lang.String getVersionName(android.content.Context)>
+    <com.id.avantee.utils.CommonUtil: java.lang.String getVersionName(android.content.Context)>
+    <com.id.avantee.utils.CommonUtil: java.lang.String getVersionName(android.content.Context)>
+    <com.id.avantee.presenters.HomePagePresenter: void getVersionData()>
+    <com.id.avantee.presenters.HomePagePresenter: void getVersionData()>
+    <com.id.avantee.netservice.AnyTimePayHelper: void getVersionData(java.lang.String,java.lang.String,com.id.avantee.interfaces.IRequestLisenter)>
+    <com.id.avantee.request.OkGoUtil: void params(java.lang.String,java.lang.String)>
+    <com.lzy.okhttputils.model.HttpParams: void put(java.lang.String,java.lang.String,boolean[])>
+    <com.lzy.okhttputils.model.HttpParams: void put(java.lang.String,java.lang.String,boolean[])>
+    <com.lzy.okhttputils.model.HttpParams: void put(java.lang.String,java.lang.String,boolean)>
+    <com.lzy.okhttputils.model.HttpParams: void put(java.lang.String,java.lang.String,boolean)>
+    <com.lzy.okhttputils.model.HttpParams: void put(java.lang.String,java.lang.String,boolean)>
+    <com.lzy.okhttputils.model.HttpParams: void put(java.lang.String,java.lang.String,boolean)>
+    <com.lzy.okhttputils.model.HttpParams: void put(java.lang.String,java.lang.String,boolean)>
+    <com.lzy.okhttputils.model.HttpParams: void put(java.lang.String,java.lang.String,boolean)>
+    <com.lzy.okhttputils.model.HttpParams: void put(java.lang.String,java.lang.String,boolean[])>
+    <com.id.avantee.request.OkGoUtil: void params(java.lang.String,java.lang.String)>
+    <com.id.avantee.request.OkGoUtil: void params(java.lang.String,java.lang.String)>
+    <com.id.avantee.netservice.AnyTimePayHelper: void getVersionData(java.lang.String,java.lang.String,com.id.avantee.interfaces.IRequestLisenter)>
+    <com.id.avantee.request.OkGoUtil: void requestPost(java.lang.String)>
+    <com.id.avantee.request.OkGoUtil$2: void <init>(com.id.avantee.request.OkGoUtil)>
+    <com.id.avantee.request.OkGoUtil$2: void <init>(com.id.avantee.request.OkGoUtil)>
+    <com.id.avantee.request.OkGoUtil: void requestPost(java.lang.String)>
+    <com.lzy.okhttputils.request.BaseRequest: void execute(com.lzy.okhttputils.callback.AbsCallback)>
+    <com.lzy.okhttputils.request.BaseRequest: void execute(com.lzy.okhttputils.callback.AbsCallback)>
+    <com.lzy.okhttputils.request.BaseBodyRequest: okhttp3.RequestBody generateRequestBody()>
+    <com.lzy.okhttputils.request.BaseRequest: void execute(com.lzy.okhttputils.callback.AbsCallback)>
+    <com.lzy.okhttputils.request.BaseRequest: okhttp3.RequestBody wrapRequestBody(okhttp3.RequestBody)>
+    <com.lzy.okhttputils.request.BaseRequest$1: void <init>(com.lzy.okhttputils.request.BaseRequest)>
+    <com.lzy.okhttputils.request.BaseRequest$1: void <init>(com.lzy.okhttputils.request.BaseRequest)>
+    <com.lzy.okhttputils.request.BaseRequest: okhttp3.RequestBody wrapRequestBody(okhttp3.RequestBody)>
+    <com.lzy.okhttputils.request.ProgressRequestBody: void setListener(com.lzy.okhttputils.request.ProgressRequestBody$Listener)>
+    <com.lzy.okhttputils.request.ProgressRequestBody: void setListener(com.lzy.okhttputils.request.ProgressRequestBody$Listener)>
+    <com.lzy.okhttputils.request.BaseRequest: okhttp3.RequestBody wrapRequestBody(okhttp3.RequestBody)>
+    <com.lzy.okhttputils.request.BaseRequest: void execute(com.lzy.okhttputils.callback.AbsCallback)>
+    <com.lzy.okhttputils.request.PostRequest: okhttp3.Request generateRequest(okhttp3.RequestBody)>
+    <okhttp3.Request$Builder: okhttp3.Request$Builder post(okhttp3.RequestBody)>
+    <okhttp3.Request$Builder: okhttp3.Request$Builder method(java.lang.String,okhttp3.RequestBody)>
+    <okhttp3.Request$Builder: okhttp3.Request$Builder method(java.lang.String,okhttp3.RequestBody)>
+    <okhttp3.Request$Builder: okhttp3.Request$Builder post(okhttp3.RequestBody)>
+    <com.lzy.okhttputils.request.PostRequest: okhttp3.Request generateRequest(okhttp3.RequestBody)>
+    <okhttp3.Request$Builder: okhttp3.Request build()>
+    <okhttp3.Request: void <init>(okhttp3.Request$Builder,okhttp3.Request$1)>
+    <okhttp3.Request: void <init>(okhttp3.Request$Builder)>
+    <okhttp3.Request$Builder: okhttp3.RequestBody access$300(okhttp3.Request$Builder)>
+    <okhttp3.Request$Builder: okhttp3.RequestBody access$300(okhttp3.Request$Builder)>
+    <okhttp3.Request: void <init>(okhttp3.Request$Builder)>
+    <okhttp3.Request: void <init>(okhttp3.Request$Builder)>
+    <okhttp3.Request: void <init>(okhttp3.Request$Builder,okhttp3.Request$1)>
+    <okhttp3.Request$Builder: okhttp3.Request build()>
+    <com.lzy.okhttputils.request.PostRequest: okhttp3.Request generateRequest(okhttp3.RequestBody)>
+    <com.lzy.okhttputils.request.BaseRequest: void execute(com.lzy.okhttputils.callback.AbsCallback)>
+    <com.lzy.okhttputils.request.BaseRequest: okhttp3.Call generateCall(okhttp3.Request)>
+
+Leak 29:
+  Source: $r1 = virtualinvoke r0.<com.id.avantee.views.login.ChangePwdActivity: android.view.View findViewById(int)>(2131689681) (None)
+  Sink: $r7 = virtualinvoke $r6.<okhttp3.OkHttpClient: okhttp3.Call newCall(okhttp3.Request)>($r2) (<okhttp3.OkHttpClient: okhttp3.Call newCall(okhttp3.Request)>)
+  Methods:
+    <com.id.avantee.views.login.ChangePwdActivity: void initView()>
+    <com.id.avantee.views.login.ChangePwdActivity: void initView()>
+    <com.id.avantee.views.login.ChangePwdActivity: void initView()>
+    <com.id.avantee.views.login.ChangePwdActivity: void initView()>
+    <com.id.avantee.base.BaseActivity: void onCreate(android.os.Bundle)>
+    <com.id.avantee.views.login.ChangePwdActivity: void loadData()>
+    <com.id.avantee.views.login.ChangePwdActivity$5: void <init>(com.id.avantee.views.login.ChangePwdActivity)>
+    <com.id.avantee.views.login.ChangePwdActivity$5: void <init>(com.id.avantee.views.login.ChangePwdActivity)>
+    <com.id.avantee.views.login.ChangePwdActivity: void loadData()>
+    <com.id.avantee.presenters.ChangePwdPresenter: void getAuthCodeImage(java.lang.String,com.id.avantee.interfaces.IRequestLisenter)>
+    <com.id.avantee.netservice.ChangePwdHelper: void getAuthCodeImage(java.lang.String,com.id.avantee.interfaces.IRequestLisenter)>
+    <com.id.avantee.request.OkGoUtil: void <init>(java.lang.Class,int,com.id.avantee.interfaces.IRequestLisenter)>
+    <com.id.avantee.request.OkGoUtil: void <init>(java.lang.Class,int,com.id.avantee.interfaces.IRequestLisenter)>
+    <com.id.avantee.netservice.ChangePwdHelper: void getAuthCodeImage(java.lang.String,com.id.avantee.interfaces.IRequestLisenter)>
+    <com.id.avantee.request.OkGoUtil: void requestPost(java.lang.String)>
+    <com.id.avantee.request.OkGoUtil$2: void <init>(com.id.avantee.request.OkGoUtil)>
+    <com.id.avantee.request.OkGoUtil$2: void <init>(com.id.avantee.request.OkGoUtil)>
+    <com.id.avantee.request.OkGoUtil: void requestPost(java.lang.String)>
+    <com.lzy.okhttputils.request.BaseRequest: void execute(com.lzy.okhttputils.callback.AbsCallback)>
+    <com.lzy.okhttputils.request.BaseRequest: void execute(com.lzy.okhttputils.callback.AbsCallback)>
+    <com.lzy.okhttputils.request.BaseBodyRequest: okhttp3.RequestBody generateRequestBody()>
+    <com.lzy.okhttputils.request.BaseRequest: void execute(com.lzy.okhttputils.callback.AbsCallback)>
+    <com.lzy.okhttputils.request.BaseRequest: okhttp3.RequestBody wrapRequestBody(okhttp3.RequestBody)>
+    <com.lzy.okhttputils.request.BaseRequest$1: void <init>(com.lzy.okhttputils.request.BaseRequest)>
+    <com.lzy.okhttputils.request.BaseRequest$1: void <init>(com.lzy.okhttputils.request.BaseRequest)>
+    <com.lzy.okhttputils.request.BaseRequest: okhttp3.RequestBody wrapRequestBody(okhttp3.RequestBody)>
+    <com.lzy.okhttputils.request.ProgressRequestBody: void setListener(com.lzy.okhttputils.request.ProgressRequestBody$Listener)>
+    <com.lzy.okhttputils.request.ProgressRequestBody: void setListener(com.lzy.okhttputils.request.ProgressRequestBody$Listener)>
+    <com.lzy.okhttputils.request.BaseRequest: okhttp3.RequestBody wrapRequestBody(okhttp3.RequestBody)>
+    <com.lzy.okhttputils.request.BaseRequest: void execute(com.lzy.okhttputils.callback.AbsCallback)>
+    <com.lzy.okhttputils.request.PostRequest: okhttp3.Request generateRequest(okhttp3.RequestBody)>
+    <okhttp3.Request$Builder: okhttp3.Request$Builder post(okhttp3.RequestBody)>
+    <okhttp3.Request$Builder: okhttp3.Request$Builder method(java.lang.String,okhttp3.RequestBody)>
+    <okhttp3.Request$Builder: okhttp3.Request$Builder method(java.lang.String,okhttp3.RequestBody)>
+    <okhttp3.Request$Builder: okhttp3.Request$Builder post(okhttp3.RequestBody)>
+    <com.lzy.okhttputils.request.PostRequest: okhttp3.Request generateRequest(okhttp3.RequestBody)>
+    <okhttp3.Request$Builder: okhttp3.Request build()>
+    <okhttp3.Request: void <init>(okhttp3.Request$Builder,okhttp3.Request$1)>
+    <okhttp3.Request: void <init>(okhttp3.Request$Builder)>
+    <okhttp3.Request$Builder: okhttp3.RequestBody access$300(okhttp3.Request$Builder)>
+    <okhttp3.Request$Builder: okhttp3.RequestBody access$300(okhttp3.Request$Builder)>
+    <okhttp3.Request: void <init>(okhttp3.Request$Builder)>
+    <okhttp3.Request: void <init>(okhttp3.Request$Builder)>
+    <okhttp3.Request: void <init>(okhttp3.Request$Builder,okhttp3.Request$1)>
+    <okhttp3.Request$Builder: okhttp3.Request build()>
+    <com.lzy.okhttputils.request.PostRequest: okhttp3.Request generateRequest(okhttp3.RequestBody)>
+    <com.lzy.okhttputils.request.BaseRequest: void execute(com.lzy.okhttputils.callback.AbsCallback)>
+    <com.lzy.okhttputils.request.BaseRequest: okhttp3.Call generateCall(okhttp3.Request)>
+
+Leak 30:
+  Source: $r1 = virtualinvoke r0.<com.id.avantee.views.login.UpdatePwdActivity: android.view.View findViewById(int)>(2131689772) (None)
+  Sink: $r7 = virtualinvoke $r6.<okhttp3.OkHttpClient: okhttp3.Call newCall(okhttp3.Request)>($r2) (<okhttp3.OkHttpClient: okhttp3.Call newCall(okhttp3.Request)>)
+  Methods:
+    <com.id.avantee.views.login.UpdatePwdActivity: void initView()>
+    <com.id.avantee.views.login.UpdatePwdActivity: void initView()>
+    <com.id.avantee.views.login.UpdatePwdActivity: void initView()>
+    <com.id.avantee.views.login.UpdatePwdActivity: void initView()>
+    <com.id.avantee.base.BaseActivity: void onCreate(android.os.Bundle)>
+    <com.id.avantee.views.login.UpdatePwdActivity: void onCreate(android.os.Bundle)>
+    <dummyMainClass: com.id.avantee.views.login.UpdatePwdActivity dummyMainMethod_com_id_avantee_views_login_UpdatePwdActivity(android.content.Intent)>
+    <com.id.avantee.views.login.UpdatePwdActivity$2: void <init>(com.id.avantee.views.login.UpdatePwdActivity)>
+    <dummyMainClass: com.id.avantee.views.login.UpdatePwdActivity dummyMainMethod_com_id_avantee_views_login_UpdatePwdActivity(android.content.Intent)>
+    <com.id.avantee.views.login.UpdatePwdActivity$2: void <init>(com.id.avantee.views.login.UpdatePwdActivity)>
+    <com.id.avantee.views.login.UpdatePwdActivity$2: void <init>(com.id.avantee.views.login.UpdatePwdActivity)>
+    <dummyMainClass: com.id.avantee.views.login.UpdatePwdActivity dummyMainMethod_com_id_avantee_views_login_UpdatePwdActivity(android.content.Intent)>
+    <com.id.avantee.views.login.UpdatePwdActivity$2: void onClick(android.view.View)>
+    <com.id.avantee.views.login.UpdatePwdActivity$2: void onClick(android.view.View)>
+    <com.id.avantee.views.login.UpdatePwdActivity: android.widget.EditText access$100(com.id.avantee.views.login.UpdatePwdActivity)>
+    <com.id.avantee.views.login.UpdatePwdActivity: android.widget.EditText access$100(com.id.avantee.views.login.UpdatePwdActivity)>
+    <com.id.avantee.views.login.UpdatePwdActivity$2: void onClick(android.view.View)>
+    <com.id.avantee.views.login.UpdatePwdActivity$2: void onClick(android.view.View)>
+    <com.id.avantee.views.login.UpdatePwdActivity$2: void onClick(android.view.View)>
+    <com.id.avantee.views.login.UpdatePwdActivity$2: void onClick(android.view.View)>
+    <com.id.avantee.presenters.UpdatePwdPresenter: void getUpdatePwdData(java.lang.String,java.lang.String,com.id.avantee.interfaces.IRequestLisenter)>
+    <com.id.avantee.netservice.UpdatePwdHelper: void getUpdatePwdData(java.lang.String,java.lang.String,com.id.avantee.interfaces.IRequestLisenter)>
+    <com.id.avantee.request.OkGoUtil: void params(java.lang.String,java.lang.String)>
+    <com.lzy.okhttputils.model.HttpParams: void put(java.lang.String,java.lang.String,boolean[])>
+    <com.lzy.okhttputils.model.HttpParams: void put(java.lang.String,java.lang.String,boolean[])>
+    <com.lzy.okhttputils.model.HttpParams: void put(java.lang.String,java.lang.String,boolean)>
+    <com.lzy.okhttputils.model.HttpParams: void put(java.lang.String,java.lang.String,boolean)>
+    <com.lzy.okhttputils.model.HttpParams: void put(java.lang.String,java.lang.String,boolean)>
+    <com.lzy.okhttputils.model.HttpParams: void put(java.lang.String,java.lang.String,boolean)>
+    <com.lzy.okhttputils.model.HttpParams: void put(java.lang.String,java.lang.String,boolean)>
+    <com.lzy.okhttputils.model.HttpParams: void put(java.lang.String,java.lang.String,boolean)>
+    <com.lzy.okhttputils.model.HttpParams: void put(java.lang.String,java.lang.String,boolean[])>
+    <com.id.avantee.request.OkGoUtil: void params(java.lang.String,java.lang.String)>
+    <com.id.avantee.request.OkGoUtil: void params(java.lang.String,java.lang.String)>
+    <com.id.avantee.netservice.UpdatePwdHelper: void getUpdatePwdData(java.lang.String,java.lang.String,com.id.avantee.interfaces.IRequestLisenter)>
+    <com.id.avantee.request.OkGoUtil: void requestPost(java.lang.String)>
+    <com.id.avantee.request.OkGoUtil$2: void <init>(com.id.avantee.request.OkGoUtil)>
+    <com.id.avantee.request.OkGoUtil$2: void <init>(com.id.avantee.request.OkGoUtil)>
+    <com.id.avantee.request.OkGoUtil: void requestPost(java.lang.String)>
+    <com.lzy.okhttputils.request.BaseRequest: void execute(com.lzy.okhttputils.callback.AbsCallback)>
+    <com.lzy.okhttputils.request.BaseRequest: void execute(com.lzy.okhttputils.callback.AbsCallback)>
+    <com.lzy.okhttputils.request.BaseBodyRequest: okhttp3.RequestBody generateRequestBody()>
+    <com.lzy.okhttputils.request.BaseRequest: void execute(com.lzy.okhttputils.callback.AbsCallback)>
+    <com.lzy.okhttputils.request.BaseRequest: okhttp3.RequestBody wrapRequestBody(okhttp3.RequestBody)>
+    <com.lzy.okhttputils.request.BaseRequest$1: void <init>(com.lzy.okhttputils.request.BaseRequest)>
+    <com.lzy.okhttputils.request.BaseRequest$1: void <init>(com.lzy.okhttputils.request.BaseRequest)>
+    <com.lzy.okhttputils.request.BaseRequest: okhttp3.RequestBody wrapRequestBody(okhttp3.RequestBody)>
+    <com.lzy.okhttputils.request.ProgressRequestBody: void setListener(com.lzy.okhttputils.request.ProgressRequestBody$Listener)>
+    <com.lzy.okhttputils.request.ProgressRequestBody: void setListener(com.lzy.okhttputils.request.ProgressRequestBody$Listener)>
+    <com.lzy.okhttputils.request.BaseRequest: okhttp3.RequestBody wrapRequestBody(okhttp3.RequestBody)>
+    <com.lzy.okhttputils.request.BaseRequest: void execute(com.lzy.okhttputils.callback.AbsCallback)>
+    <com.lzy.okhttputils.request.PostRequest: okhttp3.Request generateRequest(okhttp3.RequestBody)>
+    <okhttp3.Request$Builder: okhttp3.Request$Builder post(okhttp3.RequestBody)>
+    <okhttp3.Request$Builder: okhttp3.Request$Builder method(java.lang.String,okhttp3.RequestBody)>
+    <okhttp3.Request$Builder: okhttp3.Request$Builder method(java.lang.String,okhttp3.RequestBody)>
+    <okhttp3.Request$Builder: okhttp3.Request$Builder post(okhttp3.RequestBody)>
+    <com.lzy.okhttputils.request.PostRequest: okhttp3.Request generateRequest(okhttp3.RequestBody)>
+    <okhttp3.Request$Builder: okhttp3.Request build()>
+    <okhttp3.Request: void <init>(okhttp3.Request$Builder,okhttp3.Request$1)>
+    <okhttp3.Request: void <init>(okhttp3.Request$Builder)>
+    <okhttp3.Request$Builder: okhttp3.RequestBody access$300(okhttp3.Request$Builder)>
+    <okhttp3.Request$Builder: okhttp3.RequestBody access$300(okhttp3.Request$Builder)>
+    <okhttp3.Request: void <init>(okhttp3.Request$Builder)>
+    <okhttp3.Request: void <init>(okhttp3.Request$Builder)>
+    <okhttp3.Request: void <init>(okhttp3.Request$Builder,okhttp3.Request$1)>
+    <okhttp3.Request$Builder: okhttp3.Request build()>
+    <com.lzy.okhttputils.request.PostRequest: okhttp3.Request generateRequest(okhttp3.RequestBody)>
+    <com.lzy.okhttputils.request.BaseRequest: void execute(com.lzy.okhttputils.callback.AbsCallback)>
+    <com.lzy.okhttputils.request.BaseRequest: okhttp3.Call generateCall(okhttp3.Request)>
+
+Leak 31:
+  Source: $r1 = virtualinvoke r0.<com.id.avantee.views.login.LoginActivity: android.view.View findViewById(int)>(2131689727) (None)
+  Sink: $r7 = virtualinvoke $r6.<okhttp3.OkHttpClient: okhttp3.Call newCall(okhttp3.Request)>($r2) (<okhttp3.OkHttpClient: okhttp3.Call newCall(okhttp3.Request)>)
+  Methods:
+    <com.id.avantee.views.login.LoginActivity: void initView()>
+    <com.id.avantee.views.login.LoginActivity: void initView()>
+    <com.id.avantee.views.login.LoginActivity: void initView()>
+    <com.id.avantee.views.login.LoginActivity: void initView()>
+    <com.id.avantee.base.BaseActivity: void onCreate(android.os.Bundle)>
+    <com.id.avantee.views.login.LoginActivity: void onCreate(android.os.Bundle)>
+    <dummyMainClass: com.id.avantee.views.login.LoginActivity dummyMainMethod_com_id_avantee_views_login_LoginActivity(android.content.Intent)>
+    <com.id.avantee.views.login.LoginActivity: void onClick(android.view.View)>
+    <com.id.avantee.views.login.LoginActivity: void toLogin()>
+    <com.id.avantee.views.login.LoginActivity: void toLogin()>
+    <com.id.avantee.views.login.LoginActivity: void toLogin()>
+    <com.id.avantee.views.login.LoginActivity: void toLogin()>
+    <com.id.avantee.views.login.LoginActivity: void toLogin()>
+    <com.id.avantee.presenters.LoginPresenter: void getLoginData(java.lang.String,java.lang.String)>
+    <com.id.avantee.netservice.LoginHelper: void getLoginData(java.lang.String,java.lang.String,com.id.avantee.interfaces.IRequestLisenter)>
+    <com.id.avantee.request.OkGoUtil: void params(java.lang.String,java.lang.String)>
+    <com.lzy.okhttputils.model.HttpParams: void put(java.lang.String,java.lang.String,boolean[])>
+    <com.lzy.okhttputils.model.HttpParams: void put(java.lang.String,java.lang.String,boolean[])>
+    <com.lzy.okhttputils.model.HttpParams: void put(java.lang.String,java.lang.String,boolean)>
+    <com.lzy.okhttputils.model.HttpParams: void put(java.lang.String,java.lang.String,boolean)>
+    <com.lzy.okhttputils.model.HttpParams: void put(java.lang.String,java.lang.String,boolean)>
+    <com.lzy.okhttputils.model.HttpParams: void put(java.lang.String,java.lang.String,boolean)>
+    <com.lzy.okhttputils.model.HttpParams: void put(java.lang.String,java.lang.String,boolean)>
+    <com.lzy.okhttputils.model.HttpParams: void put(java.lang.String,java.lang.String,boolean)>
+    <com.lzy.okhttputils.model.HttpParams: void put(java.lang.String,java.lang.String,boolean[])>
+    <com.id.avantee.request.OkGoUtil: void params(java.lang.String,java.lang.String)>
+    <com.id.avantee.request.OkGoUtil: void params(java.lang.String,java.lang.String)>
+    <com.id.avantee.netservice.LoginHelper: void getLoginData(java.lang.String,java.lang.String,com.id.avantee.interfaces.IRequestLisenter)>
+    <com.id.avantee.request.OkGoUtil: void requestPost(java.lang.String)>
+    <com.id.avantee.request.OkGoUtil$2: void <init>(com.id.avantee.request.OkGoUtil)>
+    <com.id.avantee.request.OkGoUtil$2: void <init>(com.id.avantee.request.OkGoUtil)>
+    <com.id.avantee.request.OkGoUtil: void requestPost(java.lang.String)>
+    <com.lzy.okhttputils.request.BaseRequest: void execute(com.lzy.okhttputils.callback.AbsCallback)>
+    <com.lzy.okhttputils.request.BaseRequest: void execute(com.lzy.okhttputils.callback.AbsCallback)>
+    <com.lzy.okhttputils.request.BaseBodyRequest: okhttp3.RequestBody generateRequestBody()>
+    <com.lzy.okhttputils.request.BaseRequest: void execute(com.lzy.okhttputils.callback.AbsCallback)>
+    <com.lzy.okhttputils.request.BaseRequest: okhttp3.RequestBody wrapRequestBody(okhttp3.RequestBody)>
+    <com.lzy.okhttputils.request.BaseRequest$1: void <init>(com.lzy.okhttputils.request.BaseRequest)>
+    <com.lzy.okhttputils.request.BaseRequest$1: void <init>(com.lzy.okhttputils.request.BaseRequest)>
+    <com.lzy.okhttputils.request.BaseRequest: okhttp3.RequestBody wrapRequestBody(okhttp3.RequestBody)>
+    <com.lzy.okhttputils.request.ProgressRequestBody: void setListener(com.lzy.okhttputils.request.ProgressRequestBody$Listener)>
+    <com.lzy.okhttputils.request.ProgressRequestBody: void setListener(com.lzy.okhttputils.request.ProgressRequestBody$Listener)>
+    <com.lzy.okhttputils.request.BaseRequest: okhttp3.RequestBody wrapRequestBody(okhttp3.RequestBody)>
+    <com.lzy.okhttputils.request.BaseRequest: void execute(com.lzy.okhttputils.callback.AbsCallback)>
+    <com.lzy.okhttputils.request.PostRequest: okhttp3.Request generateRequest(okhttp3.RequestBody)>
+    <okhttp3.Request$Builder: okhttp3.Request$Builder post(okhttp3.RequestBody)>
+    <okhttp3.Request$Builder: okhttp3.Request$Builder method(java.lang.String,okhttp3.RequestBody)>
+    <okhttp3.Request$Builder: okhttp3.Request$Builder method(java.lang.String,okhttp3.RequestBody)>
+    <okhttp3.Request$Builder: okhttp3.Request$Builder post(okhttp3.RequestBody)>
+    <com.lzy.okhttputils.request.PostRequest: okhttp3.Request generateRequest(okhttp3.RequestBody)>
+    <okhttp3.Request$Builder: okhttp3.Request build()>
+    <okhttp3.Request: void <init>(okhttp3.Request$Builder,okhttp3.Request$1)>
+    <okhttp3.Request: void <init>(okhttp3.Request$Builder)>
+    <okhttp3.Request$Builder: okhttp3.RequestBody access$300(okhttp3.Request$Builder)>
+    <okhttp3.Request$Builder: okhttp3.RequestBody access$300(okhttp3.Request$Builder)>
+    <okhttp3.Request: void <init>(okhttp3.Request$Builder)>
+    <okhttp3.Request: void <init>(okhttp3.Request$Builder)>
+    <okhttp3.Request: void <init>(okhttp3.Request$Builder,okhttp3.Request$1)>
+    <okhttp3.Request$Builder: okhttp3.Request build()>
+    <com.lzy.okhttputils.request.PostRequest: okhttp3.Request generateRequest(okhttp3.RequestBody)>
+    <com.lzy.okhttputils.request.BaseRequest: void execute(com.lzy.okhttputils.callback.AbsCallback)>
+    <com.lzy.okhttputils.request.BaseRequest: okhttp3.Call generateCall(okhttp3.Request)>
+
+Leak 32:
+  Source: $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r2, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r0, $r1) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.umeng.commonsdk.statistics.common.DeviceConfig: java.lang.String getAppName(android.content.Context)>
+    <com.umeng.commonsdk.statistics.common.DeviceConfig: java.lang.String getAppName(android.content.Context)>
+    <com.umeng.commonsdk.statistics.common.DeviceConfig: java.lang.String getAppName(android.content.Context)>
+    <com.umeng.commonsdk.statistics.common.DeviceConfig: java.lang.String getAppName(android.content.Context)>
+    <com.umeng.commonsdk.statistics.common.DeviceConfig: java.lang.String getAppName(android.content.Context)>
+    <com.umeng.commonsdk.stateless.UMSLEnvelopeBuild: org.json.JSONObject buildSLBaseHeader(android.content.Context)>
+    <com.umeng.commonsdk.stateless.UMSLEnvelopeBuild: org.json.JSONObject buildSLBaseHeader(android.content.Context)>
+    <com.umeng.commonsdk.stateless.UMSLEnvelopeBuild: org.json.JSONObject buildSLBaseHeader(android.content.Context)>
+    <com.umeng.commonsdk.stateless.UMSLEnvelopeBuild: org.json.JSONObject buildSLBaseHeader(android.content.Context)>
+    <com.umeng.commonsdk.stateless.UMSLEnvelopeBuild: org.json.JSONObject buildSLBaseHeader(android.content.Context)>
+    <com.umeng.commonsdk.stateless.UMSLEnvelopeBuild: org.json.JSONObject buildSLBaseHeader(android.content.Context)>
+    <com.umeng.commonsdk.statistics.common.e: void a(java.lang.String,java.lang.Object[])>
+    <com.umeng.commonsdk.statistics.common.e: void a(java.lang.String,java.lang.Object[])>
+    <com.umeng.commonsdk.statistics.common.e: void a(java.lang.String,java.lang.Object[])>
+    <com.umeng.commonsdk.statistics.common.e: void c(java.lang.String,java.lang.String,java.lang.Throwable)>
+    <com.umeng.commonsdk.statistics.common.e: void a(int,java.lang.String,java.lang.String,java.lang.Throwable)>
+    <com.umeng.commonsdk.statistics.common.e: void a(int,java.lang.String,java.lang.String,java.lang.Throwable)>
+
+Leak 33:
+  Source: $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r2, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r0, $r1) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.umeng.commonsdk.utils.UMUtils: java.lang.String getAppVersionName(android.content.Context)>
+    <com.umeng.commonsdk.utils.UMUtils: java.lang.String getAppVersionName(android.content.Context)>
+    <com.umeng.commonsdk.utils.UMUtils: java.lang.String getAppVersionName(android.content.Context)>
+    <com.umeng.commonsdk.statistics.common.DeviceConfig: java.lang.String getAppVersionName(android.content.Context)>
+    <com.umeng.commonsdk.stateless.UMSLEnvelopeBuild: org.json.JSONObject buildSLBaseHeader(android.content.Context)>
+    <com.umeng.commonsdk.stateless.UMSLEnvelopeBuild: org.json.JSONObject buildSLBaseHeader(android.content.Context)>
+    <com.umeng.commonsdk.stateless.UMSLEnvelopeBuild: org.json.JSONObject buildSLBaseHeader(android.content.Context)>
+    <com.umeng.commonsdk.stateless.UMSLEnvelopeBuild: org.json.JSONObject buildSLBaseHeader(android.content.Context)>
+    <com.umeng.commonsdk.stateless.UMSLEnvelopeBuild: org.json.JSONObject buildSLBaseHeader(android.content.Context)>
+    <com.umeng.commonsdk.stateless.UMSLEnvelopeBuild: org.json.JSONObject buildSLBaseHeader(android.content.Context)>
+    <com.umeng.commonsdk.statistics.common.e: void a(java.lang.String,java.lang.Object[])>
+    <com.umeng.commonsdk.statistics.common.e: void a(java.lang.String,java.lang.Object[])>
+    <com.umeng.commonsdk.statistics.common.e: void a(java.lang.String,java.lang.Object[])>
+    <com.umeng.commonsdk.statistics.common.e: void c(java.lang.String,java.lang.String,java.lang.Throwable)>
+    <com.umeng.commonsdk.statistics.common.e: void a(int,java.lang.String,java.lang.String,java.lang.Throwable)>
+    <com.umeng.commonsdk.statistics.common.e: void a(int,java.lang.String,java.lang.String,java.lang.Throwable)>
+
+Leak 34:
+  Source: $r3 = virtualinvoke $r2.<android.content.pm.PackageManager: java.util.List getInstalledPackages(int)>(8192) (<android.content.pm.PackageManager: java.util.List getInstalledPackages(int)>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("xzLog", $r0) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.id.avantee.utils.DeviceHelper: java.util.List getAppPackageNames(android.content.Context)>
+    <com.id.avantee.utils.DeviceHelper: java.util.List getAppPackageNames(android.content.Context)>
+    <com.id.avantee.utils.DeviceHelper: java.util.List getAppPackageNames(android.content.Context)>
+    <com.id.avantee.utils.DeviceHelper: java.util.List getAppPackageNames(android.content.Context)>
+    <com.id.avantee.utils.DeviceHelper: java.util.List getAppPackageNames(android.content.Context)>
+    <com.id.avantee.models.device.AppListInfo: void <init>(java.lang.String,java.lang.String)>
+    <com.id.avantee.models.device.AppListInfo: void <init>(java.lang.String,java.lang.String)>
+    <com.id.avantee.utils.DeviceHelper: java.util.List getAppPackageNames(android.content.Context)>
+    <com.id.avantee.utils.DeviceHelper: java.util.List getAppPackageNames(android.content.Context)>
+    <com.id.avantee.utils.DeviceHelper: java.util.List getAppPackageNames(android.content.Context)>
+    <com.id.avantee.utils.DeviceHelper: java.util.List getAppPackageNames(android.content.Context)>
+    <com.id.avantee.utils.DeviceHelper: java.util.List getAppPackageNames(android.content.Context)>
+    <com.id.avantee.utils.LogsUtil: void d(java.lang.String)>
+    <com.id.avantee.utils.LogsUtil: void showLog(com.id.avantee.utils.LogsUtil$LogType,java.lang.String)>
+
+Leak 35:
+  Source: $r3 = staticinvoke <android.os.Environment: java.io.File getExternalStorageDirectory()>() (<android.os.Environment: java.io.File getExternalStorageDirectory()>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("xzLog", $r0) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.id.avantee.utils.Configuration: java.lang.String parsePath(java.lang.String)>
+    <com.id.avantee.utils.Configuration: java.lang.String parsePath(java.lang.String)>
+    <com.id.avantee.utils.Configuration: java.lang.String parsePath(java.lang.String)>
+    <com.id.avantee.utils.Configuration: java.lang.String parsePath(java.lang.String)>
+    <com.id.avantee.utils.Configuration: com.id.avantee.utils.Configuration buildConfig(android.content.Context)>
+    <com.id.avantee.utils.Configuration: com.id.avantee.utils.Configuration buildConfig(android.content.Context)>
+    <com.id.avantee.IDApplication: void coreInit()>
+    <com.id.avantee.utils.Configuration: java.lang.String getPublicBasePath()>
+    <com.id.avantee.utils.Configuration: java.lang.String getPublicBasePath()>
+    <com.id.avantee.IDApplication: void coreInit()>
+    <com.id.avantee.IDApplication: void coreInit()>
+    <com.id.avantee.IDApplication: void coreInit()>
+    <com.id.avantee.IDApplication: void coreInit()>
+    <com.id.avantee.IDApplication: void coreInit()>
+    <com.id.avantee.IDApplication: void coreInit()>
+    <com.id.avantee.IDApplication: void coreInit()>
+    <com.id.avantee.IDApplication: void coreInit()>
+    <com.id.avantee.IDApplication: void coreInit()>
+    <com.id.avantee.IDApplication: void coreInit()>
+    <com.id.avantee.IDApplication: void coreInit()>
+    <com.id.avantee.utils.LogsUtil: void d(java.lang.String)>
+    <com.id.avantee.utils.LogsUtil: void showLog(com.id.avantee.utils.LogsUtil$LogType,java.lang.String)>
+

@@ -1,0 +1,38 @@
+APK: Bayes (KenyaApproved)
+Leak 1:
+  Source: $r2 = virtualinvoke $r0.<android.content.Context: java.io.File getExternalFilesDir(java.lang.String)>(null) (<android.content.Context: java.io.File getExternalFilesDir(java.lang.String)>)
+  Sink: staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r6, $r8) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.freshchat.consumer.sdk.j.x: java.io.File j(android.content.Context,java.lang.String)>
+    <com.freshchat.consumer.sdk.j.x: java.io.File j(android.content.Context,java.lang.String)>
+    <com.freshchat.consumer.sdk.j.x: java.io.File j(android.content.Context,java.lang.String)>
+    <com.freshchat.consumer.sdk.j.x: java.io.File j(android.content.Context,java.lang.String)>
+    <com.freshchat.consumer.sdk.j.x: java.io.File j(android.content.Context,java.lang.String)>
+    <com.freshchat.consumer.sdk.j.x: java.io.File j(android.content.Context,java.lang.String)>
+    <com.freshchat.consumer.sdk.j.x: java.io.File b(android.content.Context,com.freshchat.consumer.sdk.beans.Message)>
+    <com.freshchat.consumer.sdk.j.x: java.io.File b(android.content.Context,com.freshchat.consumer.sdk.beans.Message)>
+    <com.freshchat.consumer.sdk.j.h: void startRecording()>
+    <com.freshchat.consumer.sdk.j.h$a: void a(java.io.File)>
+    <com.freshchat.consumer.sdk.j.h$a: void a(java.io.File)>
+    <com.freshchat.consumer.sdk.j.h: void startRecording()>
+    <com.freshchat.consumer.sdk.j.h: void b(com.freshchat.consumer.sdk.j.h$a)>
+    <com.freshchat.consumer.sdk.j.h: void b(com.freshchat.consumer.sdk.j.h$a)>
+    <com.freshchat.consumer.sdk.j.h: void startRecording()>
+    <com.freshchat.consumer.sdk.j.h$1: void <init>(com.freshchat.consumer.sdk.j.h)>
+    <com.freshchat.consumer.sdk.j.h$1: void <init>(com.freshchat.consumer.sdk.j.h)>
+    <com.freshchat.consumer.sdk.j.h: void startRecording()>
+    <com.freshchat.consumer.sdk.j.h: void startRecording()>
+    <com.freshchat.consumer.sdk.j.h$1: void run()>
+    <com.freshchat.consumer.sdk.j.h$1: void run()>
+    <com.freshchat.consumer.sdk.j.h: void eh()>
+    <com.freshchat.consumer.sdk.j.h: void q(boolean)>
+    <com.freshchat.consumer.sdk.j.h: com.freshchat.consumer.sdk.j.h$a ek()>
+    <com.freshchat.consumer.sdk.j.h: com.freshchat.consumer.sdk.j.h$a ek()>
+    <com.freshchat.consumer.sdk.j.h: void q(boolean)>
+    <com.freshchat.consumer.sdk.j.h$a: java.io.File er()>
+    <com.freshchat.consumer.sdk.j.h$a: java.io.File er()>
+    <com.freshchat.consumer.sdk.j.h: void q(boolean)>
+    <com.freshchat.consumer.sdk.j.h: void q(boolean)>
+    <com.freshchat.consumer.sdk.j.h: void q(boolean)>
+    <com.freshchat.consumer.sdk.j.h: void q(boolean)>
+

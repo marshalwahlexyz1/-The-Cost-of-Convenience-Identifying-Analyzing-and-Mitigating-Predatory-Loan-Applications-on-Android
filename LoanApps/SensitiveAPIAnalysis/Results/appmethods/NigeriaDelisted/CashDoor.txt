@@ -1,0 +1,26 @@
+APK: CashDoor (NigeriaDelisted)
+Leak 1:
+  Source: $r5 = virtualinvoke $r4.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r3, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r5.<java.io.FileOutputStream: void write(byte[])>($r7) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <c2.l0: java.lang.String v()>
+    <c2.l0: java.lang.String v()>
+    <c2.l0: java.lang.String v()>
+    <e2.c: void <init>(java.lang.Throwable,e2.c$c)>
+    <e2.c: void <init>(java.lang.Throwable,e2.c$c)>
+    <e2.c: void <init>(java.lang.Throwable,e2.c$c,kotlin.jvm.internal.DefaultConstructorMarker)>
+    <e2.c$a: e2.c b(java.lang.Throwable,e2.c$c)>
+    <h2.a: void b(java.lang.Throwable,java.lang.Object)>
+    <e2.c: void g()>
+    <e2.c: java.lang.String toString()>
+    <e2.c: org.json.JSONObject e()>
+    <e2.c: org.json.JSONObject d()>
+    <e2.c: org.json.JSONObject d()>
+    <e2.c: org.json.JSONObject d()>
+    <e2.c: org.json.JSONObject e()>
+    <e2.c: java.lang.String toString()>
+    <e2.c: java.lang.String toString()>
+    <e2.c: void g()>
+    <e2.k: void t(java.lang.String,java.lang.String)>
+    <e2.k: void t(java.lang.String,java.lang.String)>
+

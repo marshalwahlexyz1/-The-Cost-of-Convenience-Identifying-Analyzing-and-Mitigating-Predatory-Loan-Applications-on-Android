@@ -1,0 +1,1064 @@
+APK: Fastpeso (PhilippinesApproved)
+Leak 1:
+  Source: $r11 = virtualinvoke $r10.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r8, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r21.<java.io.OutputStream: void write(byte[])>($r2) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.tencent.smtt.sdk.a.b: void a(android.content.Context,java.lang.String,java.lang.String,java.lang.String,int,boolean,long)>
+    <com.tencent.smtt.sdk.a.b: void a(android.content.Context,java.lang.String,java.lang.String,java.lang.String,int,boolean,long)>
+    <com.tencent.smtt.sdk.a.b: void a(android.content.Context,java.lang.String,java.lang.String,java.lang.String,int,boolean,long)>
+    <com.tencent.smtt.sdk.a.b: void a(android.content.Context,java.lang.String,java.lang.String,java.lang.String,int,boolean,long)>
+    <com.tencent.smtt.sdk.a.b: void a(MTT.ThirdAppInfoNew,android.content.Context)>
+    <com.tencent.smtt.sdk.a.c: void <init>(java.lang.String,android.content.Context,MTT.ThirdAppInfoNew)>
+    <com.tencent.smtt.sdk.a.c: void <init>(java.lang.String,android.content.Context,MTT.ThirdAppInfoNew)>
+    <com.tencent.smtt.sdk.a.b: void a(MTT.ThirdAppInfoNew,android.content.Context)>
+    <com.tencent.smtt.sdk.a.c: void run()>
+    <com.tencent.smtt.sdk.a.c: void run()>
+    <com.tencent.smtt.sdk.a.b: org.json.JSONObject b(MTT.ThirdAppInfoNew,android.content.Context)>
+    <com.tencent.smtt.sdk.a.b: org.json.JSONObject c(MTT.ThirdAppInfoNew,android.content.Context)>
+    <com.tencent.smtt.sdk.a.b: org.json.JSONObject c(MTT.ThirdAppInfoNew,android.content.Context)>
+    <com.tencent.smtt.sdk.a.b: org.json.JSONObject c(MTT.ThirdAppInfoNew,android.content.Context)>
+    <com.tencent.smtt.sdk.a.b: org.json.JSONObject b(MTT.ThirdAppInfoNew,android.content.Context)>
+    <com.tencent.smtt.sdk.a.c: void run()>
+    <com.tencent.smtt.sdk.a.c: void run()>
+    <com.tencent.smtt.sdk.a.c: void run()>
+
+Leak 2:
+  Source: $r1 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() (<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>)
+  Sink: virtualinvoke $r21.<java.io.OutputStream: void write(byte[])>($r2) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.tencent.smtt.utils.b: java.lang.String d(android.content.Context)>
+    <com.tencent.smtt.utils.b: java.lang.String d(android.content.Context)>
+    <com.tencent.smtt.sdk.a.b: void a(android.content.Context,java.lang.String,java.lang.String,java.lang.String,int,boolean,long)>
+    <com.tencent.smtt.sdk.a.b: void a(android.content.Context,java.lang.String,java.lang.String,java.lang.String,int,boolean,long)>
+    <com.tencent.smtt.sdk.a.b: void a(MTT.ThirdAppInfoNew,android.content.Context)>
+    <com.tencent.smtt.sdk.a.c: void <init>(java.lang.String,android.content.Context,MTT.ThirdAppInfoNew)>
+    <com.tencent.smtt.sdk.a.c: void <init>(java.lang.String,android.content.Context,MTT.ThirdAppInfoNew)>
+    <com.tencent.smtt.sdk.a.b: void a(MTT.ThirdAppInfoNew,android.content.Context)>
+    <com.tencent.smtt.sdk.a.c: void run()>
+    <com.tencent.smtt.sdk.a.c: void run()>
+    <com.tencent.smtt.sdk.a.b: org.json.JSONObject b(MTT.ThirdAppInfoNew,android.content.Context)>
+    <com.tencent.smtt.sdk.a.b: org.json.JSONObject c(MTT.ThirdAppInfoNew,android.content.Context)>
+    <com.tencent.smtt.sdk.a.b: org.json.JSONObject c(MTT.ThirdAppInfoNew,android.content.Context)>
+    <com.tencent.smtt.sdk.a.b: org.json.JSONObject c(MTT.ThirdAppInfoNew,android.content.Context)>
+    <com.tencent.smtt.sdk.a.b: org.json.JSONObject b(MTT.ThirdAppInfoNew,android.content.Context)>
+    <com.tencent.smtt.sdk.a.c: void run()>
+    <com.tencent.smtt.sdk.a.c: void run()>
+    <com.tencent.smtt.sdk.a.c: void run()>
+
+Leak 3:
+  Source: $r0 = staticinvoke <android.os.Environment: java.io.File getExternalStorageDirectory()>() (<android.os.Environment: java.io.File getExternalStorageDirectory()>)
+  Sink: $i0 = staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r2, $r1) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <qt: void <clinit>()>
+    <qt: void <clinit>()>
+    <qt: void <clinit>()>
+    <qt: void <clinit>()>
+    <qt: void <clinit>()>
+    <qt: void <clinit>()>
+    <qt: void <clinit>()>
+    <qt: void <clinit>()>
+    <qt: void <clinit>()>
+    <pt: void f()>
+    <pt: void f()>
+    <ra: void a(java.lang.String,java.lang.String)>
+    <ra: void a(java.lang.String,java.lang.String)>
+    <ra: void a(java.lang.String,java.lang.String)>
+    <qw: int a(java.lang.Object,java.lang.String)>
+    <qw: int a(java.lang.Object,java.lang.String)>
+    <qw: int a(java.lang.Object,java.lang.String)>
+    <qw: int a(java.lang.Object,java.lang.String)>
+    <qw: int a(java.lang.Object,java.lang.String)>
+    <qw: int a(java.lang.Object,java.lang.String)>
+    <qw: int a(java.lang.Object,java.lang.String)>
+    <qw: int a(java.lang.Object,java.lang.String)>
+    <qw: int a(java.lang.Object,java.lang.String)>
+
+Leak 4:
+  Source: $r6 = virtualinvoke $r4.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r5, $r1, null, null, "datetaken DESC LIMIT 10") (<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>)
+  Sink: $i0 = staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r2, $r1) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.oliveapp.camerasdk.ui.u: void run()>
+    <com.oliveapp.camerasdk.ui.u: void run()>
+    <com.oliveapp.camerasdk.ui.u: void run()>
+    <pc: android.graphics.Bitmap a(java.lang.String,int,int)>
+    <pc: android.graphics.Bitmap a(java.lang.String,int,int)>
+    <pc: android.graphics.Bitmap a(java.lang.String,int,int)>
+    <pc: android.graphics.Bitmap a(java.lang.String,int,int)>
+    <pc: android.graphics.Bitmap a(java.lang.String,int,int)>
+    <pc: android.graphics.Bitmap a(java.lang.String,int,int)>
+    <pc: android.graphics.Bitmap a(java.lang.String,int,int)>
+    <qw: int a(java.lang.Object,java.lang.String)>
+    <qw: int a(java.lang.Object,java.lang.String)>
+    <qw: int a(java.lang.Object,java.lang.String)>
+    <qw: int a(java.lang.Object,java.lang.String)>
+    <qw: int a(java.lang.Object,java.lang.String)>
+    <qw: int a(java.lang.Object,java.lang.String)>
+    <qw: int a(java.lang.Object,java.lang.String)>
+    <qw: int a(java.lang.Object,java.lang.String)>
+    <qw: int a(java.lang.Object,java.lang.String)>
+
+Leak 5:
+  Source: $r5 = virtualinvoke $r3.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r2, $r4, null, null, null) (<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>)
+  Sink: staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r1, $r3) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.fast.peso.view.certification.ContactInfoActivity: void onActivityResult(int,int,android.content.Intent)>
+    <com.fast.peso.view.certification.ContactInfoActivity: void onActivityResult(int,int,android.content.Intent)>
+    <com.fast.peso.view.certification.ContactInfoActivity: void onActivityResult(int,int,android.content.Intent)>
+    <com.fast.peso.view.certification.ContactInfoActivity: void onActivityResult(int,int,android.content.Intent)>
+    <com.fast.peso.view.certification.ContactInfoActivity: void onActivityResult(int,int,android.content.Intent)>
+    <com.x.leo.apphelper.log.b: void a(java.lang.String,int)>
+    <com.x.leo.apphelper.log.b: void a(java.lang.String,int,int)>
+    <com.x.leo.apphelper.log.XLog$d$1: void <init>(java.lang.String,java.lang.String)>
+    <com.x.leo.apphelper.log.XLog$d$1: void <init>(java.lang.String,java.lang.String)>
+    <com.x.leo.apphelper.log.b: void a(java.lang.String,int,int)>
+    <com.x.leo.apphelper.log.b: void a(java.lang.String,int,int)>
+    <com.x.leo.apphelper.log.b: void a(rl)>
+    <com.x.leo.apphelper.log.XLog$d$1: java.lang.Object invoke(java.lang.Object)>
+    <com.x.leo.apphelper.log.XLog$d$1: void invoke(java.lang.String)>
+    <com.x.leo.apphelper.log.XLog$d$1: void invoke(java.lang.String)>
+
+Leak 6:
+  Source: $r5 = virtualinvoke $r3.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r2, $r4, null, null, null) (<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>)
+  Sink: virtualinvoke $r6.<java.io.BufferedWriter: void write(java.lang.String)>($r2) (<java.io.OutputStreamWriter: void write(java.lang.String)>)
+  Methods:
+    <com.fast.peso.view.certification.ContactInfoActivity: void onActivityResult(int,int,android.content.Intent)>
+    <com.fast.peso.view.certification.ContactInfoActivity: void onActivityResult(int,int,android.content.Intent)>
+    <com.fast.peso.view.certification.ContactInfoActivity: void onActivityResult(int,int,android.content.Intent)>
+    <com.fast.peso.view.certification.ContactInfoActivity: void onActivityResult(int,int,android.content.Intent)>
+    <com.fast.peso.view.certification.ContactInfoActivity: void onActivityResult(int,int,android.content.Intent)>
+    <dummyMainClass: com.fast.peso.view.certification.ContactInfoActivity dummyMainMethod_com_fast_peso_view_certification_ContactInfoActivity(android.content.Intent)>
+    <com.fast.peso.view.certification.ContactInfoActivity: void onBackPressed()>
+    <com.fast.peso.view.certification.ContactInfoActivity: void h()>
+    <com.fast.peso.view.certification.ContactInfoActivity: void h()>
+    <com.fast.peso.view.certification.ContactInfoActivity: void h()>
+    <com.fast.peso.view.certification.ContactInfoActivity: void h()>
+    <kl: void a(java.lang.String,java.lang.String)>
+
+Leak 7:
+  Source: $r3 = staticinvoke <android.os.Environment: java.io.File getExternalStorageDirectory()>() (<android.os.Environment: java.io.File getExternalStorageDirectory()>)
+  Sink: virtualinvoke $r7.<java.io.OutputStream: void write(byte[])>($r2) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.tencent.smtt.utils.j: java.lang.String a(android.content.Context,java.lang.String,int,boolean)>
+    <com.tencent.smtt.utils.j: java.lang.String a(android.content.Context,java.lang.String,int,boolean)>
+    <com.tencent.smtt.utils.j: java.lang.String a(android.content.Context,java.lang.String,int,boolean)>
+    <com.tencent.smtt.utils.j: java.lang.String a(android.content.Context,java.lang.String,int,boolean)>
+    <com.tencent.smtt.utils.j: java.lang.String a(android.content.Context,java.lang.String,int,boolean)>
+    <com.tencent.smtt.utils.j: java.lang.String a(android.content.Context,java.lang.String,int,boolean)>
+    <com.tencent.smtt.utils.j: java.lang.String a(android.content.Context,java.lang.String,int,boolean)>
+    <com.tencent.smtt.utils.j: java.lang.String a(android.content.Context,java.lang.String,int,boolean)>
+    <com.tencent.smtt.utils.j: java.lang.String a(android.content.Context,java.lang.String,int,boolean)>
+    <com.tencent.smtt.utils.j: java.lang.String a(android.content.Context,java.lang.String,int,boolean)>
+    <com.tencent.smtt.utils.j: java.lang.String a(android.content.Context,java.lang.String,int,boolean)>
+    <com.tencent.smtt.utils.j: java.lang.String a(android.content.Context,int)>
+    <com.tencent.smtt.utils.TbsLogClient: void a()>
+    <com.tencent.smtt.utils.TbsLogClient: void a()>
+    <com.tencent.smtt.utils.TbsLogClient: void a()>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLogToDisk()>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLogToDisk()>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+
+Leak 8:
+  Source: $r3 = staticinvoke <android.os.Environment: java.io.File getExternalStorageDirectory()>() (<android.os.Environment: java.io.File getExternalStorageDirectory()>)
+  Sink: virtualinvoke $r7.<java.io.OutputStream: void write(byte[])>($r2) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.tencent.smtt.utils.j: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.j: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.j: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.j: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.j: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.j: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.j: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.j: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.j: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.j: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.j: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.j: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.j: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.j: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.j: java.lang.String a(android.content.Context,java.lang.String,int,boolean)>
+    <com.tencent.smtt.utils.j: java.lang.String a(android.content.Context,int)>
+    <com.tencent.smtt.utils.TbsLogClient: void a()>
+    <com.tencent.smtt.utils.TbsLogClient: void a()>
+    <com.tencent.smtt.utils.TbsLogClient: void a()>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLogToDisk()>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLogToDisk()>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+
+Leak 9:
+  Source: $r3 = virtualinvoke $r1.<android.content.Context: java.io.File getExternalFilesDir(java.lang.String)>($r0) (<android.content.Context: java.io.File getExternalFilesDir(java.lang.String)>)
+  Sink: virtualinvoke $r7.<java.io.OutputStream: void write(byte[])>($r2) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.tencent.smtt.utils.j: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.j: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.j: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.j: java.lang.String a(android.content.Context,java.lang.String,int,boolean)>
+    <com.tencent.smtt.utils.j: java.lang.String a(android.content.Context,int)>
+    <com.tencent.smtt.utils.TbsLogClient: void a()>
+    <com.tencent.smtt.utils.TbsLogClient: void a()>
+    <com.tencent.smtt.utils.TbsLogClient: void a()>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLogToDisk()>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLogToDisk()>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+
+Leak 10:
+  Source: $r6 = virtualinvoke $r4.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r5, $r1, null, null, "datetaken DESC LIMIT 10") (<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>)
+  Sink: $i0 = staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r2, $r1) (<android.util.Log: int d(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.oliveapp.camerasdk.ui.u: void run()>
+    <com.oliveapp.camerasdk.ui.u: void run()>
+    <com.oliveapp.camerasdk.ui.u: void run()>
+    <com.oliveapp.camerasdk.ui.u: void run()>
+    <com.oliveapp.camerasdk.ui.u: void run()>
+    <qw: int c(java.lang.Object,java.lang.String)>
+    <qw: int c(java.lang.Object,java.lang.String)>
+    <qw: int c(java.lang.Object,java.lang.String)>
+
+Leak 11:
+  Source: $r3 = virtualinvoke $r2.<android.telephony.TelephonyManager: java.lang.String getLine1Number()>() (<android.telephony.TelephonyManager: java.lang.String getLine1Number()>)
+  Sink: virtualinvoke r0.<com.alibaba.fastjson.serializer.SerializeWriter: void write(java.lang.String)>("null") (<java.io.BufferedWriter: void write(java.lang.String)>)
+  Methods:
+    <cn.fraudmetrix.octopus.aspirit.utils.q: java.lang.String b(android.content.Context)>
+    <cn.fraudmetrix.octopus.aspirit.utils.q: java.lang.String b(android.content.Context)>
+    <cn.fraudmetrix.octopus.aspirit.net.OctopusService$2: void a(java.lang.String)>
+    <cn.fraudmetrix.octopus.aspirit.net.OctopusService$2: void a(java.lang.String)>
+    <cn.fraudmetrix.octopus.aspirit.net.OctopusService$2: void a(java.lang.String)>
+    <com.alibaba.fastjson.JSON: java.lang.String toJSONString(java.lang.Object)>
+    <com.alibaba.fastjson.JSON: java.lang.String toJSONString(java.lang.Object,com.alibaba.fastjson.serializer.SerializeConfig,com.alibaba.fastjson.serializer.SerializeFilter[],java.lang.String,int,com.alibaba.fastjson.serializer.SerializerFeature[])>
+    <com.alibaba.fastjson.serializer.JSONSerializer: void write(java.lang.Object)>
+    <com.alibaba.fastjson.serializer.MiscCodec: void write(com.alibaba.fastjson.serializer.JSONSerializer,java.lang.Object,java.lang.Object,java.lang.reflect.Type)>
+    <com.alibaba.fastjson.serializer.MiscCodec: void write(com.alibaba.fastjson.serializer.JSONSerializer,java.lang.Object,java.lang.Object,java.lang.reflect.Type)>
+    <com.alibaba.fastjson.serializer.JSONSerializer: void write(java.lang.String)>
+    <com.alibaba.fastjson.serializer.SerializeWriter: void writeStringWithSingleQuote(java.lang.String)>
+    <com.alibaba.fastjson.serializer.SerializeWriter: void writeStringWithSingleQuote(java.lang.String)>
+    <com.alibaba.fastjson.serializer.SerializeWriter: void writeStringWithSingleQuote(java.lang.String)>
+    <com.alibaba.fastjson.serializer.JSONSerializer: void write(java.lang.String)>
+    <com.alibaba.fastjson.serializer.JSONSerializer: void write(java.lang.String)>
+    <com.alibaba.fastjson.serializer.MiscCodec: void write(com.alibaba.fastjson.serializer.JSONSerializer,java.lang.Object,java.lang.Object,java.lang.reflect.Type)>
+    <com.alibaba.fastjson.serializer.JSONSerializer: void write(java.lang.Object)>
+    <com.alibaba.fastjson.JSON: java.lang.String toJSONString(java.lang.Object,com.alibaba.fastjson.serializer.SerializeConfig,com.alibaba.fastjson.serializer.SerializeFilter[],java.lang.String,int,com.alibaba.fastjson.serializer.SerializerFeature[])>
+    <com.alibaba.fastjson.serializer.JSONSerializer: void write(java.lang.Object)>
+    <com.alibaba.fastjson.serializer.CollectionCodec: void write(com.alibaba.fastjson.serializer.JSONSerializer,java.lang.Object,java.lang.Object,java.lang.reflect.Type)>
+    <com.alibaba.fastjson.serializer.CollectionCodec: void write(com.alibaba.fastjson.serializer.JSONSerializer,java.lang.Object,java.lang.Object,java.lang.reflect.Type)>
+    <com.alibaba.fastjson.serializer.SerializeWriter: void write(int)>
+    <com.alibaba.fastjson.serializer.SerializeWriter: void flush()>
+    <com.alibaba.fastjson.serializer.SerializeWriter: void flush()>
+    <com.alibaba.fastjson.serializer.SerializeWriter: void flush()>
+    <com.alibaba.fastjson.serializer.SerializeWriter: void flush()>
+    <com.alibaba.fastjson.serializer.SerializeWriter: void write(int)>
+    <com.alibaba.fastjson.serializer.CollectionCodec: void write(com.alibaba.fastjson.serializer.JSONSerializer,java.lang.Object,java.lang.Object,java.lang.reflect.Type)>
+    <com.alibaba.fastjson.serializer.SerializeWriter: void writeNull()>
+
+Leak 12:
+  Source: $r5 = virtualinvoke $r2.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r3, $r4, null, null, "date DESC") (<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>)
+  Sink: virtualinvoke r0.<com.alibaba.fastjson.serializer.SerializeWriter: void write(java.lang.String)>("null") (<java.io.BufferedWriter: void write(java.lang.String)>)
+  Methods:
+    <cn.fraudmetrix.octopus.aspirit.utils.h: java.util.ArrayList b(android.content.Context)>
+    <cn.fraudmetrix.octopus.aspirit.utils.h: java.util.ArrayList b(android.content.Context)>
+    <cn.fraudmetrix.octopus.aspirit.utils.h: java.util.ArrayList b(android.content.Context)>
+    <cn.fraudmetrix.octopus.aspirit.utils.h: java.util.ArrayList b(android.content.Context)>
+    <cn.fraudmetrix.octopus.aspirit.utils.h: java.util.ArrayList b(android.content.Context)>
+    <cn.fraudmetrix.octopus.aspirit.utils.h: java.util.ArrayList b(android.content.Context)>
+    <cn.fraudmetrix.octopus.aspirit.utils.h: java.util.ArrayList b(android.content.Context)>
+    <cn.fraudmetrix.octopus.aspirit.utils.m: void run()>
+    <cn.fraudmetrix.octopus.aspirit.utils.m: void run()>
+    <cn.fraudmetrix.octopus.aspirit.utils.a: cn.fraudmetrix.octopus.aspirit.utils.a a()>
+    <cn.fraudmetrix.octopus.aspirit.utils.a: cn.fraudmetrix.octopus.aspirit.utils.a a()>
+    <cn.fraudmetrix.octopus.aspirit.utils.m: void run()>
+    <cn.fraudmetrix.octopus.aspirit.utils.j: void run()>
+    <cn.fraudmetrix.octopus.aspirit.activity.b$5: void a()>
+    <cn.fraudmetrix.octopus.aspirit.utils.a: cn.fraudmetrix.octopus.aspirit.utils.a a()>
+    <cn.fraudmetrix.octopus.aspirit.utils.a: cn.fraudmetrix.octopus.aspirit.utils.a a()>
+    <cn.fraudmetrix.octopus.aspirit.activity.b$5: void a()>
+    <cn.fraudmetrix.octopus.aspirit.activity.b$5: void a()>
+    <cn.fraudmetrix.octopus.aspirit.activity.b$5: void a()>
+    <com.alibaba.fastjson.JSON: java.lang.String toJSONString(java.lang.Object)>
+    <com.alibaba.fastjson.JSON: java.lang.String toJSONString(java.lang.Object,com.alibaba.fastjson.serializer.SerializeConfig,com.alibaba.fastjson.serializer.SerializeFilter[],java.lang.String,int,com.alibaba.fastjson.serializer.SerializerFeature[])>
+    <com.alibaba.fastjson.serializer.JSONSerializer: void write(java.lang.Object)>
+    <com.alibaba.fastjson.serializer.MiscCodec: void write(com.alibaba.fastjson.serializer.JSONSerializer,java.lang.Object,java.lang.Object,java.lang.reflect.Type)>
+    <com.alibaba.fastjson.serializer.MiscCodec: void write(com.alibaba.fastjson.serializer.JSONSerializer,java.lang.Object,java.lang.Object,java.lang.reflect.Type)>
+    <com.alibaba.fastjson.serializer.JSONSerializer: void write(java.lang.String)>
+    <com.alibaba.fastjson.serializer.SerializeWriter: void writeStringWithSingleQuote(java.lang.String)>
+    <com.alibaba.fastjson.serializer.SerializeWriter: void writeStringWithSingleQuote(java.lang.String)>
+    <com.alibaba.fastjson.serializer.SerializeWriter: void writeStringWithSingleQuote(java.lang.String)>
+    <com.alibaba.fastjson.serializer.JSONSerializer: void write(java.lang.String)>
+    <com.alibaba.fastjson.serializer.JSONSerializer: void write(java.lang.String)>
+    <com.alibaba.fastjson.serializer.MiscCodec: void write(com.alibaba.fastjson.serializer.JSONSerializer,java.lang.Object,java.lang.Object,java.lang.reflect.Type)>
+    <com.alibaba.fastjson.serializer.JSONSerializer: void write(java.lang.Object)>
+    <com.alibaba.fastjson.JSON: java.lang.String toJSONString(java.lang.Object,com.alibaba.fastjson.serializer.SerializeConfig,com.alibaba.fastjson.serializer.SerializeFilter[],java.lang.String,int,com.alibaba.fastjson.serializer.SerializerFeature[])>
+    <com.alibaba.fastjson.serializer.JSONSerializer: void write(java.lang.Object)>
+    <com.alibaba.fastjson.serializer.CollectionCodec: void write(com.alibaba.fastjson.serializer.JSONSerializer,java.lang.Object,java.lang.Object,java.lang.reflect.Type)>
+    <com.alibaba.fastjson.serializer.CollectionCodec: void write(com.alibaba.fastjson.serializer.JSONSerializer,java.lang.Object,java.lang.Object,java.lang.reflect.Type)>
+    <com.alibaba.fastjson.serializer.SerializeWriter: void write(int)>
+    <com.alibaba.fastjson.serializer.SerializeWriter: void flush()>
+    <com.alibaba.fastjson.serializer.SerializeWriter: void flush()>
+    <com.alibaba.fastjson.serializer.SerializeWriter: void flush()>
+    <com.alibaba.fastjson.serializer.SerializeWriter: void flush()>
+    <com.alibaba.fastjson.serializer.SerializeWriter: void write(int)>
+    <com.alibaba.fastjson.serializer.CollectionCodec: void write(com.alibaba.fastjson.serializer.JSONSerializer,java.lang.Object,java.lang.Object,java.lang.reflect.Type)>
+    <com.alibaba.fastjson.serializer.SerializeWriter: void writeNull()>
+
+Leak 13:
+  Source: $r5 = virtualinvoke $r4.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r2, $r3, null, null, "date desc") (<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>)
+  Sink: virtualinvoke r0.<com.alibaba.fastjson.serializer.SerializeWriter: void write(java.lang.String)>("null") (<java.io.BufferedWriter: void write(java.lang.String)>)
+  Methods:
+    <cn.fraudmetrix.octopus.aspirit.utils.h: java.util.ArrayList a(android.content.Context)>
+    <cn.fraudmetrix.octopus.aspirit.utils.h: java.util.ArrayList a(android.content.Context)>
+    <cn.fraudmetrix.octopus.aspirit.utils.h: java.util.ArrayList a(android.content.Context)>
+    <cn.fraudmetrix.octopus.aspirit.utils.h: java.util.ArrayList a(android.content.Context)>
+    <cn.fraudmetrix.octopus.aspirit.utils.h: java.util.ArrayList a(android.content.Context)>
+    <cn.fraudmetrix.octopus.aspirit.utils.m: void run()>
+    <cn.fraudmetrix.octopus.aspirit.utils.m: void run()>
+    <cn.fraudmetrix.octopus.aspirit.utils.a: cn.fraudmetrix.octopus.aspirit.utils.a a()>
+    <cn.fraudmetrix.octopus.aspirit.utils.a: cn.fraudmetrix.octopus.aspirit.utils.a a()>
+    <cn.fraudmetrix.octopus.aspirit.utils.m: void run()>
+    <cn.fraudmetrix.octopus.aspirit.utils.j: void run()>
+    <cn.fraudmetrix.octopus.aspirit.activity.b$5: void a()>
+    <cn.fraudmetrix.octopus.aspirit.utils.a: cn.fraudmetrix.octopus.aspirit.utils.a a()>
+    <cn.fraudmetrix.octopus.aspirit.utils.a: cn.fraudmetrix.octopus.aspirit.utils.a a()>
+    <cn.fraudmetrix.octopus.aspirit.activity.b$5: void a()>
+    <cn.fraudmetrix.octopus.aspirit.activity.b$5: void a()>
+    <cn.fraudmetrix.octopus.aspirit.activity.b$5: void a()>
+    <com.alibaba.fastjson.JSON: java.lang.String toJSONString(java.lang.Object)>
+    <com.alibaba.fastjson.JSON: java.lang.String toJSONString(java.lang.Object,com.alibaba.fastjson.serializer.SerializeConfig,com.alibaba.fastjson.serializer.SerializeFilter[],java.lang.String,int,com.alibaba.fastjson.serializer.SerializerFeature[])>
+    <com.alibaba.fastjson.serializer.JSONSerializer: void write(java.lang.Object)>
+    <com.alibaba.fastjson.serializer.MiscCodec: void write(com.alibaba.fastjson.serializer.JSONSerializer,java.lang.Object,java.lang.Object,java.lang.reflect.Type)>
+    <com.alibaba.fastjson.serializer.MiscCodec: void write(com.alibaba.fastjson.serializer.JSONSerializer,java.lang.Object,java.lang.Object,java.lang.reflect.Type)>
+    <com.alibaba.fastjson.serializer.JSONSerializer: void write(java.lang.String)>
+    <com.alibaba.fastjson.serializer.SerializeWriter: void writeStringWithSingleQuote(java.lang.String)>
+    <com.alibaba.fastjson.serializer.SerializeWriter: void writeStringWithSingleQuote(java.lang.String)>
+    <com.alibaba.fastjson.serializer.SerializeWriter: void writeStringWithSingleQuote(java.lang.String)>
+    <com.alibaba.fastjson.serializer.JSONSerializer: void write(java.lang.String)>
+    <com.alibaba.fastjson.serializer.JSONSerializer: void write(java.lang.String)>
+    <com.alibaba.fastjson.serializer.MiscCodec: void write(com.alibaba.fastjson.serializer.JSONSerializer,java.lang.Object,java.lang.Object,java.lang.reflect.Type)>
+    <com.alibaba.fastjson.serializer.JSONSerializer: void write(java.lang.Object)>
+    <com.alibaba.fastjson.JSON: java.lang.String toJSONString(java.lang.Object,com.alibaba.fastjson.serializer.SerializeConfig,com.alibaba.fastjson.serializer.SerializeFilter[],java.lang.String,int,com.alibaba.fastjson.serializer.SerializerFeature[])>
+    <com.alibaba.fastjson.serializer.JSONSerializer: void write(java.lang.Object)>
+    <com.alibaba.fastjson.serializer.CollectionCodec: void write(com.alibaba.fastjson.serializer.JSONSerializer,java.lang.Object,java.lang.Object,java.lang.reflect.Type)>
+    <com.alibaba.fastjson.serializer.CollectionCodec: void write(com.alibaba.fastjson.serializer.JSONSerializer,java.lang.Object,java.lang.Object,java.lang.reflect.Type)>
+    <com.alibaba.fastjson.serializer.SerializeWriter: void write(int)>
+    <com.alibaba.fastjson.serializer.SerializeWriter: void flush()>
+    <com.alibaba.fastjson.serializer.SerializeWriter: void flush()>
+    <com.alibaba.fastjson.serializer.SerializeWriter: void flush()>
+    <com.alibaba.fastjson.serializer.SerializeWriter: void flush()>
+    <com.alibaba.fastjson.serializer.SerializeWriter: void write(int)>
+    <com.alibaba.fastjson.serializer.CollectionCodec: void write(com.alibaba.fastjson.serializer.JSONSerializer,java.lang.Object,java.lang.Object,java.lang.reflect.Type)>
+    <com.alibaba.fastjson.serializer.SerializeWriter: void writeNull()>
+
+Leak 14:
+  Source: $r5 = virtualinvoke $r3.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r4, null, null, null, "raw_contact_id") (<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>)
+  Sink: virtualinvoke r0.<com.alibaba.fastjson.serializer.SerializeWriter: void write(java.lang.String)>("null") (<java.io.BufferedWriter: void write(java.lang.String)>)
+  Methods:
+    <cn.fraudmetrix.octopus.aspirit.utils.h: java.util.ArrayList c(android.content.Context)>
+    <cn.fraudmetrix.octopus.aspirit.utils.h: java.util.ArrayList c(android.content.Context)>
+    <cn.fraudmetrix.octopus.aspirit.utils.h: java.util.ArrayList c(android.content.Context)>
+    <cn.fraudmetrix.octopus.aspirit.utils.h: java.util.ArrayList c(android.content.Context)>
+    <cn.fraudmetrix.octopus.aspirit.utils.h: java.util.ArrayList c(android.content.Context)>
+    <cn.fraudmetrix.octopus.aspirit.utils.m: void run()>
+    <cn.fraudmetrix.octopus.aspirit.utils.m: void run()>
+    <cn.fraudmetrix.octopus.aspirit.utils.a: cn.fraudmetrix.octopus.aspirit.utils.a a()>
+    <cn.fraudmetrix.octopus.aspirit.utils.a: cn.fraudmetrix.octopus.aspirit.utils.a a()>
+    <cn.fraudmetrix.octopus.aspirit.utils.m: void run()>
+    <cn.fraudmetrix.octopus.aspirit.utils.j: void run()>
+    <cn.fraudmetrix.octopus.aspirit.activity.b$5: void a()>
+    <cn.fraudmetrix.octopus.aspirit.utils.a: cn.fraudmetrix.octopus.aspirit.utils.a a()>
+    <cn.fraudmetrix.octopus.aspirit.utils.a: cn.fraudmetrix.octopus.aspirit.utils.a a()>
+    <cn.fraudmetrix.octopus.aspirit.activity.b$5: void a()>
+    <cn.fraudmetrix.octopus.aspirit.activity.b$5: void a()>
+    <cn.fraudmetrix.octopus.aspirit.activity.b$5: void a()>
+    <com.alibaba.fastjson.JSON: java.lang.String toJSONString(java.lang.Object)>
+    <com.alibaba.fastjson.JSON: java.lang.String toJSONString(java.lang.Object,com.alibaba.fastjson.serializer.SerializeConfig,com.alibaba.fastjson.serializer.SerializeFilter[],java.lang.String,int,com.alibaba.fastjson.serializer.SerializerFeature[])>
+    <com.alibaba.fastjson.serializer.JSONSerializer: void write(java.lang.Object)>
+    <com.alibaba.fastjson.serializer.MiscCodec: void write(com.alibaba.fastjson.serializer.JSONSerializer,java.lang.Object,java.lang.Object,java.lang.reflect.Type)>
+    <com.alibaba.fastjson.serializer.MiscCodec: void write(com.alibaba.fastjson.serializer.JSONSerializer,java.lang.Object,java.lang.Object,java.lang.reflect.Type)>
+    <com.alibaba.fastjson.serializer.JSONSerializer: void write(java.lang.String)>
+    <com.alibaba.fastjson.serializer.SerializeWriter: void writeStringWithSingleQuote(java.lang.String)>
+    <com.alibaba.fastjson.serializer.SerializeWriter: void writeStringWithSingleQuote(java.lang.String)>
+    <com.alibaba.fastjson.serializer.SerializeWriter: void writeStringWithSingleQuote(java.lang.String)>
+    <com.alibaba.fastjson.serializer.JSONSerializer: void write(java.lang.String)>
+    <com.alibaba.fastjson.serializer.JSONSerializer: void write(java.lang.String)>
+    <com.alibaba.fastjson.serializer.MiscCodec: void write(com.alibaba.fastjson.serializer.JSONSerializer,java.lang.Object,java.lang.Object,java.lang.reflect.Type)>
+    <com.alibaba.fastjson.serializer.JSONSerializer: void write(java.lang.Object)>
+    <com.alibaba.fastjson.JSON: java.lang.String toJSONString(java.lang.Object,com.alibaba.fastjson.serializer.SerializeConfig,com.alibaba.fastjson.serializer.SerializeFilter[],java.lang.String,int,com.alibaba.fastjson.serializer.SerializerFeature[])>
+    <com.alibaba.fastjson.serializer.JSONSerializer: void write(java.lang.Object)>
+    <com.alibaba.fastjson.serializer.CollectionCodec: void write(com.alibaba.fastjson.serializer.JSONSerializer,java.lang.Object,java.lang.Object,java.lang.reflect.Type)>
+    <com.alibaba.fastjson.serializer.CollectionCodec: void write(com.alibaba.fastjson.serializer.JSONSerializer,java.lang.Object,java.lang.Object,java.lang.reflect.Type)>
+    <com.alibaba.fastjson.serializer.SerializeWriter: void write(int)>
+    <com.alibaba.fastjson.serializer.SerializeWriter: void flush()>
+    <com.alibaba.fastjson.serializer.SerializeWriter: void flush()>
+    <com.alibaba.fastjson.serializer.SerializeWriter: void flush()>
+    <com.alibaba.fastjson.serializer.SerializeWriter: void flush()>
+    <com.alibaba.fastjson.serializer.SerializeWriter: void write(int)>
+    <com.alibaba.fastjson.serializer.CollectionCodec: void write(com.alibaba.fastjson.serializer.JSONSerializer,java.lang.Object,java.lang.Object,java.lang.reflect.Type)>
+    <com.alibaba.fastjson.serializer.SerializeWriter: void writeNull()>
+
+Leak 15:
+  Source: $r5 = staticinvoke <android.os.Environment: java.io.File getExternalStorageDirectory()>() (<android.os.Environment: java.io.File getExternalStorageDirectory()>)
+  Sink: virtualinvoke $r2.<java.io.FileOutputStream: void write(byte[])>($r5) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <cn.fraudmetrix.octopus.aspirit.utils.q: java.lang.String d(android.content.Context)>
+    <cn.fraudmetrix.octopus.aspirit.utils.q: java.lang.String d(android.content.Context)>
+    <cn.fraudmetrix.octopus.aspirit.utils.q: java.lang.String d(android.content.Context)>
+    <cn.fraudmetrix.octopus.aspirit.utils.q: java.lang.String d(android.content.Context)>
+    <cn.fraudmetrix.octopus.aspirit.utils.q: java.lang.String d(android.content.Context)>
+    <cn.fraudmetrix.octopus.aspirit.utils.q: java.lang.String d(android.content.Context)>
+    <cn.fraudmetrix.octopus.aspirit.utils.q: java.lang.String d(android.content.Context)>
+    <cn.fraudmetrix.octopus.aspirit.utils.q: java.lang.String d(android.content.Context)>
+    <cn.fraudmetrix.octopus.aspirit.utils.q: void a(java.io.File,java.lang.String)>
+    <cn.fraudmetrix.octopus.aspirit.utils.q: void a(java.io.File,java.lang.String)>
+
+Leak 16:
+  Source: $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r2, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r3.<java.io.OutputStream: void write(byte[])>($r1) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.facebook.FacebookSdk: void c(android.content.Context)>
+    <com.facebook.FacebookSdk: void c(android.content.Context)>
+    <com.facebook.FacebookSdk: void c(android.content.Context)>
+    <com.facebook.FacebookSdk: void c(android.content.Context)>
+    <com.facebook.FacebookSdk: void c(android.content.Context)>
+    <com.facebook.FacebookSdk: void c(android.content.Context)>
+    <com.facebook.FacebookSdk: void a(android.content.Context,com.facebook.FacebookSdk$a)>
+    <com.facebook.FacebookSdk: void a(android.content.Context)>
+    <com.facebook.internal.ab: java.lang.String a(android.content.Context)>
+    <com.facebook.appevents.AppEventsLogger: void <init>(java.lang.String,java.lang.String,com.facebook.AccessToken)>
+    <com.facebook.appevents.internal.e: void <init>(java.lang.String,java.lang.String,com.facebook.AccessToken)>
+    <com.facebook.appevents.internal.g: void a(android.content.Context,java.lang.String,com.facebook.appevents.internal.h,java.lang.String)>
+    <com.facebook.appevents.internal.a$2: void run()>
+    <com.facebook.appevents.internal.a: void a(android.app.Activity)>
+    <com.facebook.appevents.internal.a$1: void onActivityCreated(android.app.Activity,android.os.Bundle)>
+    <dummyMainClass: com.facebook.internal.FacebookInitProvider dummyMainMethod_com_facebook_internal_FacebookInitProvider(android.content.Intent)>
+    <dummyMainClass: void dummyMainMethod(java.lang.String[])>
+    <dummyMainClass: com.facebook.FacebookActivity dummyMainMethod_com_facebook_FacebookActivity(android.content.Intent)>
+    <com.facebook.appevents.internal.a$1: void onActivityPaused(android.app.Activity)>
+    <com.facebook.appevents.internal.a: void c(android.app.Activity)>
+    <com.facebook.appevents.internal.a: void d(android.app.Activity)>
+    <com.facebook.appevents.internal.a$4: void run()>
+    <com.facebook.appevents.internal.c: void a(java.lang.String,long)>
+    <com.facebook.internal.l: com.facebook.internal.k a(java.lang.String,boolean)>
+    <com.facebook.internal.l: org.json.JSONObject c(java.lang.String)>
+    <com.facebook.GraphRequest: com.facebook.f i()>
+    <com.facebook.GraphRequest: com.facebook.f a(com.facebook.GraphRequest)>
+    <com.facebook.GraphRequest: java.util.List a(com.facebook.GraphRequest[])>
+    <com.facebook.GraphRequest: java.util.List a(java.util.Collection)>
+    <com.facebook.GraphRequest: java.util.List b(com.facebook.e)>
+    <com.facebook.GraphRequest: java.net.HttpURLConnection a(com.facebook.e)>
+    <com.facebook.GraphRequest: void a(com.facebook.e,java.net.HttpURLConnection)>
+    <com.facebook.GraphRequest: void a(com.facebook.e,com.facebook.internal.u,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.GraphRequest: java.lang.String g(com.facebook.e)>
+    <com.facebook.FacebookSdk: java.lang.String i()>
+    <com.facebook.FacebookSdk: java.lang.String i()>
+    <com.facebook.GraphRequest: java.lang.String g(com.facebook.e)>
+    <com.facebook.GraphRequest: void a(com.facebook.e,com.facebook.internal.u,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.GraphRequest$f: void a(java.lang.String,java.lang.String)>
+    <com.facebook.GraphRequest$f: void a(java.lang.String,java.lang.String)>
+    <com.facebook.GraphRequest$f: void b(java.lang.String,java.lang.Object[])>
+    <com.facebook.GraphRequest$f: void a(java.lang.String,java.lang.Object[])>
+    <com.facebook.GraphRequest$f: void a(java.lang.String,java.lang.Object[])>
+    <com.facebook.GraphRequest$f: void a(java.lang.String,java.lang.Object[])>
+    <com.facebook.GraphRequest$f: void a(java.lang.String,java.lang.Object[])>
+    <com.facebook.GraphRequest$f: void a(java.lang.String,java.lang.Object[])>
+    <com.facebook.GraphRequest$f: void a(java.lang.String,java.lang.Object[])>
+    <com.facebook.GraphRequest$f: void b(java.lang.String,java.lang.Object[])>
+    <com.facebook.GraphRequest$f: void a(java.lang.String,java.lang.String)>
+    <com.facebook.GraphRequest$f: void a()>
+    <com.facebook.GraphRequest$f: void a()>
+
+Leak 17:
+  Source: $r3 = staticinvoke <android.os.Environment: java.io.File getExternalStorageDirectory()>() (<android.os.Environment: java.io.File getExternalStorageDirectory()>)
+  Sink: virtualinvoke $r7.<java.io.OutputStream: void write(byte[])>($r4) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.tencent.smtt.utils.j: java.lang.String a(android.content.Context,java.lang.String,int,boolean)>
+    <com.tencent.smtt.utils.j: java.lang.String a(android.content.Context,java.lang.String,int,boolean)>
+    <com.tencent.smtt.utils.j: java.lang.String a(android.content.Context,java.lang.String,int,boolean)>
+    <com.tencent.smtt.utils.j: java.lang.String a(android.content.Context,java.lang.String,int,boolean)>
+    <com.tencent.smtt.utils.j: java.lang.String a(android.content.Context,int)>
+    <com.tencent.smtt.utils.TbsLogClient: void a()>
+    <com.tencent.smtt.utils.TbsLogClient: void a()>
+    <com.tencent.smtt.utils.TbsLogClient: void a()>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLogToDisk()>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLogToDisk()>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+
+Leak 18:
+  Source: $r3 = staticinvoke <android.os.Environment: java.io.File getExternalStorageDirectory()>() (<android.os.Environment: java.io.File getExternalStorageDirectory()>)
+  Sink: virtualinvoke $r7.<java.io.OutputStream: void write(byte[])>($r4) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.tencent.smtt.utils.j: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.j: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.j: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.j: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.j: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.j: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.j: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.j: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.j: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.j: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.j: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.j: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.j: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.j: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.j: java.lang.String a(android.content.Context,java.lang.String,int,boolean)>
+    <com.tencent.smtt.utils.j: java.lang.String a(android.content.Context,int)>
+    <com.tencent.smtt.utils.TbsLogClient: void a()>
+    <com.tencent.smtt.utils.TbsLogClient: void a()>
+    <com.tencent.smtt.utils.TbsLogClient: void a()>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLogToDisk()>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLogToDisk()>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+
+Leak 19:
+  Source: $r3 = virtualinvoke $r1.<android.content.Context: java.io.File getExternalFilesDir(java.lang.String)>($r0) (<android.content.Context: java.io.File getExternalFilesDir(java.lang.String)>)
+  Sink: virtualinvoke $r7.<java.io.OutputStream: void write(byte[])>($r4) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.tencent.smtt.utils.j: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.j: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.j: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.j: java.lang.String a(android.content.Context,java.lang.String,int,boolean)>
+    <com.tencent.smtt.utils.j: java.lang.String a(android.content.Context,int)>
+    <com.tencent.smtt.utils.TbsLogClient: void a()>
+    <com.tencent.smtt.utils.TbsLogClient: void a()>
+    <com.tencent.smtt.utils.TbsLogClient: void a()>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLogToDisk()>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLogToDisk()>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+
+Leak 20:
+  Source: $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r2, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r3.<java.io.OutputStream: void write(byte[])>($r5) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.facebook.FacebookSdk: void c(android.content.Context)>
+    <com.facebook.FacebookSdk: void c(android.content.Context)>
+    <com.facebook.FacebookSdk: void c(android.content.Context)>
+    <com.facebook.FacebookSdk: void c(android.content.Context)>
+    <com.facebook.FacebookSdk: void c(android.content.Context)>
+    <com.facebook.FacebookSdk: void c(android.content.Context)>
+    <com.facebook.FacebookSdk: void a(android.content.Context,com.facebook.FacebookSdk$a)>
+    <com.facebook.internal.l: void a()>
+    <com.facebook.internal.l$1: void run()>
+    <com.facebook.internal.l: org.json.JSONObject b(java.lang.String)>
+    <com.facebook.internal.l: org.json.JSONObject c(java.lang.String)>
+    <com.facebook.GraphRequest: com.facebook.f i()>
+    <com.facebook.GraphRequest: com.facebook.f a(com.facebook.GraphRequest)>
+    <com.facebook.GraphRequest: java.util.List a(com.facebook.GraphRequest[])>
+    <com.facebook.GraphRequest: java.util.List a(java.util.Collection)>
+    <com.facebook.GraphRequest: java.util.List b(com.facebook.e)>
+    <com.facebook.GraphRequest: java.net.HttpURLConnection a(com.facebook.e)>
+    <com.facebook.GraphRequest: void a(com.facebook.e,java.net.HttpURLConnection)>
+    <com.facebook.GraphRequest: void a(com.facebook.e,com.facebook.internal.u,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.GraphRequest: java.lang.String g(com.facebook.e)>
+    <com.facebook.FacebookSdk: java.lang.String i()>
+    <com.facebook.FacebookSdk: java.lang.String i()>
+    <com.facebook.GraphRequest: java.lang.String g(com.facebook.e)>
+    <com.facebook.GraphRequest: void a(com.facebook.e,com.facebook.internal.u,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.GraphRequest$f: void a(java.lang.String,java.lang.String)>
+    <com.facebook.GraphRequest$f: void a(java.lang.String,java.lang.String)>
+    <com.facebook.GraphRequest$f: void b(java.lang.String,java.lang.Object[])>
+    <com.facebook.GraphRequest$f: void a(java.lang.String,java.lang.Object[])>
+    <com.facebook.GraphRequest$f: void a(java.lang.String,java.lang.Object[])>
+    <com.facebook.GraphRequest$f: void a(java.lang.String,java.lang.Object[])>
+    <com.facebook.GraphRequest$f: void a(java.lang.String,java.lang.Object[])>
+
+Leak 21:
+  Source: $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r2, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r3.<java.io.OutputStream: void write(byte[])>($r5) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.facebook.FacebookSdk: void c(android.content.Context)>
+    <com.facebook.FacebookSdk: void c(android.content.Context)>
+    <com.facebook.FacebookSdk: void c(android.content.Context)>
+    <com.facebook.FacebookSdk: void c(android.content.Context)>
+    <com.facebook.FacebookSdk: void c(android.content.Context)>
+    <com.facebook.FacebookSdk: void c(android.content.Context)>
+    <com.facebook.FacebookSdk: void a(android.content.Context,com.facebook.FacebookSdk$a)>
+    <com.facebook.FacebookSdk: void a(android.content.Context)>
+    <com.facebook.internal.ab: java.lang.String a(android.content.Context)>
+    <com.facebook.appevents.AppEventsLogger: void <init>(java.lang.String,java.lang.String,com.facebook.AccessToken)>
+    <com.facebook.appevents.internal.e: void <init>(java.lang.String,java.lang.String,com.facebook.AccessToken)>
+    <com.facebook.appevents.internal.g: void a(android.content.Context,java.lang.String,com.facebook.appevents.internal.f,java.lang.String)>
+    <com.facebook.appevents.AppEventsLogger: void a(java.lang.String,double,android.os.Bundle)>
+    <com.facebook.appevents.AppEventsLogger: void a(java.lang.String,java.lang.Double,android.os.Bundle,boolean,java.util.UUID)>
+    <com.facebook.appevents.AppEventsLogger: void a(android.content.Context,com.facebook.appevents.AppEvent,com.facebook.appevents.AccessTokenAppIdPair)>
+    <com.facebook.appevents.c: void a(com.facebook.appevents.AccessTokenAppIdPair,com.facebook.appevents.AppEvent)>
+    <com.facebook.appevents.c$4: void run()>
+    <com.facebook.appevents.c: void b(com.facebook.appevents.FlushReason)>
+    <com.facebook.appevents.c: com.facebook.appevents.e a(com.facebook.appevents.FlushReason,com.facebook.appevents.b)>
+    <com.facebook.GraphRequest: com.facebook.f i()>
+    <com.facebook.GraphRequest: com.facebook.f a(com.facebook.GraphRequest)>
+    <com.facebook.GraphRequest: java.util.List a(com.facebook.GraphRequest[])>
+    <com.facebook.GraphRequest: java.util.List a(java.util.Collection)>
+    <com.facebook.GraphRequest: java.util.List b(com.facebook.e)>
+    <com.facebook.GraphRequest: java.net.HttpURLConnection a(com.facebook.e)>
+    <com.facebook.GraphRequest: void a(com.facebook.e,java.net.HttpURLConnection)>
+    <com.facebook.GraphRequest: void a(com.facebook.e,com.facebook.internal.u,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.GraphRequest: java.lang.String g(com.facebook.e)>
+    <com.facebook.FacebookSdk: java.lang.String i()>
+    <com.facebook.FacebookSdk: java.lang.String i()>
+    <com.facebook.GraphRequest: java.lang.String g(com.facebook.e)>
+    <com.facebook.GraphRequest: void a(com.facebook.e,com.facebook.internal.u,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.GraphRequest$f: void a(java.lang.String,java.lang.String)>
+    <com.facebook.GraphRequest$f: void a(java.lang.String,java.lang.String)>
+    <com.facebook.GraphRequest$f: void b(java.lang.String,java.lang.Object[])>
+    <com.facebook.GraphRequest$f: void a(java.lang.String,java.lang.Object[])>
+    <com.facebook.GraphRequest$f: void a(java.lang.String,java.lang.Object[])>
+    <com.facebook.GraphRequest$f: void a(java.lang.String,java.lang.Object[])>
+    <com.facebook.GraphRequest$f: void a(java.lang.String,java.lang.Object[])>
+    <com.facebook.GraphRequest$f: void a(java.lang.String,java.lang.Object[])>
+    <com.facebook.GraphRequest$f: void b(java.lang.String,java.lang.Object[])>
+    <com.facebook.GraphRequest$f: void a(java.lang.String,java.lang.Object[])>
+    <com.facebook.GraphRequest$f: void a(java.lang.String,java.lang.Object[])>
+
+Leak 22:
+  Source: $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r2, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r3.<java.io.OutputStream: void write(byte[])>($r5) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.facebook.FacebookSdk: void c(android.content.Context)>
+    <com.facebook.FacebookSdk: void c(android.content.Context)>
+    <com.facebook.FacebookSdk: void c(android.content.Context)>
+    <com.facebook.FacebookSdk: void c(android.content.Context)>
+    <com.facebook.FacebookSdk: void c(android.content.Context)>
+    <com.facebook.FacebookSdk: void c(android.content.Context)>
+    <com.facebook.FacebookSdk: void a(android.content.Context,com.facebook.FacebookSdk$a)>
+    <com.facebook.internal.l: void a()>
+    <com.facebook.internal.l$1: void run()>
+    <com.facebook.internal.l: org.json.JSONObject b(java.lang.String)>
+    <com.facebook.internal.l: org.json.JSONObject c(java.lang.String)>
+    <com.facebook.GraphRequest: com.facebook.f i()>
+    <com.facebook.GraphRequest: com.facebook.f a(com.facebook.GraphRequest)>
+    <com.facebook.GraphRequest: java.util.List a(com.facebook.GraphRequest[])>
+    <com.facebook.GraphRequest: java.util.List a(java.util.Collection)>
+    <com.facebook.GraphRequest: java.util.List b(com.facebook.e)>
+    <com.facebook.GraphRequest: java.net.HttpURLConnection a(com.facebook.e)>
+    <com.facebook.GraphRequest: void a(com.facebook.e,java.net.HttpURLConnection)>
+    <com.facebook.GraphRequest: void a(com.facebook.e,com.facebook.internal.u,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.GraphRequest: java.lang.String g(com.facebook.e)>
+    <com.facebook.FacebookSdk: java.lang.String i()>
+    <com.facebook.FacebookSdk: java.lang.String i()>
+    <com.facebook.GraphRequest: java.lang.String g(com.facebook.e)>
+    <com.facebook.GraphRequest: void a(com.facebook.e,com.facebook.internal.u,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.GraphRequest$f: void a(java.lang.String,java.lang.String)>
+    <com.facebook.GraphRequest$f: void a(java.lang.String,java.lang.String)>
+    <com.facebook.GraphRequest$f: void b(java.lang.String,java.lang.Object[])>
+    <com.facebook.GraphRequest$f: void a(java.lang.String,java.lang.Object[])>
+    <com.facebook.GraphRequest$f: void a(java.lang.String,java.lang.Object[])>
+    <com.facebook.GraphRequest$f: void a(java.lang.String,java.lang.Object[])>
+
+Leak 23:
+  Source: $r0 = staticinvoke <android.os.Environment: java.io.File getExternalStorageDirectory()>() (<android.os.Environment: java.io.File getExternalStorageDirectory()>)
+  Sink: $i0 = staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r2, $r1) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <qt: void <clinit>()>
+    <qt: void <clinit>()>
+    <qt: void <clinit>()>
+    <qt: void <clinit>()>
+    <qe: void a(android.app.Activity,android.os.Handler,qf,qk,qm)>
+    <qr: void a(android.app.Activity,android.os.Handler,qq,qk,qm)>
+    <com.oliveapp.face.livenessdetectionviewsdk.verification_controller.a$1: void run()>
+    <qe: void a(android.app.Activity,android.os.Handler,qf,qk,qm)>
+    <qe: void g()>
+    <qe: void g()>
+    <qe: void g()>
+    <qe: void g()>
+    <qe: void g()>
+    <ra: void a(java.lang.String,java.lang.String)>
+    <ra: void a(java.lang.String,java.lang.String)>
+    <ra: void a(java.lang.String,java.lang.String)>
+    <ra: void a(java.lang.String,java.lang.String)>
+    <ra: void a(java.lang.String,java.lang.String)>
+    <qw: int a(java.lang.Object,java.lang.String)>
+    <qw: int a(java.lang.Object,java.lang.String)>
+    <qw: int a(java.lang.Object,java.lang.String)>
+
+Leak 24:
+  Source: $r6 = virtualinvoke $r4.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r5, $r1, null, null, "datetaken DESC LIMIT 10") (<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>)
+  Sink: $i0 = staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r2, $r1) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.oliveapp.camerasdk.ui.u: void run()>
+    <com.oliveapp.camerasdk.ui.u: void run()>
+    <com.oliveapp.camerasdk.ui.u: void run()>
+    <pc: android.graphics.Bitmap a(java.lang.String,int,int)>
+    <pc: android.graphics.Bitmap a(java.lang.String,int,int)>
+    <pc: android.graphics.Bitmap a(java.lang.String,int,int)>
+    <pc: android.graphics.Bitmap a(java.lang.String,int,int)>
+    <pc: android.graphics.Bitmap a(java.lang.String,int,int)>
+    <pc: android.graphics.Bitmap a(java.lang.String,int,int)>
+    <pc: android.graphics.Bitmap a(java.lang.String,int,int)>
+    <qw: int a(java.lang.Object,java.lang.String)>
+    <qw: int a(java.lang.Object,java.lang.String)>
+    <qw: int a(java.lang.Object,java.lang.String)>
+
+Leak 25:
+  Source: $r3 = virtualinvoke $r2.<android.telephony.TelephonyManager: java.lang.String getLine1Number()>() (<android.telephony.TelephonyManager: java.lang.String getLine1Number()>)
+  Sink: virtualinvoke r0.<com.alibaba.fastjson.serializer.SerializeWriter: void write(java.lang.String)>("null") (<java.io.OutputStreamWriter: void write(java.lang.String)>)
+  Methods:
+    <cn.fraudmetrix.octopus.aspirit.utils.q: java.lang.String b(android.content.Context)>
+    <cn.fraudmetrix.octopus.aspirit.utils.q: java.lang.String b(android.content.Context)>
+    <cn.fraudmetrix.octopus.aspirit.net.OctopusService$2: void a(java.lang.String)>
+    <cn.fraudmetrix.octopus.aspirit.net.OctopusService$2: void a(java.lang.String)>
+    <cn.fraudmetrix.octopus.aspirit.net.OctopusService$2: void a(java.lang.String)>
+    <com.alibaba.fastjson.JSON: java.lang.String toJSONString(java.lang.Object)>
+    <com.alibaba.fastjson.JSON: java.lang.String toJSONString(java.lang.Object,com.alibaba.fastjson.serializer.SerializeConfig,com.alibaba.fastjson.serializer.SerializeFilter[],java.lang.String,int,com.alibaba.fastjson.serializer.SerializerFeature[])>
+    <com.alibaba.fastjson.serializer.JSONSerializer: void write(java.lang.Object)>
+    <com.alibaba.fastjson.serializer.MiscCodec: void write(com.alibaba.fastjson.serializer.JSONSerializer,java.lang.Object,java.lang.Object,java.lang.reflect.Type)>
+    <com.alibaba.fastjson.serializer.MiscCodec: void write(com.alibaba.fastjson.serializer.JSONSerializer,java.lang.Object,java.lang.Object,java.lang.reflect.Type)>
+    <com.alibaba.fastjson.serializer.JSONSerializer: void write(java.lang.String)>
+    <com.alibaba.fastjson.serializer.SerializeWriter: void writeStringWithSingleQuote(java.lang.String)>
+    <com.alibaba.fastjson.serializer.SerializeWriter: void writeStringWithSingleQuote(java.lang.String)>
+    <com.alibaba.fastjson.serializer.SerializeWriter: void writeStringWithSingleQuote(java.lang.String)>
+    <com.alibaba.fastjson.serializer.JSONSerializer: void write(java.lang.String)>
+    <com.alibaba.fastjson.serializer.JSONSerializer: void write(java.lang.String)>
+    <com.alibaba.fastjson.serializer.MiscCodec: void write(com.alibaba.fastjson.serializer.JSONSerializer,java.lang.Object,java.lang.Object,java.lang.reflect.Type)>
+    <com.alibaba.fastjson.serializer.JSONSerializer: void write(java.lang.Object)>
+    <com.alibaba.fastjson.JSON: java.lang.String toJSONString(java.lang.Object,com.alibaba.fastjson.serializer.SerializeConfig,com.alibaba.fastjson.serializer.SerializeFilter[],java.lang.String,int,com.alibaba.fastjson.serializer.SerializerFeature[])>
+    <com.alibaba.fastjson.serializer.JSONSerializer: void write(java.lang.Object)>
+    <com.alibaba.fastjson.serializer.CollectionCodec: void write(com.alibaba.fastjson.serializer.JSONSerializer,java.lang.Object,java.lang.Object,java.lang.reflect.Type)>
+    <com.alibaba.fastjson.serializer.CollectionCodec: void write(com.alibaba.fastjson.serializer.JSONSerializer,java.lang.Object,java.lang.Object,java.lang.reflect.Type)>
+    <com.alibaba.fastjson.serializer.SerializeWriter: void write(int)>
+    <com.alibaba.fastjson.serializer.SerializeWriter: void flush()>
+    <com.alibaba.fastjson.serializer.SerializeWriter: void flush()>
+    <com.alibaba.fastjson.serializer.SerializeWriter: void flush()>
+    <com.alibaba.fastjson.serializer.SerializeWriter: void flush()>
+    <com.alibaba.fastjson.serializer.SerializeWriter: void write(int)>
+    <com.alibaba.fastjson.serializer.CollectionCodec: void write(com.alibaba.fastjson.serializer.JSONSerializer,java.lang.Object,java.lang.Object,java.lang.reflect.Type)>
+    <com.alibaba.fastjson.serializer.SerializeWriter: void writeNull()>
+
+Leak 26:
+  Source: $r5 = virtualinvoke $r2.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r3, $r4, null, null, "date DESC") (<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>)
+  Sink: virtualinvoke r0.<com.alibaba.fastjson.serializer.SerializeWriter: void write(java.lang.String)>("null") (<java.io.OutputStreamWriter: void write(java.lang.String)>)
+  Methods:
+    <cn.fraudmetrix.octopus.aspirit.utils.h: java.util.ArrayList b(android.content.Context)>
+    <cn.fraudmetrix.octopus.aspirit.utils.h: java.util.ArrayList b(android.content.Context)>
+    <cn.fraudmetrix.octopus.aspirit.utils.h: java.util.ArrayList b(android.content.Context)>
+    <cn.fraudmetrix.octopus.aspirit.utils.h: java.util.ArrayList b(android.content.Context)>
+    <cn.fraudmetrix.octopus.aspirit.utils.h: java.util.ArrayList b(android.content.Context)>
+    <cn.fraudmetrix.octopus.aspirit.utils.h: java.util.ArrayList b(android.content.Context)>
+    <cn.fraudmetrix.octopus.aspirit.utils.h: java.util.ArrayList b(android.content.Context)>
+    <cn.fraudmetrix.octopus.aspirit.utils.m: void run()>
+    <cn.fraudmetrix.octopus.aspirit.utils.m: void run()>
+    <cn.fraudmetrix.octopus.aspirit.utils.a: cn.fraudmetrix.octopus.aspirit.utils.a a()>
+    <cn.fraudmetrix.octopus.aspirit.utils.a: cn.fraudmetrix.octopus.aspirit.utils.a a()>
+    <cn.fraudmetrix.octopus.aspirit.utils.m: void run()>
+    <cn.fraudmetrix.octopus.aspirit.utils.j: void run()>
+    <cn.fraudmetrix.octopus.aspirit.activity.b$5: void a()>
+    <cn.fraudmetrix.octopus.aspirit.utils.a: cn.fraudmetrix.octopus.aspirit.utils.a a()>
+    <cn.fraudmetrix.octopus.aspirit.utils.a: cn.fraudmetrix.octopus.aspirit.utils.a a()>
+    <cn.fraudmetrix.octopus.aspirit.activity.b$5: void a()>
+    <cn.fraudmetrix.octopus.aspirit.activity.b$5: void a()>
+    <cn.fraudmetrix.octopus.aspirit.activity.b$5: void a()>
+    <com.alibaba.fastjson.JSON: java.lang.String toJSONString(java.lang.Object)>
+    <com.alibaba.fastjson.JSON: java.lang.String toJSONString(java.lang.Object,com.alibaba.fastjson.serializer.SerializeConfig,com.alibaba.fastjson.serializer.SerializeFilter[],java.lang.String,int,com.alibaba.fastjson.serializer.SerializerFeature[])>
+    <com.alibaba.fastjson.serializer.JSONSerializer: void write(java.lang.Object)>
+    <com.alibaba.fastjson.serializer.MiscCodec: void write(com.alibaba.fastjson.serializer.JSONSerializer,java.lang.Object,java.lang.Object,java.lang.reflect.Type)>
+    <com.alibaba.fastjson.serializer.MiscCodec: void write(com.alibaba.fastjson.serializer.JSONSerializer,java.lang.Object,java.lang.Object,java.lang.reflect.Type)>
+    <com.alibaba.fastjson.serializer.JSONSerializer: void write(java.lang.String)>
+    <com.alibaba.fastjson.serializer.SerializeWriter: void writeStringWithSingleQuote(java.lang.String)>
+    <com.alibaba.fastjson.serializer.SerializeWriter: void writeStringWithSingleQuote(java.lang.String)>
+    <com.alibaba.fastjson.serializer.SerializeWriter: void writeStringWithSingleQuote(java.lang.String)>
+    <com.alibaba.fastjson.serializer.JSONSerializer: void write(java.lang.String)>
+    <com.alibaba.fastjson.serializer.JSONSerializer: void write(java.lang.String)>
+    <com.alibaba.fastjson.serializer.MiscCodec: void write(com.alibaba.fastjson.serializer.JSONSerializer,java.lang.Object,java.lang.Object,java.lang.reflect.Type)>
+    <com.alibaba.fastjson.serializer.JSONSerializer: void write(java.lang.Object)>
+    <com.alibaba.fastjson.JSON: java.lang.String toJSONString(java.lang.Object,com.alibaba.fastjson.serializer.SerializeConfig,com.alibaba.fastjson.serializer.SerializeFilter[],java.lang.String,int,com.alibaba.fastjson.serializer.SerializerFeature[])>
+    <com.alibaba.fastjson.serializer.JSONSerializer: void write(java.lang.Object)>
+    <com.alibaba.fastjson.serializer.CollectionCodec: void write(com.alibaba.fastjson.serializer.JSONSerializer,java.lang.Object,java.lang.Object,java.lang.reflect.Type)>
+    <com.alibaba.fastjson.serializer.CollectionCodec: void write(com.alibaba.fastjson.serializer.JSONSerializer,java.lang.Object,java.lang.Object,java.lang.reflect.Type)>
+    <com.alibaba.fastjson.serializer.SerializeWriter: void write(int)>
+    <com.alibaba.fastjson.serializer.SerializeWriter: void flush()>
+    <com.alibaba.fastjson.serializer.SerializeWriter: void flush()>
+    <com.alibaba.fastjson.serializer.SerializeWriter: void flush()>
+    <com.alibaba.fastjson.serializer.SerializeWriter: void flush()>
+    <com.alibaba.fastjson.serializer.SerializeWriter: void write(int)>
+    <com.alibaba.fastjson.serializer.CollectionCodec: void write(com.alibaba.fastjson.serializer.JSONSerializer,java.lang.Object,java.lang.Object,java.lang.reflect.Type)>
+    <com.alibaba.fastjson.serializer.SerializeWriter: void writeNull()>
+
+Leak 27:
+  Source: $r5 = virtualinvoke $r4.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r2, $r3, null, null, "date desc") (<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>)
+  Sink: virtualinvoke r0.<com.alibaba.fastjson.serializer.SerializeWriter: void write(java.lang.String)>("null") (<java.io.OutputStreamWriter: void write(java.lang.String)>)
+  Methods:
+    <cn.fraudmetrix.octopus.aspirit.utils.h: java.util.ArrayList a(android.content.Context)>
+    <cn.fraudmetrix.octopus.aspirit.utils.h: java.util.ArrayList a(android.content.Context)>
+    <cn.fraudmetrix.octopus.aspirit.utils.h: java.util.ArrayList a(android.content.Context)>
+    <cn.fraudmetrix.octopus.aspirit.utils.h: java.util.ArrayList a(android.content.Context)>
+    <cn.fraudmetrix.octopus.aspirit.utils.h: java.util.ArrayList a(android.content.Context)>
+    <cn.fraudmetrix.octopus.aspirit.utils.m: void run()>
+    <cn.fraudmetrix.octopus.aspirit.utils.m: void run()>
+    <cn.fraudmetrix.octopus.aspirit.utils.a: cn.fraudmetrix.octopus.aspirit.utils.a a()>
+    <cn.fraudmetrix.octopus.aspirit.utils.a: cn.fraudmetrix.octopus.aspirit.utils.a a()>
+    <cn.fraudmetrix.octopus.aspirit.utils.m: void run()>
+    <cn.fraudmetrix.octopus.aspirit.utils.j: void run()>
+    <cn.fraudmetrix.octopus.aspirit.activity.b$5: void a()>
+    <cn.fraudmetrix.octopus.aspirit.utils.a: cn.fraudmetrix.octopus.aspirit.utils.a a()>
+    <cn.fraudmetrix.octopus.aspirit.utils.a: cn.fraudmetrix.octopus.aspirit.utils.a a()>
+    <cn.fraudmetrix.octopus.aspirit.activity.b$5: void a()>
+    <cn.fraudmetrix.octopus.aspirit.activity.b$5: void a()>
+    <cn.fraudmetrix.octopus.aspirit.activity.b$5: void a()>
+    <com.alibaba.fastjson.JSON: java.lang.String toJSONString(java.lang.Object)>
+    <com.alibaba.fastjson.JSON: java.lang.String toJSONString(java.lang.Object,com.alibaba.fastjson.serializer.SerializeConfig,com.alibaba.fastjson.serializer.SerializeFilter[],java.lang.String,int,com.alibaba.fastjson.serializer.SerializerFeature[])>
+    <com.alibaba.fastjson.serializer.JSONSerializer: void write(java.lang.Object)>
+    <com.alibaba.fastjson.serializer.MiscCodec: void write(com.alibaba.fastjson.serializer.JSONSerializer,java.lang.Object,java.lang.Object,java.lang.reflect.Type)>
+    <com.alibaba.fastjson.serializer.MiscCodec: void write(com.alibaba.fastjson.serializer.JSONSerializer,java.lang.Object,java.lang.Object,java.lang.reflect.Type)>
+    <com.alibaba.fastjson.serializer.JSONSerializer: void write(java.lang.String)>
+    <com.alibaba.fastjson.serializer.SerializeWriter: void writeStringWithSingleQuote(java.lang.String)>
+    <com.alibaba.fastjson.serializer.SerializeWriter: void writeStringWithSingleQuote(java.lang.String)>
+    <com.alibaba.fastjson.serializer.SerializeWriter: void writeStringWithSingleQuote(java.lang.String)>
+    <com.alibaba.fastjson.serializer.JSONSerializer: void write(java.lang.String)>
+    <com.alibaba.fastjson.serializer.JSONSerializer: void write(java.lang.String)>
+    <com.alibaba.fastjson.serializer.MiscCodec: void write(com.alibaba.fastjson.serializer.JSONSerializer,java.lang.Object,java.lang.Object,java.lang.reflect.Type)>
+    <com.alibaba.fastjson.serializer.JSONSerializer: void write(java.lang.Object)>
+    <com.alibaba.fastjson.JSON: java.lang.String toJSONString(java.lang.Object,com.alibaba.fastjson.serializer.SerializeConfig,com.alibaba.fastjson.serializer.SerializeFilter[],java.lang.String,int,com.alibaba.fastjson.serializer.SerializerFeature[])>
+    <com.alibaba.fastjson.serializer.JSONSerializer: void write(java.lang.Object)>
+    <com.alibaba.fastjson.serializer.CollectionCodec: void write(com.alibaba.fastjson.serializer.JSONSerializer,java.lang.Object,java.lang.Object,java.lang.reflect.Type)>
+    <com.alibaba.fastjson.serializer.CollectionCodec: void write(com.alibaba.fastjson.serializer.JSONSerializer,java.lang.Object,java.lang.Object,java.lang.reflect.Type)>
+    <com.alibaba.fastjson.serializer.SerializeWriter: void write(int)>
+    <com.alibaba.fastjson.serializer.SerializeWriter: void flush()>
+    <com.alibaba.fastjson.serializer.SerializeWriter: void flush()>
+    <com.alibaba.fastjson.serializer.SerializeWriter: void flush()>
+    <com.alibaba.fastjson.serializer.SerializeWriter: void flush()>
+    <com.alibaba.fastjson.serializer.SerializeWriter: void write(int)>
+    <com.alibaba.fastjson.serializer.CollectionCodec: void write(com.alibaba.fastjson.serializer.JSONSerializer,java.lang.Object,java.lang.Object,java.lang.reflect.Type)>
+    <com.alibaba.fastjson.serializer.SerializeWriter: void writeNull()>
+
+Leak 28:
+  Source: $r5 = virtualinvoke $r3.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r4, null, null, null, "raw_contact_id") (<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>)
+  Sink: virtualinvoke r0.<com.alibaba.fastjson.serializer.SerializeWriter: void write(java.lang.String)>("null") (<java.io.OutputStreamWriter: void write(java.lang.String)>)
+  Methods:
+    <cn.fraudmetrix.octopus.aspirit.utils.h: java.util.ArrayList c(android.content.Context)>
+    <cn.fraudmetrix.octopus.aspirit.utils.h: java.util.ArrayList c(android.content.Context)>
+    <cn.fraudmetrix.octopus.aspirit.utils.h: java.util.ArrayList c(android.content.Context)>
+    <cn.fraudmetrix.octopus.aspirit.utils.h: java.util.ArrayList c(android.content.Context)>
+    <cn.fraudmetrix.octopus.aspirit.utils.h: java.util.ArrayList c(android.content.Context)>
+    <cn.fraudmetrix.octopus.aspirit.utils.m: void run()>
+    <cn.fraudmetrix.octopus.aspirit.utils.m: void run()>
+    <cn.fraudmetrix.octopus.aspirit.utils.a: cn.fraudmetrix.octopus.aspirit.utils.a a()>
+    <cn.fraudmetrix.octopus.aspirit.utils.a: cn.fraudmetrix.octopus.aspirit.utils.a a()>
+    <cn.fraudmetrix.octopus.aspirit.utils.m: void run()>
+    <cn.fraudmetrix.octopus.aspirit.utils.j: void run()>
+    <cn.fraudmetrix.octopus.aspirit.activity.b$5: void a()>
+    <cn.fraudmetrix.octopus.aspirit.utils.a: cn.fraudmetrix.octopus.aspirit.utils.a a()>
+    <cn.fraudmetrix.octopus.aspirit.utils.a: cn.fraudmetrix.octopus.aspirit.utils.a a()>
+    <cn.fraudmetrix.octopus.aspirit.activity.b$5: void a()>
+    <cn.fraudmetrix.octopus.aspirit.activity.b$5: void a()>
+    <cn.fraudmetrix.octopus.aspirit.activity.b$5: void a()>
+    <com.alibaba.fastjson.JSON: java.lang.String toJSONString(java.lang.Object)>
+    <com.alibaba.fastjson.JSON: java.lang.String toJSONString(java.lang.Object,com.alibaba.fastjson.serializer.SerializeConfig,com.alibaba.fastjson.serializer.SerializeFilter[],java.lang.String,int,com.alibaba.fastjson.serializer.SerializerFeature[])>
+    <com.alibaba.fastjson.serializer.JSONSerializer: void write(java.lang.Object)>
+    <com.alibaba.fastjson.serializer.MiscCodec: void write(com.alibaba.fastjson.serializer.JSONSerializer,java.lang.Object,java.lang.Object,java.lang.reflect.Type)>
+    <com.alibaba.fastjson.serializer.MiscCodec: void write(com.alibaba.fastjson.serializer.JSONSerializer,java.lang.Object,java.lang.Object,java.lang.reflect.Type)>
+    <com.alibaba.fastjson.serializer.JSONSerializer: void write(java.lang.String)>
+    <com.alibaba.fastjson.serializer.SerializeWriter: void writeStringWithSingleQuote(java.lang.String)>
+    <com.alibaba.fastjson.serializer.SerializeWriter: void writeStringWithSingleQuote(java.lang.String)>
+    <com.alibaba.fastjson.serializer.SerializeWriter: void writeStringWithSingleQuote(java.lang.String)>
+    <com.alibaba.fastjson.serializer.JSONSerializer: void write(java.lang.String)>
+    <com.alibaba.fastjson.serializer.JSONSerializer: void write(java.lang.String)>
+    <com.alibaba.fastjson.serializer.MiscCodec: void write(com.alibaba.fastjson.serializer.JSONSerializer,java.lang.Object,java.lang.Object,java.lang.reflect.Type)>
+    <com.alibaba.fastjson.serializer.JSONSerializer: void write(java.lang.Object)>
+    <com.alibaba.fastjson.JSON: java.lang.String toJSONString(java.lang.Object,com.alibaba.fastjson.serializer.SerializeConfig,com.alibaba.fastjson.serializer.SerializeFilter[],java.lang.String,int,com.alibaba.fastjson.serializer.SerializerFeature[])>
+    <com.alibaba.fastjson.serializer.JSONSerializer: void write(java.lang.Object)>
+    <com.alibaba.fastjson.serializer.CollectionCodec: void write(com.alibaba.fastjson.serializer.JSONSerializer,java.lang.Object,java.lang.Object,java.lang.reflect.Type)>
+    <com.alibaba.fastjson.serializer.CollectionCodec: void write(com.alibaba.fastjson.serializer.JSONSerializer,java.lang.Object,java.lang.Object,java.lang.reflect.Type)>
+    <com.alibaba.fastjson.serializer.SerializeWriter: void write(int)>
+    <com.alibaba.fastjson.serializer.SerializeWriter: void flush()>
+    <com.alibaba.fastjson.serializer.SerializeWriter: void flush()>
+    <com.alibaba.fastjson.serializer.SerializeWriter: void flush()>
+    <com.alibaba.fastjson.serializer.SerializeWriter: void flush()>
+    <com.alibaba.fastjson.serializer.SerializeWriter: void write(int)>
+    <com.alibaba.fastjson.serializer.CollectionCodec: void write(com.alibaba.fastjson.serializer.JSONSerializer,java.lang.Object,java.lang.Object,java.lang.reflect.Type)>
+    <com.alibaba.fastjson.serializer.SerializeWriter: void writeNull()>
+
+Leak 29:
+  Source: $r11 = virtualinvoke $r10.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r1, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r5.<java.util.zip.GZIPOutputStream: void write(byte[])>($r2) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <kn: org.json.JSONObject a(android.content.Context,java.lang.String,java.lang.String)>
+    <kn: org.json.JSONObject a(android.content.Context,java.lang.String,java.lang.String)>
+    <kn: org.json.JSONObject a(android.content.Context,java.lang.String,java.lang.String)>
+    <kn: org.json.JSONObject a(android.content.Context,java.lang.String,java.lang.String)>
+    <com.fast.peso.harvester.uploadout.b: java.lang.Integer a(java.lang.Throwable,java.lang.String,java.lang.Integer)>
+    <com.fast.peso.harvester.uploadout.b: java.lang.Integer a(java.lang.Throwable,java.lang.String,java.lang.Integer)>
+    <com.fast.peso.harvester.uploadout.a: byte[] a(java.lang.String,java.lang.String)>
+    <com.fast.peso.harvester.uploadout.a: byte[] a(java.lang.String,java.lang.String)>
+
+Leak 30:
+  Source: $r3 = staticinvoke <android.os.Environment: java.io.File getExternalStorageDirectory()>() (<android.os.Environment: java.io.File getExternalStorageDirectory()>)
+  Sink: virtualinvoke $r7.<java.io.OutputStream: void write(byte[])>($r2) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.tencent.smtt.utils.j: java.lang.String a(android.content.Context,java.lang.String,int,boolean)>
+    <com.tencent.smtt.utils.j: java.lang.String a(android.content.Context,java.lang.String,int,boolean)>
+    <com.tencent.smtt.utils.j: java.lang.String a(android.content.Context,java.lang.String,int,boolean)>
+    <com.tencent.smtt.utils.j: java.lang.String a(android.content.Context,java.lang.String,int,boolean)>
+    <com.tencent.smtt.utils.j: java.lang.String a(android.content.Context,int)>
+    <com.tencent.smtt.utils.TbsLogClient: void a()>
+    <com.tencent.smtt.utils.TbsLogClient: void a()>
+    <com.tencent.smtt.utils.TbsLogClient: void a()>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLogToDisk()>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLogToDisk()>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+
+Leak 31:
+  Source: $r3 = staticinvoke <android.os.Environment: java.io.File getExternalStorageDirectory()>() (<android.os.Environment: java.io.File getExternalStorageDirectory()>)
+  Sink: virtualinvoke $r7.<java.io.OutputStream: void write(byte[])>($r2) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.tencent.smtt.utils.j: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.j: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.j: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.j: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.j: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.j: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.j: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.j: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.j: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.j: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.j: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.j: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.j: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.j: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.j: java.lang.String a(android.content.Context,java.lang.String,int,boolean)>
+    <com.tencent.smtt.utils.j: java.lang.String a(android.content.Context,int)>
+    <com.tencent.smtt.utils.TbsLogClient: void a()>
+    <com.tencent.smtt.utils.TbsLogClient: void a()>
+    <com.tencent.smtt.utils.TbsLogClient: void a()>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLogToDisk()>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLogToDisk()>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+
+Leak 32:
+  Source: $r3 = virtualinvoke $r1.<android.content.Context: java.io.File getExternalFilesDir(java.lang.String)>($r0) (<android.content.Context: java.io.File getExternalFilesDir(java.lang.String)>)
+  Sink: virtualinvoke $r7.<java.io.OutputStream: void write(byte[])>($r2) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.tencent.smtt.utils.j: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.j: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.j: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.j: java.lang.String a(android.content.Context,java.lang.String,int,boolean)>
+    <com.tencent.smtt.utils.j: java.lang.String a(android.content.Context,int)>
+    <com.tencent.smtt.utils.TbsLogClient: void a()>
+    <com.tencent.smtt.utils.TbsLogClient: void a()>
+    <com.tencent.smtt.utils.TbsLogClient: void a()>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLogToDisk()>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLogToDisk()>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+
+Leak 33:
+  Source: $r3 = staticinvoke <android.os.Environment: java.io.File getExternalStorageDirectory()>() (<android.os.Environment: java.io.File getExternalStorageDirectory()>)
+  Sink: virtualinvoke $r7.<java.io.OutputStream: void write(byte[])>($r2) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.tencent.smtt.utils.j: java.lang.String a(android.content.Context,java.lang.String,int,boolean)>
+    <com.tencent.smtt.utils.j: java.lang.String a(android.content.Context,java.lang.String,int,boolean)>
+    <com.tencent.smtt.utils.j: java.lang.String a(android.content.Context,java.lang.String,int,boolean)>
+    <com.tencent.smtt.utils.j: java.lang.String a(android.content.Context,java.lang.String,int,boolean)>
+    <com.tencent.smtt.utils.j: java.lang.String a(android.content.Context,int)>
+    <com.tencent.smtt.utils.TbsLogClient: void a()>
+    <com.tencent.smtt.utils.TbsLogClient: void a()>
+    <com.tencent.smtt.utils.TbsLogClient: void a()>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLogToDisk()>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLogToDisk()>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+
+Leak 34:
+  Source: $r3 = staticinvoke <android.os.Environment: java.io.File getExternalStorageDirectory()>() (<android.os.Environment: java.io.File getExternalStorageDirectory()>)
+  Sink: virtualinvoke $r7.<java.io.OutputStream: void write(byte[])>($r2) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.tencent.smtt.utils.j: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.j: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.j: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.j: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.j: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.j: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.j: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.j: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.j: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.j: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.j: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.j: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.j: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.j: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.j: java.lang.String a(android.content.Context,java.lang.String,int,boolean)>
+    <com.tencent.smtt.utils.j: java.lang.String a(android.content.Context,java.lang.String,int,boolean)>
+    <com.tencent.smtt.utils.j: java.lang.String a(android.content.Context,java.lang.String,int,boolean)>
+    <com.tencent.smtt.utils.j: java.lang.String a(android.content.Context,int)>
+    <com.tencent.smtt.utils.TbsLogClient: void a()>
+    <com.tencent.smtt.utils.TbsLogClient: void a()>
+    <com.tencent.smtt.utils.TbsLogClient: void a()>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLogToDisk()>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLogToDisk()>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+
+Leak 35:
+  Source: $r3 = virtualinvoke $r1.<android.content.Context: java.io.File getExternalFilesDir(java.lang.String)>($r0) (<android.content.Context: java.io.File getExternalFilesDir(java.lang.String)>)
+  Sink: virtualinvoke $r7.<java.io.OutputStream: void write(byte[])>($r2) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.tencent.smtt.utils.j: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.j: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.j: java.lang.String a(android.content.Context,java.lang.String)>
+    <com.tencent.smtt.utils.j: java.lang.String a(android.content.Context,java.lang.String,int,boolean)>
+    <com.tencent.smtt.utils.j: java.lang.String a(android.content.Context,java.lang.String,int,boolean)>
+    <com.tencent.smtt.utils.j: java.lang.String a(android.content.Context,java.lang.String,int,boolean)>
+    <com.tencent.smtt.utils.j: java.lang.String a(android.content.Context,int)>
+    <com.tencent.smtt.utils.TbsLogClient: void a()>
+    <com.tencent.smtt.utils.TbsLogClient: void a()>
+    <com.tencent.smtt.utils.TbsLogClient: void a()>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLogToDisk()>
+    <com.tencent.smtt.utils.TbsLogClient: void writeLogToDisk()>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+    <com.tencent.smtt.utils.LogFileUtils: void writeDataToStorage(java.io.File,java.lang.String,byte[],java.lang.String,boolean)>
+
+Leak 36:
+  Source: $r5 = virtualinvoke $r3.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r2, $r4, null, null, null) (<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>)
+  Sink: virtualinvoke $r6.<java.io.BufferedWriter: void write(java.lang.String)>($r2) (<java.io.BufferedWriter: void write(java.lang.String)>)
+  Methods:
+    <com.fast.peso.view.certification.ContactInfoActivity: void onActivityResult(int,int,android.content.Intent)>
+    <com.fast.peso.view.certification.ContactInfoActivity: void onActivityResult(int,int,android.content.Intent)>
+    <com.fast.peso.view.certification.ContactInfoActivity: void onActivityResult(int,int,android.content.Intent)>
+    <com.fast.peso.view.certification.ContactInfoActivity: void onActivityResult(int,int,android.content.Intent)>
+    <com.fast.peso.view.certification.ContactInfoActivity: void onActivityResult(int,int,android.content.Intent)>
+    <dummyMainClass: com.fast.peso.view.certification.ContactInfoActivity dummyMainMethod_com_fast_peso_view_certification_ContactInfoActivity(android.content.Intent)>
+    <com.fast.peso.view.certification.ContactInfoActivity: void onBackPressed()>
+    <com.fast.peso.view.certification.ContactInfoActivity: void h()>
+    <com.fast.peso.view.certification.ContactInfoActivity: void h()>
+    <com.fast.peso.view.certification.ContactInfoActivity: void h()>
+    <com.fast.peso.view.certification.ContactInfoActivity: void h()>
+    <kl: void a(java.lang.String,java.lang.String)>
+

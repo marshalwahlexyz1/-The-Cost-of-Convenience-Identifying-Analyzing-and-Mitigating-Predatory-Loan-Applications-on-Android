@@ -1,0 +1,39 @@
+APK: TopChance (NigeriaApproved)
+Leak 1:
+  Source: $r7 = virtualinvoke $r5.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r6, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: $r9 = virtualinvoke $r8.<java.net.URL: java.net.URLConnection openConnection()>() (<java.net.URL: java.net.URLConnection openConnection()>)
+  Methods:
+    <com.appsflyer.internal.AFb1bSDK: java.lang.String AFInAppEventParameterName(java.lang.String)>
+    <com.appsflyer.internal.AFb1bSDK: java.lang.String AFInAppEventParameterName(java.lang.String)>
+    <com.appsflyer.internal.AFb1bSDK: java.lang.String AFInAppEventParameterName(java.lang.String)>
+    <com.appsflyer.internal.AFb1bSDK: java.lang.String AFInAppEventParameterName(java.lang.String)>
+    <com.appsflyer.internal.AFb1bSDK: java.lang.String AFInAppEventParameterName(java.lang.String)>
+    <com.appsflyer.internal.AFb1bSDK: java.lang.String AFInAppEventParameterName(java.lang.String)>
+    <com.appsflyer.internal.AFb1bSDK: java.lang.String AFInAppEventParameterName(java.lang.String)>
+    <com.appsflyer.internal.AFb1bSDK: java.lang.String values()>
+    <com.appsflyer.internal.AFd1ySDK$2: java.lang.String values()>
+    <com.appsflyer.internal.AFb1wSDK: java.lang.String AFInAppEventParameterName(com.appsflyer.internal.AFb1gSDK,java.lang.String)>
+    <com.appsflyer.internal.AFd1ySDK$2: java.lang.String values()>
+    <com.appsflyer.internal.AFd1ySDK$2: java.lang.String values()>
+    <com.appsflyer.internal.AFd1ySDK$2: java.lang.String values()>
+    <y6.u: java.lang.CharSequence K(java.lang.CharSequence)>
+    <y6.u: java.lang.CharSequence K(java.lang.CharSequence)>
+    <com.appsflyer.internal.AFd1ySDK$2: java.lang.String values()>
+    <com.appsflyer.internal.AFd1ySDK$2: java.lang.String values()>
+    <com.appsflyer.internal.AFd1ySDK$2: java.lang.Object invoke()>
+    <e6.f: java.lang.Object getValue()>
+    <e6.f: java.lang.Object getValue()>
+    <j4.j0$a: java.lang.Object invoke()>
+    <j4.j0$a: java.lang.Object invoke()>
+    <j4.j0$a: java.lang.Object invoke()>
+    <e6.f: java.lang.Object getValue()>
+    <e6.f: java.lang.Object getValue()>
+    <e6.f: java.lang.Object getValue()>
+    <com.appsflyer.internal.AFd1ySDK: java.lang.String AFInAppEventParameterName()>
+    <com.appsflyer.internal.AFd1ySDK: java.lang.String AFInAppEventParameterName()>
+    <com.appsflyer.internal.AFb1wSDK: java.lang.String getHostPrefix()>
+    <com.appsflyer.internal.AFc1rSDK: boolean AFInAppEventType()>
+    <com.appsflyer.internal.AFc1rSDK: boolean AFInAppEventType()>
+    <com.appsflyer.internal.AFc1rSDK: boolean AFInAppEventType()>
+    <com.appsflyer.internal.AFc1rSDK: boolean AFInAppEventType()>
+

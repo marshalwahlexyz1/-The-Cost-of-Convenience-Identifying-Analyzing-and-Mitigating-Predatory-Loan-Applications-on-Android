@@ -1,0 +1,301 @@
+APK: Pasa (NigeriaApproved)
+Leak 1:
+  Source: $r4 = virtualinvoke $r3.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r2, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r5.<java.io.FileOutputStream: void write(byte[])>($r7) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <com.facebook.internal.Utility: java.lang.String getAppVersion()>
+    <com.facebook.internal.Utility: java.lang.String getAppVersion()>
+    <com.facebook.internal.Utility: java.lang.String getAppVersion()>
+    <com.facebook.internal.instrument.InstrumentData: void <init>(java.lang.Throwable,com.facebook.internal.instrument.InstrumentData$Type)>
+    <com.facebook.internal.instrument.InstrumentData: void <init>(java.lang.Throwable,com.facebook.internal.instrument.InstrumentData$Type)>
+    <com.facebook.internal.instrument.InstrumentData: void <init>(java.lang.Throwable,com.facebook.internal.instrument.InstrumentData$Type,kotlin.jvm.internal.DefaultConstructorMarker)>
+    <com.facebook.internal.instrument.InstrumentData$Builder: com.facebook.internal.instrument.InstrumentData build(java.lang.Throwable,com.facebook.internal.instrument.InstrumentData$Type)>
+    <com.facebook.internal.instrument.crashshield.CrashShieldHandler: void handleThrowable(java.lang.Throwable,java.lang.Object)>
+    <com.facebook.internal.instrument.InstrumentData: void save()>
+    <com.facebook.internal.instrument.InstrumentData: java.lang.String toString()>
+    <com.facebook.internal.instrument.InstrumentData: org.json.JSONObject getParameters()>
+    <com.facebook.internal.instrument.InstrumentData: org.json.JSONObject getExceptionReportParameters()>
+    <com.facebook.internal.instrument.InstrumentData: org.json.JSONObject getExceptionReportParameters()>
+    <com.facebook.internal.instrument.InstrumentData: org.json.JSONObject getExceptionReportParameters()>
+    <com.facebook.internal.instrument.InstrumentData: org.json.JSONObject getParameters()>
+    <com.facebook.internal.instrument.InstrumentData: java.lang.String toString()>
+    <com.facebook.internal.instrument.InstrumentData: java.lang.String toString()>
+    <com.facebook.internal.instrument.InstrumentData: void save()>
+    <com.facebook.internal.instrument.InstrumentUtility: void writeFile(java.lang.String,java.lang.String)>
+    <com.facebook.internal.instrument.InstrumentUtility: void writeFile(java.lang.String,java.lang.String)>
+
+Leak 2:
+  Source: $r3 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r0, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: $r4 = virtualinvoke $r3.<okhttp3.OkHttpClient: okhttp3.Call newCall(okhttp3.Request)>($r2) (<okhttp3.OkHttpClient: okhttp3.Call newCall(okhttp3.Request)>)
+  Methods:
+    <com.blankj.utilcode.util.AppUtils: int getAppVersionCode(java.lang.String)>
+    <com.blankj.utilcode.util.AppUtils: int getAppVersionCode(java.lang.String)>
+    <com.blankj.utilcode.util.AppUtils: int getAppVersionCode(java.lang.String)>
+    <com.blankj.utilcode.util.AppUtils: int getAppVersionCode()>
+    <com.pride.pasa.utils.MyOkHttpUtils: void <init>()>
+    <com.pride.pasa.utils.MyOkHttpUtils: void <init>()>
+    <okhttp3.Request$Builder: okhttp3.Request$Builder addHeader(java.lang.String,java.lang.String)>
+    <okhttp3.Headers$Builder: okhttp3.Headers$Builder add(java.lang.String,java.lang.String)>
+    <okhttp3.Headers$Builder: okhttp3.Headers$Builder addLenient$okhttp(java.lang.String,java.lang.String)>
+    <okhttp3.Headers$Builder: okhttp3.Headers$Builder addLenient$okhttp(java.lang.String,java.lang.String)>
+    <okhttp3.Headers$Builder: okhttp3.Headers$Builder addLenient$okhttp(java.lang.String,java.lang.String)>
+    <okhttp3.Headers$Builder: okhttp3.Headers$Builder addLenient$okhttp(java.lang.String,java.lang.String)>
+    <okhttp3.Headers$Builder: okhttp3.Headers$Builder addLenient$okhttp(java.lang.String,java.lang.String)>
+    <okhttp3.Headers$Builder: okhttp3.Headers$Builder add(java.lang.String,java.lang.String)>
+    <okhttp3.Request$Builder: okhttp3.Request$Builder addHeader(java.lang.String,java.lang.String)>
+    <okhttp3.Request$Builder: okhttp3.Request$Builder addHeader(java.lang.String,java.lang.String)>
+    <com.pride.pasa.utils.MyOkHttpUtils: void <init>()>
+    <com.pride.pasa.utils.MyOkHttpUtils: void <init>()>
+    <com.pride.pasa.MainActivity: void onIndex()>
+    <com.pride.pasa.utils.MyOkHttpUtils: void build()>
+    <com.pride.pasa.utils.MyOkHttpUtils: void build()>
+    <okhttp3.Request$Builder: okhttp3.Request build()>
+    <okhttp3.Request$Builder: okhttp3.Request build()>
+    <okhttp3.Headers$Builder: okhttp3.Headers build()>
+    <okhttp3.Headers$Builder: okhttp3.Headers build()>
+    <okhttp3.Headers$Builder: okhttp3.Headers build()>
+    <okhttp3.Headers$Builder: okhttp3.Headers build()>
+    <okhttp3.Headers$Builder: okhttp3.Headers build()>
+    <okhttp3.Headers: void <init>(java.lang.String[],kotlin.jvm.internal.DefaultConstructorMarker)>
+    <okhttp3.Headers: void <init>(java.lang.String[])>
+    <okhttp3.Headers: void <init>(java.lang.String[])>
+    <okhttp3.Headers: void <init>(java.lang.String[],kotlin.jvm.internal.DefaultConstructorMarker)>
+    <okhttp3.Headers$Builder: okhttp3.Headers build()>
+    <okhttp3.Request$Builder: okhttp3.Request build()>
+    <okhttp3.Request: void <init>(okhttp3.HttpUrl,java.lang.String,okhttp3.Headers,okhttp3.RequestBody,java.util.Map)>
+    <okhttp3.Request: void <init>(okhttp3.HttpUrl,java.lang.String,okhttp3.Headers,okhttp3.RequestBody,java.util.Map)>
+    <okhttp3.Request$Builder: okhttp3.Request build()>
+    <com.pride.pasa.utils.MyOkHttpUtils: void build()>
+
+Leak 3:
+  Source: $r3 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r0, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: $r4 = virtualinvoke $r3.<okhttp3.OkHttpClient: okhttp3.Call newCall(okhttp3.Request)>($r2) (<okhttp3.OkHttpClient: okhttp3.Call newCall(okhttp3.Request)>)
+  Methods:
+    <com.blankj.utilcode.util.AppUtils: java.lang.String getAppVersionName(java.lang.String)>
+    <com.blankj.utilcode.util.AppUtils: java.lang.String getAppVersionName(java.lang.String)>
+    <com.blankj.utilcode.util.AppUtils: java.lang.String getAppVersionName(java.lang.String)>
+    <com.blankj.utilcode.util.AppUtils: java.lang.String getAppVersionName()>
+    <com.pride.pasa.utils.MyOkHttpUtils: void <init>()>
+    <okhttp3.Request$Builder: okhttp3.Request$Builder addHeader(java.lang.String,java.lang.String)>
+    <okhttp3.Headers$Builder: okhttp3.Headers$Builder add(java.lang.String,java.lang.String)>
+    <okhttp3.Headers$Builder: okhttp3.Headers$Builder addLenient$okhttp(java.lang.String,java.lang.String)>
+    <okhttp3.Headers$Builder: okhttp3.Headers$Builder addLenient$okhttp(java.lang.String,java.lang.String)>
+    <okhttp3.Headers$Builder: okhttp3.Headers$Builder addLenient$okhttp(java.lang.String,java.lang.String)>
+    <okhttp3.Headers$Builder: okhttp3.Headers$Builder addLenient$okhttp(java.lang.String,java.lang.String)>
+    <okhttp3.Headers$Builder: okhttp3.Headers$Builder addLenient$okhttp(java.lang.String,java.lang.String)>
+    <okhttp3.Headers$Builder: okhttp3.Headers$Builder add(java.lang.String,java.lang.String)>
+    <okhttp3.Request$Builder: okhttp3.Request$Builder addHeader(java.lang.String,java.lang.String)>
+    <okhttp3.Request$Builder: okhttp3.Request$Builder addHeader(java.lang.String,java.lang.String)>
+    <com.pride.pasa.utils.MyOkHttpUtils: void <init>()>
+    <okhttp3.Request$Builder: okhttp3.Request$Builder removeHeader(java.lang.String)>
+    <okhttp3.Request$Builder: okhttp3.Request$Builder removeHeader(java.lang.String)>
+    <okhttp3.Headers$Builder: okhttp3.Headers$Builder removeAll(java.lang.String)>
+    <okhttp3.Request$Builder: okhttp3.Request$Builder removeHeader(java.lang.String)>
+    <okhttp3.Request$Builder: okhttp3.Request$Builder removeHeader(java.lang.String)>
+    <com.pride.pasa.utils.MyOkHttpUtils: void <init>()>
+    <com.pride.pasa.utils.MyOkHttpUtils: void <init>()>
+    <com.pride.pasa.ui.guide.VerifyCode$11: void onResponse(org.json.JSONObject)>
+    <com.pride.pasa.utils.MyOkHttpUtils: void build()>
+    <com.pride.pasa.utils.MyOkHttpUtils: void build()>
+    <okhttp3.Request$Builder: okhttp3.Request build()>
+    <okhttp3.Request$Builder: okhttp3.Request build()>
+    <okhttp3.Headers$Builder: okhttp3.Headers build()>
+    <okhttp3.Headers$Builder: okhttp3.Headers build()>
+    <okhttp3.Headers$Builder: okhttp3.Headers build()>
+    <okhttp3.Headers$Builder: okhttp3.Headers build()>
+    <okhttp3.Headers$Builder: okhttp3.Headers build()>
+    <okhttp3.Headers: void <init>(java.lang.String[],kotlin.jvm.internal.DefaultConstructorMarker)>
+    <okhttp3.Headers: void <init>(java.lang.String[])>
+    <okhttp3.Headers: void <init>(java.lang.String[])>
+    <okhttp3.Headers: void <init>(java.lang.String[],kotlin.jvm.internal.DefaultConstructorMarker)>
+    <okhttp3.Headers$Builder: okhttp3.Headers build()>
+    <okhttp3.Request$Builder: okhttp3.Request build()>
+    <okhttp3.Request: void <init>(okhttp3.HttpUrl,java.lang.String,okhttp3.Headers,okhttp3.RequestBody,java.util.Map)>
+    <okhttp3.Request: void <init>(okhttp3.HttpUrl,java.lang.String,okhttp3.Headers,okhttp3.RequestBody,java.util.Map)>
+    <okhttp3.Request$Builder: okhttp3.Request build()>
+    <com.pride.pasa.utils.MyOkHttpUtils: void build()>
+
+Leak 4:
+  Source: $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>() (<android.location.Location: double getLatitude()>)
+  Sink: staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r6, $r5) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.pride.pasa.utils.MyGpsUtils: java.lang.String getGps(android.content.Context)>
+    <com.pride.pasa.utils.MyGpsUtils: java.lang.String getGps(android.content.Context)>
+    <com.pride.pasa.utils.MyGpsUtils: java.lang.String getGps(android.content.Context)>
+    <com.pride.pasa.utils.MyGpsUtils: java.lang.String getGps(android.content.Context)>
+    <com.pride.pasa.ui.guide.VerifyCode: void onModifyPassword(java.lang.String)>
+    <com.pride.pasa.ui.guide.VerifyCode: void onModifyPassword(java.lang.String)>
+    <com.pride.pasa.ui.guide.VerifyCode: void onModifyPassword(java.lang.String)>
+    <com.pride.pasa.utils.MyOkHttpUtils: com.pride.pasa.utils.MyOkHttpUtils post(java.lang.String)>
+
+Leak 5:
+  Source: $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>() (<android.location.Location: double getLongitude()>)
+  Sink: staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r6, $r5) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.pride.pasa.utils.MyGpsUtils: java.lang.String getGps(android.content.Context)>
+    <com.pride.pasa.utils.MyGpsUtils: java.lang.String getGps(android.content.Context)>
+    <com.pride.pasa.utils.MyGpsUtils: java.lang.String getGps(android.content.Context)>
+    <com.pride.pasa.utils.MyGpsUtils: java.lang.String getGps(android.content.Context)>
+    <com.pride.pasa.ui.guide.VerifyCode: void onModifyPassword(java.lang.String)>
+    <com.pride.pasa.ui.guide.VerifyCode: void onModifyPassword(java.lang.String)>
+    <com.pride.pasa.ui.guide.VerifyCode: void onModifyPassword(java.lang.String)>
+    <com.pride.pasa.utils.MyOkHttpUtils: com.pride.pasa.utils.MyOkHttpUtils post(java.lang.String)>
+
+Leak 6:
+  Source: $r3 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r0, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: $r8 = virtualinvoke $r7.<okhttp3.OkHttpClient: okhttp3.Call newCall(okhttp3.Request)>($r4) (<okhttp3.OkHttpClient: okhttp3.Call newCall(okhttp3.Request)>)
+  Methods:
+    <com.blankj.utilcode.util.AppUtils: int getAppVersionCode(java.lang.String)>
+    <com.blankj.utilcode.util.AppUtils: int getAppVersionCode(java.lang.String)>
+    <com.blankj.utilcode.util.AppUtils: int getAppVersionCode(java.lang.String)>
+    <com.blankj.utilcode.util.AppUtils: int getAppVersionCode()>
+    <com.pride.pasa.utils.MyOkHttpUtils: void <init>()>
+    <com.pride.pasa.utils.MyOkHttpUtils: void <init>()>
+    <okhttp3.Request$Builder: okhttp3.Request$Builder addHeader(java.lang.String,java.lang.String)>
+    <okhttp3.Headers$Builder: okhttp3.Headers$Builder add(java.lang.String,java.lang.String)>
+    <okhttp3.Headers$Builder: okhttp3.Headers$Builder addLenient$okhttp(java.lang.String,java.lang.String)>
+    <okhttp3.Headers$Builder: okhttp3.Headers$Builder addLenient$okhttp(java.lang.String,java.lang.String)>
+    <okhttp3.Headers$Builder: okhttp3.Headers$Builder addLenient$okhttp(java.lang.String,java.lang.String)>
+    <okhttp3.Headers$Builder: okhttp3.Headers$Builder addLenient$okhttp(java.lang.String,java.lang.String)>
+    <okhttp3.Headers$Builder: okhttp3.Headers$Builder addLenient$okhttp(java.lang.String,java.lang.String)>
+    <okhttp3.Headers$Builder: okhttp3.Headers$Builder add(java.lang.String,java.lang.String)>
+    <okhttp3.Request$Builder: okhttp3.Request$Builder addHeader(java.lang.String,java.lang.String)>
+    <okhttp3.Request$Builder: okhttp3.Request$Builder addHeader(java.lang.String,java.lang.String)>
+    <com.pride.pasa.utils.MyOkHttpUtils: void <init>()>
+    <com.pride.pasa.utils.MyOkHttpUtils: void <init>()>
+    <com.pride.pasa.MainActivity: void create()>
+    <com.pride.pasa.utils.MyOkHttpUtils: void build(com.pride.pasa.utils.MyOkHttpUtils$OnCallBack)>
+    <com.pride.pasa.utils.MyOkHttpUtils: void build(com.pride.pasa.utils.MyOkHttpUtils$OnCallBack)>
+    <okhttp3.Request$Builder: okhttp3.Request build()>
+    <okhttp3.Request$Builder: okhttp3.Request build()>
+    <okhttp3.Headers$Builder: okhttp3.Headers build()>
+    <okhttp3.Headers$Builder: okhttp3.Headers build()>
+    <okhttp3.Headers$Builder: okhttp3.Headers build()>
+    <okhttp3.Headers$Builder: okhttp3.Headers build()>
+    <okhttp3.Headers$Builder: okhttp3.Headers build()>
+    <okhttp3.Headers: void <init>(java.lang.String[],kotlin.jvm.internal.DefaultConstructorMarker)>
+    <okhttp3.Headers: void <init>(java.lang.String[])>
+    <okhttp3.Headers: void <init>(java.lang.String[])>
+    <okhttp3.Headers: void <init>(java.lang.String[],kotlin.jvm.internal.DefaultConstructorMarker)>
+    <okhttp3.Headers$Builder: okhttp3.Headers build()>
+    <okhttp3.Request$Builder: okhttp3.Request build()>
+    <okhttp3.Request: void <init>(okhttp3.HttpUrl,java.lang.String,okhttp3.Headers,okhttp3.RequestBody,java.util.Map)>
+    <okhttp3.Request: void <init>(okhttp3.HttpUrl,java.lang.String,okhttp3.Headers,okhttp3.RequestBody,java.util.Map)>
+    <okhttp3.Request$Builder: okhttp3.Request build()>
+    <com.pride.pasa.utils.MyOkHttpUtils: void build(com.pride.pasa.utils.MyOkHttpUtils$OnCallBack)>
+
+Leak 7:
+  Source: $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>() (<android.location.Location: double getLatitude()>)
+  Sink: $r8 = virtualinvoke $r7.<okhttp3.OkHttpClient: okhttp3.Call newCall(okhttp3.Request)>($r4) (<okhttp3.OkHttpClient: okhttp3.Call newCall(okhttp3.Request)>)
+  Methods:
+    <com.pride.pasa.utils.MyGpsUtils: java.lang.String getGps(android.content.Context)>
+    <com.pride.pasa.utils.MyGpsUtils: java.lang.String getGps(android.content.Context)>
+    <com.pride.pasa.utils.MyGpsUtils: java.lang.String getGps(android.content.Context)>
+    <com.pride.pasa.utils.MyGpsUtils: java.lang.String getGps(android.content.Context)>
+    <com.pride.pasa.utils.SaveDeviceUtils$5: void run()>
+    <com.pride.pasa.utils.SaveDeviceUtils$5: void run()>
+    <com.pride.pasa.utils.SaveDeviceUtils$5: void run()>
+    <com.pride.pasa.utils.MyOkHttpUtils: com.pride.pasa.utils.MyOkHttpUtils post(java.lang.String)>
+    <okhttp3.RequestBody: okhttp3.RequestBody create(java.lang.String,okhttp3.MediaType)>
+    <okhttp3.RequestBody$Companion: okhttp3.RequestBody create(java.lang.String,okhttp3.MediaType)>
+    <okhttp3.RequestBody$Companion: okhttp3.RequestBody create(java.lang.String,okhttp3.MediaType)>
+    <okhttp3.RequestBody$Companion: okhttp3.RequestBody create(byte[],okhttp3.MediaType,int,int)>
+    <okhttp3.RequestBody$Companion$toRequestBody$2: void <init>(byte[],okhttp3.MediaType,int,int)>
+    <okhttp3.RequestBody$Companion$toRequestBody$2: void <init>(byte[],okhttp3.MediaType,int,int)>
+    <okhttp3.RequestBody$Companion: okhttp3.RequestBody create(byte[],okhttp3.MediaType,int,int)>
+    <okhttp3.RequestBody$Companion: okhttp3.RequestBody create(byte[],okhttp3.MediaType,int,int)>
+    <okhttp3.RequestBody$Companion: okhttp3.RequestBody create(java.lang.String,okhttp3.MediaType)>
+    <okhttp3.RequestBody: okhttp3.RequestBody create(java.lang.String,okhttp3.MediaType)>
+    <com.pride.pasa.utils.MyOkHttpUtils: com.pride.pasa.utils.MyOkHttpUtils post(java.lang.String)>
+    <okhttp3.Request$Builder: okhttp3.Request$Builder post(okhttp3.RequestBody)>
+    <okhttp3.Request$Builder: okhttp3.Request$Builder method(java.lang.String,okhttp3.RequestBody)>
+    <okhttp3.Request$Builder: okhttp3.Request$Builder method(java.lang.String,okhttp3.RequestBody)>
+    <okhttp3.Request$Builder: okhttp3.Request$Builder post(okhttp3.RequestBody)>
+    <com.pride.pasa.utils.MyOkHttpUtils: com.pride.pasa.utils.MyOkHttpUtils post(java.lang.String)>
+    <com.pride.pasa.utils.MyOkHttpUtils: com.pride.pasa.utils.MyOkHttpUtils post(java.lang.String)>
+    <com.pride.pasa.utils.SaveDeviceUtils$5: void run()>
+    <com.pride.pasa.utils.MyOkHttpUtils: void build(com.pride.pasa.utils.MyOkHttpUtils$OnCallBack)>
+    <com.pride.pasa.utils.MyOkHttpUtils: void build(com.pride.pasa.utils.MyOkHttpUtils$OnCallBack)>
+    <okhttp3.Request$Builder: okhttp3.Request build()>
+    <okhttp3.Request$Builder: okhttp3.Request build()>
+    <okhttp3.Request: void <init>(okhttp3.HttpUrl,java.lang.String,okhttp3.Headers,okhttp3.RequestBody,java.util.Map)>
+    <okhttp3.Request: void <init>(okhttp3.HttpUrl,java.lang.String,okhttp3.Headers,okhttp3.RequestBody,java.util.Map)>
+    <okhttp3.Request$Builder: okhttp3.Request build()>
+    <com.pride.pasa.utils.MyOkHttpUtils: void build(com.pride.pasa.utils.MyOkHttpUtils$OnCallBack)>
+
+Leak 8:
+  Source: $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>() (<android.location.Location: double getLongitude()>)
+  Sink: $r8 = virtualinvoke $r7.<okhttp3.OkHttpClient: okhttp3.Call newCall(okhttp3.Request)>($r4) (<okhttp3.OkHttpClient: okhttp3.Call newCall(okhttp3.Request)>)
+  Methods:
+    <com.pride.pasa.utils.MyGpsUtils: java.lang.String getGps(android.content.Context)>
+    <com.pride.pasa.utils.MyGpsUtils: java.lang.String getGps(android.content.Context)>
+    <com.pride.pasa.utils.MyGpsUtils: java.lang.String getGps(android.content.Context)>
+    <com.pride.pasa.utils.MyGpsUtils: java.lang.String getGps(android.content.Context)>
+    <com.pride.pasa.utils.SaveDeviceUtils$5: void run()>
+    <com.pride.pasa.utils.SaveDeviceUtils$5: void run()>
+    <com.pride.pasa.utils.SaveDeviceUtils$5: void run()>
+    <com.pride.pasa.utils.MyOkHttpUtils: com.pride.pasa.utils.MyOkHttpUtils post(java.lang.String)>
+    <okhttp3.RequestBody: okhttp3.RequestBody create(java.lang.String,okhttp3.MediaType)>
+    <okhttp3.RequestBody$Companion: okhttp3.RequestBody create(java.lang.String,okhttp3.MediaType)>
+    <okhttp3.RequestBody$Companion: okhttp3.RequestBody create(java.lang.String,okhttp3.MediaType)>
+    <okhttp3.RequestBody$Companion: okhttp3.RequestBody create(byte[],okhttp3.MediaType,int,int)>
+    <okhttp3.RequestBody$Companion$toRequestBody$2: void <init>(byte[],okhttp3.MediaType,int,int)>
+    <okhttp3.RequestBody$Companion$toRequestBody$2: void <init>(byte[],okhttp3.MediaType,int,int)>
+    <okhttp3.RequestBody$Companion: okhttp3.RequestBody create(byte[],okhttp3.MediaType,int,int)>
+    <okhttp3.RequestBody$Companion: okhttp3.RequestBody create(byte[],okhttp3.MediaType,int,int)>
+    <okhttp3.RequestBody$Companion: okhttp3.RequestBody create(java.lang.String,okhttp3.MediaType)>
+    <okhttp3.RequestBody: okhttp3.RequestBody create(java.lang.String,okhttp3.MediaType)>
+    <com.pride.pasa.utils.MyOkHttpUtils: com.pride.pasa.utils.MyOkHttpUtils post(java.lang.String)>
+    <okhttp3.Request$Builder: okhttp3.Request$Builder post(okhttp3.RequestBody)>
+    <okhttp3.Request$Builder: okhttp3.Request$Builder method(java.lang.String,okhttp3.RequestBody)>
+    <okhttp3.Request$Builder: okhttp3.Request$Builder method(java.lang.String,okhttp3.RequestBody)>
+    <okhttp3.Request$Builder: okhttp3.Request$Builder post(okhttp3.RequestBody)>
+    <com.pride.pasa.utils.MyOkHttpUtils: com.pride.pasa.utils.MyOkHttpUtils post(java.lang.String)>
+    <com.pride.pasa.utils.MyOkHttpUtils: com.pride.pasa.utils.MyOkHttpUtils post(java.lang.String)>
+    <com.pride.pasa.utils.SaveDeviceUtils$5: void run()>
+    <com.pride.pasa.utils.MyOkHttpUtils: void build(com.pride.pasa.utils.MyOkHttpUtils$OnCallBack)>
+    <com.pride.pasa.utils.MyOkHttpUtils: void build(com.pride.pasa.utils.MyOkHttpUtils$OnCallBack)>
+    <okhttp3.Request$Builder: okhttp3.Request build()>
+    <okhttp3.Request$Builder: okhttp3.Request build()>
+    <okhttp3.Request: void <init>(okhttp3.HttpUrl,java.lang.String,okhttp3.Headers,okhttp3.RequestBody,java.util.Map)>
+    <okhttp3.Request: void <init>(okhttp3.HttpUrl,java.lang.String,okhttp3.Headers,okhttp3.RequestBody,java.util.Map)>
+    <okhttp3.Request$Builder: okhttp3.Request build()>
+    <com.pride.pasa.utils.MyOkHttpUtils: void build(com.pride.pasa.utils.MyOkHttpUtils$OnCallBack)>
+
+Leak 9:
+  Source: $r3 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r0, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("script:", $r2) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.blankj.utilcode.util.AppUtils: int getAppVersionCode(java.lang.String)>
+    <com.blankj.utilcode.util.AppUtils: int getAppVersionCode(java.lang.String)>
+    <com.blankj.utilcode.util.AppUtils: int getAppVersionCode(java.lang.String)>
+    <com.blankj.utilcode.util.AppUtils: int getAppVersionCode()>
+    <com.pride.pasa.ui.web.WebVideoAuth$3: void onPageStarted(android.webkit.WebView,java.lang.String,android.graphics.Bitmap)>
+    <com.pride.pasa.ui.web.WebVideoAuth$3: void onPageStarted(android.webkit.WebView,java.lang.String,android.graphics.Bitmap)>
+    <com.pride.pasa.ui.web.WebVideoAuth$3: void onPageStarted(android.webkit.WebView,java.lang.String,android.graphics.Bitmap)>
+
+Leak 10:
+  Source: $r3 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r0, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r3, $r5) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.blankj.utilcode.util.AppUtils: int getAppVersionCode(java.lang.String)>
+    <com.blankj.utilcode.util.AppUtils: int getAppVersionCode(java.lang.String)>
+    <com.blankj.utilcode.util.AppUtils: int getAppVersionCode(java.lang.String)>
+    <com.blankj.utilcode.util.AppUtils: int getAppVersionCode()>
+    <com.pride.pasa.utils.MyOkHttpUtils: com.pride.pasa.utils.MyOkHttpUtils url(java.lang.String)>
+    <com.pride.pasa.utils.MyOkHttpUtils: com.pride.pasa.utils.MyOkHttpUtils url(java.lang.String)>
+    <com.pride.pasa.utils.MyOkHttpUtils: com.pride.pasa.utils.MyOkHttpUtils url(java.lang.String)>
+    <com.pride.pasa.utils.MyOkHttpUtils: com.pride.pasa.utils.MyOkHttpUtils url(java.lang.String)>
+
+Leak 11:
+  Source: $r3 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r0, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r3, $r5) (<android.util.Log: int i(java.lang.String,java.lang.String)>)
+  Methods:
+    <com.blankj.utilcode.util.AppUtils: java.lang.String getAppVersionName(java.lang.String)>
+    <com.blankj.utilcode.util.AppUtils: java.lang.String getAppVersionName(java.lang.String)>
+    <com.blankj.utilcode.util.AppUtils: java.lang.String getAppVersionName(java.lang.String)>
+    <com.blankj.utilcode.util.AppUtils: java.lang.String getAppVersionName()>
+    <com.pride.pasa.utils.MyOkHttpUtils: com.pride.pasa.utils.MyOkHttpUtils url(java.lang.String)>
+    <com.pride.pasa.utils.MyOkHttpUtils: com.pride.pasa.utils.MyOkHttpUtils url(java.lang.String)>
+    <com.pride.pasa.utils.MyOkHttpUtils: com.pride.pasa.utils.MyOkHttpUtils url(java.lang.String)>
+

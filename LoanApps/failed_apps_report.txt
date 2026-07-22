@@ -1,0 +1,9 @@
+L-Pesa (com.app.l_pesa) - No Matching APK
+MetaLoan (com.metaloan) - No Matching APK
+KopaKash (com.kopakash) - No Matching APK
+Kashbean (com.kashbean) - No Matching APK
+Qist Bazaar (com.app.qistbazaar4) - No Matching APK
+Edufi (com.edufi.parent) - No Matching APK
+Finmas (com.oriente.finmas) - No Matching APK
+ (com.oriente.finmas) - No Matching APK
+CashStar (com.cashstar.mobile) - No Matching APK

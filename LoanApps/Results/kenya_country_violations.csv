@@ -1,0 +1,10 @@
+app_name,package,country,permissions
+FlashCredit,com.flash.flashcredit,Kenya,"android.permission.READ_CONTACTS, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_SMS, android.permission.ACCESS_FINE_LOCATION"
+MetaLoan,com.metaloan,Kenya,"android.permission.READ_CALL_LOG, android.permission.READ_SMS"
+KopaKash,com.kopakash,Kenya,"android.permission.READ_CALL_LOG, android.permission.READ_SMS"
+Senti,com.roamtech.dm.azima,Kenya,"android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_SMS, android.permission.ACCESS_FINE_LOCATION"
+Leja,com.okoleainternational.okoleamobile,Kenya,"android.permission.READ_CONTACTS, android.permission.READ_SMS, android.permission.ACCESS_FINE_LOCATION"
+Mojacredit,ke.mojacredit,Kenya,"android.permission.READ_CALL_LOG, android.permission.READ_SMS"
+Kashbean,com.kashbean,Kenya,"android.permission.READ_CALL_LOG, android.permission.READ_SMS"
+Creditmoja,com.kenya.credit.app.loan.cash.money.pesa,Kenya,"android.permission.READ_CALL_LOG, android.permission.READ_SMS"
+MyCredit,com.mycredit.mycredit,Kenya,"android.permission.READ_CONTACTS, android.permission.WRITE_EXTERNAL_STORAGE"

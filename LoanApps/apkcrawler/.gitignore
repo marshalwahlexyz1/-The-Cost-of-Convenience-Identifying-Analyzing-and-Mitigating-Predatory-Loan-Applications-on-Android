@@ -1,0 +1,21 @@
+# Downloaded APKs
+*.apk
+
+# Log Files
+*.log
+*.html
+*.json
+
+#Temporary editor files
+*.bak
+*~
+
+#Python bytecode
+*.pyc
+
+#AptoideIDs and Stores
+aptoidecrawler.config
+aptoidecrawler.config.stores
+
+#PlayStoreCredentials (those are super secret)
+playstorecrawler.config

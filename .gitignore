@@ -1,0 +1,33 @@
+# ── App binaries — never commit ─────────────────────────────
+*.apk
+*.apks
+*.xapk
+*.xapks
+*.aab
+
+# ── Third-party tools / build output ────────────────────────
+FlowDroid/
+sootOutput/
+flowdroid_work/
+*.jar
+
+# ── Python ──────────────────────────────────────────────────
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# ── Logs / OS cruft ─────────────────────────────────────────
+*.log
+.DS_Store
+
+# ── Secrets / credentials ───────────────────────────────────
+*.env
+.env
+*credential*
+aptoidecrawler.config
+
+# Extracted tracker dumps contain third-party secrets — never commit
+loanwatch/trackers and urls.csv
+loanwatch/tracker_urls_summary.csv
+tracker*url*.csv
+*trackers*.csv

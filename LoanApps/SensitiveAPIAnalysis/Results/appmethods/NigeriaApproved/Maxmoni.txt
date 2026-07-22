@@ -1,0 +1,358 @@
+APK: Maxmoni (NigeriaApproved)
+Leak 1:
+  Source: $r3 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r0, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r0.<java.io.Writer: void write(java.lang.String)>($r3) (<java.io.OutputStreamWriter: void write(java.lang.String)>)
+  Methods:
+    <com.blankj.utilcode.util.b: java.lang.String D(java.lang.String)>
+    <com.blankj.utilcode.util.b: java.lang.String D(java.lang.String)>
+    <com.blankj.utilcode.util.b: java.lang.String D(java.lang.String)>
+    <com.blankj.utilcode.util.b: java.lang.String C()>
+    <com.blankj.utilcode.util.o$a: java.lang.String toString()>
+    <com.blankj.utilcode.util.o$a: java.lang.String toString()>
+    <com.blankj.utilcode.util.o$a: java.lang.String toString()>
+    <com.blankj.utilcode.util.f: void S(java.lang.String,java.lang.String)>
+    <com.blankj.utilcode.util.f: void H(java.lang.String,java.lang.String)>
+    <i4.d0: boolean W(java.lang.String,java.lang.String,boolean)>
+    <i4.d0: boolean U(java.io.File,java.lang.String,boolean)>
+
+Leak 2:
+  Source: $r3 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r0, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r0.<java.io.Writer: void write(java.lang.String)>($r3) (<java.io.OutputStreamWriter: void write(java.lang.String)>)
+  Methods:
+    <com.blankj.utilcode.util.b: int B(java.lang.String)>
+    <com.blankj.utilcode.util.b: int B(java.lang.String)>
+    <com.blankj.utilcode.util.b: int B(java.lang.String)>
+    <com.blankj.utilcode.util.b: int A()>
+    <com.blankj.utilcode.util.o$a: java.lang.String toString()>
+    <com.blankj.utilcode.util.o$a: java.lang.String toString()>
+    <com.blankj.utilcode.util.o$a: java.lang.String toString()>
+    <com.blankj.utilcode.util.f: void S(java.lang.String,java.lang.String)>
+    <com.blankj.utilcode.util.f: void H(java.lang.String,java.lang.String)>
+    <i4.d0: boolean W(java.lang.String,java.lang.String,boolean)>
+    <i4.d0: boolean U(java.io.File,java.lang.String,boolean)>
+
+Leak 3:
+  Source: $r3 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r0, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r0.<java.io.Writer: void write(java.lang.String)>($r3) (<java.io.BufferedWriter: void write(java.lang.String)>)
+  Methods:
+    <com.blankj.utilcode.util.b: java.lang.String D(java.lang.String)>
+    <com.blankj.utilcode.util.b: java.lang.String D(java.lang.String)>
+    <com.blankj.utilcode.util.b: java.lang.String D(java.lang.String)>
+    <com.blankj.utilcode.util.b: java.lang.String C()>
+    <com.blankj.utilcode.util.o$a: java.lang.String toString()>
+    <com.blankj.utilcode.util.o$a: java.lang.String toString()>
+    <com.blankj.utilcode.util.o$a: java.lang.String toString()>
+    <com.blankj.utilcode.util.f: void S(java.lang.String,java.lang.String)>
+    <com.blankj.utilcode.util.f: void H(java.lang.String,java.lang.String)>
+    <i4.d0: boolean W(java.lang.String,java.lang.String,boolean)>
+    <i4.d0: boolean U(java.io.File,java.lang.String,boolean)>
+
+Leak 4:
+  Source: $r3 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r0, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r0.<java.io.Writer: void write(java.lang.String)>($r3) (<java.io.BufferedWriter: void write(java.lang.String)>)
+  Methods:
+    <com.blankj.utilcode.util.b: int B(java.lang.String)>
+    <com.blankj.utilcode.util.b: int B(java.lang.String)>
+    <com.blankj.utilcode.util.b: int B(java.lang.String)>
+    <com.blankj.utilcode.util.b: int A()>
+    <com.blankj.utilcode.util.o$a: java.lang.String toString()>
+    <com.blankj.utilcode.util.o$a: java.lang.String toString()>
+    <com.blankj.utilcode.util.o$a: java.lang.String toString()>
+    <com.blankj.utilcode.util.f: void S(java.lang.String,java.lang.String)>
+    <com.blankj.utilcode.util.f: void H(java.lang.String,java.lang.String)>
+    <i4.d0: boolean W(java.lang.String,java.lang.String,boolean)>
+    <i4.d0: boolean U(java.io.File,java.lang.String,boolean)>
+
+Leak 5:
+  Source: $r4 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r3, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r3.<java.io.OutputStream: void write(byte[])>($r5) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.facebook.s: void G(android.content.Context)>
+    <com.facebook.s: void G(android.content.Context)>
+    <com.facebook.s: void G(android.content.Context)>
+    <com.facebook.s: void G(android.content.Context)>
+    <com.facebook.s: void G(android.content.Context)>
+    <com.facebook.s: void G(android.content.Context)>
+    <com.facebook.s: void N(android.content.Context,com.facebook.s$k)>
+    <com.facebook.s: void K(android.content.Context)>
+    <m6.q0: java.lang.String E(android.content.Context)>
+    <s5.i: void <init>(java.lang.String,java.lang.String,com.facebook.a)>
+    <s5.i: void <init>(android.content.Context,java.lang.String,com.facebook.a)>
+    <s5.o: void <init>(android.content.Context)>
+    <com.facebook.o0: void o()>
+    <com.facebook.o0: void k()>
+    <com.facebook.o0: boolean g()>
+    <com.facebook.s: boolean l()>
+    <p6.b: void b(java.lang.Throwable,java.lang.Object)>
+    <m6.r$b: void run()>
+    <m6.r: void l()>
+    <m6.r: void j(m6.r$c)>
+    <m6.q: void a(m6.q$d,m6.q$c)>
+    <com.facebook.o: void <init>(java.lang.String)>
+    <com.facebook.t: void <init>(java.lang.String)>
+    <m6.r0: void v()>
+    <com.facebook.s: java.lang.String h()>
+    <com.facebook.w: java.lang.String u(com.facebook.y)>
+    <com.facebook.w: void f0(com.facebook.y,m6.e0,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.w: void l0(com.facebook.y,java.net.HttpURLConnection)>
+    <com.facebook.w: void f0(com.facebook.y,m6.e0,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.w: java.lang.String u(com.facebook.y)>
+    <com.facebook.s: java.lang.String h()>
+    <com.facebook.s: java.lang.String h()>
+    <com.facebook.w: java.lang.String u(com.facebook.y)>
+    <com.facebook.w: void f0(com.facebook.y,m6.e0,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.w$n: void a(java.lang.String,java.lang.String)>
+    <com.facebook.w$n: void a(java.lang.String,java.lang.String)>
+    <com.facebook.w$n: void i(java.lang.String,java.lang.Object[])>
+    <com.facebook.w$n: void c(java.lang.String,java.lang.Object[])>
+    <com.facebook.w$n: void c(java.lang.String,java.lang.Object[])>
+    <com.facebook.w$n: void c(java.lang.String,java.lang.Object[])>
+    <com.facebook.w$n: void c(java.lang.String,java.lang.Object[])>
+
+Leak 6:
+  Source: $r4 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r3, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r5.<java.io.OutputStream: void write(byte[])>($r6) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.facebook.s: void G(android.content.Context)>
+    <com.facebook.s: void G(android.content.Context)>
+    <com.facebook.s: void G(android.content.Context)>
+    <com.facebook.s: void G(android.content.Context)>
+    <com.facebook.s: void G(android.content.Context)>
+    <com.facebook.s: void G(android.content.Context)>
+    <com.facebook.s: void N(android.content.Context,com.facebook.s$k)>
+    <com.facebook.s: void K(android.content.Context)>
+    <com.facebook.FacebookActivity: void onCreate(android.os.Bundle)>
+    <dummyMainClass: com.facebook.FacebookActivity dummyMainMethod_com_facebook_FacebookActivity(android.content.Intent)>
+    <dummyMainClass: void dummyMainMethod(java.lang.String[])>
+    <dummyMainClass: com.facebook.FacebookActivity dummyMainMethod_com_facebook_FacebookActivity(android.content.Intent)>
+    <com.facebook.FacebookActivity: void onCreate(android.os.Bundle)>
+    <com.facebook.FacebookActivity: void N()>
+    <m6.h0: android.content.Intent n(android.content.Intent,android.os.Bundle,com.facebook.o)>
+    <p6.b: void b(java.lang.Throwable,java.lang.Object)>
+    <n6.a: void b(java.lang.Throwable)>
+    <com.facebook.s: boolean l()>
+    <com.facebook.o0: boolean g()>
+    <com.facebook.o0: void k()>
+    <com.facebook.o0: void j()>
+    <com.facebook.o0$a: void run()>
+    <com.facebook.w: com.facebook.z g()>
+    <com.facebook.w: com.facebook.z h(com.facebook.w)>
+    <com.facebook.w: java.util.List l(com.facebook.w[])>
+    <com.facebook.w: java.util.List k(java.util.Collection)>
+    <com.facebook.w: java.util.List j(com.facebook.y)>
+    <com.facebook.w: java.net.HttpURLConnection B0(com.facebook.y)>
+    <com.facebook.w: void l0(com.facebook.y,java.net.HttpURLConnection)>
+    <com.facebook.w: void f0(com.facebook.y,m6.e0,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.w: java.lang.String u(com.facebook.y)>
+    <com.facebook.s: java.lang.String h()>
+    <com.facebook.s: java.lang.String h()>
+    <com.facebook.w: java.lang.String u(com.facebook.y)>
+    <com.facebook.w: void f0(com.facebook.y,m6.e0,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.w$n: void a(java.lang.String,java.lang.String)>
+    <com.facebook.w$n: void a(java.lang.String,java.lang.String)>
+    <com.facebook.w$n: void i(java.lang.String,java.lang.Object[])>
+    <com.facebook.w$n: void c(java.lang.String,java.lang.Object[])>
+    <com.facebook.w$n: void c(java.lang.String,java.lang.Object[])>
+    <com.facebook.w$n: void c(java.lang.String,java.lang.Object[])>
+    <com.facebook.w$n: void c(java.lang.String,java.lang.Object[])>
+    <com.facebook.w$n: void c(java.lang.String,java.lang.Object[])>
+    <com.facebook.w$n: void i(java.lang.String,java.lang.Object[])>
+    <com.facebook.w$n: void a(java.lang.String,java.lang.String)>
+    <com.facebook.w: void f0(com.facebook.y,m6.e0,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.w: void j0(com.facebook.w$n,java.util.Collection,java.util.Map)>
+    <com.facebook.w$n: void l(java.lang.String,org.json.JSONArray,java.util.Collection)>
+    <com.facebook.w$n: void f(java.lang.String,java.lang.String,java.lang.String)>
+    <com.facebook.w$n: void f(java.lang.String,java.lang.String,java.lang.String)>
+
+Leak 7:
+  Source: $r4 = virtualinvoke $r3.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r2, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r5.<java.io.FileOutputStream: void write(byte[])>($r6) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <m6.q0: java.lang.String x()>
+    <m6.q0: java.lang.String x()>
+    <m6.q0: java.lang.String x()>
+    <n6.b: void <init>(java.lang.Throwable,n6.b$c)>
+    <n6.b: void <init>(java.lang.Throwable,n6.b$c)>
+    <p6.b: void b(java.lang.Throwable,java.lang.Object)>
+    <n6.b: void h()>
+    <n6.b: java.lang.String toString()>
+    <n6.b: org.json.JSONObject e()>
+    <n6.b: org.json.JSONObject d()>
+    <n6.b: org.json.JSONObject d()>
+    <n6.b: org.json.JSONObject d()>
+    <n6.b: org.json.JSONObject e()>
+    <n6.b: java.lang.String toString()>
+    <n6.b: java.lang.String toString()>
+    <n6.b: void h()>
+    <n6.d: void j(java.lang.String,java.lang.String)>
+    <n6.d: void j(java.lang.String,java.lang.String)>
+
+Leak 8:
+  Source: $r4 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r3, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r3.<java.io.OutputStream: void write(byte[])>($r4) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.facebook.s: void G(android.content.Context)>
+    <com.facebook.s: void G(android.content.Context)>
+    <com.facebook.s: void G(android.content.Context)>
+    <com.facebook.s: void G(android.content.Context)>
+    <com.facebook.s: void G(android.content.Context)>
+    <com.facebook.s: void G(android.content.Context)>
+    <com.facebook.s: void N(android.content.Context,com.facebook.s$k)>
+    <com.facebook.s: void K(android.content.Context)>
+    <dummyMainClass: com.loan.maxmoni.myui.UserInfoActivityApp dummyMainMethod_com_loan_maxmoni_myui_UserInfoActivityApp(android.content.Intent)>
+    <dummyMainClass: void dummyMainMethod(java.lang.String[])>
+    <com.facebook.internal.FacebookInitProvider: boolean onCreate()>
+    <com.facebook.s: void K(android.content.Context)>
+    <com.facebook.s: void N(android.content.Context,com.facebook.s$k)>
+    <com.facebook.o0: boolean f()>
+    <com.facebook.o0: void k()>
+    <com.facebook.o0: void j()>
+    <com.facebook.o0$a: void run()>
+    <com.facebook.w: com.facebook.z g()>
+    <com.facebook.w: com.facebook.z h(com.facebook.w)>
+    <com.facebook.w: java.util.List l(com.facebook.w[])>
+    <com.facebook.w: java.util.List k(java.util.Collection)>
+    <com.facebook.w: java.util.List j(com.facebook.y)>
+    <com.facebook.w: java.net.HttpURLConnection B0(com.facebook.y)>
+    <com.facebook.w: void l0(com.facebook.y,java.net.HttpURLConnection)>
+    <com.facebook.w: void f0(com.facebook.y,m6.e0,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.w: java.lang.String u(com.facebook.y)>
+    <com.facebook.s: java.lang.String h()>
+    <com.facebook.s: java.lang.String h()>
+    <com.facebook.w: java.lang.String u(com.facebook.y)>
+    <com.facebook.w: void f0(com.facebook.y,m6.e0,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.w$n: void a(java.lang.String,java.lang.String)>
+    <com.facebook.w$n: void a(java.lang.String,java.lang.String)>
+    <com.facebook.w$n: void i(java.lang.String,java.lang.Object[])>
+    <com.facebook.w$n: void c(java.lang.String,java.lang.Object[])>
+    <com.facebook.w$n: void c(java.lang.String,java.lang.Object[])>
+    <com.facebook.w$n: void c(java.lang.String,java.lang.Object[])>
+    <com.facebook.w$n: void c(java.lang.String,java.lang.Object[])>
+    <com.facebook.w$n: void c(java.lang.String,java.lang.Object[])>
+    <com.facebook.w$n: void i(java.lang.String,java.lang.Object[])>
+    <com.facebook.w$n: void a(java.lang.String,java.lang.String)>
+    <com.facebook.w$n: void k()>
+    <com.facebook.w$n: void k()>
+
+Leak 9:
+  Source: $r4 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r3, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r3.<java.io.OutputStream: void write(byte[])>($r5) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.facebook.s: void G(android.content.Context)>
+    <com.facebook.s: void G(android.content.Context)>
+    <com.facebook.s: void G(android.content.Context)>
+    <com.facebook.s: void G(android.content.Context)>
+    <com.facebook.s: void G(android.content.Context)>
+    <com.facebook.s: void G(android.content.Context)>
+    <com.facebook.s: void N(android.content.Context,com.facebook.s$k)>
+    <com.facebook.o0: boolean f()>
+    <com.facebook.o0: void k()>
+    <com.facebook.o0: void j()>
+    <com.facebook.o0$a: void run()>
+    <com.facebook.w: com.facebook.z g()>
+    <com.facebook.w: com.facebook.z h(com.facebook.w)>
+    <com.facebook.w: java.util.List l(com.facebook.w[])>
+    <com.facebook.w: java.util.List k(java.util.Collection)>
+    <com.facebook.w: java.util.List j(com.facebook.y)>
+    <com.facebook.w: java.net.HttpURLConnection B0(com.facebook.y)>
+    <com.facebook.w: void l0(com.facebook.y,java.net.HttpURLConnection)>
+    <com.facebook.w: void f0(com.facebook.y,m6.e0,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.w: java.lang.String u(com.facebook.y)>
+    <com.facebook.s: java.lang.String h()>
+    <com.facebook.s: java.lang.String h()>
+    <com.facebook.w: java.lang.String u(com.facebook.y)>
+    <com.facebook.w: void f0(com.facebook.y,m6.e0,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.w$n: void a(java.lang.String,java.lang.String)>
+    <com.facebook.w$n: void a(java.lang.String,java.lang.String)>
+    <com.facebook.w$n: void i(java.lang.String,java.lang.Object[])>
+    <com.facebook.w$n: void c(java.lang.String,java.lang.Object[])>
+    <com.facebook.w$n: void c(java.lang.String,java.lang.Object[])>
+    <com.facebook.w$n: void c(java.lang.String,java.lang.Object[])>
+    <com.facebook.w$n: void c(java.lang.String,java.lang.Object[])>
+    <com.facebook.w$n: void c(java.lang.String,java.lang.Object[])>
+    <com.facebook.w$n: void i(java.lang.String,java.lang.Object[])>
+    <com.facebook.w$n: void c(java.lang.String,java.lang.Object[])>
+    <com.facebook.w$n: void c(java.lang.String,java.lang.Object[])>
+
+Leak 10:
+  Source: $r4 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r3, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r3.<java.io.OutputStream: void write(byte[])>($r5) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.facebook.s: void G(android.content.Context)>
+    <com.facebook.s: void G(android.content.Context)>
+    <com.facebook.s: void G(android.content.Context)>
+    <com.facebook.s: void G(android.content.Context)>
+    <com.facebook.s: void G(android.content.Context)>
+    <com.facebook.s: void G(android.content.Context)>
+    <com.facebook.s: void N(android.content.Context,com.facebook.s$k)>
+    <com.facebook.s: void K(android.content.Context)>
+    <m6.q0: java.lang.String E(android.content.Context)>
+    <s5.i: void <init>(java.lang.String,java.lang.String,com.facebook.a)>
+    <s5.i: void <init>(android.content.Context,java.lang.String,com.facebook.a)>
+    <s5.o: void <init>(android.content.Context)>
+    <com.facebook.o0: void o()>
+    <com.facebook.o0: void k()>
+    <com.facebook.o0: boolean g()>
+    <com.facebook.s: boolean l()>
+    <p6.b: void b(java.lang.Throwable,java.lang.Object)>
+    <m6.r$a: void run()>
+    <m6.r: void j(m6.r$c)>
+    <m6.q: void a(m6.q$d,m6.q$c)>
+    <com.facebook.o: void <init>(java.lang.String)>
+    <com.facebook.t: void <init>(java.lang.String)>
+    <m6.r0: void v()>
+    <com.facebook.s: java.lang.String h()>
+    <com.facebook.s: java.lang.String h()>
+    <com.facebook.w: java.lang.String u(com.facebook.y)>
+    <com.facebook.w: void f0(com.facebook.y,m6.e0,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.w$n: void a(java.lang.String,java.lang.String)>
+    <com.facebook.w$n: void a(java.lang.String,java.lang.String)>
+    <com.facebook.w$n: void i(java.lang.String,java.lang.Object[])>
+    <com.facebook.w$n: void c(java.lang.String,java.lang.Object[])>
+    <com.facebook.w$n: void c(java.lang.String,java.lang.Object[])>
+    <com.facebook.w$n: void c(java.lang.String,java.lang.Object[])>
+    <com.facebook.w$n: void c(java.lang.String,java.lang.Object[])>
+    <com.facebook.w$n: void c(java.lang.String,java.lang.Object[])>
+    <com.facebook.w$n: void i(java.lang.String,java.lang.Object[])>
+    <com.facebook.w$n: void c(java.lang.String,java.lang.Object[])>
+    <com.facebook.w$n: void c(java.lang.String,java.lang.Object[])>
+
+Leak 11:
+  Source: $r4 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r3, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r3.<java.io.OutputStream: void write(byte[])>($r5) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.facebook.s: void G(android.content.Context)>
+    <com.facebook.s: void G(android.content.Context)>
+    <com.facebook.s: void G(android.content.Context)>
+    <com.facebook.s: void G(android.content.Context)>
+    <com.facebook.s: void G(android.content.Context)>
+    <com.facebook.s: void G(android.content.Context)>
+    <com.facebook.s: void N(android.content.Context,com.facebook.s$k)>
+    <com.facebook.s: void K(android.content.Context)>
+    <m6.q0: java.lang.String E(android.content.Context)>
+    <s5.i: void <init>(java.lang.String,java.lang.String,com.facebook.a)>
+    <s5.i: void <init>(android.content.Context,java.lang.String,com.facebook.a)>
+    <s5.o: void <init>(android.content.Context)>
+    <com.facebook.o0: void o()>
+    <com.facebook.o0: void k()>
+    <com.facebook.o0: boolean g()>
+    <com.facebook.s: boolean l()>
+    <n6.a: void b(java.lang.Throwable)>
+    <p6.b: void b(java.lang.Throwable,java.lang.Object)>
+    <m6.r$a: void run()>
+    <m6.r: void j(m6.r$c)>
+    <m6.q: void a(m6.q$d,m6.q$c)>
+    <com.facebook.o: void <init>(java.lang.String)>
+    <com.facebook.t: void <init>(java.lang.String)>
+    <m6.r0: void v()>
+    <com.facebook.s: java.lang.String h()>
+    <com.facebook.s: java.lang.String h()>
+    <com.facebook.w: java.lang.String u(com.facebook.y)>
+    <com.facebook.w: void f0(com.facebook.y,m6.e0,int,java.net.URL,java.io.OutputStream,boolean)>
+    <com.facebook.w$n: void a(java.lang.String,java.lang.String)>
+    <com.facebook.w$n: void a(java.lang.String,java.lang.String)>
+    <com.facebook.w$n: void i(java.lang.String,java.lang.Object[])>
+    <com.facebook.w$n: void c(java.lang.String,java.lang.Object[])>
+    <com.facebook.w$n: void c(java.lang.String,java.lang.Object[])>
+    <com.facebook.w$n: void c(java.lang.String,java.lang.Object[])>
+

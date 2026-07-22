@@ -1,0 +1,35 @@
+APK: Payhippo (NigeriaApproved)
+Leak 1:
+  Source: $r7 = virtualinvoke $r4.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r6, 128) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r8.<java.io.OutputStream: void write(byte[])>($r5) (<java.io.OutputStream: void write(byte[])>)
+  Methods:
+    <com.smartlook.l1$b: android.content.pm.PackageInfo a()>
+    <com.smartlook.l1$b: android.content.pm.PackageInfo a()>
+    <com.smartlook.l1$b: java.lang.Object invoke()>
+    <oj.w: java.lang.Object getValue()>
+    <oj.w: java.lang.Object getValue()>
+    <io.intercom.android.sdk.helpcenter.search.IntercomArticleSearchActivity: io.intercom.android.sdk.helpcenter.search.IntercomArticleSearchActivity$ArticleSearchArgs getArgs()>
+    <io.intercom.android.sdk.helpcenter.search.IntercomArticleSearchActivity: io.intercom.android.sdk.helpcenter.search.IntercomArticleSearchActivity$ArticleSearchArgs getArgs()>
+    <io.intercom.android.sdk.helpcenter.search.IntercomArticleSearchActivity: io.intercom.android.sdk.helpcenter.search.IntercomArticleSearchActivity$ArticleSearchArgs access$getArgs(io.intercom.android.sdk.helpcenter.search.IntercomArticleSearchActivity)>
+    <io.intercom.android.sdk.helpcenter.search.IntercomArticleSearchActivity$viewModel$2: io.intercom.android.sdk.helpcenter.search.ArticleSearchViewModel invoke()>
+    <io.intercom.android.sdk.helpcenter.search.IntercomArticleSearchActivity$viewModel$2: io.intercom.android.sdk.helpcenter.search.ArticleSearchViewModel invoke()>
+    <oj.w: java.lang.Object getValue()>
+    <oj.w: java.lang.Object getValue()>
+    <oj.w: java.lang.Object getValue()>
+    <com.smartlook.android.job.worker.internallog.UploadInternalLogJob: com.smartlook.e1 c()>
+    <com.smartlook.android.job.worker.internallog.UploadInternalLogJob: com.smartlook.e1 c()>
+    <com.smartlook.android.job.worker.internallog.UploadInternalLogJob: void a(android.app.job.JobParameters)>
+    <com.smartlook.e1: java.lang.String e()>
+    <com.smartlook.e1: java.lang.String e()>
+    <com.smartlook.sdk.storage.SessionRecordingStorage: java.lang.String readInternalLog()>
+    <com.smartlook.sdk.storage.SessionRecordingStorage: java.lang.String readInternalLog()>
+    <p7.b: java.lang.String c(java.io.File)>
+    <p7.b: byte[] b(java.io.File)>
+    <p7.b: byte[] b(java.io.File)>
+    <q7.a: byte[] d(java.lang.String)>
+    <q7.a: byte[] d(java.lang.String)>
+    <t7.a: byte[] b(java.io.File)>
+    <t7.a: byte[] b(java.io.File)>
+    <t7.a: byte[] b(java.io.File)>
+    <t7.a: byte[] b(java.io.File)>
+

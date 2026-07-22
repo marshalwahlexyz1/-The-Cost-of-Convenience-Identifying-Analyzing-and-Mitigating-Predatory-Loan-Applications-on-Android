@@ -1,0 +1,59 @@
+APK: com.myloan.pesocash_2024-08-14 (PhilippinesApproved)
+Leak 1:
+  Source: $r6 = virtualinvoke $r4.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r5, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r11.<java.io.BufferedWriter: void write(java.lang.String)>($r0) (<java.io.BufferedWriter: void write(java.lang.String)>)
+  Methods:
+    <М: void ԗ(java.lang.String,java.lang.String)>
+    <М: void ԗ(java.lang.String,java.lang.String)>
+    <М: void ԗ(java.lang.String,java.lang.String)>
+    <М: void ԗ(java.lang.String,java.lang.String)>
+    <М: void ԗ(java.lang.String,java.lang.String)>
+    <М: void ӑ(java.lang.String,java.lang.String)>
+
+Leak 2:
+  Source: $r6 = virtualinvoke $r4.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r5, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r11.<java.io.BufferedWriter: void write(java.lang.String)>($r0) (<java.io.OutputStreamWriter: void write(java.lang.String)>)
+  Methods:
+    <М: void ԗ(java.lang.String,java.lang.String)>
+    <М: void ԗ(java.lang.String,java.lang.String)>
+    <М: void ԗ(java.lang.String,java.lang.String)>
+    <М: void ԗ(java.lang.String,java.lang.String)>
+    <М: void ԗ(java.lang.String,java.lang.String)>
+    <М: void ӑ(java.lang.String,java.lang.String)>
+
+Leak 3:
+  Source: $r7 = virtualinvoke $r5.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r6, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: $r3 = virtualinvoke $r2.<java.net.URL: java.net.URLConnection openConnection()>() (<java.net.URL: java.net.URLConnection openConnection()>)
+  Methods:
+    <com.appsflyer.internal.AFd1pSDK: java.lang.String getRevenue(java.lang.String)>
+    <com.appsflyer.internal.AFd1pSDK: java.lang.String getRevenue(java.lang.String)>
+    <com.appsflyer.internal.AFd1pSDK: java.lang.String getRevenue(java.lang.String)>
+    <com.appsflyer.internal.AFd1pSDK: java.lang.String getRevenue(java.lang.String)>
+    <com.appsflyer.internal.AFd1pSDK: java.lang.String getRevenue(java.lang.String)>
+    <com.appsflyer.internal.AFd1pSDK: java.lang.String component4()>
+    <com.appsflyer.internal.AFe1fSDK$3: java.lang.String getMediationNetwork()>
+    <com.appsflyer.internal.AFe1fSDK$3: java.lang.String getMediationNetwork()>
+    <com.appsflyer.internal.AFb1tSDK: java.lang.Object AFAdRevenueData(java.lang.Object[],int,int,int)>
+    <com.appsflyer.internal.AFb1tSDK: java.lang.Object values(java.lang.Object[])>
+    <com.appsflyer.internal.AFb1tSDK: java.lang.Object values(java.lang.Object[])>
+    <com.appsflyer.internal.AFb1tSDK: java.lang.Object values(java.lang.Object[])>
+    <com.appsflyer.internal.AFb1tSDK: java.lang.Object AFAdRevenueData(java.lang.Object[],int,int,int)>
+    <com.appsflyer.internal.AFe1fSDK$3: java.lang.String getMediationNetwork()>
+    <com.appsflyer.internal.AFe1fSDK$3: java.lang.String getMediationNetwork()>
+    <com.appsflyer.internal.AFe1fSDK$3: java.lang.String getMediationNetwork()>
+    <kotlin.text.StringsKt__StringsKt: java.lang.CharSequence ʳ(java.lang.CharSequence)>
+    <kotlin.text.StringsKt__StringsKt: java.lang.CharSequence ʳ(java.lang.CharSequence)>
+    <com.appsflyer.internal.AFe1fSDK$3: java.lang.String getMediationNetwork()>
+    <com.appsflyer.internal.AFe1fSDK$3: java.lang.String getMediationNetwork()>
+    <com.appsflyer.internal.AFe1fSDK$3: java.lang.Object invoke()>
+    <Ⴔ: java.lang.Object getValue()>
+    <Ⴔ: java.lang.Object getValue()>
+    <com.appsflyer.internal.AFe1fSDK: java.lang.String getMonetizationNetwork()>
+    <com.appsflyer.internal.AFe1fSDK: java.lang.String getMonetizationNetwork()>
+    <com.appsflyer.internal.AFb1tSDK: java.lang.String getHostPrefix()>
+    <com.appsflyer.internal.AFd1cSDK: java.lang.String getCurrencyIso4217Code()>
+    <com.appsflyer.internal.AFd1cSDK: java.lang.String getCurrencyIso4217Code()>
+    <com.appsflyer.internal.AFd1cSDK: java.lang.String getCurrencyIso4217Code()>
+    <com.appsflyer.internal.AFd1hSDK: boolean getMonetizationNetwork()>
+    <com.appsflyer.internal.AFd1hSDK: boolean getMonetizationNetwork()>
+

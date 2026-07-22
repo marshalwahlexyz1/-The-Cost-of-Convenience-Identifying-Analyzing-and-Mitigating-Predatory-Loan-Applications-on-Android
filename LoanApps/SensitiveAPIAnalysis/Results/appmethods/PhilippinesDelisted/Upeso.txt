@@ -1,0 +1,140 @@
+APK: Upeso (PhilippinesDelisted)
+Leak 1:
+  Source: $r4 = virtualinvoke $r3.<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>($r2, 0) (<android.content.pm.PackageManager: android.content.pm.PackageInfo getPackageInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r5.<java.io.FileOutputStream: void write(byte[])>($r7) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <s2.n0: java.lang.String w()>
+    <s2.n0: java.lang.String w()>
+    <s2.n0: java.lang.String w()>
+    <u2.c: void <init>(java.lang.Throwable,u2.c$c)>
+    <u2.c: void <init>(java.lang.Throwable,u2.c$c)>
+    <u2.c: void <init>(java.lang.Throwable,u2.c$c,kotlin.jvm.internal.DefaultConstructorMarker)>
+    <u2.c$a: u2.c b(java.lang.Throwable,u2.c$c)>
+    <x2.a: void b(java.lang.Throwable,java.lang.Object)>
+    <u2.c: void g()>
+    <u2.c: java.lang.String toString()>
+    <u2.c: org.json.JSONObject e()>
+    <u2.c: org.json.JSONObject d()>
+    <u2.c: org.json.JSONObject d()>
+    <u2.c: org.json.JSONObject d()>
+    <u2.c: org.json.JSONObject e()>
+    <u2.c: java.lang.String toString()>
+    <u2.c: java.lang.String toString()>
+    <u2.c: void g()>
+    <u2.k: void t(java.lang.String,java.lang.String)>
+    <u2.k: void t(java.lang.String,java.lang.String)>
+
+Leak 2:
+  Source: $r10 = virtualinvoke $r8.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r9, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r5.<java.io.FileOutputStream: void write(byte[])>($r7) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <c2.c1: void o()>
+    <c2.c1: void o()>
+    <c2.c1: void o()>
+    <c2.c1: void o()>
+    <c2.c1: void o()>
+    <c2.c1: void o()>
+    <c2.c1: void o()>
+    <c2.c1: void o()>
+    <c2.c1: void o()>
+    <c2.c1: void o()>
+    <d2.h0: void b(android.os.Bundle)>
+    <d2.r: void o(java.lang.String,java.lang.Double,android.os.Bundle)>
+    <d2.r: void m(java.lang.String,java.lang.Double,android.os.Bundle,boolean,java.util.UUID)>
+    <k2.c: void h(android.os.Bundle,java.lang.String)>
+    <k2.c: void h(android.os.Bundle,java.lang.String)>
+    <k2.c: void i(android.os.Bundle)>
+    <kotlin.jvm.internal.Intrinsics: void checkNotNullParameter(java.lang.Object,java.lang.String)>
+    <k2.c: void i(android.os.Bundle)>
+    <k2.c: void h(android.os.Bundle,java.lang.String)>
+    <k2.c: void b(android.os.Bundle,java.lang.String)>
+    <k2.c: void b(android.os.Bundle,java.lang.String)>
+    <k2.c: void b(android.os.Bundle,java.lang.String)>
+    <x2.a: void b(java.lang.Throwable,java.lang.Object)>
+    <u2.b: void c(java.lang.Throwable)>
+    <c2.e0: boolean p()>
+    <c2.c1: boolean f()>
+    <c2.c1: void j()>
+    <c2.c1: void o()>
+    <c2.c1: void j()>
+    <c2.c1: boolean f()>
+    <c2.e0: boolean p()>
+    <u2.b: void c(java.lang.Throwable)>
+    <u2.c: void g()>
+    <u2.c: java.lang.String toString()>
+    <u2.c: org.json.JSONObject e()>
+    <u2.c: org.json.JSONObject d()>
+    <u2.c: org.json.JSONObject d()>
+    <u2.c: org.json.JSONObject d()>
+    <u2.c: org.json.JSONObject e()>
+    <u2.c: java.lang.String toString()>
+    <u2.c: java.lang.String toString()>
+    <u2.c: void g()>
+    <u2.k: void t(java.lang.String,java.lang.String)>
+    <u2.k: void t(java.lang.String,java.lang.String)>
+
+Leak 3:
+  Source: $r4 = virtualinvoke $r2.<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>($r3, 128) (<android.content.pm.PackageManager: android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String,int)>)
+  Sink: virtualinvoke $r5.<java.io.FileOutputStream: void write(byte[])>($r7) (<java.io.FileOutputStream: void write(byte[])>)
+  Methods:
+    <c2.e0: void I(android.content.Context)>
+    <c2.e0: void I(android.content.Context)>
+    <c2.e0: void I(android.content.Context)>
+    <c2.e0: void I(android.content.Context)>
+    <c2.e0: void I(android.content.Context)>
+    <c2.e0: void I(android.content.Context)>
+    <c2.e0: void N(android.content.Context,c2.e0$b)>
+    <c2.e0: void M(android.content.Context)>
+    <com.facebook.FacebookActivity: void onCreate(android.os.Bundle)>
+    <dummyMainClass: com.facebook.FacebookActivity dummyMainMethod_com_facebook_FacebookActivity(android.content.Intent)>
+    <j2.a$b: void onActivityResumed(android.app.Activity)>
+    <j2.b: void run()>
+    <j2.a$b: void a()>
+    <j2.a$b: void c()>
+    <j2.a: void c(j2.a,android.content.Context,java.util.ArrayList,boolean)>
+    <j2.a: void f(android.content.Context,java.util.ArrayList,boolean)>
+    <l2.i: void f(java.lang.String,java.lang.String,boolean)>
+    <d2.h0: void j(java.math.BigDecimal,java.util.Currency,android.os.Bundle)>
+    <d2.r: void r(java.math.BigDecimal,java.util.Currency,android.os.Bundle)>
+    <d2.r: void q(java.math.BigDecimal,java.util.Currency,android.os.Bundle,boolean)>
+    <d2.r: void m(java.lang.String,java.lang.Double,android.os.Bundle,boolean,java.util.UUID)>
+    <k2.c: void h(android.os.Bundle,java.lang.String)>
+    <k2.c: void b(android.os.Bundle,java.lang.String)>
+    <c2.e0: java.lang.String m()>
+    <c2.e0: java.lang.String m()>
+    <k2.c: void b(android.os.Bundle,java.lang.String)>
+    <k2.c: void b(android.os.Bundle,java.lang.String)>
+    <k2.c: void h(android.os.Bundle,java.lang.String)>
+    <d2.r: void m(java.lang.String,java.lang.Double,android.os.Bundle,boolean,java.util.UUID)>
+    <k2.c: void h(android.os.Bundle,java.lang.String)>
+    <k2.c: void h(android.os.Bundle,java.lang.String)>
+    <k2.c: void i(android.os.Bundle)>
+    <kotlin.jvm.internal.Intrinsics: void checkNotNullParameter(java.lang.Object,java.lang.String)>
+    <k2.c: void i(android.os.Bundle)>
+    <k2.c: void h(android.os.Bundle,java.lang.String)>
+    <k2.c: void b(android.os.Bundle,java.lang.String)>
+    <k2.c: void b(android.os.Bundle,java.lang.String)>
+    <k2.c: void b(android.os.Bundle,java.lang.String)>
+    <x2.a: void b(java.lang.Throwable,java.lang.Object)>
+    <u2.b: void c(java.lang.Throwable)>
+    <c2.e0: boolean p()>
+    <c2.c1: boolean f()>
+    <c2.c1: void j()>
+    <c2.c1: void o()>
+    <c2.c1: void j()>
+    <c2.c1: boolean f()>
+    <c2.e0: boolean p()>
+    <u2.b: void c(java.lang.Throwable)>
+    <u2.c: void g()>
+    <u2.c: java.lang.String toString()>
+    <u2.c: org.json.JSONObject e()>
+    <u2.c: org.json.JSONObject d()>
+    <u2.c: org.json.JSONObject d()>
+    <u2.c: org.json.JSONObject d()>
+    <u2.c: org.json.JSONObject e()>
+    <u2.c: java.lang.String toString()>
+    <u2.c: java.lang.String toString()>
+    <u2.c: void g()>
+    <u2.k: void t(java.lang.String,java.lang.String)>
+    <u2.k: void t(java.lang.String,java.lang.String)>
+
