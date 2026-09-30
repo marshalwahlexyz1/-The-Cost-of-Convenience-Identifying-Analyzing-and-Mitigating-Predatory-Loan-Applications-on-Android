@@ -46,7 +46,8 @@ def _iter_instructions(method_obj):
         return
 
 
-def run(apk_path: str, api_targets: list, verbose: bool = True) -> dict:
+def run(apk_path: str, api_targets: list, verbose: bool = True,
+        analysis=None) -> dict:
     """
     api_targets: list from Stage 3 — [{permission, data_type, identifiers}, ...]
 
@@ -59,7 +60,7 @@ def run(apk_path: str, api_targets: list, verbose: bool = True) -> dict:
               "matched_api": "ContactsContract",
               "permission": "READ_CONTACTS",
               "data_type": "contacts",
-              "call_type": "invocation"   # or "string_constant"
+              "call_type": "invocation"   # or "string_constant" / "field_access"
             },
             ...
           ]
@@ -68,7 +69,8 @@ def run(apk_path: str, api_targets: list, verbose: bool = True) -> dict:
     if verbose:
         print("[Stage 4] Loading APK for static analysis...")
 
-    apk, _, analysis = AnalyzeAPK(apk_path)
+    if analysis is None:
+        apk, _, analysis = AnalyzeAPK(apk_path)
 
     # Build flat lookup: identifier_lower → {permission, data_type}
     lookup = {}
@@ -107,6 +109,9 @@ def run(apk_path: str, api_targets: list, verbose: bool = True) -> dict:
                         call_type = "invocation"
                     elif name in ("const-string", "const-string/jumbo"):
                         call_type = "string_constant"
+                    elif name.startswith("sget"):
+                        # e.g. ContactsContract$CommonDataKinds$Phone->CONTENT_URI
+                        call_type = "field_access"
                     else:
                         continue
 
