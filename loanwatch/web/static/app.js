@@ -525,6 +525,81 @@ function renderReport(j) {
   const trackers = r.trackers.map((t) => `<tr><td>${t.website ? `<a href="${esc(t.website)}" target="_blank" rel="noopener">${esc(t.name)}</a>` : esc(t.name)}</td>
     <td>${esc(t.categories)}</td><td><code>${esc(t.example_class)}</code></td></tr>`).join("");
   const evidence = (r.policy.evidence || []).map((e) => `<div class="quote"><b>${esc(e.data_type)}</b>: “${esc(e.quote)}”</div>`).join("");
+
+  // ── fact cards: registry · Google Play · code hiding
+  const reg = r.registry, st = r.store, hid = r.hiding;
+  const fact = (lvl, ic, kicker, title, sub) => `<div class="fact ${lvl}"><span class="fic">${icon(ic)}</span>
+    <div><div class="kicker">${kicker}</div><b>${title}</b><small>${sub}</small></div></div>`;
+  const facts = [
+    reg ? (reg.verdict === "flagged"
+      ? fact("bad", "i-alert", "Lender registry", "Flagged", esc(reg.matches.filter((m) => /delisted|reported/.test(m.status || m.kind)).map((m) => m.label)[0] || "on a delisted / reported list"))
+      : reg.verdict === "listed"
+        ? fact("ok", "i-check", "Lender registry", "On a lender list", esc([...new Set(reg.matches.map((m) => m.source))].slice(0, 2).join(" · ")) + (reg.matches.some((m) => m.match === "name") ? " · name match, verify" : ""))
+        : fact("warn", "i-search", "Lender registry", "Not on any list", `${reg.sources_checked.length} lists checked`)) : "",
+    st ? (st.status === "live"
+      ? fact("", "i-globe", "Google Play", "Live", `${esc(st.installs || "?")} installs · ${esc(st.developer || "")}${st.updated ? " · updated " + esc(st.updated) : ""}`)
+      : st.status === "not_found"
+        ? fact("warn", "i-x", "Google Play", "Not on Google Play", "removed, region-locked or never listed")
+        : fact("", "i-alert", "Google Play", "Check failed", esc(st.error || "no connection"))) : "",
+    hid ? (hid.hides_code
+      ? fact("bad", "i-eye", "Code hiding", hid.packers.length ? "Packed" : "Hides code", esc(hid.reasons.join(" · ")))
+      : fact("ok", "i-check", "Code hiding", "No packer found", `${hid.native_libs.length} native librar${hid.native_libs.length === 1 ? "y" : "ies"} · ${hid.dex_files} dex file(s)`)) : "",
+  ].join("");
+
+  // ── store claims vs the app
+  const ds = st && st.data_safety;
+  const cmpRows = (r.store_compare || []).map((c) => `<tr class="${c.declared ? "" : "contra"}">
+      <td>${icon(CAT_ICON[c.category] || "c-apps")} ${esc(c.category)}</td>
+      <td>${c.declared ? '<span class="ok-txt">Declared</span>' : '<b class="tag-bad">Not declared</b>'}<br><small class="fine">${esc(c.data_safety_category)}</small></td>
+      <td>${esc({ asks: "Asks for it", reads: "Code reads it", sends: "Traced to network" }[c.evidence])}</td></tr>`).join("");
+  const pp = r.privacy_policy;
+  const ppRows = pp && pp.status === "done" ? (pp.items || []).map((i) => `<tr><td>${esc(i.category)}</td>
+      <td>${i.stated === "yes" ? '<span class="ok-txt">States it</span>' : i.stated === "no" ? '<b class="tag-bad">Says it does not</b>' : '<span class="fine">Not mentioned</span>'}</td>
+      <td><small>${esc(i.quote || "")}</small></td></tr>`).join("") : "";
+  let storeSection = "";
+  if (st && st.status === "live") {
+    storeSection = `<h2 class="section-title">${icon("i-globe")} Store claims vs. the app <small>Google Play Data safety and privacy policy</small></h2>
+      <div class="store-grid">
+        <div class="pcard"><div class="kicker">Data safety section</div>
+          ${!ds || !ds.parsed ? `<p class="fine">Couldn't read the Data safety section${ds && ds.error ? " (" + esc(ds.error) + ")" : ""}. Check it by hand on <a href="${esc(st.url)}" target="_blank" rel="noopener">Google Play</a>.</p>`
+            : `<p class="fine">Collected: ${esc((ds.collected || []).join(", ") || (ds.no_data_collected ? "none" : "—"))}<br>Shared: ${esc((ds.shared || []).join(", ") || (ds.no_data_shared ? "none" : "—"))}</p>
+               ${cmpRows ? `<div class="tablewrap"><table><thead><tr><th>Data</th><th>Data safety says</th><th>LoanWatch found</th></tr></thead><tbody>${cmpRows}</tbody></table></div>` : `<p class="fine">Nothing to compare.</p>`}`}
+        </div>
+        <div class="pcard"><div class="kicker">Privacy policy (AI)</div>
+          ${!pp ? `<p class="fine">No privacy policy link on the store page.</p>`
+            : pp.status !== "done" ? `<p class="fine">${esc(pp.note || "Not checked")}${pp.url ? ` · <a href="${esc(pp.url)}" target="_blank" rel="noopener">open policy</a>` : ""}</p>`
+            : `<p class="fine">${esc(pp.summary || "")} · <a href="${esc(pp.url)}" target="_blank" rel="noopener">open policy</a></p>
+               <div class="tablewrap"><table><thead><tr><th>Data</th><th>Policy</th><th>Quote</th></tr></thead><tbody>${ppRows}</tbody></table></div>`}
+        </div>
+      </div>
+      <p class="fine">Store page checked ${esc(st.checked_at_utc || "")} (${esc((st.store_country || "").toUpperCase())} store). Developer: ${esc(st.developer || "?")}${st.developerEmail ? " · " + esc(st.developerEmail) : ""}${st.developerWebsite ? ` · <a href="${esc(st.developerWebsite)}" target="_blank" rel="noopener">website</a>` : ""}${st.released ? " · released " + esc(st.released) : ""}${st.score ? ` · rating ${Number(st.score).toFixed(1)} (${esc(st.ratings)} ratings)` : ""}</p>`;
+  }
+
+  // ── detail panels: registry, code hiding, evidence
+  const regRows = reg ? reg.matches.map((m) => `<tr><td>${esc(m.country || "")}</td><td>${esc(m.label)}</td>
+      <td><small>${esc(m.source)}${m.date ? " · " + esc(m.date) : ""}</small></td>
+      <td>${m.match === "package" ? "Exact (package)" : `Name: “${esc(m.name)}” <small class="fine">verify</small>`}</td></tr>`).join("") : "";
+  const ev = r.evidence || {};
+  const cert = (ev.certificates || [])[0] || {};
+  const evText = ev.apk_hashes ? [
+    `File: ${ev.apk_file} (${ev.apk_bytes} bytes)`, `SHA-256: ${ev.apk_hashes.sha256}`, `SHA-1: ${ev.apk_hashes.sha1}`, `MD5: ${ev.apk_hashes.md5}`,
+    `Package: ${app.package}  version ${ev.version_name} (code ${ev.version_code})`,
+    cert.sha256 ? `Signing cert SHA-256: ${cert.sha256}` : "Signing cert: NONE READABLE (APK is unsigned or was modified after signing)",
+    cert.subject ? `Signer: ${cert.subject}` : "", `Signature schemes: ${(ev.signature_schemes || []).join(", ") || "none"}`,
+    ev.policy_sha256 ? `Policy: ${ev.policy_file}  SHA-256 ${ev.policy_sha256}` : "",
+    `Scanned (UTC): ${ev.scanned_at_utc}`,
+    `Tools: ${Object.entries(ev.tool_versions || {}).map(([k, v]) => k + " " + v).join(", ")}${r.llm_model ? ", model " + r.llm_model : ""}`,
+  ].filter(Boolean).join("\n") : "";
+  const hidBody = hid ? `
+      ${hid.packers.length ? `<p><b class="tag-bad">Packer:</b> ${hid.packers.map((p) => `${esc(p.name)} <small class="fine">(${esc(p.evidence.join(", "))})</small>`).join("; ")}</p>` : `<p class="fine">No known packer signature found.</p>`}
+      <div class="tablewrap"><table><tbody>
+        <tr><td>Native libraries</td><td>${hid.native_libs.length ? hid.native_libs.map((n) => `<code>${esc(n)}</code>`).join(" ") + ` <small class="fine">(${esc(hid.native_abis.join(", "))})</small>` : "none"}</td></tr>
+        <tr><td>Data strings inside native code</td><td>${hid.native_data_strings.length ? hid.native_data_strings.map((d) => `<code>${esc(d.library)}</code> → <code>${esc(d.string)}</code> (${esc(d.category)})`).join("<br>") : "none"}</td></tr>
+        <tr><td>Runtime code loading</td><td>${hid.dynamic_loading.length ? hid.dynamic_loading.map((d) => `${esc(d.api)} × ${d.call_sites}`).join(", ") : "none from app code"}</td></tr>
+        <tr><td>Extra code files</td><td>${hid.embedded_dex_or_jar.length ? hid.embedded_dex_or_jar.map((f) => `<code>${esc(f)}</code>`).join(" ") : "none"}</td></tr>
+        <tr><td>Reflection calls</td><td>${hid.reflection_calls}</td></tr>
+        <tr><td>Obfuscation</td><td>${hid.obfuscation ? Math.round(hid.obfuscation.short_name_share * 100) + "% of " + hid.obfuscation.app_classes + " app classes have 1–2 letter names" : "?"}</td></tr>
+      </tbody></table></div>` : "";
   const pkg = esc(app.package);
   const cmd = `pip install frida-tools\nadb install "${esc(app.file_name)}"\nfrida -U -f ${pkg} -l loanwatch_frida.js -o ${pkg}_frida_log.txt`;
 
@@ -539,8 +614,10 @@ function renderReport(j) {
       </div>
     </div>
     <div class="verdicts">${verdicts}</div>
+    ${facts ? `<div class="facts">${facts}</div>` : ""}
     <ul class="summary">${r.summary.map((s) => `<li>${esc(s)}</li>`).join("")}</ul>
 
+    ${storeSection}
     <h2 class="section-title">${icon("i-eye")} Asks → Reads → Sends <small>what the app can do with prohibited data</small></h2>
     ${exposure}
 
@@ -556,6 +633,13 @@ function renderReport(j) {
       <div class="tablewrap"><table><thead><tr><th>Permission</th>${policies.map((p) => `<th>${esc(p.name)}</th>`).join("")}</tr></thead><tbody>${declaredRows}</tbody></table></div></div></details>
     <details class="panel"><summary>${icon("i-eye")} Tracking SDKs <small>${r.trackers.length}</small></summary><div class="pbody">
       ${trackers ? `<div class="tablewrap"><table><thead><tr><th>Tracker</th><th>Category</th><th>Example class</th></tr></thead><tbody>${trackers}</tbody></table></div>` : `<p class="fine">None of the Exodus Privacy signatures matched.</p>`}</div></details>
+    ${reg ? `<details class="panel"><summary>${icon("i-shield")} Lender registries <small>${reg.matches.length} match(es) · ${reg.sources_checked.length} lists</small></summary><div class="pbody">
+      ${regRows ? `<div class="tablewrap"><table><thead><tr><th>Country</th><th>Status</th><th>Source</th><th>Match</th></tr></thead><tbody>${regRows}</tbody></table></div>` : `<p class="fine">No match by package, app name or developer name.</p>`}
+      <p class="fine">${esc(reg.note)} Lists checked: ${reg.sources_checked.map(esc).join("; ")}.</p></div></details>` : ""}
+    ${hid ? `<details class="panel"><summary>${icon("i-eye")} Packing & hidden code <small>${hid.hides_code ? "indicators found" : "none found"}</small></summary><div class="pbody">${hidBody}</div></details>` : ""}
+    ${evText ? `<details class="panel"><summary>${icon("i-key")} Evidence fingerprint <small>SHA-256 ${esc((ev.apk_hashes.sha256 || "").slice(0, 12))}…</small></summary><div class="pbody">
+      <pre class="cmd"><button class="btn ghost copy" id="copyEv">${icon("i-copy")}</button>${esc(evText)}</pre>
+      <p class="fine">Anyone can re-hash the APK to confirm this report is about the same file.</p></div></details>` : ""}
     <details class="panel"><summary>${icon("i-file")} Policy evidence <small>${r.policy.source === "ai" ? "AI" : "manual"}${r.llm_model ? " · " + esc(r.llm_model) : ""}</small></summary><div class="pbody">
       ${evidence || `<p class="fine">No quotes recorded${r.policy.source === "ai" ? "" : " (permissions chosen by hand or from a preset)"}.</p>`}
       ${r.policy_file ? `<p class="fine">Policy file: ${esc(r.policy_file)}</p>` : ""}</div></details>
@@ -571,6 +655,7 @@ function renderReport(j) {
   const pills = [...document.querySelectorAll("#report .ex-pill")];
   pills.forEach((p, i) => setTimeout(() => p.classList.add("on"), reduced ? 0 : 300 + i * 70));
   $("printBtn").onclick = () => window.print();
+  if ($("copyEv")) $("copyEv").onclick = () => navigator.clipboard.writeText(evText).then(() => toast("Fingerprint copied"), () => toast("Copy failed", true));
   $("copyCmd").onclick = () => {
     navigator.clipboard.writeText(cmd.replace(/&quot;/g, '"').replace(/&amp;/g, "&")).then(() => toast("Commands copied"), () => toast("Copy failed", true));
   };

@@ -2,3 +2,4 @@ androguard>=3.4.0
 groq>=0.11.0
 pymupdf>=1.23.0
 flask>=2.3
+google-play-scraper>=1.2

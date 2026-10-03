@@ -104,6 +104,27 @@ Past reports stay available under **Past reports**. They are saved in `web/jobs/
   reflection, native code and some libraries.
 - **Only the on-device test shows what the app actually does.**
 
+## 4b. Extra checks in every report
+
+- **Lender registry**: is the app (by package) or its name/developer on one of
+  the lists in `LoanApps/LoanPolicyandlist/` or in the paper's dataset? Package
+  matches are exact; name matches say "verify" and must be checked by hand.
+  Lists: Kenya CBK digital credit providers, Indonesia OJK, Pakistan SECP licensed
+  NBFC apps and reported apps, Philippines SEC, India (third-party lists, labelled
+  as such) and the paper's Nigeria/Kenya/Pakistan/Philippines/Indonesia dataset.
+  To add a newer list, save a CSV in `loanwatch/data/registries/` with columns
+  `name,package,country,status,source,date` and run `python build_registries.py`.
+- **Google Play**: if the app is still listed, the report shows installs,
+  developer and update date, compares Google Play's *Data safety* section with
+  what LoanWatch found, and (with AI on) reads the app's privacy policy. Removed
+  apps show "Not on Google Play". The check needs internet access.
+- **Packing & hidden code**: known packers (Jiagu, Bangcle, Legu …), native
+  libraries, code loaded at runtime and personal-data strings inside native
+  code. This explains reports where no data-access code is found.
+- **Evidence fingerprint**: SHA-256/SHA-1/MD5 of the APK, signing certificate,
+  version code, policy hash, scan time and tool versions, so the report can be
+  tied to one exact file.
+
 ## 5. On-device test (dynamic analysis)
 
 This step runs outside the browser. In the paper it was done on a test

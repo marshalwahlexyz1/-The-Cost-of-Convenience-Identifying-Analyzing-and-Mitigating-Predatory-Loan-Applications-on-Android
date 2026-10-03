@@ -46,6 +46,7 @@ import stage5_taint    # noqa: E402
 import stage6_frida    # noqa: E402
 
 from web import baseline  # noqa: E402
+from web import enrich  # noqa: E402
 
 JOBS_DIR = os.environ.get("LOANWATCH_JOBS_DIR", os.path.join(HERE, "jobs"))
 
@@ -54,6 +55,8 @@ STAGES = [
     ("apk",      "Open the APK"),
     ("manifest", "Check declared permissions"),
     ("trackers", "Look for tracking SDKs"),
+    ("hiding",   "Check for packing & hidden code"),
+    ("store",    "Check Google Play & lender registries"),
     ("api_map",  "Map permissions to Android APIs"),
     ("static",   "Find the code that reads the data"),
     ("taint",    "Trace data to the network (FlowDroid)"),
@@ -303,6 +306,7 @@ class Job:
         self.apk_info = None
         self.report = None
         self.policies = []
+        self.evidence = {}
         self.live = {}      # counters for the scan screen
         self._apk = self._analysis = None
         self._lock = threading.Lock()
@@ -378,6 +382,8 @@ def job_list():
             "id": j.id, "state": j.state, "created": j.created,
             "app_name": app.get("app_name", ""), "package": app.get("package", ""),
             "icon": app.get("icon", ""),
+            "registry": ((j.report or {}).get("registry") or {}).get("verdict", ""),
+            "store": ((j.report or {}).get("store") or {}).get("status", ""),
             "violations": [{"name": p["name"], "violating": p.get("violating", False),
                             "count": len(p.get("matched", []))}
                            for p in (j.report or {}).get("policies", [])],
@@ -471,6 +477,10 @@ def _policy_phase(job: Job):
         "icon": _extract_icon(apk, job.dir),
         "size_mb": round(os.path.getsize(job.apk_path) / 2**20, 1),
     }
+    job.evidence = enrich.evidence_fingerprint(
+        job.apk_path, apk, job.policy_path or "",
+        {"flowdroid_jar": os.path.basename(tool_status()["flowdroid_jar"] or "") or "not installed"})
+    job.apk_info["sha256"] = (job.evidence.get("apk_hashes") or {}).get("sha256", "")
     job.set_stage("apk", "done", f"{job.apk_info['app_name']} ({job.apk_info['package']}) "
                                  f"in {time.time() - t0:.0f}s")
     job.state = "awaiting_confirmation"
@@ -637,6 +647,38 @@ def _analysis_phase(job: Job):
     job.live["trackers"] = len(trackers)
     job.set_stage("trackers", "done", f"{len(trackers)} tracker SDK(s) found")
 
+    # Packing / hidden code
+    job.set_stage("hiding", "running")
+    hiding = enrich.code_hiding(job._apk, job._analysis, job.apk_path)
+    report["hiding"] = hiding
+    job.live["hiding"] = hiding["hides_code"]
+    job.set_stage("hiding", "done", "; ".join(hiding["reasons"]) or "no packer or hidden code found")
+
+    # Google Play listing + lender registries
+    job.set_stage("store", "running", "fetching the Google Play page")
+    app = job.apk_info
+    countries = [job.options.get("jurisdiction", "")]
+    pre = enrich.registry_lookup(app["package"], app["app_name"])
+    countries += [m.get("country", "") for m in pre["matches"]]
+    store = enrich.play_store(app["package"], countries)
+    report["store"] = store
+    registry = enrich.registry_lookup(app["package"], app["app_name"],
+                                      store.get("developer") or "")
+    report["registry"] = registry
+    if store.get("status") == "live" and store.get("privacyPolicy"):
+        job.set_stage("store", "running", "the AI is reading the app's privacy policy")
+        if job.groq_key and not LLM_MODEL:
+            check_groq_key(job.groq_key)
+        cats = sorted({_category(p) for p in s2["matched_permissions"]} - {""})
+        report["privacy_policy"] = enrich.privacy_policy_check(
+            store["privacyPolicy"], job.groq_key, LLM_MODEL, cats)
+    store_note = {"live": f"on Google Play ({store.get('installs') or '?'} installs)",
+                  "not_found": "not on Google Play"}.get(store.get("status"),
+                                                         "Google Play check failed")
+    reg_note = {"flagged": "flagged on a delisted/reported list", "listed": "on a lender list",
+                "unknown": "not on any list we have"}[registry["verdict"]]
+    job.set_stage("store", "done", f"{store_note}; {reg_note}")
+
     matched_short = [baseline.normalise(p) for p in s2["matched_permissions"]]
     s4 = {"sources": []}
     s5 = {"ran_flowdroid": False, "confirmed_sources": []}
@@ -727,6 +769,8 @@ def _analysis_phase(job: Job):
     report["verdict"] = "VIOLATING" if s2["violating"] else "COMPLIANT"
     report["llm_model"] = LLM_MODEL if job.groq_key else ""
     report["exposure"] = _exposure(report)
+    report["store_compare"] = enrich.compare_with_store(report.get("store"), report["exposure"])
+    report["evidence"] = getattr(job, "evidence", {})
     report["live"] = job.live
     report["summary"] = _summary(report, all_perms)
     report["stages"] = job.stages
@@ -772,4 +816,34 @@ def _summary(report, perms) -> list:
                        "statically; confirm on a device with the Frida script.")
     if report["trackers"]:
         out.append(f"{len(report['trackers'])} third-party tracking SDK(s) are embedded.")
+    reg = report.get("registry") or {}
+    if reg.get("verdict") == "flagged":
+        out.append("The app appears on a delisted / reported lender list: "
+                   + "; ".join(m["label"] for m in reg["matches"]
+                               if (m.get("status") or m.get("kind")) in
+                               ("delisted", "reported", "third_party_reported")) + ".")
+    elif reg.get("verdict") == "listed":
+        out.append("The app or its developer appears on a lender list ("
+                   + "; ".join(sorted({m["source"] for m in reg["matches"]})) + "). "
+                   "Name matches must be verified by hand.")
+    else:
+        out.append("The app was not found on any lender list LoanWatch has.")
+    st = report.get("store") or {}
+    if st.get("status") == "error":
+        out.append("Google Play could not be checked (no internet connection or the request was blocked).")
+    elif st.get("status") == "not_found":
+        out.append("It is not on Google Play (removed, region-locked or never listed).")
+    elif st.get("status") == "live":
+        undeclared = [r["category"] for r in report.get("store_compare", []) if not r["declared"]]
+        out.append(f"It is live on Google Play ({st.get('installs') or '?'} installs, developer "
+                   f"{st.get('developer') or '?'}).")
+        if undeclared:
+            out.append("Its Google Play Data safety section does not declare: "
+                       + ", ".join(undeclared) + ", although the app asks for or reads it.")
+    hid = report.get("hiding") or {}
+    if hid.get("hides_code"):
+        msg = "The app hides code (" + "; ".join(hid["reasons"]) + ")"
+        if not report["static_sources"] and report["manifest"]["matched_permissions"]:
+            msg += ", which may explain why no data-access code was found"
+        out.append(msg + ".")
     return out

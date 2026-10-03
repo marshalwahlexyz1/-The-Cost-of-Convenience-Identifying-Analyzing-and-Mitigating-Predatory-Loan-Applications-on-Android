@@ -9,5 +9,8 @@ if [ ! -d .venv ]; then
   .venv/bin/pip install --upgrade pip >/dev/null
   .venv/bin/pip install -r requirements.txt
   .venv/bin/python setup_tools.py || echo "Tool download incomplete; FlowDroid will be skipped until setup_tools.py succeeds."
+else
+  # pick up packages added in updates (fast when nothing changed)
+  .venv/bin/pip install -q -r requirements.txt || echo "Could not update Python packages; continuing."
 fi
 exec .venv/bin/python web/app.py "$@"
