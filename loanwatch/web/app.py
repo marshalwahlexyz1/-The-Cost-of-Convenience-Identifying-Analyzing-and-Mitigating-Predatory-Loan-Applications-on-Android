@@ -135,10 +135,11 @@ def confirm(job_id):
 @app.get("/api/jobs/<job_id>/files/<name>")
 def download(job_id, name):
     job = _job_or_404(job_id)
-    allowed = {"report.json", "loanwatch_frida.js", "loanwatch_frida_ai.js"}
+    allowed = {"report.json", "loanwatch_frida.js", "loanwatch_frida_ai.js",
+               "icon.png", "icon.webp", "icon.jpg", "icon.jpeg"}
     if name not in allowed:
         abort(404)
-    return send_from_directory(job.dir, name, as_attachment=True)
+    return send_from_directory(job.dir, name, as_attachment=not name.startswith("icon."))
 
 
 def main():

@@ -1,308 +1,598 @@
-// LoanWatch web front end (no build step, no external libraries)
+// LoanWatch web front end — plain JS, no build step, no external libraries.
 "use strict";
 
 const $ = (id) => document.getElementById(id);
 const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) =>
   ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 const short = (p) => String(p).replace("android.permission.", "").toUpperCase();
+const icon = (id) => `<svg><use href="#${id}"/></svg>`;
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+const reduced = matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-let jobId = null, logCount = 0, pollTimer = null, status = {}, lastState = "";
+const CAT_ICON = {
+  "Contacts": "c-contacts", "Call log": "c-calllog", "SMS": "c-sms",
+  "Photos, media & storage": "c-photos", "Phone": "c-phone", "Location": "c-location",
+  "Calendar": "c-calendar", "Camera": "c-camera", "Microphone": "c-mic",
+  "Installed apps": "c-apps", "Body sensors": "c-sensors", "Content provider data": "c-photos",
+  "Other": "c-apps",
+};
+const CAT_SHORT = { "Photos, media & storage": "Photos", "Content provider data": "Content data" };
+const DEVICE_CATS = ["Contacts", "Call log", "SMS", "Photos, media & storage", "Location", "Phone", "Camera", "Microphone"];
+const EXTRA_CAT = { QUERY_ALL_PACKAGES: "Installed apps", BODY_SENSORS: "Body sensors" };
+const PHASE_B = ["manifest", "trackers", "api_map", "static", "taint", "frida"];
 
-// ── Status ────────────────────────────────────────────────────────────────
-async function loadStatus() {
-  status = await (await fetch("/api/status")).json();
-  const item = (ok, title, detail, level) =>
-    `<li><b class="${ok ? "good" : level || "bad"}">${ok ? "✓" : "✗"} ${title}</b>${detail}</li>`;
-  $("statusList").innerHTML = [
-    `<li id="keyItem"><b class="${status.groq_key ? "" : "warnc"}">${status.groq_key ? "… AI (Groq key)" : "✗ AI (Groq key)"}</b>` +
-      (status.groq_key
-        ? `key ${esc(status.groq_key_hint)} (${esc(status.groq_key_source)}) · <span id="keyCheck">checking…</span>
-           · <a href="#" id="changeKey">change key</a>`
-        : "Add a key below to turn on the AI steps") + "</li>",
-    item(!!status.java, "Java", status.java ? "version " + esc(status.java) : "Install Java 11+ for FlowDroid", "warnc"),
-    item(!!status.flowdroid_jar, "FlowDroid", status.flowdroid_jar ? "installed" : "run setup_tools.py", "warnc"),
-    item(status.platform_levels.length > 0, "Android platform",
-      status.platform_levels.length ? "API " + status.platform_levels.join(", ") : "run setup_tools.py", "warnc"),
-  ].join("");
-  $("keyBox").classList.toggle("hidden", status.groq_key);
-  if (status.groq_key) {
-    $("changeKey").onclick = (e) => { e.preventDefault(); $("keyBox").classList.remove("hidden"); $("keyInput").focus(); };
-    const c = await (await fetch("/api/key/check")).json();
-    const head = $("keyItem").querySelector("b");
-    head.textContent = (c.ok === false ? "✗" : c.ok ? "✓" : "?") + " AI (Groq key)";
-    head.className = c.ok === false ? "bad" : c.ok ? "good" : "warnc";
-    $("keyCheck").textContent = c.message;
-    if (c.ok === false) $("keyBox").classList.remove("hidden");
-  }
-  $("runFd").checked = status.flowdroid_ready;
-  $("runFd").disabled = !status.flowdroid_ready;
+let status = {}, jobId = null, logCount = 0, pollTimer = null, prevState = "";
+let rendered = { review: false, report: false, scanBuilt: false };
+let scanStart = 0, elapsedTimer = null, groupOf = {}, groups = {};
+
+// ── Utilities ─────────────────────────────────────────────────────────────
+async function getJSON(url, opts) {
+  const r = await fetch(url, opts);
+  const body = await r.json().catch(() => ({}));
+  if (!r.ok) throw Object.assign(new Error(body.error || r.statusText), { status: r.status });
+  return body;
+}
+function toast(msg, bad = false) {
+  const t = $("toast");
+  t.textContent = msg;
+  t.className = "toast show" + (bad ? " bad" : "");
+  clearTimeout(toast.t);
+  toast.t = setTimeout(() => { t.className = "toast" + (bad ? " bad" : ""); }, 3800);
+}
+function countUp(el, to, ms = 900) {
+  to = Number(to) || 0;
+  if (reduced || to === 0) { el.textContent = to; return; }
+  const t0 = performance.now();
+  const step = (t) => {
+    const k = Math.min(1, (t - t0) / ms), e = 1 - Math.pow(1 - k, 3);
+    el.textContent = Math.round(to * e);
+    if (k < 1) requestAnimationFrame(step);
+  };
+  requestAnimationFrame(step);
+}
+const catOf = (p) => groupOf[short(p)] || EXTRA_CAT[short(p)] || "Other";
+const iconUrl = (id, info) => info && info.icon ? `/api/jobs/${id}/files/${info.icon}` : "";
+function appIcon(id, info) {
+  const u = iconUrl(id, info);
+  return u ? `<img src="${u}" alt="" onerror="this.replaceWith(document.createRange().createContextualFragment('${icon("i-phone-device")}'))">`
+           : icon("i-phone-device");
 }
 
+// ── Theme ─────────────────────────────────────────────────────────────────
+function setTheme(t) {
+  document.documentElement.dataset.theme = t;
+  try { localStorage.setItem("lw-theme", t); } catch (e) { /* storage blocked */ }
+  $("themeBtn").innerHTML = icon(t === "dark" ? "i-sun" : "i-moon");
+}
+try { setTheme(localStorage.getItem("lw-theme") || "dark"); } catch (e) { setTheme("dark"); }
+$("themeBtn").onclick = () => setTheme(document.documentElement.dataset.theme === "dark" ? "light" : "dark");
+
+// ── Navigation ────────────────────────────────────────────────────────────
+const STEPS = ["new", "review", "scan", "report"];
+function show(screen) {
+  const target = $("s-" + screen);
+  if (!target.classList.contains("active")) {
+    document.querySelectorAll(".screen.active").forEach((s) => s.classList.remove("active"));
+    target.classList.add("active");
+    window.scrollTo({ top: 0 });
+  }
+  const navKey = STEPS.includes(screen) ? "new" : screen;
+  document.querySelectorAll(".nav").forEach((n) => n.classList.toggle("active", n.dataset.nav === navKey));
+  const stepper = $("stepper");
+  stepper.classList.toggle("hidden", !STEPS.includes(screen));
+  const idx = STEPS.indexOf(screen);
+  stepper.querySelectorAll("li").forEach((li, i) => {
+    li.classList.toggle("done", i < idx);
+    li.classList.toggle("current", i === idx);
+  });
+  if (screen !== "scan") $("drawer").classList.remove("open");
+  $("logTab").classList.toggle("hidden", screen !== "scan");
+}
+
+function route() {
+  const [, page, id] = (location.hash || "#/new").split("/");
+  if (page === "job" && id) return openJob(id);
+  clearTimeout(pollTimer);
+  jobId = null;
+  const p = ["new", "history", "setup"].includes(page) ? page : "new";
+  show(p);
+  if (p === "history") loadHistory();
+  if (p === "setup") renderSetup();
+}
+window.addEventListener("hashchange", route);
+
+// ── Tool status ───────────────────────────────────────────────────────────
+async function loadStatus() {
+  status = await getJSON("/api/status");
+  renderLights();
+  if (status.groq_key) {
+    getJSON("/api/key/check").then((c) => { status.keyCheck = c; renderLights(); if ($("s-setup").classList.contains("active")) renderSetup(); })
+      .catch(() => {});
+  }
+  return status;
+}
+function aiLevel() {
+  if (!status.groq_key) return "warn";
+  if (!status.keyCheck) return "";
+  return status.keyCheck.ok === false ? "bad" : status.keyCheck.ok ? "ok" : "warn";
+}
+function renderLights() {
+  const L = (lvl, name) => `<span class="light ${lvl}"><i></i>${name}</span>`;
+  $("lights").innerHTML = [
+    L(aiLevel(), "AI"),
+    L(status.java ? "ok" : "warn", "Java"),
+    L(status.flowdroid_jar ? "ok" : "warn", "FlowDroid"),
+    L((status.platform_levels || []).length ? "ok" : "warn", "Android"),
+  ].join("");
+}
+function renderSetup() {
+  const card = (lvl, ic, title, text) => `<div class="scard ${lvl}"><div class="stop"><span class="sic">${icon(ic)}</span>${title}</div><p>${text}</p></div>`;
+  const k = status.keyCheck;
+  $("setupGrid").innerHTML = [
+    card(aiLevel() || "warn", "i-zap", "AI (Groq)", !status.groq_key ? "No key yet. Add one below to turn on the AI steps."
+      : `Key ${esc(status.groq_key_hint)} (${esc(status.groq_key_source)})<br>${k ? esc(k.message) : "checking…"}`),
+    card(status.java ? "ok" : "warn", "i-terminal", "Java", status.java ? "Version " + esc(status.java) : "Install Java 11+ (adoptium.net) for FlowDroid."),
+    card(status.flowdroid_jar ? "ok" : "warn", "i-globe", "FlowDroid", status.flowdroid_jar ? "Installed · memory " + esc(status.java_mem) : "Run <code>setup_tools.py</code>."),
+    card((status.platform_levels || []).length ? "ok" : "warn", "i-phone-device", "Android platform",
+      (status.platform_levels || []).length ? "API " + status.platform_levels.join(", ") : "Run <code>setup_tools.py</code>."),
+  ].join("");
+  $("keyState").innerHTML = status.groq_key
+    ? `Current key ${esc(status.groq_key_hint)}, ${esc(status.groq_key_source)}. Paste a new one to replace it.`
+    : "No key saved yet.";
+}
 $("saveKey").onclick = async () => {
   const key = $("keyInput").value.trim();
   if (!key) return;
-  const r = await fetch("/api/key", { method: "POST", headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ key }) });
-  const res = await r.json();
-  if (!r.ok) { alert(res.error || "Could not save the key"); return; }
-  $("keyInput").value = "";
-  if (!res.checked) alert("Saved, but " + res.message);
-  loadStatus();
+  $("saveKey").disabled = true;
+  try {
+    const res = await getJSON("/api/key", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ key }) });
+    $("keyInput").value = "";
+    toast(res.checked ? "Key saved: " + res.message : "Saved, but " + res.message, !res.checked);
+    await loadStatus();
+    renderSetup();
+  } catch (e) { toast(e.message, true); }
+  $("saveKey").disabled = false;
 };
-
-// ── History ───────────────────────────────────────────────────────────────
-$("historyBtn").onclick = async () => {
-  const card = $("historyCard");
-  if (!card.classList.contains("hidden")) { card.classList.add("hidden"); return; }
-  const list = await (await fetch("/api/jobs")).json();
-  $("historyList").innerHTML = list.length ? list.map((j) =>
-    `<li><a href="#${j.id}">${esc(j.app_name || j.id)}</a> <span class="hint">${esc(j.package)} ·
-     ${new Date(j.created * 1000).toLocaleString()} · ${esc(j.verdict || j.state)}</span></li>`).join("")
-    : "<li class='hint'>No reports yet.</li>";
-  card.classList.remove("hidden");
-};
-window.addEventListener("hashchange", () => openJob(location.hash.slice(1)));
 
 // ── Step 1: upload ────────────────────────────────────────────────────────
-$("uploadForm").onsubmit = async (e) => {
+document.querySelectorAll(".drop").forEach((drop) => {
+  const input = drop.querySelector("input");
+  const update = () => {
+    const f = input.files[0];
+    drop.classList.toggle("has-file", !!f);
+    if (f) {
+      drop.querySelector(".fname").textContent = f.name;
+      drop.querySelector(".fsize").textContent = (f.size / 1048576).toFixed(1) + " MB";
+    }
+  };
+  input.addEventListener("change", update);
+  ["dragenter", "dragover"].forEach((ev) => drop.addEventListener(ev, () => drop.classList.add("drag")));
+  ["dragleave", "drop"].forEach((ev) => drop.addEventListener(ev, () => drop.classList.remove("drag")));
+});
+
+$("uploadForm").onsubmit = (e) => {
   e.preventDefault();
   const fd = new FormData(e.target);
-  if ($("keyInput").value.trim()) fd.append("groq_key", $("keyInput").value.trim());
-  $("startBtn").disabled = true;
-  $("startBtn").textContent = "Uploading…";
-  try {
-    const r = await fetch("/api/jobs", { method: "POST", body: fd });
-    const j = await r.json();
-    if (!r.ok) throw new Error(j.error || r.statusText);
-    location.hash = j.id;
-  } catch (err) {
-    alert(err.message);
-  } finally {
-    $("startBtn").disabled = false;
-    $("startBtn").textContent = "Read policy and open app";
-  }
+  const apk = fd.get("apk");
+  if (!apk || !apk.name) { toast("Choose an APK first", true); return; }
+  const btn = $("startBtn");
+  btn.disabled = true;
+  const xhr = new XMLHttpRequest();
+  xhr.open("POST", "/api/jobs");
+  xhr.upload.onprogress = (ev) => {
+    if (ev.lengthComputable) btn.innerHTML = `${icon("i-download")} Uploading ${Math.round(ev.loaded / ev.total * 100)}%`;
+  };
+  xhr.onload = () => {
+    btn.disabled = false;
+    btn.innerHTML = `${icon("i-search")} Start inspection`;
+    let res = {};
+    try { res = JSON.parse(xhr.responseText); } catch (err) { /* not JSON */ }
+    if (xhr.status >= 400) { toast(res.error || "Upload failed", true); return; }
+    e.target.reset();
+    document.querySelectorAll(".drop").forEach((d) => d.classList.remove("has-file"));
+    location.hash = "#/job/" + res.id;
+  };
+  xhr.onerror = () => { btn.disabled = false; btn.innerHTML = `${icon("i-search")} Start inspection`; toast("Upload failed", true); };
+  xhr.send(fd);
 };
 
+// ── Job polling ───────────────────────────────────────────────────────────
 function openJob(id) {
-  if (!id) return;
-  jobId = id; logCount = 0; lastState = "";
-  $("log").textContent = "";
-  ["confirmCard", "reportCard"].forEach((c) => $(c).classList.add("hidden"));
-  $("progressCard").classList.remove("hidden");
+  if (jobId !== id) {
+    jobId = id; logCount = 0; prevState = "";
+    rendered = { review: false, report: false, scanBuilt: false };
+    $("log").textContent = "";
+    scanStart = 0;
+    clearInterval(elapsedTimer);
+  }
   clearTimeout(pollTimer);
   poll();
 }
 
 async function poll() {
-  const r = await fetch(`/api/jobs/${jobId}?since=${logCount}`);
-  if (!r.ok) { $("progressCard").classList.add("hidden"); return; }
-  const j = await r.json();
+  const id = jobId;
+  let j;
+  try { j = await getJSON(`/api/jobs/${id}?since=${logCount}`); }
+  catch (e) {
+    if (e.status === 404) { toast("That report no longer exists", true); location.hash = "#/history"; return; }
+    pollTimer = setTimeout(poll, 2000); return;
+  }
+  if (id !== jobId) return;
   if (j.logs.length) {
-    $("log").textContent += j.logs.join("\n") + "\n";
-    $("log").scrollTop = $("log").scrollHeight;
+    const log = $("log");
+    log.textContent += j.logs.join("\n") + "\n";
+    log.scrollTop = log.scrollHeight;
   }
   logCount = j.log_count;
-  renderStages(j.stages);
-  if (j.state !== lastState) {
-    lastState = j.state;
-    if (j.state === "awaiting_confirmation") renderConfirm(j);
-    if (j.state === "done") { $("confirmCard").classList.add("hidden"); renderReport(j); }
-    if (j.state === "error") $("logBox").open = true;
+
+  const was = prevState;
+  prevState = j.state;
+  if (j.state === "queued" || j.state === "reading_policy") showReading(j);
+  else if (j.state === "awaiting_confirmation") renderReview(j);
+  else if (j.state === "running") renderScan(j);
+  else if (j.state === "error") renderScan(j);
+  else if (j.state === "done") {
+    if (was === "running" || (rendered.scanBuilt && !rendered.report)) {
+      renderScan(j);
+      await sleep(reduced ? 0 : 1500);
+      if (id === jobId) renderReport(j);
+    } else renderReport(j);
   }
-  if (j.state === "error") {
-    $("stages").insertAdjacentHTML("beforeend",
-      `<li><span class="icon bad">!</span><span class="bad">${esc(j.error)}</span></li>`);
-  }
-  if (!["done", "error", "awaiting_confirmation"].includes(j.state)) pollTimer = setTimeout(poll, 1000);
+  if (!["done", "error", "awaiting_confirmation"].includes(j.state)) pollTimer = setTimeout(poll, 900);
 }
 
-const ICON = { pending: "○", running: "◐", done: "✓", skipped: "–", failed: "✗" };
-function renderStages(stages) {
-  $("stages").innerHTML = stages.map((s) =>
-    `<li><span class="icon ${s.status === "done" ? "good" : s.status === "failed" ? "bad" : ""}">${ICON[s.status] || "○"}</span>
-     <span><b>${esc(s.label)}</b> <span class="snote">${esc(s.note)}</span></span></li>`).join("");
+// ── App card ──────────────────────────────────────────────────────────────
+function appCard(id, info, extra = "") {
+  if (!info) {
+    return `<div class="icon skeleton"></div><div class="grow"><div class="skeleton" style="height:18px;width:50%"></div>
+      <div class="skeleton" style="height:12px;width:70%;margin-top:8px"></div></div>`;
+  }
+  return `<div class="icon">${appIcon(id, info)}</div>
+    <div class="grow"><h2>${esc(info.app_name || "Unknown app")}</h2>
+      <div class="meta"><code>${esc(info.package)}</code><span>v${esc(info.version || "?")}</span>
+      <span>targets API ${esc(info.target_sdk)}</span>${info.size_mb ? `<span>${info.size_mb} MB</span>` : ""}
+      <span>${(info.declared_permissions || []).length} permissions declared</span></div></div>${extra}`;
 }
 
-// ── Step 2: confirm the prohibited permissions ────────────────────────────
-function renderConfirm(j) {
-  const s1 = j.stage1, declared = new Set(j.apk_info.declared_short);
-  const card = $("confirmCard");
-  card.classList.remove("hidden");
+// ── Step 2: review the policy ─────────────────────────────────────────────
+function showReading(j) {
+  show("review");
+  $("appCard").innerHTML = appCard(j.id, j.apk_info);
+  $("reviewLoading").classList.remove("hidden");
+  $("reviewBody").classList.add("hidden");
+  const st = Object.fromEntries(j.stages.map((s) => [s.key, s]));
+  $("readingText").textContent = st.policy.status === "running"
+    ? (j.has_llm ? "The AI is reading the policy…" : "Reading the policy…")
+    : "Decompiling the app with Androguard…";
+}
+
+function groupRows(perms, opts) {
+  // perms: Set of explicit permissions; opts: {declared, expand, skip, removable}
+  const byCat = new Map();
+  const add = (p, via) => {
+    const c = catOf(p);
+    if (!byCat.has(c)) byCat.set(c, []);
+    byCat.get(c).push({ p, via });
+  };
+  [...perms].forEach((p) => add(p, false));
+  if (opts.expand) {
+    [...perms].forEach((p) => {
+      const g = groupOf[p];
+      if (!g || (opts.skip || []).includes(g)) return;
+      groups[g].forEach((q) => { if (!perms.has(q) && !byCat.get(g).some((x) => x.p === q)) add(q, true); });
+    });
+  }
+  let n = 0;
+  return [...byCat.entries()].map(([cat, items], gi) => `
+    <div class="group" style="animation-delay:${gi * 60}ms"><div class="gicon">${icon(CAT_ICON[cat] || "c-apps")}</div>
+      <div><div class="gname">${esc(cat)}</div><div class="chips">${items.map(({ p, via }) => `
+        <span class="chip ${via ? "via" : ""} ${opts.declared.has(p) ? "declared" : ""}" style="animation-delay:${(n++) * 35}ms"
+          title="${opts.declared.has(p) ? "The app declares this permission" : ""}">${esc(p)}${via ? " <small>via group</small>" : ""}
+          ${opts.removable && !via ? `<button type="button" data-rm="${esc(p)}" title="Remove">${icon("i-x")}</button>` : ""}</span>`).join("")}
+      </div></div></div>`).join("") || `<p class="fine">No permissions selected. Use a preset or add one below.</p>`;
+}
+
+function highlightExcerpt(text, quotes) {
+  let html = esc(text);
+  (quotes || []).forEach((q) => {
+    const words = esc(q.quote || "").split(/\s+/).filter(Boolean).map((w) => w.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"));
+    if (words.length < 3) return;
+    html = html.replace(new RegExp(words.join("\\s+"), "i"), (m) => `<mark>${m}</mark>`);
+  });
+  return html;
+}
+
+function renderReview(j) {
+  if (rendered.review) { show("review"); return; }
+  rendered.review = true;
+  show("review");
+  const s1 = j.stage1;
+  groups = s1.groups || {};
+  groupOf = {};
+  Object.entries(groups).forEach(([g, ps]) => ps.forEach((p) => { groupOf[p] = g; }));
+  const declared = new Set(j.apk_info.declared_short);
+  const national = new Set(s1.permissions.map(short));
+
+  $("appCard").innerHTML = appCard(j.id, j.apk_info);
+  $("reviewLoading").classList.add("hidden");
+  $("reviewBody").classList.remove("hidden");
 
   const note = $("policyNote");
   if (s1.source === "ai") {
-    note.className = "note";
-    note.textContent = `The AI read the policy and marked ${s1.permissions.length} permission(s) as prohibited. Check them against the quotes below; untick anything the policy does not actually ban.`;
+    note.className = "note ai";
+    note.innerHTML = `${icon("i-zap")} The AI read the policy and found <b>${national.size}</b> prohibited permission(s). Check them against the quotes; remove anything the policy doesn't ban.`;
   } else {
     note.className = "note warn";
-    note.textContent = j.stages[0].note ||
-      "The AI did not read the policy. Tick the prohibited permissions yourself, or use a preset.";
+    note.textContent = (j.stages[0] && j.stages[0].note) || "The AI did not read the policy. Pick a preset or add the prohibited permissions yourself.";
   }
-  $("evidence").innerHTML = (s1.evidence || []).map((e) =>
-    `<div class="quote"><b>${esc(e.data_type)}</b>: “${esc(e.quote)}”</div>`).join("");
-  $("excerpt").textContent = s1.clause_text || "";
+  $("nationalTitle").textContent = s1.source === "ai" ? "AI-extracted from your policy" : "Choose the prohibited data";
+
+  $("evidence").innerHTML = (s1.evidence || []).map((e, i) =>
+    `<div class="quote" style="animation-delay:${200 + i * 80}ms"><b>${esc(e.data_type)}</b>: “${esc(e.quote)}”</div>`).join("");
+  $("excerpt").innerHTML = highlightExcerpt(s1.clause_text || "", s1.evidence);
   $("excerptBox").classList.toggle("hidden", !s1.clause_text);
+  $("permList").innerHTML = (s1.catalog || []).map((c) => `<option value="${esc(c.permission)}">${esc(c.label)}</option>`).join("");
 
-  // Checklist: catalog + AI results + any declared-but-unknown permissions stay addable
-  const chosen = new Set(s1.permissions.map(short));
-  const items = new Map(s1.catalog.map((c) => [c.permission, c]));
-  s1.permissions.forEach((p) => { if (!items.has(short(p))) items.set(short(p), { permission: short(p), label: "from policy" }); });
-  const grid = $("permGrid");
-  grid.innerHTML = "";
-  const addItem = (c, checked) => {
-    grid.insertAdjacentHTML("beforeend",
-      `<label class="perm"><input type="checkbox" value="${esc(c.permission)}" ${checked ? "checked" : ""}>
-       <span><code>${esc(c.permission)}</code>${declared.has(c.permission) ? '<span class="pill declared">declared</span>' : ""}
-       <small>${esc(c.label || "")}</small></span></label>`);
+  $("presets").innerHTML = `<span class="fine">Presets:</span>` +
+    Object.keys(s1.presets || {}).map((n) => `<button type="button" data-p="${esc(n)}">${esc(n)}</button>`).join("");
+
+  const draw = () => {
+    const expand = $("expandGroups").checked;
+    $("nationalGroups").innerHTML = groupRows(national, { declared, expand, removable: true });
+    $("googleGroups").innerHTML = groupRows(new Set(s1.google_fsp || []), { declared, expand, skip: ["Location"] });
+    $("pNational").classList.toggle("off", !$("useNational").checked);
+    $("pGoogle").classList.toggle("off", !$("useGoogle").checked);
   };
-  [...items.values()]
-    .sort((a, b) => (chosen.has(b.permission) - chosen.has(a.permission)) ||
-                    (declared.has(b.permission) - declared.has(a.permission)))
-    .forEach((c) => addItem(c, chosen.has(c.permission)));
-
-  $("presets").innerHTML = "<span class='hint'>Presets from the paper:</span>" +
-    Object.keys(s1.presets || {}).map((name) => `<button type="button" data-p="${esc(name)}">${esc(name)}</button>`).join("");
-  $("presets").querySelectorAll("button").forEach((b) => b.onclick = () => {
-    s1.presets[b.dataset.p].forEach((p) => {
-      let box = grid.querySelector(`input[value="${p}"]`);
-      if (!box) { addItem({ permission: p, label: "preset" }, true); box = grid.querySelector(`input[value="${p}"]`); }
-      box.checked = true;
-    });
-  });
-  $("addPerm").onclick = () => {
+  $("nationalGroups").onclick = (e) => {
+    const b = e.target.closest("[data-rm]");
+    if (b) { national.delete(b.dataset.rm); draw(); }
+  };
+  $("presets").onclick = (e) => {
+    const b = e.target.closest("[data-p]");
+    if (!b) return;
+    national.clear();
+    s1.presets[b.dataset.p].forEach((p) => national.add(short(p)));
+    $("useNational").checked = true;
+    draw();
+    toast("Loaded preset: " + b.dataset.p);
+  };
+  const addPerm = () => {
     const p = short($("customPerm").value.trim());
     if (!p) return;
-    const box = grid.querySelector(`input[value="${p}"]`);
-    if (box) box.checked = true; else addItem({ permission: p, label: "added by you" }, true);
+    national.add(p);
     $("customPerm").value = "";
+    draw();
   };
-  const groupOf = {};
-  Object.entries(s1.groups || {}).forEach(([g, ps]) => ps.forEach((p) => { groupOf[p] = g; }));
-  const extras = (list, skip = []) => {
-    const set = new Set(list), out = [];
-    list.forEach((p) => {
-      const g = groupOf[p];
-      if (!g || skip.includes(g)) return;
-      s1.groups[g].forEach((q) => { if (!set.has(q)) { set.add(q); out.push(q); } });
-    });
-    return out;
-  };
-  const tag = (p) => `<code>${esc(p)}</code>${declared.has(p) ? ' <span class="pill declared">declared</span>' : ""}`;
-  const refresh = () => {
-    const on = $("expandGroups").checked;
-    const ticked = [...grid.querySelectorAll("input:checked")].map((i) => i.value);
-    const add = on ? extras(ticked) : [];
-    $("groupPreview").innerHTML = add.length
-      ? "Also prohibited through their permission group: " + add.map(tag).join(" · ") : "";
-    const g = s1.google_fsp || [], gAdd = on ? extras(g, ["Location"]) : [];
-    $("googleList").innerHTML = "Prohibits: " + g.map(tag).join(" · ") +
-      (gAdd.length ? "<br>Through their group: " + gAdd.map(tag).join(" · ") +
-        " <span class='hint'>(precise location only, so the location group is not expanded)</span>" : "");
-    $("googleList").style.opacity = $("useGoogle").checked ? 1 : 0.4;
-  };
-  grid.addEventListener("change", refresh);
-  ["expandGroups", "useGoogle"].forEach((id) => { $(id).onchange = refresh; });
-  $("addPerm").addEventListener("click", refresh);
-  $("presets").addEventListener("click", refresh);
-  refresh();
+  $("addPerm").onclick = addPerm;
+  $("customPerm").onkeydown = (e) => { if (e.key === "Enter") { e.preventDefault(); addPerm(); } };
+  ["expandGroups", "useNational", "useGoogle"].forEach((id) => { $(id).onchange = draw; });
+  $("useNational").checked = national.size > 0 || s1.source === "ai";
+  $("runFd").checked = !!status.flowdroid_ready;
+  $("runFd").disabled = !status.flowdroid_ready;
+  $("fdHint").textContent = status.flowdroid_ready ? "Slower (up to ~8 min), needs 4 GB+ free memory."
+    : "Not installed on this computer: run setup_tools.py to enable it.";
+  draw();
 
   $("runBtn").onclick = async () => {
-    const permissions = [...grid.querySelectorAll("input:checked")].map((i) => i.value);
-    const r = await fetch(`/api/jobs/${jobId}/confirm`, { method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ permissions, run_flowdroid: $("runFd").checked,
-        include_google: $("useGoogle").checked, expand_groups: $("expandGroups").checked }) });
-    const res = await r.json();
-    if (!r.ok) { alert(res.error); return; }
-    card.classList.add("hidden");
-    lastState = "running";
-    poll();
+    const useNat = $("useNational").checked, useG = $("useGoogle").checked;
+    if ((!useNat || !national.size) && !useG) { toast("Turn on at least one policy", true); return; }
+    $("runBtn").disabled = true;
+    try {
+      await getJSON(`/api/jobs/${jobId}/confirm`, {
+        method: "POST", headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ permissions: useNat ? [...national] : [], include_google: useG,
+          expand_groups: $("expandGroups").checked, run_flowdroid: $("runFd").checked }),
+      });
+      prevState = "running";
+      poll();
+    } catch (e) { toast(e.message, true); }
+    $("runBtn").disabled = false;
   };
-  card.scrollIntoView({ behavior: "smooth" });
 }
 
-// ── Report ────────────────────────────────────────────────────────────────
-function renderReport(j) {
-  const r = j.report, app = r.app, bad = r.verdict === "VIOLATING";
-  const matched = new Set(r.manifest.matched_permissions.map(short));
-  const policies = r.policies || [{ name: "Policy", permissions: r.policy.permissions.map(short),
-    via_group: {}, matched: [...matched], violating: bad }];
-  const file = (n) => `/api/jobs/${j.id}/files/${n}`;
-  const cell = (pol, s) => !pol.permissions.includes(s) ? ""
-    : `<b class="bad">Prohibited</b>${pol.via_group[s] ? `<br><small class="hint">via ${esc(pol.via_group[s])} group</small>` : ""}`;
+// ── Step 3: scan ──────────────────────────────────────────────────────────
+const tlIcon = { done: "i-check", failed: "i-x", skipped: "i-arrow", running: "", pending: "" };
+function renderScan(j) {
+  show("scan");
+  if (!rendered.scanBuilt) {
+    rendered.scanBuilt = true;
+    const info = j.apk_info || {};
+    $("deviceApp").innerHTML = `<div class="icon">${appIcon(j.id, info)}</div><b>${esc(info.app_name || "App")}</b><small>${esc(info.package || "")}</small>`;
+    $("catGrid").innerHTML = DEVICE_CATS.map((c) =>
+      `<div class="cat" data-cat="${esc(c)}"><span class="ci">${icon(CAT_ICON[c])}</span>${esc(CAT_SHORT[c] || c)}</div>`).join("");
+    $("timeline").innerHTML = j.stages.map((s) =>
+      `<li data-key="${s.key}" class="pending"><span class="tl-dot"></span><div><div class="tl-label">${esc(s.label)}</div><div class="tl-note"></div></div></li>`).join("");
+    document.querySelectorAll("[data-live]").forEach((b) => { b.textContent = "–"; b.dataset.v = ""; });
+    $("device").className = "device";
+    $("scanError").classList.add("hidden");
+    scanStart = Date.now();
+    clearInterval(elapsedTimer);
+    elapsedTimer = setInterval(() => {
+      const s = Math.floor((Date.now() - scanStart) / 1000);
+      $("elapsed").textContent = `${Math.floor(s / 60)}:${String(s % 60).padStart(2, "0")}`;
+    }, 500);
+  }
+  // timeline
+  j.stages.forEach((s) => {
+    const li = $("timeline").querySelector(`[data-key="${s.key}"]`);
+    if (!li || li.dataset.st === s.status + s.note) return;
+    li.dataset.st = s.status + s.note;
+    li.className = s.status;
+    li.querySelector(".tl-dot").innerHTML = tlIcon[s.status] ? icon(tlIcon[s.status]) : "";
+    li.querySelector(".tl-note").textContent = s.note;
+  });
+  // counters
+  const live = j.live || {};
+  document.querySelectorAll("[data-live]").forEach((b) => {
+    const v = live[b.dataset.live];
+    if (v === undefined || String(v) === b.dataset.v) return;
+    b.dataset.v = v;
+    countUp(b, v, 700);
+    const c = b.closest(".counter");
+    c.classList.remove("bump"); void c.offsetWidth; c.classList.add("bump");
+  });
+  // data categories light up on the phone
+  const hits = new Set(live.categories || []);
+  ((j.report && j.report.exposure) || []).forEach((r) => { if (r.asks.length || r.reads || r.sends) hits.add(r.category); });
+  document.querySelectorAll(".cat").forEach((c) => c.classList.toggle("hit", hits.has(c.dataset.cat)));
 
+  const running = j.stages.find((s) => s.status === "running");
+  if (j.state === "done") {
+    $("scanTitle").textContent = "Scan complete";
+    $("device").classList.add("done");
+    clearInterval(elapsedTimer);
+  } else if (j.state === "error") {
+    $("scanTitle").textContent = "Scan stopped";
+    $("device").classList.add("error");
+    $("scanError").classList.remove("hidden");
+    $("scanError").textContent = j.error + " (open the technical log for details)";
+    clearInterval(elapsedTimer);
+  } else {
+    $("scanTitle").textContent = running ? running.label + "…" : "Scanning…";
+  }
+}
+$("logTab").onclick = () => $("drawer").classList.toggle("open");
+
+// ── Step 4: report ────────────────────────────────────────────────────────
+function shortApi(sig) {
+  const m = /<([\w.$]+):\s*\S+\s+(\w+)\(/.exec(sig || "");
+  return m ? m[1].split(".").pop() + "." + m[2] : sig || "";
+}
+function pill(kind, text, ic, detail = "") {
+  return `<span class="ex-pill ${kind}">${ic ? icon(ic) : ""}${esc(text)}${detail ? `<span class="pd"> · ${esc(detail)}</span>` : ""}</span>`;
+}
+
+function renderReport(j) {
+  if (rendered.report) { show("report"); return; }
+  rendered.report = true;
+  clearInterval(elapsedTimer);
+  show("report");
+  const r = j.report, app = r.app;
+  if (!Object.keys(groupOf).length && j.stage1 && j.stage1.groups) {
+    groups = j.stage1.groups;
+    Object.entries(groups).forEach(([g, ps]) => ps.forEach((p) => { groupOf[p] = g; }));
+  }
+  const policies = r.policies || [{ name: "Policy", permissions: (r.policy.permissions || []).map(short), via_group: {},
+    matched: r.manifest.matched_permissions.map(short), violating: r.verdict === "VIOLATING" }];
+  const file = (n) => `/api/jobs/${j.id}/files/${n}`;
+  const stageOf = Object.fromEntries((j.stages || []).map((s) => [s.key, s]));
+  const staticRan = stageOf.static ? stageOf.static.status === "done" : r.static_sources.length > 0;
+
+  const verdicts = policies.map((p, i) => `
+    <div class="verdict ${p.violating ? "bad" : "good"}" style="animation-delay:${i * 120}ms">
+      <div class="vtop"><span class="vbadge">${icon(p.violating ? "i-alert" : "i-check")}</span>
+        <div><div class="vname">${esc(p.name)}</div><div class="vtitle">${p.violating ? "Violates" : "No prohibited permission"}</div></div>
+        <div class="vnum"><b data-n="${p.matched.length}">0</b><span>prohibited declared</span></div></div>
+      ${p.matched.length ? `<div class="chips">${p.matched.map((m) =>
+        `<span class="chip declared">${esc(m)}${p.via_group[m] ? ` <small>via ${esc(p.via_group[m])}</small>` : ""}</span>`).join("")}</div>` : ""}
+    </div>`).join("");
+
+  const fdRan = r.flowdroid.ran;
+  const exRows = (r.exposure || []).filter((e) => e.prohibited_by.length || e.asks.length || e.reads || e.sends);
+  const exposure = exRows.length ? `
+    <div class="exposure">
+      <div class="ex-row head"><div>Data</div>
+        <div class="colh">Asks<small>permission declared</small></div>
+        <div class="colh">Reads<small>code accesses it</small></div>
+        <div class="colh">Sends<small>FlowDroid traced it out</small></div></div>
+      ${exRows.map((e) => `<div class="ex-row">
+        <div class="ex-cat"><span class="ci">${icon(CAT_ICON[e.category] || "c-apps")}</span>
+          <div>${esc(e.category)}<small>${e.prohibited_by.length ? "prohibited by " + e.prohibited_by.map((n) => n.replace(" Financial Services policy", "").replace(" national policy", "")).map(esc).join(", ") : "not prohibited"}</small></div></div>
+        <div class="ex-cell" title="${esc(e.asks.join(", "))}">${e.asks.length ? pill("yes", "Yes", "i-alert", String(e.asks.length)) : pill("no", "No")}</div>
+        <div class="ex-cell">${!staticRan ? pill("na", "Not checked") : e.reads ? pill("yes", "Yes", "i-code", `${e.reads} place${e.reads > 1 ? "s" : ""}`) : pill("no", "Not found")}</div>
+        <div class="ex-cell">${!fdRan ? pill("na", "Not traced") : e.sends ? pill("yes", "Yes", "i-globe", `${e.sends} flow${e.sends > 1 ? "s" : ""}`) : pill("no", "None found")}</div>
+      </div>`).join("")}
+    </div>` : `<p class="fine">No prohibited data categories to show.</p>`;
+
+  const flows = r.flowdroid.flows.map((f, i) => `
+    <div class="flow" style="animation-delay:${i * 90}ms">
+      <div class="fnode src"><div class="k">${icon(CAT_ICON[f.category] || "c-apps")} ${esc(f.category || f.data_type || "Data")}</div><code>${esc(shortApi(f.source_api) || "source")}</code></div>
+      <div class="flink"></div>
+      <div class="fnode"><div class="k">${icon("i-code")} App code</div><code>${esc(f.source_class)}.${esc(f.source_method)}</code></div>
+      <div class="flink"></div>
+      <div class="fnode sink"><div class="k">${icon("i-globe")} Sent via</div><code>${esc(shortApi(f.sink_api) || (f.sink_class + "." + f.sink_method))}</code></div>
+    </div>`).join("");
+
+  const cell = (p, s) => !p.permissions.includes(s) ? "" :
+    `<span class="tag-bad">Prohibited</span>${p.via_group[s] ? `<br><small class="fine">via ${esc(p.via_group[s])} group</small>` : ""}`;
   const declaredRows = app.declared_permissions.map((p) => {
     const s = short(p);
     return `<tr><td><code>${esc(p)}</code></td>${policies.map((pol) => `<td>${cell(pol, s)}</td>`).join("")}</tr>`;
   }).join("");
-
-  const verdicts = policies.map((pol) => `
-    <div class="verdict ${pol.violating ? "bad" : "good"}">${esc(pol.name)}:
-      ${pol.violating ? `violates. Declares ${pol.matched.length} prohibited permission(s)` : "no prohibited permission declared"}
-      ${pol.violating ? `<div class="vlist">${pol.matched.map((p) => `<code>${esc(p)}</code>${pol.via_group[p] ? ` <small>(via ${esc(pol.via_group[p])} group)</small>` : ""}`).join(" · ")}</div>` : ""}
-    </div>`).join("");
-
-  const sources = r.static_sources.map((s) => `<tr>
-      <td>${esc(s.data_type)}</td>
-      <td><code>${esc(s.source_class.replace(/^L|;$/g, "").replace(/\//g, "."))}.${esc(s.source_method)}</code></td>
-      <td><code>${esc(s.matched_api)}</code><br><small class="hint">${esc(s.call_type)}</small></td></tr>`).join("");
-
-  const flows = r.flowdroid.flows.map((f) => `<tr>
-      <td>${esc(f.data_type || "")}<br><small class="hint"><code>${esc(f.source_api || "")}</code></small></td>
-      <td><code>${esc(f.source_class)}.${esc(f.source_method)}</code></td>
-      <td><code>${esc(f.sink_class)}.${esc(f.sink_method)}</code><br><small class="hint">called from ${esc(f.dispatcher_class)}.${esc(f.dispatcher_method)}</small></td></tr>`).join("");
-
-  const trackers = r.trackers.map((t) =>
-    `<tr><td>${t.website ? `<a href="${esc(t.website)}" target="_blank" rel="noopener">${esc(t.name)}</a>` : esc(t.name)}</td>
-     <td>${esc(t.categories)}</td><td><code>${esc(t.example_class)}</code></td></tr>`).join("");
-
+  const sources = r.static_sources.map((s) => `<tr><td>${esc(s.data_type)}</td>
+    <td><code>${esc(s.source_class.replace(/^L|;$/g, "").replace(/\//g, "."))}.${esc(s.source_method)}</code></td>
+    <td><code>${esc(s.matched_api)}</code><br><small class="fine">${esc(s.call_type)}</small></td></tr>`).join("");
+  const trackers = r.trackers.map((t) => `<tr><td>${t.website ? `<a href="${esc(t.website)}" target="_blank" rel="noopener">${esc(t.name)}</a>` : esc(t.name)}</td>
+    <td>${esc(t.categories)}</td><td><code>${esc(t.example_class)}</code></td></tr>`).join("");
+  const evidence = (r.policy.evidence || []).map((e) => `<div class="quote"><b>${esc(e.data_type)}</b>: “${esc(e.quote)}”</div>`).join("");
   const pkg = esc(app.package);
-  $("reportCard").innerHTML = `
-    <h2>Report: ${esc(app.app_name)}</h2>
-    <p class="hint">${pkg} · version ${esc(app.version || "?")} · targets Android API ${esc(app.target_sdk)} · file ${esc(app.file_name)}
-       ${r.policy_file ? " · policy " + esc(r.policy_file) : ""}</p>
-    ${verdicts}
+  const cmd = `pip install frida-tools\nadb install "${esc(app.file_name)}"\nfrida -U -f ${pkg} -l loanwatch_frida.js -o ${pkg}_frida_log.txt`;
+
+  $("report").innerHTML = `
+    <div class="r-head">
+      <div class="app-card">${appCard(j.id, app)}</div>
+      <div class="r-actions">
+        <a class="btn" href="${file("report.json")}">${icon("i-download")} JSON</a>
+        ${r.frida_files.map((n) => `<a class="btn" href="${file(n)}">${icon("i-download")} ${esc(n.replace("loanwatch_", "").replace(".js", ""))}.js</a>`).join("")}
+        <button class="btn" id="printBtn">${icon("i-printer")} Print / PDF</button>
+        <a class="btn primary" href="#/new">${icon("i-plus")} New scan</a>
+      </div>
+    </div>
+    <div class="verdicts">${verdicts}</div>
     <ul class="summary">${r.summary.map((s) => `<li>${esc(s)}</li>`).join("")}</ul>
 
-    <div class="downloads">
-      <a href="${file("report.json")}">Download full report (JSON)</a>
-      ${r.frida_files.map((n) => `<a href="${file(n)}">Download ${esc(n)}</a>`).join("")}
-      <a href="#" onclick="window.print();return false;">Print / save as PDF</a>
-    </div>
+    <h2 class="section-title">${icon("i-eye")} Asks → Reads → Sends <small>what the app can do with prohibited data</small></h2>
+    ${exposure}
 
-    ${policies.map((pol) => `<h3>${esc(pol.name)}: prohibited (${pol.permissions.length})</h3>
-      <p>${pol.permissions.map((p) => `<code>${esc(p)}</code>${pol.matched.includes(p) ? ' <span class="pill declared">declared</span>' : ""}${pol.via_group[p] ? ' <small class="hint">group</small>' : ""}`).join(" · ")}</p>`).join("")}
+    <h2 class="section-title">${icon("i-globe")} Data-flow paths <small>${fdRan ? r.flowdroid.flows.length + " found by FlowDroid" : "FlowDroid not run"}</small></h2>
+    ${flows ? `<div class="flows">${flows}</div>` : `<p class="fine">${fdRan
+      ? "FlowDroid finished and found no complete path. Static tracing misses many real flows, so confirm on a device."
+      : "Data-flow tracing was not run for this report."}</p>`}
 
-    <h3>Permissions the app declares (${app.declared_permissions.length})</h3>
-    <div class="tablewrap"><table><thead><tr><th>Permission</th>${policies.map((pol) => `<th>${esc(pol.name)}</th>`).join("")}</tr></thead><tbody>${declaredRows}</tbody></table></div>
-    ${r.llm_model ? `<p class="hint">AI model: ${esc(r.llm_model)}</p>` : ""}
+    <details class="panel"><summary>${icon("i-code")} Where the code reads it <small>${r.static_sources.length}</small></summary><div class="pbody">
+      ${sources ? `<div class="tablewrap"><table><thead><tr><th>Data</th><th>App method</th><th>Matched API</th></tr></thead><tbody>${sources}</tbody></table></div>`
+        : `<p class="fine">${staticRan ? "No code calling the matching Android APIs was found (the app may use native code, reflection or packing)." : "Not checked: no prohibited permission declared."}</p>`}</div></details>
+    <details class="panel"><summary>${icon("i-phone-device")} Permissions the app declares <small>${app.declared_permissions.length}</small></summary><div class="pbody">
+      <div class="tablewrap"><table><thead><tr><th>Permission</th>${policies.map((p) => `<th>${esc(p.name)}</th>`).join("")}</tr></thead><tbody>${declaredRows}</tbody></table></div></div></details>
+    <details class="panel"><summary>${icon("i-eye")} Tracking SDKs <small>${r.trackers.length}</small></summary><div class="pbody">
+      ${trackers ? `<div class="tablewrap"><table><thead><tr><th>Tracker</th><th>Category</th><th>Example class</th></tr></thead><tbody>${trackers}</tbody></table></div>` : `<p class="fine">None of the Exodus Privacy signatures matched.</p>`}</div></details>
+    <details class="panel"><summary>${icon("i-file")} Policy evidence <small>${r.policy.source === "ai" ? "AI" : "manual"}${r.llm_model ? " · " + esc(r.llm_model) : ""}</small></summary><div class="pbody">
+      ${evidence || `<p class="fine">No quotes recorded${r.policy.source === "ai" ? "" : " (permissions chosen by hand or from a preset)"}.</p>`}
+      ${r.policy_file ? `<p class="fine">Policy file: ${esc(r.policy_file)}</p>` : ""}</div></details>
+    <details class="panel"><summary>${icon("i-terminal")} Confirm on a device <small>dynamic analysis</small></summary><div class="pbody">
+      <p>This step can't run in the browser. Use an Android test phone or emulator that you control, with
+        <a href="https://frida.re/docs/android/" target="_blank" rel="noopener">frida-server</a> on it and only <b>dummy</b> contacts, SMS and photos.
+        As in the paper, just launch the app and answer its permission prompts. Don't register or enter real data.</p>
+      <pre class="cmd"><button class="btn ghost copy" id="copyCmd">${icon("i-copy")}</button>${cmd}</pre>
+      <p class="fine"><code>[LW][DATA-ACCESS]</code> lines show the app opening contacts, SMS, call logs or media; <code>[LW][NET]</code> lines show where it connects.
+        Data read and sent before sign-up matches the paper's pre-registration finding.</p></div></details>`;
 
-    <h3>Where the code reads the prohibited data (${r.static_sources.length})</h3>
-    ${sources ? `<div class="tablewrap"><table><thead><tr><th>Data</th><th>App method</th><th>Matched API</th></tr></thead><tbody>${sources}</tbody></table></div>`
-              : `<p class="hint">${bad ? "None found in the Java/Kotlin bytecode." : "Not checked: no prohibited permission declared."}</p>`}
+  document.querySelectorAll(".vnum b[data-n]").forEach((b) => countUp(b, b.dataset.n, 1100));
+  const pills = [...document.querySelectorAll("#report .ex-pill")];
+  pills.forEach((p, i) => setTimeout(() => p.classList.add("on"), reduced ? 0 : 300 + i * 70));
+  $("printBtn").onclick = () => window.print();
+  $("copyCmd").onclick = () => {
+    navigator.clipboard.writeText(cmd.replace(/&quot;/g, '"').replace(/&amp;/g, "&")).then(() => toast("Commands copied"), () => toast("Copy failed", true));
+  };
+}
+window.addEventListener("beforeprint", () => {
+  document.querySelectorAll("#report details").forEach((d) => { d.open = true; });
+  document.querySelectorAll("#report .ex-pill").forEach((p) => p.classList.add("on"));
+});
 
-    <h3>Data-flow paths (FlowDroid)</h3>
-    ${!r.flowdroid.ran ? '<p class="hint">FlowDroid was not run for this report.</p>'
-      : flows ? `<div class="tablewrap"><table><thead><tr><th>Data</th><th>Collected in</th><th>Sent via</th></tr></thead><tbody>${flows}</tbody></table></div>`
-      : '<p class="hint">FlowDroid finished and found no complete path. Static tracing misses many real flows, so confirm on a device.</p>'}
-
-    <h3>Tracking SDKs (${r.trackers.length})</h3>
-    ${trackers ? `<div class="tablewrap"><table><thead><tr><th>Tracker</th><th>Category</th><th>Example class</th></tr></thead><tbody>${trackers}</tbody></table></div>` : '<p class="hint">None of the Exodus Privacy signatures matched.</p>'}
-
-    <h3>Next: confirm on a device (dynamic analysis)</h3>
-    <p>This part can't run in the browser. It needs an Android test phone or emulator that you control, with
-       <a href="https://frida.re/docs/android/" target="_blank" rel="noopener">frida-server</a> running on it. As in the paper,
-       only launch the app and answer its permission prompts. Do not register or enter real personal data.
-       Use a test device with dummy contacts, SMS and photos.</p>
-    <pre>pip install frida-tools
-adb install "${esc(app.file_name)}"
-frida -U -f ${pkg} -l loanwatch_frida.js -o ${pkg}_frida_log.txt</pre>
-    <p class="hint">Lines tagged <code>[LW][DATA-ACCESS]</code> show the app opening contacts, SMS, call logs or media.
-       <code>[LW][NET]</code> lines show where it connects. If data is read and sent before you sign up, that matches the paper's pre-registration finding.</p>
-  `;
-  $("reportCard").classList.remove("hidden");
-  $("reportCard").scrollIntoView({ behavior: "smooth" });
+// ── Past reports ──────────────────────────────────────────────────────────
+async function loadHistory() {
+  const list = await getJSON("/api/jobs").catch(() => []);
+  $("historyGrid").innerHTML = list.length ? list.map((j, i) => {
+    const v = j.violations || [];
+    const badges = v.length ? v.map((p) => `<span class="badge ${p.violating ? "bad" : "good"}">${esc(p.name.replace(" Financial Services policy", "").replace(" national policy", ""))}: ${p.violating ? p.count + " violation(s)" : "ok"}</span>`).join(" ")
+      : `<span class="badge ${j.verdict === "VIOLATING" ? "bad" : j.verdict ? "good" : "mid"}">${esc(j.verdict || j.state)}</span>`;
+    return `<a class="hcard" href="#/job/${j.id}" style="animation-delay:${i * 50}ms">
+      <span class="icon">${j.icon ? `<img src="/api/jobs/${j.id}/files/${esc(j.icon)}" alt="">` : icon("i-phone-device")}</span>
+      <span><b>${esc(j.app_name || "Untitled scan")}</b><small>${esc(j.package)}</small>
+      <small>${new Date(j.created * 1000).toLocaleString()}</small>${badges}</span></a>`;
+  }).join("") : `<div class="empty">No reports yet. <a href="#/new">Start your first scan</a>.</div>`;
 }
 
-loadStatus();
-if (location.hash.length > 1) openJob(location.hash.slice(1));
+// ── Start ─────────────────────────────────────────────────────────────────
+loadStatus().catch(() => {}).finally(route);

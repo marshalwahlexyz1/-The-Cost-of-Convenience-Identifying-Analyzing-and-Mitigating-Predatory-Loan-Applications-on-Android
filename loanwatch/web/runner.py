@@ -303,6 +303,7 @@ class Job:
         self.apk_info = None
         self.report = None
         self.policies = []
+        self.live = {}      # counters for the scan screen
         self._apk = self._analysis = None
         self._lock = threading.Lock()
 
@@ -332,6 +333,7 @@ class Job:
             "apk_info": self.apk_info,
             "report": self.report,
             "has_llm": bool(self.groq_key),
+            "live": self.live,
         }
 
 
@@ -375,6 +377,10 @@ def job_list():
         out.append({
             "id": j.id, "state": j.state, "created": j.created,
             "app_name": app.get("app_name", ""), "package": app.get("package", ""),
+            "icon": app.get("icon", ""),
+            "violations": [{"name": p["name"], "violating": p.get("violating", False),
+                            "count": len(p.get("matched", []))}
+                           for p in (j.report or {}).get("policies", [])],
             "verdict": (j.report or {}).get("verdict", ""),
         })
     return out
@@ -462,10 +468,97 @@ def _policy_phase(job: Job):
         "declared_permissions": declared,
         "declared_short": [baseline.normalise(p) for p in declared],
         "file_name": opts.get("apk_name", os.path.basename(job.apk_path)),
+        "icon": _extract_icon(apk, job.dir),
+        "size_mb": round(os.path.getsize(job.apk_path) / 2**20, 1),
     }
     job.set_stage("apk", "done", f"{job.apk_info['app_name']} ({job.apk_info['package']}) "
                                  f"in {time.time() - t0:.0f}s")
     job.state = "awaiting_confirmation"
+
+
+def _extract_icon(apk, out_dir) -> str:
+    """Save the app's launcher icon next to the job; returns the file name or ''.
+    Adaptive (XML) icons can't be shown in a browser, so fall back to the
+    largest bitmap launcher image in the APK."""
+    candidates = []
+    try:
+        path = apk.get_app_icon()
+        if path and re.search(r"\.(png|webp|jpe?g)$", path, re.I):
+            candidates.append(path)
+    except Exception:
+        pass
+    try:
+        rx = re.compile(r"^res/(mipmap|drawable)[^/]*/[^/]*(launcher|app_icon|logo)[^/]*\.(png|webp)$", re.I)
+        bitmaps = [f for f in apk.get_files() if rx.search(f)]
+        bitmaps.sort(key=lambda f: len(apk.get_file(f) or b""), reverse=True)
+        candidates += bitmaps[:1]
+    except Exception:
+        pass
+    for path in candidates:
+        try:
+            data = apk.get_file(path)
+            if data:
+                name = "icon" + os.path.splitext(path)[1].lower()
+                with open(os.path.join(out_dir, name), "wb") as f:
+                    f.write(data)
+                return name
+        except Exception:
+            continue
+    return ""
+
+
+# Display categories for the Asks / Reads / Sends grid
+_EXTRA_CATEGORY = {"QUERY_ALL_PACKAGES": "Installed apps", "BODY_SENSORS": "Body sensors"}
+
+
+def _category(permission: str) -> str:
+    p = baseline.normalise(permission or "")
+    return baseline.GROUP_OF.get(p) or _EXTRA_CATEGORY.get(p) or ""
+
+
+def _flow_category(flow, sources) -> str:
+    cat = _category(flow.get("permission", ""))
+    if cat:
+        return cat
+    api = flow.get("source_api", "")
+    for key, c in (("Location", "Location"), ("TelephonyManager", "Phone"),
+                   ("Camera", "Camera"), ("MediaRecorder", "Microphone"),
+                   ("AudioRecord", "Microphone")):
+        if key in api:
+            return c
+    # ContentResolver.query: attribute to the content-provider data the app reads
+    cats = {_category(s.get("permission")) for s in sources} & {
+        "Contacts", "Call log", "SMS", "Photos, media & storage", "Calendar"}
+    return cats.pop() if len(cats) == 1 else "Content provider data"
+
+
+def _exposure(report) -> list:
+    rows = {}
+
+    def row(cat):
+        return rows.setdefault(cat, {"category": cat, "prohibited_by": [], "asks": [],
+                                     "reads": 0, "sends": 0})
+    for pol in report.get("policies", []):
+        for p in pol["permissions"]:
+            cat = _category(p)
+            if cat and pol["name"] not in row(cat)["prohibited_by"]:
+                row(cat)["prohibited_by"].append(pol["name"])
+        for p in pol["matched"]:
+            cat = _category(p)
+            if cat and p not in row(cat)["asks"]:
+                row(cat)["asks"].append(p)
+    for s in report["static_sources"]:
+        cat = _category(s.get("permission"))
+        if cat:
+            row(cat)["reads"] += 1
+    for f in report["flowdroid"]["flows"]:
+        cat = _flow_category(f, report["static_sources"])
+        f["category"] = cat
+        row(cat)["sends"] += 1
+    order = list(baseline.PERMISSION_GROUPS) + list(_EXTRA_CATEGORY.values())
+    return sorted(rows.values(), key=lambda r: (
+        -(bool(r["asks"]) + bool(r["reads"]) + bool(r["sends"])),
+        order.index(r["category"]) if r["category"] in order else 99))
 
 
 # ── Phase B ──────────────────────────────────────────────────────────────────
@@ -531,6 +624,8 @@ def _analysis_phase(job: Job):
         pol["violating"] = bool(pol["matched"])
     report["policies"] = policies
     report["manifest"] = s2
+    job.live["declared"] = len(s2["matched_permissions"])
+    job.live["categories"] = sorted({_category(p) for p in s2["matched_permissions"]} - {""})
     job.set_stage("manifest", "done", "; ".join(
         f"{pol['name']}: {len(pol['matched'])} prohibited declared" for pol in policies))
 
@@ -539,6 +634,7 @@ def _analysis_phase(job: Job):
     classes = [c.name for c in job._analysis.get_classes() if not c.is_external()]
     trackers = baseline.detect_trackers(classes)
     report["trackers"] = trackers
+    job.live["trackers"] = len(trackers)
     job.set_stage("trackers", "done", f"{len(trackers)} tracker SDK(s) found")
 
     matched_short = [baseline.normalise(p) for p in s2["matched_permissions"]]
@@ -570,6 +666,7 @@ def _analysis_phase(job: Job):
         # Stage 4 — bytecode scan
         job.set_stage("static", "running")
         s4 = stage4_static.run(job.apk_path, targets, True, analysis=job._analysis)
+        job.live["code"] = len(s4["sources"])
         job.set_stage("static", "done", f"{len(s4['sources'])} place(s) in the code")
 
         # Stage 5 — FlowDroid
@@ -592,6 +689,7 @@ def _analysis_phase(job: Job):
             if s5["ran_flowdroid"]:
                 job.set_stage("taint", "done",
                               f"{len(s5['confirmed_sources'])} source→sink path(s)")
+                job.live["flows"] = len(s5["confirmed_sources"])
             else:
                 job.set_stage("taint", "failed",
                               "FlowDroid did not finish (timeout or error); see log")
@@ -628,6 +726,8 @@ def _analysis_phase(job: Job):
     # Summary in plain language
     report["verdict"] = "VIOLATING" if s2["violating"] else "COMPLIANT"
     report["llm_model"] = LLM_MODEL if job.groq_key else ""
+    report["exposure"] = _exposure(report)
+    report["live"] = job.live
     report["summary"] = _summary(report, all_perms)
     report["stages"] = job.stages
     job.report = report

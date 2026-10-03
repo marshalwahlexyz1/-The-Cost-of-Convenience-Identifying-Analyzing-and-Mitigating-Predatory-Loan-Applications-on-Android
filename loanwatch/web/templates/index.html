@@ -1,116 +1,233 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>LoanWatch</title>
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 16 16%22%3E%3Ccircle cx=%228%22 cy=%228%22 r=%227%22 fill=%22%231f5fd1%22/%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22%3E%3Cpath d=%22M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z%22 fill=%22%2338bdf8%22/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap">
 <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
-<header>
-  <div class="wrap head">
-    <div>
-      <h1>LoanWatch</h1>
-      <p class="sub">Check a loan app against a lending policy: what it is prohibited from accessing, whether it asks for it, and where its code reads it.</p>
-    </div>
-    <button class="ghost" id="historyBtn">Past reports</button>
-  </div>
-</header>
+<!-- Icon sprite (stroke icons, 24x24) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></symbol>
+    <symbol id="i-sliders" viewBox="0 0 24 24"><line x1="4" y1="21" x2="4" y2="14"/><line x1="4" y1="10" x2="4" y2="3"/><line x1="12" y1="21" x2="12" y2="12"/><line x1="12" y1="8" x2="12" y2="3"/><line x1="20" y1="21" x2="20" y2="16"/><line x1="20" y1="12" x2="20" y2="3"/><line x1="1" y1="14" x2="7" y2="14"/><line x1="9" y1="8" x2="15" y2="8"/><line x1="17" y1="16" x2="23" y2="16"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></symbol>
+    <symbol id="i-file" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></symbol>
+    <symbol id="i-phone-device" viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></symbol>
+    <symbol id="i-alert" viewBox="0 0 24 24"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></symbol>
+    <symbol id="i-printer" viewBox="0 0 24 24"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></symbol>
+    <symbol id="i-terminal" viewBox="0 0 24 24"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></symbol>
+    <symbol id="i-code" viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></symbol>
+    <symbol id="i-eye" viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></symbol>
+    <symbol id="i-zap" viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></symbol>
+    <symbol id="i-key" viewBox="0 0 24 24"><circle cx="7.5" cy="15.5" r="5.5"/><path d="M21 2l-9.6 9.6M15.5 7.5l3 3L22 7l-3-3"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></symbol>
+    <!-- data categories -->
+    <symbol id="c-contacts" viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></symbol>
+    <symbol id="c-calllog" viewBox="0 0 24 24"><polyline points="16 2 16 8 22 8"/><line x1="23" y1="1" x2="16" y2="8"/><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+    <symbol id="c-sms" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></symbol>
+    <symbol id="c-photos" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></symbol>
+    <symbol id="c-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+    <symbol id="c-location" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+    <symbol id="c-calendar" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></symbol>
+    <symbol id="c-camera" viewBox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></symbol>
+    <symbol id="c-mic" viewBox="0 0 24 24"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/></symbol>
+    <symbol id="c-apps" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></symbol>
+    <symbol id="c-sensors" viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></symbol>
+  </defs>
+</svg>
 
-<main class="wrap">
-  <!-- Tool status -->
-  <section class="card" id="statusCard">
-    <h2>Setup on this computer</h2>
-    <ul class="status" id="statusList"><li>Checking…</li></ul>
-    <div id="keyBox" class="keybox hidden">
-      <label for="keyInput">Groq API key: needed for the AI steps (reading the policy, mapping APIs, writing the Frida script). Free at <a href="https://console.groq.com/keys" target="_blank" rel="noopener">console.groq.com</a>.</label>
-      <div class="row">
-        <input id="keyInput" type="password" placeholder="gsk_…" autocomplete="off">
-        <button id="saveKey">Save on this computer</button>
+<div class="shell">
+  <!-- Sidebar (bottom tab bar on phones) -->
+  <nav class="sidebar" aria-label="Main">
+    <a class="brand" href="#/new">
+      <span class="logo"><svg class="sh"><use href="#i-shield"/></svg><svg class="lens"><use href="#i-search"/></svg></span>
+      <span class="brand-text">Loan<b>Watch</b></span>
+    </a>
+    <a class="nav" data-nav="new" href="#/new"><svg><use href="#i-plus"/></svg><span>New scan</span></a>
+    <a class="nav" data-nav="history" href="#/history"><svg><use href="#i-clock"/></svg><span>Reports</span></a>
+    <a class="nav" data-nav="setup" href="#/setup"><svg><use href="#i-sliders"/></svg><span>Setup</span></a>
+    <div class="side-foot">Method from <em>The Cost of Convenience</em> (Akanji, Egele, Stringhini, ASIA CCS '26)</div>
+  </nav>
+
+  <div class="main">
+    <header class="topbar">
+      <a class="lights" id="lights" href="#/setup" title="Tool status, click for setup"></a>
+      <button class="icon-btn" id="themeBtn" title="Switch light / dark"><svg><use href="#i-sun"/></svg></button>
+    </header>
+
+    <ol class="stepper hidden" id="stepper">
+      <li data-step="new"><span class="dot">1</span><span class="lbl">Upload</span></li>
+      <li data-step="review"><span class="dot">2</span><span class="lbl">Review policy</span></li>
+      <li data-step="scan"><span class="dot">3</span><span class="lbl">Scan</span></li>
+      <li data-step="report"><span class="dot">4</span><span class="lbl">Report</span></li>
+    </ol>
+
+    <!-- ── Upload ───────────────────────────────────────────── -->
+    <section class="screen" id="s-new">
+      <div class="hero">
+        <h1>Inspect a loan app</h1>
+        <p>See what personal data a lending policy forbids, whether the app <b>asks</b> for it, where its code <b>reads</b> it, and whether it <b>sends</b> it out.</p>
       </div>
-    </div>
-  </section>
-
-  <!-- History -->
-  <section class="card hidden" id="historyCard">
-    <h2>Past reports</h2>
-    <ul class="history" id="historyList"></ul>
-  </section>
-
-  <!-- Step 1: upload -->
-  <section class="card" id="uploadCard">
-    <h2><span class="num">1</span> Upload the app and the policy</h2>
-    <form id="uploadForm">
-      <div class="grid2">
-        <label class="drop">
-          <span class="dlabel">Loan app (.apk)</span>
+      <form id="uploadForm" class="upload-grid">
+        <label class="drop" id="dropApk">
           <input type="file" name="apk" accept=".apk" required>
+          <div class="flip">
+            <div class="face front">
+              <div class="drop-icon"><svg><use href="#i-phone-device"/></svg></div>
+              <b>Loan app (.apk)</b>
+              <span>Drag it here or click to choose</span>
+            </div>
+            <div class="face back">
+              <div class="app-tile"><svg><use href="#i-phone-device"/></svg></div>
+              <b class="fname"></b>
+              <span class="fsize"></span>
+              <span class="ready"><svg><use href="#i-check"/></svg> Ready to inspect</span>
+            </div>
+          </div>
         </label>
-        <label class="drop">
-          <span class="dlabel">Lending policy (PDF or .txt)</span>
+        <label class="drop" id="dropPolicy">
           <input type="file" name="policy" accept=".pdf,.txt,.md">
+          <div class="flip">
+            <div class="face front">
+              <div class="drop-icon"><svg><use href="#i-file"/></svg></div>
+              <b>Lending policy (PDF)</b>
+              <span>Optional: you can also use a preset later</span>
+            </div>
+            <div class="face back">
+              <div class="app-tile doc"><svg><use href="#i-file"/></svg></div>
+              <b class="fname"></b>
+              <span class="fsize"></span>
+              <span class="ready"><svg><use href="#i-zap"/></svg> The AI will read it</span>
+            </div>
+          </div>
         </label>
+        <details class="opts">
+          <summary>Advanced options</summary>
+          <div class="opt-grid">
+            <label>Regulator / country <input name="jurisdiction" placeholder="e.g. Nigerian, Kenyan"></label>
+            <label>Clause number <input name="clause" inputmode="numeric" placeholder="blank = AI reads the whole policy"></label>
+          </div>
+        </details>
+        <button type="submit" class="btn primary big" id="startBtn"><svg><use href="#i-search"/></svg> Start inspection</button>
+        <p class="fine center">The APK never leaves this computer. With AI on, only the policy text and permission or method names go to Groq.</p>
+      </form>
+    </section>
+
+    <!-- ── Review ───────────────────────────────────────────── -->
+    <section class="screen" id="s-review">
+      <div class="app-card" id="appCard"></div>
+      <div id="reviewLoading" class="reading">
+        <div class="reading-head"><span class="ai-orb"><svg><use href="#i-zap"/></svg></span><b id="readingText">The AI is reading the policy…</b></div>
+        <div class="shimmer"></div><div class="shimmer w80"></div><div class="shimmer w60"></div>
       </div>
-      <details>
-        <summary>Options</summary>
-        <div class="grid2 opts">
-          <label>Regulator / country (optional)
-            <input name="jurisdiction" placeholder="e.g. Nigerian, Kenyan">
-          </label>
-          <label>Clause number (optional; blank = AI reads the whole policy)
-            <input name="clause" inputmode="numeric" placeholder="e.g. 15">
-          </label>
+      <div id="reviewBody" class="hidden">
+        <p class="note" id="policyNote"></p>
+        <div class="policy-cols">
+          <article class="pcard" id="pNational">
+            <header>
+              <div><span class="kicker">National policy</span><h3 id="nationalTitle">From your policy</h3></div>
+              <label class="switch" title="Check against this policy"><input type="checkbox" id="useNational" checked><span></span></label>
+            </header>
+            <div class="presets" id="presets"></div>
+            <div class="groups" id="nationalGroups"></div>
+            <div class="add-row">
+              <input id="customPerm" list="permList" placeholder="Add a permission, e.g. READ_SMS">
+              <datalist id="permList"></datalist>
+              <button type="button" class="btn ghost" id="addPerm"><svg><use href="#i-plus"/></svg> Add</button>
+            </div>
+            <div id="evidence"></div>
+            <details class="excerpt" id="excerptBox"><summary>Policy text used</summary><div id="excerpt"></div></details>
+          </article>
+          <article class="pcard" id="pGoogle">
+            <header>
+              <div><span class="kicker">App store policy</span><h3>Google Play Financial Services</h3></div>
+              <label class="switch" title="Check against this policy"><input type="checkbox" id="useGoogle" checked><span></span></label>
+            </header>
+            <div class="groups" id="googleGroups"></div>
+            <p class="fine">Google bans precise location only, so the location group is not expanded.</p>
+          </article>
         </div>
-      </details>
-      <button type="submit" id="startBtn" class="primary">Read policy and open app</button>
-      <p class="hint">The APK stays on this computer. With a Groq key, the policy text is sent to Groq so the AI can read it.</p>
-    </form>
-  </section>
+        <div class="toggles">
+          <label class="toggle"><span class="switch"><input type="checkbox" id="expandGroups" checked><span></span></span>
+            <span><b>Flag whole permission groups</b><small>Android grants permissions by group: once a user grants <code>WRITE_CONTACTS</code>, the app can later get <code>READ_CONTACTS</code> without asking.</small></span></label>
+          <label class="toggle"><span class="switch"><input type="checkbox" id="runFd" checked><span></span></span>
+            <span><b>Trace data flows with FlowDroid</b><small id="fdHint">Slower (up to ~8 min), needs 4 GB+ free memory.</small></span></label>
+        </div>
+        <button class="btn primary big" id="runBtn"><svg><use href="#i-search"/></svg> Start scan</button>
+      </div>
+    </section>
 
-  <!-- Step 2: confirm permissions -->
-  <section class="card hidden" id="confirmCard">
-    <h2><span class="num">2</span> Choose what to check the app against</h2>
-    <h3>National policy</h3>
-    <p id="policyNote" class="note"></p>
-    <div id="evidence"></div>
-    <details id="excerptBox"><summary>Policy text used (relevant excerpt)</summary><pre id="excerpt"></pre></details>
-    <div class="presets" id="presets"></div>
-    <p class="hint">Ticked = treated as prohibited. <span class="pill declared">declared</span> means the app asks for it in its manifest.</p>
-    <div class="perm-grid" id="permGrid"></div>
-    <div class="row">
-      <input id="customPerm" placeholder="Add another permission, e.g. READ_PRECISE_PHONE_STATE">
-      <button id="addPerm" class="ghost">Add</button>
-    </div>
-    <p class="hint" id="groupPreview"></p>
+    <!-- ── Scan ─────────────────────────────────────────────── -->
+    <section class="screen" id="s-scan">
+      <div class="scan-grid">
+        <div class="device-col">
+          <div class="device" id="device">
+            <div class="notch"></div>
+            <div class="device-screen">
+              <div class="beam"></div>
+              <div class="device-app" id="deviceApp"></div>
+              <div class="cat-grid" id="catGrid"></div>
+            </div>
+          </div>
+          <div class="elapsed" id="elapsed">0:00</div>
+        </div>
+        <div class="scan-col">
+          <h2 id="scanTitle">Scanning…</h2>
+          <div class="counters">
+            <div class="counter"><svg><use href="#i-alert"/></svg><b data-live="declared">–</b><span>prohibited permissions</span></div>
+            <div class="counter"><svg><use href="#i-code"/></svg><b data-live="code">–</b><span>code locations</span></div>
+            <div class="counter"><svg><use href="#i-globe"/></svg><b data-live="flows">–</b><span>data flows</span></div>
+            <div class="counter"><svg><use href="#i-eye"/></svg><b data-live="trackers">–</b><span>trackers</span></div>
+          </div>
+          <ol class="timeline" id="timeline"></ol>
+          <div class="error-box hidden" id="scanError"></div>
+        </div>
+      </div>
+      <button class="drawer-tab" id="logTab"><svg><use href="#i-terminal"/></svg> Technical log</button>
+      <div class="drawer" id="drawer"><pre id="log"></pre></div>
+    </section>
 
-    <h3>Google Play Financial Services policy</h3>
-    <label class="check"><input type="checkbox" id="useGoogle" checked> Also check against Google Play's Financial Services policy (personal loans)</label>
-    <p class="hint" id="googleList"></p>
+    <!-- ── Report ───────────────────────────────────────────── -->
+    <section class="screen" id="s-report"><div id="report"></div></section>
 
-    <h3>Options</h3>
-    <label class="check"><input type="checkbox" id="expandGroups" checked> Treat the whole Android permission group as prohibited (recommended).
-      <span class="hint">Android grants permissions by group: once a user grants e.g. <code>WRITE_CONTACTS</code>, the app can obtain <code>READ_CONTACTS</code> later without asking again.</span></label>
-    <label class="check"><input type="checkbox" id="runFd" checked> Run FlowDroid data-flow tracing (slow: up to ~8 min, needs 4 GB+ free RAM)</label>
-    <button id="runBtn" class="primary">Run the checks</button>
-  </section>
+    <!-- ── History ──────────────────────────────────────────── -->
+    <section class="screen" id="s-history">
+      <h1 class="page-title">Past reports</h1>
+      <div class="history-grid" id="historyGrid"></div>
+    </section>
 
-  <!-- Progress -->
-  <section class="card hidden" id="progressCard">
-    <h2>Progress</h2>
-    <ol class="stages" id="stages"></ol>
-    <details id="logBox"><summary>Technical log</summary><pre id="log"></pre></details>
-  </section>
+    <!-- ── Setup ────────────────────────────────────────────── -->
+    <section class="screen" id="s-setup">
+      <h1 class="page-title">Setup on this computer</h1>
+      <div class="setup-grid" id="setupGrid"></div>
+      <article class="pcard keycard">
+        <header><div><span class="kicker">AI</span><h3>Groq API key</h3></div></header>
+        <p class="fine" id="keyState"></p>
+        <div class="add-row">
+          <input id="keyInput" type="password" placeholder="gsk_…" autocomplete="off">
+          <button class="btn primary" id="saveKey"><svg><use href="#i-key"/></svg> Save &amp; test</button>
+        </div>
+        <p class="fine">Free at <a href="https://console.groq.com/keys" target="_blank" rel="noopener">console.groq.com/keys</a>. Stored only in <code>loanwatch/.env</code> on this computer.</p>
+      </article>
+    </section>
+  </div>
+</div>
 
-  <!-- Report -->
-  <section class="card hidden" id="reportCard"></section>
-</main>
-
-<footer class="wrap">
-  Based on <em>The Cost of Convenience: Identifying, Analyzing, and Mitigating Predatory Loan Applications on Android</em>
-  (Akanji, Egele, Stringhini — ACM ASIA CCS '26). Static results show what an app <em>can</em> do; confirm on a device before publishing claims about what it <em>does</em>.
-</footer>
-
+<div class="toast" id="toast" role="status"></div>
 <script src="/static/app.js"></script>
 </body>
 </html>
