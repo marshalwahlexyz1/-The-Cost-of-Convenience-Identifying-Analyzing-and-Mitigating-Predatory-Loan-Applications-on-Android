@@ -79,6 +79,21 @@ PERMISSION_CATALOG = {
     "QUERY_ALL_PACKAGES": ("installed_apps", "List of installed apps", [
         "Landroid/content/pm/PackageManager;->getInstalledPackages",
         "Landroid/content/pm/PackageManager;->getInstalledApplications"]),
+    "WRITE_CALENDAR": ("calendar", "Modify calendar", [
+        "CalendarContract", "content://com.android.calendar"]),
+    "RECEIVE_MMS": ("sms", "Incoming MMS", ["WAP_PUSH_RECEIVED"]),
+    "RECEIVE_WAP_PUSH": ("sms", "Incoming WAP push", ["WAP_PUSH_RECEIVED"]),
+    "READ_MEDIA_VISUAL_USER_SELECTED": ("photos", "Photos the user picks (Android 14+)", [
+        "Landroid/provider/MediaStore$Images"]),
+    "ACCESS_MEDIA_LOCATION": ("photos", "Location stored in photos", [
+        "Landroid/provider/MediaStore;->setRequireOriginal"]),
+    "READ_PRECISE_PHONE_STATE": ("device_ids", "Detailed call / network state", [
+        "Landroid/telephony/TelephonyManager;->listen"]),
+    "CALL_PHONE": ("phone", "Place phone calls", ["Landroid/telecom/TelecomManager;->placeCall"]),
+    "ANSWER_PHONE_CALLS": ("phone", "Answer phone calls", [
+        "Landroid/telecom/TelecomManager;->acceptRingingCall"]),
+    "ADD_VOICEMAIL": ("phone", "Add voicemail", ["VoicemailContract"]),
+    "USE_SIP": ("phone", "Internet (SIP) calls", ["Landroid/net/sip/SipManager"]),
     "BODY_SENSORS": ("health", "Body sensors", [
         "Landroid/hardware/SensorManager;->getDefaultSensor"]),
 }
@@ -95,11 +110,13 @@ _GENERIC = {
 
 # Permission sets used in the paper (LoanApps/newanalyze.py), offered as
 # one-click presets in the web UI.
+GOOGLE_FSP_NAME = "Google Play Financial Services policy"
+GOOGLE_FSP = [
+    "READ_EXTERNAL_STORAGE", "READ_MEDIA_IMAGES", "READ_CONTACTS",
+    "ACCESS_FINE_LOCATION", "READ_PHONE_NUMBERS", "READ_MEDIA_VIDEO",
+    "QUERY_ALL_PACKAGES", "WRITE_EXTERNAL_STORAGE"]
+
 PRESETS = {
-    "Google Play Financial Services policy": [
-        "READ_EXTERNAL_STORAGE", "READ_MEDIA_IMAGES", "READ_CONTACTS",
-        "ACCESS_FINE_LOCATION", "READ_PHONE_NUMBERS", "READ_MEDIA_VIDEO",
-        "QUERY_ALL_PACKAGES", "WRITE_EXTERNAL_STORAGE"],
     "Kenya (CBK)": ["READ_CONTACTS", "READ_CALL_LOG"],
     "Nigeria (FCCPC)": [
         "READ_CONTACTS", "READ_CALL_LOG", "READ_MEDIA_VIDEO",
@@ -112,6 +129,44 @@ PRESETS = {
         "READ_CONTACTS", "READ_PHONE_NUMBERS", "READ_PHONE_STATE",
         "READ_PRECISE_PHONE_STATE", "QUERY_ALL_PACKAGES"],
 }
+
+
+# Android grants runtime permissions per group: once the user grants one
+# permission in a group (e.g. WRITE_CONTACTS), the app can later obtain the
+# others in that group (READ_CONTACTS) without a new prompt. A ban on a data
+# type therefore covers every permission in its group.
+PERMISSION_GROUPS = {
+    "Contacts": ["READ_CONTACTS", "WRITE_CONTACTS", "GET_ACCOUNTS"],
+    "Call log": ["READ_CALL_LOG", "WRITE_CALL_LOG", "PROCESS_OUTGOING_CALLS"],
+    "SMS": ["READ_SMS", "RECEIVE_SMS", "SEND_SMS", "RECEIVE_MMS", "RECEIVE_WAP_PUSH"],
+    "Photos, media & storage": [
+        "READ_EXTERNAL_STORAGE", "WRITE_EXTERNAL_STORAGE", "MANAGE_EXTERNAL_STORAGE",
+        "READ_MEDIA_IMAGES", "READ_MEDIA_VIDEO", "READ_MEDIA_AUDIO",
+        "READ_MEDIA_VISUAL_USER_SELECTED", "ACCESS_MEDIA_LOCATION"],
+    "Phone": ["READ_PHONE_STATE", "READ_PHONE_NUMBERS", "READ_PRECISE_PHONE_STATE",
+              "CALL_PHONE", "ANSWER_PHONE_CALLS", "ADD_VOICEMAIL", "USE_SIP"],
+    "Location": ["ACCESS_FINE_LOCATION", "ACCESS_COARSE_LOCATION",
+                 "ACCESS_BACKGROUND_LOCATION"],
+    "Calendar": ["READ_CALENDAR", "WRITE_CALENDAR"],
+    "Camera": ["CAMERA"],
+    "Microphone": ["RECORD_AUDIO"],
+}
+GROUP_OF = {p: g for g, ps in PERMISSION_GROUPS.items() for p in ps}
+
+
+def expand_groups(perms, skip_groups=()) -> tuple:
+    """Return (expanded list, {added_permission: group}) for a prohibited list."""
+    out = list(dict.fromkeys(normalise(p) for p in perms))
+    added = {}
+    for p in list(out):
+        g = GROUP_OF.get(p)
+        if not g or g in skip_groups:
+            continue
+        for q in PERMISSION_GROUPS[g]:
+            if q not in out:
+                out.append(q)
+                added[q] = g
+    return out, added
 
 
 def normalise(p: str) -> str:

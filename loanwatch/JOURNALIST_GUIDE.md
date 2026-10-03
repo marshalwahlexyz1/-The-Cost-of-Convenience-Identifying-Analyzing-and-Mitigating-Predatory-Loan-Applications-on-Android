@@ -74,8 +74,16 @@ platform shows a cross, run `python setup_tools.py` again (inside the
 2. **Check the list.** The AI's prohibited permissions are ticked, with the
    quotes it relied on. Permissions the app declares have a red **declared**
    tag. Untick anything the policy doesn't ban, or add more. The presets
-   (Google Play, Kenya, Nigeria, Pakistan, Philippines) are the permission sets
-   used in the paper.
+   (Kenya, Nigeria, Pakistan, Philippines) are the permission sets used in the
+   paper.
+   - **Google Play Financial Services policy** is checked as well by default,
+     so the report gives two verdicts, one for each policy.
+   - **Whole permission group** (on by default): Android grants permissions by
+     group, so an app granted `WRITE_CONTACTS` can later obtain `READ_CONTACTS`
+     without asking again. A ban on contacts therefore flags every contacts
+     permission. Permissions caught this way are marked "via … group" in the
+     report. Google's rule covers precise location only, so the location
+     group is not expanded for it.
 3. **Run the checks.** With FlowDroid this takes about 1–10 minutes depending
    on the app's size. You can watch each step, and the technical log is there
    if something fails.

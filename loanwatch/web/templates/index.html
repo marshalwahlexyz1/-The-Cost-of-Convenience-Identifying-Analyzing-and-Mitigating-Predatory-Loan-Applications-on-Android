@@ -70,7 +70,8 @@
 
   <!-- Step 2: confirm permissions -->
   <section class="card hidden" id="confirmCard">
-    <h2><span class="num">2</span> Check what the policy prohibits</h2>
+    <h2><span class="num">2</span> Choose what to check the app against</h2>
+    <h3>National policy</h3>
     <p id="policyNote" class="note"></p>
     <div id="evidence"></div>
     <details id="excerptBox"><summary>Policy text used (relevant excerpt)</summary><pre id="excerpt"></pre></details>
@@ -81,6 +82,15 @@
       <input id="customPerm" placeholder="Add another permission, e.g. READ_PRECISE_PHONE_STATE">
       <button id="addPerm" class="ghost">Add</button>
     </div>
+    <p class="hint" id="groupPreview"></p>
+
+    <h3>Google Play Financial Services policy</h3>
+    <label class="check"><input type="checkbox" id="useGoogle" checked> Also check against Google Play's Financial Services policy (personal loans)</label>
+    <p class="hint" id="googleList"></p>
+
+    <h3>Options</h3>
+    <label class="check"><input type="checkbox" id="expandGroups" checked> Treat the whole Android permission group as prohibited (recommended).
+      <span class="hint">Android grants permissions by group: once a user grants e.g. <code>WRITE_CONTACTS</code>, the app can obtain <code>READ_CONTACTS</code> later without asking again.</span></label>
     <label class="check"><input type="checkbox" id="runFd" checked> Run FlowDroid data-flow tracing (slow: up to ~8 min, needs 4 GB+ free RAM)</label>
     <button id="runBtn" class="primary">Run the checks</button>
   </section>

@@ -176,11 +176,42 @@ function renderConfirm(j) {
     if (box) box.checked = true; else addItem({ permission: p, label: "added by you" }, true);
     $("customPerm").value = "";
   };
+  const groupOf = {};
+  Object.entries(s1.groups || {}).forEach(([g, ps]) => ps.forEach((p) => { groupOf[p] = g; }));
+  const extras = (list, skip = []) => {
+    const set = new Set(list), out = [];
+    list.forEach((p) => {
+      const g = groupOf[p];
+      if (!g || skip.includes(g)) return;
+      s1.groups[g].forEach((q) => { if (!set.has(q)) { set.add(q); out.push(q); } });
+    });
+    return out;
+  };
+  const tag = (p) => `<code>${esc(p)}</code>${declared.has(p) ? ' <span class="pill declared">declared</span>' : ""}`;
+  const refresh = () => {
+    const on = $("expandGroups").checked;
+    const ticked = [...grid.querySelectorAll("input:checked")].map((i) => i.value);
+    const add = on ? extras(ticked) : [];
+    $("groupPreview").innerHTML = add.length
+      ? "Also prohibited through their permission group: " + add.map(tag).join(" · ") : "";
+    const g = s1.google_fsp || [], gAdd = on ? extras(g, ["Location"]) : [];
+    $("googleList").innerHTML = "Prohibits: " + g.map(tag).join(" · ") +
+      (gAdd.length ? "<br>Through their group: " + gAdd.map(tag).join(" · ") +
+        " <span class='hint'>(precise location only, so the location group is not expanded)</span>" : "");
+    $("googleList").style.opacity = $("useGoogle").checked ? 1 : 0.4;
+  };
+  grid.addEventListener("change", refresh);
+  ["expandGroups", "useGoogle"].forEach((id) => { $(id).onchange = refresh; });
+  $("addPerm").addEventListener("click", refresh);
+  $("presets").addEventListener("click", refresh);
+  refresh();
+
   $("runBtn").onclick = async () => {
     const permissions = [...grid.querySelectorAll("input:checked")].map((i) => i.value);
     const r = await fetch(`/api/jobs/${jobId}/confirm`, { method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ permissions, run_flowdroid: $("runFd").checked }) });
+      body: JSON.stringify({ permissions, run_flowdroid: $("runFd").checked,
+        include_google: $("useGoogle").checked, expand_groups: $("expandGroups").checked }) });
     const res = await r.json();
     if (!r.ok) { alert(res.error); return; }
     card.classList.add("hidden");
@@ -194,13 +225,22 @@ function renderConfirm(j) {
 function renderReport(j) {
   const r = j.report, app = r.app, bad = r.verdict === "VIOLATING";
   const matched = new Set(r.manifest.matched_permissions.map(short));
-  const prohibited = new Set(r.policy.permissions.map(short));
+  const policies = r.policies || [{ name: "Policy", permissions: r.policy.permissions.map(short),
+    via_group: {}, matched: [...matched], violating: bad }];
   const file = (n) => `/api/jobs/${j.id}/files/${n}`;
+  const cell = (pol, s) => !pol.permissions.includes(s) ? ""
+    : `<b class="bad">Prohibited</b>${pol.via_group[s] ? `<br><small class="hint">via ${esc(pol.via_group[s])} group</small>` : ""}`;
 
   const declaredRows = app.declared_permissions.map((p) => {
-    const s = short(p), hit = matched.has(s);
-    return `<tr><td><code>${esc(p)}</code></td><td>${hit ? '<b class="bad">Prohibited</b>' : ""}</td></tr>`;
+    const s = short(p);
+    return `<tr><td><code>${esc(p)}</code></td>${policies.map((pol) => `<td>${cell(pol, s)}</td>`).join("")}</tr>`;
   }).join("");
+
+  const verdicts = policies.map((pol) => `
+    <div class="verdict ${pol.violating ? "bad" : "good"}">${esc(pol.name)}:
+      ${pol.violating ? `violates. Declares ${pol.matched.length} prohibited permission(s)` : "no prohibited permission declared"}
+      ${pol.violating ? `<div class="vlist">${pol.matched.map((p) => `<code>${esc(p)}</code>${pol.via_group[p] ? ` <small>(via ${esc(pol.via_group[p])} group)</small>` : ""}`).join(" · ")}</div>` : ""}
+    </div>`).join("");
 
   const sources = r.static_sources.map((s) => `<tr>
       <td>${esc(s.data_type)}</td>
@@ -221,7 +261,7 @@ function renderReport(j) {
     <h2>Report: ${esc(app.app_name)}</h2>
     <p class="hint">${pkg} · version ${esc(app.version || "?")} · targets Android API ${esc(app.target_sdk)} · file ${esc(app.file_name)}
        ${r.policy_file ? " · policy " + esc(r.policy_file) : ""}</p>
-    <div class="verdict ${bad ? "bad" : "good"}">${bad ? "Violates the policy: asks for prohibited data" : "No prohibited permission declared"}</div>
+    ${verdicts}
     <ul class="summary">${r.summary.map((s) => `<li>${esc(s)}</li>`).join("")}</ul>
 
     <div class="downloads">
@@ -230,11 +270,12 @@ function renderReport(j) {
       <a href="#" onclick="window.print();return false;">Print / save as PDF</a>
     </div>
 
-    <h3>Prohibited by the policy (${prohibited.size})</h3>
-    <p>${[...prohibited].map((p) => `<code>${esc(p)}</code>${matched.has(p) ? ' <span class="pill declared">declared</span>' : ""}`).join(" · ")}</p>
+    ${policies.map((pol) => `<h3>${esc(pol.name)}: prohibited (${pol.permissions.length})</h3>
+      <p>${pol.permissions.map((p) => `<code>${esc(p)}</code>${pol.matched.includes(p) ? ' <span class="pill declared">declared</span>' : ""}${pol.via_group[p] ? ' <small class="hint">group</small>' : ""}`).join(" · ")}</p>`).join("")}
 
     <h3>Permissions the app declares (${app.declared_permissions.length})</h3>
-    <div class="tablewrap"><table><tbody>${declaredRows}</tbody></table></div>
+    <div class="tablewrap"><table><thead><tr><th>Permission</th>${policies.map((pol) => `<th>${esc(pol.name)}</th>`).join("")}</tr></thead><tbody>${declaredRows}</tbody></table></div>
+    ${r.llm_model ? `<p class="hint">AI model: ${esc(r.llm_model)}</p>` : ""}
 
     <h3>Where the code reads the prohibited data (${r.static_sources.length})</h3>
     ${sources ? `<div class="tablewrap"><table><thead><tr><th>Data</th><th>App method</th><th>Matched API</th></tr></thead><tbody>${sources}</tbody></table></div>`

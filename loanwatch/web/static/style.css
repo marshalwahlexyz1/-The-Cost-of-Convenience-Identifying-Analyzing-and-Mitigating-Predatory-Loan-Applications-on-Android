@@ -72,6 +72,8 @@ pre { background: var(--code); padding: 10px; border-radius: 6px; overflow: auto
 .verdict { padding: 14px 16px; border-radius: 8px; font-size: 18px; font-weight: 700; margin-bottom: 12px; }
 .verdict.bad { background: var(--bad-bg); color: var(--bad); }
 .verdict.good { background: var(--ok-bg); color: var(--ok); }
+.verdict { font-size: 16px; }
+.verdict .vlist { font-size: 13px; font-weight: 400; margin-top: 6px; }
 .summary li { margin-bottom: 4px; }
 table { width: 100%; border-collapse: collapse; font-size: 13px; }
 th, td { text-align: left; padding: 6px 8px; border-bottom: 1px solid var(--line); vertical-align: top; }

@@ -302,6 +302,7 @@ class Job:
         self.stage1 = None
         self.apk_info = None
         self.report = None
+        self.policies = []
         self._apk = self._analysis = None
         self._lock = threading.Lock()
 
@@ -440,6 +441,9 @@ def _policy_phase(job: Job):
         job.set_stage("policy", "skipped", f"{why} — pick the prohibited data by hand below")
     s1["catalog"] = baseline.catalog_for_ui()
     s1["presets"] = baseline.PRESETS
+    s1["google_fsp"] = baseline.GOOGLE_FSP
+    s1["groups"] = baseline.PERMISSION_GROUPS
+    s1["ai_permissions"] = list(s1.get("permissions", []))
     job.stage1 = s1
 
     # Load the APK once; Stages 2 and 4 reuse it.
@@ -466,14 +470,39 @@ def _policy_phase(job: Job):
 
 # ── Phase B ──────────────────────────────────────────────────────────────────
 
-def start_analysis_phase(job: Job, permissions, prohibited_data, run_flowdroid=True):
+def start_analysis_phase(job: Job, permissions, prohibited_data, run_flowdroid=True,
+                         include_google=True, expand_groups=True):
+    """permissions: the national-policy list the user confirmed (may be empty
+    when only the Google policy is checked)."""
     perms = list(dict.fromkeys(baseline.normalise(p) for p in permissions if p.strip()))
     job.stage1["permissions"] = perms
+    job.options.update(run_flowdroid=run_flowdroid, include_google=include_google,
+                       expand_groups=expand_groups)
+    policies = []
+    if perms:
+        name = (f"{job.options['jurisdiction']} national policy"
+                if job.options.get("jurisdiction") else "National policy")
+        policies.append(_policy_entry(name, perms, expand_groups, skip_groups=()))
+    if include_google:
+        # Google bans precise location only, so the Location group is not expanded.
+        policies.append(_policy_entry(baseline.GOOGLE_FSP_NAME, baseline.GOOGLE_FSP,
+                                      expand_groups, skip_groups=("Location",)))
+    job.policies = policies
+    all_perms = list(dict.fromkeys(p for pol in policies for p in pol["permissions"]))
     job.stage1["prohibited_data"] = prohibited_data or sorted(
-        {baseline.data_type_for(p) for p in perms})
-    job.options["run_flowdroid"] = run_flowdroid
+        {baseline.data_type_for(p) for p in all_perms})
     job.state = "running"
     _run_in_thread(job, _analysis_phase)
+
+
+def _policy_entry(name, perms, expand, skip_groups):
+    """via_group marks permissions that are prohibited only because they share
+    an Android permission group with one the policy names."""
+    perms = [baseline.normalise(p) for p in perms]
+    via_group = {}
+    if expand:
+        perms, via_group = baseline.expand_groups(perms, skip_groups=skip_groups)
+    return {"name": name, "permissions": perms, "via_group": via_group}
 
 
 def _dalvik_to_java(c):
@@ -482,21 +511,28 @@ def _dalvik_to_java(c):
 
 def _analysis_phase(job: Job):
     s1 = job.stage1
-    perms = s1["permissions"]
+    policies = job.policies
+    all_perms = list(dict.fromkeys(p for pol in policies for p in pol["permissions"]))
     report = {
         "created": job.created,
         "app": job.apk_info,
         "policy": {k: s1.get(k) for k in
                    ("permissions", "prohibited_data", "evidence", "clause_text", "source")},
         "policy_file": job.options.get("policy_name", ""),
+        "groups_expanded": job.options.get("expand_groups", True),
     }
 
-    # Stage 2 — manifest
+    # Stage 2 — manifest, once per policy
     job.set_stage("manifest", "running")
-    s2 = stage2_audit.run(job.apk_path, perms, True, apk=job._apk)
+    s2 = stage2_audit.run(job.apk_path, all_perms, True, apk=job._apk)
+    declared = {baseline.normalise(p) for p in s2["all_declared_permissions"]}
+    for pol in policies:
+        pol["matched"] = [p for p in pol["permissions"] if p in declared]
+        pol["violating"] = bool(pol["matched"])
+    report["policies"] = policies
     report["manifest"] = s2
-    job.set_stage("manifest", "done",
-                  f"{len(s2['matched_permissions'])} prohibited permission(s) declared")
+    job.set_stage("manifest", "done", "; ".join(
+        f"{pol['name']}: {len(pol['matched'])} prohibited declared" for pol in policies))
 
     # Trackers
     job.set_stage("trackers", "running")
@@ -516,8 +552,8 @@ def _analysis_phase(job: Job):
     else:
         # Stage 3 — permissions → API identifiers
         job.set_stage("api_map", "running")
-    if job.groq_key and not LLM_MODEL:
-        check_groq_key(job.groq_key)
+        if job.groq_key and not LLM_MODEL:
+            check_groq_key(job.groq_key)
         llm_targets, note = [], "built-in map"
         if job.groq_key:
             try:
@@ -571,7 +607,7 @@ def _analysis_phase(job: Job):
     flows = report["flowdroid"]["flows"]
     app = job.apk_info
     script = baseline.frida_template(app["app_name"], app["package"], flows, s4["sources"])
-    with open(os.path.join(job.dir, "loanwatch_frida.js"), "w") as f:
+    with open(os.path.join(job.dir, "loanwatch_frida.js"), "w", encoding="utf-8") as f:
         f.write(script)
     report["frida_files"] = ["loanwatch_frida.js"]
     note = "template script ready"
@@ -580,7 +616,8 @@ def _analysis_phase(job: Job):
         try:
             s6 = stage6_frida.run(ai_input, app["app_name"], app["package"],
                                   job.groq_key, True)
-            with open(os.path.join(job.dir, "loanwatch_frida_ai.js"), "w") as f:
+            with open(os.path.join(job.dir, "loanwatch_frida_ai.js"), "w",
+                      encoding="utf-8") as f:
                 f.write(s6["frida_script"])
             report["frida_files"].append("loanwatch_frida_ai.js")
             note = "template + AI-written scripts ready"
@@ -590,10 +627,11 @@ def _analysis_phase(job: Job):
 
     # Summary in plain language
     report["verdict"] = "VIOLATING" if s2["violating"] else "COMPLIANT"
-    report["summary"] = _summary(report, perms)
+    report["llm_model"] = LLM_MODEL if job.groq_key else ""
+    report["summary"] = _summary(report, all_perms)
     report["stages"] = job.stages
     job.report = report
-    with open(os.path.join(job.dir, "report.json"), "w") as f:
+    with open(os.path.join(job.dir, "report.json"), "w", encoding="utf-8") as f:
         json.dump(report, f, indent=2, default=str)
     job.state = "done"
     job._apk = job._analysis = None   # free memory
@@ -603,12 +641,15 @@ def _summary(report, perms) -> list:
     app = report["app"]
     m = report["manifest"]["matched_permissions"]
     out = []
-    if not m:
-        out.append(f"{app['app_name']} does not declare any of the {len(perms)} "
-                   "permissions this policy prohibits.")
-    else:
-        out.append(f"{app['app_name']} declares {len(m)} of the {len(perms)} prohibited "
-                   f"permissions: {', '.join(baseline.normalise(p) for p in m)}.")
+    for pol in report.get("policies", []):
+        if pol["matched"]:
+            names = ", ".join(p + (f" (via {pol['via_group'][p]} group)"
+                                   if p in pol["via_group"] else "") for p in pol["matched"])
+            out.append(f"{pol['name']}: VIOLATES. {app['app_name']} declares "
+                       f"{len(pol['matched'])} prohibited permission(s): {names}.")
+        else:
+            out.append(f"{pol['name']}: no prohibited permission declared.")
+    if m:
         by_type = {}
         for s in report["static_sources"]:
             by_type[s["data_type"]] = by_type.get(s["data_type"], 0) + 1

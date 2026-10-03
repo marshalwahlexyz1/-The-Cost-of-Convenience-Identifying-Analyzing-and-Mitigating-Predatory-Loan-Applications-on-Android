@@ -121,10 +121,14 @@ def confirm(job_id):
         return jsonify({"error": f"job is {job.state}"}), 409
     body = request.json or {}
     perms = [p for p in body.get("permissions", []) if isinstance(p, str)]
-    if not perms:
-        return jsonify({"error": "Select at least one prohibited permission."}), 400
+    include_google = bool(body.get("include_google", True))
+    if not perms and not include_google:
+        return jsonify({"error": "Tick at least one prohibited permission "
+                                 "or the Google Play policy."}), 400
     runner.start_analysis_phase(job, perms, body.get("prohibited_data") or [],
-                                bool(body.get("run_flowdroid", True)))
+                                bool(body.get("run_flowdroid", True)),
+                                include_google=include_google,
+                                expand_groups=bool(body.get("expand_groups", True)))
     return jsonify({"ok": True})
 
 
