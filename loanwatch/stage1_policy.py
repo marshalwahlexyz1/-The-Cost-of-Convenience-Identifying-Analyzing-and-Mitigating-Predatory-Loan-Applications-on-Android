@@ -10,12 +10,14 @@ searched for data-access language instead, so policies from any regulator
 can be used without knowing the clause in advance.
 """
 import json
+import os
 import re
 
 import fitz  # PyMuPDF
 from groq import Groq
 
-MODEL = "llama-3.3-70b-versatile"
+# Groq retired llama-3.3-70b-versatile; override with LOANWATCH_MODEL.
+MODEL = os.environ.get("LOANWATCH_MODEL", "llama-3.3-70b-versatile")
 
 
 # Words that signal a data-access rule; used to pick excerpts in auto mode
@@ -144,10 +146,11 @@ Respond with ONLY valid JSON in this exact format:
         model=MODEL,
         messages=[{"role": "user", "content": prompt}],
         temperature=0.1,
-        max_tokens=512,
+        max_tokens=2048,
     )
 
     raw = resp.choices[0].message.content.strip()
+    raw = re.sub(r"<think>.*?</think>", "", raw, flags=re.S).strip()
 
     # Extract JSON block
     json_match = re.search(r'\{.*\}', raw, re.DOTALL)

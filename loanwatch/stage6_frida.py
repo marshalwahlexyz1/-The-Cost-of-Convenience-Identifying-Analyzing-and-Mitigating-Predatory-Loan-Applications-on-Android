@@ -6,11 +6,13 @@ a targeted Frida script that hooks those exact methods and logs exfiltrated data
 The script is entirely derived from prior stages — nothing is hardcoded.
 """
 import json
+import os
 import re
 
 from groq import Groq
 
-MODEL = "llama-3.3-70b-versatile"
+# Groq retired llama-3.3-70b-versatile; override with LOANWATCH_MODEL.
+MODEL = os.environ.get("LOANWATCH_MODEL", "llama-3.3-70b-versatile")
 
 
 def _dalvik_to_java(dalvik_class: str) -> str:
@@ -123,10 +125,11 @@ Output ONLY the Frida JavaScript. No explanation, no markdown fences, no extra t
         model=MODEL,
         messages=[{"role": "user", "content": prompt}],
         temperature=0.2,
-        max_tokens=2048,
+        max_tokens=6144,
     )
 
     script = resp.choices[0].message.content.strip()
+    script = re.sub(r"<think>.*?</think>", "", script, flags=re.S).strip()
 
     # Strip accidental markdown fences
     script = re.sub(r'^```[a-z]*\n?', '', script, flags=re.MULTILINE)

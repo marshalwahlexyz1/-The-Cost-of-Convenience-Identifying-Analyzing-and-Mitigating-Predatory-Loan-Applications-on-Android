@@ -92,14 +92,53 @@ def _load_dotenv():
 _load_dotenv()
 
 
+# Groq retires models over time, so pick one the key can actually use.
+# Earlier entries are preferred; the first available one wins.
+_MODEL_PREFERENCE = (
+    "llama-3.3-70b-versatile",          # the model used in the paper's pipeline
+    "moonshotai/kimi-k2-instruct",
+    "meta-llama/llama-4-maverick",
+    "openai/gpt-oss-120b",
+    "meta-llama/llama-4-scout",
+    "openai/gpt-oss-20b",
+    "qwen/qwen3",
+)
+_NOT_CHAT = re.compile(r"whisper|tts|guard|playai|orpheus|distil|compound|embed", re.I)
+LLM_MODEL = os.environ.get("LOANWATCH_MODEL", "")
+
+
+def pick_model(model_ids) -> str:
+    """Choose a chat model from the ids Groq lists for this key."""
+    if os.environ.get("LOANWATCH_MODEL"):
+        return os.environ["LOANWATCH_MODEL"]
+    chat = [m for m in model_ids if not _NOT_CHAT.search(m)]
+    for pref in _MODEL_PREFERENCE:
+        for m in chat:
+            if m == pref or m.startswith(pref):
+                return m
+    return chat[0] if chat else ""
+
+
+def use_model(model: str):
+    global LLM_MODEL
+    if model:
+        LLM_MODEL = model
+        for mod in (stage1_policy, stage3_api_map, stage6_frida):
+            mod.MODEL = model
+
+
 def check_groq_key(key: str) -> tuple:
-    """Ask Groq whether the key works. Returns (ok, message);
-    ok is None when Groq could not be reached (network problem)."""
+    """Ask Groq whether the key works and pick a model it can use.
+    Returns (ok, message); ok is None when Groq could not be reached."""
     from groq import Groq
     import groq
     try:
-        Groq(api_key=key).models.list()
-        return True, "key accepted by Groq"
+        ids = sorted(m.id for m in Groq(api_key=key).models.list().data)
+        model = pick_model(ids)
+        if not model:
+            return False, "key works, but Groq lists no chat model for it"
+        use_model(model)
+        return True, f"key accepted by Groq · model {model}"
     except groq.AuthenticationError:
         return False, "Groq rejected this key (401 Invalid API Key)"
     except groq.APIConnectionError as e:
@@ -382,6 +421,8 @@ def _policy_phase(job: Job):
             job.set_stage("policy", "failed", f"could not read the policy file: {e}")
             s1["clause_text"] = ""
     if job.policy_path and job.groq_key and job.stages["policy"]["status"] != "failed":
+        ok, msg = check_groq_key(job.groq_key)   # also selects an available model
+        print(f"[LLM] {msg}")
         try:
             r = stage1_policy.run(job.policy_path, job.groq_key,
                                   opts.get("clause") or None, True,
@@ -475,6 +516,8 @@ def _analysis_phase(job: Job):
     else:
         # Stage 3 — permissions → API identifiers
         job.set_stage("api_map", "running")
+    if job.groq_key and not LLM_MODEL:
+        check_groq_key(job.groq_key)
         llm_targets, note = [], "built-in map"
         if job.groq_key:
             try:

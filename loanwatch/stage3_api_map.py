@@ -6,11 +6,13 @@ API class/method identifiers that would be used to access that data.
 These become the Androguard search targets in Stage 4.
 """
 import json
+import os
 import re
 
 from groq import Groq
 
-MODEL = "llama-3.3-70b-versatile"
+# Groq retired llama-3.3-70b-versatile; override with LOANWATCH_MODEL.
+MODEL = os.environ.get("LOANWATCH_MODEL", "llama-3.3-70b-versatile")
 
 
 def run(violated_permissions: list, prohibited_data: list,
@@ -74,10 +76,11 @@ that appear in Android API calls, not just descriptions.
         model=MODEL,
         messages=[{"role": "user", "content": prompt}],
         temperature=0.1,
-        max_tokens=1024,
+        max_tokens=3072,
     )
 
     raw = resp.choices[0].message.content.strip()
+    raw = re.sub(r"<think>.*?</think>", "", raw, flags=re.S).strip()
 
     json_match = re.search(r'\{.*\}', raw, re.DOTALL)
     if json_match:
