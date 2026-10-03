@@ -31,3 +31,8 @@ loanwatch/trackers and urls.csv
 loanwatch/tracker_urls_summary.csv
 tracker*url*.csv
 *trackers*.csv
+
+# LoanWatch local runtime
+loanwatch/.venv/
+loanwatch/lib/
+loanwatch/web/jobs/

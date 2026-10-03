@@ -93,6 +93,27 @@ _GENERIC = {
 }
 
 
+# Permission sets used in the paper (LoanApps/newanalyze.py), offered as
+# one-click presets in the web UI.
+PRESETS = {
+    "Google Play Financial Services policy": [
+        "READ_EXTERNAL_STORAGE", "READ_MEDIA_IMAGES", "READ_CONTACTS",
+        "ACCESS_FINE_LOCATION", "READ_PHONE_NUMBERS", "READ_MEDIA_VIDEO",
+        "QUERY_ALL_PACKAGES", "WRITE_EXTERNAL_STORAGE"],
+    "Kenya (CBK)": ["READ_CONTACTS", "READ_CALL_LOG"],
+    "Nigeria (FCCPC)": [
+        "READ_CONTACTS", "READ_CALL_LOG", "READ_MEDIA_VIDEO",
+        "READ_EXTERNAL_STORAGE", "MANAGE_EXTERNAL_STORAGE",
+        "READ_PHONE_NUMBERS", "READ_MEDIA_AUDIO", "READ_MEDIA_IMAGES"],
+    "Pakistan (SECP)": [
+        "READ_MEDIA_IMAGES", "READ_MEDIA_VIDEO", "MANAGE_EXTERNAL_STORAGE",
+        "READ_EXTERNAL_STORAGE", "READ_SMS"],
+    "Philippines (SEC)": [
+        "READ_CONTACTS", "READ_PHONE_NUMBERS", "READ_PHONE_STATE",
+        "READ_PRECISE_PHONE_STATE", "QUERY_ALL_PACKAGES"],
+}
+
+
 def normalise(p: str) -> str:
     return p.strip().replace("android.permission.", "").upper()
 

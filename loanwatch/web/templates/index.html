@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LoanWatch</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 16 16%22%3E%3Ccircle cx=%228%22 cy=%228%22 r=%227%22 fill=%22%231f5fd1%22/%3E%3C/svg%3E">
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<header>
+  <div class="wrap head">
+    <div>
+      <h1>LoanWatch</h1>
+      <p class="sub">Check a loan app against a lending policy: what it is prohibited from accessing, whether it asks for it, and where its code reads it.</p>
+    </div>
+    <button class="ghost" id="historyBtn">Past reports</button>
+  </div>
+</header>
+
+<main class="wrap">
+  <!-- Tool status -->
+  <section class="card" id="statusCard">
+    <h2>Setup on this computer</h2>
+    <ul class="status" id="statusList"><li>Checking…</li></ul>
+    <div id="keyBox" class="keybox hidden">
+      <label for="keyInput">Groq API key: needed for the AI steps (reading the policy, mapping APIs, writing the Frida script). Free at <a href="https://console.groq.com/keys" target="_blank" rel="noopener">console.groq.com</a>.</label>
+      <div class="row">
+        <input id="keyInput" type="password" placeholder="gsk_…" autocomplete="off">
+        <button id="saveKey">Save on this computer</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- History -->
+  <section class="card hidden" id="historyCard">
+    <h2>Past reports</h2>
+    <ul class="history" id="historyList"></ul>
+  </section>
+
+  <!-- Step 1: upload -->
+  <section class="card" id="uploadCard">
+    <h2><span class="num">1</span> Upload the app and the policy</h2>
+    <form id="uploadForm">
+      <div class="grid2">
+        <label class="drop">
+          <span class="dlabel">Loan app (.apk)</span>
+          <input type="file" name="apk" accept=".apk" required>
+        </label>
+        <label class="drop">
+          <span class="dlabel">Lending policy (PDF or .txt)</span>
+          <input type="file" name="policy" accept=".pdf,.txt,.md">
+        </label>
+      </div>
+      <details>
+        <summary>Options</summary>
+        <div class="grid2 opts">
+          <label>Regulator / country (optional)
+            <input name="jurisdiction" placeholder="e.g. Nigerian, Kenyan">
+          </label>
+          <label>Clause number (optional; blank = AI reads the whole policy)
+            <input name="clause" inputmode="numeric" placeholder="e.g. 15">
+          </label>
+        </div>
+      </details>
+      <button type="submit" id="startBtn" class="primary">Read policy and open app</button>
+      <p class="hint">The APK stays on this computer. With a Groq key, the policy text is sent to Groq so the AI can read it.</p>
+    </form>
+  </section>
+
+  <!-- Step 2: confirm permissions -->
+  <section class="card hidden" id="confirmCard">
+    <h2><span class="num">2</span> Check what the policy prohibits</h2>
+    <p id="policyNote" class="note"></p>
+    <div id="evidence"></div>
+    <details id="excerptBox"><summary>Policy text used (relevant excerpt)</summary><pre id="excerpt"></pre></details>
+    <div class="presets" id="presets"></div>
+    <p class="hint">Ticked = treated as prohibited. <span class="pill declared">declared</span> means the app asks for it in its manifest.</p>
+    <div class="perm-grid" id="permGrid"></div>
+    <div class="row">
+      <input id="customPerm" placeholder="Add another permission, e.g. READ_PRECISE_PHONE_STATE">
+      <button id="addPerm" class="ghost">Add</button>
+    </div>
+    <label class="check"><input type="checkbox" id="runFd" checked> Run FlowDroid data-flow tracing (slow: up to ~8 min, needs 4 GB+ free RAM)</label>
+    <button id="runBtn" class="primary">Run the checks</button>
+  </section>
+
+  <!-- Progress -->
+  <section class="card hidden" id="progressCard">
+    <h2>Progress</h2>
+    <ol class="stages" id="stages"></ol>
+    <details id="logBox"><summary>Technical log</summary><pre id="log"></pre></details>
+  </section>
+
+  <!-- Report -->
+  <section class="card hidden" id="reportCard"></section>
+</main>
+
+<footer class="wrap">
+  Based on <em>The Cost of Convenience: Identifying, Analyzing, and Mitigating Predatory Loan Applications on Android</em>
+  (Akanji, Egele, Stringhini — ACM ASIA CCS '26). Static results show what an app <em>can</em> do; confirm on a device before publishing claims about what it <em>does</em>.
+</footer>
+
+<script src="/static/app.js"></script>
+</body>
+</html>
