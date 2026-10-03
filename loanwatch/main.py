@@ -50,7 +50,9 @@ def main():
     parser.add_argument("--policy",    required=True, metavar="PDF",
                         help="Path to the regulatory policy PDF")
     parser.add_argument("--clause",    type=int, default=15, metavar="N",
-                        help="Clause number to analyse (default: 15)")
+                        help="Clause number to analyse (default: 15; 0 = scan the whole policy)")
+    parser.add_argument("--jurisdiction", default="Nigerian", metavar="ADJ",
+                        help='Regulator adjective for the prompt, e.g. "Kenyan" (default: Nigerian)')
     parser.add_argument("--groq-key",  metavar="API_KEY",
                         help="Groq API key (or set GROQ_API_KEY env var)")
     parser.add_argument("--flowdroid", metavar="JAR",
@@ -91,7 +93,8 @@ def main():
     if verbose:
         banner("Stage 1 — Policy PDF → Prohibited permissions")
     t0 = time.time()
-    s1 = stage1_policy.run(args.policy, api_key, args.clause, verbose)
+    s1 = stage1_policy.run(args.policy, api_key, args.clause or None, verbose,
+                           jurisdiction=args.jurisdiction)
     if verbose:
         print(f"  [done in {time.time()-t0:.1f}s]")
         time.sleep(3)

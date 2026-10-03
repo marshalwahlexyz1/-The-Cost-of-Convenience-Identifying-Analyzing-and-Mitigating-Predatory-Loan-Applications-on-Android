@@ -12,7 +12,7 @@ from androguard.misc import AnalyzeAPK
 
 
 def run(apk_path: str, prohibited_permissions: list,
-        verbose: bool = True) -> dict:
+        verbose: bool = True, apk=None) -> dict:
     """
     Returns:
         {
@@ -26,14 +26,16 @@ def run(apk_path: str, prohibited_permissions: list,
     if verbose:
         print("[Stage 2] Loading APK manifest...")
 
-    apk, _, _ = AnalyzeAPK(apk_path)
+    if apk is None:
+        apk, _, _ = AnalyzeAPK(apk_path)
 
     declared = sorted(apk.get_permissions())
     # Normalize: strip android.permission. prefix for matching
     declared_short = [p.replace("android.permission.", "").upper()
                       for p in declared]
 
-    prohibited_upper = [p.upper() for p in prohibited_permissions]
+    prohibited_upper = [p.replace("android.permission.", "").upper()
+                        for p in prohibited_permissions]
 
     matched = []
     for i, short in enumerate(declared_short):

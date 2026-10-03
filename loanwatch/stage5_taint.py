@@ -217,6 +217,18 @@ def _extract_params_from_sig(sig: str) -> list:
     return []
 
 
+def _supported_flags(flowdroid_jar: str) -> set:
+    """Short flags this FlowDroid build accepts (parsed from --help).
+    Newer releases (2.13+) dropped some older flags such as -d, and passing
+    an unknown flag makes FlowDroid print usage and exit without analysing."""
+    try:
+        out = subprocess.run(["java", "-jar", flowdroid_jar, "--help"],
+                             capture_output=True, text=True, timeout=60)
+        return set(re.findall(r"^\s*(-\w+),", out.stdout + out.stderr, re.M))
+    except Exception:
+        return set()
+
+
 def _parse_flowdroid_xml(xml_path: str) -> list:
     """Parse FlowDroid 2.x results XML into a list of taint paths.
 
@@ -261,6 +273,10 @@ def _parse_flowdroid_xml(xml_path: str) -> list:
                 # Extract exact param types from the signature for Frida overload() calls
                 src_params = _extract_params_from_sig(src_sig)
                 paths.append({
+                    # Android API that produced the data / received it (FlowDroid 2.x)
+                    "source_api":          source_elem.get("MethodSourceSinkDefinition", ""),
+                    "sink_api":            sink_elem.get("MethodSourceSinkDefinition", ""),
+                    "source_statement":    source_elem.get("Statement", ""),
                     "source_class":        src_class,
                     "source_method":       src_method,
                     "source_params":       src_params,         # e.g. ['android.content.Context']
@@ -277,11 +293,17 @@ def _parse_flowdroid_xml(xml_path: str) -> list:
 
 
 def run(apk_path: str, sources: list, flowdroid_jar: str = "",
-        platforms_dir: str = "", verbose: bool = True) -> dict:
+        platforms_dir: str = "", verbose: bool = True,
+        work_dir: str = "", java_mem: str = "8g",
+        timeout: int = 500) -> dict:
     """
     sources      : list from Stage 4
     flowdroid_jar: path to soot-infoflow-cmd-jar-with-dependencies.jar
                    (empty string = skip FlowDroid)
+    work_dir     : where SourcesAndSinks.txt / results.xml go
+                   (default: ./flowdroid_work next to this file)
+    java_mem     : JVM heap for FlowDroid, e.g. "4g" on smaller laptops
+    timeout      : hard wall-clock limit for the FlowDroid process (seconds)
 
     Returns:
         {
@@ -320,7 +342,8 @@ def run(apk_path: str, sources: list, flowdroid_jar: str = "",
     ss_content = _build_sources_sinks(sources)
     src_count  = sum(1 for l in ss_content.splitlines() if "_SOURCE_" in l)
 
-    work_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "flowdroid_work")
+    work_dir = work_dir or os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                                        "flowdroid_work")
     os.makedirs(work_dir, exist_ok=True)
     ss_file  = os.path.join(work_dir, "SourcesAndSinks.txt")
     out_file = os.path.join(work_dir, "results.xml")
@@ -337,7 +360,7 @@ def run(apk_path: str, sources: list, flowdroid_jar: str = "",
     plat = platforms_dir or os.path.expanduser("~/Library/Android/sdk/platforms")
 
     cmd = [
-        "java", "-Xmx8g", "-jar", flowdroid_jar,
+        "java", f"-Xmx{java_mem}", "-jar", flowdroid_jar,
         "-a", os.path.abspath(apk_path),
         "-p", plat,
         "-s", ss_file,
@@ -347,6 +370,9 @@ def run(apk_path: str, sources: list, flowdroid_jar: str = "",
         "-d",             # enable data flow tracking
         "-rt", "480",     # total result timeout (seconds)
     ]
+    supported = _supported_flags(flowdroid_jar)
+    if supported and "-d" not in supported:
+        cmd.remove("-d")
 
     if verbose:
         print("[Stage 5] Running FlowDroid...")
@@ -382,7 +408,7 @@ def run(apk_path: str, sources: list, flowdroid_jar: str = "",
         t_out.start(); t_err.start()
 
         try:
-            proc.wait(timeout=500)
+            proc.wait(timeout=timeout)
         except subprocess.TimeoutExpired:
             timed_out[0] = True
             proc.kill()
@@ -406,6 +432,15 @@ def run(apk_path: str, sources: list, flowdroid_jar: str = "",
              "permission": s["permission"], "data_type": s["data_type"]}
             for s in sources
         ]}
+
+    fd_log = "\n".join(stdout_lines + stderr_lines)
+    if not os.path.exists(out_file) and proc.returncode == 0 and \
+            re.search(r"Found 0 leaks|No results found", fd_log):
+        # FlowDroid finished normally but found no source→sink path; it
+        # writes no XML in that case. This is a real (negative) result.
+        if verbose:
+            print("[Stage 5] FlowDroid completed: no source→sink paths found.")
+        return {"ran_flowdroid": True, "confirmed_sources": []}
 
     if not os.path.exists(out_file):
         if verbose:
