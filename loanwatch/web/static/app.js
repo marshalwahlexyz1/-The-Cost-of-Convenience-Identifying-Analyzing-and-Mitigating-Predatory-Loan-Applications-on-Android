@@ -14,14 +14,26 @@ async function loadStatus() {
   const item = (ok, title, detail, level) =>
     `<li><b class="${ok ? "good" : level || "bad"}">${ok ? "✓" : "✗"} ${title}</b>${detail}</li>`;
   $("statusList").innerHTML = [
-    item(status.groq_key, "AI (Groq key)",
-      status.groq_key ? "AI steps are on" : "Add a key below to turn on the AI steps", "warnc"),
+    `<li id="keyItem"><b class="${status.groq_key ? "" : "warnc"}">${status.groq_key ? "… AI (Groq key)" : "✗ AI (Groq key)"}</b>` +
+      (status.groq_key
+        ? `key ${esc(status.groq_key_hint)} (${esc(status.groq_key_source)}) · <span id="keyCheck">checking…</span>
+           · <a href="#" id="changeKey">change key</a>`
+        : "Add a key below to turn on the AI steps") + "</li>",
     item(!!status.java, "Java", status.java ? "version " + esc(status.java) : "Install Java 11+ for FlowDroid", "warnc"),
     item(!!status.flowdroid_jar, "FlowDroid", status.flowdroid_jar ? "installed" : "run setup_tools.py", "warnc"),
     item(status.platform_levels.length > 0, "Android platform",
       status.platform_levels.length ? "API " + status.platform_levels.join(", ") : "run setup_tools.py", "warnc"),
   ].join("");
   $("keyBox").classList.toggle("hidden", status.groq_key);
+  if (status.groq_key) {
+    $("changeKey").onclick = (e) => { e.preventDefault(); $("keyBox").classList.remove("hidden"); $("keyInput").focus(); };
+    const c = await (await fetch("/api/key/check")).json();
+    const head = $("keyItem").querySelector("b");
+    head.textContent = (c.ok === false ? "✗" : c.ok ? "✓" : "?") + " AI (Groq key)";
+    head.className = c.ok === false ? "bad" : c.ok ? "good" : "warnc";
+    $("keyCheck").textContent = c.message;
+    if (c.ok === false) $("keyBox").classList.remove("hidden");
+  }
   $("runFd").checked = status.flowdroid_ready;
   $("runFd").disabled = !status.flowdroid_ready;
 }
@@ -31,7 +43,11 @@ $("saveKey").onclick = async () => {
   if (!key) return;
   const r = await fetch("/api/key", { method: "POST", headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ key }) });
-  if (r.ok) { $("keyInput").value = ""; loadStatus(); }
+  const res = await r.json();
+  if (!r.ok) { alert(res.error || "Could not save the key"); return; }
+  $("keyInput").value = "";
+  if (!res.checked) alert("Saved, but " + res.message);
+  loadStatus();
 };
 
 // ── History ───────────────────────────────────────────────────────────────
@@ -51,7 +67,7 @@ window.addEventListener("hashchange", () => openJob(location.hash.slice(1)));
 $("uploadForm").onsubmit = async (e) => {
   e.preventDefault();
   const fd = new FormData(e.target);
-  if (!status.groq_key && $("keyInput").value.trim()) fd.append("groq_key", $("keyInput").value.trim());
+  if ($("keyInput").value.trim()) fd.append("groq_key", $("keyInput").value.trim());
   $("startBtn").disabled = true;
   $("startBtn").textContent = "Uploading…";
   try {

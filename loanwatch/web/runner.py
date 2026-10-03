@@ -63,21 +63,49 @@ STAGES = [
 
 # ── Configuration / tool discovery ───────────────────────────────────────────
 
+# Where the active Groq key came from, shown on the page so a stale key in a
+# system environment variable can't silently override the one saved here.
+KEY_SOURCE = "environment variable" if os.environ.get("GROQ_API_KEY") else ""
+
+
 def _load_dotenv():
-    """Read loanwatch/.env (KEY=VALUE lines) into os.environ if present."""
+    """Read loanwatch/.env (KEY=VALUE lines) into os.environ if present.
+    The key saved from the page wins over a GROQ_API_KEY environment variable."""
+    global KEY_SOURCE
     path = os.path.join(LOANWATCH_DIR, ".env")
     if not os.path.exists(path):
         return
-    with open(path) as f:
+    with open(path, encoding="utf-8-sig") as f:
         for line in f:
             line = line.strip()
             if not line or line.startswith("#") or "=" not in line:
                 continue
             k, v = line.split("=", 1)
-            os.environ.setdefault(k.strip(), v.strip().strip('"').strip("'"))
+            k, v = k.strip(), v.strip().strip('"').strip("'")
+            if k == "GROQ_API_KEY" and v:
+                os.environ[k] = v
+                KEY_SOURCE = "saved on this computer"
+            else:
+                os.environ.setdefault(k, v)
 
 
 _load_dotenv()
+
+
+def check_groq_key(key: str) -> tuple:
+    """Ask Groq whether the key works. Returns (ok, message);
+    ok is None when Groq could not be reached (network problem)."""
+    from groq import Groq
+    import groq
+    try:
+        Groq(api_key=key).models.list()
+        return True, "key accepted by Groq"
+    except groq.AuthenticationError:
+        return False, "Groq rejected this key (401 Invalid API Key)"
+    except groq.APIConnectionError as e:
+        return None, f"could not reach Groq to check the key ({e})"
+    except Exception as e:
+        return None, f"could not check the key ({type(e).__name__}: {str(e)[:120]})"
 
 
 def save_groq_key(key: str):
@@ -95,6 +123,8 @@ def save_groq_key(key: str):
     except OSError:
         pass
     os.environ["GROQ_API_KEY"] = key
+    global KEY_SOURCE
+    KEY_SOURCE = "saved on this computer"
 
 
 def _default_java_mem() -> str:
@@ -154,6 +184,8 @@ def tool_status() -> dict:
     flowdroid_ready = bool(java and os.path.isfile(jar) and levels)
     return {
         "groq_key":        bool(os.environ.get("GROQ_API_KEY")),
+        "groq_key_hint":   ("…" + os.environ["GROQ_API_KEY"][-4:]) if os.environ.get("GROQ_API_KEY") else "",
+        "groq_key_source": KEY_SOURCE,
         "java":            java_version or "",
         "flowdroid_jar":   jar if os.path.isfile(jar) else "",
         "platforms_dir":   platforms,

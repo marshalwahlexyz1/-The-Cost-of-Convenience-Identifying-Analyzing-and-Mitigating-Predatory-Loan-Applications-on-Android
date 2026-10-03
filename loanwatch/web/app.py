@@ -56,8 +56,20 @@ def save_key():
     key = (request.json or {}).get("key", "").strip()
     if not key:
         return jsonify({"error": "empty key"}), 400
+    ok, msg = runner.check_groq_key(key)
+    if ok is False:
+        return jsonify({"error": msg}), 400
     runner.save_groq_key(key)
-    return jsonify({"ok": True})
+    return jsonify({"ok": True, "checked": ok is True, "message": msg})
+
+
+@app.get("/api/key/check")
+def check_key():
+    key = os.environ.get("GROQ_API_KEY", "")
+    if not key:
+        return jsonify({"ok": False, "message": "no key set"})
+    ok, msg = runner.check_groq_key(key)
+    return jsonify({"ok": ok, "message": msg})
 
 
 @app.get("/api/jobs")
