@@ -68,7 +68,7 @@ flowdroid/      Wrapper scripts that drive FlowDroid (the tool itself is NOT ven
 
 See `LoanApps/PIPELINE.md` for the corpus-scale variant.
 
-## Web app (single-app audits, e.g. for journalists)
+## Web app (audit a single app in your browser)
 
 `loanwatch/web/` wraps stages 1–6 in a local web page: upload an APK and a
 policy PDF, review the AI-extracted prohibited permissions (with supporting
@@ -80,4 +80,10 @@ cd loanwatch
 ./start.sh          # Windows: start.bat — installs deps, downloads FlowDroid + android.jar, opens the page
 ```
 
-See [`loanwatch/JOURNALIST_GUIDE.md`](loanwatch/JOURNALIST_GUIDE.md) for setup and how to read the results.
+See [`loanwatch/USER_GUIDE.md`](loanwatch/USER_GUIDE.md) for setup and how to read the results.
+
+## License
+
+Code is released under the [MIT License](LICENSE). If you use LoanWatch or the
+result data, please cite the paper (see [`CITATION.cff`](CITATION.cff) or the
+BibTeX above).

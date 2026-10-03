@@ -1,0 +1,46 @@
+cff-version: 1.2.0
+message: "If you use LoanWatch or this data, please cite the paper below."
+title: "LoanWatch: compliance and data-exfiltration analysis for Android loan apps"
+type: software
+license: MIT
+repository-code: "https://github.com/marshalwahlexyz1/-The-Cost-of-Convenience-Identifying-Analyzing-and-Mitigating-Predatory-Loan-Applications-on-Android"
+authors:
+  - family-names: Akanji
+    given-names: Olawale Amos
+    email: olawalea@bu.edu
+    affiliation: Boston University
+  - family-names: Egele
+    given-names: Manuel
+    affiliation: Boston University
+  - family-names: Stringhini
+    given-names: Gianluca
+    affiliation: Boston University
+keywords:
+  - android
+  - loan apps
+  - privacy
+  - static analysis
+  - FlowDroid
+preferred-citation:
+  type: conference-paper
+  title: "The Cost of Convenience: Identifying, Analyzing, and Mitigating Predatory Loan Applications on Android"
+  authors:
+    - family-names: Akanji
+      given-names: Olawale Amos
+    - family-names: Egele
+      given-names: Manuel
+    - family-names: Stringhini
+      given-names: Gianluca
+  collection-title: "Proceedings of the ACM Asia Conference on Computer and Communications Security (ASIA CCS '26)"
+  conference:
+    name: "ACM ASIA CCS 2026"
+    city: Bangalore
+    country: IN
+  publisher:
+    name: "Association for Computing Machinery"
+  year: 2026
+  doi: "10.1145/3779208.3785263"
+  identifiers:
+    - type: other
+      value: "arXiv:2601.12634"
+      description: arXiv preprint
