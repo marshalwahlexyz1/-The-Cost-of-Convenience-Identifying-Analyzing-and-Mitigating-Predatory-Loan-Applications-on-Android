@@ -46,7 +46,7 @@ svg.i { width: 100%; height: 100%; fill: none; stroke: currentColor; stroke-widt
 .dots { position: absolute; right: 36px; top: 40px; display: flex; gap: 10px; } .dots i { width: 14px; height: 14px; border-radius: 50%; background: var(--line2); }
 .hdr { position: absolute; left: 36px; top: 24px; display: flex; align-items: center; gap: 16px; font-size: 25px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
 .hi { width: 50px; height: 50px; border-radius: 14px; display: grid; place-items: center; } .hi svg { width: 27px; height: 27px; }
-.pane { position: absolute; left: 46px; right: 46px; top: 136px; }
+.pane { position: absolute; left: 46px; width: 828px; top: 136px; }
 .pane h2 { font-size: 48px; line-height: 1.15; font-weight: 800; letter-spacing: -.02em; }
 .stat { position: absolute; width: 405px; height: 168px; border-radius: 24px; padding: 22px 26px; background: rgba(255,255,255,.035); border: 1.5px solid var(--line); }
 .stat b { display: block; font-size: 66px; font-weight: 800; line-height: 1; color: var(--bad); font-variant-numeric: tabular-nums; }
@@ -86,6 +86,7 @@ svg.i { width: 100%; height: 100%; fill: none; stroke: currentColor; stroke-widt
 .vt { font-size: 42px; font-weight: 800; color: var(--bad); }
 .vnum { margin-left: auto; text-align: right; } .vnum b { font-size: 84px; font-weight: 800; line-height: 1; display: block; font-variant-numeric: tabular-nums; }
 .vnum span { font-size: 22px; color: var(--muted); }
+.vnum #vnum0 { font-size: inherit; color: inherit; }
 .grid { border-radius: 28px; overflow: hidden; border: 1.5px solid var(--line); background: var(--surface); }
 .gr { position: relative; display: grid; grid-template-columns: 290px 1fr 1fr 1fr; align-items: center; border-top: 1.5px solid var(--line); height: 108px; }
 .gr.h { height: 76px; border-top: 0; background: var(--surface2); font-size: 22px; font-weight: 700; letter-spacing: .1em; color: var(--muted); text-transform: uppercase; }
@@ -299,7 +300,7 @@ el("sIn", "", R.scanPhone, `<div class="phone-scr" style="left:14px;top:14px;rig
 el("rKick", "kicker", [80, 150, 600, 32], "Step 4 · Report");
 el("rTitle", "title", [80, 190, 920, 80], words("A verdict you can cite"));
 el("v0", "verdict", R.v0, `<div class="vb" id="vb0">${icon("alert")}</div><div><div class="vn">Nigerian national policy</div><div class="vt">Violates</div></div>
-  <div class="vnum"><b>3</b><span>prohibited declared</span></div>`);
+  <div class="vnum"><b><span id="vnum0">3</span></b><span>prohibited declared</span></div>`);
 el("v1", "verdict", R.v1, `<div class="vb">${icon("alert")}</div><div><div class="vn">Google Play policy</div><div class="vt">Violates</div></div>
   <div class="vnum"><b id="vn1">2</b><span>prohibited declared</span></div>`);
 const rows = [["contacts", "Contacts", [1, 1, 1]], ["calllog", "Call log", [1, 1, 1]], ["photos", "Photos", [1, 1, 0]]];
@@ -312,7 +313,8 @@ el("rCap", "", [80, 1110, 920, 70], `<b style="color:var(--ink)">Asks</b> permis
 // carrier: counter → verdict card; verdict badge → logo
 el("vC", "", R.k0, `<div class="layer" id="vcA" style="border:1.5px solid var(--line);background:var(--surface)"></div>
   <div class="layer" id="vcB" style="border:1.5px solid rgba(255,93,108,.45);background:linear-gradient(160deg,rgba(255,93,108,.15),var(--surface) 70%)"></div>
-  <b class="a" id="vcN" style="font-size:80px;font-weight:800;line-height:1;color:var(--bad)">3</b>`);
+  <div class="a" id="vcL" style="left:30px;top:26px;display:flex;align-items:center;gap:12px;color:var(--muted);font-size:23px;white-space:nowrap"><span style="width:28px;height:28px;color:var(--accent)">${icon("alert")}</span>Prohibited permissions declared</div>
+  <b class="a" id="vcN" style="font-size:76px;font-weight:800;line-height:1;color:var(--bad)">3</b>`);
 el("lC", "", R.badge, `<div class="layer" id="lcA" style="background:var(--bad)"></div><div class="layer" id="lcB" style="background:linear-gradient(135deg,var(--accent),#0ea5e9)"></div>
   <div class="a" id="lcI0" style="inset:22%;color:#fff">${icon("alert")}</div><div class="a" id="lcI1" style="inset:22%;color:#04121c">${icon("shield")}</div>
   <div class="a" id="lcI2" style="right:16%;bottom:16%;width:30%;height:30%;color:#04121c"><svg class="i" style="stroke-width:3"><use href="#search"/></svg></div>`);
@@ -365,7 +367,8 @@ function hook(T) {
   $("hPath").style.opacity = vis ? (1 - q).toFixed(3) : 0;
   $("hLine").setAttribute("stroke-dashoffset", (-T * 40).toFixed(1));
   tf($("hLabel"), 0, 0, 1, vis ? 1 - q : 0);
-  tf($("hPhone"), 0, Math.sin(T * 1.3) * 5, 1, T < 2.72 ? 1 : 0);
+  tf($("hPhone"), 0, Math.sin(T * 1.3) * 5, 1, 1 - lin(T, 2.72, 2.92));
+  $("hPhone").style.zIndex = 5;
   const pts = [[440, 470], [610, 300], [770, 365]];
   [0, 1, 2].forEach((i) => {
     const t0 = .5 + i * .3, k = io(lin(T, t0, t0 + 1.0));
@@ -394,14 +397,14 @@ function card(T) {
   $("popPhone").style.opacity = (1 - k0).toFixed(3);
   $("popUpload").style.opacity = ku.toFixed(3);
   // header + pane crossfades overlap the reshape (no empty shell)
-  const segs = [[2.95, P.help], [P.help, P.who], [P.who, 12.2]];
+  const segs = [[2.95, P.help], [P.help, P.who], [P.who, 12.45]];
   segs.forEach(([a, b], i) => {
     const inn = out(clamp((T - a + .1) / .25)), gone = clamp((T - b + .3) / .2);
     tf($("hd" + i), 0, (1 - inn) * 10 - gone * 10, 1, inn * (1 - gone));
     tf($("pn" + i), 0, (1 - inn) * 18 - gone * 16, 1, inn * (1 - gone));
   });
   rise($("pt0"), -10, T, 0, 99);
-  [[434, 3.45], [141, 3.7], [147, 3.95], [93, 4.2]].forEach(([n, t0], i) => {
+  [[434, 3.1], [141, 3.35], [147, 3.6], [93, 3.85]].forEach(([n, t0], i) => {
     const p = sp(t0, T, 2.6, .8);
     tf($("stt" + i), 0, (1 - p) * 30, .95 + .05 * p, clamp(p * 1.7));
     $("stv" + i).textContent = Math.round(n * out(lin(T, t0, t0 + .6)));
@@ -426,8 +429,9 @@ function upload(T) {
   const on = within(T, UP[0], UP[1] + .3), ex = exitP(T, UP[1], .35);
   const tin = sp(UP[0] + .05, T, 2.3, .84);
   tf($("uKick"), 0, (1 - tin) * 16, 1, on ? clamp(tin * 1.5) * (1 - ex) : 0);
-  tf($("uTitle"), 0, -ex * 40, 1, on ? 1 - ex : 0);
-  rise($("uTitle"), UP[0] + .1, T, .035);
+  const ut = sp(UP[0] + .05, T, 2.3, .86);
+  tf($("uTitle"), 0, (1 - ut) * 24 - ex * 40, 1, on ? clamp(ut * 1.5) * (1 - ex) : 0);
+  rise($("uTitle"), -10, T, 0, 99);
   // APK card: the pop card lands here at 12.72, then hands over to the carrier at 16.15
   tf($("uApk"), 0, 0, 1, lin(T, 12.42, 12.7) * (1 - lin(T, 16.12, 16.3)));
   const pp = sp(12.55, T, 2.3, .82);
@@ -448,7 +452,7 @@ function upload(T) {
 
 function carriers(T) {
   // APK: card → chip (16.15-16.7) → phone (20.45-21.05)
-  const a1 = io(lin(T, 16.2, 16.75)), a2 = io(lin(T, 20.45, 21.05));
+  const a1 = io(lin(T, 16.2, 16.75)), a2 = io(lin(T, 20.4, 20.95));
   const apkVis = T >= 16.12 && T < 21.05;
   let r = lerpR(R.apk, R.chip, a1); r = lerpR(r, R.scanPhone, a2);
   rect($("apkC"), r, mix(mix(30, 18, a1), 62, a2));
@@ -473,10 +477,15 @@ function carriers(T) {
   // counter k0 → national verdict (26.15-26.7)
   const v = io(lin(T, 26.15, 26.7));
   rect($("vC"), lerpR(R.k0, R.v0, v), mix(26, 28, v));
-  tf($("vC"), 0, 0, 1, T >= 26.15 && T < 26.72 ? 1 - lin(T, 26.52, 26.7) : 0);
+  tf($("vC"), 0, 0, 1, T >= 26.15 && T < 26.74 ? 1 - lin(T, 26.68, 26.74) : 0);
   $("vcB").style.opacity = v.toFixed(3);
-  const nx = mix(30, 920 - 34 - 46, v), ny = mix(106, 40, v);
-  $("vcN").style.left = nx + "px"; $("vcN").style.top = ny + "px";
+  let tx = 920 - 34 - 46, ty = 40;
+  if (T >= 26.15 && T < 26.75) { const b = $("vnum0").getBoundingClientRect(); tx = b.left - R.v0[0]; ty = b.top - R.v0[1]; }
+  const nx = mix(30, tx, v), ny = mix(118, ty, v);
+  $("vcN").style.left = nx.toFixed(2) + "px"; $("vcN").style.top = ny.toFixed(2) + "px";
+  $("vcN").style.fontSize = mix(76, 84, v).toFixed(2) + "px";
+  $("vcL").style.opacity = (1 - lin(T, 26.15, 26.32)).toFixed(3);
+  $("vcN").style.color = v > .55 ? "var(--ink)" : "var(--bad)";
   // verdict badge → logo (31.3-31.95)
   const l = io(lin(T, 31.3, 31.95));
   rect($("lC"), lerpR(R.badge, R.logo, l), mix(20, 60, l));
@@ -491,9 +500,10 @@ function ai(T) {
   const on = within(T, AI[0] - .1, AI[1] + .3), ex = exitP(T, AI[1], .35);
   const k = sp(AI[0], T, 2.3, .84);
   tf($("aKick"), 0, (1 - k) * 16, 1, on ? clamp(k * 1.5) * (1 - ex) : 0);
-  tf($("aTitle"), 0, -ex * 40, 1, on ? 1 - ex : 0);
-  rise($("aTitle"), AI[0] + .1, T, .035);
-  tf($("aDoc"), 0, -ex * 40, 1, T < AI[1] + .3 ? lin(T, 16.5, 16.72) * (1 - ex) : 0);
+  const at = sp(AI[0] + .05, T, 2.3, .86);
+  tf($("aTitle"), 0, (1 - at) * 24 - ex * 40, 1, on ? clamp(at * 1.5) * (1 - ex) : 0);
+  rise($("aTitle"), -10, T, 0, 99);
+  tf($("aDoc"), 0, -ex * 40, 1, T < AI[1] + .3 ? lin(T, 16.7, 16.78) * (1 - ex) : 0);
   [0, 1, 2].forEach((i) => { $("hl" + i).querySelector("i").style.transform = `scaleX(${out(lin(T, 17.1 + i * .22, 17.45 + i * .22)).toFixed(4)})`; });
   chipDefs.forEach((d, i) => {
     const t0 = i < 4 ? 17.85 + i * .3 : 19.0 + (i - 4) * .2, p = sp(t0, T, 3, .74);
@@ -528,10 +538,11 @@ function scan(T) {
   const on = within(T, SCAN[0] - .1, SCAN[1] + .3), ex = exitP(T, SCAN[1], .35);
   const k = sp(SCAN[0], T, 2.3, .84);
   tf($("sKick"), 0, (1 - k) * 16, 1, on ? clamp(k * 1.5) * (1 - ex) : 0);
-  tf($("sTitle"), 0, -ex * 40, 1, on ? 1 - ex : 0);
-  rise($("sTitle"), SCAN[0] + .1, T, .035);
+  const st_ = sp(SCAN[0] + .05, T, 2.3, .86);
+  tf($("sTitle"), 0, (1 - st_) * 24 - ex * 40, 1, on ? clamp(st_ * 1.5) * (1 - ex) : 0);
+  rise($("sTitle"), -10, T, 0, 99);
   // phone body = the APK carrier until 21.05, then this element (same rect, same skin)
-  tf($("sIn"), 0, -ex * 40, 1, T < SCAN[1] + .3 ? lin(T, 20.8, 21.02) * (1 - ex) : 0);
+  tf($("sIn"), 0, -ex * 40, 1, T < SCAN[1] + .3 ? lin(T, 20.95, 21.03) * (1 - ex) : 0);
   $("sIcon").style.opacity = T >= 21.05 ? 1 : 0;
   $("sIn").style.background = "linear-gradient(160deg,#2a3550,#0d1322)";
   $("sIn").style.boxShadow = "inset 0 0 0 2px rgba(255,255,255,.07),0 0 0 1px rgba(56,189,248,.25),0 30px 70px -20px rgba(56,189,248,.35)";
@@ -565,10 +576,12 @@ function report(T) {
   const on = within(T, REP[0] - .1, REP[1] + .3), ex = exitP(T, REP[1], .35);
   const k = sp(REP[0], T, 2.3, .84);
   tf($("rKick"), 0, (1 - k) * 16, 1, on ? clamp(k * 1.5) * (1 - ex) : 0);
-  tf($("rTitle"), 0, -ex * 40, 1, on ? 1 - ex : 0);
-  rise($("rTitle"), REP[0] + .05, T, .035);
+  const rt = sp(REP[0] + .05, T, 2.3, .86);
+  tf($("rTitle"), 0, (1 - rt) * 24 - ex * 40, 1, on ? clamp(rt * 1.5) * (1 - ex) : 0);
+  rise($("rTitle"), -10, T, 0, 99);
   // national verdict arrives through the carrier; its badge leaves as the logo at 31.3
   tf($("v0"), 0, -ex * 40, 1, T < REP[1] + .3 ? lin(T, 26.45, 26.65) * (1 - ex) : 0);
+  $("vnum0").style.opacity = T >= 26.7 ? 1 : 0;
   $("vb0").style.visibility = T >= 31.3 ? "hidden" : "visible";
   const p1 = sp(26.45, T, 2.4, .8);
   tf($("v1"), 0, (1 - p1) * 60 - ex * 40, 1, on ? clamp(p1 * 1.6) * (1 - ex) : 0);
