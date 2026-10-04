@@ -464,7 +464,7 @@ def _policy_phase(job: Job):
     t0 = time.time()
     apk, _, analysis = AnalyzeAPK(job.apk_path)
     job._apk, job._analysis = apk, analysis
-    declared = sorted(apk.get_permissions())
+    declared = stage2_audit.declared_permissions(apk)
     job.apk_info = {
         "app_name": apk.get_app_name(),
         "package": apk.get_package(),
@@ -684,16 +684,18 @@ def _analysis_phase(job: Job):
     s5 = {"ran_flowdroid": False, "confirmed_sources": []}
     report["api_targets"] = []
 
-    if not s2["violating"]:
+    if not all_perms:
         for k in ("api_map", "static", "taint"):
-            job.set_stage(k, "skipped", "no prohibited permission is declared")
+            job.set_stage(k, "skipped", "no prohibited permissions selected")
     else:
-        # Stage 3 — permissions → API identifiers
+        # Stage 3 — permissions → API identifiers.  The code scan covers every
+        # prohibited permission, declared or not, so code that would read a
+        # banned data type is visible even when the manifest omits it.
         job.set_stage("api_map", "running")
-        if job.groq_key and not LLM_MODEL:
+        if job.groq_key and not LLM_MODEL and matched_short:
             check_groq_key(job.groq_key)
         llm_targets, note = [], "built-in map"
-        if job.groq_key:
+        if job.groq_key and matched_short:
             try:
                 r = stage3_api_map.run(matched_short, s1["prohibited_data"],
                                        job.groq_key, True)
@@ -701,29 +703,36 @@ def _analysis_phase(job: Job):
                 note = "AI + built-in map"
             except Exception as e:
                 note = f"AI step failed ({type(e).__name__}); used built-in map"
-        targets = baseline.clean_api_targets(llm_targets, matched_short)
+        targets = baseline.clean_api_targets(llm_targets, all_perms)
         report["api_targets"] = targets
         job.set_stage("api_map", "done", note)
 
         # Stage 4 — bytecode scan
         job.set_stage("static", "running")
         s4 = stage4_static.run(job.apk_path, targets, True, analysis=job._analysis)
+        declared_src = [x for x in s4["sources"]
+                        if baseline.normalise(x.get("permission", "")) in matched_short]
+        undeclared = len(s4["sources"]) - len(declared_src)
         job.live["code"] = len(s4["sources"])
-        job.set_stage("static", "done", f"{len(s4['sources'])} place(s) in the code")
+        job.set_stage("static", "done", f"{len(s4['sources'])} place(s) in the code"
+                      + (f" ({undeclared} for permissions the app does not declare)" if undeclared else ""))
 
-        # Stage 5 — FlowDroid
+        # Stage 5 — FlowDroid, only for declared permissions: without the
+        # permission Android blocks the call, so there is nothing to trace.
         tools = tool_status()
-        if not job.options.get("run_flowdroid", True):
+        if not s2["violating"]:
+            job.set_stage("taint", "skipped", "no prohibited permission is declared")
+        elif not job.options.get("run_flowdroid", True):
             job.set_stage("taint", "skipped", "turned off for this run")
         elif not tools["flowdroid_ready"]:
             job.set_stage("taint", "skipped",
                           "FlowDroid / Java / android.jar not installed (run setup_tools.py)")
-        elif not s4["sources"]:
-            job.set_stage("taint", "skipped", "no code locations to trace")
+        elif not declared_src:
+            job.set_stage("taint", "skipped", "no code locations for declared permissions")
         else:
             job.set_stage("taint", "running",
                           f"can take up to ~8 minutes (heap {tools['java_mem']})")
-            s5 = stage5_taint.run(job.apk_path, s4["sources"],
+            s5 = stage5_taint.run(job.apk_path, declared_src,
                                   flowdroid_jar=tools["flowdroid_jar"],
                                   platforms_dir=tools["platforms_dir"], verbose=True,
                                   work_dir=os.path.join(job.dir, "flowdroid"),
@@ -814,6 +823,12 @@ def _summary(report, perms) -> list:
         else:
             out.append("Data-flow tracing was not run, so transmission is not confirmed "
                        "statically; confirm on a device with the Frida script.")
+    undeclared_reads = [e["category"] for e in report.get("exposure", [])
+                        if e["reads"] and not e["asks"] and e["prohibited_by"]]
+    if undeclared_reads:
+        out.append("Code that accesses " + ", ".join(undeclared_reads) + " is present although "
+                   "the app does not declare the matching permission. Android blocks it while "
+                   "the permission is missing, but an update could switch it on.")
     if report["trackers"]:
         out.append(f"{len(report['trackers'])} third-party tracking SDK(s) are embedded.")
     reg = report.get("registry") or {}

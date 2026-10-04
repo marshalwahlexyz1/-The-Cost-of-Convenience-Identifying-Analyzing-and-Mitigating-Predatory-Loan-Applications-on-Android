@@ -11,6 +11,19 @@ warnings.filterwarnings("ignore")
 from androguard.misc import AnalyzeAPK
 
 
+def declared_permissions(apk) -> list:
+    """All permissions the manifest requests: <uses-permission> plus the
+    runtime-only <uses-permission-sdk-23> / <uses-permission-sdk-m> forms,
+    which Androguard's get_permissions() does not include."""
+    perms = set(apk.get_permissions())
+    for tag in ("uses-permission-sdk-23", "uses-permission-sdk-m"):
+        try:
+            perms.update(p for p in apk.get_all_attribute_value(tag, "name") if p)
+        except Exception:
+            pass
+    return sorted(perms)
+
+
 def run(apk_path: str, prohibited_permissions: list,
         verbose: bool = True, apk=None) -> dict:
     """
@@ -29,7 +42,7 @@ def run(apk_path: str, prohibited_permissions: list,
     if apk is None:
         apk, _, _ = AnalyzeAPK(apk_path)
 
-    declared = sorted(apk.get_permissions())
+    declared = declared_permissions(apk)
     # Normalize: strip android.permission. prefix for matching
     declared_short = [p.replace("android.permission.", "").upper()
                       for p in declared]
