@@ -1,0 +1,614 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>LoanWatch — how it works</title>
+<style>
+@font-face { font-family: Inter; font-weight: 400; src: url(fonts/inter-latin-400-normal.woff2) format("woff2"); }
+@font-face { font-family: Inter; font-weight: 500; src: url(fonts/inter-latin-500-normal.woff2) format("woff2"); }
+@font-face { font-family: Inter; font-weight: 600; src: url(fonts/inter-latin-600-normal.woff2) format("woff2"); }
+@font-face { font-family: Inter; font-weight: 700; src: url(fonts/inter-latin-700-normal.woff2) format("woff2"); }
+@font-face { font-family: Inter; font-weight: 800; src: url(fonts/inter-latin-800-normal.woff2) format("woff2"); }
+@font-face { font-family: Mono; font-weight: 400; src: url(fonts/jetbrains-mono-latin-400-normal.woff2) format("woff2"); }
+@font-face { font-family: Mono; font-weight: 600; src: url(fonts/jetbrains-mono-latin-600-normal.woff2) format("woff2"); }
+:root { --bg:#0a0e16; --surface:#121a29; --surface2:#18223a; --line:#22304a; --line2:#2e3f5f;
+  --ink:#e7ecf6; --muted:#9aa6bd; --faint:#6b7891; --accent:#38bdf8; --accent-hi:#7dd3fc; --bad:#ff5d6c; --ok:#34d399; }
+* { box-sizing: border-box; margin: 0; }
+html, body { width: 1080px; height: 1350px; overflow: hidden; background: var(--bg); }
+body { font-family: Inter, sans-serif; color: var(--ink); -webkit-font-smoothing: antialiased; }
+#stage { position: absolute; inset: 0; overflow: hidden; }
+.a { position: absolute; will-change: transform, opacity; }
+svg.i { width: 100%; height: 100%; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+#bg { position: absolute; inset: -80px; background: radial-gradient(700px 520px at 85% 5%, rgba(56,189,248,.17), transparent 60%),
+  radial-gradient(640px 520px at 5% 98%, rgba(56,189,248,.09), transparent 60%); }
+#grid { position: absolute; inset: -64px; opacity: .5; background-size: 64px 64px;
+  background-image: linear-gradient(rgba(255,255,255,.03) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.03) 1px, transparent 1px); }
+.kicker { font-size: 24px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--accent); }
+.title { font-size: 54px; font-weight: 800; line-height: 1.1; letter-spacing: -.02em; width: 920px; }
+.m { display: inline-block; overflow: hidden; vertical-align: top; padding-bottom: 8px; margin-bottom: -8px; }
+.m > span { display: inline-block; will-change: transform; }
+.mono { font-family: Mono, monospace; }
+.card { background: var(--surface); border: 1.5px solid var(--line); border-radius: 30px; box-shadow: 0 30px 70px -30px rgba(0,0,0,.75); }
+.chip { position: absolute; display: inline-flex; align-items: center; gap: 10px; padding: 11px 18px; border-radius: 14px; font-family: Mono, monospace;
+  font-size: 24px; background: var(--surface2); border: 1.5px solid var(--line2); white-space: nowrap; transform-origin: center; }
+.chip .dot { width: 11px; height: 11px; border-radius: 50%; background: var(--bad); box-shadow: 0 0 10px var(--bad); }
+.chip.via { border-style: dashed; color: var(--muted); background: transparent; }
+.phone-skin { position: absolute; inset: 0; border-radius: inherit; background: linear-gradient(160deg, #2a3550, #0d1322);
+  box-shadow: inset 0 0 0 2px rgba(255,255,255,.07), 0 0 0 1px rgba(56,189,248,.25), 0 30px 70px -20px rgba(56,189,248,.35); }
+.phone-scr { position: absolute; border-radius: inherit; overflow: hidden; background: radial-gradient(circle at 50% 28%, #13213b, #070b14 72%); }
+.notch { position: absolute; top: 20px; left: 50%; width: 104px; height: 24px; margin-left: -52px; border-radius: 0 0 15px 15px; background: #05080f; z-index: 3; }
+.appicon { width: 104px; height: 104px; border-radius: 28px; display: grid; place-items: center; background: linear-gradient(135deg, #4ade80, #16a34a);
+  box-shadow: 0 10px 34px -8px rgba(74,222,128,.55); color: #052e16; }
+.appicon svg { width: 56px; height: 56px; stroke-width: 2.2; }
+.pop { overflow: hidden; border-radius: 34px; background: linear-gradient(170deg, #16203a, #0f1626 70%); border: 1.5px solid var(--line2);
+  box-shadow: 0 50px 100px -40px rgba(0,0,0,.85); }
+.bar { position: absolute; left: 0; right: 0; top: 0; height: 96px; border-bottom: 1.5px solid var(--line); background: rgba(255,255,255,.02); }
+.dots { position: absolute; right: 36px; top: 40px; display: flex; gap: 10px; } .dots i { width: 14px; height: 14px; border-radius: 50%; background: var(--line2); }
+.hdr { position: absolute; left: 36px; top: 24px; display: flex; align-items: center; gap: 16px; font-size: 25px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+.hi { width: 50px; height: 50px; border-radius: 14px; display: grid; place-items: center; } .hi svg { width: 27px; height: 27px; }
+.pane { position: absolute; left: 46px; right: 46px; top: 136px; }
+.pane h2 { font-size: 48px; line-height: 1.15; font-weight: 800; letter-spacing: -.02em; }
+.stat { position: absolute; width: 405px; height: 168px; border-radius: 24px; padding: 22px 26px; background: rgba(255,255,255,.035); border: 1.5px solid var(--line); }
+.stat b { display: block; font-size: 66px; font-weight: 800; line-height: 1; color: var(--bad); font-variant-numeric: tabular-nums; }
+.stat span { display: block; margin-top: 10px; font-size: 23px; color: var(--muted); line-height: 1.25; }
+.fstep { position: absolute; width: 230px; display: grid; justify-items: center; gap: 14px; text-align: center; font-size: 27px; font-weight: 700; }
+.fstep .fi { width: 140px; height: 140px; border-radius: 38px; display: grid; place-items: center; background: var(--surface2); border: 1.5px solid var(--line2); color: var(--accent); }
+.fstep .fi svg { width: 64px; height: 64px; }
+.fstep small { font-size: 22px; font-weight: 500; color: var(--muted); }
+.role { position: absolute; width: 405px; height: 92px; display: flex; align-items: center; gap: 18px; padding: 0 22px; border-radius: 22px;
+  background: rgba(255,255,255,.035); border: 1.5px solid var(--line); font-size: 27px; font-weight: 600; }
+.role .ri { width: 58px; height: 58px; border-radius: 16px; display: grid; place-items: center; background: rgba(56,189,248,.14); color: var(--accent); flex: none; }
+.role .ri svg { width: 30px; height: 30px; }
+.face { position: absolute; inset: 0; border-radius: 30px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px;
+  backface-visibility: hidden; text-align: center; padding: 26px; }
+.face.f { border: 3px dashed var(--line2); background: var(--surface); }
+.face.f b { font-size: 30px; } .face.f span { color: var(--muted); font-size: 23px; }
+.face.k { transform: rotateY(180deg); border: 1.5px solid rgba(52,211,153,.45); background: linear-gradient(160deg, var(--surface2), var(--surface)); }
+.face.k b { font-family: Mono; font-size: 25px; } .face.k span { color: var(--muted); font-size: 22px; }
+.tile { width: 104px; height: 104px; border-radius: 28px; display: grid; place-items: center; } .tile svg { width: 50px; height: 50px; }
+.ok { display: inline-flex; gap: 8px; align-items: center; padding: 8px 18px; border-radius: 999px; color: var(--ok); background: rgba(52,211,153,.12); font-size: 22px; font-weight: 600; }
+.ok svg { width: 22px; height: 22px; }
+.prog { width: 300px; height: 10px; border-radius: 6px; background: var(--line); overflow: hidden; } .prog i { display: block; height: 100%; background: var(--accent); transform-origin: left; }
+.btn { border-radius: 24px; font-size: 32px; font-weight: 700; color: #04121c; display: grid; place-items: center;
+  background: linear-gradient(135deg, var(--accent), var(--accent-hi)); box-shadow: 0 18px 50px -14px rgba(56,189,248,.6); }
+.cat { display: grid; justify-items: center; gap: 6px; font-size: 20px; color: #4d5c80; }
+.cat .ci { width: 76px; height: 76px; border-radius: 22px; display: grid; place-items: center; background: rgba(255,255,255,.04); border: 1.5px solid rgba(255,255,255,.07); }
+.cat .ci svg { width: 36px; height: 36px; }
+.counter { border-radius: 26px; padding: 26px 30px; background: var(--surface); border: 1.5px solid var(--line); }
+.counter .ch { display: flex; align-items: center; gap: 12px; color: var(--muted); font-size: 23px; }
+.counter .ch svg { width: 28px; height: 28px; color: var(--accent); }
+.counter b { display: block; margin-top: 10px; font-size: 76px; font-weight: 800; line-height: 1; font-variant-numeric: tabular-nums; }
+.verdict { border-radius: 28px; padding: 0 34px 0 30px; border: 1.5px solid rgba(255,93,108,.45);
+  background: linear-gradient(160deg, rgba(255,93,108,.15), var(--surface) 70%); display: flex; align-items: center; gap: 24px; }
+.vb { width: 70px; height: 70px; border-radius: 20px; background: var(--bad); color: #fff; display: grid; place-items: center; box-shadow: 0 0 30px rgba(255,93,108,.5); flex: none; }
+.vb svg { width: 36px; height: 36px; }
+.vn { font-size: 22px; font-weight: 700; letter-spacing: .08em; color: var(--muted); text-transform: uppercase; }
+.vt { font-size: 42px; font-weight: 800; color: var(--bad); }
+.vnum { margin-left: auto; text-align: right; } .vnum b { font-size: 84px; font-weight: 800; line-height: 1; display: block; font-variant-numeric: tabular-nums; }
+.vnum span { font-size: 22px; color: var(--muted); }
+.grid { border-radius: 28px; overflow: hidden; border: 1.5px solid var(--line); background: var(--surface); }
+.gr { position: relative; display: grid; grid-template-columns: 290px 1fr 1fr 1fr; align-items: center; border-top: 1.5px solid var(--line); height: 108px; }
+.gr.h { height: 76px; border-top: 0; background: var(--surface2); font-size: 22px; font-weight: 700; letter-spacing: .1em; color: var(--muted); text-transform: uppercase; }
+.gr > div { padding: 0 24px; position: relative; z-index: 1; }
+.gc { display: flex; align-items: center; gap: 14px; font-size: 28px; font-weight: 600; }
+.gc i { width: 52px; height: 52px; border-radius: 15px; display: grid; place-items: center; background: var(--surface2); color: var(--accent); }
+.gc i svg { width: 28px; height: 28px; }
+.pill { display: inline-flex; align-items: center; gap: 8px; padding: 9px 20px; border-radius: 999px; font-size: 24px; font-weight: 700; }
+.pill.y { background: var(--bad); color: #fff; box-shadow: 0 0 22px rgba(255,93,108,.4); } .pill.n { background: var(--surface2); color: var(--faint); }
+.pill svg { width: 22px; height: 22px; }
+.gr > .rowglow { position: absolute; inset: 0; padding: 0; background: linear-gradient(90deg, rgba(56,189,248,.38), rgba(56,189,248,.06)); box-shadow: inset 4px 0 0 #38bdf8; z-index: 0; }
+.logo { border-radius: 60px; display: grid; place-items: center; color: #04121c; background: linear-gradient(135deg, var(--accent), #0ea5e9);
+  box-shadow: 0 0 0 2px rgba(56,189,248,.35), 0 30px 90px -20px rgba(56,189,248,.7); }
+#stepper { position: absolute; left: 80px; right: 80px; top: 64px; height: 44px; display: flex; align-items: center; }
+.st { display: flex; align-items: center; gap: 10px; font-size: 22px; font-weight: 600; color: var(--faint); }
+.st .d { width: 38px; height: 38px; border-radius: 50%; display: grid; place-items: center; border: 2.5px solid var(--line2); font-size: 18px; font-weight: 800; background: var(--surface); }
+.ln { flex: 1; height: 3px; margin: 0 14px; border-radius: 3px; background: var(--line); overflow: hidden; } .ln i { display: block; height: 100%; background: var(--accent); transform-origin: left; }
+#tag { left: 0; width: 1080px; top: 1276px; text-align: center; font-size: 22px; color: var(--faint); letter-spacing: .03em; }
+#cursor { width: 46px; height: 46px; filter: drop-shadow(0 4px 8px rgba(0,0,0,.5)); z-index: 30; }
+.layer { position: absolute; inset: 0; border-radius: inherit; }
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute"><defs>
+  <symbol id="shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></symbol>
+  <symbol id="search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></symbol>
+  <symbol id="contacts" viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></symbol>
+  <symbol id="calllog" viewBox="0 0 24 24"><polyline points="16 2 16 8 22 8"/><line x1="23" y1="1" x2="16" y2="8"/><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+  <symbol id="sms" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></symbol>
+  <symbol id="photos" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></symbol>
+  <symbol id="location" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+  <symbol id="phone" viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></symbol>
+  <symbol id="camera" viewBox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></symbol>
+  <symbol id="mic" viewBox="0 0 24 24"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/></symbol>
+  <symbol id="server" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="7" rx="2"/><rect x="2" y="14" width="20" height="7" rx="2"/><line x1="6" y1="6.5" x2="6.01" y2="6.5"/><line x1="6" y1="17.5" x2="6.01" y2="17.5"/></symbol>
+  <symbol id="file" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></symbol>
+  <symbol id="check" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></symbol>
+  <symbol id="alert" viewBox="0 0 24 24"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></symbol>
+  <symbol id="code" viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></symbol>
+  <symbol id="globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></symbol>
+  <symbol id="users" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+  <symbol id="eye" viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></symbol>
+  <symbol id="pen" viewBox="0 0 24 24"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4z"/></symbol>
+  <symbol id="scale" viewBox="0 0 24 24"><line x1="12" y1="3" x2="12" y2="21"/><path d="M5 21h14"/><path d="M3 7h18"/><path d="M6 7l-3 7a3 3 0 0 0 6 0z"/><path d="M18 7l-3 7a3 3 0 0 0 6 0z"/></symbol>
+  <symbol id="book" viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></symbol>
+  <symbol id="zap" viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></symbol>
+  <symbol id="leaf" viewBox="0 0 24 24"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></symbol>
+</defs></svg>
+
+<div id="stage">
+  <div id="bg" class="a"></div><div id="grid" class="a"></div>
+  <div id="root"></div>
+  <div id="stepper" class="a"></div>
+  <div id="tag" class="a">Example app · illustrative data</div>
+  <svg id="cursor" class="a" viewBox="0 0 24 24"><path d="M4 2l16 9.5-7 1.6-3.6 6.9z" fill="#fff" stroke="#0a0e16" stroke-width="1.5" stroke-linejoin="round"/></svg>
+</div>
+
+<script>
+// ── LoanWatch explainer · 1080×1350 · every frame is a pure function of T (seconds) ──
+const W = 1080, H = 1350, DURATION = 35;
+// Scene windows (absolute seconds)
+const HOOK = [0, 3.0], CARD = [3.0, 12.4], UP = [12.4, 16.4], AI = [16.4, 20.6], SCAN = [20.6, 26.4], REP = [26.4, 31.6], END = [31.6, 35];
+const P = { problem: 3.0, help: 6.8, who: 9.4 };
+
+const CUES = [];
+const cue = (t, kind, gain = 1) => CUES.push({ t: +t.toFixed(3), kind, gain });
+
+// ── maths ─────────────────────────────────────────────────────────────────
+const clamp = (x, a = 0, b = 1) => Math.min(b, Math.max(a, x));
+const lin = (t, a, b) => clamp((t - a) / (b - a));
+const io = (x) => x < .5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2;
+const out = (x) => 1 - Math.pow(1 - x, 3);
+const mix = (a, b, k) => a + (b - a) * k;
+function sp(t0, t, f = 2.2, z = .8) {
+  const x = t - t0; if (x <= 0) return 0;
+  const w = 2 * Math.PI * f, wd = w * Math.sqrt(1 - z * z);
+  return 1 - Math.exp(-z * w * x) * (Math.cos(wd * x) + (z / Math.sqrt(1 - z * z)) * Math.sin(wd * x));
+}
+const exitP = (t, end, dur = .4) => { const p = clamp((t - (end - dur)) / dur); return p * p * p; };
+const $ = (id) => document.getElementById(id);
+const tf = (el, x = 0, y = 0, s = 1, o = 1, r = 0) => {
+  el.style.transform = `translate(${x.toFixed(2)}px,${y.toFixed(2)}px) scale(${s.toFixed(4)}) rotate(${r.toFixed(2)}deg)`;
+  el.style.opacity = clamp(o).toFixed(3);
+  el.style.visibility = o <= .001 ? "hidden" : "visible";
+};
+const rect = (el, [x, y, w, h], r) => {
+  el.style.left = x.toFixed(2) + "px"; el.style.top = y.toFixed(2) + "px";
+  el.style.width = w.toFixed(2) + "px"; el.style.height = h.toFixed(2) + "px";
+  if (r !== undefined) el.style.borderRadius = r.toFixed(2) + "px";
+};
+const lerpR = (a, b, k) => a.map((v, i) => mix(v, b[i], k));
+const icon = (id) => `<svg class="i"><use href="#${id}"/></svg>`;
+const words = (txt, cls = "") => txt.split(" ").map((w) => `<span class="m"><span class="${cls}">${w}</span></span>`).join(" ");
+function rise(root, t0, t, step = .035, skip = 0) {
+  root.querySelectorAll(".m > span").forEach((s, i) => {
+    if (i < skip) { s.style.transform = "none"; return; }
+    const p = sp(t0 + (i - skip) * step, t, 2.5, .84);
+    s.style.transform = `translateY(${((1 - p) * 110).toFixed(2)}%)`;
+  });
+}
+const add = (html) => { const d = document.createElement("div"); d.innerHTML = html.trim(); const el = d.firstChild; $("root").appendChild(el); return el; };
+const el = (id, cls, r, html = "", extra = "") => { const e = add(`<div id="${id}" class="a ${cls}" style="${extra}">${html}</div>`); if (r) rect(e, r); return e; };
+// live window: element shown only inside [a, b]
+const within = (t, a, b) => t >= a && t <= b;
+
+// ── layout (px) ───────────────────────────────────────────────────────────
+const R = {
+  hookPhone: [150, 250, 330, 660], server: [770, 290, 150, 150],
+  cardP: [80, 300, 920, 790], cardH: [80, 370, 920, 650], cardW: [80, 270, 920, 850],
+  apk: [80, 400, 440, 500], pdf: [560, 400, 440, 500], btn: [80, 1010, 920, 104],
+  chip: [740, 112, 260, 60], doc: [80, 330, 920, 330],
+  scanPhone: [80, 320, 420, 860], k0: [540, 330, 460, 200], k1: [540, 560, 460, 200], k2: [540, 790, 460, 200],
+  v0: [80, 300, 920, 160], v1: [80, 484, 920, 160], grid: [80, 680, 920, 402],
+  badge: [110, 345, 70, 70], logo: [430, 320, 220, 220],
+};
+
+// ── build ─────────────────────────────────────────────────────────────────
+const stepNames = ["Upload", "Policy", "Scan", "Report"];
+$("stepper").innerHTML = stepNames.map((n, i) => `<div class="st" id="st${i}"><span class="d">${i + 1}</span><span>${n}</span></div>${i < 3 ? `<div class="ln"><i id="ln${i}"></i></div>` : ""}`).join("");
+
+// HOOK
+el("hServer", "", R.server, `<div style="width:100%;height:100%;border-radius:40px;display:grid;place-items:center;color:var(--bad);background:rgba(255,93,108,.12);border:2px solid rgba(255,93,108,.5)"><div style="width:72px;height:72px">${icon("server")}</div></div>`);
+add(`<svg id="hPath" class="a" style="left:0;top:0;width:1080px;height:1350px;overflow:visible"><path id="hLine" d="M 480 470 C 600 330, 680 330, 770 365" fill="none" stroke="#ff5d6c" stroke-width="3" stroke-dasharray="10 12" opacity=".75"/></svg>`);
+el("hLabel", "", [520, 236, 470, 40], `contacts · SMS · photos`, "font-size:26px;font-weight:600;color:var(--bad);text-align:center");
+el("hPhone", "", R.hookPhone, `<div class="phone-skin"></div><div class="phone-scr" style="left:14px;top:14px;right:14px;bottom:14px"><div class="notch"></div>
+  <div style="position:absolute;left:0;right:0;top:200px;display:grid;justify-items:center;gap:14px"><div class="appicon">${icon("leaf")}</div>
+  <b style="font-size:28px">CashLeaf</b><span style="font-size:22px;color:var(--muted)">Instant loans</span></div></div>`, "border-radius:52px");
+["contacts", "sms", "photos"].forEach((c, i) => el("hF" + i, "", [0, 0, 80, 80], `<div style="width:100%;height:100%;border-radius:24px;display:grid;place-items:center;color:#fff;background:#ff5d6c;box-shadow:0 0 28px rgba(255,93,108,.6)"><div style="width:38px;height:38px">${icon(c)}</div></div>`));
+el("hTitle", "title", [80, 990, 920, 200], `${words("Some loan apps take")}<br>${words("more than your money.", "acc")}`, "font-size:68px");
+$("hTitle").querySelectorAll(".acc").forEach((e) => { e.style.color = "var(--bad)"; });
+
+// CARD (pop-up: problem → help → who). It grows out of the hook phone.
+el("pop", "pop", R.cardP, `
+  <div class="layer" id="popPhone" style="background:linear-gradient(160deg,#2a3550,#0d1322)"></div>
+  <div class="bar"><div class="dots"><i></i><i></i><i></i></div></div>
+  <div class="hdr" id="hd0" style="color:var(--bad)"><span class="hi" style="background:rgba(255,93,108,.16)">${icon("alert")}</span>The problem</div>
+  <div class="hdr" id="hd1" style="color:var(--accent)"><span class="hi" style="background:rgba(56,189,248,.16)">${icon("shield")}</span>How LoanWatch helps</div>
+  <div class="hdr" id="hd2" style="color:var(--accent)"><span class="hi" style="background:rgba(56,189,248,.16)">${icon("users")}</span>Built for</div>
+  <div class="pane" id="pn0"><h2 id="pt0">${words("Many loan apps harvest contacts, call logs and photos, then use them to shame borrowers.")}</h2>
+    ${[[434, "loan apps studied in 5 countries"], [141, "approved apps break national rules"], [147, "break Google Play's lending policy"], [93, "removed by Google, 300M+ installs"]]
+      .map(([n, s], i) => `<div class="stat" id="stt${i}" style="left:${(i % 2) * 423}px;top:${200 + Math.floor(i / 2) * 186}px"><b id="stv${i}">0</b><span>${s}</span></div>`).join("")}
+    <div id="psrc" style="position:absolute;top:580px;font-size:22px;color:var(--faint)">Source: Akanji, Egele, Stringhini · ACM ASIA CCS '26</div></div>
+  <div class="pane" id="pn1"><h2 id="pt1">${words("Check any loan app against the rules it must follow.")}</h2>
+    <svg class="a" style="left:0;top:220px;width:828px;height:180px;overflow:visible"><line x1="160" y1="70" x2="668" y2="70" stroke="#2e3f5f" stroke-width="3" stroke-dasharray="8 10"/></svg>
+    <div class="a" id="flowDot" style="left:0;top:282px;width:16px;height:16px;border-radius:50%;background:var(--accent);box-shadow:0 0 18px var(--accent)"></div>
+    ${[["file", "The policy", "what it bans"], ["phone", "The app", "asks · reads · sends"], ["alert", "The evidence", "a report to cite"]]
+      .map(([ic, a, b], i) => `<div class="fstep" id="fs${i}" style="left:${i * 299}px;top:220px"><div class="fi" ${i === 2 ? 'style="color:var(--bad)"' : ""}>${icon(ic)}</div>${a}<small>${b}</small></div>`).join("")}</div>
+  <div class="pane" id="pn2"><h2 id="pt2">${words("For anyone who needs to hold a loan app to account.")}</h2>
+    ${[["scale", "Regulators"], ["pen", "Journalists"], ["book", "Researchers"], ["phone", "App store reviewers"], ["users", "Consumer advocates"], ["search", "Lawyers & NGOs"]]
+      .map(([ic, n], i) => `<div class="role" id="rl${i}" style="left:${(i % 2) * 423}px;top:${200 + Math.floor(i / 2) * 108}px"><span class="ri">${icon(ic)}</span>${n}</div>`).join("")}
+    <div class="role" id="rl6" style="left:0;top:524px;width:828px;border-color:rgba(56,189,248,.55);background:rgba(56,189,248,.09)"><span class="ri" style="background:rgba(56,189,248,.22)">${icon("eye")}</span>Anyone investigating a loan app</div></div>
+  <div class="layer" id="popUpload" style="border:3px dashed var(--line2);background:var(--surface)"></div>`);
+
+// UPLOAD
+el("uKick", "kicker", [80, 150, 600, 32], "Step 1 · Upload");
+el("uTitle", "title", [80, 190, 920, 140], words("Drop in the app and the lending policy"));
+el("uApk", "", R.apk, `<div id="uApkF" style="position:absolute;inset:0;transform-style:preserve-3d">
+  <div class="face f"><div class="tile" style="background:var(--surface2);color:var(--accent)">${icon("phone")}</div><b>Loan app (.apk)</b><span>Drag it here</span></div>
+  <div class="face k"><div class="tile" style="background:linear-gradient(135deg,#4ade80,#16a34a);color:#052e16">${icon("leaf")}</div><b>cashleaf.apk</b><span>18.4 MB</span>
+    <span class="ok">${icon("check")} Ready</span><div class="prog"><i id="pg0"></i></div></div></div>`, "perspective:1400px");
+el("uPdf", "", R.pdf, `<div id="uPdfF" style="position:absolute;inset:0;transform-style:preserve-3d">
+  <div class="face f"><div class="tile" style="background:var(--surface2);color:var(--accent)">${icon("file")}</div><b>Lending policy (PDF)</b><span>Drag it here</span></div>
+  <div class="face k"><div class="tile" style="background:var(--accent);color:#04121c">${icon("file")}</div><b>FCCPC lending<br>guidelines 2022</b>
+    <span class="ok" style="color:var(--accent);background:rgba(56,189,248,.12)">${icon("zap")} AI will read it</span><div class="prog"><i id="pg1"></i></div></div></div>`, "perspective:1400px");
+el("uBtn", "btn", R.btn, "Start inspection");
+
+// carrier: the APK card becomes a chip, then the scan phone
+el("apkC", "", R.apk, `<div class="layer" id="acCard" style="border:1.5px solid rgba(52,211,153,.45);background:linear-gradient(160deg,var(--surface2),var(--surface))"></div>
+  <div class="layer" id="acChip" style="border:1.5px solid var(--line2);background:var(--surface2)"></div>
+  <div class="layer" id="acPhone" style="background:linear-gradient(160deg,#2a3550,#0d1322);box-shadow:inset 0 0 0 2px rgba(255,255,255,.07),0 0 0 1px rgba(56,189,248,.25)"></div>
+  <div class="a" id="acIcon" style="left:0;top:0;width:104px;height:104px"><div class="appicon" style="width:100%;height:100%">${icon("leaf")}</div></div>
+  <b class="a mono" id="acLabel" style="left:0;top:0;font-size:24px;white-space:nowrap">cashleaf.apk</b>`);
+// carrier: the PDF card becomes the clause card
+el("pdfC", "", R.pdf, `<div class="layer" style="border:1.5px solid rgba(52,211,153,.45);background:linear-gradient(160deg,var(--surface2),var(--surface))"></div>
+  <div class="layer" id="pcDoc" style="border:1.5px solid var(--line);background:var(--surface)"></div>
+  <div class="a" id="pcIcon" style="width:104px;height:104px;left:168px;top:150px"><div class="tile" style="width:100%;height:100%;background:var(--accent);color:#04121c">${icon("file")}</div></div>`);
+
+// AI
+el("aKick", "kicker", [80, 150, 600, 32], "Step 2 · The AI reads the policy");
+el("aTitle", "title", [80, 190, 920, 140], words("It finds exactly what the policy bans"));
+el("aDoc", "card", R.doc, `<div style="padding:40px 44px">
+  <div style="height:14px;width:58%;border-radius:7px;background:var(--surface2)"></div>
+  <p style="margin-top:28px;font-size:32px;line-height:1.5"><b>15.</b> Apps must not have access to customers'
+    <span class="hl" id="hl0" style="position:relative;white-space:nowrap"><i style="position:absolute;left:-5px;right:-5px;top:3px;bottom:1px;border-radius:9px;background:rgba(56,189,248,.32);transform-origin:left;z-index:-1"></i>call logs,</span>
+    <span class="hl" id="hl1" style="position:relative;white-space:nowrap"><i style="position:absolute;left:-5px;right:-5px;top:3px;bottom:1px;border-radius:9px;background:rgba(56,189,248,.32);transform-origin:left;z-index:-1"></i>contacts</span> and
+    <span class="hl" id="hl2" style="position:relative;white-space:nowrap"><i style="position:absolute;left:-5px;right:-5px;top:3px;bottom:1px;border-radius:9px;background:rgba(56,189,248,.32);transform-origin:left;z-index:-1"></i>photos/gallery</span>.</p>
+  <div style="margin-top:26px;font-size:22px;color:var(--faint)">FCCPC Digital Lending Framework 2022 · clause 15 (paraphrased)</div></div>`);
+const chipDefs = [
+  ["READ_CONTACTS", 80, 800, 0], ["READ_CALL_LOG", 640, 800, 0],
+  ["READ_EXTERNAL_STORAGE", 80, 890, 0], ["READ_MEDIA_IMAGES", 520, 890, 0],
+  ["WRITE_CONTACTS", 80, 1090, 1], ["GET_ACCOUNTS", 380, 1090, 1], ["WRITE_CALL_LOG", 660, 1090, 1]];
+chipDefs.forEach(([n, x, y, via], i) => { const c = add(`<span class="chip ${via ? "via" : ""}" id="ch${i}">${via ? "" : '<span class="dot"></span>'}${n}</span>`); c.style.left = x + "px"; c.style.top = y + "px"; });
+add(`<svg id="aLinks" class="a" style="left:0;top:0;width:1080px;height:1350px;overflow:visible;pointer-events:none">
+  ${[0, 1, 2, 3].map((i) => `<path id="lk${i}" fill="none" stroke="#38bdf8" stroke-width="2.5" opacity=".75"/><circle id="lkd${i}" r="6" fill="#38bdf8"/>`).join("")}</svg>`);
+el("aNote", "", [80, 1010, 920, 40], "+ the rest of each Android permission group: one grant unlocks them", "font-size:24px;color:var(--muted)");
+
+// SCAN (the phone is the APK carrier; its contents live here)
+const cats = [["contacts", "Contacts"], ["calllog", "Call log"], ["sms", "SMS"], ["photos", "Photos"], ["location", "Location"], ["phone", "Phone"], ["camera", "Camera"], ["mic", "Mic"]];
+el("sKick", "kicker", [80, 150, 600, 32], "Step 3 · Scan");
+el("sTitle", "title", [80, 190, 920, 80], words("Look inside the app"));
+el("sIn", "", R.scanPhone, `<div class="phone-scr" style="left:14px;top:14px;right:14px;bottom:14px;border-radius:48px"><div class="notch"></div>
+  <div class="a" id="sBeam" style="left:0;right:0;height:120px;top:-120px;z-index:2;background:linear-gradient(180deg,transparent,rgba(56,189,248,.28) 70%,rgba(56,189,248,.95) 98%,transparent)"></div>
+  <div id="sIcon" style="position:absolute;left:144px;top:146px;width:104px;height:104px;z-index:1"><div class="appicon" style="width:100%;height:100%">${icon("leaf")}</div></div>
+  <div style="position:absolute;left:0;right:0;top:300px;text-align:center"><b style="font-size:28px">CashLeaf</b><div class="mono" style="font-size:20px;color:var(--muted);margin-top:8px">com.example.cashleaf</div></div>
+  <div style="position:absolute;left:14px;right:14px;bottom:40px;display:grid;grid-template-columns:repeat(4,1fr);gap:20px 0;justify-items:center">
+  ${cats.map(([c, n], i) => `<div class="cat" id="cat${i}"><div class="ci" id="ci${i}">${icon(c)}</div>${n}</div>`).join("")}</div></div>`, "border-radius:62px");
+[["alert", "Prohibited permissions declared"], ["code", "Places in the code that read them"], ["globe", "Data flows to the network"]].forEach(([ic, s], i) =>
+  el("k" + i, "counter", R["k" + i], `<div class="ch">${icon(ic)}${s}</div><b id="kv${i}">0</b>`));
+
+// REPORT
+el("rKick", "kicker", [80, 150, 600, 32], "Step 4 · Report");
+el("rTitle", "title", [80, 190, 920, 80], words("A verdict you can cite"));
+el("v0", "verdict", R.v0, `<div class="vb" id="vb0">${icon("alert")}</div><div><div class="vn">Nigerian national policy</div><div class="vt">Violates</div></div>
+  <div class="vnum"><b>3</b><span>prohibited declared</span></div>`);
+el("v1", "verdict", R.v1, `<div class="vb">${icon("alert")}</div><div><div class="vn">Google Play policy</div><div class="vt">Violates</div></div>
+  <div class="vnum"><b id="vn1">2</b><span>prohibited declared</span></div>`);
+const rows = [["contacts", "Contacts", [1, 1, 1]], ["calllog", "Call log", [1, 1, 1]], ["photos", "Photos", [1, 1, 0]]];
+const pIc = ["alert", "code", "globe"];
+el("rGrid", "grid", R.grid, `<div class="gr h"><div>Data</div><div>Asks</div><div>Reads</div><div>Sends</div></div>
+  ${rows.map(([c, n, v], r) => `<div class="gr" id="gr${r}"><div class="rowglow" id="rg${r}"></div><div class="gc"><i>${icon(c)}</i>${n}</div>${v.map((y, k) =>
+    `<div><span class="pill ${y ? "y" : "n"}" id="pl${r}${k}">${y ? icon(pIc[k]) + "Yes" : "No"}</span></div>`).join("")}</div>`).join("")}`);
+el("rCap", "", [80, 1110, 920, 70], `<b style="color:var(--ink)">Asks</b> permission declared · <b style="color:var(--ink)">Reads</b> code accesses it · <b style="color:var(--ink)">Sends</b> traced to the network`, "font-size:24px;color:var(--muted);line-height:1.4");
+
+// carrier: counter → verdict card; verdict badge → logo
+el("vC", "", R.k0, `<div class="layer" id="vcA" style="border:1.5px solid var(--line);background:var(--surface)"></div>
+  <div class="layer" id="vcB" style="border:1.5px solid rgba(255,93,108,.45);background:linear-gradient(160deg,rgba(255,93,108,.15),var(--surface) 70%)"></div>
+  <b class="a" id="vcN" style="font-size:80px;font-weight:800;line-height:1;color:var(--bad)">3</b>`);
+el("lC", "", R.badge, `<div class="layer" id="lcA" style="background:var(--bad)"></div><div class="layer" id="lcB" style="background:linear-gradient(135deg,var(--accent),#0ea5e9)"></div>
+  <div class="a" id="lcI0" style="inset:22%;color:#fff">${icon("alert")}</div><div class="a" id="lcI1" style="inset:22%;color:#04121c">${icon("shield")}</div>
+  <div class="a" id="lcI2" style="right:16%;bottom:16%;width:30%;height:30%;color:#04121c"><svg class="i" style="stroke-width:3"><use href="#search"/></svg></div>`);
+
+// END
+el("eWord", "", [0, 590, 1080, 120], `Loan<b style="color:var(--accent);font-weight:800">Watch</b>`, "text-align:center;font-size:100px;font-weight:600;letter-spacing:-.03em");
+el("eLine", "", [0, 726, 1080, 60], words("Hold any loan app to the rules."), "text-align:center;font-size:40px;color:var(--muted)");
+el("eChip", "", [330, 830, 420, 64], "Free · Open source · MIT", "text-align:center;line-height:60px;border-radius:999px;border:1.5px solid var(--line2);font-size:27px;font-weight:600;background:var(--surface)");
+el("eUrl", "mono", [0, 930, 1080, 40], "github.com/marshalwahlexyz1", "text-align:center;font-size:30px;color:var(--accent)");
+el("eRef", "", [80, 1150, 920, 70], "Based on “The Cost of Convenience” · Akanji, Egele, Stringhini · ACM ASIA CCS '26", "text-align:center;font-size:23px;color:var(--faint);line-height:1.4");
+
+// ── sound cues ────────────────────────────────────────────────────────────
+[0.5, 0.8, 1.1].forEach((t) => cue(t, "whoosh", .5));
+cue(1.9, "thump", .6);
+cue(2.75, "swoosh", .7); cue(3.25, "pop", .8);
+[4.05, 4.3, 4.55, 4.8].forEach((t) => cue(t, "tick", .45));
+cue(P.help - .05, "swoosh", .45); [0, 1, 2].forEach((i) => cue(P.help + .6 + i * .35, "pop", .5));
+cue(P.who - .05, "swoosh", .45); for (let i = 0; i < 7; i++) cue(P.who + .55 + i * .14, "tick", .32);
+cue(12.2, "swoosh", .65); cue(13.2, "flip", .7); cue(13.55, "flip", .7); cue(14.95, "click", .9);
+cue(16.15, "swoosh", .65); cue(17.1, "sweep", .5);
+[17.9, 18.1, 18.3, 18.5].forEach((t) => cue(t, "pop", .65)); [18.9, 19.1, 19.3].forEach((t) => cue(t, "pop", .38));
+cue(20.45, "swoosh", .65);
+[21.9, 22.5, 23.1].forEach((t) => cue(t, "alert", .5)); cue(24.2, "tick", .5); cue(25.2, "tick", .5);
+cue(26.2, "swoosh", .6); cue(26.75, "thump", .8); cue(27.0, "thump", .7);
+let pk = 0; rows.forEach((_, r) => [0, 1, 2].forEach((k) => cue(27.7 + (pk++) * .18, rows[r][2][k] ? "pop" : "tick", rows[r][2][k] ? .5 : .3)));
+cue(31.35, "swoosh", .7); cue(32.0, "impact", 1); cue(32.6, "sparkle", .5);
+for (let b = 3.0; b < 31.5; b += 1.0) cue(b, "pulse", .3);
+
+// ── seek ──────────────────────────────────────────────────────────────────
+function stepper(T) {
+  const starts = [UP[0], AI[0], SCAN[0], REP[0]];
+  const on = lin(T, UP[0] - .15, UP[0] + .2) * (1 - lin(T, REP[1] - .35, REP[1] - .05));
+  tf($("stepper"), 0, (1 - on) * -14, 1, on);
+  tf($("tag"), 0, 0, 1, Math.max(1 - lin(T, 2.6, 2.95), on));
+  starts.forEach((s, i) => {
+    const active = T >= s - .05, done = i < 3 && T >= starts[i + 1] - .05;
+    const st = $("st" + i), d = st.querySelector(".d");
+    st.style.color = active ? "var(--ink)" : "var(--faint)";
+    d.style.borderColor = active ? "var(--accent)" : "var(--line2)";
+    d.style.background = done ? "var(--accent)" : "var(--surface)";
+    d.style.color = done ? "#04121c" : active ? "var(--accent)" : "var(--faint)";
+    if (i < 3) $("ln" + i).style.transform = `scaleX(${io(lin(T, starts[i + 1] - .5, starts[i + 1])).toFixed(4)})`;
+  });
+}
+
+function hook(T) {
+  const vis = T < HOOK[1] + .4;
+  const q = lin(T, 2.55, 2.95);
+  tf($("hServer"), 0, 0, 1 + .06 * Math.exp(-Math.max(0, T - 1.85) * 4) * (T > 1.85 ? 1 : 0), vis ? 1 - q : 0);
+  $("hPath").style.opacity = vis ? (1 - q).toFixed(3) : 0;
+  $("hLine").setAttribute("stroke-dashoffset", (-T * 40).toFixed(1));
+  tf($("hLabel"), 0, 0, 1, vis ? 1 - q : 0);
+  tf($("hPhone"), 0, Math.sin(T * 1.3) * 5, 1, T < 2.72 ? 1 : 0);
+  const pts = [[440, 470], [610, 300], [770, 365]];
+  [0, 1, 2].forEach((i) => {
+    const t0 = .5 + i * .3, k = io(lin(T, t0, t0 + 1.0));
+    const x = (1 - k) ** 2 * pts[0][0] + 2 * (1 - k) * k * pts[1][0] + k * k * pts[2][0];
+    const y = (1 - k) ** 2 * pts[0][1] + 2 * (1 - k) * k * pts[1][1] + k * k * pts[2][1];
+    const o = T < t0 ? 0 : k < .9 ? clamp((T - t0) * 6) : 1 - lin(k, .9, 1);
+    tf($("hF" + i), x - 40, y - 40, .75 + .35 * Math.sin(Math.PI * k), o);
+  });
+  tf($("hTitle"), 0, 0, 1, 1 - q);
+  rise($("hTitle"), -10, T, 0, 99);
+}
+
+function card(T) {
+  const pop = $("pop");
+  const vis = T >= 2.7 && T <= 12.75;
+  pop.style.display = vis ? "block" : "none";
+  if (!vis) return;
+  // shape: phone → problem → help → who → upload card
+  const k0 = io(lin(T, 2.72, 3.3));
+  const kh = io(lin(T, P.help - .1, P.help + .35)), kw = io(lin(T, P.who - .1, P.who + .35)), ku = io(lin(T, 12.2, 12.72));
+  let r = lerpR(R.hookPhone, R.cardP, k0);
+  r = lerpR(r, R.cardH, kh); r = lerpR(r, R.cardW, kw); r = lerpR(r, R.apk, ku);
+  rect(pop, r, mix(mix(52, 34, k0), 30, ku));
+  const float = Math.sin(T * 1.1) * 4 * k0 * (1 - ku);
+  tf(pop, 0, float, 1, 1);
+  $("popPhone").style.opacity = (1 - k0).toFixed(3);
+  $("popUpload").style.opacity = ku.toFixed(3);
+  // header + pane crossfades overlap the reshape (no empty shell)
+  const segs = [[2.95, P.help], [P.help, P.who], [P.who, 12.2]];
+  segs.forEach(([a, b], i) => {
+    const inn = out(clamp((T - a + .1) / .25)), gone = clamp((T - b + .3) / .2);
+    tf($("hd" + i), 0, (1 - inn) * 10 - gone * 10, 1, inn * (1 - gone));
+    tf($("pn" + i), 0, (1 - inn) * 18 - gone * 16, 1, inn * (1 - gone));
+  });
+  rise($("pt0"), -10, T, 0, 99);
+  [[434, 3.45], [141, 3.7], [147, 3.95], [93, 4.2]].forEach(([n, t0], i) => {
+    const p = sp(t0, T, 2.6, .8);
+    tf($("stt" + i), 0, (1 - p) * 30, .95 + .05 * p, clamp(p * 1.7));
+    $("stv" + i).textContent = Math.round(n * out(lin(T, t0, t0 + .6)));
+  });
+  // a slow light sweep across the stats keeps the hold alive
+  const sw = lin(T, 4.9, 6.5);
+  [0, 1, 2, 3].forEach((i) => { const d = Math.abs(sw * 4 - i - .5); $("stt" + i).style.borderColor = `rgba(255,93,108,${(.55 * clamp(1 - d)).toFixed(3)})`; });
+  tf($("psrc"), 0, 0, 1, lin(T, 4.5, 4.9));
+  rise($("pt1"), -10, T, 0, 99);
+  [0, 1, 2].forEach((i) => { const p = sp(P.help + .15 + i * .3, T, 2.6, .76); tf($("fs" + i), 0, (1 - p) * 26, .8 + .2 * p, clamp(p * 1.7)); });
+  // a dot travels policy → app → evidence, again and again
+  const dk = ((T - (P.help + 1.0)) / 1.1);
+  const dp = dk < 0 ? 0 : dk % 1;
+  tf($("flowDot"), 152 + io(dp) * 516, 0, 1, dk < 0 ? 0 : Math.sin(Math.PI * dp));
+  rise($("pt2"), -10, T, 0, 99);
+  for (let i = 0; i < 7; i++) { const p = sp(P.who + .1 + i * .12, T, 2.7, .78); tf($("rl" + i), 0, (1 - p) * 22, .94 + .06 * p, clamp(p * 1.7)); }
+  const g = lin(T, 11.2, 11.6) * (1 - lin(T, 12.0, 12.2));
+  $("rl6").style.boxShadow = `0 0 ${(30 * g).toFixed(1)}px rgba(56,189,248,${(.5 * g).toFixed(3)})`;
+}
+
+function upload(T) {
+  const on = within(T, UP[0], UP[1] + .3), ex = exitP(T, UP[1], .35);
+  const tin = sp(UP[0] + .05, T, 2.3, .84);
+  tf($("uKick"), 0, (1 - tin) * 16, 1, on ? clamp(tin * 1.5) * (1 - ex) : 0);
+  tf($("uTitle"), 0, -ex * 40, 1, on ? 1 - ex : 0);
+  rise($("uTitle"), UP[0] + .1, T, .035);
+  // APK card: the pop card lands here at 12.72, then hands over to the carrier at 16.15
+  tf($("uApk"), 0, 0, 1, lin(T, 12.42, 12.7) * (1 - lin(T, 16.12, 16.3)));
+  const pp = sp(12.55, T, 2.3, .82);
+  tf($("uPdf"), (1 - pp) * 80, 0, 1, clamp(pp * 1.6) * (1 - lin(T, 16.12, 16.3)));
+  const f0 = sp(13.2, T, 1.9, .76), f1 = sp(13.55, T, 1.9, .76);
+  $("uApkF").style.transform = `rotateY(${(f0 * 180).toFixed(2)}deg)`;
+  $("uPdfF").style.transform = `rotateY(${(f1 * 180).toFixed(2)}deg)`;
+  $("pg0").style.transform = `scaleX(${out(lin(T, 15.1, 15.9)).toFixed(4)})`;
+  $("pg1").style.transform = `scaleX(${out(lin(T, 15.25, 16.0)).toFixed(4)})`;
+  const bp = sp(13.85, T, 2.4, .84);
+  const press = T > 14.95 && T < 15.25 ? .97 : 1;
+  tf($("uBtn"), 0, (1 - bp) * 60 + ex * 40, press, on ? clamp(bp * 1.6) * (1 - ex) : 0);
+  // cursor
+  const cIn = lin(T, 14.15, 14.4) * (1 - lin(T, 15.5, 15.8));
+  const ck = io(lin(T, 14.15, 14.9));
+  tf($("cursor"), mix(1000, 560, ck), mix(1290, 1050, ck), T > 14.92 && T < 15.15 ? .85 : 1, cIn);
+}
+
+function carriers(T) {
+  // APK: card → chip (16.15-16.7) → phone (20.45-21.05)
+  const a1 = io(lin(T, 16.2, 16.75)), a2 = io(lin(T, 20.45, 21.05));
+  const apkVis = T >= 16.12 && T < 21.05;
+  let r = lerpR(R.apk, R.chip, a1); r = lerpR(r, R.scanPhone, a2);
+  rect($("apkC"), r, mix(mix(30, 18, a1), 62, a2));
+  tf($("apkC"), 0, 0, 1, apkVis ? lin(T, 16.12, 16.28) : 0);
+  $("acCard").style.opacity = (1 - a1).toFixed(3);
+  $("acChip").style.opacity = (a1 * (1 - a2)).toFixed(3);
+  $("acPhone").style.opacity = a2.toFixed(3);
+  const isz = mix(mix(104, 40, a1), 104, a2);
+  const ix = mix(mix(168, 14, a1), 158, a2), iy = mix(mix(130, 12, a1), 160, a2);
+  rect($("acIcon"), [ix, iy, isz, isz]);
+  $("acIcon").firstChild.style.borderRadius = (isz * .27).toFixed(1) + "px";
+  const lx = mix(mix(126, 66, a1), 126, a2), ly = mix(mix(258, 16, a1), 280, a2);
+  $("acLabel").style.left = lx + "px"; $("acLabel").style.top = ly + "px";
+  $("acLabel").style.opacity = (lin(T, 16.7, 16.85) * (1 - lin(T, 20.4, 20.5))).toFixed(3);
+  $("acLabel").style.fontSize = mix(25, 23, a1).toFixed(1) + "px";
+  // PDF: card → clause card (16.15-16.75)
+  const p1 = io(lin(T, 16.2, 16.75));
+  rect($("pdfC"), lerpR(R.pdf, R.doc, p1), 30);
+  tf($("pdfC"), 0, 0, 1, T >= 16.12 && T < 16.75 ? lin(T, 16.12, 16.28) : 0);
+  $("pcDoc").style.opacity = p1.toFixed(3);
+  tf($("pcIcon"), mix(0, 360, p1), mix(0, 20, p1), 1 - .4 * p1, 1 - p1);
+  // counter k0 → national verdict (26.15-26.7)
+  const v = io(lin(T, 26.15, 26.7));
+  rect($("vC"), lerpR(R.k0, R.v0, v), mix(26, 28, v));
+  tf($("vC"), 0, 0, 1, T >= 26.15 && T < 26.72 ? 1 - lin(T, 26.52, 26.7) : 0);
+  $("vcB").style.opacity = v.toFixed(3);
+  const nx = mix(30, 920 - 34 - 46, v), ny = mix(106, 40, v);
+  $("vcN").style.left = nx + "px"; $("vcN").style.top = ny + "px";
+  // verdict badge → logo (31.3-31.95)
+  const l = io(lin(T, 31.3, 31.95));
+  rect($("lC"), lerpR(R.badge, R.logo, l), mix(20, 60, l));
+  tf($("lC"), 0, l >= 1 ? Math.sin(T * 1.4) * 4 : 0, 1, T >= 31.3 ? 1 : 0);
+  $("lC").style.boxShadow = `0 0 ${mix(30, 90, l).toFixed(0)}px rgba(${l < .5 ? "255,93,108" : "56,189,248"},.55)`;
+  $("lcB").style.opacity = lin(l, .42, .58).toFixed(3);
+  $("lcI0").style.opacity = (1 - lin(l, .2, .6)).toFixed(3);
+  $("lcI1").style.opacity = lin(l, .4, .9).toFixed(3); $("lcI2").style.opacity = lin(l, .6, 1).toFixed(3);
+}
+
+function ai(T) {
+  const on = within(T, AI[0] - .1, AI[1] + .3), ex = exitP(T, AI[1], .35);
+  const k = sp(AI[0], T, 2.3, .84);
+  tf($("aKick"), 0, (1 - k) * 16, 1, on ? clamp(k * 1.5) * (1 - ex) : 0);
+  tf($("aTitle"), 0, -ex * 40, 1, on ? 1 - ex : 0);
+  rise($("aTitle"), AI[0] + .1, T, .035);
+  tf($("aDoc"), 0, -ex * 40, 1, T < AI[1] + .3 ? lin(T, 16.5, 16.72) * (1 - ex) : 0);
+  [0, 1, 2].forEach((i) => { $("hl" + i).querySelector("i").style.transform = `scaleX(${out(lin(T, 17.1 + i * .22, 17.45 + i * .22)).toFixed(4)})`; });
+  chipDefs.forEach((d, i) => {
+    const t0 = i < 4 ? 17.85 + i * .3 : 19.0 + (i - 4) * .2, p = sp(t0, T, 3, .74);
+    tf($("ch" + i), 0, ex * 40, .6 + .4 * p, on ? clamp(p * 1.7) * (1 - ex) : 0);
+  });
+  // a pulse runs through the dashed group chips (keeps the hold moving)
+  [4, 5, 6].forEach((i) => { const w = Math.sin((T - 19.6) * 4 - (i - 4) * .9); $("ch" + i).style.borderColor = T > 19.6 ? `rgba(56,189,248,${(.35 + .35 * Math.max(0, w)).toFixed(3)})` : "var(--line2)"; });
+  const links = [[1, 0], [0, 1], [2, 2], [2, 3]];   // contacts→READ_CONTACTS, call logs→READ_CALL_LOG, photos→both
+  links.forEach(([h, c], i) => {
+    const pth = $("lk" + i), dot = $("lkd" + i);
+    const vis = on && T > 17.5;
+    if (!vis) { pth.setAttribute("d", ""); dot.setAttribute("opacity", 0); return; }
+    const a = $("hl" + h).getBoundingClientRect(), b = $("ch" + c).getBoundingClientRect();
+    const docB = $("aDoc").getBoundingClientRect().bottom;
+    const x1 = a.left + a.width / 2, y1 = docB + 2, x2 = b.left + b.width / 2, y2 = b.top - 4;
+    const d = `M ${x1.toFixed(1)} ${y1.toFixed(1)} C ${x1.toFixed(1)} ${((y1 + y2) / 2).toFixed(1)}, ${x2.toFixed(1)} ${((y1 + y2) / 2).toFixed(1)}, ${x2.toFixed(1)} ${y2.toFixed(1)}`;
+    pth.setAttribute("d", d);
+    const len = pth.getTotalLength();
+    const k = io(lin(T, 17.5 + i * .3, 18.0 + i * .3));
+    pth.setAttribute("stroke-dasharray", `${len.toFixed(1)} ${len.toFixed(1)}`);
+    pth.setAttribute("stroke-dashoffset", ((1 - k) * len).toFixed(1));
+    pth.setAttribute("opacity", ((1 - ex) * .75).toFixed(3));
+    const ph = ((T - 19.0 - i * .25) / 1.2);
+    if (ph > 0) { const pt = pth.getPointAtLength((ph % 1) * len); dot.setAttribute("cx", pt.x.toFixed(1)); dot.setAttribute("cy", pt.y.toFixed(1));
+      dot.setAttribute("opacity", (Math.sin(Math.PI * (ph % 1)) * (1 - ex)).toFixed(3)); } else dot.setAttribute("opacity", 0);
+  });
+  const np = sp(19.45, T, 2.4, .86);
+  tf($("aNote"), 0, (1 - np) * 16, 1, on ? clamp(np * 1.6) * (1 - ex) : 0);
+}
+
+function scan(T) {
+  const on = within(T, SCAN[0] - .1, SCAN[1] + .3), ex = exitP(T, SCAN[1], .35);
+  const k = sp(SCAN[0], T, 2.3, .84);
+  tf($("sKick"), 0, (1 - k) * 16, 1, on ? clamp(k * 1.5) * (1 - ex) : 0);
+  tf($("sTitle"), 0, -ex * 40, 1, on ? 1 - ex : 0);
+  rise($("sTitle"), SCAN[0] + .1, T, .035);
+  // phone body = the APK carrier until 21.05, then this element (same rect, same skin)
+  tf($("sIn"), 0, -ex * 40, 1, T < SCAN[1] + .3 ? lin(T, 20.8, 21.02) * (1 - ex) : 0);
+  $("sIcon").style.opacity = T >= 21.05 ? 1 : 0;
+  $("sIn").style.background = "linear-gradient(160deg,#2a3550,#0d1322)";
+  $("sIn").style.boxShadow = "inset 0 0 0 2px rgba(255,255,255,.07),0 0 0 1px rgba(56,189,248,.25),0 30px 70px -20px rgba(56,189,248,.35)";
+  const bt = (T - 21.3) / 1.5;
+  $("sBeam").style.top = (bt < 0 ? -120 : (bt % 1) * 950 - 120).toFixed(1) + "px";
+  const hits = { 0: 21.9, 1: 22.5, 3: 23.1 };
+  let declared = 0;
+  cats.forEach((_, i) => {
+    const c = $("ci" + i), h = hits[i];
+    if (h !== undefined && T >= h) {
+      declared++;
+      const p = sp(h, T, 3, .7);
+      c.style.color = "#fff"; c.style.background = `rgba(255,93,108,${(.28 * clamp(p)).toFixed(3)})`;
+      c.style.borderColor = "rgba(255,93,108,.8)"; c.style.boxShadow = `0 0 ${(24 * clamp(p)).toFixed(1)}px rgba(255,93,108,.6)`;
+      c.style.transform = `scale(${(.6 + .4 * p).toFixed(4)})`; $("cat" + i).style.color = "#ffd1d6";
+    } else {
+      c.style.color = "#4d5c80"; c.style.background = "rgba(255,255,255,.04)"; c.style.borderColor = "rgba(255,255,255,.07)";
+      c.style.boxShadow = "none"; c.style.transform = "none"; $("cat" + i).style.color = "#4d5c80";
+    }
+  });
+  [0, 1, 2].forEach((i) => {
+    const p = sp(SCAN[0] + .35 + i * .12, T, 2.3, .84);
+    const keep = i === 0 ? T < 26.15 : true;            // k0 hands over to the verdict carrier
+    tf($("k" + i), (1 - p) * 50, -ex * 40 * (i ? 1 : 0), 1, on && keep ? clamp(p * 1.6) * (i ? 1 - ex : 1) : 0);
+  });
+  const vals = [declared, Math.round(7 * out(lin(T, 23.6, 24.3))), Math.round(2 * out(lin(T, 24.7, 25.2)))];
+  vals.forEach((v, i) => { $("kv" + i).textContent = v; $("kv" + i).style.color = v > 0 ? "var(--bad)" : "var(--ink)"; });
+}
+
+function report(T) {
+  const on = within(T, REP[0] - .1, REP[1] + .3), ex = exitP(T, REP[1], .35);
+  const k = sp(REP[0], T, 2.3, .84);
+  tf($("rKick"), 0, (1 - k) * 16, 1, on ? clamp(k * 1.5) * (1 - ex) : 0);
+  tf($("rTitle"), 0, -ex * 40, 1, on ? 1 - ex : 0);
+  rise($("rTitle"), REP[0] + .05, T, .035);
+  // national verdict arrives through the carrier; its badge leaves as the logo at 31.3
+  tf($("v0"), 0, -ex * 40, 1, T < REP[1] + .3 ? lin(T, 26.45, 26.65) * (1 - ex) : 0);
+  $("vb0").style.visibility = T >= 31.3 ? "hidden" : "visible";
+  const p1 = sp(26.45, T, 2.4, .8);
+  tf($("v1"), 0, (1 - p1) * 60 - ex * 40, 1, on ? clamp(p1 * 1.6) * (1 - ex) : 0);
+  const g = sp(26.9, T, 2.2, .84);
+  tf($("rGrid"), 0, (1 - g) * 70 - ex * 40, 1, on ? clamp(g * 1.6) * (1 - ex) : 0);
+  let n = 0;
+  rows.forEach((_, r) => [0, 1, 2].forEach((c) => { const p = sp(27.7 + (n++) * .18, T, 3.2, .72); tf($(`pl${r}${c}`), 0, 0, .55 + .45 * p, clamp(p * 1.7)); }));
+  // a highlight walks down the rows: asks → reads → sends, read row by row
+  rows.forEach((_, r) => { const c = 29.3 + r * .65; const w = lin(T, c, c + .25) * (1 - lin(T, c + .55, c + .8)); $("rg" + r).style.opacity = w.toFixed(3); });
+  const cp = sp(29.2, T, 2.2, .86);
+  tf($("rCap"), 0, (1 - cp) * 16 - ex * 40, 1, on ? clamp(cp * 1.6) * (1 - ex) : 0);
+}
+
+function ending(T) {
+  const on = T >= END[0] - .05;
+  ["eWord", "eLine", "eChip", "eUrl", "eRef"].forEach((id, i) => {
+    const w = sp(31.7 + i * .06, T, 2.2, .84);
+    tf($(id), 0, (1 - w) * 46 + (w >= .999 ? Math.sin(T * 1.2 + i) * 1.5 : 0), 1, on ? clamp(w * 1.4) : 0);
+  });
+  rise($("eLine"), -10, T, 0, 99);
+}
+
+window.seek = async (T) => {
+  $("bg").style.transform = `translate(${(Math.sin(T * .35) * 30).toFixed(2)}px,${(Math.cos(T * .27) * 22).toFixed(2)}px)`;
+  $("grid").style.transform = `translateY(${((T * 12) % 64).toFixed(2)}px)`;
+  stepper(T); hook(T); card(T); upload(T); carriers(T); ai(T); scan(T); report(T); ending(T);
+};
+
+// preview: Space play/pause, ←/→ frame step, R replay
+let playing = false, t0 = 0, tCur = 0;
+window.addEventListener("keydown", (e) => {
+  if (e.code === "Space") { playing = !playing; t0 = performance.now() / 1000 - tCur; if (playing) loop(); }
+  if (e.code === "ArrowRight") { tCur = Math.min(DURATION, tCur + 1 / 30); seek(tCur); }
+  if (e.code === "ArrowLeft") { tCur = Math.max(0, tCur - 1 / 30); seek(tCur); }
+  if (e.code === "KeyR") { tCur = 0; t0 = performance.now() / 1000; playing = true; loop(); }
+});
+function loop() { if (!playing) return; tCur = performance.now() / 1000 - t0; if (tCur > DURATION) { playing = false; tCur = DURATION; } seek(tCur); requestAnimationFrame(loop); }
+
+window.CUES = CUES.sort((a, b) => a.t - b.t);
+document.fonts.ready.then(() => { seek(0); window.ready = true; });
+</script>
+</body>
+</html>
